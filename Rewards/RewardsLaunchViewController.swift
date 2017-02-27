@@ -1,0 +1,18 @@
+//
+//  RewardsLaunchViewController.swift
+//  ios-swift-smp-sample
+//
+//  Copyright © 2017 SessionM. All rights reserved.
+//
+
+import UIKit
+
+class RewardsLaunchViewController: LaunchViewController {
+    override func presentNextController() {
+        if sessionM.user.isLoggedIn {
+            performSegue(withIdentifier: "Main", sender: self)
+        } else {
+            LoginViewController.login(self)
+        }
+    }
+}
