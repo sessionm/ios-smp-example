@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F3E41B11E2803110061C980"
-               BuildableName = "Referrals.app"
-               BlueprintName = "Referrals"
-               ReferencedContainer = "container:ios-swift-smp-sample.xcodeproj">
+               BlueprintIdentifier = "2F3E41D41E2828090061C980"
+               BuildableName = "Content.app"
+               BlueprintName = "Content"
+               ReferencedContainer = "container:SMPExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F3E41B11E2803110061C980"
-            BuildableName = "Referrals.app"
-            BlueprintName = "Referrals"
-            ReferencedContainer = "container:ios-swift-smp-sample.xcodeproj">
+            BlueprintIdentifier = "2F3E41D41E2828090061C980"
+            BuildableName = "Content.app"
+            BlueprintName = "Content"
+            ReferencedContainer = "container:SMPExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F3E41B11E2803110061C980"
-            BuildableName = "Referrals.app"
-            BlueprintName = "Referrals"
-            ReferencedContainer = "container:ios-swift-smp-sample.xcodeproj">
+            BlueprintIdentifier = "2F3E41D41E2828090061C980"
+            BuildableName = "Content.app"
+            BlueprintName = "Content"
+            ReferencedContainer = "container:SMPExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F3E41B11E2803110061C980"
-            BuildableName = "Referrals.app"
-            BlueprintName = "Referrals"
-            ReferencedContainer = "container:ios-swift-smp-sample.xcodeproj">
+            BlueprintIdentifier = "2F3E41D41E2828090061C980"
+            BuildableName = "Content.app"
+            BlueprintName = "Content"
+            ReferencedContainer = "container:SMPExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

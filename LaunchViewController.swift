@@ -1,6 +1,6 @@
 //
 //  LaunchViewController.swift
-//  ios-swift-smp-sample
+//  SMPExample
 //
 //  Copyright © 2017 SessionM. All rights reserved.
 //

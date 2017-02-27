@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ios-swift-smp-sample.xcodeproj">
+      location = "self:SMPExample.xcodeproj">
    </FileRef>
 </Workspace>

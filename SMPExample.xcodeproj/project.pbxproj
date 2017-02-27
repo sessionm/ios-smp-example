@@ -311,11 +311,11 @@
 		681AA36E2355B1B8B9753242 /* Pods_Content.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Content.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0FCA9C1E2414CC00011367 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B70441F1E23EDF800018C7B /* Campaigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campaigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B70443C1E23EF7200018C7B /* ios-swift-smp-sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-swift-smp-sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMPExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B70443F1E23F12300018C7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsTableViewController.swift; path = Campaigns/CampaignsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6B8C46941E24272E003FE4AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Campaigns/Info.plist; sourceTree = SOURCE_ROOT; };
-		6B8C46961E24275A003FE4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "ios-swift-smp-sample/Assets.xcassets"; sourceTree = "<group>"; };
+		6B8C46961E24275A003FE4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "SMPExample/Assets.xcassets"; sourceTree = "<group>"; };
 		6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		6BC0FECF1E24103D009C8D07 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -562,7 +562,7 @@
 				2F59BB2B1E5F584D0083DF63 /* Login.xib */,
 				2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */,
 				2F59BB2D1E5F584D0083DF63 /* Util.swift */,
-				6B70443C1E23EF7200018C7B /* ios-swift-smp-sample-Bridging-Header.h */,
+				6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */,
 				6B7044201E23EDF800018C7B /* Campaigns */,
 				2F3E41D61E2828090061C980 /* Content */,
 				2F40EB0A1E36849600D6D8DF /* Geofence */,
@@ -953,7 +953,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6B7044011E23ED8C00018C7B /* Build configuration list for PBXProject "ios-swift-smp-sample" */;
+			buildConfigurationList = 6B7044011E23ED8C00018C7B /* Build configuration list for PBXProject "SMPExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -2289,7 +2289,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "ios-swift-smp-sample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMPExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -2330,7 +2330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "ios-swift-smp-sample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SMPExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2508,7 +2508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B7044011E23ED8C00018C7B /* Build configuration list for PBXProject "ios-swift-smp-sample" */ = {
+		6B7044011E23ED8C00018C7B /* Build configuration list for PBXProject "SMPExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B7044161E23ED8C00018C7B /* Debug */,

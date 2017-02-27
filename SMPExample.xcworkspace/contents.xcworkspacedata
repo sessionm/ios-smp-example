@@ -5,6 +5,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ios-swift-smp-sample.xcodeproj">
+      location = "group:SMPExample.xcodeproj">
    </FileRef>
 </Workspace>
