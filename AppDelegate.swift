@@ -12,7 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    private let APP_ID = "41a44470ac984b11d8452530b0cd466ba1656280"
+//    private let APP_ID = "41a44470ac984b11d8452530b0cd466ba1656280"
+    private let APP_ID = "b3c72e8389d7344215fb0a389b2e5ce02f68d92d"
     private let SERVER_URL = "https://api.tour-sessionm.com"
     private let sessionM = SessionM.sharedInstance()
 
