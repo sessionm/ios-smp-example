@@ -11,8 +11,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, SessionMDelega
     private let sessionM = SessionM.sharedInstance()
 
     private let testToken = "v2--Sd2T8UBqlCGQovVPnsUs4eqwFe0-1i9JV4nq__RWmsA=--dWM8r8RggUJCToOaiiT6NXmiOipkovvD9HueM_jZECStExtGFkZzVmCUhkdDJe5NQw=="
-    private let testEmail = "nortye@gmail.com"
-    private let testPassword = "Demo1234"
+    private let testEmail = "unitTestLogin@sessionm.com"
+    private let testPassword = "sessionm"
 
     private var emailRegex: NSRegularExpression!
 
