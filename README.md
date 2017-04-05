@@ -3,12 +3,9 @@ SessionM Platform SDK Example Apps
 
 Included in `SMPExample.xcworkspace` are example projects that show how to use the SessionM Platform SDK for iOS. Follow the steps below to setup and build a project:
 
-1. Run `gem install cocoapods` to install Cocoapods.
-2. Run `pod setup` to create your `~/.cocoapods/repos` directory.
-3. Run `pod install` to install the required pods for the example apps.
-4. Open `SMPExample.xcworkspace` in Xcode.
-5. Navigate to the Target settings for the app you would like to build, and update the signing requirements under the "General" tab to use your Apple Developer credentials.
-6. In the Toolbar, set the scheme to the desired app and click the Run button.
+1. Open `SMPExample.xcworkspace` in Xcode.
+2. Navigate to the Target settings for the app you would like to build, and update the signing requirements under the "General" tab to use your Apple Developer credentials.
+3. In the Toolbar, set the scheme to the desired app and click the Run button.
 
 For more info on a specific project, see the README.md file located under that project's directory.
 
