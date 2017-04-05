@@ -25,7 +25,7 @@ For SessionM Platform SDK documentation, see https://mmc.sessionm.com/docs/mmc-s
 
 LICENSE: MIT
 
-##Campaigns
+## Campaigns
 
 This app showcases how to use SessionM SDK to fetch promotional campaign messages for presentation in an activity feed.
 
@@ -39,13 +39,13 @@ There are three different actions to trigger different types of feed message: Op
 - Deep Link: Opens a dialog with a sample deep link schema
 - External Link: Opens native browser with sample URL
 
-##Contents
+## Contents
 
 This app showcases how to use SessionM SDK to fetch promotional content data for presentation in a content feed.
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
 
-##Geofence
+## Geofence
 
 This app showcases how to use SessionM SDK to track the user's location and monitor regions that the user enters and exits.
 
@@ -62,7 +62,7 @@ Note: geofence and event trigger annotations in the same location will be cluste
 The "Triggered Events" tab contains a more detailed history of event triggers.
 When running the Geofence app through Xcode, the sessionm.gpx file is used to walk a simulated path through some of the geofences in the SessionM demo environment. To use your own GPX file, navigate in Xcode to "Debug" -> "Simulate Location" -> "Add GPX File to Workspace".
 
-##Inbox
+## Inbox
 
 This app showcases how to use SessionM SDK to create UI for a user inbox.
 
@@ -72,7 +72,7 @@ The main view shows a list of messages in the user's inbox, with titles and crea
 
 Clicking on a message will show its body and give options for marking the message as "new" or "read", as well as deleting the message.
 
-##Loyalty Cards
+## Loyalty Cards
 
 This app showcases how to use SessionM SDK to link and unlink loyalty cards to a user's account.
 
@@ -82,7 +82,7 @@ The main view shows a list of loyalty cards that have been linked to the user's 
 
 Clicking on the "+" symbol will give you the option to link a new card. Use the search bar to search for a retailer whose loyalty card you would like to link. After selecting the retailer, enter the card number and press the "Link" button to finish linking the card.
 
-##Places
+## Places
 
 This app showcases how to use SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
 
@@ -90,7 +90,7 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places
 
 The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue. Clicking on a venue will attempt to check the user into that venue.
 
-##Push Notification
+## Push Notification
 
 This app showcases how to use SessionM SDK to present a popup message when the user receives a push notification.
 
@@ -98,13 +98,13 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#push-notifications
 
 Note: if you would like to simply test the relevant APIs without setting up your own SessionM Platform app and push messaging campaigns, follow the steps under "Local Notification Testing". To perform an end-to-end test of the SessionM Platform's Push Messaging feature, follow the steps under "Remote Notification Testing".
 
-###Local Notification Testing
+### Local Notification Testing
 
 - Open the app and enable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
-###Remote Notification Testing
+### Remote Notification Testing
 
 The following steps should be completed through your Apple Developer Team website:
 
@@ -130,7 +130,7 @@ The following steps should be completed in Xcode:
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
-##Receipts
+## Receipts
 
 This app showcases how to use SessionM SDK to allow users to upload receipt images.
 
@@ -140,7 +140,7 @@ The main view shows a list of receipts that have already been uploaded by the us
 
 Clicking on the "+" symbol will give you the option to upload images for a new receipt. Follow the onscreen instructions to take a new photo or upload an existing image from your photo library.
 
-##Referrals
+## Referrals
 
 This app showcases how to use SessionM SDK to allow users to send an email to refer other potential users to sign up for an account.
 
@@ -150,7 +150,7 @@ The main view shows a list of referrals that have already been sent by the user.
 
 Clicking on the "+" symbol will give you the option to send a new referral. Fill out the presented form (note: only email is required) and click "Submit" to finish sending the referral.
 
-##Rewards
+## Rewards
 
 This app showcases how to use SessionM SDK to allow users to spend loyalty points to purchase rewards.
 
@@ -159,7 +159,7 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards
 The "Offers" tab shows a list of offers that are available for purchase. Click on an offer to see more details and make a purchase. If the offer is gated by a skills test (e.g. for a sweepstakes entry), then an alert will appear with a random question. Enter the correct answer to complete the purchase.
 The "Orders" tab shows a list of the user's order transactions and their approval statuses (e.g. "pending", "approved", "rejected").
 
-##Transactions
+## Transactions
 
 This app showcases how to use SessionM SDK to view a user's loyalty points transaction history.
 
