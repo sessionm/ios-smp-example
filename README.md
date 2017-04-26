@@ -9,11 +9,13 @@ Included in `SMPExample.xcworkspace` are example projects that show how to use t
 
 For more info on a specific project, see the README.md file located under that project's directory.
 
-By default, the example apps interface with a demo environment hosted by SessionM that contains preloaded sample data. To test the apps in your own environment, set your SessionM Platform API key and server URL in `AppDelegate.swift`:
+By default, the example apps interface with a demo environment hosted by SessionM that contains preloaded sample data. To test an app in your own environment, set your SessionM Platform API key and server URL with the `SessionMAPIKey` and `SessionMServerURL` keys in the app's `Info.plist` file:
 
 ```
-private let APP_ID = "<YOUR_API_KEY>"
-private let SERVER_URL = "<YOUR_SERVER_URL>"
+<key>SessionMAPIKey</key>
+<string>YOUR_API_KEY</string>
+<key>SessionMServerURL</key>
+<string>YOUR_SERVER_URL</string>
 ```
 
 For info on more SessionM Platform features, please [email us](mailto: devsupport@sessionm.com) directly.
@@ -22,9 +24,19 @@ For SessionM Platform SDK documentation, see https://mmc.sessionm.com/docs/mmc-s
 
 LICENSE: MIT
 
+## Authentication
+
+This app showcases how to use the SessionM SDK to authenticate a user in the SessionM Platform.
+
+API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity4
+
+On the "Choose Authentication Type" view, you can choose to authenticate a user with a SessionM Platform email and password, or with credentials from a third-party authentication provider such as Facebook or Google.
+
+After selecting an authentication type, you can enter credentials to either authenticate an existing user or create a new one. After the user has been authenticated, you can see details about the user's account on the "User Info" view.
+
 ## Campaigns
 
-This app showcases how to use SessionM SDK to fetch promotional campaign messages for presentation in an activity feed.
+This app showcases how to use the SessionM SDK to fetch promotional campaign messages for presentation in an activity feed.
 
 API docs: https://mmc.sessionm.com/docs/mmc-sdk/#campaigns
 
@@ -38,13 +50,13 @@ There are three different actions to trigger different types of feed message: Op
 
 ## Contents
 
-This app showcases how to use SessionM SDK to fetch promotional content data for presentation in a content feed.
+This app showcases how to use the SessionM SDK to fetch promotional content data for presentation in a content feed.
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
 
 ## Geofence
 
-This app showcases how to use SessionM SDK to track the user's location and monitor regions that the user enters and exits.
+This app showcases how to use the SessionM SDK to track the user's location and monitor regions that the user enters and exits.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#geofencing
 
@@ -61,7 +73,7 @@ When running the Geofence app through Xcode, the sessionm.gpx file is used to wa
 
 ## Inbox
 
-This app showcases how to use SessionM SDK to create UI for a user inbox.
+This app showcases how to use the SessionM SDK to create UI for a user inbox.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox
 
@@ -71,7 +83,7 @@ Clicking on a message will show its body and give options for marking the messag
 
 ## Loyalty Cards
 
-This app showcases how to use SessionM SDK to link and unlink loyalty cards to a user's account.
+This app showcases how to use the SessionM SDK to link and unlink loyalty cards to a user's account.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#loyalty-card-linking
 
@@ -81,7 +93,7 @@ Clicking on the "+" symbol will give you the option to link a new card. Use the 
 
 ## Places
 
-This app showcases how to use SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
+This app showcases how to use the SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places
 
@@ -89,7 +101,7 @@ The main view shows a list of sponsored venues available for check ins, along wi
 
 ## Push Notification
 
-This app showcases how to use SessionM SDK to present a popup message when the user receives a push notification.
+This app showcases how to use the SessionM SDK to present a popup message when the user receives a push notification.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#push-notifications
 
@@ -121,7 +133,7 @@ The following steps should be completed in Xcode:
 - Change the Push sample app's bundle ID to match your app's bundle ID.
 - Update the Push sample app's signing requirements to use your Apple Developer credentials.
 - Ensure the Push Notifications entitlement is added to the Push.entitlements file.
-- Edit the APP_ID and SERVER_URL constants in AppDelegate.swift to match the API key given to your property and your environment's server URL.
+- Edit the SessionMAPIKey and SessionMServerURL key values in Info.plist to match the API key given to your property and your environment's server URL.
 - Edit the names of the behaviors that are logged in the logActionForType method in PushViewController.swift to match your behavior names.
 - Open the app and disable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
@@ -129,7 +141,7 @@ The following steps should be completed in Xcode:
 
 ## Receipts
 
-This app showcases how to use SessionM SDK to allow users to upload receipt images.
+This app showcases how to use the SessionM SDK to allow users to upload receipt images.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipt
 
@@ -139,7 +151,7 @@ Clicking on the "+" symbol will give you the option to upload images for a new r
 
 ## Referrals
 
-This app showcases how to use SessionM SDK to allow users to send an email to refer other potential users to sign up for an account.
+This app showcases how to use the SessionM SDK to allow users to send an email to refer other potential users to sign up for an account.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#referrals
 
@@ -149,7 +161,7 @@ Clicking on the "+" symbol will give you the option to send a new referral. Fill
 
 ## Rewards
 
-This app showcases how to use SessionM SDK to allow users to spend loyalty points to purchase rewards.
+This app showcases how to use the SessionM SDK to allow users to spend loyalty points to purchase rewards.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards
 
@@ -158,7 +170,7 @@ The "Orders" tab shows a list of the user's order transactions and their approva
 
 ## Transactions
 
-This app showcases how to use SessionM SDK to view a user's loyalty points transaction history.
+This app showcases how to use the SessionM SDK to view a user's loyalty points transaction history.
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions11
 

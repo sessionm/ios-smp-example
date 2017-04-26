@@ -2,7 +2,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 def shared_pods
-  pod 'SessionMFramework', '~> 2.1.5'
+  pod 'SessionMFramework', '~> 2.2.0'
+end
+
+target 'Auth' do
+  shared_pods
 end
 
 target 'Campaigns' do

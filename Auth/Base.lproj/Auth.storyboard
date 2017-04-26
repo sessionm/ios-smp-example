@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3tv-xU-GBJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth-->
+        <scene sceneID="LOh-oS-DwH">
+            <objects>
+                <tableViewController id="f3q-03-sLq" userLabel="Auth" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kjB-3j-EIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="UAY-pQ-VCP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="MOD-By-Z5a" detailTextLabel="Ax2-lo-pEu" style="IBUITableViewCellStyleSubtitle" id="xmd-1c-XqJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmd-1c-XqJ" id="Rhr-B7-B4R">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Email Authentication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MOD-By-Z5a">
+                                                    <rect key="frame" x="15" y="5" width="156.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use an email to authenticate with SMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ax2-lo-pEu">
+                                                    <rect key="frame" x="15" y="25.5" width="217.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="x12-kw-PVf" kind="show" id="6f4-hH-TKu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="f3q-03-sLq" id="M7O-Js-0Le"/>
+                            <outlet property="delegate" destination="f3q-03-sLq" id="kWs-MD-uoq"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="iZw-tY-UDZ"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Choose Authentication Type" id="oQn-Tz-j5t"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucx-K2-Lcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597.60000000000002" y="106.59670164917542"/>
+        </scene>
+        <!--Email Authentication-->
+        <scene sceneID="lQe-WF-exK">
+            <objects>
+                <viewController title="Email Authentication" id="x12-kw-PVf" customClass="EmailLoginViewController" customModule="Auth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGP-26-QdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vsu-Ky-jPr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginController" id="rhx-6h-twF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-yC-b0Z">
+                                <rect key="frame" x="8" y="126" width="359" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="x12-kw-PVf" id="HRe-VC-JjE"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-Yj-9PI">
+                                <rect key="frame" x="8" y="164" width="359" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Email" identifier="bob"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="x12-kw-PVf" id="o0N-Cd-xZz"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgL-oW-KAS" userLabel="Authenticate">
+                                <rect key="frame" x="143.5" y="250.5" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticate:" destination="x12-kw-PVf" eventType="touchUpInside" id="E0v-3e-eNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adq-dC-eQ4" userLabel="Create User">
+                                <rect key="frame" x="146.5" y="288.5" width="82" height="30"/>
+                                <state key="normal" title="Create User"/>
+                                <connections>
+                                    <action selector="createUser:" destination="x12-kw-PVf" eventType="touchUpInside" id="HcO-wz-jmf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X8B-YQ-uhs" userLabel="Status">
+                                <rect key="frame" x="9.5" y="426.5" width="356" height="41"/>
+                                <string key="text">Email:
+ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd4-59-wb3">
+                                <rect key="frame" x="156" y="489" width="63" height="30"/>
+                                <state key="normal" title="User Info"/>
+                                <connections>
+                                    <segue destination="Van-4x-txp" kind="show" identifier="" id="kLW-ZR-BQv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Adq-dC-eQ4" firstAttribute="top" secondItem="CgL-oW-KAS" secondAttribute="bottom" constant="8" id="2Eh-Fp-jGA"/>
+                            <constraint firstItem="nHT-yC-b0Z" firstAttribute="bottom" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.25" id="2ta-7U-maw"/>
+                            <constraint firstItem="X8B-YQ-uhs" firstAttribute="centerX" secondItem="rhx-6h-twF" secondAttribute="centerX" id="8KQ-bE-UrF"/>
+                            <constraint firstItem="KDd-Yj-9PI" firstAttribute="leading" secondItem="rhx-6h-twF" secondAttribute="leading" constant="8" id="G3O-ER-N4X"/>
+                            <constraint firstItem="nHT-yC-b0Z" firstAttribute="leading" secondItem="rhx-6h-twF" secondAttribute="leading" constant="8" id="GjN-4x-2Ma"/>
+                            <constraint firstItem="KDd-Yj-9PI" firstAttribute="top" secondItem="nHT-yC-b0Z" secondAttribute="bottom" constant="8" id="MYZ-Et-vSQ"/>
+                            <constraint firstItem="X8B-YQ-uhs" firstAttribute="bottom" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.75" id="TMC-Yp-7dZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KDd-Yj-9PI" secondAttribute="trailing" constant="8" id="VtB-sl-LLY"/>
+                            <constraint firstItem="CgL-oW-KAS" firstAttribute="centerX" secondItem="rhx-6h-twF" secondAttribute="centerX" id="WUM-XB-1pg"/>
+                            <constraint firstAttribute="trailing" secondItem="nHT-yC-b0Z" secondAttribute="trailing" constant="8" id="Yl9-va-vsl"/>
+                            <constraint firstItem="pd4-59-wb3" firstAttribute="centerX" secondItem="rhx-6h-twF" secondAttribute="centerX" id="bAM-ay-gW9"/>
+                            <constraint firstItem="Adq-dC-eQ4" firstAttribute="centerX" secondItem="rhx-6h-twF" secondAttribute="centerX" id="bBx-iT-Alt"/>
+                            <constraint firstItem="X8B-YQ-uhs" firstAttribute="width" secondItem="rhx-6h-twF" secondAttribute="width" multiplier="0.95" id="gY8-1x-BXA"/>
+                            <constraint firstItem="pd4-59-wb3" firstAttribute="bottom" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.833" id="wQm-JX-Vk7"/>
+                            <constraint firstItem="CgL-oW-KAS" firstAttribute="bottom" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.45" id="xXZ-Ia-scy"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Tg7-Zw-U7G"/>
+                        <barButtonItem title="Logout" id="0AC-fY-aZY">
+                            <connections>
+                                <action selector="logoutUser:" destination="x12-kw-PVf" id="3Eb-PH-b5C"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <connections>
+                        <outlet property="email" destination="nHT-yC-b0Z" id="wWd-qF-2wx"/>
+                        <outlet property="logout" destination="0AC-fY-aZY" id="ZgL-jo-OJt"/>
+                        <outlet property="password" destination="KDd-Yj-9PI" id="Klk-6g-8oH"/>
+                        <outlet property="status" destination="X8B-YQ-uhs" id="OkD-7I-I51"/>
+                        <outlet property="userInfo" destination="pd4-59-wb3" id="OYi-eZ-UHD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jq-81-TaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="106"/>
+        </scene>
+        <!--User Info-->
+        <scene sceneID="2Du-dZ-i2R">
+            <objects>
+                <viewController title="User Info" id="Van-4x-txp" userLabel="User Info" customClass="UserInfoViewController" customModule="Auth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqk-I4-VsA"/>
+                        <viewControllerLayoutGuide type="bottom" id="z65-9Y-hFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0nL-Gh-EaR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUa-yE-xpN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fUa-yE-xpN" firstAttribute="centerX" secondItem="0nL-Gh-EaR" secondAttribute="centerX" id="40v-UF-8VF"/>
+                            <constraint firstItem="fUa-yE-xpN" firstAttribute="width" secondItem="0nL-Gh-EaR" secondAttribute="width" id="CUD-ss-qLJ"/>
+                            <constraint firstItem="fUa-yE-xpN" firstAttribute="height" secondItem="0nL-Gh-EaR" secondAttribute="height" id="H2b-Hm-Jdw"/>
+                            <constraint firstItem="fUa-yE-xpN" firstAttribute="centerY" secondItem="0nL-Gh-EaR" secondAttribute="centerY" id="yac-s1-Vmg"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="LyO-4d-FXP"/>
+                        <barButtonItem title="Logout" id="9RM-eA-6qN">
+                            <connections>
+                                <action selector="logout:" destination="Van-4x-txp" id="xI4-rt-akR"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <connections>
+                        <outlet property="userInfo" destination="fUa-yE-xpN" id="jkD-pA-KyG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgL-OS-rE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2405.5999999999999" y="106.59670164917542"/>
+        </scene>
+        <!--Launch Controller-->
+        <scene sceneID="dTK-yB-3P9">
+            <objects>
+                <viewController id="3tv-xU-GBJ" userLabel="Launch Controller" customClass="AuthLaunchViewController" customModule="Auth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v2b-bY-wpT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cra-wV-nRu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OMS-B6-8O5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 SessionM. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-94-iJ5">
+                                <rect key="frame" x="20" y="626" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sessionM" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-eg-m3H">
+                                <rect key="frame" x="16" y="120" width="343" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Zp8-IS-YcD"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="42z-Kk-Pmy">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gkl-eg-m3H" secondAttribute="trailing" id="2Wc-Lz-rYS"/>
+                            <constraint firstAttribute="centerX" secondItem="c8c-94-iJ5" secondAttribute="centerX" id="4uN-8L-drm"/>
+                            <constraint firstAttribute="bottom" secondItem="c8c-94-iJ5" secondAttribute="bottom" constant="20" id="D8P-eq-Wuf"/>
+                            <constraint firstItem="gkl-eg-m3H" firstAttribute="top" secondItem="v2b-bY-wpT" secondAttribute="bottom" constant="100" id="Oaf-eJ-Lpu"/>
+                            <constraint firstItem="42z-Kk-Pmy" firstAttribute="centerY" secondItem="OMS-B6-8O5" secondAttribute="centerY" id="RhK-gA-shF"/>
+                            <constraint firstItem="42z-Kk-Pmy" firstAttribute="centerX" secondItem="OMS-B6-8O5" secondAttribute="centerX" id="i8u-jr-DtJ"/>
+                            <constraint firstItem="gkl-eg-m3H" firstAttribute="leading" secondItem="OMS-B6-8O5" secondAttribute="leadingMargin" id="q90-11-2Bb"/>
+                            <constraint firstItem="c8c-94-iJ5" firstAttribute="leading" secondItem="OMS-B6-8O5" secondAttribute="leading" constant="20" symbolic="YES" id="uY5-EA-xHU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="WhR-dB-iH6" kind="show" identifier="Main" id="meu-W2-Gh6">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5N-rA-Qhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1199" y="106"/>
+        </scene>
+        <!--Auth Navigation-->
+        <scene sceneID="ePI-1r-dRZ">
+            <objects>
+                <navigationController toolbarHidden="NO" id="WhR-dB-iH6" userLabel="Auth Navigation" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MBY-dP-oKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QY3-G2-9fZ">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="f3q-03-sLq" kind="relationship" relationship="rootViewController" id="eTG-z5-KcO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2z3-hn-ed8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sessionM" width="412" height="136"/>
+    </resources>
+</document>

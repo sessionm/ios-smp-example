@@ -1,15 +1,15 @@
 PODS:
   - CCHMapClusterController (1.7.0)
-  - SessionMFramework (2.1.5)
+  - SessionMFramework (2.2.0)
 
 DEPENDENCIES:
   - CCHMapClusterController (~> 1.7.0)
-  - SessionMFramework (~> 2.1.5)
+  - SessionMFramework (~> 2.2.0)
 
 SPEC CHECKSUMS:
   CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
-  SessionMFramework: 7402cf74b3887b60df022443959c9bf20e462058
+  SessionMFramework: de4dc859747c723db7ed32b66d20484c6e78e1c1
 
-PODFILE CHECKSUM: be6b3af7ea2829ed497d43077f5dfb6775c3506d
+PODFILE CHECKSUM: e4a3e19742d8eb9f1969d40184b58b4a8460d482
 
 COCOAPODS: 1.2.0

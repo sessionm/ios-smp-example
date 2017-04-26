@@ -51,5 +51,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>SessionMAPIKey</key>
+    <string>41a44470ac984b11d8452530b0cd466ba1656280</string>
+    <key>SessionMServerURL</key>
+    <string>https://api.tour-sessionm.com</string>
 </dict>
 </plist>

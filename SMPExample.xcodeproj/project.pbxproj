@@ -115,7 +115,19 @@
 		2F59BB651E5F58820083DF63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		2F74F34E1E4CF30F00358870 /* GeofenceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */; };
 		2FABD2791E369FCC00B1ADDF /* GeofenceLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */; };
+		2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */; };
+		2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */; };
+		2FF4F2681EAE4EFA00CEB7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
+		2FF4F2691EAE4F0000CEB7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
+		2FF4F26A1EAE4F0600CEB7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB291E5F584D0083DF63 /* LaunchScreen.storyboard */; };
+		2FF4F26B1EAE4F0900CEB7E5 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
+		2FF4F26C1EAE4F0D00CEB7E5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
+		2FF4F26D1EAE4F1000CEB7E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
+		2FF4F26E1EAE4F1300CEB7E5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
+		2FF4F2701EAE4FE400CEB7E5 /* AuthLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F26F1EAE4FE400CEB7E5 /* AuthLaunchViewController.swift */; };
+		2FF4F2721EAE69D800CEB7E5 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */; };
 		378F81D1B0E1F7BA0F537689 /* Pods_Inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446BD8DF29C60C3B7DCD92AE /* Pods_Inbox.framework */; };
+		3E4DCC5313862A5817762E40 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA23F9153828D48102ADE501 /* Pods_Auth.framework */; };
 		53A665FFB2645AA6B7F4F3EB /* Pods_Geofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6317A97C23658DBD5494696 /* Pods_Geofence.framework */; };
 		5E35799642EA9630F9DAB528 /* Pods_Receipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B879F34DA2DD5A272906D /* Pods_Receipts.framework */; };
 		5EE0D2728E90E29413060439 /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2881DF1BF9B531FDAF7812 /* Pods_Places.framework */; };
@@ -297,6 +309,12 @@
 		2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceAnnotation.swift; sourceTree = "<group>"; };
 		2FA4AA58BFAA777EAAB4ED9D /* Pods_Campaigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campaigns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceLaunchViewController.swift; sourceTree = "<group>"; };
+		2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		2FF4F2561EAE4E5600CEB7E5 /* Auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF4F25D1EAE4E5600CEB7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
+		2FF4F2641EAE4E5600CEB7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF4F26F1EAE4FE400CEB7E5 /* AuthLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLaunchViewController.swift; sourceTree = "<group>"; };
+		2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2FF981341E4E58DB004A3171 /* Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Push.entitlements; sourceTree = "<group>"; };
 		3A5DEDCB1E833C6DB7DAAFA6 /* Pods-Referrals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Referrals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Referrals/Pods-Referrals.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2881DF1BF9B531FDAF7812 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +323,7 @@
 		4BC66E7A27BD0EBF818076DD /* Pods-LoyaltyCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards.debug.xcconfig"; sourceTree = "<group>"; };
 		527AC1090D1503A446A21F49 /* Pods-Receipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Receipts.release.xcconfig"; path = "Pods/Target Support Files/Pods-Receipts/Pods-Receipts.release.xcconfig"; sourceTree = "<group>"; };
 		597BDDCAB0C0F0B736B22740 /* Pods-Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rewards.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rewards/Pods-Rewards.release.xcconfig"; sourceTree = "<group>"; };
+		5CC7C4B1A031CE4CF0F06A74 /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC15A0CA4DB493790FED771 /* Pods_LoyaltyCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoyaltyCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE4B638139CE5DDF20492B7 /* Pods_Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		634F44652C6A04D6811CCC5D /* Pods-Campaigns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campaigns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns.debug.xcconfig"; sourceTree = "<group>"; };
@@ -315,7 +334,7 @@
 		6B70443F1E23F12300018C7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsTableViewController.swift; path = Campaigns/CampaignsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6B8C46941E24272E003FE4AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Campaigns/Info.plist; sourceTree = SOURCE_ROOT; };
-		6B8C46961E24275A003FE4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "SMPExample/Assets.xcassets"; sourceTree = "<group>"; };
+		6B8C46961E24275A003FE4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SMPExample/Assets.xcassets; sourceTree = "<group>"; };
 		6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		6BC0FECF1E24103D009C8D07 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,6 +347,8 @@
 		AE95583DC71E49EF5FB55DA7 /* Pods-Transactions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transactions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transactions/Pods-Transactions.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CA8701B0A219B8239AFF8C /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push/Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
 		B40185681B39E2C50A1CA99E /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
+		CA0F906DB7B67E9A80EE2C99 /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
+		CA23F9153828D48102ADE501 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8451CF69DC6EBAA2F8AD770 /* Pods-LoyaltyCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards.release.xcconfig"; sourceTree = "<group>"; };
 		E589E39CDB98A47C58E550AF /* Pods-Campaigns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campaigns.release.xcconfig"; path = "Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns.release.xcconfig"; sourceTree = "<group>"; };
 		E6317A97C23658DBD5494696 /* Pods_Geofence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geofence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +429,14 @@
 			files = (
 				2F40EB291E36864600D6D8DF /* MapKit.framework in Frameworks */,
 				53A665FFB2645AA6B7F4F3EB /* Pods_Geofence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FF4F2531EAE4E5600CEB7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4DCC5313862A5817762E40 /* Pods_Auth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,8 +577,21 @@
 				F32AEE8F837552F7DBC2EF82 /* Pods_Transactions.framework */,
 				446BD8DF29C60C3B7DCD92AE /* Pods_Inbox.framework */,
 				5FE4B638139CE5DDF20492B7 /* Pods_Push.framework */,
+				CA23F9153828D48102ADE501 /* Pods_Auth.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FF4F2571EAE4E5600CEB7E5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2FF4F26F1EAE4FE400CEB7E5 /* AuthLaunchViewController.swift */,
+				2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */,
+				2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */,
+				2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */,
+				2FF4F2641EAE4E5600CEB7E5 /* Info.plist */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		6B7043FD1E23ED8C00018C7B = {
@@ -563,6 +605,7 @@
 				2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */,
 				2F59BB2D1E5F584D0083DF63 /* Util.swift */,
 				6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */,
+				2FF4F2571EAE4E5600CEB7E5 /* Auth */,
 				6B7044201E23EDF800018C7B /* Campaigns */,
 				2F3E41D61E2828090061C980 /* Content */,
 				2F40EB0A1E36849600D6D8DF /* Geofence */,
@@ -594,6 +637,7 @@
 				2F3C7C991E2D2F9000CCAA78 /* Inbox.app */,
 				2F40EB091E36849600D6D8DF /* Geofence.app */,
 				2F3BF5331E4E514100BDC071 /* Push.app */,
+				2FF4F2561EAE4E5600CEB7E5 /* Auth.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -643,6 +687,8 @@
 				2ED220F6DE2EFC5276DA2D2A /* Pods-Inbox.release.xcconfig */,
 				B0CA8701B0A219B8239AFF8C /* Pods-Push.debug.xcconfig */,
 				1D416368EC821D1BE29325FB /* Pods-Push.release.xcconfig */,
+				5CC7C4B1A031CE4CF0F06A74 /* Pods-Auth.debug.xcconfig */,
+				CA0F906DB7B67E9A80EE2C99 /* Pods-Auth.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -841,6 +887,26 @@
 			productReference = 2F40EB091E36849600D6D8DF /* Geofence.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2FF4F2551EAE4E5600CEB7E5 /* Auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF4F2671EAE4E5600CEB7E5 /* Build configuration list for PBXNativeTarget "Auth" */;
+			buildPhases = (
+				9467B87424F3680E4A7633F1 /* [CP] Check Pods Manifest.lock */,
+				2FF4F2521EAE4E5600CEB7E5 /* Sources */,
+				2FF4F2531EAE4E5600CEB7E5 /* Frameworks */,
+				2FF4F2541EAE4E5600CEB7E5 /* Resources */,
+				155DB1D9704A6DBD79E9377B /* [CP] Embed Pods Frameworks */,
+				A9DFFC043974F7E5579A7DD5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auth;
+			productName = Auth;
+			productReference = 2FF4F2561EAE4E5600CEB7E5 /* Auth.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6B70441E1E23EDF800018C7B /* Campaigns */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B70442E1E23EDF800018C7B /* Build configuration list for PBXNativeTarget "Campaigns" */;
@@ -889,7 +955,7 @@
 		6B7043FE1E23ED8C00018C7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = SessionM;
 				TargetAttributes = {
@@ -944,6 +1010,10 @@
 							};
 						};
 					};
+					2FF4F2551EAE4E5600CEB7E5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					6B70441E1E23EDF800018C7B = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0810;
@@ -966,6 +1036,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2FF4F2551EAE4E5600CEB7E5 /* Auth */,
 				6B70441E1E23EDF800018C7B /* Campaigns */,
 				2F3E41D41E2828090061C980 /* Content */,
 				2F40EB081E36849600D6D8DF /* Geofence */,
@@ -1082,6 +1153,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FF4F2541EAE4E5600CEB7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF4F26A1EAE4F0600CEB7E5 /* LaunchScreen.storyboard in Resources */,
+				2FF4F2681EAE4EFA00CEB7E5 /* Assets.xcassets in Resources */,
+				2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */,
+				2FF4F26B1EAE4F0900CEB7E5 /* Login.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B70441D1E23EDF800018C7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1135,6 +1217,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		155DB1D9704A6DBD79E9377B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		19EFF2ED55652402FAFD223A /* [CP] Check Pods Manifest.lock */ = {
@@ -1450,6 +1547,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9467B87424F3680E4A7633F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DFFC043974F7E5579A7DD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AECECDC6FA2DF43D7050D1D2 /* [CP] Check Pods Manifest.lock */ = {
@@ -1769,6 +1896,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FF4F2521EAE4E5600CEB7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF4F26D1EAE4F1000CEB7E5 /* LoginViewController.swift in Sources */,
+				2FF4F2721EAE69D800CEB7E5 /* EmailLoginViewController.swift in Sources */,
+				2FF4F2701EAE4FE400CEB7E5 /* AuthLaunchViewController.swift in Sources */,
+				2FF4F2691EAE4F0000CEB7E5 /* AppDelegate.swift in Sources */,
+				2FF4F26E1EAE4F1300CEB7E5 /* Util.swift in Sources */,
+				2FF4F26C1EAE4F0D00CEB7E5 /* LaunchViewController.swift in Sources */,
+				2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B70441B1E23EDF800018C7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1866,6 +2007,14 @@
 				2F40EB121E36849600D6D8DF /* Base */,
 			);
 			name = Geofence.storyboard;
+			sourceTree = "<group>";
+		};
+		2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FF4F25D1EAE4E5600CEB7E5 /* Base */,
+			);
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2246,6 +2395,39 @@
 			};
 			name = Release;
 		};
+		2FF4F2651EAE4E5600CEB7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC7C4B1A031CE4CF0F06A74 /* Pods-Auth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = Auth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2FF4F2661EAE4E5600CEB7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0F906DB7B67E9A80EE2C99 /* Pods-Auth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = Auth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		6B7044161E23ED8C00018C7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2504,6 +2686,15 @@
 			buildConfigurations = (
 				2F40EB1A1E36849600D6D8DF /* Debug */,
 				2F40EB1B1E36849600D6D8DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF4F2671EAE4E5600CEB7E5 /* Build configuration list for PBXNativeTarget "Auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF4F2651EAE4E5600CEB7E5 /* Debug */,
+				2FF4F2661EAE4E5600CEB7E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

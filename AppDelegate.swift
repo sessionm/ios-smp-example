@@ -12,8 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    private let APP_ID = "41a44470ac984b11d8452530b0cd466ba1656280"
-    private let SERVER_URL = "https://api.tour-sessionm.com"
     private let sessionM = SessionM.sharedInstance()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -28,19 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
-        if (APP_ID.characters.count <= 0) {
-            print("Enter the APP_ID before calling SMStart()")
-            return false
-        }
-
-        if (SERVER_URL.characters.count <= 0) {
-            print("Enter the SERVER_URL before calling SMStart()")
-            return false
-        }
-
-        SessionM.setCustomServiceRegionWithServerURL(SERVER_URL)
+        let appID = Bundle.main.infoDictionary?["SessionMAPIKey"] as! String
+        let serverURL = Bundle.main.infoDictionary?["SessionMServerURL"] as! String
+        SessionM.setCustomServiceRegionWithServerURL(serverURL)
         sessionM.logLevel = .debug
-        sessionM.startSession(appID: APP_ID)
+        sessionM.startSession(appID: appID)
         
         return true
     }

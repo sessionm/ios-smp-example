@@ -37,7 +37,7 @@ The following steps should be completed in Xcode:
 1. Change the Push sample app's bundle ID to match your app's bundle ID.
 2. Update the Push sample app's signing requirements to use your Apple Developer credentials.
 3. Ensure the Push Notifications entitlement is added to the `Push.entitlements` file.
-4. Edit the `APP_ID` and `SERVER_URL` constants in `AppDelegate.swift` to match the API key given to your property and your environment's server URL.
+4. Edit the `SessionMAPIKey` and `SessionMServerURL` constants in `Info.plist` to match the API key given to your property and your environment's server URL.
 5. Edit the names of the behaviors that are logged in the `logActionForType` method in `PushViewController.swift` to match your behavior names.
 6. Open the app and disable the "Test With Local Notifications" switch.
 7. Click on one of the test buttons.
