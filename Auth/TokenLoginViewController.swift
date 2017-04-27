@@ -1,5 +1,5 @@
 //
-//  EmailLoginViewController.swift
+//  TokenLoginViewController.swift
 //  SMPExample
 //
 //  Copyright © 2017 SessionM. All rights reserved.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class EmailLoginViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet var email: UITextField!
-    @IBOutlet var password: UITextField!
+class TokenLoginViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var token: UITextField!
+    @IBOutlet var provider: UITextField!
     @IBOutlet var logout: UIBarButtonItem!
     @IBOutlet var status: UILabel!
     @IBOutlet var userInfo: UIButton!
@@ -71,18 +71,21 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
 
     @IBAction private func authenticate(_ sender: UIButton) {
-        guard let emailText = email.text, !emailText.isEmpty else {
-            Util.failed(self, message: "Email is required")
+        guard let tokenText = token.text, !tokenText.isEmpty else {
+            Util.failed(self, message: "Token is required")
             return
         }
-        guard let passwordText = password.text, !passwordText.isEmpty else {
-            Util.failed(self, message: "Password is required")
-            return
+
+        var providerText: String
+        if let text = provider.text, !text.isEmpty {
+            providerText = text
+        } else {
+            providerText = "sessionm_oauth"
         }
 
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.authenticateUser(withEmail: emailText, password: passwordText) { (state: SMAuthState, error: SMError?) in
+            self.identityManager.authenticate(withToken: tokenText, provider: providerText) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -92,20 +95,10 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    @IBAction private func createUser(_ sender: UIButton) {
-        guard let emailText = email.text, !emailText.isEmpty else {
-            Util.failed(self, message: "Email is required")
-            return
-        }
-        guard let passwordText = password.text, !passwordText.isEmpty else {
-            Util.failed(self, message: "Password is required")
-            return
-        }
-
-        let userData = SMPUserCreate(email: emailText, password: passwordText)
-        let alert = UIAlertController(title: "Creating user...", message: nil, preferredStyle: .alert)
+    @IBAction private func authenticateWithSampleUser(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.createUser(withData: userData) { (state: SMAuthState, error: SMError?) in
+            self.identityManager.authenticate(withToken: "v2--Sd2T8UBqlCGQovVPnsUs4eqwFe0-1i9JV4nq__RWmsA=--dWM8r8RggUJCToOaiiT6NXmiOipkovvD9HueM_jZECStExtGFkZzVmCUhkdDJe5NQw==") { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -130,10 +123,10 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        if textField.isEqual(email) {
-            password.becomeFirstResponder()
+        if textField.isEqual(token) {
+            provider.becomeFirstResponder()
         }
-
+        
         return false
     }
 }

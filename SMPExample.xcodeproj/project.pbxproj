@@ -113,6 +113,7 @@
 		2F59BB631E5F58810083DF63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		2F59BB641E5F58820083DF63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		2F59BB651E5F58820083DF63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
+		2F633F931EB13B7300CB1832 /* TokenLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */; };
 		2F74F34E1E4CF30F00358870 /* GeofenceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */; };
 		2FABD2791E369FCC00B1ADDF /* GeofenceLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */; };
 		2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */; };
@@ -306,6 +307,7 @@
 		2F59BB2B1E5F584D0083DF63 /* Login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F59BB2D1E5F584D0083DF63 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenLoginViewController.swift; sourceTree = "<group>"; };
 		2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceAnnotation.swift; sourceTree = "<group>"; };
 		2FA4AA58BFAA777EAAB4ED9D /* Pods_Campaigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campaigns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceLaunchViewController.swift; sourceTree = "<group>"; };
@@ -586,6 +588,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF4F26F1EAE4FE400CEB7E5 /* AuthLaunchViewController.swift */,
+				2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */,
 				2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */,
 				2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */,
 				2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */,
@@ -1902,6 +1905,7 @@
 			files = (
 				2FF4F26D1EAE4F1000CEB7E5 /* LoginViewController.swift in Sources */,
 				2FF4F2721EAE69D800CEB7E5 /* EmailLoginViewController.swift in Sources */,
+				2F633F931EB13B7300CB1832 /* TokenLoginViewController.swift in Sources */,
 				2FF4F2701EAE4FE400CEB7E5 /* AuthLaunchViewController.swift in Sources */,
 				2FF4F2691EAE4F0000CEB7E5 /* AppDelegate.swift in Sources */,
 				2FF4F26E1EAE4F1300CEB7E5 /* Util.swift in Sources */,

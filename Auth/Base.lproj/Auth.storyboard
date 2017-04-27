@@ -49,6 +49,33 @@
                                             <segue destination="x12-kw-PVf" kind="show" id="6f4-hH-TKu"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="VJf-Jn-pDE" detailTextLabel="Emd-TJ-Ov3" style="IBUITableViewCellStyleSubtitle" id="lWp-FK-pOt">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lWp-FK-pOt" id="f6B-bD-Mlv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SessionM Token Authentication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VJf-Jn-pDE">
+                                                    <rect key="frame" x="15" y="5" width="240" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use an OAuth token to authenticate with SMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Emd-TJ-Ov3">
+                                                    <rect key="frame" x="15" y="25.5" width="258" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ao7-vQ-PlC" kind="show" id="dHJ-W3-Tz3"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -279,8 +306,109 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
             </objects>
             <point key="canvasLocation" x="-354" y="107"/>
         </scene>
+        <!--Token Authentication-->
+        <scene sceneID="1z6-fn-Cd0">
+            <objects>
+                <viewController title="Token Authentication" id="ao7-vQ-PlC" customClass="TokenLoginViewController" customModule="Auth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="el7-ph-ZFV"/>
+                        <viewControllerLayoutGuide type="bottom" id="6p2-2s-hhq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginController" id="YUF-0R-u4h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CYP-ww-Dpo">
+                                <rect key="frame" x="8" y="126" width="359" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ao7-vQ-PlC" id="6aT-Sd-Dd1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Provider: sessionm_oauth" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-EB-006">
+                                <rect key="frame" x="8" y="164" width="359" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Email" identifier="bob"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ao7-vQ-PlC" id="LaN-q5-6j6"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-QM-fcW" userLabel="Authenticate">
+                                <rect key="frame" x="143.5" y="250.5" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticate:" destination="ao7-vQ-PlC" eventType="touchUpInside" id="RwK-4n-dvZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HzE-gh-Zkh" userLabel="Status">
+                                <rect key="frame" x="9.5" y="426.5" width="356" height="41"/>
+                                <string key="text">Email:
+ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-Wy-IPH">
+                                <rect key="frame" x="156" y="489" width="63" height="30"/>
+                                <state key="normal" title="User Info"/>
+                                <connections>
+                                    <segue destination="Van-4x-txp" kind="show" id="COA-Yr-1F2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ut-Ki-xUY">
+                                <rect key="frame" x="81" y="288" width="212" height="30"/>
+                                <state key="normal" title="Authenticate with Sample User"/>
+                                <connections>
+                                    <action selector="authenticateWithSampleUser:" destination="ao7-vQ-PlC" eventType="touchUpInside" id="e1G-w2-riN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gSI-EB-006" secondAttribute="trailing" constant="8" id="DDc-7g-igg"/>
+                            <constraint firstItem="CYP-ww-Dpo" firstAttribute="bottom" secondItem="6p2-2s-hhq" secondAttribute="top" multiplier="0.25" id="DjV-Gr-jt1"/>
+                            <constraint firstItem="HzE-gh-Zkh" firstAttribute="centerX" secondItem="YUF-0R-u4h" secondAttribute="centerX" id="Eae-CD-erf"/>
+                            <constraint firstItem="Qhe-QM-fcW" firstAttribute="centerX" secondItem="YUF-0R-u4h" secondAttribute="centerX" id="F4G-Jh-eXU"/>
+                            <constraint firstItem="CYP-ww-Dpo" firstAttribute="leading" secondItem="YUF-0R-u4h" secondAttribute="leading" constant="8" id="NVL-k4-6GG"/>
+                            <constraint firstItem="gSI-EB-006" firstAttribute="leading" secondItem="YUF-0R-u4h" secondAttribute="leading" constant="8" id="SKr-ct-xr3"/>
+                            <constraint firstItem="0ut-Ki-xUY" firstAttribute="top" secondItem="Qhe-QM-fcW" secondAttribute="bottom" constant="8" id="Tbp-Kc-LH5"/>
+                            <constraint firstItem="9TS-Wy-IPH" firstAttribute="bottom" secondItem="6p2-2s-hhq" secondAttribute="top" multiplier="0.833" id="WlF-Ph-cWE"/>
+                            <constraint firstAttribute="trailing" secondItem="CYP-ww-Dpo" secondAttribute="trailing" constant="8" id="XIR-k8-AcZ"/>
+                            <constraint firstItem="0ut-Ki-xUY" firstAttribute="centerX" secondItem="YUF-0R-u4h" secondAttribute="centerX" id="cod-S2-z4U"/>
+                            <constraint firstItem="HzE-gh-Zkh" firstAttribute="bottom" secondItem="6p2-2s-hhq" secondAttribute="top" multiplier="0.75" id="fDY-Nw-0hl"/>
+                            <constraint firstItem="Qhe-QM-fcW" firstAttribute="bottom" secondItem="6p2-2s-hhq" secondAttribute="top" multiplier="0.45" id="gzb-N6-6DG"/>
+                            <constraint firstItem="HzE-gh-Zkh" firstAttribute="width" secondItem="YUF-0R-u4h" secondAttribute="width" multiplier="0.95" id="m6S-wF-AZu"/>
+                            <constraint firstItem="9TS-Wy-IPH" firstAttribute="centerX" secondItem="YUF-0R-u4h" secondAttribute="centerX" id="nhh-7e-Kaa"/>
+                            <constraint firstItem="gSI-EB-006" firstAttribute="top" secondItem="CYP-ww-Dpo" secondAttribute="bottom" constant="8" id="pE2-e0-FrV"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="lVx-tq-bN8"/>
+                        <barButtonItem title="Logout" id="Nj1-Tn-QqE">
+                            <connections>
+                                <action selector="logoutUser:" destination="ao7-vQ-PlC" id="Uw4-9l-fSV"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <connections>
+                        <outlet property="logout" destination="Nj1-Tn-QqE" id="N2H-Ly-xb0"/>
+                        <outlet property="provider" destination="gSI-EB-006" id="aYt-pL-e1m"/>
+                        <outlet property="status" destination="HzE-gh-Zkh" id="3g1-ch-ZSM"/>
+                        <outlet property="token" destination="CYP-ww-Dpo" id="pVg-LN-9cb"/>
+                        <outlet property="userInfo" destination="9TS-Wy-IPH" id="29f-jj-AQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Voe-so-pFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="857"/>
+        </scene>
     </scenes>
     <resources>
         <image name="sessionM" width="412" height="136"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="COA-Yr-1F2"/>
+    </inferredMetricsTieBreakers>
 </document>

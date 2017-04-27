@@ -22,6 +22,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SessionMAPIKey</key>
+	<string>c4d9427e894e3b0ddf67bd08280b11e051f66c82</string>
+	<key>SessionMServerURL</key>
+	<string>https://api.tour-sessionm.com</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -34,9 +38,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>SessionMAPIKey</key>
-	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
-	<key>SessionMServerURL</key>
-	<string>https://api.tour-sessionm.com</string>
 </dict>
 </plist>
