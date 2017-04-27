@@ -4,96 +4,75 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AppAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CCHMapClusterController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>Pods-Auth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>Pods-Campaigns.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>14</integer>
 		</dict>
 		<key>Pods-Content.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>15</integer>
 		</dict>
 		<key>Pods-Geofence.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>16</integer>
 		</dict>
 		<key>Pods-Inbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>17</integer>
 		</dict>
 		<key>Pods-LoyaltyCards.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>18</integer>
 		</dict>
 		<key>Pods-Places.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>19</integer>
 		</dict>
 		<key>Pods-Push.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>20</integer>
 		</dict>
 		<key>Pods-Receipts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>21</integer>
 		</dict>
 		<key>Pods-Referrals.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>22</integer>
 		</dict>
 		<key>Pods-Rewards.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>23</integer>
 		</dict>
 		<key>Pods-Transactions.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>24</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -113,17 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A2A74D0342F47DBE70238BC304AA0BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4C306728EC9FB4009AAAE552EEF9A31C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>5608902A0D99AF1D02E3FA098794D7B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>842F72DCDC6161BB37D6B901E9301ED8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -154,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>F7F53A5D446E17781E2EF3A750B454F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F81D232BBBAE592076A7DEF23E3CB4E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

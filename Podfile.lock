@@ -1,15 +1,18 @@
 PODS:
+  - AppAuth (0.9.0)
   - CCHMapClusterController (1.7.0)
   - SessionMFramework (2.2.0)
 
 DEPENDENCIES:
+  - AppAuth (~> 0.9.0)
   - CCHMapClusterController (~> 1.7.0)
   - SessionMFramework (~> 2.2.0)
 
 SPEC CHECKSUMS:
+  AppAuth: 4fabb6b8068a2e61b914b41071bdbd95da2c9553
   CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
   SessionMFramework: de4dc859747c723db7ed32b66d20484c6e78e1c1
 
-PODFILE CHECKSUM: e4a3e19742d8eb9f1969d40184b58b4a8460d482
+PODFILE CHECKSUM: d317d248f09158f10d22acf741265574fe2a32cb
 
 COCOAPODS: 1.2.0

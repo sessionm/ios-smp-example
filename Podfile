@@ -7,6 +7,7 @@ end
 
 target 'Auth' do
   shared_pods
+  pod 'AppAuth', '~> 0.9.0'
 end
 
 target 'Campaigns' do

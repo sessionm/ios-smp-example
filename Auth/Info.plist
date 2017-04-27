@@ -18,14 +18,45 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.sessionm.enterprise.auth</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>SessionMAPIKey</key>
-	<string>c4d9427e894e3b0ddf67bd08280b11e051f66c82</string>
+	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
 	<key>SessionMServerURL</key>
 	<string>https://api.tour-sessionm.com</string>
+	<key>SessionMOAuthClientID</key>
+	<string>1913e9563da1aba37be6fd334b0ad626c6d8d0730d40ec077675bf2f57184eda</string>
+	<key>SessionMOAuthAuthorizationEndpoint</key>
+	<string>https://login-demo.stg-sessionm.com/oauth/authorize</string>
+	<key>SessionMOAuthTokenEndpoint</key>
+	<string>https://login-demo.stg-sessionm.com/oauth/token</string>
+	<key>SessionMOAuthRedirectURI</key>
+	<string>com.sessionm.enterprise.auth:/oauth2redirect</string>
+	<key>LSApplicationCategoryType</key>
+	<array>
+		<dict>
+			<key>NSMessage</key>
+			<string></string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+			</dict>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

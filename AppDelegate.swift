@@ -5,12 +5,14 @@
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
+import AppAuth
 import CoreLocation
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var currentAuthFlow: OIDAuthorizationFlowSession?
 
     private let sessionM = SessionM.sharedInstance()
 
@@ -48,6 +50,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         let payload = userInfo as! [String : NSObject]
         sessionM.handleRemoteNotification(payload: payload)
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let flow = currentAuthFlow, flow.resumeAuthorizationFlow(with: url) {
+            currentAuthFlow = nil
+            return true
+        }
+
+        return false
+    }
+
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return self.application(application, open: url, options: [:])
     }
 }
 
