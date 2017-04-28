@@ -593,9 +593,9 @@
 				2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */,
 				2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */,
 				2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */,
+				2F628C5E1EB244AA008D0F87 /* WebLoginViewController.swift */,
 				2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */,
 				2FF4F2641EAE4E5600CEB7E5 /* Info.plist */,
-				2F628C5E1EB244AA008D0F87 /* WebLoginViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";

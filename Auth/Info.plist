@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.sessionm.enterprise.auth</string>
+				<string>smpauth</string>
 			</array>
 		</dict>
 	</array>
@@ -44,7 +44,7 @@
 	<key>SessionMOAuthTokenEndpoint</key>
 	<string>https://login-demo.stg-sessionm.com/oauth/token</string>
 	<key>SessionMOAuthRedirectURI</key>
-	<string>com.sessionm.enterprise.auth:/oauth2redirect</string>
+	<string>smpauth://com.sessionm.smp_auth:/oauth2redirect</string>
 	<key>LSApplicationCategoryType</key>
 	<array>
 		<dict>
