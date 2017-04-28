@@ -53,7 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        if let flow = currentAuthFlow, flow.resumeAuthorizationFlow(with: url) {
+        var newURL = url
+        if url.absoluteString.contains("oauth2redirect") {
+            newURL = URL(string: url.absoluteString.replacingOccurrences(of: "#", with: "?"))!
+        }
+
+        if let flow = currentAuthFlow, flow.resumeAuthorizationFlow(with: newURL) {
             currentAuthFlow = nil
             return true
         }

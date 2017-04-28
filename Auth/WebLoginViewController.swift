@@ -114,10 +114,10 @@ class WebLoginViewController: UIViewController {
         }
 
         let configuration = OIDServiceConfiguration(authorizationEndpoint: authEndpointURL, tokenEndpoint: tokenEndpointURL)
-        let request = OIDAuthorizationRequest(configuration: configuration, clientId: rawClientID!, scopes: [OIDScopeOpenID, OIDScopeEmail, OIDScopeProfile], redirectURL: redirectURL, responseType: OIDResponseTypeCode, additionalParameters: nil)
+        let request = OIDAuthorizationRequest(configuration: configuration, clientId: rawClientID!, scopes: [OIDScopeOpenID, OIDScopeEmail, OIDScopeProfile], redirectURL: redirectURL, responseType: OIDResponseTypeToken, additionalParameters: nil)
 
         appDelegate.currentAuthFlow = OIDAuthState.authState(byPresenting: request, presenting: self, callback: { (state: OIDAuthState?, error: Error?) in
-            if let token = state?.lastTokenResponse?.accessToken {
+            if let token = state?.lastAuthorizationResponse.accessToken {
                 let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
                 self.present(alert, animated: true) {
                     self.identityManager.authenticate(withToken: token) { (state: SMAuthState, error: SMError?) in

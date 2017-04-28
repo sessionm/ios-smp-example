@@ -34,9 +34,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>SessionMAPIKey</key>
-	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
+	<string>04e54a2689ec2d96e2cd5394f377671f80166165</string>
 	<key>SessionMServerURL</key>
-	<string>https://api.tour-sessionm.com</string>
+	<string>https://api-demo.stg-sessionm.com</string>
 	<key>SessionMOAuthClientID</key>
 	<string>1913e9563da1aba37be6fd334b0ad626c6d8d0730d40ec077675bf2f57184eda</string>
 	<key>SessionMOAuthAuthorizationEndpoint</key>
