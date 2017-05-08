@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EB43108C8F10429B64E47A78F244DC3"
+               BlueprintIdentifier = "D459D0B35C375909F967D7E77EEA2E61"
                BuildableName = "Pods_Geofence.framework"
                BlueprintName = "Pods-Geofence"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0EB43108C8F10429B64E47A78F244DC3"
+            BlueprintIdentifier = "D459D0B35C375909F967D7E77EEA2E61"
             BuildableName = "Pods_Geofence.framework"
             BlueprintName = "Pods-Geofence"
             ReferencedContainer = "container:Pods.xcodeproj">
