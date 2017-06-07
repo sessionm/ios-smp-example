@@ -3,7 +3,7 @@ use_frameworks!
 
 def shared_pods
   pod 'AppAuth', '~> 0.9.0'
-  pod 'SessionMFramework', '~> 2.2.0'
+  pod 'SessionMFramework', '~> 2.2.2'
 end
 
 target 'Auth' do

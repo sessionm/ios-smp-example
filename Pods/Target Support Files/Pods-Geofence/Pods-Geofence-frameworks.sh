@@ -90,12 +90,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AppAuth/AppAuth.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.2.0/SessionMFramework.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.2.2/SessionMFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CCHMapClusterController/CCHMapClusterController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AppAuth/AppAuth.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.2.0/SessionMFramework.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.2.2/SessionMFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CCHMapClusterController/CCHMapClusterController.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
