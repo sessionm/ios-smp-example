@@ -5,14 +5,12 @@
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
-import AppAuth
 import CoreLocation
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var currentAuthFlow: OIDAuthorizationFlowSession?
 
     private let sessionM = SessionM.sharedInstance()
 
@@ -28,12 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
-        let appID = Bundle.main.infoDictionary?["SessionMAPIKey"] as! String
-        let serverURL = Bundle.main.infoDictionary?["SessionMServerURL"] as! String
-        SessionM.setCustomServiceRegionWithServerURL(serverURL)
         sessionM.logLevel = .debug
-        sessionM.startSession(appID: appID)
-        
+        sessionM.startSessionFromConfigurationFile()
+
         return true
     }
 
@@ -53,17 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        var newURL = url
-        if url.absoluteString.contains("oauth2redirect") {
-            newURL = URL(string: url.absoluteString.replacingOccurrences(of: "#", with: "?"))!
-        }
-
-        if let flow = currentAuthFlow, flow.resumeAuthorizationFlow(with: newURL) {
-            currentAuthFlow = nil
-            return true
-        }
-
-        return false
+        return SMIdentityManager.instance().handleOAuthRedirectURI(url)
     }
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

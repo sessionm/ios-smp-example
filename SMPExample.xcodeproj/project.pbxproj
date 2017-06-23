@@ -115,6 +115,18 @@
 		2F59BB651E5F58820083DF63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		2F628C5F1EB244AA008D0F87 /* WebLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F628C5E1EB244AA008D0F87 /* WebLoginViewController.swift */; };
 		2F633F931EB13B7300CB1832 /* TokenLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */; };
+		2F63E8D91EFD9C9900FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8D81EFD9C9900FE8B54 /* SMPConfig.plist */; };
+		2F63E8DB1EFDA09700FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8DA1EFDA09700FE8B54 /* SMPConfig.plist */; };
+		2F63E8DD1EFDA10B00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8DC1EFDA10B00FE8B54 /* SMPConfig.plist */; };
+		2F63E8DF1EFDA13200FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8DE1EFDA13200FE8B54 /* SMPConfig.plist */; };
+		2F63E8E11EFDA17800FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8E01EFDA17800FE8B54 /* SMPConfig.plist */; };
+		2F63E8E31EFDA1BD00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8E21EFDA1BD00FE8B54 /* SMPConfig.plist */; };
+		2F63E8E51EFDA1E600FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8E41EFDA1E600FE8B54 /* SMPConfig.plist */; };
+		2F63E8E71EFDA20A00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8E61EFDA20A00FE8B54 /* SMPConfig.plist */; };
+		2F63E8E91EFDA25400FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8E81EFDA25400FE8B54 /* SMPConfig.plist */; };
+		2F63E8EB1EFDA29100FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EA1EFDA29100FE8B54 /* SMPConfig.plist */; };
+		2F63E8ED1EFDA2BA00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EC1EFDA2BA00FE8B54 /* SMPConfig.plist */; };
+		2F63E8EF1EFDA2EE00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */; };
 		2F74F34E1E4CF30F00358870 /* GeofenceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */; };
 		2FABD2791E369FCC00B1ADDF /* GeofenceLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */; };
 		2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */; };
@@ -310,6 +322,18 @@
 		2F59BB2D1E5F584D0083DF63 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		2F628C5E1EB244AA008D0F87 /* WebLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginViewController.swift; sourceTree = "<group>"; };
 		2F633F921EB13B7300CB1832 /* TokenLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenLoginViewController.swift; sourceTree = "<group>"; };
+		2F63E8D81EFD9C9900FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8DA1EFDA09700FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8DC1EFDA10B00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8DE1EFDA13200FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8E01EFDA17800FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8E21EFDA1BD00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8E41EFDA1E600FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8E61EFDA20A00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8E81EFDA25400FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8EA1EFDA29100FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8EC1EFDA2BA00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
 		2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceAnnotation.swift; sourceTree = "<group>"; };
 		2FA4AA58BFAA777EAAB4ED9D /* Pods_Campaigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campaigns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceLaunchViewController.swift; sourceTree = "<group>"; };
@@ -472,6 +496,7 @@
 				2F3E418B1E27DA790061C980 /* PlaceOrderViewController.swift */,
 				2F14226A1E254A2E0016EADA /* Rewards.storyboard */,
 				2F1422721E254A2E0016EADA /* Info.plist */,
+				2F63E8EC1EFDA2BA00FE8B54 /* SMPConfig.plist */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -482,6 +507,7 @@
 				2F3BF5371E4E514100BDC071 /* PushViewController.swift */,
 				2F3BF5391E4E514100BDC071 /* Push.storyboard */,
 				2F3BF5411E4E514100BDC071 /* Info.plist */,
+				2F63E8E61EFDA20A00FE8B54 /* SMPConfig.plist */,
 				2FF981341E4E58DB004A3171 /* Push.entitlements */,
 			);
 			path = Push;
@@ -494,6 +520,7 @@
 				2F3C7CB61E2D461600CCAA78 /* MessageDetailViewController.swift */,
 				2F3C7C9F1E2D2F9000CCAA78 /* Inbox.storyboard */,
 				2F3C7CA71E2D2F9000CCAA78 /* Info.plist */,
+				2F63E8E01EFDA17800FE8B54 /* SMPConfig.plist */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -504,6 +531,7 @@
 				2F3E41A91E27E41B0061C980 /* PlacesTableViewController.swift */,
 				2F3E41971E27E3290061C980 /* Places.storyboard */,
 				2F3E419F1E27E3290061C980 /* Info.plist */,
+				2F63E8E41EFDA1E600FE8B54 /* SMPConfig.plist */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -515,6 +543,7 @@
 				2F3E41CF1E2803980061C980 /* ReferralDetailViewController.swift */,
 				2F3E41B81E2803110061C980 /* Referrals.storyboard */,
 				2F3E41C01E2803110061C980 /* Info.plist */,
+				2F63E8EA1EFDA29100FE8B54 /* SMPConfig.plist */,
 			);
 			path = Referrals;
 			sourceTree = "<group>";
@@ -526,6 +555,7 @@
 				2F3E41F01E282FDB0061C980 /* ContentDetailsViewController.swift */,
 				2F3E41DB1E2828090061C980 /* Content.storyboard */,
 				2F3E41E31E2828090061C980 /* Info.plist */,
+				2F63E8DC1EFDA10B00FE8B54 /* SMPConfig.plist */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -537,6 +567,7 @@
 				2F3E42171E293E530061C980 /* ReceiptImagesTableViewController.swift */,
 				2F3E42001E293D770061C980 /* Receipts.storyboard */,
 				2F3E42081E293D770061C980 /* Info.plist */,
+				2F63E8E81EFDA25400FE8B54 /* SMPConfig.plist */,
 			);
 			path = Receipts;
 			sourceTree = "<group>";
@@ -548,6 +579,7 @@
 				2F3E423C1E2963930061C980 /* CardLinkingViewController.swift */,
 				2F3E42241E29614B0061C980 /* LoyaltyCards.storyboard */,
 				2F3E422C1E29614B0061C980 /* Info.plist */,
+				2F63E8E21EFDA1BD00FE8B54 /* SMPConfig.plist */,
 			);
 			path = LoyaltyCards;
 			sourceTree = "<group>";
@@ -561,6 +593,7 @@
 				2F40EB2C1E36867B00D6D8DF /* TriggeredEventsTableViewController.swift */,
 				2F40EB111E36849600D6D8DF /* Geofence.storyboard */,
 				2F40EB191E36849600D6D8DF /* Info.plist */,
+				2F63E8DE1EFDA13200FE8B54 /* SMPConfig.plist */,
 				2F316C591E3FF413005884E6 /* sessionm.gpx */,
 			);
 			path = Geofence;
@@ -596,6 +629,7 @@
 				2F628C5E1EB244AA008D0F87 /* WebLoginViewController.swift */,
 				2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */,
 				2FF4F2641EAE4E5600CEB7E5 /* Info.plist */,
+				2F63E8D81EFD9C9900FE8B54 /* SMPConfig.plist */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -654,6 +688,7 @@
 				6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */,
 				2F3E63C91E32B86C00736528 /* Campaigns.storyboard */,
 				6B8C46941E24272E003FE4AA /* Info.plist */,
+				2F63E8DA1EFDA09700FE8B54 /* SMPConfig.plist */,
 			);
 			path = Campaigns;
 			sourceTree = "<group>";
@@ -664,6 +699,7 @@
 				6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */,
 				6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */,
 				6B0FCA9C1E2414CC00011367 /* Info.plist */,
+				2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -1064,6 +1100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB3B1E5F58620083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8ED1EFDA2BA00FE8B54 /* SMPConfig.plist in Resources */,
 				2F1422771E2559510016EADA /* Assets.xcassets in Resources */,
 				2F14226C1E254A2E0016EADA /* Rewards.storyboard in Resources */,
 				2F59BB4F1E5F58730083DF63 /* Login.xib in Resources */,
@@ -1075,6 +1112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB381E5F58610083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8E71EFDA20A00FE8B54 /* SMPConfig.plist in Resources */,
 				2F3BF5451E4E51BB00BDC071 /* Assets.xcassets in Resources */,
 				2F3BF53B1E4E514100BDC071 /* Push.storyboard in Resources */,
 				2F59BB4C1E5F58710083DF63 /* Login.xib in Resources */,
@@ -1086,6 +1124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB351E5F585F0083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8E11EFDA17800FE8B54 /* SMPConfig.plist in Resources */,
 				2F3C7CAE1E2D2FF600CCAA78 /* Assets.xcassets in Resources */,
 				2F3C7CA11E2D2F9000CCAA78 /* Inbox.storyboard in Resources */,
 				2F59BB491E5F58700083DF63 /* Login.xib in Resources */,
@@ -1097,6 +1136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB371E5F58600083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8E51EFDA1E600FE8B54 /* SMPConfig.plist in Resources */,
 				2F3E41A31E27E34A0061C980 /* Assets.xcassets in Resources */,
 				2F3E41991E27E3290061C980 /* Places.storyboard in Resources */,
 				2F59BB4B1E5F58710083DF63 /* Login.xib in Resources */,
@@ -1108,6 +1148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB3A1E5F58610083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8EB1EFDA29100FE8B54 /* SMPConfig.plist in Resources */,
 				2F3E41C71E2803430061C980 /* Assets.xcassets in Resources */,
 				2F3E41BA1E2803110061C980 /* Referrals.storyboard in Resources */,
 				2F59BB4E1E5F58720083DF63 /* Login.xib in Resources */,
@@ -1119,6 +1160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB331E5F585D0083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8DD1EFDA10B00FE8B54 /* SMPConfig.plist in Resources */,
 				2F3E41EA1E2828470061C980 /* Assets.xcassets in Resources */,
 				2F3E41DD1E2828090061C980 /* Content.storyboard in Resources */,
 				2F59BB471E5F586F0083DF63 /* Login.xib in Resources */,
@@ -1130,6 +1172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB391E5F58610083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8E91EFDA25400FE8B54 /* SMPConfig.plist in Resources */,
 				2F3E420F1E293DFC0061C980 /* Assets.xcassets in Resources */,
 				2F3E42021E293D770061C980 /* Receipts.storyboard in Resources */,
 				2F59BB4D1E5F58720083DF63 /* Login.xib in Resources */,
@@ -1141,6 +1184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB361E5F58600083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8E31EFDA1BD00FE8B54 /* SMPConfig.plist in Resources */,
 				2F3E42311E2962BF0061C980 /* Assets.xcassets in Resources */,
 				2F3E42261E29614B0061C980 /* LoyaltyCards.storyboard in Resources */,
 				2F59BB4A1E5F58700083DF63 /* Login.xib in Resources */,
@@ -1154,6 +1198,7 @@
 				2F40EB1D1E3684DF00D6D8DF /* Assets.xcassets in Resources */,
 				2F59BB341E5F585F0083DF63 /* LaunchScreen.storyboard in Resources */,
 				2F316C5A1E3FF413005884E6 /* sessionm.gpx in Resources */,
+				2F63E8DF1EFDA13200FE8B54 /* SMPConfig.plist in Resources */,
 				2F40EB131E36849600D6D8DF /* Geofence.storyboard in Resources */,
 				2F59BB481E5F586F0083DF63 /* Login.xib in Resources */,
 			);
@@ -1164,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF4F26A1EAE4F0600CEB7E5 /* LaunchScreen.storyboard in Resources */,
+				2F63E8D91EFD9C9900FE8B54 /* SMPConfig.plist in Resources */,
 				2FF4F2681EAE4EFA00CEB7E5 /* Assets.xcassets in Resources */,
 				2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */,
 				2FF4F26B1EAE4F0900CEB7E5 /* Login.xib in Resources */,
@@ -1175,6 +1221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB2E1E5F584D0083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8DB1EFDA09700FE8B54 /* SMPConfig.plist in Resources */,
 				6B8C46971E24275A003FE4AA /* Assets.xcassets in Resources */,
 				2F3E63CA1E32B86C00736528 /* Campaigns.storyboard in Resources */,
 				2F59BB301E5F584D0083DF63 /* Login.xib in Resources */,
@@ -1186,6 +1233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59BB3C1E5F58620083DF63 /* LaunchScreen.storyboard in Resources */,
+				2F63E8EF1EFDA2EE00FE8B54 /* SMPConfig.plist in Resources */,
 				6BC0FED11E24106A009C8D07 /* Transactions.storyboard in Resources */,
 				6B8C46981E242820003FE4AA /* Assets.xcassets in Resources */,
 				2F59BB501E5F58730083DF63 /* Login.xib in Resources */,
@@ -2413,6 +2461,11 @@
 				INFOPLIST_FILE = Auth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SessionMFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2430,6 +2483,11 @@
 				INFOPLIST_FILE = Auth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SessionMFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

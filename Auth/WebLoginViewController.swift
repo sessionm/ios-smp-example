@@ -5,7 +5,6 @@
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
-import AppAuth
 import UIKit
 
 class WebLoginViewController: UIViewController {
@@ -28,22 +27,27 @@ class WebLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let info = Bundle.main.infoDictionary
-        if let kClientID = info?["SessionMOAuthClientID"] as? String {
+        guard let configFile = Bundle.main.path(forResource: "SMPConfig", ofType: "plist") else {
+            return
+        }
+
+        let info = NSDictionary(contentsOfFile: configFile)
+        if let kClientID = info?["OAuthClientID"] as? String {
             rawClientID = kClientID
             clientID.text = "Client ID: \(kClientID)"
         }
-        if let kAuthEndpoint = info?["SessionMOAuthAuthorizationEndpoint"] as? String {
-            rawAuthEndpoint = kAuthEndpoint
-            authEndpoint.text = "Auth Endpoint: \(kAuthEndpoint)"
-        }
-        if let kTokenEndpoint = info?["SessionMOAuthTokenEndpoint"] as? String {
-            rawTokenEndpoint = kTokenEndpoint
-            tokenEndpoint.text = "Token Endpoint: \(kTokenEndpoint)"
-        }
-        if let kRedirectURI = info?["SessionMOAuthRedirectURI"] as? String {
+        if let kRedirectURI = info?["OAuthRedirectURI"] as? String {
             rawRedirectURI = kRedirectURI
             redirectURI.text = "Redirect URI: \(kRedirectURI)"
+        }
+        if let kOAuthHostURL = info?["OAuthHostURL"] as? String {
+            let kAuthEndpoint = kOAuthHostURL.appending("/authorize")
+            rawAuthEndpoint = kAuthEndpoint
+            authEndpoint.text = "Auth Endpoint: \(kAuthEndpoint)"
+
+            let kTokenEndpoint = kOAuthHostURL.appending("/token")
+            rawTokenEndpoint = kTokenEndpoint
+            tokenEndpoint.text = "Token Endpoint: \(kTokenEndpoint)"
         }
     }
 
@@ -100,38 +104,11 @@ class WebLoginViewController: UIViewController {
     }
 
     @IBAction func openWebAuthentication(_ sender: UIButton) {
-        guard let authEndpointURL = URL(string: rawAuthEndpoint!) else {
-            return
-        }
-        guard let tokenEndpointURL = URL(string: rawTokenEndpoint!) else {
-            return
-        }
-        guard let redirectURL = URL(string: rawRedirectURI!) else {
-            return
-        }
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-
-        let configuration = OIDServiceConfiguration(authorizationEndpoint: authEndpointURL, tokenEndpoint: tokenEndpointURL)
-        let request = OIDAuthorizationRequest(configuration: configuration, clientId: rawClientID!, scopes: [OIDScopeOpenID, OIDScopeEmail, OIDScopeProfile], redirectURL: redirectURL, responseType: OIDResponseTypeToken, additionalParameters: nil)
-
-        appDelegate.currentAuthFlow = OIDAuthState.authState(byPresenting: request, presenting: self, callback: { (state: OIDAuthState?, error: Error?) in
-            if let token = state?.lastAuthorizationResponse.accessToken {
-                let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
-                self.present(alert, animated: true) {
-                    self.identityManager.authenticate(withToken: token) { (state: SMAuthState, error: SMError?) in
-                        alert.dismiss(animated: true) {
-                            if let error = error {
-                                Util.failed(self, message: error.message)
-                            }
-                        }
-                    }
-                }
-            } else if let error = error {
-                Util.failed(self, message: error.localizedDescription)
+        identityManager.startWebAuthorization(in: self) { (state: SMAuthState, error: SMError?) in
+            if let error = error {
+                Util.failed(self, message: error.message)
             }
-        })
+        }
     }
 
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {

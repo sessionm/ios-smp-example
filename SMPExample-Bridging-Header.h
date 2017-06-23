@@ -8,7 +8,7 @@
 #ifndef SMP_Example_Bridging_Header_h
 #define SMP_Example_Bridging_Header_h
 
-#import <AppAuth/AppAuth.h>
 #import <SessionMFramework/SessionMFramework.h>
+#import <SessionMWebAuth/SessionMWebAuth.h>
 
 #endif /* SMP_Example_Bridging_Header_h */

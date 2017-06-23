@@ -98,7 +98,7 @@ class TokenLoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func authenticateWithSampleUser(_ sender: UIButton) {
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.authenticate(withToken: "v2--Sd2T8UBqlCGQovVPnsUs4eqwFe0-1i9JV4nq__RWmsA=--dWM8r8RggUJCToOaiiT6NXmiOipkovvD9HueM_jZECStExtGFkZzVmCUhkdDJe5NQw==") { (state: SMAuthState, error: SMError?) in
+            self.identityManager.authenticate(withToken: "v2--Sd2T8UBqlCGQovVPnsUs4eqwFe0-1i9JV4nq__RWmsA=--dWM8r8RggUJCToOaiiT6NXmiOipkovvD9HueM_jZECStExtGFkZzVmCUhkdDJe5NQw==", provider: "") { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

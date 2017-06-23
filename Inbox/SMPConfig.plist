@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>projectID</key>
+	<string>com.sessionm.enterprise.Inbox</string>
+	<key>appKey</key>
+	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
+	<key>serverEndpoint</key>
+	<string>https://api.tour-sessionm.com</string>
+</dict>
+</plist>

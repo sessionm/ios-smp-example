@@ -33,18 +33,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>SessionMAPIKey</key>
-	<string>04e54a2689ec2d96e2cd5394f377671f80166165</string>
-	<key>SessionMServerURL</key>
-	<string>https://api-demo.stg-sessionm.com</string>
-	<key>SessionMOAuthClientID</key>
-	<string>1913e9563da1aba37be6fd334b0ad626c6d8d0730d40ec077675bf2f57184eda</string>
-	<key>SessionMOAuthAuthorizationEndpoint</key>
-	<string>https://login-demo.stg-sessionm.com/oauth/authorize</string>
-	<key>SessionMOAuthTokenEndpoint</key>
-	<string>https://login-demo.stg-sessionm.com/oauth/token</string>
-	<key>SessionMOAuthRedirectURI</key>
-	<string>smpauth://com.sessionm.smp_auth:/oauth2redirect</string>
 	<key>LSApplicationCategoryType</key>
 	<array>
 		<dict>
