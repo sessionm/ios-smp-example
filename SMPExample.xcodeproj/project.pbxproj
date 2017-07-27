@@ -148,11 +148,26 @@
 		6672F6893F9C369B86513E19 /* Pods_Transactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32AEE8F837552F7DBC2EF82 /* Pods_Transactions.framework */; };
 		6B7044411E23F14F00018C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7044471E23F19A00018C7B /* CampaignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */; };
+		6B7D486F1F2A057A00E6CE08 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */; };
+		6B7D48701F2A057A00E6CE08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486C1F2A057A00E6CE08 /* Info.plist */; };
+		6B7D48711F2A057A00E6CE08 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */; };
+		6B7D48721F2A057A00E6CE08 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D486E1F2A057A00E6CE08 /* WebView.swift */; };
+		6B7D48771F2A059C00E6CE08 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
+		6B7D48781F2A059C00E6CE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
+		6B7D48791F2A059C00E6CE08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
+		6B7D487A1F2A059C00E6CE08 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
+		6B7D487E1F2A059C00E6CE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB291E5F584D0083DF63 /* LaunchScreen.storyboard */; };
+		6B7D48811F2A059C00E6CE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
+		6B7D48821F2A059C00E6CE08 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
+		6B8B76E6CCA91C19FD478E24 /* Pods_WebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD847E3CA55AE0F3F929A2 /* Pods_WebView.framework */; };
 		6B8C46971E24275A003FE4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
 		6B8C46981E242820003FE4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
 		6BC0FEBF1E24103D009C8D07 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */; };
 		6BC0FEC01E24103D009C8D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6BC0FED11E24106A009C8D07 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */; };
+		6BFD6EBB1F2A0AC100411FC0 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */; };
+		6BFD6EBC1F2A0BA200411FC0 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */; };
+		6BFD6EBD1F2A0C3000411FC0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D486E1F2A057A00E6CE08 /* WebView.swift */; };
 		8C1687CDEEFB06D62C8F6BC6 /* Pods_Campaigns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA4AA58BFAA777EAAB4ED9D /* Pods_Campaigns.framework */; };
 		BDC6C37DCB6686375CFD73ED /* Pods_Referrals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2A0866B150F048F5E58D8D /* Pods_Referrals.framework */; };
 		E2BCB0D41E5F4EF5D30E21EE /* Pods_Content.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681AA36E2355B1B8B9753242 /* Pods_Content.framework */; };
@@ -240,6 +255,16 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6B70443B1E23EF4F00018C7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7D48831F2A059C00E6CE08 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -344,6 +369,7 @@
 		2FF4F26F1EAE4FE400CEB7E5 /* AuthLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLaunchViewController.swift; sourceTree = "<group>"; };
 		2FF4F2711EAE69D800CEB7E5 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		2FF981341E4E58DB004A3171 /* Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Push.entitlements; sourceTree = "<group>"; };
+		32F518103B31C117BC11FAAA /* Pods-WebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebView/Pods-WebView.debug.xcconfig"; sourceTree = "<group>"; };
 		3A5DEDCB1E833C6DB7DAAFA6 /* Pods-Referrals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Referrals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Referrals/Pods-Referrals.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2881DF1BF9B531FDAF7812 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443CD99BF00444158094A275 /* Pods-Receipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Receipts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Receipts/Pods-Receipts.debug.xcconfig"; sourceTree = "<group>"; };
@@ -361,11 +387,17 @@
 		6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMPExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B70443F1E23F12300018C7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsTableViewController.swift; path = Campaigns/CampaignsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6B7D486B1F2A057A00E6CE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WebView.storyboard; sourceTree = "<group>"; };
+		6B7D486C1F2A057A00E6CE08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		6B7D486E1F2A057A00E6CE08 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6B7D48891F2A059C00E6CE08 /* WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8C46941E24272E003FE4AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Campaigns/Info.plist; sourceTree = SOURCE_ROOT; };
 		6B8C46961E24275A003FE4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SMPExample/Assets.xcassets; sourceTree = "<group>"; };
 		6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		6BC0FECF1E24103D009C8D07 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		778C975A9377BDDE79788BC1 /* Pods-WebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebView/Pods-WebView.release.xcconfig"; sourceTree = "<group>"; };
 		8CB32CDADB0CD3DD5559C9D9 /* Pods-Geofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geofence.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geofence/Pods-Geofence.debug.xcconfig"; sourceTree = "<group>"; };
 		930267D7A194E08C754FA871 /* Pods-Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Content/Pods-Content.release.xcconfig"; sourceTree = "<group>"; };
 		9C2A0866B150F048F5E58D8D /* Pods_Referrals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Referrals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +407,7 @@
 		AE95583DC71E49EF5FB55DA7 /* Pods-Transactions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transactions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transactions/Pods-Transactions.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CA8701B0A219B8239AFF8C /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push/Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
 		B40185681B39E2C50A1CA99E /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFD847E3CA55AE0F3F929A2 /* Pods_WebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0F906DB7B67E9A80EE2C99 /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
 		CA23F9153828D48102ADE501 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8451CF69DC6EBAA2F8AD770 /* Pods-LoyaltyCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards.release.xcconfig"; sourceTree = "<group>"; };
@@ -473,6 +506,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1687CDEEFB06D62C8F6BC6 /* Pods_Campaigns.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7D487B1F2A059C00E6CE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8B76E6CCA91C19FD478E24 /* Pods_WebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +656,7 @@
 				446BD8DF29C60C3B7DCD92AE /* Pods_Inbox.framework */,
 				5FE4B638139CE5DDF20492B7 /* Pods_Push.framework */,
 				CA23F9153828D48102ADE501 /* Pods_Auth.framework */,
+				BFFD847E3CA55AE0F3F929A2 /* Pods_WebView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -645,6 +687,7 @@
 				2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */,
 				2F59BB2D1E5F584D0083DF63 /* Util.swift */,
 				6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */,
+				6B7D48691F2A057A00E6CE08 /* WebView */,
 				2FF4F2571EAE4E5600CEB7E5 /* Auth */,
 				6B7044201E23EDF800018C7B /* Campaigns */,
 				2F3E41D61E2828090061C980 /* Content */,
@@ -678,6 +721,7 @@
 				2F40EB091E36849600D6D8DF /* Geofence.app */,
 				2F3BF5331E4E514100BDC071 /* Push.app */,
 				2FF4F2561EAE4E5600CEB7E5 /* Auth.app */,
+				6B7D48891F2A059C00E6CE08 /* WebView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -691,6 +735,17 @@
 				2F63E8DA1EFDA09700FE8B54 /* SMPConfig.plist */,
 			);
 			path = Campaigns;
+			sourceTree = "<group>";
+		};
+		6B7D48691F2A057A00E6CE08 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */,
+				6B7D486C1F2A057A00E6CE08 /* Info.plist */,
+				6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */,
+				6B7D486E1F2A057A00E6CE08 /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		6BC0FEB61E240FD8009C8D07 /* Transactions */ = {
@@ -731,6 +786,8 @@
 				1D416368EC821D1BE29325FB /* Pods-Push.release.xcconfig */,
 				5CC7C4B1A031CE4CF0F06A74 /* Pods-Auth.debug.xcconfig */,
 				CA0F906DB7B67E9A80EE2C99 /* Pods-Auth.release.xcconfig */,
+				32F518103B31C117BC11FAAA /* Pods-WebView.debug.xcconfig */,
+				778C975A9377BDDE79788BC1 /* Pods-WebView.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -970,6 +1027,27 @@
 			productReference = 6B70441F1E23EDF800018C7B /* Campaigns.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6B7D48731F2A059C00E6CE08 /* WebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B7D48861F2A059C00E6CE08 /* Build configuration list for PBXNativeTarget "WebView" */;
+			buildPhases = (
+				6B7D48741F2A059C00E6CE08 /* [CP] Check Pods Manifest.lock */,
+				6B7D48751F2A059C00E6CE08 /* Sources */,
+				6B7D487B1F2A059C00E6CE08 /* Frameworks */,
+				6B7D487D1F2A059C00E6CE08 /* Resources */,
+				6B7D48831F2A059C00E6CE08 /* Embed Frameworks */,
+				6B7D48841F2A059C00E6CE08 /* [CP] Embed Pods Frameworks */,
+				6B7D48851F2A059C00E6CE08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebView;
+			productName = campaign;
+			productReference = 6B7D48891F2A059C00E6CE08 /* WebView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6BC0FEBC1E24103D009C8D07 /* Transactions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC0FECC1E24103D009C8D07 /* Build configuration list for PBXNativeTarget "Transactions" */;
@@ -1090,6 +1168,7 @@
 				2F3E41B11E2803110061C980 /* Referrals */,
 				2F1422611E254A2E0016EADA /* Rewards */,
 				6BC0FEBC1E24103D009C8D07 /* Transactions */,
+				6B7D48731F2A059C00E6CE08 /* WebView */,
 			);
 		};
 /* End PBXProject section */
@@ -1211,8 +1290,11 @@
 				2FF4F26A1EAE4F0600CEB7E5 /* LaunchScreen.storyboard in Resources */,
 				2F63E8D91EFD9C9900FE8B54 /* SMPConfig.plist in Resources */,
 				2FF4F2681EAE4EFA00CEB7E5 /* Assets.xcassets in Resources */,
+				6B7D486F1F2A057A00E6CE08 /* WebView.storyboard in Resources */,
 				2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */,
 				2FF4F26B1EAE4F0900CEB7E5 /* Login.xib in Resources */,
+				6B7D48701F2A057A00E6CE08 /* Info.plist in Resources */,
+				6B7D48711F2A057A00E6CE08 /* SMPConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,6 +1307,18 @@
 				6B8C46971E24275A003FE4AA /* Assets.xcassets in Resources */,
 				2F3E63CA1E32B86C00736528 /* Campaigns.storyboard in Resources */,
 				2F59BB301E5F584D0083DF63 /* Login.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7D487D1F2A059C00E6CE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFD6EBC1F2A0BA200411FC0 /* SMPConfig.plist in Resources */,
+				6BFD6EBB1F2A0AC100411FC0 /* WebView.storyboard in Resources */,
+				6B7D487E1F2A059C00E6CE08 /* LaunchScreen.storyboard in Resources */,
+				6B7D48811F2A059C00E6CE08 /* Assets.xcassets in Resources */,
+				6B7D48821F2A059C00E6CE08 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1255,7 +1349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		113FBADDFB83434112390623 /* [CP] Copy Pods Resources */ = {
@@ -1300,7 +1394,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		277EE51C98B81EDC05E324D7 /* [CP] Copy Pods Resources */ = {
@@ -1375,7 +1469,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		49FBA182A43A155767D0E22B /* [CP] Check Pods Manifest.lock */ = {
@@ -1390,7 +1484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4DD882194FAC9DAD0DF5C633 /* [CP] Check Pods Manifest.lock */ = {
@@ -1405,7 +1499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4ECED89D7AF416453C93786A /* [CP] Embed Pods Frameworks */ = {
@@ -1435,7 +1529,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5E2483F15F7CB48BB7AF97F7 /* [CP] Copy Pods Resources */ = {
@@ -1480,7 +1574,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7D48741F2A059C00E6CE08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7D48841F2A059C00E6CE08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7D48851F2A059C00E6CE08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71EAAFB48F8FBFF03640BCD4 /* [CP] Copy Pods Resources */ = {
@@ -1570,7 +1709,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		866C5F25E3A36090ABDE56DA /* [CP] Copy Pods Resources */ = {
@@ -1615,7 +1754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A9DFFC043974F7E5579A7DD5 /* [CP] Copy Pods Resources */ = {
@@ -1645,7 +1784,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B3FF5E8959547C31EB21680C /* [CP] Embed Pods Frameworks */ = {
@@ -1720,7 +1859,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CE48376E07DDCB4EC8F43E71 /* [CP] Embed Pods Frameworks */ = {
@@ -1825,7 +1964,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1954,6 +2093,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7D48721F2A057A00E6CE08 /* WebView.swift in Sources */,
 				2FF4F26D1EAE4F1000CEB7E5 /* LoginViewController.swift in Sources */,
 				2FF4F2721EAE69D800CEB7E5 /* EmailLoginViewController.swift in Sources */,
 				2F633F931EB13B7300CB1832 /* TokenLoginViewController.swift in Sources */,
@@ -1975,6 +2115,18 @@
 				2F59BB321E5F584D0083DF63 /* Util.swift in Sources */,
 				2F59BB2F1E5F584D0083DF63 /* LaunchViewController.swift in Sources */,
 				6B7044411E23F14F00018C7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7D48751F2A059C00E6CE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFD6EBD1F2A0C3000411FC0 /* WebView.swift in Sources */,
+				6B7D48771F2A059C00E6CE08 /* Util.swift in Sources */,
+				6B7D48781F2A059C00E6CE08 /* AppDelegate.swift in Sources */,
+				6B7D48791F2A059C00E6CE08 /* LoginViewController.swift in Sources */,
+				6B7D487A1F2A059C00E6CE08 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2071,6 +2223,14 @@
 				2FF4F25D1EAE4E5600CEB7E5 /* Base */,
 			);
 			name = Auth.storyboard;
+			sourceTree = "<group>";
+		};
+		6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B7D486B1F2A057A00E6CE08 /* Base */,
+			);
+			name = WebView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2628,6 +2788,50 @@
 			};
 			name = Release;
 		};
+		6B7D48871F2A059C00E6CE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F518103B31C117BC11FAAA /* Pods-WebView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WebView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.WebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6B7D48881F2A059C00E6CE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778C975A9377BDDE79788BC1 /* Pods-WebView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WebView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.WebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		6BC0FECD1E24103D009C8D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE95583DC71E49EF5FB55DA7 /* Pods-Transactions.debug.xcconfig */;
@@ -2779,6 +2983,15 @@
 			buildConfigurations = (
 				6B70442F1E23EDF800018C7B /* Debug */,
 				6B7044301E23EDF800018C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B7D48861F2A059C00E6CE08 /* Build configuration list for PBXNativeTarget "WebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7D48871F2A059C00E6CE08 /* Debug */,
+				6B7D48881F2A059C00E6CE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

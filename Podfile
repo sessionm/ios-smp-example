@@ -53,3 +53,7 @@ end
 target 'Transactions' do
   shared_pods
 end
+
+target 'WebView' do
+  shared_pods
+end
