@@ -30,14 +30,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Email Authentication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MOD-By-Z5a">
-                                                    <rect key="frame" x="16" y="5" width="156.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="5" width="156.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use an email to authenticate with SMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ax2-lo-pEu">
-                                                    <rect key="frame" x="16" y="25.5" width="217.5" height="14.5"/>
+                                                    <rect key="frame" x="15" y="25.5" width="217.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -57,14 +57,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SessionM Web Authentication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lzo-XE-uZW">
-                                                    <rect key="frame" x="16" y="5" width="228.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="5" width="228.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use SMP Web to authenticate with SMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1CT-AX-9bE">
-                                                    <rect key="frame" x="16" y="25.5" width="225" height="14.5"/>
+                                                    <rect key="frame" x="15" y="25.5" width="225" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -136,10 +136,8 @@
                                     <action selector="createUser:" destination="x12-kw-PVf" eventType="touchUpInside" id="HcO-wz-jmf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X8B-YQ-uhs" userLabel="Status">
-                                <rect key="frame" x="9.5" y="426.5" width="356" height="41"/>
-                                <string key="text">Email:
-ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: ID: Auth Code:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X8B-YQ-uhs" userLabel="Status">
+                                <rect key="frame" x="9.5" y="342.5" width="356" height="125"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -157,6 +155,7 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                             <constraint firstItem="Adq-dC-eQ4" firstAttribute="top" secondItem="CgL-oW-KAS" secondAttribute="bottom" constant="8" id="2Eh-Fp-jGA"/>
                             <constraint firstItem="nHT-yC-b0Z" firstAttribute="bottom" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.25" id="2ta-7U-maw"/>
                             <constraint firstItem="X8B-YQ-uhs" firstAttribute="centerX" secondItem="rhx-6h-twF" secondAttribute="centerX" id="8KQ-bE-UrF"/>
+                            <constraint firstItem="X8B-YQ-uhs" firstAttribute="top" secondItem="Vsu-Ky-jPr" secondAttribute="top" multiplier="0.55" id="8KW-Ny-f3q"/>
                             <constraint firstItem="KDd-Yj-9PI" firstAttribute="leading" secondItem="rhx-6h-twF" secondAttribute="leading" constant="8" id="G3O-ER-N4X"/>
                             <constraint firstItem="nHT-yC-b0Z" firstAttribute="leading" secondItem="rhx-6h-twF" secondAttribute="leading" constant="8" id="GjN-4x-2Ma"/>
                             <constraint firstItem="KDd-Yj-9PI" firstAttribute="top" secondItem="nHT-yC-b0Z" secondAttribute="bottom" constant="8" id="MYZ-Et-vSQ"/>
@@ -319,7 +318,7 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CYP-ww-Dpo">
-                                <rect key="frame" x="8" y="126" width="359" height="30"/>
+                                <rect key="frame" x="8" y="137" width="359" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                 <connections>
@@ -327,7 +326,7 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Provider: sessionm_oauth" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-EB-006">
-                                <rect key="frame" x="8" y="164" width="359" height="30"/>
+                                <rect key="frame" x="8" y="175" width="359" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Email" identifier="bob"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -336,14 +335,14 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-QM-fcW" userLabel="Authenticate">
-                                <rect key="frame" x="143.5" y="250.5" width="88" height="30"/>
+                                <rect key="frame" x="143.5" y="270" width="88" height="30"/>
                                 <state key="normal" title="Authenticate"/>
                                 <connections>
                                     <action selector="authenticate:" destination="ao7-vQ-PlC" eventType="touchUpInside" id="RwK-4n-dvZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HzE-gh-Zkh" userLabel="Status">
-                                <rect key="frame" x="9.5" y="426.5" width="356" height="41"/>
+                                <rect key="frame" x="9.5" y="459.5" width="356" height="41"/>
                                 <string key="text">Email:
 ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -351,14 +350,14 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-Wy-IPH">
-                                <rect key="frame" x="156" y="489" width="63" height="30"/>
+                                <rect key="frame" x="156" y="525.5" width="63" height="30"/>
                                 <state key="normal" title="User Info"/>
                                 <connections>
                                     <segue destination="Van-4x-txp" kind="show" id="COA-Yr-1F2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ut-Ki-xUY">
-                                <rect key="frame" x="81.5" y="288" width="212" height="30"/>
+                                <rect key="frame" x="81.5" y="307.5" width="212" height="30"/>
                                 <state key="normal" title="Authenticate with Sample User"/>
                                 <connections>
                                     <action selector="authenticateWithSampleUser:" destination="ao7-vQ-PlC" eventType="touchUpInside" id="e1G-w2-riN"/>
@@ -513,6 +512,6 @@ ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
         <image name="sessionM" width="412" height="136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ROT-BQ-MOJ"/>
+        <segue reference="kLW-ZR-BQv"/>
     </inferredMetricsTieBreakers>
 </document>

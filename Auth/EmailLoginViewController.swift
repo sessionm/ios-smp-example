@@ -21,9 +21,13 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(animated)
 
         if let user = userManager.currentUser {
-            logout.isEnabled = true
-            userInfo.isEnabled = true
-            status.text? = "Email: \(user.email!)\nID: \(user.userID)"
+            identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
+                DispatchQueue.main.async {
+                    self.logout.isEnabled = true
+                    self.userInfo.isEnabled = true
+                    self.status.text? = "Email: \(user.email!)\nID: \(user.userID)\nAuth Code: \(authCode!)"
+                }
+            })
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
@@ -59,9 +63,13 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
     @objc private func userDidUpdate(_ notification: NSNotification) {
         if let user = userManager.currentUser {
-            logout.isEnabled = true
-            userInfo.isEnabled = true
-            status.text? = "Email: \(user.email!)\nID: \(user.userID)"
+            identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
+                DispatchQueue.main.async {
+                    self.logout.isEnabled = true
+                    self.userInfo.isEnabled = true
+                    self.status.text? = "Email: \(user.email!)\nID: \(user.userID)\nAuth Code: \(authCode!)"
+                }
+            })
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
