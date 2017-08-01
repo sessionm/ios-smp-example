@@ -38,15 +38,15 @@ LICENSE: MIT
 
 [Inbox](#Inbox)
 
-[Loyalty Cards](#Loyalty Cards)
+[Loyalty Cards](#Loyalty_Cards)
 
 [Places](#Places)
 
-[Push Notification](#Push Notification)
+[Push Notification](#Push_Notification)
 
-[Local Notification Testing](#Local Notification Testing)
+[Local Notification Testing](#Local_Notification_Testing)
 
-[Remote Notification Testing](#Remote Notification Testing)
+[Remote Notification Testing](#Remote_Notification_Testing)
 
 [Receipts](#Receipts)
 
@@ -55,6 +55,8 @@ LICENSE: MIT
 [Rewards](#Rewards)
 
 [Transactions](#Transactions)
+
+<a name="Authentication"/>
 
 ## Authentication
 
@@ -65,6 +67,8 @@ API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity4
 On the "Choose Authentication Type" view, you can choose to authenticate a user with a SessionM Platform email and password, with a SessionM Platform authentication token, or with credentials from a third-party authentication provider such as Facebook or Google. Custom OAuth credentials can be set in the Auth/Info.plist file by using the 'SessionMOAuthClientID', 'SessionMOAuthAuthorizationEndpoint', 'SessionMOAuthTokenEndpoint' and 'SessionMOAuthRedirectURI' keys.
 
 After selecting an authentication type, you can enter credentials to either authenticate an existing user or create a new one. After the user has been authenticated, you can see details about the user's account on the "User Info" view.
+
+<a name="Campaigns"/>
 
 ## Campaigns
 
@@ -80,11 +84,15 @@ There are three different actions to trigger different types of feed message: Op
 - Deep Link: Opens a dialog with a sample deep link schema
 - External Link: Opens native browser with sample URL
 
+<a name="Contents"/>
+
 ## Contents
 
 This app showcases how to use the SessionM SDK to fetch promotional content data for presentation in a content feed.
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
+
+<a name="Geofence"/>
 
 ## Geofence
 
@@ -103,6 +111,8 @@ Note: geofence and event trigger annotations in the same location will be cluste
 The "Triggered Events" tab contains a more detailed history of event triggers.
 When running the Geofence app through Xcode, the sessionm.gpx file is used to walk a simulated path through some of the geofences in the SessionM demo environment. To use your own GPX file, navigate in Xcode to "Debug" -> "Simulate Location" -> "Add GPX File to Workspace".
 
+<a name="Inbox"/>
+
 ## Inbox
 
 This app showcases how to use the SessionM SDK to create UI for a user inbox.
@@ -112,6 +122,8 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox
 The main view shows a list of messages in the user's inbox, with titles and creation dates for each message. Unread messages are denoted with bold text and a white background, while read messages have regular text and a gray background.
 
 Clicking on a message will show its body and give options for marking the message as "new" or "read", as well as deleting the message.
+
+<a name="Loyalty_Cards"/>
 
 ## Loyalty Cards
 
@@ -123,6 +135,8 @@ The main view shows a list of loyalty cards that have been linked to the user's 
 
 Clicking on the "+" symbol will give you the option to link a new card. Use the search bar to search for a retailer whose loyalty card you would like to link. After selecting the retailer, enter the card number and press the "Link" button to finish linking the card.
 
+<a name="Places"/>
+
 ## Places
 
 This app showcases how to use the SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
@@ -130,6 +144,8 @@ This app showcases how to use the SessionM SDK to allow users to earn points and
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places
 
 The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue. Clicking on a venue will attempt to check the user into that venue.
+
+<a name="Push_Notification"/>
 
 ## Push Notification
 
@@ -139,11 +155,15 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#push-notifications
 
 Note: if you would like to simply test the relevant APIs without setting up your own SessionM Platform app and push messaging campaigns, follow the steps under "Local Notification Testing". To perform an end-to-end test of the SessionM Platform's Push Messaging feature, follow the steps under "Remote Notification Testing".
 
+<a name="Local_Notification_Testing"/>
+
 ### Local Notification Testing
 
 - Open the app and enable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
+
+<a name="Remote_Notification_Testing"/>
 
 ### Remote Notification Testing
 
@@ -171,6 +191,8 @@ The following steps should be completed in Xcode:
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
+<a name="Receipts"/>
+
 ## Receipts
 
 This app showcases how to use the SessionM SDK to allow users to upload receipt images.
@@ -180,6 +202,8 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipt
 The main view shows a list of receipts that have already been uploaded by the user. Clicking on a receipt tile will show the images that were included in that upload.
 
 Clicking on the "+" symbol will give you the option to upload images for a new receipt. Follow the onscreen instructions to take a new photo or upload an existing image from your photo library.
+
+<a name="Referrals"/>
 
 ## Referrals
 
@@ -191,6 +215,8 @@ The main view shows a list of referrals that have already been sent by the user.
 
 Clicking on the "+" symbol will give you the option to send a new referral. Fill out the presented form (note: only email is required) and click "Submit" to finish sending the referral.
 
+<a name="Rewards"/>
+
 ## Rewards
 
 This app showcases how to use the SessionM SDK to allow users to spend loyalty points to purchase rewards.
@@ -199,6 +225,8 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards
 
 The "Offers" tab shows a list of offers that are available for purchase. Click on an offer to see more details and make a purchase. If the offer is gated by a skills test (e.g. for a sweepstakes entry), then an alert will appear with a random question. Enter the correct answer to complete the purchase.
 The "Orders" tab shows a list of the user's order transactions and their approval statuses (e.g. "pending", "approved", "rejected").
+
+<a name="Transactions"/>
 
 ## Transactions
 
