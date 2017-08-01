@@ -24,6 +24,38 @@ For SessionM Platform SDK documentation, see https://mmc.sessionm.com/docs/mmc-s
 
 LICENSE: MIT
 
+<a name="ToC"/>
+
+## Table of Contents
+
+[Authentication](#Authentication)
+
+[Campaigns](#Campaigns)
+
+[Contents](#Contents)
+
+[Geofence](#Geofence)
+
+[Inbox](#Inbox)
+
+[Loyalty Cards](#Loyalty Cards)
+
+[Places](#Places)
+
+[Push Notification](#Push Notification)
+
+[Local Notification Testing](#Local Notification Testing)
+
+[Remote Notification Testing](#Remote Notification Testing)
+
+[Receipts](#Receipts)
+
+[Referrals](#Referrals)
+
+[Rewards](#Rewards)
+
+[Transactions](#Transactions)
+
 ## Authentication
 
 This app showcases how to use the SessionM SDK to authenticate a user in the SessionM Platform.
@@ -175,4 +207,3 @@ This app showcases how to use the SessionM SDK to view a user's loyalty points t
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions11
 
 The main view shows a list of loyalty points transactions made by the user, and the resulting points balance after each transaction. "Receipt" and "Loyalty Card" transaction tiles can be clicked on to present an alert with more details on the transaction.
-
