@@ -105,7 +105,7 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let message = feedMessages[indexPath.row]
         message.notifyTapped()
-        sessionM.executeAction(forMessage: message)
+        campaignsManager.executeAction(for: message)
     }
 
     func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {

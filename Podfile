@@ -2,7 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 def shared_pods
-  pod 'SessionMFramework', '~> 2.3.1'
+  pod 'SessionMFramework', '~> 2.3.2'
 end
 
 target 'Auth' do

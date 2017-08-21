@@ -11,20 +11,17 @@ class PushViewController: UIViewController, SessionMDelegate {
     @IBOutlet private var localNotifications: UISwitch!
 
     private let sessionM = SessionM.sharedInstance()
+    private let messagesManager = SMMessagesManager.instance()
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         sessionM.delegate = self
-        sessionM.registerForRemoteNotifications()
+        messagesManager.registerForRemoteNotifications()
     }
 
     func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
         LoginViewController.loginIfNeeded(self)
-    }
-
-    func sessionM(_ sessionM: SessionM, didReceiveNotification notification: SMNotificationMessage) {
-        sessionM.view(forMessage: notification).present()
     }
 
     func sessionM(_ sessionM: SessionM, didReceiveDeepLinkString deepLink: String) {
@@ -34,7 +31,7 @@ class PushViewController: UIViewController, SessionMDelegate {
         present(alert, animated: true)
     }
 
-    private func logActionForType(_ type: SMMessageActionType) {
+    private func logActionForType(_ type: SMNotificationMessageActionType) {
         if (localNotifications.isOn) {
             scheduleLocalNotificationForActionType(type)
         } else {
@@ -51,8 +48,8 @@ class PushViewController: UIViewController, SessionMDelegate {
         }
     }
 
-    private func scheduleLocalNotificationForActionType(_ type: SMMessageActionType) {
-        let typeString = SMMessage.string(from: type)
+    private func scheduleLocalNotificationForActionType(_ type: SMNotificationMessageActionType) {
+        let typeString = SMNotificationMessage.string(from: type)
         let typeStringWithSpace = typeString.replacingOccurrences(of: "_", with: " ")
         let title = "Local Notification: \(typeStringWithSpace.capitalized)"
         let body = "Test for '\(typeStringWithSpace.lowercased())' local notification."

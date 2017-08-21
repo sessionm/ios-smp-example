@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         sessionM.logLevel = .debug
-        sessionM.startSessionFromConfigurationFile()
+        sessionM.startWithConfigFile()
 
         return true
     }
@@ -39,12 +39,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        sessionM.storeDeviceToken(deviceToken)
+        SMMessagesManager.instance().storeDeviceToken(deviceToken)
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         let payload = userInfo as! [String : NSObject]
-        sessionM.handleRemoteNotification(payload: payload)
+        SMMessagesManager.instance().handleRemoteNotification(payload: payload) { (success, message) in
+            if success, let message = message {
+                let alert = UIAlertController(title: "Received Notification", message: message.actionURL, preferredStyle: .alert)
+
+                let executeAction = UIAlertAction(title: "Execute", style: .default) { (action) in
+                    SMMessagesManager.instance().executeAction(for: message)
+                }
+                let dismissAction = UIAlertAction(title: "Dismiss", style: .default)
+
+                alert.addAction(executeAction)
+                alert.addAction(dismissAction)
+
+                guard var presenting = self.window?.rootViewController else {
+                    return
+                }
+                while presenting.presentedViewController != nil {
+                    presenting = presenting.presentedViewController!
+                }
+
+                presenting.present(alert, animated: true)
+            }
+        }
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
