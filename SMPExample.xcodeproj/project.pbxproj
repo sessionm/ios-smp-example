@@ -272,6 +272,7 @@
 		2F1422681E254A2E0016EADA /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		2F14226B1E254A2E0016EADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rewards.storyboard; sourceTree = "<group>"; };
 		2F1422721E254A2E0016EADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F1719F71F4B3D28002D6777 /* Geofence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Geofence.entitlements; sourceTree = "<group>"; };
 		2F316C591E3FF413005884E6 /* sessionm.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sessionm.gpx; sourceTree = "<group>"; };
 		2F3BF5331E4E514100BDC071 /* Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3BF5371E4E514100BDC071 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -587,6 +588,7 @@
 		2F40EB0A1E36849600D6D8DF /* Geofence */ = {
 			isa = PBXGroup;
 			children = (
+				2F1719F71F4B3D28002D6777 /* Geofence.entitlements */,
 				2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */,
 				2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */,
 				2F40EB2A1E36866000D6D8DF /* MapViewController.swift */,
@@ -1048,6 +1050,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -2415,6 +2420,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Geofence/Geofence.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2425,6 +2432,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Geofence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 			};
@@ -2437,6 +2446,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Geofence/Geofence.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2447,6 +2458,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Geofence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

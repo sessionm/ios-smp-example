@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
+        #if DEBUG
+            sessionM.isDebugMode = true
+        #endif /* DEBUG */
         sessionM.logLevel = .debug
         sessionM.startWithConfigFile()
 

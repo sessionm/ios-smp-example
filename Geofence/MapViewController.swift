@@ -40,6 +40,7 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
         super.viewDidAppear(animated)
 
         sessionM.delegate = self
+        SMMessagesManager.instance().registerForRemoteNotifications()
     }
 
     private func updateMapViewRegion() {
