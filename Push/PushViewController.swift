@@ -24,13 +24,6 @@ class PushViewController: UIViewController, SessionMDelegate {
         LoginViewController.loginIfNeeded(self)
     }
 
-    func sessionM(_ sessionM: SessionM, didReceiveDeepLinkString deepLink: String) {
-        let alert = UIAlertController(title: "Received Deep Link", message: deepLink, preferredStyle: .alert)
-        let dismissAction = UIAlertAction(title: "OK", style: .default)
-        alert.addAction(dismissAction)
-        present(alert, animated: true)
-    }
-
     private func logActionForType(_ type: SMNotificationMessageActionType) {
         if (localNotifications.isOn) {
             scheduleLocalNotificationForActionType(type)

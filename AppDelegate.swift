@@ -72,7 +72,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        return SMIdentityManager.instance().handleOAuthRedirectURI(url)
+        if SMIdentityManager.instance().handleOAuthRedirectURI(url) {
+            return true
+        } else {
+            let alert = UIAlertController(title: "Received Deep Link", message: url.absoluteString, preferredStyle: .alert)
+            let dismissAction = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(dismissAction)
+
+            guard var presenting = self.window?.rootViewController else {
+                return false
+            }
+            while presenting.presentedViewController != nil {
+                presenting = presenting.presentedViewController!
+            }
+
+            presenting.present(alert, animated: true)
+
+            return true
+        }
     }
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

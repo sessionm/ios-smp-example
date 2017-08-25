@@ -112,12 +112,6 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
         LoginViewController.loginIfNeeded(self)
     }
 
-    func sessionM(_ sessionM: SessionM, didReceiveDeepLinkString deepLink: String) {
-        if let url = URL(string: deepLink), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.openURL(url)
-        }
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
         sessionM.logOutUser()
     }
