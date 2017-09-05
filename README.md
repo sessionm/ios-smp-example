@@ -87,8 +87,21 @@ A message tile can be clicked to showcase its associated action (e.g. presenting
 There are three different actions to trigger different types of feed message: Open ad, deep link and external link. Click on any of the tiles gives you different actions:
 
 - Open Ad: Opens a pre-set Ad in the app’s portal.
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_open_ad.gif"
+alt="CampaignsOpenAd Anima" width="324" height="576"/>
+
+
 - Deep Link: Opens a dialog with a sample deep link schema
+
+
 - External Link: Opens native browser with sample URL
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_external_link.gif"
+alt="CampaignsExternalLink Anima" width="324" height="576"/>
+
 
 <a name="Contents"/>
 
@@ -97,6 +110,10 @@ There are three different actions to trigger different types of feed message: Op
 This app showcases how to use the SessionM SDK to fetch promotional content data for presentation in a content feed.
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/contents_list.gif"
+alt="ContentsList Anima" width="324" height="576"/>
 
 <a name="Geofence"/>
 
