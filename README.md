@@ -72,7 +72,18 @@ After selecting an authentication type, you can enter credentials to either auth
 
 <img
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_web_login.gif"
+alt="AuthWebLogin Anima" width="324" height="576"/>
+
+- Email/Password Authorization
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_email_login.gif"
 alt="AuthEmailLogin Anima" width="324" height="576"/>
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_email_sign_up.gif"
+alt="AuthEmailSignup Anima" width="324" height="576"/>
+
 
 [Back to top](#ToC)
 
