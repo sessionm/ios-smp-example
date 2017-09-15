@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         sessionM.logLevel = .debug
-        sessionM.startWithConfigFile()
+        sessionM.startSessionFromConfigurationFile()
 
         return true
     }
