@@ -10,13 +10,12 @@ import WebKit
 import SessionMFramework
 
 class WebView: UIViewController, SMWebViewDelegate {
-
     @IBOutlet weak var webView: SMWebView!
     
-    public func jsBridgeFail(_ error: SMError) {
+    func webView(_ webView: SMWebView, jsBridgeDidFailWithError error: SMError) {
     }
 
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
 
     }
@@ -24,15 +23,16 @@ class WebView: UIViewController, SMWebViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
 
-        webView.registerSMJSBridgeHandler(SMjsBridgeHandler(bridgeTag: "viewController", handlerClass: self));
+        webView.registerJSBridgeHandler(SMJSBridgeHandler(bridgeTag: "viewController", handlerClass: self));
 
-        webView.register(SMRedirectDelegate(prefix: "smp://", handle: { (path: String, pathComponents: [Any], params: [String : [Any]], prefix: String) -> Bool in
-            let route = path.replacingOccurrences(of: prefix, with: "")
+        webView.registerRedirectDelegate(SMRedirectDelegate(prefix: "smp://",
+                                                            redirectHandler: { (path: String, pathComponents: [Any], params: [String : [Any]], prefix: String) -> Bool in
+                                                                let route = path.replacingOccurrences(of: prefix, with: "")
 
-            let controller = UIAlertController(title: "Received", message: route, preferredStyle: .alert)
-            controller.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(controller, animated: true, completion: nil)
-            return true;
+                                                                let controller = UIAlertController(title: "Received", message: route, preferredStyle: .alert)
+                                                                controller.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                                                self.present(controller, animated: true, completion: nil)
+                                                                return true;
         }));
 
         webView.url = "http://localhost:4000/index.html";
