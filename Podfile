@@ -17,6 +17,10 @@ target 'Content' do
   shared_pods
 end
 
+target 'Events' do
+  shared_pods
+end
+
 target 'Geofence' do
   shared_pods
   pod 'CCHMapClusterController', '~> 1.7.0'
