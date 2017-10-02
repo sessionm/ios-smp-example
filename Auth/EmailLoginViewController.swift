@@ -22,10 +22,13 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
         if let user = userManager.currentUser {
             identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
-                DispatchQueue.main.async {
-                    self.logout.isEnabled = true
-                    self.userInfo.isEnabled = true
-                    self.status.text? = "Email: \(user.email!)\nID: \(user.userID)\nAuth Code: \(authCode!)"
+                if let authCode = authCode {
+                    DispatchQueue.main.async {
+                        self.logout.isEnabled = true
+                        self.userInfo.isEnabled = true
+                        let email = (user.email != nil) ? user.email! : "Anonymous User"
+                        self.status.text? = "Email: \(email)\nID: \(user.userID)\nAuth Code: \(authCode)"
+                    }
                 }
             })
         } else {
@@ -64,10 +67,13 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
     @objc private func userDidUpdate(_ notification: NSNotification) {
         if let user = userManager.currentUser {
             identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
-                DispatchQueue.main.async {
-                    self.logout.isEnabled = true
-                    self.userInfo.isEnabled = true
-                    self.status.text? = "Email: \(user.email!)\nID: \(user.userID)\nAuth Code: \(authCode!)"
+                if let authCode = authCode {
+                    DispatchQueue.main.async {
+                        self.logout.isEnabled = true
+                        self.userInfo.isEnabled = true
+                        let email = (user.email != nil) ? user.email! : "Anonymous User"
+                        self.status.text? = "Email: \(email)\nID: \(user.userID)\nAuth Code: \(authCode)"
+                    }
                 }
             })
         } else {

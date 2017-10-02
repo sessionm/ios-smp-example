@@ -143,10 +143,6 @@
 		66AFED44CD18683BD13604D1 /* Pods_WebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CF5C119916B848A219164B /* Pods_WebView.framework */; };
 		6B7044411E23F14F00018C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7044471E23F19A00018C7B /* CampaignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */; };
-		6B7D486F1F2A057A00E6CE08 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */; };
-		6B7D48701F2A057A00E6CE08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486C1F2A057A00E6CE08 /* Info.plist */; };
-		6B7D48711F2A057A00E6CE08 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */; };
-		6B7D48721F2A057A00E6CE08 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D486E1F2A057A00E6CE08 /* WebView.swift */; };
 		6B7D48771F2A059C00E6CE08 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		6B7D48781F2A059C00E6CE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7D48791F2A059C00E6CE08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
@@ -722,7 +718,6 @@
 				2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */,
 				2F59BB2D1E5F584D0083DF63 /* Util.swift */,
 				6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */,
-				6B7D48691F2A057A00E6CE08 /* WebView */,
 				2FF4F2571EAE4E5600CEB7E5 /* Auth */,
 				6B7044201E23EDF800018C7B /* Campaigns */,
 				2F3E41D61E2828090061C980 /* Content */,
@@ -735,6 +730,7 @@
 				2F3E41B31E2803110061C980 /* Referrals */,
 				2F1422631E254A2E0016EADA /* Rewards */,
 				6BC0FEB61E240FD8009C8D07 /* Transactions */,
+				6B7D48691F2A057A00E6CE08 /* WebView */,
 				6B7044071E23ED8C00018C7B /* Products */,
 				2F40EB271E36864500D6D8DF /* Frameworks */,
 				6636E1B1B77611EBA9D889E3 /* Pods */,
@@ -775,10 +771,10 @@
 		6B7D48691F2A057A00E6CE08 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				6B7D486E1F2A057A00E6CE08 /* WebView.swift */,
 				6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */,
 				6B7D486C1F2A057A00E6CE08 /* Info.plist */,
 				6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */,
-				6B7D486E1F2A057A00E6CE08 /* WebView.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -1292,11 +1288,8 @@
 				2FF4F26A1EAE4F0600CEB7E5 /* LaunchScreen.storyboard in Resources */,
 				2F63E8D91EFD9C9900FE8B54 /* SMPConfig.plist in Resources */,
 				2FF4F2681EAE4EFA00CEB7E5 /* Assets.xcassets in Resources */,
-				6B7D486F1F2A057A00E6CE08 /* WebView.storyboard in Resources */,
 				2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */,
 				2FF4F26B1EAE4F0900CEB7E5 /* Login.xib in Resources */,
-				6B7D48701F2A057A00E6CE08 /* Info.plist in Resources */,
-				6B7D48711F2A057A00E6CE08 /* SMPConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2156,7 +2149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7D48721F2A057A00E6CE08 /* WebView.swift in Sources */,
 				2FF4F26D1EAE4F1000CEB7E5 /* LoginViewController.swift in Sources */,
 				2FF4F2721EAE69D800CEB7E5 /* EmailLoginViewController.swift in Sources */,
 				2F633F931EB13B7300CB1832 /* TokenLoginViewController.swift in Sources */,

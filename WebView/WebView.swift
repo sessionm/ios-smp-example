@@ -1,23 +1,17 @@
 //
 //  WebView.swift
-//  WebView
+//  SMPExample
 //
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
 import UIKit
 import WebKit
-import SessionMFramework
 
 class WebView: UIViewController, SMWebViewDelegate {
     @IBOutlet weak var webView: SMWebView!
     
     func webView(_ webView: SMWebView, jsBridgeDidFailWithError error: SMError) {
-    }
-
-        override func viewDidLoad() {
-        super.viewDidLoad()
-
     }
 
     override func viewDidAppear(_ animated: Bool) {

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>projectID</key>
-	<string>com.sessionm.enterprise.Push</string>
-	<key>appKey</key>
-	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
-	<key>serverEndpoint</key>
-	<string>https://api.tour-sessionm.com</string>
-</dict>
+  <dict>
+    <key>projectID</key>
+    <string>com.sessionm.enterprise.Push</string>
+    <key>appKey</key>
+    <string>b70b778567014584f24af9bd03187f7cbe423db1</string>
+    <key>serverEndpoint</key>
+    <string>https://api-sdkexamples.stg-sessionm.com</string>
+    <key>OAuthClientID</key>
+    <dict>
+      <key>Default</key>
+      <string>1929dbd517ac6d6278e032352eeef851e40491cb08360ac382cb41a0e19b7838</string>
+    </dict>
+    <key>OAuthHostURL</key>
+    <string>https://login-sdkexamples.stg-sessionm.com</string>
+    <key>OAuthRedirecURI</key>
+    <string>smpauth://com.sessionm.smp_auth:/oauth2redirect</string>
+  </dict>
 </plist>

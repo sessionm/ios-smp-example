@@ -5,8 +5,17 @@
 	<key>projectID</key>
 	<string>com.sessionm.enterprise.Rewards</string>
 	<key>appKey</key>
-	<string>41a44470ac984b11d8452530b0cd466ba1656280</string>
+	<string>239dfc908c2e548de40b56b21b68119289e52473</string>
 	<key>serverEndpoint</key>
-	<string>https://api.tour-sessionm.com</string>
+	<string>https://api-sdkexamples.stg-sessionm.com</string>
+	<key>OAuthClientID</key>
+	<dict>
+		<key>Default</key>
+		<string>04d1a7246799f47273af0c287e4881b3c09c632f3279e5ceb72d143193101afa</string>
+	</dict>
+	<key>OAuthHostURL</key>
+	<string>https://login-sdkexamples.stg-sessionm.com</string>
+	<key>OAuthRedirectURI</key>
+	<string>smpauth://com.sessionm.smp_auth:/oauth2redirect</string>
 </dict>
 </plist>
