@@ -124,6 +124,7 @@
 		2F63E8EB1EFDA29100FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EA1EFDA29100FE8B54 /* SMPConfig.plist */; };
 		2F63E8ED1EFDA2BA00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EC1EFDA2BA00FE8B54 /* SMPConfig.plist */; };
 		2F63E8EF1EFDA2EE00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */; };
+		2F6D62D21F82B40F00A75563 /* ReceiptUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6D62D11F82B40F00A75563 /* ReceiptUploadViewController.swift */; };
 		2F74F34E1E4CF30F00358870 /* GeofenceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */; };
 		2FABD2791E369FCC00B1ADDF /* GeofenceLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */; };
 		2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */; };
@@ -359,6 +360,7 @@
 		2F63E8EA1EFDA29100FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
 		2F63E8EC1EFDA2BA00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
 		2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
+		2F6D62D11F82B40F00A75563 /* ReceiptUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptUploadViewController.swift; sourceTree = "<group>"; };
 		2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceAnnotation.swift; sourceTree = "<group>"; };
 		2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceLaunchViewController.swift; sourceTree = "<group>"; };
 		2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -602,6 +604,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3E42151E293E470061C980 /* ReceiptsTableViewController.swift */,
+				2F6D62D11F82B40F00A75563 /* ReceiptUploadViewController.swift */,
 				2F3E42171E293E530061C980 /* ReceiptImagesTableViewController.swift */,
 				2F3E42001E293D770061C980 /* Receipts.storyboard */,
 				2F3E42081E293D770061C980 /* Info.plist */,
@@ -1110,6 +1113,7 @@
 					};
 					2F3E41F91E293D770061C980 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					2F3E421D1E29614B0061C980 = {
@@ -2108,6 +2112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6D62D21F82B40F00A75563 /* ReceiptUploadViewController.swift in Sources */,
 				2F3E42101E293DFF0061C980 /* AppDelegate.swift in Sources */,
 				2F59BB621E5F58810083DF63 /* Util.swift in Sources */,
 				2F3E42161E293E470061C980 /* ReceiptsTableViewController.swift in Sources */,

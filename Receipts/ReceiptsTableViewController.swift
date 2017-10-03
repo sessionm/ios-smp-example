@@ -20,26 +20,7 @@ class ReceiptsTableViewController: UITableViewController, SessionMDelegate {
     private var receipts: [SMReceipt] = []
 
     @IBAction private func addReceipt(_ sender: UIBarButtonItem) {
-        let uploadAlert = UIAlertController(title: "Choose upload type", message: nil, preferredStyle: .actionSheet)
-
-        var uploadAttributes = [kReceiptUploadCampaignID: "14821"]
-        let filesAction = UIAlertAction(title: "Image file paths", style: .default, handler: { (action) in
-            uploadAttributes[kReceiptUploadType] = receiptUploadTypeFiles
-            let uploadController = SMReceiptUploadViewController(attributes: uploadAttributes as [String : NSObject])
-            self.present(uploadController, animated: true)
-        })
-        let assetsAction = UIAlertAction(title: "Image asset IDs", style: .default, handler: { (action) in
-            uploadAttributes[kReceiptUploadType] = receiptUploadTypeAssets
-            let uploadController = SMReceiptUploadViewController(attributes: uploadAttributes as [String : NSObject])
-            self.present(uploadController, animated: true)
-        })
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-
-        uploadAlert.addAction(filesAction)
-        uploadAlert.addAction(assetsAction)
-        uploadAlert.addAction(cancelAction)
-
-        present(uploadAlert, animated: true)
+        present(ReceiptUploadViewController(), animated: true)
     }
 
     @IBAction private func onRefresh(_ sender: UIRefreshControl) {
