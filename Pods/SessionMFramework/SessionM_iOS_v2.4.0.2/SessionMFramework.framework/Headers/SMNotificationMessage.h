@@ -17,12 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Determines how message content is displayed.
 
  @constant SMNotificationMessageActionTypeUnknown Unknown action type.
+ @constant SMNotificationMessageActionTypeOpenApp Launches app with no additional action.
  @constant SMNotificationMessageActionTypeDeepLink Deep links into app.
  @constant SMNotificationMessageActionTypeFullScreen Presents full screen rich media message.
  @constant SMNotificationMessageActionTypeExternalLink Opens link in Safari.
  */
 typedef NS_ENUM(NSInteger, SMNotificationMessageActionType) {
     SMNotificationMessageActionTypeUnknown NS_SWIFT_NAME(unknown),
+    SMNotificationMessageActionTypeOpenApp NS_SWIFT_NAME(openApp),
     SMNotificationMessageActionTypeDeepLink NS_SWIFT_NAME(deepLink),
     SMNotificationMessageActionTypeFullScreen NS_SWIFT_NAME(fullScreen),
     SMNotificationMessageActionTypeExternalLink NS_SWIFT_NAME(externalLink)

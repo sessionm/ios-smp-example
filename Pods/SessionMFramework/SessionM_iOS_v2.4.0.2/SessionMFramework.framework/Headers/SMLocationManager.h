@@ -121,7 +121,7 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
 + (void)registerGeofenceService;
 /*!
  @abstract Starts location/Geofence services.
- @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will start location updates. If permission is denied a @link SMLocationManagerLocationServicesDisabled @/link notification will be fired. This method looks for the Cocoa Key <code>NSLocationAlwaysUsageDescription</code> to determine whether to start always-on or while-in-use monitoring.
+ @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will start location updates. If permission is denied a @link SMLocationManagerLocationServicesDisabled @/link notification will be fired. This method looks for the Cocoa Key <code>NSLocationAlwaysAndWhenInUseUsageDescription</code> (or <code>NSLocationAlwaysUsageDescription</code> pre-iOS 11) to determine whether to start always-on or while-in-use monitoring.
  */
 - (void)startLocationService;
 /*!

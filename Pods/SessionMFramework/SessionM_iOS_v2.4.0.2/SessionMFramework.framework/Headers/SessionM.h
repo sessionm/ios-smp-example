@@ -6,7 +6,7 @@
 
 #ifndef __SESSIONM__
 #define __SESSIONM__
-#define __SESSIONM_SDK_VERSION__ @"2.4.0.2"
+#define __SESSIONM_SDK_VERSION__ @"2.4.0.3"
 #define __SESSIONM_SDK_MIN_SUPPORTED_DEVICE_VERSION__ 8.0f
 
 #import <UIKit/UIKit.h>
@@ -48,22 +48,6 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  */
 __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: @link https://mmc.sessionm.com/docs/mmc-sdk/")))
 #define SMAction(action) [[SessionM sharedInstance] logAction:action];
-
-/*!
- @defined SM_SetServiceRegion_Japan
- @abstract Sets the service region to Japan.
- @deprecated mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/
- */
-__attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: @link https://mmc.sessionm.com/docs/mmc-sdk/")))
-#define SM_SetServiceRegion_Japan() [SessionM setServiceRegion:SMServiceRegionJapan];
-
-/*!
- @defined SM_SetServiceRegion_USA
- @abstract Sets the service region to USA.
- @deprecated mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/
- */
-__attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: @link https://mmc.sessionm.com/docs/mmc-sdk/")))
-#define SM_SetServiceRegion_USA() [SessionM setServiceRegion:SMServiceRegionUSA];
 
 /*!
  @defined SM_SET_SERVER_URL
@@ -167,26 +151,6 @@ typedef NS_ENUM(NSInteger, SMActivityUserAction) {
     SMRedeemedRewardAction NS_SWIFT_NAME(redeemedReward) = 111,
     SMCheckinCompletedAction NS_SWIFT_NAME(checkedIn) = 112,
     SMVirtualItemRewardAction NS_SWIFT_NAME(virtualItemReward) = 113
-};
-
-
-
-/*!
- @typedef SMServiceRegion
- @abstract SessionM service region.
-
- @constant SMServiceRegionUnknown Value before service region is set or session is started.
- @constant SMServiceRegionJapan Japan service region.
- @constant SMServiceRegionUSA United States service region (default value if service region is not set before starting session).
- @constant SMServiceRegionCustom Custom service region (use this value to set custom server URLs).
- @deprecated mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/
- */
-__attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: @link https://mmc.sessionm.com/docs/mmc-sdk/")))
-typedef NS_ENUM(NSInteger, SMServiceRegion) {
-    SMServiceRegionUnknown NS_SWIFT_NAME(unknown),
-    SMServiceRegionJapan NS_SWIFT_NAME(japan),
-    SMServiceRegionUSA NS_SWIFT_NAME(usa),
-    SMServiceRegionCustom NS_SWIFT_NAME(custom)
 };
 
 
@@ -742,17 +706,6 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @result <code>BOOL</code> indicating if platform is supported.
  */
 + (BOOL)isSupportedPlatform;
-/*!
- @abstract The currently set service region - indicates where API requests will be directed.
- @discussion Defaults to @link SMServiceRegionUSA @/link if not set before session is started.
- */
-+ (SMServiceRegion)serviceRegion;
-/*!
- @abstract Sets the service region (defaults to @link SMServiceRegionUSA @/link if not set before session is started).
- @discussion Use this method or call @link SM_SetServiceRegion_Japan @/link or @link SM_SetServiceRegion_USA @/link before calling @link startSessionWithAppID: @/link to set the service region. Once set, the service region cannot be changed.
- @param region The service region that will be used.
- */
-+ (void)setServiceRegion:(SMServiceRegion)region NS_SWIFT_NAME(setServiceRegion(_:));
 /*!
  @abstract Sets the service region to a custom region defined by the developer using the given server URL name.
  @discussion Use this method or call @link SM_SET_SERVER_URL @/link before calling @link startSessionWithAppID: @/link to set the service region. Once set, the service region cannot be changed.

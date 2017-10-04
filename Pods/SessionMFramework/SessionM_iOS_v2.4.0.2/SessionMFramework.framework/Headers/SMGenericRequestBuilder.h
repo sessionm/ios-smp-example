@@ -21,9 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @property baseURL
- @abstract A block that the developer can use to create context-based request URLs.
+ @abstract The context-based request URL.
  */
-@property(nonatomic, copy,   readwrite) URLFormatter baseURL;
+@property(nonatomic, copy,   readwrite) NSString *baseURL;
 /*!
  @property method
  @abstract The method of the request (GET/POST/PUT/DELETE).

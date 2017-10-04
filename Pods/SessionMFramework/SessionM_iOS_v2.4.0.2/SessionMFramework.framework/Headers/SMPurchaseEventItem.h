@@ -84,15 +84,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign, readonly) NSInteger quantity;
 /*!
- @property price
+ @property priceAmount
  @abstract The price of the item in cents.
  */
-@property(nonatomic, assign, readonly) NSInteger price;
+@property(nonatomic, assign, readonly) NSInteger priceAmount;
 /*!
- @property overridePrice
+ @property overridePriceAmount
  @abstract A non-standard price of the item in cents as specified for the transaction.
  */
-@property(nonatomic, assign, readonly) NSInteger overridePrice;
+@property(nonatomic, assign, readonly) NSInteger overridePriceAmount;
 /*!
  @property reloadAmount
  @abstract Reload amount.
@@ -104,15 +104,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nullable, nonatomic, strong, readonly) NSString *reloadType;
 /*!
- @property subtotal
+ @property subtotalAmount
  @abstract The subtotal amount for the transaction in cents.
  */
-@property(nonatomic, assign, readonly) NSInteger subtotal;
+@property(nonatomic, assign, readonly) NSInteger subtotalAmount;
 /*!
- @property total
- @abstract The total cost of the transaction in cents.
+ @property amount
+ @abstract The amount of the transaction in cents.
  */
-@property(nonatomic, assign, readonly) NSInteger total;
+@property(nonatomic, assign, readonly) NSInteger amount;
 
 @end
 

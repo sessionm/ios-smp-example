@@ -34,20 +34,14 @@ typedef NS_ENUM(NSUInteger, SMGenericRequestMethodType) {
 @class SMGenericRequest;
 
 /*!
- @typedef URLFormatter
- @abstract Type for blocks used to format request URLs.
+ @class SMGenericRequest
+ @abstract Defines the data associated with a generic SessionM Platform HTTP request.
  @discussion The following tokens can be used for formatting:
  <ul>
  <li>':host:' - the SessionM Platform API host URL</li>
  <li>':lt_host:' - the LoyalTree API host URL</li>
  <li>':api_key:' - the app's SessionM Platform API key</li>
  </ul>
- */
-typedef NSString * _Nullable (^URLFormatter)(SMGenericRequest *request);
-
-/*!
- @class SMGenericRequest
- @abstract Defines the data associated with a generic SessionM Platform HTTP request.
  */
 @interface SMGenericRequest : NSObject
 
