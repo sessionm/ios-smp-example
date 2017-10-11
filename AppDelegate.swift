@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let options = launchOptions {
             if options.keys.contains(.location) {
                 CLLocationManager().startMonitoringSignificantLocationChanges()
+//                SMLocationManager.sharedInstance().eventLimit = 500
                 SMLocationManager.registerGeofenceService()
             } else if options.keys.contains(.localNotification) {
                 self.application(application, didReceive: options[UIApplicationLaunchOptionsKey.localNotification] as! UILocalNotification)
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             sessionM.isDebugMode = true
         #endif /* DEBUG */
         sessionM.logLevel = .debug
+        sessionM.logCategories = .spam
         sessionM.startWithConfigFile()
 
         return true

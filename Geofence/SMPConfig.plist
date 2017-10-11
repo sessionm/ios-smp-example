@@ -5,9 +5,9 @@
 	<key>projectID</key>
 	<string>com.sessionm.enterprise.Geofence</string>
 	<key>appKey</key>
-	<string>57ce1f24517c660a810cc09e3221bd0c6cfcd2cb</string>
+	<string>ac71d8f083272a0b4d3736c533c22d1f5f1d98a6</string>
 	<key>serverEndpoint</key>
-	<string>https://api-sdkexamples.stg-sessionm.com</string>
+	<string>https://api-coke.stg-sessionm.com</string>
 	<key>OAuthClientID</key>
 	<dict>
 		<key>Default</key>

@@ -32,6 +32,7 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
         NotificationCenter.default.addObserver(self, selector: #selector(locationDidUpdate(_:)), name: NSNotification.Name(locationUpdateNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(locationEventsDidUpdate(_:)), name: NSNotification.Name(updatedLocationEventsNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(triggeredEvent(_:)), name: NSNotification.Name(triggeredLocationEventNotification), object: nil)
+//        SMLocationManager.sharedInstance().eventLimit = 500
         SMLocationManager.registerGeofenceService()
         updateMapViewRegion()
     }
@@ -62,6 +63,7 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
 
     @objc private func locationEventsDidUpdate(_ notification: Notification) {
         if let info = notification.userInfo {
+
             let monitoredRegions = info[kMonitoredRegions] as! Set<CLCircularRegion>
             let locationEvents = info[kLocationEvents] as! [SMLocationEvent]
             mapView.removeOverlays(mapView.overlays)
@@ -215,6 +217,9 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
     }
 
     @IBAction private func centerMap(_ sender: UIBarButtonItem) {
+        locationManager.refreshGeofenceService()
+//        SessionM.sharedInstance().logAction("c5246610-996d-11e7-9a64-409114e7a6bc")
+//        SessionM.sharedInstance().logAction("542029ae-a85e-11e7-8e97-40d614e7a6bc")
         if let location = locationManager.currentGeoLocation {
             mapView.setCenter(location.coordinate, animated: true)
         }
