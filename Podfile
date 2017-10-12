@@ -2,7 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 def shared_pods
-  pod 'SessionMFramework', '~> 2.3.1'
+  pod 'SessionMFramework', '~> 2.4.0.2'
 end
 
 target 'Auth' do
@@ -51,5 +51,9 @@ target 'Rewards' do
 end
 
 target 'Transactions' do
+  shared_pods
+end
+
+target 'WebView' do
   shared_pods
 end

@@ -105,17 +105,11 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let message = feedMessages[indexPath.row]
         message.notifyTapped()
-        sessionM.executeAction(forMessage: message)
+        campaignsManager.executeAction(for: message)
     }
 
     func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
         LoginViewController.loginIfNeeded(self)
-    }
-
-    func sessionM(_ sessionM: SessionM, didReceiveDeepLinkString deepLink: String) {
-        if let url = URL(string: deepLink), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.openURL(url)
-        }
     }
 
     @IBAction private func logout(_ sender: AnyObject) {

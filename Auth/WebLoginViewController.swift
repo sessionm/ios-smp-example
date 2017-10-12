@@ -57,7 +57,8 @@ class WebLoginViewController: UIViewController {
         if let user = userManager.currentUser {
             logout.isEnabled = true
             userInfo.isEnabled = true
-            status.text? = "Email: \(user.email!)\nID: \(user.userID)"
+            let email = (user.email != nil) ? user.email! : "Anonymous User"
+            status.text? = "Email: \(email)\nID: \(user.userID)"
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
@@ -95,7 +96,8 @@ class WebLoginViewController: UIViewController {
         if let user = userManager.currentUser {
             logout.isEnabled = true
             userInfo.isEnabled = true
-            status.text? = "Email: \(user.email!)\nID: \(user.userID)"
+            let email = (user.email != nil) ? user.email! : "Anonymous User"
+            status.text? = "Email: \(email)\nID: \(user.userID)"
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
