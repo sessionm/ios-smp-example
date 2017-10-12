@@ -142,8 +142,23 @@
 		52DEC73611213C946EDFBC5C /* Pods_Receipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5D04E16A1D7F8EF3A10BDE /* Pods_Receipts.framework */; };
 		56E9218B0EBB1FC84DDD2A93 /* Pods_Geofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48F11EF8113B462AC42DA /* Pods_Geofence.framework */; };
 		66AFED44CD18683BD13604D1 /* Pods_WebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CF5C119916B848A219164B /* Pods_WebView.framework */; };
+		6B27DF9B1F86BDBA00F5830E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */; };
+		6B27DF9E1F8CDB6300F5830E /* RewardStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9D1F8CDB6300F5830E /* RewardStoreTableViewController.swift */; };
+		6B6F7AE41F8E43E4006C79AA /* PurchaseAOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F7AE31F8E43E4006C79AA /* PurchaseAOfferViewController.swift */; };
 		6B7044411E23F14F00018C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7044471E23F19A00018C7B /* CampaignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */; };
+		6B7B723D1F86AD1E0081D515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
+		6B7B72421F86AD1E0081D515 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF1DED81EAE59568D318D36 /* Pods_Auth.framework */; };
+		6B7B72441F86AD1E0081D515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB291E5F584D0083DF63 /* LaunchScreen.storyboard */; };
+		6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
+		6B7B72481F86AD1E0081D515 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
+		6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72511F86ADFE0081D515 /* Offers.storyboard */; };
+		6B7B725F1F86B0B30081D515 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B724F1F86AD1E0081D515 /* Info.plist */; };
+		6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72571F86ADFE0081D515 /* SMPConfig.plist */; };
+		6B7B72621F86B0C60081D515 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */; };
+		6B7B72641F86B0FC0081D515 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
+		6B7B72651F86B3CB0081D515 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
+		6B7B72661F86B3D30081D515 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		6B7D48771F2A059C00E6CE08 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		6B7D48781F2A059C00E6CE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7D48791F2A059C00E6CE08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
@@ -156,6 +171,8 @@
 		6BC0FEBF1E24103D009C8D07 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */; };
 		6BC0FEC01E24103D009C8D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6BC0FED11E24106A009C8D07 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */; };
+		6BC3EEFF1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EEFE1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift */; };
+		6BC3EF011F8F8DA200AA2772 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EF001F8F8DA200AA2772 /* Common.swift */; };
 		6BFD6EBB1F2A0AC100411FC0 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */; };
 		6BFD6EBC1F2A0BA200411FC0 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */; };
 		6BFD6EBD1F2A0C3000411FC0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D486E1F2A057A00E6CE08 /* WebView.swift */; };
@@ -382,10 +399,18 @@
 		5E5D04E16A1D7F8EF3A10BDE /* Pods_Receipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Receipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60ACE2375CEF8A2D956B7B97 /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
 		6B0FCA9C1E2414CC00011367 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6B27DF9D1F8CDB6300F5830E /* RewardStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreTableViewController.swift; sourceTree = "<group>"; };
+		6B6F7AE31F8E43E4006C79AA /* PurchaseAOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseAOfferViewController.swift; sourceTree = "<group>"; };
 		6B70441F1E23EDF800018C7B /* Campaigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campaigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B70443C1E23EF7200018C7B /* SMPExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMPExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B70443F1E23F12300018C7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsTableViewController.swift; path = Campaigns/CampaignsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6B7B724E1F86AD1E0081D515 /* Offers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7B724F1F86AD1E0081D515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/pmattheis/ios-smp-example/Offers/Info.plist"; sourceTree = "<absolute>"; };
+		6B7B72521F86ADFE0081D515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Offers.storyboard; sourceTree = "<group>"; };
+		6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersTableViewController.swift; sourceTree = "<group>"; };
+		6B7B72571F86ADFE0081D515 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
 		6B7D486B1F2A057A00E6CE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WebView.storyboard; sourceTree = "<group>"; };
 		6B7D486C1F2A057A00E6CE08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
@@ -396,6 +421,8 @@
 		6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		6BC0FECF1E24103D009C8D07 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC3EEFE1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimUserOfferViewController.swift; sourceTree = "<group>"; };
+		6BC3EF001F8F8DA200AA2772 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		6BF1DED81EAE59568D318D36 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E29B798BC6B647477EDE69 /* Pods-Transactions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transactions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transactions/Pods-Transactions.debug.xcconfig"; sourceTree = "<group>"; };
 		76837C5803DD148259883549 /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
@@ -505,6 +532,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D5834686FDAC9EAB73433A /* Pods_Campaigns.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7B72411F86AD1E0081D515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7B72421F86AD1E0081D515 /* Pods_Auth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +745,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6B6F7AE51F8E4A7B006C79AA /* Reward Store */ = {
+			isa = PBXGroup;
+			children = (
+				6B27DF9D1F8CDB6300F5830E /* RewardStoreTableViewController.swift */,
+				6B6F7AE31F8E43E4006C79AA /* PurchaseAOfferViewController.swift */,
+			);
+			path = "Reward Store";
+			sourceTree = "<group>";
+		};
+		6B6F7AE61F8E4A86006C79AA /* My Offers */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */,
+				6BC3EEFE1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift */,
+			);
+			path = "My Offers";
+			sourceTree = "<group>";
+		};
 		6B7043FD1E23ED8C00018C7B = {
 			isa = PBXGroup;
 			children = (
@@ -727,6 +780,7 @@
 				2F40EB0A1E36849600D6D8DF /* Geofence */,
 				2F3C7C9A1E2D2F9000CCAA78 /* Inbox */,
 				2F3E421F1E29614B0061C980 /* LoyaltyCards */,
+				6B7B72501F86ADFE0081D515 /* Offers */,
 				2F3E41921E27E3290061C980 /* Places */,
 				2F3BF5341E4E514100BDC071 /* Push */,
 				2F3E41FB1E293D770061C980 /* Receipts */,
@@ -756,6 +810,7 @@
 				2F3BF5331E4E514100BDC071 /* Push.app */,
 				2FF4F2561EAE4E5600CEB7E5 /* Auth.app */,
 				6B7D48891F2A059C00E6CE08 /* WebView.app */,
+				6B7B724E1F86AD1E0081D515 /* Offers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -769,6 +824,20 @@
 				2F63E8DA1EFDA09700FE8B54 /* SMPConfig.plist */,
 			);
 			path = Campaigns;
+			sourceTree = "<group>";
+		};
+		6B7B72501F86ADFE0081D515 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B724F1F86AD1E0081D515 /* Info.plist */,
+				6B7B72511F86ADFE0081D515 /* Offers.storyboard */,
+				6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */,
+				6B6F7AE51F8E4A7B006C79AA /* Reward Store */,
+				6B6F7AE61F8E4A86006C79AA /* My Offers */,
+				6B7B72571F86ADFE0081D515 /* SMPConfig.plist */,
+				6BC3EF001F8F8DA200AA2772 /* Common.swift */,
+			);
+			path = Offers;
 			sourceTree = "<group>";
 		};
 		6B7D48691F2A057A00E6CE08 /* WebView */ = {
@@ -1025,6 +1094,26 @@
 			productReference = 6B70441F1E23EDF800018C7B /* Campaigns.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6B7B72351F86AD1E0081D515 /* Offers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B7B724B1F86AD1E0081D515 /* Build configuration list for PBXNativeTarget "Offers" */;
+			buildPhases = (
+				6B7B72361F86AD1E0081D515 /* [CP] Check Pods Manifest.lock */,
+				6B7B72371F86AD1E0081D515 /* Sources */,
+				6B7B72411F86AD1E0081D515 /* Frameworks */,
+				6B7B72431F86AD1E0081D515 /* Resources */,
+				6B7B72491F86AD1E0081D515 /* [CP] Embed Pods Frameworks */,
+				6B7B724A1F86AD1E0081D515 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Offers;
+			productName = Auth;
+			productReference = 6B7B724E1F86AD1E0081D515 /* Offers.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6B7D48731F2A059C00E6CE08 /* WebView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B7D48861F2A059C00E6CE08 /* Build configuration list for PBXNativeTarget "WebView" */;
@@ -1140,6 +1229,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0810;
 					};
+					6B7B72351F86AD1E0081D515 = {
+						DevelopmentTeam = D22J3WL3QZ;
+					};
 					6BC0FEBC1E24103D009C8D07 = {
 						LastSwiftMigration = 0810;
 					};
@@ -1164,6 +1256,7 @@
 				2F40EB081E36849600D6D8DF /* Geofence */,
 				2F3C7C981E2D2F9000CCAA78 /* Inbox */,
 				2F3E421D1E29614B0061C980 /* LoyaltyCards */,
+				6B7B72351F86AD1E0081D515 /* Offers */,
 				2F3E41901E27E3290061C980 /* Places */,
 				2F3BF5321E4E514100BDC071 /* Push */,
 				2F3E41F91E293D770061C980 /* Receipts */,
@@ -1306,6 +1399,19 @@
 				6B8C46971E24275A003FE4AA /* Assets.xcassets in Resources */,
 				2F3E63CA1E32B86C00736528 /* Campaigns.storyboard in Resources */,
 				2F59BB301E5F584D0083DF63 /* Login.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7B72431F86AD1E0081D515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7B72441F86AD1E0081D515 /* LaunchScreen.storyboard in Resources */,
+				6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */,
+				6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */,
+				6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */,
+				6B7B725F1F86B0B30081D515 /* Info.plist in Resources */,
+				6B7B72481F86AD1E0081D515 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1625,6 +1731,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7B72361F86AD1E0081D515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Auth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7B72491F86AD1E0081D515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMWebAuth.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7B724A1F86AD1E0081D515 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6C345C2558C0C4F9B6B3AB7E /* [CP] Check Pods Manifest.lock */ = {
@@ -2178,6 +2337,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B7B72371F86AD1E0081D515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6F7AE41F8E43E4006C79AA /* PurchaseAOfferViewController.swift in Sources */,
+				6B7B72651F86B3CB0081D515 /* LaunchViewController.swift in Sources */,
+				6B7B723D1F86AD1E0081D515 /* AppDelegate.swift in Sources */,
+				6B27DF9E1F8CDB6300F5830E /* RewardStoreTableViewController.swift in Sources */,
+				6BC3EEFF1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift in Sources */,
+				6B7B72621F86B0C60081D515 /* OffersTableViewController.swift in Sources */,
+				6B27DF9B1F86BDBA00F5830E /* PageViewController.swift in Sources */,
+				6B7B72661F86B3D30081D515 /* Util.swift in Sources */,
+				6BC3EF011F8F8DA200AA2772 /* Common.swift in Sources */,
+				6B7B72641F86B0FC0081D515 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B7D48751F2A059C00E6CE08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2283,6 +2459,14 @@
 				2FF4F25D1EAE4E5600CEB7E5 /* Base */,
 			);
 			name = Auth.storyboard;
+			sourceTree = "<group>";
+		};
+		6B7B72511F86ADFE0081D515 /* Offers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B7B72521F86ADFE0081D515 /* Base */,
+			);
+			name = Offers.storyboard;
 			sourceTree = "<group>";
 		};
 		6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */ = {
@@ -2856,6 +3040,51 @@
 			};
 			name = Release;
 		};
+		6B7B724C1F86AD1E0081D515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76837C5803DD148259883549 /* Pods-Auth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = D22J3WL3QZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Offers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SessionMFramework\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Offers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6B7B724D1F86AD1E0081D515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60ACE2375CEF8A2D956B7B97 /* Pods-Auth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = D22J3WL3QZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Offers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SessionMFramework\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Offers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		6B7D48871F2A059C00E6CE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A2B3D87E528A490205FF601 /* Pods-WebView.debug.xcconfig */;
@@ -3051,6 +3280,15 @@
 			buildConfigurations = (
 				6B70442F1E23EDF800018C7B /* Debug */,
 				6B7044301E23EDF800018C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B7B724B1F86AD1E0081D515 /* Build configuration list for PBXNativeTarget "Offers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7B724C1F86AD1E0081D515 /* Debug */,
+				6B7B724D1F86AD1E0081D515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
