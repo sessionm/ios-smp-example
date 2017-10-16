@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CLLPurchasedReward.h</key>
 		<data>
-		dDVnu2o+L1ETqBA+2ch0Ss9fQQM=
+		o6zs+nI1nYxjFKIFFwR+MzdT+ss=
 		</data>
 		<key>Headers/CLLRecordBase.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/CLLUserAccount.h</key>
 		<data>
-		rlOZg4CmOCVJq/K+HKmUu8/jvZI=
+		eCobrqsKGHZnAm8eSFnf0O+05Pg=
 		</data>
 		<key>Headers/SMAchievementData.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/SMLocationManager.h</key>
 		<data>
-		DnPCLfjFqFRBGlaFzsFcBJx2fTQ=
+		rZPkRO8XyZtdlt58W5yaXCx8eqc=
 		</data>
 		<key>Headers/SMLoyaltyCard.h</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/SessionM.h</key>
 		<data>
-		sFPRDz9/atr5m0TUgO+Whrq+pSg=
+		zdPCMY+x8azN7nX2Auag89Iug9M=
 		</data>
 		<key>Headers/SessionMFramework.h</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U4Kbfri21AKtdty+5wVTPkwFrvg=
+		m3hO2pL0yrpdwa0DG7B0RcJq6x0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -534,11 +534,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dDVnu2o+L1ETqBA+2ch0Ss9fQQM=
+			o6zs+nI1nYxjFKIFFwR+MzdT+ss=
 			</data>
 			<key>hash2</key>
 			<data>
-			McRV48qC630+7mv/QlRSiBUnM7a2oG52SYNCB2GXtjA=
+			Y+ynq8HJrVHQzgUCjCSuLqN31LxRoCe8D1IDRplW+7c=
 			</data>
 		</dict>
 		<key>Headers/CLLRecordBase.h</key>
@@ -578,11 +578,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rlOZg4CmOCVJq/K+HKmUu8/jvZI=
+			eCobrqsKGHZnAm8eSFnf0O+05Pg=
 			</data>
 			<key>hash2</key>
 			<data>
-			t74YS2VjPqZpaP3xcMgQ35XKGfGmpjrcdGQ1qXxWH+c=
+			PzVO8qcykY/O1vAzaOrGZgx4wVRb07za0nxXVb/80ig=
 			</data>
 		</dict>
 		<key>Headers/SMAchievementData.h</key>
@@ -996,11 +996,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DnPCLfjFqFRBGlaFzsFcBJx2fTQ=
+			rZPkRO8XyZtdlt58W5yaXCx8eqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wKIIWNsLKVTTerLEMV67yWRu9cbWIPgA/7cWbf6Vkyg=
+			EVI8+ivcIRrxh6BPRezLlHzKfBTGAd7qjftgach5bws=
 			</data>
 		</dict>
 		<key>Headers/SMLoyaltyCard.h</key>
@@ -1425,11 +1425,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sFPRDz9/atr5m0TUgO+Whrq+pSg=
+			zdPCMY+x8azN7nX2Auag89Iug9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			ooSEv/fOBiuV6pBfay1fhIkK3gd6Hre1XqJINSNDqhU=
+			zScr+i7WTfQmKl60H7JsHS/Chwtycg6LEkV6j3gya3Q=
 			</data>
 		</dict>
 		<key>Headers/SessionMFramework.h</key>

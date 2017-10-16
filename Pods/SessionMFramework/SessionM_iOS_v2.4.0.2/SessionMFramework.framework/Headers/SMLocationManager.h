@@ -51,7 +51,7 @@ extern NSString *const SMLocationManagerAlwaysOnLocationServicesDisabled NS_SWIF
  @const SMLocationManagerMonitoredEventLimit
  @abstract The default maximum size for the amount of monitored location events in the @link locationEvents @/link array.
  */
-extern NSInteger const SMLocationManagerMonitoredEventLimit NS_SWIFT_NAME(monitoredEventLimit);
+extern NSUInteger const SMLocationManagerMonitoredEventLimit NS_SWIFT_NAME(monitoredEventLimit);
 
 /*!
  @const SMLocationManagerDidUpdateGeoLocations
@@ -89,12 +89,12 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @property isLocationServiceStarted
  @abstract <code>BOOL</code> indicating whether location updates have started or not.
  */
-@property(nonatomic, assign, readonly) BOOL isLocationServiceStarted;
+@property(nonatomic, readonly) BOOL isLocationServiceStarted;
 /*!
  @property isGeofenceServiceStarted
  @abstract <code>BOOL</code> indicating whether geofence updates have started or not.
  */
-@property(nonatomic, assign, readonly) BOOL isGeofenceServiceStarted;
+@property(nonatomic, readonly) BOOL isGeofenceServiceStarted;
 /*!
  @property currentGeoLocation
  @abstract Most current CLLocation returned by location services.
@@ -105,11 +105,6 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @abstract Currently monitored events that can be triggered by entering or exiting a geofence.
  */
 @property(nullable, nonatomic, strong, readonly) NSArray<SMLocationEvent *> *locationEvents;
-/*!
- @property eventLimit
- @abstract The maximum size for the amount of monitored location events in the @link locationEvents @/link array (default value is @link SMLocationManagerMonitoredEventLimit @/link).
- */
-@property(nonatomic, assign, readwrite) NSInteger eventLimit;
 
 /*!
  @abstract Returns singleton <code>SMLocationManger</code> service instance with a monitored location event limit of @link SMLocationManagerMonitoredEventLimit @/link.
