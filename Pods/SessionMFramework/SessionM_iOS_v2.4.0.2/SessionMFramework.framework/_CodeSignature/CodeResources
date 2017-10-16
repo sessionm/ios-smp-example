@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/SMLocationManager.h</key>
 		<data>
-		rZPkRO8XyZtdlt58W5yaXCx8eqc=
+		VIn+USvEME98Y/F5GwFfXHPFmNE=
 		</data>
 		<key>Headers/SMLoyaltyCard.h</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/SessionM.h</key>
 		<data>
-		zdPCMY+x8azN7nX2Auag89Iug9M=
+		ZJ7ma1VT+BFap4y1uzpKY8aLU9M=
 		</data>
 		<key>Headers/SessionMFramework.h</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m3hO2pL0yrpdwa0DG7B0RcJq6x0=
+		wutYIxU8UtzS/z3pOxktYtE0vzA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -996,11 +996,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rZPkRO8XyZtdlt58W5yaXCx8eqc=
+			VIn+USvEME98Y/F5GwFfXHPFmNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EVI8+ivcIRrxh6BPRezLlHzKfBTGAd7qjftgach5bws=
+			Ia1jDYkPgeOGiXAjDZ4v20RtN+UK0fuiCCO4TRFdnWg=
 			</data>
 		</dict>
 		<key>Headers/SMLoyaltyCard.h</key>
@@ -1425,11 +1425,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zdPCMY+x8azN7nX2Auag89Iug9M=
+			ZJ7ma1VT+BFap4y1uzpKY8aLU9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			zScr+i7WTfQmKl60H7JsHS/Chwtycg6LEkV6j3gya3Q=
+			DX91ZGVxoxSCc2ixT8LxhlItGnpr4qr9MxTVX3MTi2c=
 			</data>
 		</dict>
 		<key>Headers/SessionMFramework.h</key>
