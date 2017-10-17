@@ -2,7 +2,6 @@
 //  PageViewController.swift
 //  Offers
 //
-//  Created by Paul Mattheis on 10/5/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
@@ -19,6 +18,7 @@ class PageViewController: UIViewController {
 
         viewControllers = [ (storyboard?.instantiateViewController(withIdentifier: "MyOffers"))!, (storyboard?.instantiateViewController(withIdentifier: "RewardsStore"))! ]
         viewTitles = [ "My Rewards", "Rewards Store" ];
+        
         var tag = 0;
         viewControllers?.forEach({ (controller) in
             controller.view.tag = tag;
@@ -47,14 +47,15 @@ class PageViewController: UIViewController {
 
 extension PageViewController: UIPageViewControllerDataSource {
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        navigationController?.navigationBar.topItem!.title = viewTitles?[viewController.view.tag]
-        let idx = abs((viewController.view.tag - 1)) % (self.viewControllers?.count)!
-        return self.viewControllers?[idx];
+        return transitionPage(index: viewController.view.tag - 1)
     }
 
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        navigationController?.navigationBar.topItem!.title = viewTitles?[viewController.view.tag]
-        let idx = (viewController.view.tag + 1) % (self.viewControllers?.count)!
+        return transitionPage(index: viewController.view.tag + 1)
+    }
+
+    private func transitionPage(index : Int) -> UIViewController? {
+        let idx = abs(index) % (self.viewControllers?.count)!
         return self.viewControllers?[idx];
     }
 

@@ -2,7 +2,6 @@
 //  PurchaseAOfferViewController.swift
 //  Offers
 //
-//  Created by Paul Mattheis on 10/11/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
@@ -32,7 +31,7 @@ class PurchaseAOfferViewController: UIViewController {
         if let item = self.item {
 
             header.text = item.name
-            terms.text = "\(item.terms)\n\(item.details)"
+            terms.text = "\(item.details)\n\n\(item.terms)"
             if let user = SMUserManager.instance().currentUser {
                 available.text = "\(user.availablePoints)"
                 afterPurchase.text = "\(Double(user.availablePoints) - item.price)"
@@ -46,6 +45,7 @@ class PurchaseAOfferViewController: UIViewController {
     }
 
     @IBAction func doDismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func doPurchase(_ sender: Any) {

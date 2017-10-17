@@ -2,7 +2,6 @@
 //  ClaimUserOfferViewController.swift
 //  Offers
 //
-//  Created by Paul Mattheis on 10/11/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
@@ -44,6 +43,7 @@ class ClaimUserOfferViewController: UIViewController {
     func renderClaim(claim: SMClaimedOfferItem?) {
 
         if let claim = claim {
+
             barCodeText.text = claim.code;
             header.text = claim.name;
             details.text = claim.details;
@@ -53,10 +53,12 @@ class ClaimUserOfferViewController: UIViewController {
 
             expires.text = "Expires: \(df.string(from: claim.expirationDate))";
 
-            Common.loadImage(parent: nil, uri: claim.codeImageURI, imgView: self.barCodeImage, imageHeight: self.barCodeImageHeight, maxHeight: 200)
+            Common.loadImage(parent: nil, uri: claim.codeImageURI, imgView: self.barCodeImage, imageHeight: self.barCodeImageHeight, maxHeight: 70)
             if let uri = item?.media[0].uri {
-                Common.loadImage(parent: nil, uri: uri, imgView: self.image, imageHeight: self.imageHeight, maxHeight: 110)
+                Common.loadImage(parent: nil, uri: uri, imgView: self.image, imageHeight: self.imageHeight, maxHeight: 150)
             }
+
+            // Tick down 60 seconds
             Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true).fire()
         }
     }

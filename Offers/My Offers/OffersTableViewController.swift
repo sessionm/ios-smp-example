@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Events
 //
-//  Created by Paul Mattheis on 9/15/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
@@ -25,7 +24,11 @@ class OffersTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200;
 
-        self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);  // Put it below the navigation controller
+
+        modalPresentationStyle = .overCurrentContext
+        definesPresentationContext = true;
+        providesPresentationContextTransitionStyle = true;
 
         handleRefresh(refresh: nil)
     }
@@ -37,6 +40,7 @@ class OffersTableViewController: UITableViewController {
     }
 
     func updateToolbar() {
+        navigationController?.navigationBar.topItem!.title = "My Rewards"
         Common.showUserInToolbar(nav: navigationController!)
     }
 
@@ -44,8 +48,8 @@ class OffersTableViewController: UITableViewController {
 
     @IBAction func handleRefresh(refresh: UIRefreshControl?) {
         SMOffersManager.instance().fetchUserOffers { (result, error) in
-            if (refresh != nil && (refresh!.isRefreshing)) {
-                refresh!.endRefreshing();
+            if let r = refresh, r.isRefreshing {
+                r.endRefreshing();
             }
 
             if let error = error {
@@ -73,6 +77,7 @@ class OffersTableViewController: UITableViewController {
         let item = _offers[indexPath.row];
 
         cell.header.text = item.name;
+
         let df = DateFormatter()
         df.dateFormat = "dd.MM.yyyy"
         cell.expires.text = df.string(from: item.expirationDate);
@@ -88,10 +93,9 @@ class OffersTableViewController: UITableViewController {
 
         let purchaseVC = storyboard?.instantiateViewController(withIdentifier: "PurchaseOffer") as! ClaimUserOfferViewController
         purchaseVC.item = _offers[indexPath.row];
-        modalPresentationStyle = .overCurrentContext
-        definesPresentationContext = true;
-        providesPresentationContextTransitionStyle = true;
+
         present(purchaseVC, animated: false) {}
+
     }
 }
 

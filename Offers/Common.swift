@@ -2,14 +2,13 @@
 //  Common.swift
 //  Offers
 //
-//  Created by Paul Mattheis on 10/12/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
 import UIKit
 
 class Common: NSObject {
-    static func loadImage(parent: UIView?, uri: String, imgView: UIImageView, imageHeight: NSLayoutConstraint, maxHeight: CGFloat) {
+    static func loadImage(parent: UIView?, uri: String, imgView: UIImageView, imageHeight: NSLayoutConstraint?, maxHeight: CGFloat) {
         DispatchQueue.global().async {
             do {
                 if let imageURL = URL(string: uri.replacingOccurrences(of: "http:", with: "https:")) {
@@ -20,7 +19,9 @@ class Common: NSObject {
                                 p.beginUpdates()
                             }
                             imgView.image = img;
-                            imageHeight.constant = img.size.height > maxHeight ? maxHeight : img.size.height
+                            if let imgHeight = imageHeight {
+                                imgHeight.constant = img.size.height > maxHeight ? maxHeight : img.size.height
+                            }
                             if let p = parent as? UITableView {
                                 p.endUpdates()
                             }
