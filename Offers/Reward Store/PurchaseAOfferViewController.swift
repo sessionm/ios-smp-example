@@ -49,6 +49,17 @@ class PurchaseAOfferViewController: UIViewController {
     }
 
     @IBAction func doPurchase(_ sender: Any) {
+        if let item = self.item {
+            SMOffersManager.instance().purchaseOffer(havingID: item.offerID, quantity: 1) { (result: SMPurchaseOfferResult?, error: SMError?) in
+                if let error = error {
+                    self.present(UIAlertController(title: "No Purchase", message: error.message, preferredStyle: .alert), animated: true, completion: {})
+                } else if let result = result {
+                    let ctrlr = UIAlertController(title: "Purchased", message: result.userOffer.offerID, preferredStyle: .alert)
+                    ctrlr.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                    self.present(ctrlr, animated: true, completion: {})
+                }
+            }
+        }
     }
 
 }

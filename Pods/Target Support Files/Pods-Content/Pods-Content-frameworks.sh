@@ -102,12 +102,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMFramework.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMWebAuth.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.x/SessionMFramework.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.x/SessionMWebAuth.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMFramework.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.2/SessionMWebAuth.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.x/SessionMFramework.framework"
+  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.x/SessionMWebAuth.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
