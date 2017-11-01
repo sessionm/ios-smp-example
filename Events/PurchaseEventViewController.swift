@@ -48,7 +48,7 @@ class PurchaseEventViewController: UIViewController {
         }
         if let a = amount.text, a.characters.count > 0, let amt = Double(a) {
             add = true;
-            builder.total = Int(amt * 100.0);
+            builder.amount = Int(amt * 100.0);
         }
         if let s = store.text, s.characters.count > 0 {
             add = true;
@@ -63,7 +63,7 @@ class PurchaseEventViewController: UIViewController {
                 if let n = item.name { text += "\(n)\t"; }
                 if let s = item.store { text += "\(s)\t"; }
                 if item.quantity > 0 { text += "\(item.quantity)\t"; }
-                if item.total > 0 { text += "\(item.total)\t"; }
+                if item.amount > 0 { text += "\(item.amount)\t"; }
                 text += "\n";
             }
             itemsList.text = "\(text)\n";
