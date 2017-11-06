@@ -43,7 +43,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
             if let location = locationManager.location {
                 startFetch(location)
             } else {
-                locationManager.requestAlwaysAuthorization()
+                locationManager.requestWhenInUseAuthorization()
             }
         }
     }
@@ -60,7 +60,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
                 startFetch(location)
             }
         } else {
-            locationManager.requestAlwaysAuthorization()
+            locationManager.requestWhenInUseAuthorization()
         }
     }
 
@@ -121,7 +121,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         cell.distance.text = "Distance: \(place.distance)"
         cell.distanceUnits.text = "\(place.distanceLabel!)"
 
-        if let img = place.iconURL, img.characters.count > 0 {
+        if let img = place.iconURL, img.count > 0 {
             Util.loadFrom(img, callback: { (image) in
                 cell.brandImage.backgroundColor = UIColor.darkGray
                 cell.brandImage.image = image

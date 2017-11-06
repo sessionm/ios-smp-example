@@ -74,7 +74,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
                                                            options: NSLayoutFormatOptions(rawValue: 0),
                                                            metrics: nil,
                                                            views: variableBindings))
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[dismissButton(==50)]-[titleLabel]-[selectedImagesView]-[addImageButton]-8-|",
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[dismissButton(==50)]-[titleLabel]-[selectedImagesView]-[addImageButton]-|",
                                                            options: NSLayoutFormatOptions(rawValue: 0),
                                                            metrics: nil,
                                                            views: variableBindings))
@@ -117,7 +117,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
 
     // MARK: - UIImagePickerControllerDelegate
 
-    func openImageSourcePrompt() {
+    @objc func openImageSourcePrompt() {
         let cancelHandler: (UIAlertAction) -> Void = { action in
             if self.selectedImagesView.image == nil {
                 self.cleanUpAndDismiss()
@@ -194,7 +194,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
 
     // MARK: - Receipt image uploading
 
-    func openProgressView() {
+    @objc func openProgressView() {
         let darkView = UIView(frame: view.frame)
         darkView.layer.backgroundColor = UIColor.black.cgColor
         darkView.layer.opacity = 0.5
@@ -330,7 +330,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
     }
 
     func uploadedReceipt(_ receipt: SMReceipt) {
-        if receipt.invalidReason?.characters.count == 0 {
+        if receipt.invalidReason?.count == 0 {
             progressTitleLabel.text = "Thank You!"
             progressDescriptionlabel.text = "Your receipt has been successfully uploaded."
             let actionString = "Continue"
@@ -357,7 +357,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
         progressActionButton.alpha = 1.0
     }
 
-    func retryUpload() {
+    @objc func retryUpload() {
         let cancelString = "Cancel"
         progressDismissButton.titleLabel?.text = cancelString
         progressDismissButton.setTitle(cancelString, for: .normal)
@@ -370,7 +370,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
         uploadCurrentReceipt()
     }
 
-    func cleanUpAndDismiss() {
+    @objc func cleanUpAndDismiss() {
         dismiss(animated: true) { 
             SessionM.sharedInstance().dismissActivity()
         }

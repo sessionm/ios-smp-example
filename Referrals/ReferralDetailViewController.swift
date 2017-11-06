@@ -30,7 +30,7 @@ class ReferralDetailViewController: UIViewController, UITextViewDelegate, UIText
     var referral: SMReferral?
 
     @IBAction private func submit(_ sender: UIButton) {
-        guard let emailText = email.text, emailText.characters.count > 0 else {
+        guard let emailText = email.text, emailText.count > 0 else {
             let emailMissing = UIAlertController(title: "Email Missing", message: "Email is required", preferredStyle: .alert)
             emailMissing.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(emailMissing, animated: true)
@@ -97,7 +97,7 @@ class ReferralDetailViewController: UIViewController, UITextViewDelegate, UIText
             phoneNumber.text = r.phoneNumber
             source.text = r.source
             origin.text = r.origin
-            clientData.text = "\(r.clientData)"
+            clientData.text = "\(String(describing: r.clientData))"
         }
     }
 

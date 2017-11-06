@@ -119,7 +119,7 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
             if let rs = receipt.results {
                 for result in rs {
                     if (result.resultID == self.recordModelID) {
-                        msg += "\(receipt.receiptID) \(result.name)\n \(result.descriptionText)"
+                        msg += "\(receipt.receiptID) \(String(describing: result.name))\n \(String(describing: result.descriptionText))"
                         break
                     }
                 }

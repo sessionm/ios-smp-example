@@ -137,10 +137,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate, SessionMDelega
                 login.isEnabled = emailRegex.matches(in: result, options: [], range: NSRangeFromString(result)).count > 0
                 oauthLogin.isEnabled = emailRegex.matches(in: result, options: [], range: NSRangeFromString(result)).count > 0
             } else if (textField == token) {
-                authenticate.isEnabled = result.characters.count > 0
+                authenticate.isEnabled = result.count > 0
             } else if (textField == password) {
-                login.isEnabled = result.characters.count > 0
-                oauthLogin.isEnabled = result.characters.count > 0
+                login.isEnabled = result.count > 0
+                oauthLogin.isEnabled = result.count > 0
             }
         }
         return true

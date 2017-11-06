@@ -8,6 +8,7 @@
 import MapKit
 import UIKit
 
+private let dwellTriggerType = "DWELL"
 private let enterTriggerType = "ENTER"
 private let exitTriggerType = "EXIT"
 
@@ -21,25 +22,12 @@ enum GeofenceAnnotationType {
             case .info:
                 return UIColor.green
             case .trigger(let triggerType):
-                if triggerType == exitTriggerType {
+                if triggerType == dwellTriggerType {
+                    return UIColor.black
+                } else if triggerType == exitTriggerType {
                     return UIColor.purple
                 } else {
                     return UIColor.red
-                }
-            }
-        }
-    }
-
-    var pinColor: MKPinAnnotationColor {
-        get {
-            switch self {
-            case .info:
-                return .green
-            case .trigger(let triggerType):
-                if triggerType == exitTriggerType {
-                    return .purple
-                } else {
-                    return .red
                 }
             }
         }

@@ -117,11 +117,7 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
         let identifier = "\(geoAnnotation.type.annotationTitle)"
         guard let view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView else {
             let view = MKPinAnnotationView(annotation: clusterAnnotation, reuseIdentifier: identifier)
-            if #available(iOS 9.0, *) {
-                view.pinTintColor = geoAnnotation.type.pinTintColor
-            } else {
-                view.pinColor = geoAnnotation.type.pinColor
-            }
+            view.pinTintColor = geoAnnotation.type.pinTintColor
             view.canShowCallout = false
             return view
         }

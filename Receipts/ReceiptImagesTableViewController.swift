@@ -28,7 +28,7 @@ class ReceiptImagesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptImageCell", for: indexPath)
 
-        guard let img = receipt.imageURLs?[indexPath.row], img.characters.count > 0 else {
+        guard let img = receipt.imageURLs?[indexPath.row], img.count > 0 else {
             return cell
         }
 

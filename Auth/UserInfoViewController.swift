@@ -23,7 +23,7 @@ class UserInfoViewController: UIViewController {
             })
             for (key, value) in sortedUser {
                 let keyValue = NSMutableAttributedString(string: "\(key): \(value)\n")
-                keyValue.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSMakeRange(0, key.characters.count))
+                keyValue.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.blue, range: NSMakeRange(0, key.count))
                 info.append(keyValue)
             }
             userInfo.attributedText = info

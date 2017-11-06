@@ -91,7 +91,7 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
             }
 
             if let icn = message.iconURL {
-                if (icn.characters.count > 0) {
+                if (icn.count > 0) {
                     Util.loadFrom(icn, callback: { (image) in
                         icon.image = image
                     })
