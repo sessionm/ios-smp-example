@@ -1,0 +1,745 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMWebView.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMWebView.h;   name=SMWebView.h -->
+<a name="//apple_ref/doc/header/SMWebView.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMWebView.h">SMWebView.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Foundation.h" machineGenerated="true" -->&lt;Foundation/Foundation.h&gt;<!-- /a --><br><!-- a logicalPath="//apple_ref/doc/header/WebKit.h" machineGenerated="true" -->&lt;WebKit/WebKit.h&gt;<!-- /a --><br><a machinegenerated="true" href="../SMJSBridgeHandling_h/index.html#//apple_ref/doc/header/SMJSBridgeHandling.h" logicalPath="//apple_ref/doc/header/SMJSBridgeHandling.h" target="_top">"SMJSBridgeHandling.h"</a><br><a machinegenerated="true" href="../SMError_h/index.html#//apple_ref/doc/header/SMError.h" logicalPath="//apple_ref/doc/header/SMError.h" target="_top">"SMError.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMWebView.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMWebView.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_functions"></a>
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/id" target="_top">id</a></tt></dt>
+<dd><p>delegate for <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> to pass events to caller.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151" target="_top">NS_SWIFT_NAME(webViewErrorNotification)</a></tt></dt>
+<dd><p>Notifies observers of WebView errors.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME(webViewResultNotification)</a></tt></dt>
+<dd><p>Notifies observers of WebView events.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_2" target="_top">property</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_1" target="_top">property(nonatomic,  readonly)</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property" target="_top">property(nonatomic,  strong)</a></tt></dt>
+<dd><p>url is used when the <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> is displayed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/id;   name=id --><a name="//apple_ref/c/func/id"></a>
+<h3><a name="id">id</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/id;name=start --><!-- begin abstract --></p>
+<p>delegate for <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> to pass events to caller.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/id;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/id;name=start -->@<a machinegenerated="true" href="index.html#//apple_ref/c/func/property" logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property" target="_top"><span class="function">property</span></a>(
+    <span class="param">nonatomic</span>,
+    <span class="param">weak</span>,
+    <span class="param">nullable</span>) <!-- a logicalPath="//apple_ref/c/cl/IBOutlet //apple_ref/c/tdef/IBOutlet //apple_ref/c/tag/IBOutlet //apple_ref/c/struct/IBOutlet //apple_ref/c/intf/IBOutlet //apple_ref/doc/anysymbol/IBOutlet" machineGenerated="true" --><span class="type">IBOutlet</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/id" logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/struct/id //apple_ref/c/intf/id //apple_ref/doc/anysymbol/id" target="_top"><span class="type">id</span></a>&lt;<span class="template">SMWebViewDelegate</span>&gt;<!-- a logicalPath="//apple_ref/c/econst/delegate //apple_ref/c/data/delegate //apple_ref/c/clconst/delegate " machineGenerated="true" --><span class="var">delegate</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/id;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/id;name=start --><p>This will pass a sub-set of the <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> and SessionM custom events to the developer if they register..
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/id;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151"></a>
+<h3><a name="NS_SWIFT_NAME(webViewErrorNotification)">NS_SWIFT_NAME(webViewErrorNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=start --><!-- begin abstract --></p>
+<p>Notifies observers of WebView errors.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" logicalPath="//apple_ref/c/cl/SM_WEB_VIEW_ERROR_NOTIFICATION //apple_ref/c/tdef/SM_WEB_VIEW_ERROR_NOTIFICATION //apple_ref/c/tag/SM_WEB_VIEW_ERROR_NOTIFICATION //apple_ref/c/struct/SM_WEB_VIEW_ERROR_NOTIFICATION //apple_ref/c/intf/SM_WEB_VIEW_ERROR_NOTIFICATION //apple_ref/doc/anysymbol/SM_WEB_VIEW_ERROR_NOTIFICATION" target="_top"><span class="type">SM_WEB_VIEW_ERROR_NOTIFICATION</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">webViewErrorNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=start --><p>a error notification in the WebView.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151;name=end --><!-- end discussion -->
+</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" logicalPath="//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" target="_top">SM_WEB_VIEW_ERROR_NOTIFICATION</a></p></dt>
+<dd></dd>
+<dt><p><a href="index.html#//apple_ref/c/data/kSMWebViewError" logicalPath="//apple_ref/c/data/kSMWebViewError" target="_top">kSMWebViewError</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME"></a>
+<h3><a name="NS_SWIFT_NAME(webViewResultNotification)">NS_SWIFT_NAME(webViewResultNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><!-- begin abstract --></p>
+<p>Notifies observers of WebView events.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_WEB_VIEW_RESULT_NOTIFICATION //apple_ref/c/tdef/SM_WEB_VIEW_RESULT_NOTIFICATION //apple_ref/c/tag/SM_WEB_VIEW_RESULT_NOTIFICATION //apple_ref/c/struct/SM_WEB_VIEW_RESULT_NOTIFICATION //apple_ref/c/intf/SM_WEB_VIEW_RESULT_NOTIFICATION //apple_ref/doc/anysymbol/SM_WEB_VIEW_RESULT_NOTIFICATION" machineGenerated="true" --><span class="type">SM_WEB_VIEW_RESULT_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">webViewResultNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><p>a notification of an action happening in the WebView.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_2;   name=property --><a name="//apple_ref/c/func/property_DONTLINK_2"></a>
+<h3><a name="property">property</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/property_DONTLINK_2;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/property_DONTLINK_2;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/property_DONTLINK_2;name=start -->@<a machinegenerated="true" href="index.html#//apple_ref/c/func/property" logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property" target="_top"><span class="function">property</span></a> (
+    <span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/canGoForward //apple_ref/c/data/canGoForward //apple_ref/c/clconst/canGoForward " machineGenerated="true" --><span class="var">canGoForward</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/property_DONTLINK_2;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_1;   name=property --><a name="//apple_ref/c/func/property_DONTLINK_1"></a>
+<h3><a name="property(nonatomic,readonly)">property(nonatomic,  readonly)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/property_DONTLINK_1;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/property_DONTLINK_1;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/property_DONTLINK_1;name=start -->@<a machinegenerated="true" href="index.html#//apple_ref/c/func/property" logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property" target="_top"><span class="function">property</span></a> (
+    <span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/canGoBack //apple_ref/c/data/canGoBack //apple_ref/c/clconst/canGoBack " machineGenerated="true" --><span class="var">canGoBack</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/property_DONTLINK_1;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/property;   name=property --><a name="//apple_ref/c/func/property"></a>
+<h3><a name="property(nonatomic,strong)">property(nonatomic,  strong)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/property;name=start --><!-- begin abstract --></p>
+<p>url is used when the <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> is displayed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/property;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/property;name=start -->@<a machinegenerated="true" href="index.html#//apple_ref/c/func/property" logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property" target="_top"><span class="function">property</span></a>(
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>) <!-- a logicalPath="//apple_ref/c/cl/IBInspectable //apple_ref/c/tdef/IBInspectable //apple_ref/c/tag/IBInspectable //apple_ref/c/struct/IBInspectable //apple_ref/c/intf/IBInspectable //apple_ref/doc/anysymbol/IBInspectable" machineGenerated="true" --><span class="type">IBInspectable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/url //apple_ref/c/data/url //apple_ref/c/clconst/url " machineGenerated="true" --><span class="var">url</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/property;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/property;name=start --><p>This is the URL, if entered, that will show up when the <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a --> is displayed.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/property;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:" target="_top">+evaluateJavaScript:completionHandler:_:completionHandler:</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/goBack" target="_top">+goBack</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/goForward" target="_top">+goForward</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/initWithCoder:" target="_top">+initWithCoder:</a></tt></dt>
+<dd><p>Constructor is used if view is created from a xib or storyboard.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/initWithFrame:" target="_top">+initWithFrame:</a></tt></dt>
+<dd><p>Constructor is used if developer creates and displays view from code.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:" target="_top">+loadHTMLString:baseURL:_:baseURL:</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/loadRequest:_:" target="_top">+loadRequest:_:</a></tt></dt>
+<dd><p>Forward to WKWebView.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/registerJSBridgeHandler:_:" target="_top">+registerJSBridgeHandler:_:</a></tt></dt>
+<dd><p>register a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> to include in processing.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/registerRedirectDelegate:_:" target="_top">+registerRedirectDelegate:_:</a></tt></dt>
+<dd><p>register a <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> to include in processing.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/unregisterJSBridgeHandler:_:" target="_top">+unregisterJSBridgeHandler:_:</a></tt></dt>
+<dd><p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:" target="_top">+unregisterJSBridgeHandlerWithTag:havingTag:</a></tt></dt>
+<dd><p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/unregisterRedirectDelegate:_:" target="_top">+unregisterRedirectDelegate:_:</a></tt></dt>
+<dd><p>unregister a <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> from being processed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:" target="_top">+unregisterRedirectDelegateWithPrefix:havingPrefix:</a></tt></dt>
+<dd><p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:;   name=evaluateJavaScript:completionHandler:_:completionHandler: --><a name="//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:"></a>
+<h3><a name="evaluateJavaScript:completionHandler:_:completionHandler:">evaluateJavaScript:completionHandler:_:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/evaluateJavaScript //apple_ref/c/clm/evaluateJavaScript //apple_ref/c/intfcm/evaluateJavaScript //apple_ref/c/intfm/evaluateJavaScript //apple_ref/c/func/evaluateJavaScript //apple_ref/c/ftmplt/evaluateJavaScript //apple_ref/c/defn/evaluateJavaScript //apple_ref/c/macro/evaluateJavaScript //apple_ref/doc/anysymbol/evaluateJavaScript" machineGenerated="true" --><span class="function">evaluateJavaScript</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">javaScriptString</span> 
+        <a machinegenerated="true" href="../SMUserTagsManager_h/Classes/SMUserTagsManager/index.html#//apple_ref/doc/methodparam/SMUserTagsManager/updateUserTags:timeToLive:completionHandler:updates:timeToLive:completionHandler:/completionHandler" logicalPath="//apple_ref/c/instm/completionHandler //apple_ref/c/clm/completionHandler //apple_ref/c/intfcm/completionHandler //apple_ref/c/intfm/completionHandler //apple_ref/c/func/completionHandler //apple_ref/c/ftmplt/completionHandler //apple_ref/c/defn/completionHandler //apple_ref/c/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(void (^ <!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)(<!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">id</span>, <!-- a logicalPath="//apple_ref/c/cl/NSError //apple_ref/c/tdef/NSError //apple_ref/c/tag/NSError //apple_ref/c/struct/NSError //apple_ref/c/intf/NSError //apple_ref/doc/anysymbol/NSError" machineGenerated="true" --><span class="type">NSError</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <a machinegenerated="true" href="../SMReferralsManager_h/Protocols/SMReferralsDelegate/index.html#//apple_ref/doc/methodparam/SMReferralsDelegate/didSendReferrals:referralErrors:error:_:referralErrors:error:/error" logicalPath="//apple_ref/c/cl/error //apple_ref/c/tdef/error //apple_ref/c/tag/error //apple_ref/c/struct/error //apple_ref/c/intf/error //apple_ref/doc/anysymbol/error" target="_top"><span class="type">error</span></a>))<span class="param">completionHandler</span> NS_SWIFT_NAME(evaluateJavaScript(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<a machinegenerated="true" href="../SMUserTagsManager_h/Classes/SMUserTagsManager/index.html#//apple_ref/doc/methodparam/SMUserTagsManager/updateUserTags:timeToLive:completionHandler:updates:timeToLive:completionHandler:/completionHandler" logicalPath="//apple_ref/c/instm/completionHandler //apple_ref/c/clm/completionHandler //apple_ref/c/intfcm/completionHandler //apple_ref/c/intfm/completionHandler //apple_ref/c/func/completionHandler //apple_ref/c/ftmplt/completionHandler //apple_ref/c/defn/completionHandler //apple_ref/c/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/evaluateJavaScript:completionHandler:_:completionHandler:;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/goBack;   name=goBack --><a name="//apple_ref/c/func/goBack"></a>
+<h3><a name="goBack">goBack</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/goBack;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/goBack;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/goBack;name=start -->- (<!-- a logicalPath="//apple_ref/c/cl/nullable //apple_ref/c/tdef/nullable //apple_ref/c/tag/nullable //apple_ref/c/struct/nullable //apple_ref/c/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/WKNavigation //apple_ref/c/tdef/WKNavigation //apple_ref/c/tag/WKNavigation //apple_ref/c/struct/WKNavigation //apple_ref/c/intf/WKNavigation //apple_ref/doc/anysymbol/WKNavigation" machineGenerated="true" --><span class="type">WKNavigation</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/goBack //apple_ref/c/data/goBack //apple_ref/c/clconst/goBack " machineGenerated="true" --><span class="var">goBack</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/goBack;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/goForward;   name=goForward --><a name="//apple_ref/c/func/goForward"></a>
+<h3><a name="goForward">goForward</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/goForward;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/goForward;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/goForward;name=start -->- (<!-- a logicalPath="//apple_ref/c/cl/nullable //apple_ref/c/tdef/nullable //apple_ref/c/tag/nullable //apple_ref/c/struct/nullable //apple_ref/c/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/WKNavigation //apple_ref/c/tdef/WKNavigation //apple_ref/c/tag/WKNavigation //apple_ref/c/struct/WKNavigation //apple_ref/c/intf/WKNavigation //apple_ref/doc/anysymbol/WKNavigation" machineGenerated="true" --><span class="type">WKNavigation</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/goForward //apple_ref/c/data/goForward //apple_ref/c/clconst/goForward " machineGenerated="true" --><span class="var">goForward</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/goForward;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/initWithCoder:;   name=initWithCoder: --><a name="//apple_ref/c/func/initWithCoder:"></a>
+<h3><a name="initWithCoder:">initWithCoder:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/initWithCoder:;name=start --><!-- begin abstract --></p>
+<p>Constructor is used if view is created from a xib or storyboard.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/initWithCoder:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/initWithCoder:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/instancetype //apple_ref/c/tdef/instancetype //apple_ref/c/tag/instancetype //apple_ref/c/struct/instancetype //apple_ref/c/intf/instancetype //apple_ref/doc/anysymbol/instancetype" machineGenerated="true" --><span class="type">instancetype</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/initWithCoder //apple_ref/c/clm/initWithCoder //apple_ref/c/intfcm/initWithCoder //apple_ref/c/intfm/initWithCoder //apple_ref/c/func/initWithCoder //apple_ref/c/ftmplt/initWithCoder //apple_ref/c/defn/initWithCoder //apple_ref/c/macro/initWithCoder //apple_ref/doc/anysymbol/initWithCoder" machineGenerated="true" --><span class="function">initWithCoder</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSCoder //apple_ref/c/tdef/NSCoder //apple_ref/c/tag/NSCoder //apple_ref/c/struct/NSCoder //apple_ref/c/intf/NSCoder //apple_ref/doc/anysymbol/NSCoder" machineGenerated="true" --><span class="type">NSCoder</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/coder //apple_ref/c/data/coder //apple_ref/c/clconst/coder " machineGenerated="true" --><span class="var">coder</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/initWithCoder:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/initWithCoder:/coder;   name=coder -->
+<a name="//apple_ref/doc/methodparam/initWithCoder:/coder"></a>
+<code>coder</code>
+</dt>
+<dd><p>pulls params from storyboard or xib</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Instance of <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a -->
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/initWithFrame:;   name=initWithFrame: --><a name="//apple_ref/c/func/initWithFrame:"></a>
+<h3><a name="initWithFrame:">initWithFrame:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/initWithFrame:;name=start --><!-- begin abstract --></p>
+<p>Constructor is used if developer creates and displays view from code.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/initWithFrame:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/initWithFrame:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/instancetype //apple_ref/c/tdef/instancetype //apple_ref/c/tag/instancetype //apple_ref/c/struct/instancetype //apple_ref/c/intf/instancetype //apple_ref/doc/anysymbol/instancetype" machineGenerated="true" --><span class="type">instancetype</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/initWithFrame //apple_ref/c/clm/initWithFrame //apple_ref/c/intfcm/initWithFrame //apple_ref/c/intfm/initWithFrame //apple_ref/c/func/initWithFrame //apple_ref/c/ftmplt/initWithFrame //apple_ref/c/defn/initWithFrame //apple_ref/c/macro/initWithFrame //apple_ref/doc/anysymbol/initWithFrame" machineGenerated="true" --><span class="function">initWithFrame</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/CGRect //apple_ref/c/tdef/CGRect //apple_ref/c/tag/CGRect //apple_ref/c/struct/CGRect //apple_ref/c/intf/CGRect //apple_ref/doc/anysymbol/CGRect" machineGenerated="true" --><span class="type">CGRect</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/frame //apple_ref/c/data/frame //apple_ref/c/clconst/frame " machineGenerated="true" --><span class="var">frame</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/func/initWithFrame:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/initWithFrame:/frame;   name=frame -->
+<a name="//apple_ref/doc/methodparam/initWithFrame:/frame"></a>
+<code>frame</code>
+</dt>
+<dd><p>is the desired size of the frame</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Instance of <!-- a logicalPath="//apple_ref/c/cl/SMWebView //apple_ref/c/tdef/SMWebView //apple_ref/c/tag/SMWebView //apple_ref/c/struct/SMWebView //apple_ref/c/intf/SMWebView //apple_ref/c/econst/SMWebView //apple_ref/c/data/SMWebView //apple_ref/c/clconst/SMWebView //apple_ref/c/instm/SMWebView //apple_ref/c/clm/SMWebView //apple_ref/c/intfcm/SMWebView //apple_ref/c/intfm/SMWebView //apple_ref/c/func/SMWebView //apple_ref/c/ftmplt/SMWebView //apple_ref/c/defn/SMWebView //apple_ref/c/macro/SMWebView //apple_ref/doc/com/intfm/SMWebView //apple_ref/doc/anysymbol/SMWebView" -->SMWebView<!-- /a -->
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:;   name=loadHTMLString:baseURL:_:baseURL: --><a name="//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:"></a>
+<h3><a name="loadHTMLString:baseURL:_:baseURL:">loadHTMLString:baseURL:_:baseURL:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:;name=start -->- (<!-- a logicalPath="//apple_ref/c/cl/nullable //apple_ref/c/tdef/nullable //apple_ref/c/tag/nullable //apple_ref/c/struct/nullable //apple_ref/c/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/WKNavigation //apple_ref/c/tdef/WKNavigation //apple_ref/c/tag/WKNavigation //apple_ref/c/struct/WKNavigation //apple_ref/c/intf/WKNavigation //apple_ref/doc/anysymbol/WKNavigation" machineGenerated="true" --><span class="type">WKNavigation</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/instm/loadHTMLString //apple_ref/c/clm/loadHTMLString //apple_ref/c/intfcm/loadHTMLString //apple_ref/c/intfm/loadHTMLString //apple_ref/c/func/loadHTMLString //apple_ref/c/ftmplt/loadHTMLString //apple_ref/c/defn/loadHTMLString //apple_ref/c/macro/loadHTMLString //apple_ref/doc/anysymbol/loadHTMLString" machineGenerated="true" --><span class="function">loadHTMLString</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">string</span> 
+        <a machinegenerated="true" href="../SMGenericRequestBuilder_h/Classes/SMGenericRequestBuilder/index.html#//apple_ref/occ/instp/SMGenericRequestBuilder/baseURL" logicalPath="//apple_ref/c/instm/baseURL //apple_ref/c/clm/baseURL //apple_ref/c/intfcm/baseURL //apple_ref/c/intfm/baseURL //apple_ref/c/func/baseURL //apple_ref/c/ftmplt/baseURL //apple_ref/c/defn/baseURL //apple_ref/c/macro/baseURL //apple_ref/doc/anysymbol/baseURL" target="_top"><span class="function">baseURL</span></a>:(<!-- a logicalPath="//apple_ref/c/cl/nullable //apple_ref/c/tdef/nullable //apple_ref/c/tag/nullable //apple_ref/c/struct/nullable //apple_ref/c/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/NSURL //apple_ref/c/tdef/NSURL //apple_ref/c/tag/NSURL //apple_ref/c/struct/NSURL //apple_ref/c/intf/NSURL //apple_ref/doc/anysymbol/NSURL" machineGenerated="true" --><span class="type">NSURL</span><!-- /a --> <span class="type">*</span>)<span class="param">baseURL</span> NS_SWIFT_NAME(loadHTMLString(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<a machinegenerated="true" href="../SMGenericRequestBuilder_h/Classes/SMGenericRequestBuilder/index.html#//apple_ref/occ/instp/SMGenericRequestBuilder/baseURL" logicalPath="//apple_ref/c/instm/baseURL //apple_ref/c/clm/baseURL //apple_ref/c/intfcm/baseURL //apple_ref/c/intfm/baseURL //apple_ref/c/func/baseURL //apple_ref/c/ftmplt/baseURL //apple_ref/c/defn/baseURL //apple_ref/c/macro/baseURL //apple_ref/doc/anysymbol/baseURL" target="_top"><span class="function">baseURL</span></a>:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/loadHTMLString:baseURL:_:baseURL:;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/loadRequest:_:;   name=loadRequest:_: --><a name="//apple_ref/c/func/loadRequest:_:"></a>
+<h3><a name="loadRequest:_:">loadRequest:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/loadRequest:_:;name=start --><!-- begin abstract --></p>
+<p>Forward to WKWebView.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/loadRequest:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/loadRequest:_:;name=start -->- (<!-- a logicalPath="//apple_ref/c/cl/nullable //apple_ref/c/tdef/nullable //apple_ref/c/tag/nullable //apple_ref/c/struct/nullable //apple_ref/c/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/WKNavigation //apple_ref/c/tdef/WKNavigation //apple_ref/c/tag/WKNavigation //apple_ref/c/struct/WKNavigation //apple_ref/c/intf/WKNavigation //apple_ref/doc/anysymbol/WKNavigation" machineGenerated="true" --><span class="type">WKNavigation</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/instm/loadRequest //apple_ref/c/clm/loadRequest //apple_ref/c/intfcm/loadRequest //apple_ref/c/intfm/loadRequest //apple_ref/c/func/loadRequest //apple_ref/c/ftmplt/loadRequest //apple_ref/c/defn/loadRequest //apple_ref/c/macro/loadRequest //apple_ref/doc/anysymbol/loadRequest" machineGenerated="true" --><span class="function">loadRequest</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSURLRequest //apple_ref/c/tdef/NSURLRequest //apple_ref/c/tag/NSURLRequest //apple_ref/c/struct/NSURLRequest //apple_ref/c/intf/NSURLRequest //apple_ref/doc/anysymbol/NSURLRequest" machineGenerated="true" --><span class="type">NSURLRequest</span><!-- /a --> <span class="type">*</span>)<span class="param">request</span> NS_SWIFT_NAME(loadRequest(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/loadRequest:_:;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/registerJSBridgeHandler:_:;   name=registerJSBridgeHandler:_: --><a name="//apple_ref/c/func/registerJSBridgeHandler:_:"></a>
+<h3><a name="registerJSBridgeHandler:_:">registerJSBridgeHandler:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/registerJSBridgeHandler:_:;name=start --><!-- begin abstract --></p>
+<p>register a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> to include in processing.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/registerJSBridgeHandler:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/registerJSBridgeHandler:_:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/registerJSBridgeHandler //apple_ref/c/clm/registerJSBridgeHandler //apple_ref/c/intfcm/registerJSBridgeHandler //apple_ref/c/intfm/registerJSBridgeHandler //apple_ref/c/func/registerJSBridgeHandler //apple_ref/c/ftmplt/registerJSBridgeHandler //apple_ref/c/defn/registerJSBridgeHandler //apple_ref/c/macro/registerJSBridgeHandler //apple_ref/doc/anysymbol/registerJSBridgeHandler" machineGenerated="true" --><span class="function">registerJSBridgeHandler</span><!-- /a -->:(<a machinegenerated="true" href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/c/cl/SMJSBridgeHandler //apple_ref/c/tdef/SMJSBridgeHandler //apple_ref/c/tag/SMJSBridgeHandler //apple_ref/c/struct/SMJSBridgeHandler //apple_ref/c/intf/SMJSBridgeHandler //apple_ref/doc/anysymbol/SMJSBridgeHandler" target="_top"><span class="type">SMJSBridgeHandler</span></a> <span class="type">*</span>)<span class="param">jsBridgeHandler</span> NS_SWIFT_NAME(registerJSBridgeHandler(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/registerJSBridgeHandler:_:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/registerJSBridgeHandler:_:/jsBridgeHandler;   name=jsBridgeHandler -->
+<a name="//apple_ref/doc/methodparam/registerJSBridgeHandler:_:/jsBridgeHandler"></a>
+<code>jsBridgeHandler</code>
+</dt>
+<dd><p>the <!-- a logicalPath="//apple_ref/c/cl/SMjsBridgeHandler //apple_ref/c/tdef/SMjsBridgeHandler //apple_ref/c/tag/SMjsBridgeHandler //apple_ref/c/struct/SMjsBridgeHandler //apple_ref/c/intf/SMjsBridgeHandler //apple_ref/c/econst/SMjsBridgeHandler //apple_ref/c/data/SMjsBridgeHandler //apple_ref/c/clconst/SMjsBridgeHandler //apple_ref/c/instm/SMjsBridgeHandler //apple_ref/c/clm/SMjsBridgeHandler //apple_ref/c/intfcm/SMjsBridgeHandler //apple_ref/c/intfm/SMjsBridgeHandler //apple_ref/c/func/SMjsBridgeHandler //apple_ref/c/ftmplt/SMjsBridgeHandler //apple_ref/c/defn/SMjsBridgeHandler //apple_ref/c/macro/SMjsBridgeHandler //apple_ref/doc/com/intfm/SMjsBridgeHandler //apple_ref/doc/anysymbol/SMjsBridgeHandler" -->SMjsBridgeHandler<!-- /a --> to register</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/registerRedirectDelegate:_:;   name=registerRedirectDelegate:_: --><a name="//apple_ref/c/func/registerRedirectDelegate:_:"></a>
+<h3><a name="registerRedirectDelegate:_:">registerRedirectDelegate:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/registerRedirectDelegate:_:;name=start --><!-- begin abstract --></p>
+<p>register a <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> to include in processing.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/registerRedirectDelegate:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/registerRedirectDelegate:_:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/registerRedirectDelegate //apple_ref/c/clm/registerRedirectDelegate //apple_ref/c/intfcm/registerRedirectDelegate //apple_ref/c/intfm/registerRedirectDelegate //apple_ref/c/func/registerRedirectDelegate //apple_ref/c/ftmplt/registerRedirectDelegate //apple_ref/c/defn/registerRedirectDelegate //apple_ref/c/macro/registerRedirectDelegate //apple_ref/doc/anysymbol/registerRedirectDelegate" machineGenerated="true" --><span class="function">registerRedirectDelegate</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" machineGenerated="true" --><span class="type">SMRedirectDelegate</span><!-- /a --> <span class="type">*</span>)<span class="param">redirectDelegate</span> NS_SWIFT_NAME(registerRedirectDelegate(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/registerRedirectDelegate:_:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/registerRedirectDelegate:_:/redirectDelegate;   name=redirectDelegate -->
+<a name="//apple_ref/doc/methodparam/registerRedirectDelegate:_:/redirectDelegate"></a>
+<code>redirectDelegate</code>
+</dt>
+<dd><p>the <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> to register</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/unregisterJSBridgeHandler:_:;   name=unregisterJSBridgeHandler:_: --><a name="//apple_ref/c/func/unregisterJSBridgeHandler:_:"></a>
+<h3><a name="unregisterJSBridgeHandler:_:">unregisterJSBridgeHandler:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterJSBridgeHandler:_:;name=start --><!-- begin abstract --></p>
+<p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterJSBridgeHandler:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterJSBridgeHandler:_:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/unregisterJSBridgeHandler //apple_ref/c/clm/unregisterJSBridgeHandler //apple_ref/c/intfcm/unregisterJSBridgeHandler //apple_ref/c/intfm/unregisterJSBridgeHandler //apple_ref/c/func/unregisterJSBridgeHandler //apple_ref/c/ftmplt/unregisterJSBridgeHandler //apple_ref/c/defn/unregisterJSBridgeHandler //apple_ref/c/macro/unregisterJSBridgeHandler //apple_ref/doc/anysymbol/unregisterJSBridgeHandler" machineGenerated="true" --><span class="function">unregisterJSBridgeHandler</span><!-- /a -->:(<a machinegenerated="true" href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/c/cl/SMJSBridgeHandler //apple_ref/c/tdef/SMJSBridgeHandler //apple_ref/c/tag/SMJSBridgeHandler //apple_ref/c/struct/SMJSBridgeHandler //apple_ref/c/intf/SMJSBridgeHandler //apple_ref/doc/anysymbol/SMJSBridgeHandler" target="_top"><span class="type">SMJSBridgeHandler</span></a> <span class="type">*</span>)<span class="param">jsBridgeHandler</span> NS_SWIFT_NAME(unregisterJSBridgeHandler(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterJSBridgeHandler:_:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/unregisterJSBridgeHandler:_:/jsBridgeHandler;   name=jsBridgeHandler -->
+<a name="//apple_ref/doc/methodparam/unregisterJSBridgeHandler:_:/jsBridgeHandler"></a>
+<code>jsBridgeHandler</code>
+</dt>
+<dd><p>the <!-- a logicalPath="//apple_ref/c/cl/SMjsBridgeHandler //apple_ref/c/tdef/SMjsBridgeHandler //apple_ref/c/tag/SMjsBridgeHandler //apple_ref/c/struct/SMjsBridgeHandler //apple_ref/c/intf/SMjsBridgeHandler //apple_ref/c/econst/SMjsBridgeHandler //apple_ref/c/data/SMjsBridgeHandler //apple_ref/c/clconst/SMjsBridgeHandler //apple_ref/c/instm/SMjsBridgeHandler //apple_ref/c/clm/SMjsBridgeHandler //apple_ref/c/intfcm/SMjsBridgeHandler //apple_ref/c/intfm/SMjsBridgeHandler //apple_ref/c/func/SMjsBridgeHandler //apple_ref/c/ftmplt/SMjsBridgeHandler //apple_ref/c/defn/SMjsBridgeHandler //apple_ref/c/macro/SMjsBridgeHandler //apple_ref/doc/com/intfm/SMjsBridgeHandler //apple_ref/doc/anysymbol/SMjsBridgeHandler" -->SMjsBridgeHandler<!-- /a --> to unregister</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:;   name=unregisterJSBridgeHandlerWithTag:havingTag: --><a name="//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:"></a>
+<h3><a name="unregisterJSBridgeHandlerWithTag:havingTag:">unregisterJSBridgeHandlerWithTag:havingTag:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:;name=start --><!-- begin abstract --></p>
+<p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/unregisterJSBridgeHandlerWithTag //apple_ref/c/clm/unregisterJSBridgeHandlerWithTag //apple_ref/c/intfcm/unregisterJSBridgeHandlerWithTag //apple_ref/c/intfm/unregisterJSBridgeHandlerWithTag //apple_ref/c/func/unregisterJSBridgeHandlerWithTag //apple_ref/c/ftmplt/unregisterJSBridgeHandlerWithTag //apple_ref/c/defn/unregisterJSBridgeHandlerWithTag //apple_ref/c/macro/unregisterJSBridgeHandlerWithTag //apple_ref/doc/anysymbol/unregisterJSBridgeHandlerWithTag" machineGenerated="true" --><span class="function">unregisterJSBridgeHandlerWithTag</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">bridgeTag</span> NS_SWIFT_NAME(unregisterJSBridgeHandler(
+                <!-- a logicalPath="//apple_ref/c/instm/havingTag //apple_ref/c/clm/havingTag //apple_ref/c/intfcm/havingTag //apple_ref/c/intfm/havingTag //apple_ref/c/func/havingTag //apple_ref/c/ftmplt/havingTag //apple_ref/c/defn/havingTag //apple_ref/c/macro/havingTag //apple_ref/doc/anysymbol/havingTag" machineGenerated="true" --><span class="function">havingTag</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterJSBridgeHandlerWithTag:havingTag:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/unregisterJSBridgeHandlerWithTag:havingTag:/bridgeTag;   name=bridgeTag -->
+<a name="//apple_ref/doc/methodparam/unregisterJSBridgeHandlerWithTag:havingTag:/bridgeTag"></a>
+<code>bridgeTag</code>
+</dt>
+<dd><p>the tag (from registration) to unregister</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/unregisterRedirectDelegate:_:;   name=unregisterRedirectDelegate:_: --><a name="//apple_ref/c/func/unregisterRedirectDelegate:_:"></a>
+<h3><a name="unregisterRedirectDelegate:_:">unregisterRedirectDelegate:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterRedirectDelegate:_:;name=start --><!-- begin abstract --></p>
+<p>unregister a <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> from being processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterRedirectDelegate:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterRedirectDelegate:_:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/unregisterRedirectDelegate //apple_ref/c/clm/unregisterRedirectDelegate //apple_ref/c/intfcm/unregisterRedirectDelegate //apple_ref/c/intfm/unregisterRedirectDelegate //apple_ref/c/func/unregisterRedirectDelegate //apple_ref/c/ftmplt/unregisterRedirectDelegate //apple_ref/c/defn/unregisterRedirectDelegate //apple_ref/c/macro/unregisterRedirectDelegate //apple_ref/doc/anysymbol/unregisterRedirectDelegate" machineGenerated="true" --><span class="function">unregisterRedirectDelegate</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" machineGenerated="true" --><span class="type">SMRedirectDelegate</span><!-- /a --> <span class="type">*</span>)<span class="param">redirectDelegate</span> NS_SWIFT_NAME(unregisterRedirectDelegate(
+                <!-- a logicalPath="//apple_ref/c/instm/_ //apple_ref/c/clm/_ //apple_ref/c/intfcm/_ //apple_ref/c/intfm/_ //apple_ref/c/func/_ //apple_ref/c/ftmplt/_ //apple_ref/c/defn/_ //apple_ref/c/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterRedirectDelegate:_:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/unregisterRedirectDelegate:_:/redirectDelegate;   name=redirectDelegate -->
+<a name="//apple_ref/doc/methodparam/unregisterRedirectDelegate:_:/redirectDelegate"></a>
+<code>redirectDelegate</code>
+</dt>
+<dd><p>the <!-- a logicalPath="//apple_ref/c/cl/SMRedirectDelegate //apple_ref/c/tdef/SMRedirectDelegate //apple_ref/c/tag/SMRedirectDelegate //apple_ref/c/struct/SMRedirectDelegate //apple_ref/c/intf/SMRedirectDelegate //apple_ref/c/econst/SMRedirectDelegate //apple_ref/c/data/SMRedirectDelegate //apple_ref/c/clconst/SMRedirectDelegate //apple_ref/c/instm/SMRedirectDelegate //apple_ref/c/clm/SMRedirectDelegate //apple_ref/c/intfcm/SMRedirectDelegate //apple_ref/c/intfm/SMRedirectDelegate //apple_ref/c/func/SMRedirectDelegate //apple_ref/c/ftmplt/SMRedirectDelegate //apple_ref/c/defn/SMRedirectDelegate //apple_ref/c/macro/SMRedirectDelegate //apple_ref/doc/com/intfm/SMRedirectDelegate //apple_ref/doc/anysymbol/SMRedirectDelegate" -->SMRedirectDelegate<!-- /a --> to unregister</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:;   name=unregisterRedirectDelegateWithPrefix:havingPrefix: --><a name="//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:"></a>
+<h3><a name="unregisterRedirectDelegateWithPrefix:havingPrefix:">unregisterRedirectDelegateWithPrefix:havingPrefix:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:;name=start --><!-- begin abstract --></p>
+<p>unregister a <a href="../SMJSBridgeHandling_h/Classes/SMJSBridgeHandler/index.html#//apple_ref/occ/cl/SMJSBridgeHandler" logicalPath="//apple_ref/occ/cl/SMJSBridgeHandler" target="_top">SMJSBridgeHandler</a> from being processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:;name=start -->-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/unregisterRedirectDelegateWithPrefix //apple_ref/c/clm/unregisterRedirectDelegateWithPrefix //apple_ref/c/intfcm/unregisterRedirectDelegateWithPrefix //apple_ref/c/intfm/unregisterRedirectDelegateWithPrefix //apple_ref/c/func/unregisterRedirectDelegateWithPrefix //apple_ref/c/ftmplt/unregisterRedirectDelegateWithPrefix //apple_ref/c/defn/unregisterRedirectDelegateWithPrefix //apple_ref/c/macro/unregisterRedirectDelegateWithPrefix //apple_ref/doc/anysymbol/unregisterRedirectDelegateWithPrefix" machineGenerated="true" --><span class="function">unregisterRedirectDelegateWithPrefix</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">redirectPrefix</span> NS_SWIFT_NAME(unregisterRedirectDelegate(
+                <!-- a logicalPath="//apple_ref/c/instm/havingPrefix //apple_ref/c/clm/havingPrefix //apple_ref/c/intfcm/havingPrefix //apple_ref/c/intfm/havingPrefix //apple_ref/c/func/havingPrefix //apple_ref/c/ftmplt/havingPrefix //apple_ref/c/defn/havingPrefix //apple_ref/c/macro/havingPrefix //apple_ref/doc/anysymbol/havingPrefix" machineGenerated="true" --><span class="function">havingPrefix</span><!-- /a -->:));  <!-- headerDoc=declaration;uid=//apple_ref/c/func/unregisterRedirectDelegateWithPrefix:havingPrefix:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/unregisterRedirectDelegateWithPrefix:havingPrefix:/redirectPrefix;   name=redirectPrefix -->
+<a name="//apple_ref/doc/methodparam/unregisterRedirectDelegateWithPrefix:havingPrefix:/redirectPrefix"></a>
+<code>redirectPrefix</code>
+</dt>
+<dd><p>the tag (from registration) to unregister</p></dd>
+</dl>
+</div>
+<hr class="betweenSections">
+<a name="HeaderDoc_constants"></a>
+<h2 class="h2tight">Constants</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/kSMWebViewError" target="_top">kSMWebViewError</a></tt></dt>
+<dd><p>Notifies observers of WebView errors.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" target="_top">SM_WEB_VIEW_ERROR_NOTIFICATION</a></tt></dt>
+<dd><p>Notifies observers of WebView errors.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=data;  uid=//apple_ref/c/data/kSMWebViewError;   name=kSMWebViewError --><a name="//apple_ref/c/data/kSMWebViewError"></a>
+<h3><a name="kSMWebViewError">kSMWebViewError</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/data/kSMWebViewError;name=start --><!-- begin abstract --></p>
+<p>Notifies observers of WebView errors.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/data/kSMWebViewError;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/data/kSMWebViewError;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/data/kSMWebViewError" logicalPath="//apple_ref/c/econst/kSMWebViewError //apple_ref/c/data/kSMWebViewError" target="_top"><span class="var">kSMWebViewError</span></a>;  <!-- headerDoc=declaration;uid=//apple_ref/c/data/kSMWebViewError;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/data/kSMWebViewError;name=start --><p>a error notification in the WebView.
+<!-- headerDoc=discussion;uid=//apple_ref/c/data/kSMWebViewError;name=end --><!-- end discussion -->
+</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151" target="_top">NS_SWIFT_NAME(webViewErrorNotification)</a></p></dt>
+<dd></dd>
+<dt><p><a href="index.html#//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" logicalPath="//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION" target="_top">SM_WEB_VIEW_ERROR_NOTIFICATION</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:data;  uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;   name=SM_WEB_VIEW_ERROR_NOTIFICATION --><a name="//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION"></a>
+<h3><a name="SM_WEB_VIEW_ERROR_NOTIFICATION">SM_WEB_VIEW_ERROR_NOTIFICATION</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=start --><!-- begin abstract --></p>
+<p>Notifies observers of WebView errors.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/data/kSMWebViewError" logicalPath="//apple_ref/c/econst/kSMWebViewError //apple_ref/c/data/kSMWebViewError" target="_top"><span class="var">kSMWebViewError</span></a>;  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=start --><p>a error notification in the WebView.
+<!-- headerDoc=discussion;uid=//apple_ref/doc/title:data/SM_WEB_VIEW_ERROR_NOTIFICATION;name=end --><!-- end discussion -->
+</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_151" target="_top">NS_SWIFT_NAME(webViewErrorNotification)</a></p></dt>
+<dd></dd>
+<dt><p><a href="index.html#//apple_ref/c/data/kSMWebViewError" logicalPath="//apple_ref/c/data/kSMWebViewError" target="_top">kSMWebViewError</a></p></dt>
+<dd></dd>
+</dl></div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

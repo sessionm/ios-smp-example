@@ -47,7 +47,7 @@ class RewardStoreTableViewController: UITableViewController {
     var _offers : [SMStoreOfferItem] = [];
 
     @IBAction func handleRefresh(refresh: UIRefreshControl?) {
-        SMOffersManager.instance().fetchOffersStore { (result: SMFetchOffersStoreResult?, error: SMError?) in
+        SMOffersManager.instance().fetchStoreOffers { (result: SMFetchStoreOffersResponse?, error: SMError?) in
             if let r = refresh, r.isRefreshing {
                 r.endRefreshing();
             }
@@ -80,7 +80,7 @@ class RewardStoreTableViewController: UITableViewController {
 
         let df = DateFormatter()
         df.dateFormat = "dd.MM.yyyy"
-        cell.validDates.text = "This offer is available \(df.string(from: item.startDate)) through \(df.string(from: item.endDate))"
+//        cell.validDates.text = "This offer is available \(df.string(from: item.startDate)) through \(df.string(from: item.endDate))"
 
         let points = NSNumber(value: item.price).intValue;
         cell.points.text = "\(points)";

@@ -1,0 +1,1139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SessionMDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=intf; uid=//apple_ref/occ/intf/SessionMDelegate;  name=SessionMDelegate-->
+<a name="//apple_ref/occ/intf/SessionMDelegate"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SessionMDelegate">SessionMDelegate</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Deprecated:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Extends&nbsp;Protocol:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/intf/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SessionM.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SessionM.h">SessionM.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SessionMDelegate;name=start --><!-- begin abstract --></p>
+<p><a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> service delegate interface.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SessionMDelegate;name=end --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intf/SessionMDelegate;name=start --><p>Defines notifications about session state changes, UI activity and other <a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> service events.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intf/SessionMDelegate;name=end --><!-- end discussion -->
+</p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:" target="_top">-sessionM:activityUnavailable:_:activityUnavailable:</a></tt></dt>
+<dd><p>Deprecated. Notifies that UI activity is not available for presentation.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" target="_top">-sessionM:centerForActivity:withSize:_:centerForActivity:size:</a></tt></dt>
+<dd><p>Returns center point to use when presenting built-in achievement alert <code>UIView</code>.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:" target="_top">-sessionM:didDismissActivity:_:didDismissActivity:</a></tt></dt>
+<dd><p>Notifies that UI activity was dismissed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:" target="_top">-sessionM:didFailWithError:_:didFailWithError:</a></tt></dt>
+<dd><p>Notifies that <a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> service is permanently unavailable.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:" target="_top">-sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:</a></tt></dt>
+<dd><p>Notifies that media (typically video) finished playing
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:" target="_top">-sessionM:didPresentActivity:_:didPresentActivity:</a></tt></dt>
+<dd><p>Notifies that UI activity was presented.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:" target="_top">-sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:</a></tt></dt>
+<dd><p>Notifies the developer of the geofence regions being monitored.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:" target="_top">-sessionM:didTransitionToState:_:didTransitionToState:</a></tt></dt>
+<dd><p>Notifies about <a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> state transition.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:" target="_top">-sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:</a></tt></dt>
+<dd><p>Deprecated. Notifies that unclaimed achievement is available or not, if <code>nil</code>, for presentation.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:" target="_top">-sessionM:didUpdateUser:_:didUpdateUser:</a></tt></dt>
+<dd><p>Notifies that user info was updated.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:" target="_top">-sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:</a></tt></dt>
+<dd><p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:" target="_top">-sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:</a></tt></dt>
+<dd><p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:" target="_top">-sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:</a></tt></dt>
+<dd><p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:" target="_top">-sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:</a></tt></dt>
+<dd><p>Indicates if newly earned achievement UI activity should be presented.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:" target="_top">-sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:</a></tt></dt>
+<dd><p>Deprecated. Indicates if newly earned achievement UI activity should be presented.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:" target="_top">-sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:</a></tt></dt>
+<dd><p>Notifies that user performed an action in currently presented UI activity.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:" target="_top">-sessionM:viewControllerForActivity:_:viewControllerForActivityType:</a></tt></dt>
+<dd><p>Returns <code>UIViewController</code> object to use as a presenting controller for SessionM view controller.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:" target="_top">-sessionM:viewForActivity:_:viewForActivityType:</a></tt></dt>
+<dd><p>Returns <code>UIView</code> object to use as a superview for SessionM view objects.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:" target="_top">-sessionM:willDismissActivity:_:willDismissActivity:</a></tt></dt>
+<dd><p>Notifies that UI activity will be dismissed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:" target="_top">-sessionM:willPresentActivity:_:willPresentActivity:</a></tt></dt>
+<dd><p>Notifies that UI activity will be presented.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:" target="_top">-sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:</a></tt></dt>
+<dd><p>Notifies that media (typically video) will start playing.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:;   name=SessionMDelegate::sessionM:activityUnavailable:_:activityUnavailable: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:"></a>
+<h3><a name="sessionM:activityUnavailable:_:activityUnavailable:">sessionM:activityUnavailable:_:activityUnavailable:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:;name=start --><!-- begin abstract --></p>
+<p>Deprecated. Notifies that UI activity is not available for presentation.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/activityUnavailable //apple_ref/occ/clm/SessionMDelegate/activityUnavailable //apple_ref/occ/intfcm/SessionMDelegate/activityUnavailable //apple_ref/occ/intfm/SessionMDelegate/activityUnavailable //apple_ref/occ/func/activityUnavailable //apple_ref/occ/ftmplt/SessionMDelegate/activityUnavailable //apple_ref/occ/defn/activityUnavailable //apple_ref/occ/macro/activityUnavailable //apple_ref/doc/anysymbol/activityUnavailable" machineGenerated="true" --><span class="function">activityUnavailable</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMActivityType" logicalPath="//apple_ref/occ/cl/SMActivityType //apple_ref/occ/tdef/SMActivityType //apple_ref/occ/tag/SMActivityType //apple_ref/occ/struct/SMActivityType //apple_ref/occ/intf/SMActivityType //apple_ref/doc/anysymbol/SMActivityType" target="_top"><span class="type">SMActivityType</span></a>)<span class="param">type</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/activityUnavailable //apple_ref/occ/clm/SessionMDelegate/activityUnavailable //apple_ref/occ/intfcm/SessionMDelegate/activityUnavailable //apple_ref/occ/intfm/SessionMDelegate/activityUnavailable //apple_ref/occ/func/activityUnavailable //apple_ref/occ/ftmplt/SessionMDelegate/activityUnavailable //apple_ref/occ/defn/activityUnavailable //apple_ref/occ/macro/activityUnavailable //apple_ref/doc/anysymbol/activityUnavailable" machineGenerated="true" --><span class="function">activityUnavailable</span><!-- /a -->:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:/sessionM;   name=sessionM:activityUnavailable:_:activityUnavailable:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:/type;   name=sessionM:activityUnavailable:_:activityUnavailable:::type -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:/type"></a>
+<code>type</code>
+</dt>
+<dd><p>Activity type.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/presentActivity: //apple_ref/occ/tdef/presentActivity: //apple_ref/occ/tag/presentActivity: //apple_ref/occ/struct/presentActivity: //apple_ref/occ/intf/presentActivity: //apple_ref/occ/econst/presentActivity: //apple_ref/occ/data/presentActivity: //apple_ref/occ/clconst/presentActivity: //apple_ref/occ/instm/presentActivity: //apple_ref/occ/clm/presentActivity: //apple_ref/occ/intfcm/presentActivity: //apple_ref/occ/intfm/presentActivity: //apple_ref/occ/func/presentActivity: //apple_ref/occ/ftmplt/presentActivity: //apple_ref/occ/defn/presentActivity: //apple_ref/occ/macro/presentActivity: //apple_ref/doc/com/intfm/presentActivity: //apple_ref/doc/anysymbol/presentActivity:" -->presentActivity:<!-- /a --> call when activity of specified type cannot be presented.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:activityUnavailable:_:activityUnavailable:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated. Use boolean value returned from <!-- a logicalPath="//apple_ref/occ/cl/presentActivity: //apple_ref/occ/tdef/presentActivity: //apple_ref/occ/tag/presentActivity: //apple_ref/occ/struct/presentActivity: //apple_ref/occ/intf/presentActivity: //apple_ref/occ/econst/presentActivity: //apple_ref/occ/data/presentActivity: //apple_ref/occ/clconst/presentActivity: //apple_ref/occ/instm/presentActivity: //apple_ref/occ/clm/presentActivity: //apple_ref/occ/intfcm/presentActivity: //apple_ref/occ/intfm/presentActivity: //apple_ref/occ/func/presentActivity: //apple_ref/occ/ftmplt/presentActivity: //apple_ref/occ/defn/presentActivity: //apple_ref/occ/macro/presentActivity: //apple_ref/doc/com/intfm/presentActivity: //apple_ref/doc/anysymbol/presentActivity:" -->presentActivity:<!-- /a --> as an indicator if activity will be presented or not.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:;   name=SessionMDelegate::sessionM:centerForActivity:withSize:_:centerForActivity:size: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:"></a>
+<h3><a name="sessionM:centerForActivity:withSize:_:centerForActivity:size:">sessionM:centerForActivity:withSize:_:centerForActivity:size:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:;name=start --><!-- begin abstract --></p>
+<p>Returns center point to use when presenting built-in achievement alert <code>UIView</code>.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/CGPoint //apple_ref/occ/tdef/CGPoint //apple_ref/occ/tag/CGPoint //apple_ref/occ/struct/CGPoint //apple_ref/occ/intf/CGPoint //apple_ref/doc/anysymbol/CGPoint" machineGenerated="true" --><span class="type">CGPoint</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/centerForActivity //apple_ref/occ/clm/SessionMDelegate/centerForActivity //apple_ref/occ/intfcm/SessionMDelegate/centerForActivity //apple_ref/occ/intfm/SessionMDelegate/centerForActivity //apple_ref/occ/func/centerForActivity //apple_ref/occ/ftmplt/SessionMDelegate/centerForActivity //apple_ref/occ/defn/centerForActivity //apple_ref/occ/macro/centerForActivity //apple_ref/doc/anysymbol/centerForActivity" machineGenerated="true" --><span class="function">centerForActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/withSize //apple_ref/occ/clm/SessionMDelegate/withSize //apple_ref/occ/intfcm/SessionMDelegate/withSize //apple_ref/occ/intfm/SessionMDelegate/withSize //apple_ref/occ/func/withSize //apple_ref/occ/ftmplt/SessionMDelegate/withSize //apple_ref/occ/defn/withSize //apple_ref/occ/macro/withSize //apple_ref/doc/anysymbol/withSize" machineGenerated="true" --><span class="function">withSize</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/CGSize //apple_ref/occ/tdef/CGSize //apple_ref/occ/tag/CGSize //apple_ref/occ/struct/CGSize //apple_ref/occ/intf/CGSize //apple_ref/doc/anysymbol/CGSize" machineGenerated="true" --><span class="type">CGSize</span><!-- /a -->)<span class="param">size</span> NS_SWIFT_NAME(sessionM(<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/centerForActivity //apple_ref/occ/clm/SessionMDelegate/centerForActivity //apple_ref/occ/intfcm/SessionMDelegate/centerForActivity //apple_ref/occ/intfm/SessionMDelegate/centerForActivity //apple_ref/occ/func/centerForActivity //apple_ref/occ/ftmplt/SessionMDelegate/centerForActivity //apple_ref/occ/defn/centerForActivity //apple_ref/occ/macro/centerForActivity //apple_ref/doc/anysymbol/centerForActivity" machineGenerated="true" --><span class="function">centerForActivity</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/size" logicalPath="//apple_ref/occ/instm/SessionMDelegate/size //apple_ref/occ/clm/SessionMDelegate/size //apple_ref/occ/intfcm/SessionMDelegate/size //apple_ref/occ/intfm/SessionMDelegate/size //apple_ref/occ/func/size //apple_ref/occ/ftmplt/SessionMDelegate/size //apple_ref/occ/defn/size //apple_ref/occ/macro/size //apple_ref/doc/anysymbol/size" target="_top"><span class="function">size</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/sessionM;   name=sessionM:centerForActivity:withSize:_:centerForActivity:size:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/activity;   name=sessionM:centerForActivity:withSize:_:centerForActivity:size:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/size;   name=sessionM:centerForActivity:withSize:_:centerForActivity:size:::size -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:/size"></a>
+<code>size</code>
+</dt>
+<dd><p>Activity <code>UIView</code> size.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>CGPoint</code> <code>UIView</code> center.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:;name=start --><p>Application can use this method to refine the positioning of achievement alert <code>UIView</code>. The default layout is specified in the developer portal as part of achievement configuration.
+However, this method provides additional flexibility if application interface is dynamic and requires adjustments to alert positioning in order to ensure it does not cover important UI elements. 
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:;   name=SessionMDelegate::sessionM:didDismissActivity:_:didDismissActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:"></a>
+<h3><a name="sessionM:didDismissActivity:_:didDismissActivity:">sessionM:didDismissActivity:_:didDismissActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that UI activity was dismissed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didDismissActivity //apple_ref/occ/clm/SessionMDelegate/didDismissActivity //apple_ref/occ/intfcm/SessionMDelegate/didDismissActivity //apple_ref/occ/intfm/SessionMDelegate/didDismissActivity //apple_ref/occ/func/didDismissActivity //apple_ref/occ/ftmplt/SessionMDelegate/didDismissActivity //apple_ref/occ/defn/didDismissActivity //apple_ref/occ/macro/didDismissActivity //apple_ref/doc/anysymbol/didDismissActivity" machineGenerated="true" --><span class="function">didDismissActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didDismissActivity //apple_ref/occ/clm/SessionMDelegate/didDismissActivity //apple_ref/occ/intfcm/SessionMDelegate/didDismissActivity //apple_ref/occ/intfm/SessionMDelegate/didDismissActivity //apple_ref/occ/func/didDismissActivity //apple_ref/occ/ftmplt/SessionMDelegate/didDismissActivity //apple_ref/occ/defn/didDismissActivity //apple_ref/occ/macro/didDismissActivity //apple_ref/doc/anysymbol/didDismissActivity" machineGenerated="true" --><span class="function">didDismissActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:/sessionM;   name=sessionM:didDismissActivity:_:didDismissActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:/activity;   name=sessionM:didDismissActivity:_:didDismissActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didDismissActivity:_:didDismissActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:;   name=SessionMDelegate::sessionM:didFailWithError:_:didFailWithError: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:"></a>
+<h3><a name="sessionM:didFailWithError:_:didFailWithError:">sessionM:didFailWithError:_:didFailWithError:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:;name=start --><!-- begin abstract --></p>
+<p>Notifies that <a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> service is permanently unavailable.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didFailWithError //apple_ref/occ/clm/SessionMDelegate/didFailWithError //apple_ref/occ/intfcm/SessionMDelegate/didFailWithError //apple_ref/occ/intfm/SessionMDelegate/didFailWithError //apple_ref/occ/func/didFailWithError //apple_ref/occ/ftmplt/SessionMDelegate/didFailWithError //apple_ref/occ/defn/didFailWithError //apple_ref/occ/macro/didFailWithError //apple_ref/doc/anysymbol/didFailWithError" machineGenerated="true" --><span class="function">didFailWithError</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSError //apple_ref/occ/tdef/NSError //apple_ref/occ/tag/NSError //apple_ref/occ/struct/NSError //apple_ref/occ/intf/NSError //apple_ref/doc/anysymbol/NSError" machineGenerated="true" --><span class="type">NSError</span><!-- /a --> <span class="type">*</span>)<span class="param">error</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didFailWithError //apple_ref/occ/clm/SessionMDelegate/didFailWithError //apple_ref/occ/intfcm/SessionMDelegate/didFailWithError //apple_ref/occ/intfm/SessionMDelegate/didFailWithError //apple_ref/occ/func/didFailWithError //apple_ref/occ/ftmplt/SessionMDelegate/didFailWithError //apple_ref/occ/defn/didFailWithError //apple_ref/occ/macro/didFailWithError //apple_ref/doc/anysymbol/didFailWithError" machineGenerated="true" --><span class="function">didFailWithError</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:/sessionM;   name=sessionM:didFailWithError:_:didFailWithError:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:/error;   name=sessionM:didFailWithError:_:didFailWithError:::error -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:/error"></a>
+<code>error</code>
+</dt>
+<dd><p>Error object.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:;name=start --><p>This method indicates permanent failure to start SessionM service. This can be the case when invalid application ID is supplied by the application or when SessionM service is not available in current device locale or
+session has been refused for security or other reasons. Application should use this method to remove or disable SessionM related UI elements. 
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFailWithError:_:didFailWithError:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:;   name=SessionMDelegate::sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:"></a>
+<h3><a name="sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:">sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that media (typically video) finished playing
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/clm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/intfcm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/intfm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/func/didFinishPlayingMediaForActivity //apple_ref/occ/ftmplt/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/defn/didFinishPlayingMediaForActivity //apple_ref/occ/macro/didFinishPlayingMediaForActivity //apple_ref/doc/anysymbol/didFinishPlayingMediaForActivity" machineGenerated="true" --><span class="function">didFinishPlayingMediaForActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/clm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/intfcm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/intfm/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/func/didFinishPlayingMediaForActivity //apple_ref/occ/ftmplt/SessionMDelegate/didFinishPlayingMediaForActivity //apple_ref/occ/defn/didFinishPlayingMediaForActivity //apple_ref/occ/macro/didFinishPlayingMediaForActivity //apple_ref/doc/anysymbol/didFinishPlayingMediaForActivity" machineGenerated="true" --><span class="function">didFinishPlayingMediaForActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:/sessionM;   name=sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:/activity;   name=sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:;name=start --><p>Application should use this method to resume its own media playback if any.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didFinishPlayingMediaForActivity:_:didFinishPlayingMediaForActivity:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:;   name=SessionMDelegate::sessionM:didPresentActivity:_:didPresentActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:"></a>
+<h3><a name="sessionM:didPresentActivity:_:didPresentActivity:">sessionM:didPresentActivity:_:didPresentActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that UI activity was presented.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didPresentActivity //apple_ref/occ/clm/SessionMDelegate/didPresentActivity //apple_ref/occ/intfcm/SessionMDelegate/didPresentActivity //apple_ref/occ/intfm/SessionMDelegate/didPresentActivity //apple_ref/occ/func/didPresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/didPresentActivity //apple_ref/occ/defn/didPresentActivity //apple_ref/occ/macro/didPresentActivity //apple_ref/doc/anysymbol/didPresentActivity" machineGenerated="true" --><span class="function">didPresentActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didPresentActivity //apple_ref/occ/clm/SessionMDelegate/didPresentActivity //apple_ref/occ/intfcm/SessionMDelegate/didPresentActivity //apple_ref/occ/intfm/SessionMDelegate/didPresentActivity //apple_ref/occ/func/didPresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/didPresentActivity //apple_ref/occ/defn/didPresentActivity //apple_ref/occ/macro/didPresentActivity //apple_ref/doc/anysymbol/didPresentActivity" machineGenerated="true" --><span class="function">didPresentActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:/sessionM;   name=sessionM:didPresentActivity:_:didPresentActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:/activity;   name=sessionM:didPresentActivity:_:didPresentActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didPresentActivity:_:didPresentActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:;   name=SessionMDelegate::sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:"></a>
+<h3><a name="sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:">sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:;name=start --><!-- begin abstract --></p>
+<p>Notifies the developer of the geofence regions being monitored.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a><span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/clm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/intfcm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/intfm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/func/didStartMonitoringRegions //apple_ref/occ/ftmplt/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/defn/didStartMonitoringRegions //apple_ref/occ/macro/didStartMonitoringRegions //apple_ref/doc/anysymbol/didStartMonitoringRegions" machineGenerated="true" --><span class="function">didStartMonitoringRegions</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">__kindof</span> <span class="param">CLRegion</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">regions</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/clm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/intfcm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/intfm/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/func/didStartMonitoringRegions //apple_ref/occ/ftmplt/SessionMDelegate/didStartMonitoringRegions //apple_ref/occ/defn/didStartMonitoringRegions //apple_ref/occ/macro/didStartMonitoringRegions //apple_ref/doc/anysymbol/didStartMonitoringRegions" machineGenerated="true" --><span class="function">didStartMonitoringRegions</span><!-- /a -->:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:/sessionM;   name=sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:/regions;   name=sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:::regions -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:/regions"></a>
+<code>regions</code>
+</dt>
+<dd><p>As <code>NSArray</code> of all <code>CLCircularRegion</code> objects being monitored.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:;name=start --><p>When the <code>SMLocationManager</code> is told to monitor regions, it will call this method to send to the developer all the <code>CLCircularRegion</code> objects currently being monitored. This is purely for custom UI the developer may wish to display. Will never be called unless the SessionMLocation library is used and region monitoring is started.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didStartMonitoringRegions:_:didStartMonitoringRegions:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated, use the <code>NSNotification</code> <!-- a logicalPath="//apple_ref/c/data/SMLocationManagerDidUpdateGeoLocations" -->SMLocationManagerDidUpdateGeoLocations<!-- /a --> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:;   name=SessionMDelegate::sessionM:didTransitionToState:_:didTransitionToState: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:"></a>
+<h3><a name="sessionM:didTransitionToState:_:didTransitionToState:">sessionM:didTransitionToState:_:didTransitionToState:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:;name=start --><!-- begin abstract --></p>
+<p>Notifies about <a href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top">SessionM</a> state transition.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didTransitionToState //apple_ref/occ/clm/SessionMDelegate/didTransitionToState //apple_ref/occ/intfcm/SessionMDelegate/didTransitionToState //apple_ref/occ/intfm/SessionMDelegate/didTransitionToState //apple_ref/occ/func/didTransitionToState //apple_ref/occ/ftmplt/SessionMDelegate/didTransitionToState //apple_ref/occ/defn/didTransitionToState //apple_ref/occ/macro/didTransitionToState //apple_ref/doc/anysymbol/didTransitionToState" machineGenerated="true" --><span class="function">didTransitionToState</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SessionMState" logicalPath="//apple_ref/occ/cl/SessionMState //apple_ref/occ/tdef/SessionMState //apple_ref/occ/tag/SessionMState //apple_ref/occ/struct/SessionMState //apple_ref/occ/intf/SessionMState //apple_ref/doc/anysymbol/SessionMState" target="_top"><span class="type">SessionMState</span></a>)<span class="param">state</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didTransitionToState //apple_ref/occ/clm/SessionMDelegate/didTransitionToState //apple_ref/occ/intfcm/SessionMDelegate/didTransitionToState //apple_ref/occ/intfm/SessionMDelegate/didTransitionToState //apple_ref/occ/func/didTransitionToState //apple_ref/occ/ftmplt/SessionMDelegate/didTransitionToState //apple_ref/occ/defn/didTransitionToState //apple_ref/occ/macro/didTransitionToState //apple_ref/doc/anysymbol/didTransitionToState" machineGenerated="true" --><span class="function">didTransitionToState</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:/sessionM;   name=sessionM:didTransitionToState:_:didTransitionToState:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:/state;   name=sessionM:didTransitionToState:_:didTransitionToState:::state -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didTransitionToState:_:didTransitionToState:/state"></a>
+<code>state</code>
+</dt>
+<dd><p>SessionM state.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:;   name=SessionMDelegate::sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:"></a>
+<h3><a name="sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:">sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:;name=start --><!-- begin abstract --></p>
+<p>Deprecated. Notifies that unclaimed achievement is available or not, if <code>nil</code>, for presentation.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/clm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/intfm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/func/didUpdateUnclaimedAchievement //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/defn/didUpdateUnclaimedAchievement //apple_ref/occ/macro/didUpdateUnclaimedAchievement //apple_ref/doc/anysymbol/didUpdateUnclaimedAchievement" machineGenerated="true" --><span class="function">didUpdateUnclaimedAchievement</span><!-- /a -->:(<a machinegenerated="true" href="../../../SMAchievementData_h/Classes/SMAchievementData/index.html#//apple_ref/occ/cl/SMAchievementData" logicalPath="//apple_ref/occ/cl/SMAchievementData" target="_top"><span class="type">SMAchievementData</span></a> <span class="type">*</span>)<span class="param">achievement</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/clm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/intfm/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/func/didUpdateUnclaimedAchievement //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUnclaimedAchievement //apple_ref/occ/defn/didUpdateUnclaimedAchievement //apple_ref/occ/macro/didUpdateUnclaimedAchievement //apple_ref/doc/anysymbol/didUpdateUnclaimedAchievement" machineGenerated="true" --><span class="function">didUpdateUnclaimedAchievement</span><!-- /a -->:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:/sessionM;   name=sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:/achievement;   name=sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:::achievement -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:/achievement"></a>
+<code>achievement</code>
+</dt>
+<dd><p>Achievement data object or <code>nil</code> if no unclaimed achievement is available.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:;name=start --><p>This method should be used by application to customize an achievement presentation. SessionM service invokes this method when new achievement is earned or to notify about one of the previously earned
+unclaimed achievements. Achievement object supplied by this method is also available via SessionM <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/unclaimedAchievement" logicalPath="//apple_ref/occ/instp/SessionM/unclaimedAchievement" target="_top">unclaimedAchievement</a> property.
+This notification, in conjunction with <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/unclaimedAchievement" logicalPath="//apple_ref/occ/instp/SessionM/unclaimedAchievement" target="_top">unclaimedAchievement</a> property, allows application to present user achievements at convenient time during application lifecycle.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUnclaimedAchievement:_:didUpdateUnclaimedAchievement:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated. Use <!-- a logicalPath="//apple_ref/occ/cl/sessionM:shouldAutopresentAchievement: //apple_ref/occ/tdef/sessionM:shouldAutopresentAchievement: //apple_ref/occ/tag/sessionM:shouldAutopresentAchievement: //apple_ref/occ/struct/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intf/sessionM:shouldAutopresentAchievement: //apple_ref/occ/econst/sessionM:shouldAutopresentAchievement: //apple_ref/occ/data/sessionM:shouldAutopresentAchievement: //apple_ref/occ/clconst/sessionM:shouldAutopresentAchievement: //apple_ref/occ/instm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/clm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intfcm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intfm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/func/sessionM:shouldAutopresentAchievement: //apple_ref/occ/ftmplt/sessionM:shouldAutopresentAchievement: //apple_ref/occ/defn/sessionM:shouldAutopresentAchievement: //apple_ref/occ/macro/sessionM:shouldAutopresentAchievement: //apple_ref/doc/com/intfm/sessionM:shouldAutopresentAchievement: //apple_ref/doc/anysymbol/sessionM:shouldAutopresentAchievement:" -->sessionM:shouldAutopresentAchievement:<!-- /a --> to get notified about new achievements.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:;   name=SessionMDelegate::sessionM:didUpdateUser:_:didUpdateUser: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:"></a>
+<h3><a name="sessionM:didUpdateUser:_:didUpdateUser:">sessionM:didUpdateUser:_:didUpdateUser:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:;name=start --><!-- begin abstract --></p>
+<p>Notifies that user info was updated.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <a machinegenerated="true" href="../../../SMUserManager_h/index.html#//apple_ref/c/tdef/didUpdateUser" logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUser //apple_ref/occ/clm/SessionMDelegate/didUpdateUser //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUser //apple_ref/occ/intfm/SessionMDelegate/didUpdateUser //apple_ref/occ/func/didUpdateUser //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUser //apple_ref/occ/defn/didUpdateUser //apple_ref/occ/macro/didUpdateUser //apple_ref/doc/anysymbol/didUpdateUser" target="_top"><span class="function">didUpdateUser</span></a>:(<a machinegenerated="true" href="../../Classes/SMUser/index.html#//apple_ref/occ/cl/SMUser" logicalPath="//apple_ref/occ/cl/SMUser" target="_top"><span class="type">SMUser</span></a> <span class="type">*</span>)<span class="param">user</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<a machinegenerated="true" href="../../../SMUserManager_h/index.html#//apple_ref/c/tdef/didUpdateUser" logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUser //apple_ref/occ/clm/SessionMDelegate/didUpdateUser //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUser //apple_ref/occ/intfm/SessionMDelegate/didUpdateUser //apple_ref/occ/func/didUpdateUser //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUser //apple_ref/occ/defn/didUpdateUser //apple_ref/occ/macro/didUpdateUser //apple_ref/doc/anysymbol/didUpdateUser" target="_top"><span class="function">didUpdateUser</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:/sessionM;   name=sessionM:didUpdateUser:_:didUpdateUser:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:/user;   name=sessionM:didUpdateUser:_:didUpdateUser:::user -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:/user"></a>
+<code>user</code>
+</dt>
+<dd><p>User object.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:;name=start --><p>User info is updated when earned achievement count, opt out status or other user relevant state changes. 
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUser:_:didUpdateUser:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:;   name=SessionMDelegate::sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:"></a>
+<h3><a name="sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:">sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:;name=start --><!-- begin abstract --></p>
+<p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/occ/cl/SMUserRegistrationResultType //apple_ref/occ/tdef/SMUserRegistrationResultType //apple_ref/occ/tag/SMUserRegistrationResultType //apple_ref/occ/struct/SMUserRegistrationResultType //apple_ref/occ/intf/SMUserRegistrationResultType //apple_ref/doc/anysymbol/SMUserRegistrationResultType" target="_top"><span class="type">SMUserRegistrationResultType</span></a>)<span class="param">result</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:/sessionM;   name=sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:/result;   name=sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:::result -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:/result"></a>
+<code>result</code>
+</dt>
+<dd><p><a href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/doc/title:tdef/SMUserRegistrationResultType" target="_top">SMUserRegistrationResultType</a> the new value for the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:;name=start --><p>This method is called after the server response for a signup, login or token authentication request is processed. These requests can be made by calling the <!-- a logicalPath="//apple_ref/occ/cl/signUpUserWithData: //apple_ref/occ/tdef/signUpUserWithData: //apple_ref/occ/tag/signUpUserWithData: //apple_ref/occ/struct/signUpUserWithData: //apple_ref/occ/intf/signUpUserWithData: //apple_ref/occ/econst/signUpUserWithData: //apple_ref/occ/data/signUpUserWithData: //apple_ref/occ/clconst/signUpUserWithData: //apple_ref/occ/instm/signUpUserWithData: //apple_ref/occ/clm/signUpUserWithData: //apple_ref/occ/intfcm/signUpUserWithData: //apple_ref/occ/intfm/signUpUserWithData: //apple_ref/occ/func/signUpUserWithData: //apple_ref/occ/ftmplt/signUpUserWithData: //apple_ref/occ/defn/signUpUserWithData: //apple_ref/occ/macro/signUpUserWithData: //apple_ref/doc/com/intfm/signUpUserWithData: //apple_ref/doc/anysymbol/signUpUserWithData:" -->signUpUserWithData:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/logInUserWithEmail:password: //apple_ref/occ/tdef/logInUserWithEmail:password: //apple_ref/occ/tag/logInUserWithEmail:password: //apple_ref/occ/struct/logInUserWithEmail:password: //apple_ref/occ/intf/logInUserWithEmail:password: //apple_ref/occ/econst/logInUserWithEmail:password: //apple_ref/occ/data/logInUserWithEmail:password: //apple_ref/occ/clconst/logInUserWithEmail:password: //apple_ref/occ/instm/logInUserWithEmail:password: //apple_ref/occ/clm/logInUserWithEmail:password: //apple_ref/occ/intfcm/logInUserWithEmail:password: //apple_ref/occ/intfm/logInUserWithEmail:password: //apple_ref/occ/func/logInUserWithEmail:password: //apple_ref/occ/ftmplt/logInUserWithEmail:password: //apple_ref/occ/defn/logInUserWithEmail:password: //apple_ref/occ/macro/logInUserWithEmail:password: //apple_ref/doc/com/intfm/logInUserWithEmail:password: //apple_ref/doc/anysymbol/logInUserWithEmail:password:" -->logInUserWithEmail:password:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/authenticateWithToken:provider: //apple_ref/occ/tdef/authenticateWithToken:provider: //apple_ref/occ/tag/authenticateWithToken:provider: //apple_ref/occ/struct/authenticateWithToken:provider: //apple_ref/occ/intf/authenticateWithToken:provider: //apple_ref/occ/econst/authenticateWithToken:provider: //apple_ref/occ/data/authenticateWithToken:provider: //apple_ref/occ/clconst/authenticateWithToken:provider: //apple_ref/occ/instm/authenticateWithToken:provider: //apple_ref/occ/clm/authenticateWithToken:provider: //apple_ref/occ/intfcm/authenticateWithToken:provider: //apple_ref/occ/intfm/authenticateWithToken:provider: //apple_ref/occ/func/authenticateWithToken:provider: //apple_ref/occ/ftmplt/authenticateWithToken:provider: //apple_ref/occ/defn/authenticateWithToken:provider: //apple_ref/occ/macro/authenticateWithToken:provider: //apple_ref/doc/com/intfm/authenticateWithToken:provider: //apple_ref/doc/anysymbol/authenticateWithToken:provider:" -->authenticateWithToken:provider:<!-- /a --> methods.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:_:didUpdateUserRegistrationResult:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated. Use <!-- a logicalPath="//apple_ref/occ/cl/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/tdef/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/tag/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/struct/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intf/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/econst/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/data/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/clconst/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/instm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/clm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intfcm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intfm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/func/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/ftmplt/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/defn/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/macro/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/doc/com/intfm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/doc/anysymbol/sessionM:didUpdateUserRegistrationResult:errors:" -->sessionM:didUpdateUserRegistrationResult:errors:<!-- /a --> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:;   name=SessionMDelegate::sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:"></a>
+<h3><a name="sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:">sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:;name=start --><!-- begin abstract --></p>
+<p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/occ/cl/SMUserRegistrationResultType //apple_ref/occ/tdef/SMUserRegistrationResultType //apple_ref/occ/tag/SMUserRegistrationResultType //apple_ref/occ/struct/SMUserRegistrationResultType //apple_ref/occ/intf/SMUserRegistrationResultType //apple_ref/doc/anysymbol/SMUserRegistrationResultType" target="_top"><span class="type">SMUserRegistrationResultType</span></a>)<span class="param">result</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/errorMessages" logicalPath="//apple_ref/occ/instm/SessionMDelegate/errorMessages //apple_ref/occ/clm/SessionMDelegate/errorMessages //apple_ref/occ/intfcm/SessionMDelegate/errorMessages //apple_ref/occ/intfm/SessionMDelegate/errorMessages //apple_ref/occ/func/errorMessages //apple_ref/occ/ftmplt/SessionMDelegate/errorMessages //apple_ref/occ/defn/errorMessages //apple_ref/occ/macro/errorMessages //apple_ref/doc/anysymbol/errorMessages" target="_top"><span class="function">errorMessages</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">errorMessages</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/errorMessages" logicalPath="//apple_ref/occ/instm/SessionMDelegate/errorMessages //apple_ref/occ/clm/SessionMDelegate/errorMessages //apple_ref/occ/intfcm/SessionMDelegate/errorMessages //apple_ref/occ/intfm/SessionMDelegate/errorMessages //apple_ref/occ/func/errorMessages //apple_ref/occ/ftmplt/SessionMDelegate/errorMessages //apple_ref/occ/defn/errorMessages //apple_ref/occ/macro/errorMessages //apple_ref/doc/anysymbol/errorMessages" target="_top"><span class="function">errorMessages</span></a>:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/sessionM;   name=sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/result;   name=sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:::result -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/result"></a>
+<code>result</code>
+</dt>
+<dd><p><a href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/doc/title:tdef/SMUserRegistrationResultType" target="_top">SMUserRegistrationResultType</a> the new value for the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/errorMessages;   name=sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:::errorMessages -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:/errorMessages"></a>
+<code>errorMessages</code>
+</dt>
+<dd><p><code>NSArray</code> of error messages (value will be <code>nil</code> for successful registration).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:;name=start --><p>This method is called after the server response for a signup, login or token authentication request is processed. These requests can be made by calling the <!-- a logicalPath="//apple_ref/occ/cl/signUpUserWithData: //apple_ref/occ/tdef/signUpUserWithData: //apple_ref/occ/tag/signUpUserWithData: //apple_ref/occ/struct/signUpUserWithData: //apple_ref/occ/intf/signUpUserWithData: //apple_ref/occ/econst/signUpUserWithData: //apple_ref/occ/data/signUpUserWithData: //apple_ref/occ/clconst/signUpUserWithData: //apple_ref/occ/instm/signUpUserWithData: //apple_ref/occ/clm/signUpUserWithData: //apple_ref/occ/intfcm/signUpUserWithData: //apple_ref/occ/intfm/signUpUserWithData: //apple_ref/occ/func/signUpUserWithData: //apple_ref/occ/ftmplt/signUpUserWithData: //apple_ref/occ/defn/signUpUserWithData: //apple_ref/occ/macro/signUpUserWithData: //apple_ref/doc/com/intfm/signUpUserWithData: //apple_ref/doc/anysymbol/signUpUserWithData:" -->signUpUserWithData:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/logInUserWithEmail:password: //apple_ref/occ/tdef/logInUserWithEmail:password: //apple_ref/occ/tag/logInUserWithEmail:password: //apple_ref/occ/struct/logInUserWithEmail:password: //apple_ref/occ/intf/logInUserWithEmail:password: //apple_ref/occ/econst/logInUserWithEmail:password: //apple_ref/occ/data/logInUserWithEmail:password: //apple_ref/occ/clconst/logInUserWithEmail:password: //apple_ref/occ/instm/logInUserWithEmail:password: //apple_ref/occ/clm/logInUserWithEmail:password: //apple_ref/occ/intfcm/logInUserWithEmail:password: //apple_ref/occ/intfm/logInUserWithEmail:password: //apple_ref/occ/func/logInUserWithEmail:password: //apple_ref/occ/ftmplt/logInUserWithEmail:password: //apple_ref/occ/defn/logInUserWithEmail:password: //apple_ref/occ/macro/logInUserWithEmail:password: //apple_ref/doc/com/intfm/logInUserWithEmail:password: //apple_ref/doc/anysymbol/logInUserWithEmail:password:" -->logInUserWithEmail:password:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/authenticateWithToken:provider: //apple_ref/occ/tdef/authenticateWithToken:provider: //apple_ref/occ/tag/authenticateWithToken:provider: //apple_ref/occ/struct/authenticateWithToken:provider: //apple_ref/occ/intf/authenticateWithToken:provider: //apple_ref/occ/econst/authenticateWithToken:provider: //apple_ref/occ/data/authenticateWithToken:provider: //apple_ref/occ/clconst/authenticateWithToken:provider: //apple_ref/occ/instm/authenticateWithToken:provider: //apple_ref/occ/clm/authenticateWithToken:provider: //apple_ref/occ/intfcm/authenticateWithToken:provider: //apple_ref/occ/intfm/authenticateWithToken:provider: //apple_ref/occ/func/authenticateWithToken:provider: //apple_ref/occ/ftmplt/authenticateWithToken:provider: //apple_ref/occ/defn/authenticateWithToken:provider: //apple_ref/occ/macro/authenticateWithToken:provider: //apple_ref/doc/com/intfm/authenticateWithToken:provider: //apple_ref/doc/anysymbol/authenticateWithToken:provider:" -->authenticateWithToken:provider:<!-- /a --> methods.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errorMessages:_:didUpdateUserRegistrationResult:errorMessages:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated. Use <!-- a logicalPath="//apple_ref/occ/cl/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/tdef/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/tag/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/struct/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intf/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/econst/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/data/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/clconst/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/instm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/clm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intfcm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/intfm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/func/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/ftmplt/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/defn/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/occ/macro/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/doc/com/intfm/sessionM:didUpdateUserRegistrationResult:errors: //apple_ref/doc/anysymbol/sessionM:didUpdateUserRegistrationResult:errors:" -->sessionM:didUpdateUserRegistrationResult:errors:<!-- /a --> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:;   name=SessionMDelegate::sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:"></a>
+<h3><a name="sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:">sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:;name=start --><!-- begin abstract --></p>
+<p>Notifies that the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property has been updated.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/occ/cl/SMUserRegistrationResultType //apple_ref/occ/tdef/SMUserRegistrationResultType //apple_ref/occ/tag/SMUserRegistrationResultType //apple_ref/occ/struct/SMUserRegistrationResultType //apple_ref/occ/intf/SMUserRegistrationResultType //apple_ref/doc/anysymbol/SMUserRegistrationResultType" target="_top"><span class="type">SMUserRegistrationResultType</span></a>)<span class="param">result</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/errors" logicalPath="//apple_ref/occ/instm/SessionMDelegate/errors //apple_ref/occ/clm/SessionMDelegate/errors //apple_ref/occ/intfcm/SessionMDelegate/errors //apple_ref/occ/intfm/SessionMDelegate/errors //apple_ref/occ/func/errors //apple_ref/occ/ftmplt/SessionMDelegate/errors //apple_ref/occ/defn/errors //apple_ref/occ/macro/errors //apple_ref/doc/anysymbol/errors" target="_top"><span class="function">errors</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">errors</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/clm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfcm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/intfm/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/func/didUpdateUserRegistrationResult //apple_ref/occ/ftmplt/SessionMDelegate/didUpdateUserRegistrationResult //apple_ref/occ/defn/didUpdateUserRegistrationResult //apple_ref/occ/macro/didUpdateUserRegistrationResult //apple_ref/doc/anysymbol/didUpdateUserRegistrationResult" machineGenerated="true" --><span class="function">didUpdateUserRegistrationResult</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/errors" logicalPath="//apple_ref/occ/instm/SessionMDelegate/errors //apple_ref/occ/clm/SessionMDelegate/errors //apple_ref/occ/intfcm/SessionMDelegate/errors //apple_ref/occ/intfm/SessionMDelegate/errors //apple_ref/occ/func/errors //apple_ref/occ/ftmplt/SessionMDelegate/errors //apple_ref/occ/defn/errors //apple_ref/occ/macro/errors //apple_ref/doc/anysymbol/errors" target="_top"><span class="function">errors</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/sessionM;   name=sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/result;   name=sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:::result -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/result"></a>
+<code>result</code>
+</dt>
+<dd><p><a href="../../index.html#//apple_ref/doc/title:tdef/SMUserRegistrationResultType" logicalPath="//apple_ref/doc/title:tdef/SMUserRegistrationResultType" target="_top">SMUserRegistrationResultType</a> the new value for the <a href="../../Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/userRegistrationResult" logicalPath="//apple_ref/occ/instp/SessionM/userRegistrationResult" target="_top">userRegistrationResult</a> property.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/errors;   name=sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:::errors -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:/errors"></a>
+<code>errors</code>
+</dt>
+<dd><p><code>NSDictionary</code> of error messages (value will be <code>nil</code> for successful registration).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:;name=start --><p>This method is called after the server response for a signup, login or token authentication request is processed. These requests can be made by calling the <!-- a logicalPath="//apple_ref/occ/cl/signUpUserWithData: //apple_ref/occ/tdef/signUpUserWithData: //apple_ref/occ/tag/signUpUserWithData: //apple_ref/occ/struct/signUpUserWithData: //apple_ref/occ/intf/signUpUserWithData: //apple_ref/occ/econst/signUpUserWithData: //apple_ref/occ/data/signUpUserWithData: //apple_ref/occ/clconst/signUpUserWithData: //apple_ref/occ/instm/signUpUserWithData: //apple_ref/occ/clm/signUpUserWithData: //apple_ref/occ/intfcm/signUpUserWithData: //apple_ref/occ/intfm/signUpUserWithData: //apple_ref/occ/func/signUpUserWithData: //apple_ref/occ/ftmplt/signUpUserWithData: //apple_ref/occ/defn/signUpUserWithData: //apple_ref/occ/macro/signUpUserWithData: //apple_ref/doc/com/intfm/signUpUserWithData: //apple_ref/doc/anysymbol/signUpUserWithData:" -->signUpUserWithData:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/logInUserWithEmail:password: //apple_ref/occ/tdef/logInUserWithEmail:password: //apple_ref/occ/tag/logInUserWithEmail:password: //apple_ref/occ/struct/logInUserWithEmail:password: //apple_ref/occ/intf/logInUserWithEmail:password: //apple_ref/occ/econst/logInUserWithEmail:password: //apple_ref/occ/data/logInUserWithEmail:password: //apple_ref/occ/clconst/logInUserWithEmail:password: //apple_ref/occ/instm/logInUserWithEmail:password: //apple_ref/occ/clm/logInUserWithEmail:password: //apple_ref/occ/intfcm/logInUserWithEmail:password: //apple_ref/occ/intfm/logInUserWithEmail:password: //apple_ref/occ/func/logInUserWithEmail:password: //apple_ref/occ/ftmplt/logInUserWithEmail:password: //apple_ref/occ/defn/logInUserWithEmail:password: //apple_ref/occ/macro/logInUserWithEmail:password: //apple_ref/doc/com/intfm/logInUserWithEmail:password: //apple_ref/doc/anysymbol/logInUserWithEmail:password:" -->logInUserWithEmail:password:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/authenticateWithToken:provider: //apple_ref/occ/tdef/authenticateWithToken:provider: //apple_ref/occ/tag/authenticateWithToken:provider: //apple_ref/occ/struct/authenticateWithToken:provider: //apple_ref/occ/intf/authenticateWithToken:provider: //apple_ref/occ/econst/authenticateWithToken:provider: //apple_ref/occ/data/authenticateWithToken:provider: //apple_ref/occ/clconst/authenticateWithToken:provider: //apple_ref/occ/instm/authenticateWithToken:provider: //apple_ref/occ/clm/authenticateWithToken:provider: //apple_ref/occ/intfcm/authenticateWithToken:provider: //apple_ref/occ/intfm/authenticateWithToken:provider: //apple_ref/occ/func/authenticateWithToken:provider: //apple_ref/occ/ftmplt/authenticateWithToken:provider: //apple_ref/occ/defn/authenticateWithToken:provider: //apple_ref/occ/macro/authenticateWithToken:provider: //apple_ref/doc/com/intfm/authenticateWithToken:provider: //apple_ref/doc/anysymbol/authenticateWithToken:provider:" -->authenticateWithToken:provider:<!-- /a --> methods.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:didUpdateUserRegistrationResult:errors:_:didUpdateUserRegistrationResult:errors:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:;   name=SessionMDelegate::sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:"></a>
+<h3><a name="sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:">sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:;name=start --><!-- begin abstract --></p>
+<p>Indicates if newly earned achievement UI activity should be presented.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/clm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/intfcm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/intfm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/func/shouldAutopresentAchievement //apple_ref/occ/ftmplt/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/defn/shouldAutopresentAchievement //apple_ref/occ/macro/shouldAutopresentAchievement //apple_ref/doc/anysymbol/shouldAutopresentAchievement" machineGenerated="true" --><span class="function">shouldAutopresentAchievement</span><!-- /a -->:(<a machinegenerated="true" href="../../../SMAchievementData_h/Classes/SMAchievementData/index.html#//apple_ref/occ/cl/SMAchievementData" logicalPath="//apple_ref/occ/cl/SMAchievementData" target="_top"><span class="type">SMAchievementData</span></a> <span class="type">*</span>)<span class="param">achievement</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/clm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/intfcm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/intfm/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/func/shouldAutopresentAchievement //apple_ref/occ/ftmplt/SessionMDelegate/shouldAutopresentAchievement //apple_ref/occ/defn/shouldAutopresentAchievement //apple_ref/occ/macro/shouldAutopresentAchievement //apple_ref/doc/anysymbol/shouldAutopresentAchievement" machineGenerated="true" --><span class="function">shouldAutopresentAchievement</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:/sessionM;   name=sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:/achievement;   name=sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:::achievement -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:/achievement"></a>
+<code>achievement</code>
+</dt>
+<dd><p>Achievement data object.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating if achievement activity should be presented.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:;name=start --><p>This method is called when achievement is earned and will occur when application calls <!-- a logicalPath="//apple_ref/occ/cl/logAction: //apple_ref/occ/tdef/logAction: //apple_ref/occ/tag/logAction: //apple_ref/occ/struct/logAction: //apple_ref/occ/intf/logAction: //apple_ref/occ/econst/logAction: //apple_ref/occ/data/logAction: //apple_ref/occ/clconst/logAction: //apple_ref/occ/instm/logAction: //apple_ref/occ/clm/logAction: //apple_ref/occ/intfcm/logAction: //apple_ref/occ/intfm/logAction: //apple_ref/occ/func/logAction: //apple_ref/occ/ftmplt/logAction: //apple_ref/occ/defn/logAction: //apple_ref/occ/macro/logAction: //apple_ref/doc/com/intfm/logAction: //apple_ref/doc/anysymbol/logAction:" -->logAction:<!-- /a --> or starts a session.
+By default, SessionM displays the achievement UI immediately after it is earned. Application can customize this behavior to defer the display until appropriate application state is reached.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentAchievement:_:shouldAutopresentAchievement:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:;   name=SessionMDelegate::sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:"></a>
+<h3><a name="sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:">sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:;name=start --><!-- begin abstract --></p>
+<p>Deprecated. Indicates if newly earned achievement UI activity should be presented.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/clm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/intfcm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/intfm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/func/shouldAutopresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/defn/shouldAutopresentActivity //apple_ref/occ/macro/shouldAutopresentActivity //apple_ref/doc/anysymbol/shouldAutopresentActivity" machineGenerated="true" --><span class="function">shouldAutopresentActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMActivityType" logicalPath="//apple_ref/occ/cl/SMActivityType //apple_ref/occ/tdef/SMActivityType //apple_ref/occ/tag/SMActivityType //apple_ref/occ/struct/SMActivityType //apple_ref/occ/intf/SMActivityType //apple_ref/doc/anysymbol/SMActivityType" target="_top"><span class="type">SMActivityType</span></a>)<span class="param">type</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/clm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/intfcm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/intfm/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/func/shouldAutopresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/shouldAutopresentActivity //apple_ref/occ/defn/shouldAutopresentActivity //apple_ref/occ/macro/shouldAutopresentActivity //apple_ref/doc/anysymbol/shouldAutopresentActivity" machineGenerated="true" --><span class="function">shouldAutopresentActivity</span><!-- /a -->:)) <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/cl/deprecated //apple_ref/occ/tdef/deprecated //apple_ref/occ/tag/deprecated //apple_ref/occ/struct/deprecated //apple_ref/occ/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:/sessionM;   name=sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:/type;   name=sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:::type -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:shouldAutopresentActivity:_:shouldAutopresentActivity:/type"></a>
+<code>type</code>
+</dt>
+<dd><p>Activity type.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating if achievement activity should be presented.
+
+<!-- end return value --></p>
+<p><b>Deprecated</b></p>
+
+<p>This method is deprecated - use <!-- a logicalPath="//apple_ref/occ/cl/sessionM:shouldAutopresentAchievement: //apple_ref/occ/tdef/sessionM:shouldAutopresentAchievement: //apple_ref/occ/tag/sessionM:shouldAutopresentAchievement: //apple_ref/occ/struct/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intf/sessionM:shouldAutopresentAchievement: //apple_ref/occ/econst/sessionM:shouldAutopresentAchievement: //apple_ref/occ/data/sessionM:shouldAutopresentAchievement: //apple_ref/occ/clconst/sessionM:shouldAutopresentAchievement: //apple_ref/occ/instm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/clm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intfcm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/intfm/sessionM:shouldAutopresentAchievement: //apple_ref/occ/func/sessionM:shouldAutopresentAchievement: //apple_ref/occ/ftmplt/sessionM:shouldAutopresentAchievement: //apple_ref/occ/defn/sessionM:shouldAutopresentAchievement: //apple_ref/occ/macro/sessionM:shouldAutopresentAchievement: //apple_ref/doc/com/intfm/sessionM:shouldAutopresentAchievement: //apple_ref/doc/anysymbol/sessionM:shouldAutopresentAchievement:" -->sessionM:shouldAutopresentAchievement:<!-- /a --> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:;   name=SessionMDelegate::sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:"></a>
+<h3><a name="sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:">sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:;name=start --><!-- begin abstract --></p>
+<p>Notifies that user performed an action in currently presented UI activity.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/user" logicalPath="//apple_ref/occ/instm/SessionMDelegate/user //apple_ref/occ/clm/SessionMDelegate/user //apple_ref/occ/intfcm/SessionMDelegate/user //apple_ref/occ/intfm/SessionMDelegate/user //apple_ref/occ/func/user //apple_ref/occ/ftmplt/SessionMDelegate/user //apple_ref/occ/defn/user //apple_ref/occ/macro/user //apple_ref/doc/anysymbol/user" target="_top"><span class="function">user</span></a>:(<a machinegenerated="true" href="../../Classes/SMUser/index.html#//apple_ref/occ/cl/SMUser" logicalPath="//apple_ref/occ/cl/SMUser" target="_top"><span class="type">SMUser</span></a> <span class="type">*</span>)<span class="param">user</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didPerformAction //apple_ref/occ/clm/SessionMDelegate/didPerformAction //apple_ref/occ/intfcm/SessionMDelegate/didPerformAction //apple_ref/occ/intfm/SessionMDelegate/didPerformAction //apple_ref/occ/func/didPerformAction //apple_ref/occ/ftmplt/SessionMDelegate/didPerformAction //apple_ref/occ/defn/didPerformAction //apple_ref/occ/macro/didPerformAction //apple_ref/doc/anysymbol/didPerformAction" machineGenerated="true" --><span class="function">didPerformAction</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMActivityUserAction" logicalPath="//apple_ref/occ/cl/SMActivityUserAction //apple_ref/occ/tdef/SMActivityUserAction //apple_ref/occ/tag/SMActivityUserAction //apple_ref/occ/struct/SMActivityUserAction //apple_ref/occ/intf/SMActivityUserAction //apple_ref/doc/anysymbol/SMActivityUserAction" target="_top"><span class="type">SMActivityUserAction</span></a>)<span class="param">action</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/forActivity //apple_ref/occ/clm/SessionMDelegate/forActivity //apple_ref/occ/intfcm/SessionMDelegate/forActivity //apple_ref/occ/intfm/SessionMDelegate/forActivity //apple_ref/occ/func/forActivity //apple_ref/occ/ftmplt/SessionMDelegate/forActivity //apple_ref/occ/defn/forActivity //apple_ref/occ/macro/forActivity //apple_ref/doc/anysymbol/forActivity" machineGenerated="true" --><span class="function">forActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/withData //apple_ref/occ/clm/SessionMDelegate/withData //apple_ref/occ/intfcm/SessionMDelegate/withData //apple_ref/occ/intfm/SessionMDelegate/withData //apple_ref/occ/func/withData //apple_ref/occ/ftmplt/SessionMDelegate/withData //apple_ref/occ/defn/withData //apple_ref/occ/macro/withData //apple_ref/doc/anysymbol/withData" machineGenerated="true" --><span class="function">withData</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">data</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/user" logicalPath="//apple_ref/occ/instm/SessionMDelegate/user //apple_ref/occ/clm/SessionMDelegate/user //apple_ref/occ/intfcm/SessionMDelegate/user //apple_ref/occ/intfm/SessionMDelegate/user //apple_ref/occ/func/user //apple_ref/occ/ftmplt/SessionMDelegate/user //apple_ref/occ/defn/user //apple_ref/occ/macro/user //apple_ref/doc/anysymbol/user" target="_top"><span class="function">user</span></a>:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/didPerformAction //apple_ref/occ/clm/SessionMDelegate/didPerformAction //apple_ref/occ/intfcm/SessionMDelegate/didPerformAction //apple_ref/occ/intfm/SessionMDelegate/didPerformAction //apple_ref/occ/func/didPerformAction //apple_ref/occ/ftmplt/SessionMDelegate/didPerformAction //apple_ref/occ/defn/didPerformAction //apple_ref/occ/macro/didPerformAction //apple_ref/doc/anysymbol/didPerformAction" machineGenerated="true" --><span class="function">didPerformAction</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/forActivity //apple_ref/occ/clm/SessionMDelegate/forActivity //apple_ref/occ/intfcm/SessionMDelegate/forActivity //apple_ref/occ/intfm/SessionMDelegate/forActivity //apple_ref/occ/func/forActivity //apple_ref/occ/ftmplt/SessionMDelegate/forActivity //apple_ref/occ/defn/forActivity //apple_ref/occ/macro/forActivity //apple_ref/doc/anysymbol/forActivity" machineGenerated="true" --><span class="function">forActivity</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/data" logicalPath="//apple_ref/occ/instm/SessionMDelegate/data //apple_ref/occ/clm/SessionMDelegate/data //apple_ref/occ/intfcm/SessionMDelegate/data //apple_ref/occ/intfm/SessionMDelegate/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SessionMDelegate/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/sessionM;   name=sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/user;   name=sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:::user -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/user"></a>
+<code>user</code>
+</dt>
+<dd><p>User object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/action;   name=sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:::action -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/action"></a>
+<code>action</code>
+</dt>
+<dd><p>User action type.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/activity;   name=sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/data;   name=sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:::data -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:user:didPerformAction:forActivity:withData:_:user:didPerformAction:forActivity:data:/data"></a>
+<code>data</code>
+</dt>
+<dd><p><code>NSDictionary</code> object with action specific data.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:;   name=SessionMDelegate::sessionM:viewControllerForActivity:_:viewControllerForActivityType: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:"></a>
+<h3><a name="sessionM:viewControllerForActivity:_:viewControllerForActivityType:">sessionM:viewControllerForActivity:_:viewControllerForActivityType:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:;name=start --><!-- begin abstract --></p>
+<p>Returns <code>UIViewController</code> object to use as a presenting controller for SessionM view controller.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/UIViewController //apple_ref/occ/tdef/UIViewController //apple_ref/occ/tag/UIViewController //apple_ref/occ/struct/UIViewController //apple_ref/occ/intf/UIViewController //apple_ref/doc/anysymbol/UIViewController" machineGenerated="true" --><span class="type">UIViewController</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">session</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/viewControllerForActivity //apple_ref/occ/clm/SessionMDelegate/viewControllerForActivity //apple_ref/occ/intfcm/SessionMDelegate/viewControllerForActivity //apple_ref/occ/intfm/SessionMDelegate/viewControllerForActivity //apple_ref/occ/func/viewControllerForActivity //apple_ref/occ/ftmplt/SessionMDelegate/viewControllerForActivity //apple_ref/occ/defn/viewControllerForActivity //apple_ref/occ/macro/viewControllerForActivity //apple_ref/doc/anysymbol/viewControllerForActivity" machineGenerated="true" --><span class="function">viewControllerForActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMActivityType" logicalPath="//apple_ref/occ/cl/SMActivityType //apple_ref/occ/tdef/SMActivityType //apple_ref/occ/tag/SMActivityType //apple_ref/occ/struct/SMActivityType //apple_ref/occ/intf/SMActivityType //apple_ref/doc/anysymbol/SMActivityType" target="_top"><span class="type">SMActivityType</span></a>)<span class="param">type</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/viewControllerForActivityType //apple_ref/occ/clm/SessionMDelegate/viewControllerForActivityType //apple_ref/occ/intfcm/SessionMDelegate/viewControllerForActivityType //apple_ref/occ/intfm/SessionMDelegate/viewControllerForActivityType //apple_ref/occ/func/viewControllerForActivityType //apple_ref/occ/ftmplt/SessionMDelegate/viewControllerForActivityType //apple_ref/occ/defn/viewControllerForActivityType //apple_ref/occ/macro/viewControllerForActivityType //apple_ref/doc/anysymbol/viewControllerForActivityType" machineGenerated="true" --><span class="function">viewControllerForActivityType</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:/sessionM;   name=sessionM:viewControllerForActivity:_:viewControllerForActivityType:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:/type;   name=sessionM:viewControllerForActivity:_:viewControllerForActivityType:::type -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:/type"></a>
+<code>type</code>
+</dt>
+<dd><p>Activity type.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>UIViewController</code> object.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:;name=start --><p>This method is only called when application's root view controller is <code>nil</code>. In this case SessionM tries to determine appropriate view controller in the view hierarchy to use as a 'presenting controller'.
+This method provides a mechanism for the application to explicitely specify which view controller should be used in this case. It is recommended that application implement this method when root view controller is not set.
+Note, that <code>UIViewController</code> based presentation is only applicable for full screen activities, e.g. user portal.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewControllerForActivity:_:viewControllerForActivityType:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:;   name=SessionMDelegate::sessionM:viewForActivity:_:viewForActivityType: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:"></a>
+<h3><a name="sessionM:viewForActivity:_:viewForActivityType:">sessionM:viewForActivity:_:viewForActivityType:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:;name=start --><!-- begin abstract --></p>
+<p>Returns <code>UIView</code> object to use as a superview for SessionM view objects.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/UIView //apple_ref/occ/tdef/UIView //apple_ref/occ/tag/UIView //apple_ref/occ/struct/UIView //apple_ref/occ/intf/UIView //apple_ref/doc/anysymbol/UIView" machineGenerated="true" --><span class="type">UIView</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">session</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/viewForActivity //apple_ref/occ/clm/SessionMDelegate/viewForActivity //apple_ref/occ/intfcm/SessionMDelegate/viewForActivity //apple_ref/occ/intfm/SessionMDelegate/viewForActivity //apple_ref/occ/func/viewForActivity //apple_ref/occ/ftmplt/SessionMDelegate/viewForActivity //apple_ref/occ/defn/viewForActivity //apple_ref/occ/macro/viewForActivity //apple_ref/doc/anysymbol/viewForActivity" machineGenerated="true" --><span class="function">viewForActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMActivityType" logicalPath="//apple_ref/occ/cl/SMActivityType //apple_ref/occ/tdef/SMActivityType //apple_ref/occ/tag/SMActivityType //apple_ref/occ/struct/SMActivityType //apple_ref/occ/intf/SMActivityType //apple_ref/doc/anysymbol/SMActivityType" target="_top"><span class="type">SMActivityType</span></a>)<span class="param">type</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/viewForActivityType //apple_ref/occ/clm/SessionMDelegate/viewForActivityType //apple_ref/occ/intfcm/SessionMDelegate/viewForActivityType //apple_ref/occ/intfm/SessionMDelegate/viewForActivityType //apple_ref/occ/func/viewForActivityType //apple_ref/occ/ftmplt/SessionMDelegate/viewForActivityType //apple_ref/occ/defn/viewForActivityType //apple_ref/occ/macro/viewForActivityType //apple_ref/doc/anysymbol/viewForActivityType" machineGenerated="true" --><span class="function">viewForActivityType</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:/sessionM;   name=sessionM:viewForActivity:_:viewForActivityType:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:/type;   name=sessionM:viewForActivity:_:viewForActivityType:::type -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:viewForActivity:_:viewForActivityType:/type"></a>
+<code>type</code>
+</dt>
+<dd><p>Activity type.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>UIView</code> object.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:;   name=SessionMDelegate::sessionM:willDismissActivity:_:willDismissActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:"></a>
+<h3><a name="sessionM:willDismissActivity:_:willDismissActivity:">sessionM:willDismissActivity:_:willDismissActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that UI activity will be dismissed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willDismissActivity //apple_ref/occ/clm/SessionMDelegate/willDismissActivity //apple_ref/occ/intfcm/SessionMDelegate/willDismissActivity //apple_ref/occ/intfm/SessionMDelegate/willDismissActivity //apple_ref/occ/func/willDismissActivity //apple_ref/occ/ftmplt/SessionMDelegate/willDismissActivity //apple_ref/occ/defn/willDismissActivity //apple_ref/occ/macro/willDismissActivity //apple_ref/doc/anysymbol/willDismissActivity" machineGenerated="true" --><span class="function">willDismissActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willDismissActivity //apple_ref/occ/clm/SessionMDelegate/willDismissActivity //apple_ref/occ/intfcm/SessionMDelegate/willDismissActivity //apple_ref/occ/intfm/SessionMDelegate/willDismissActivity //apple_ref/occ/func/willDismissActivity //apple_ref/occ/ftmplt/SessionMDelegate/willDismissActivity //apple_ref/occ/defn/willDismissActivity //apple_ref/occ/macro/willDismissActivity //apple_ref/doc/anysymbol/willDismissActivity" machineGenerated="true" --><span class="function">willDismissActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:/sessionM;   name=sessionM:willDismissActivity:_:willDismissActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:/activity;   name=sessionM:willDismissActivity:_:willDismissActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willDismissActivity:_:willDismissActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:;   name=SessionMDelegate::sessionM:willPresentActivity:_:willPresentActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:"></a>
+<h3><a name="sessionM:willPresentActivity:_:willPresentActivity:">sessionM:willPresentActivity:_:willPresentActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that UI activity will be presented.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willPresentActivity //apple_ref/occ/clm/SessionMDelegate/willPresentActivity //apple_ref/occ/intfcm/SessionMDelegate/willPresentActivity //apple_ref/occ/intfm/SessionMDelegate/willPresentActivity //apple_ref/occ/func/willPresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/willPresentActivity //apple_ref/occ/defn/willPresentActivity //apple_ref/occ/macro/willPresentActivity //apple_ref/doc/anysymbol/willPresentActivity" machineGenerated="true" --><span class="function">willPresentActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willPresentActivity //apple_ref/occ/clm/SessionMDelegate/willPresentActivity //apple_ref/occ/intfcm/SessionMDelegate/willPresentActivity //apple_ref/occ/intfm/SessionMDelegate/willPresentActivity //apple_ref/occ/func/willPresentActivity //apple_ref/occ/ftmplt/SessionMDelegate/willPresentActivity //apple_ref/occ/defn/willPresentActivity //apple_ref/occ/macro/willPresentActivity //apple_ref/doc/anysymbol/willPresentActivity" machineGenerated="true" --><span class="function">willPresentActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:/sessionM;   name=sessionM:willPresentActivity:_:willPresentActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:/activity;   name=sessionM:willPresentActivity:_:willPresentActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willPresentActivity:_:willPresentActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:;   name=SessionMDelegate::sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity: --><a name="//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:"></a>
+<h3><a name="sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:">sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:;name=start --><!-- begin abstract --></p>
+<p>Notifies that media (typically video) will start playing.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SessionMDelegate/sessionM:centerForActivity:withSize:_:centerForActivity:size:" logicalPath="//apple_ref/occ/instm/SessionMDelegate/sessionM //apple_ref/occ/clm/SessionMDelegate/sessionM //apple_ref/occ/intfcm/SessionMDelegate/sessionM //apple_ref/occ/intfm/SessionMDelegate/sessionM" target="_top"><span class="function">sessionM</span></a>:(<a machinegenerated="true" href="../../Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/occ/cl/SessionM" target="_top"><span class="type">SessionM</span></a> <span class="type">*</span>)<span class="param">sessionM</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/clm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/intfcm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/intfm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/func/willStartPlayingMediaForActivity //apple_ref/occ/ftmplt/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/defn/willStartPlayingMediaForActivity //apple_ref/occ/macro/willStartPlayingMediaForActivity //apple_ref/doc/anysymbol/willStartPlayingMediaForActivity" machineGenerated="true" --><span class="function">willStartPlayingMediaForActivity</span><!-- /a -->:(<a machinegenerated="true" href="../../Classes/SMActivity/index.html#//apple_ref/occ/cl/SMActivity" logicalPath="//apple_ref/occ/cl/SMActivity" target="_top"><span class="type">SMActivity</span></a> <span class="type">*</span>)<span class="param">activity</span> NS_SWIFT_NAME(sessionM(
+                <!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/_ //apple_ref/occ/clm/SessionMDelegate/_ //apple_ref/occ/intfcm/SessionMDelegate/_ //apple_ref/occ/intfm/SessionMDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SessionMDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/clm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/intfcm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/intfm/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/func/willStartPlayingMediaForActivity //apple_ref/occ/ftmplt/SessionMDelegate/willStartPlayingMediaForActivity //apple_ref/occ/defn/willStartPlayingMediaForActivity //apple_ref/occ/macro/willStartPlayingMediaForActivity //apple_ref/doc/anysymbol/willStartPlayingMediaForActivity" machineGenerated="true" --><span class="function">willStartPlayingMediaForActivity</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:/sessionM;   name=sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:::sessionM -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:/sessionM"></a>
+<code>sessionM</code>
+</dt>
+<dd><p>SessionM service object.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:/activity;   name=sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:::activity -->
+<a name="//apple_ref/doc/methodparam/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:/activity"></a>
+<code>activity</code>
+</dt>
+<dd><p>Activity object.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:;name=start --><p>Application should use this method to suspend its own media playback if any.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SessionMDelegate/sessionM:willStartPlayingMediaForActivity:_:willStartPlayingMediaForActivity:;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

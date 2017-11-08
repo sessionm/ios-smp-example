@@ -1,0 +1,594 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMTransaction.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMTransaction.h;   name=SMTransaction.h -->
+<a name="//apple_ref/doc/header/SMTransaction.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMTransaction.h">SMTransaction.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Foundation.h" machineGenerated="true" -->&lt;Foundation/Foundation.h&gt;<!-- /a -->
+</div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMTransaction.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMTransaction.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">Classes</h2>
+<dl>
+<dt><tt><a href="Classes/SMTransaction/index.html#//apple_ref/occ/cl/SMTransaction" target="_top">SMTransaction</a></tt></dt>
+<dd><p>Defines the data associated with a loyalty points transaction.
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></tt></dt>
+<dd>
+<p>Transaction kind.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/NSInteger_DONTLINK_0" target="_top">NSInteger</a></tt></dt>
+<dd>
+<p>Transaction source.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/NSInteger_DONTLINK_1" target="_top">NSInteger</a></tt></dt>
+<dd>
+<p>Transaction points type.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionKind" target="_top">SMTransactionKind</a></tt></dt>
+<dd>
+<p>Transaction kind.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionPointsType" target="_top">SMTransactionPointsType</a></tt></dt>
+<dd>
+<p>Transaction points type.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionSource" target="_top">SMTransactionSource</a></tt></dt>
+<dd>
+<p>Transaction source.
+</p>
+</dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/NSInteger;   name=NSInteger --><a name="//apple_ref/c/tdef/NSInteger"></a>
+<h3><a name="NSInteger">NSInteger</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=start --><!-- begin abstract --></p>
+<p>Transaction kind.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionKind //apple_ref/c/data/SMTransactionKind //apple_ref/c/clconst/SMTransactionKind " machineGenerated="true" --><span class="var">SMTransactionKind</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindUnknown" logicalPath="//apple_ref/c/cl/SMTransactionKindUnknown //apple_ref/c/tdef/SMTransactionKindUnknown //apple_ref/c/tag/SMTransactionKindUnknown //apple_ref/c/struct/SMTransactionKindUnknown //apple_ref/c/intf/SMTransactionKindUnknown //apple_ref/doc/anysymbol/SMTransactionKindUnknown" target="_top"><span class="type">SMTransactionKindUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindCredit" logicalPath="//apple_ref/c/cl/SMTransactionKindCredit //apple_ref/c/tdef/SMTransactionKindCredit //apple_ref/c/tag/SMTransactionKindCredit //apple_ref/c/struct/SMTransactionKindCredit //apple_ref/c/intf/SMTransactionKindCredit //apple_ref/doc/anysymbol/SMTransactionKindCredit" target="_top"><span class="type">SMTransactionKindCredit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">credit</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindDebit" logicalPath="//apple_ref/c/cl/SMTransactionKindDebit //apple_ref/c/tdef/SMTransactionKindDebit //apple_ref/c/tag/SMTransactionKindDebit //apple_ref/c/struct/SMTransactionKindDebit //apple_ref/c/intf/SMTransactionKindDebit //apple_ref/doc/anysymbol/SMTransactionKindDebit" target="_top"><span class="type">SMTransactionKindDebit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">debit</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/SMTransactionKindUnknown"><code>SMTransactionKindUnknown</code></a></dt>
+<dd><p>Transaction kind is unknown.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionKindCredit"><code>SMTransactionKindCredit</code></a></dt>
+<dd><p>User earned points from the transaction.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionKindDebit"><code>SMTransactionKindDebit</code></a></dt>
+<dd><p>User lost points from the transaction.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionKind" logicalPath="//apple_ref/doc/title:tdef/SMTransactionKind" target="_top">SMTransactionKind</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/NSInteger_DONTLINK_0;   name=NSInteger --><a name="//apple_ref/c/tdef/NSInteger_DONTLINK_0"></a>
+<h3><a name="NSInteger">NSInteger</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_0;name=start --><!-- begin abstract --></p>
+<p>Transaction source.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_0;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_0;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionSource //apple_ref/c/data/SMTransactionSource //apple_ref/c/clconst/SMTransactionSource " machineGenerated="true" --><span class="var">SMTransactionSource</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceUnknown" logicalPath="//apple_ref/c/cl/SMTransactionSourceUnknown //apple_ref/c/tdef/SMTransactionSourceUnknown //apple_ref/c/tag/SMTransactionSourceUnknown //apple_ref/c/struct/SMTransactionSourceUnknown //apple_ref/c/intf/SMTransactionSourceUnknown //apple_ref/doc/anysymbol/SMTransactionSourceUnknown" target="_top"><span class="type">SMTransactionSourceUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceAchievement" logicalPath="//apple_ref/c/cl/SMTransactionSourceAchievement //apple_ref/c/tdef/SMTransactionSourceAchievement //apple_ref/c/tag/SMTransactionSourceAchievement //apple_ref/c/struct/SMTransactionSourceAchievement //apple_ref/c/intf/SMTransactionSourceAchievement //apple_ref/doc/anysymbol/SMTransactionSourceAchievement" target="_top"><span class="type">SMTransactionSourceAchievement</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">achievement</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceContest" logicalPath="//apple_ref/c/cl/SMTransactionSourceContest //apple_ref/c/tdef/SMTransactionSourceContest //apple_ref/c/tag/SMTransactionSourceContest //apple_ref/c/struct/SMTransactionSourceContest //apple_ref/c/intf/SMTransactionSourceContest //apple_ref/doc/anysymbol/SMTransactionSourceContest" target="_top"><span class="type">SMTransactionSourceContest</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">contest</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceSponsor" logicalPath="//apple_ref/c/cl/SMTransactionSourceSponsor //apple_ref/c/tdef/SMTransactionSourceSponsor //apple_ref/c/tag/SMTransactionSourceSponsor //apple_ref/c/struct/SMTransactionSourceSponsor //apple_ref/c/intf/SMTransactionSourceSponsor //apple_ref/doc/anysymbol/SMTransactionSourceSponsor" target="_top"><span class="type">SMTransactionSourceSponsor</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">sponsor</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceMerchantRewards" logicalPath="//apple_ref/c/cl/SMTransactionSourceMerchantRewards //apple_ref/c/tdef/SMTransactionSourceMerchantRewards //apple_ref/c/tag/SMTransactionSourceMerchantRewards //apple_ref/c/struct/SMTransactionSourceMerchantRewards //apple_ref/c/intf/SMTransactionSourceMerchantRewards //apple_ref/doc/anysymbol/SMTransactionSourceMerchantRewards" target="_top"><span class="type">SMTransactionSourceMerchantRewards</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">merchantRewards</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceEnterprise" logicalPath="//apple_ref/c/cl/SMTransactionSourceEnterprise //apple_ref/c/tdef/SMTransactionSourceEnterprise //apple_ref/c/tag/SMTransactionSourceEnterprise //apple_ref/c/struct/SMTransactionSourceEnterprise //apple_ref/c/intf/SMTransactionSourceEnterprise //apple_ref/doc/anysymbol/SMTransactionSourceEnterprise" target="_top"><span class="type">SMTransactionSourceEnterprise</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">enterprise</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceComp" logicalPath="//apple_ref/c/cl/SMTransactionSourceComp //apple_ref/c/tdef/SMTransactionSourceComp //apple_ref/c/tag/SMTransactionSourceComp //apple_ref/c/struct/SMTransactionSourceComp //apple_ref/c/intf/SMTransactionSourceComp //apple_ref/doc/anysymbol/SMTransactionSourceComp" target="_top"><span class="type">SMTransactionSourceComp</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">comp</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceUsed" logicalPath="//apple_ref/c/cl/SMTransactionSourceUsed //apple_ref/c/tdef/SMTransactionSourceUsed //apple_ref/c/tag/SMTransactionSourceUsed //apple_ref/c/struct/SMTransactionSourceUsed //apple_ref/c/intf/SMTransactionSourceUsed //apple_ref/doc/anysymbol/SMTransactionSourceUsed" target="_top"><span class="type">SMTransactionSourceUsed</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">used</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_0;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceUnknown"><code>SMTransactionSourceUnknown</code></a></dt>
+<dd><p>Transaction source is unknown.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceAchievement"><code>SMTransactionSourceAchievement</code></a></dt>
+<dd><p>Points were earned by claiming an achievement.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceContest"><code>SMTransactionSourceContest</code></a></dt>
+<dd><p>Points were earned or lost from a contest.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceSponsor"><code>SMTransactionSourceSponsor</code></a></dt>
+<dd><p>Points were earned by engaging with sponsored content.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceMerchantRewards"><code>SMTransactionSourceMerchantRewards</code></a></dt>
+<dd><p>Points were earned or lost from a loyalty rewards program transaction.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceEnterprise"><code>SMTransactionSourceEnterprise</code></a></dt>
+<dd><p>Points were earned through a server-to-server API call.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceComp"><code>SMTransactionSourceComp</code></a></dt>
+<dd><p>Points were given to user as compensation.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionSourceUsed"><code>SMTransactionSourceUsed</code></a></dt>
+<dd><p>Points were lost from making a rewards store purchase.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionSource" logicalPath="//apple_ref/doc/title:tdef/SMTransactionSource" target="_top">SMTransactionSource</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/NSInteger_DONTLINK_1;   name=NSInteger --><a name="//apple_ref/c/tdef/NSInteger_DONTLINK_1"></a>
+<h3><a name="NSInteger">NSInteger</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_1;name=start --><!-- begin abstract --></p>
+<p>Transaction points type.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_1;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_1;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionPointsType //apple_ref/c/data/SMTransactionPointsType //apple_ref/c/clconst/SMTransactionPointsType " machineGenerated="true" --><span class="var">SMTransactionPointsType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeUnknown" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeUnknown //apple_ref/c/tdef/SMTransactionPointsTypeUnknown //apple_ref/c/tag/SMTransactionPointsTypeUnknown //apple_ref/c/struct/SMTransactionPointsTypeUnknown //apple_ref/c/intf/SMTransactionPointsTypeUnknown //apple_ref/doc/anysymbol/SMTransactionPointsTypeUnknown" target="_top"><span class="type">SMTransactionPointsTypeUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeDonation" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeDonation //apple_ref/c/tdef/SMTransactionPointsTypeDonation //apple_ref/c/tag/SMTransactionPointsTypeDonation //apple_ref/c/struct/SMTransactionPointsTypeDonation //apple_ref/c/intf/SMTransactionPointsTypeDonation //apple_ref/doc/anysymbol/SMTransactionPointsTypeDonation" target="_top"><span class="type">SMTransactionPointsTypeDonation</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">donation</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeSweepstakes" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeSweepstakes //apple_ref/c/tdef/SMTransactionPointsTypeSweepstakes //apple_ref/c/tag/SMTransactionPointsTypeSweepstakes //apple_ref/c/struct/SMTransactionPointsTypeSweepstakes //apple_ref/c/intf/SMTransactionPointsTypeSweepstakes //apple_ref/doc/anysymbol/SMTransactionPointsTypeSweepstakes" target="_top"><span class="type">SMTransactionPointsTypeSweepstakes</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">sweepstakes</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeMerchandise" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeMerchandise //apple_ref/c/tdef/SMTransactionPointsTypeMerchandise //apple_ref/c/tag/SMTransactionPointsTypeMerchandise //apple_ref/c/struct/SMTransactionPointsTypeMerchandise //apple_ref/c/intf/SMTransactionPointsTypeMerchandise //apple_ref/doc/anysymbol/SMTransactionPointsTypeMerchandise" target="_top"><span class="type">SMTransactionPointsTypeMerchandise</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">merchandise</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeDigital" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeDigital //apple_ref/c/tdef/SMTransactionPointsTypeDigital //apple_ref/c/tag/SMTransactionPointsTypeDigital //apple_ref/c/struct/SMTransactionPointsTypeDigital //apple_ref/c/intf/SMTransactionPointsTypeDigital //apple_ref/doc/anysymbol/SMTransactionPointsTypeDigital" target="_top"><span class="type">SMTransactionPointsTypeDigital</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">digital</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypePhysical" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypePhysical //apple_ref/c/tdef/SMTransactionPointsTypePhysical //apple_ref/c/tag/SMTransactionPointsTypePhysical //apple_ref/c/struct/SMTransactionPointsTypePhysical //apple_ref/c/intf/SMTransactionPointsTypePhysical //apple_ref/doc/anysymbol/SMTransactionPointsTypePhysical" target="_top"><span class="type">SMTransactionPointsTypePhysical</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">physical</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeReceipt" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeReceipt //apple_ref/c/tdef/SMTransactionPointsTypeReceipt //apple_ref/c/tag/SMTransactionPointsTypeReceipt //apple_ref/c/struct/SMTransactionPointsTypeReceipt //apple_ref/c/intf/SMTransactionPointsTypeReceipt //apple_ref/doc/anysymbol/SMTransactionPointsTypeReceipt" target="_top"><span class="type">SMTransactionPointsTypeReceipt</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">receipt</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeLoyaltyCard" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/tdef/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/tag/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/struct/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/intf/SMTransactionPointsTypeLoyaltyCard //apple_ref/doc/anysymbol/SMTransactionPointsTypeLoyaltyCard" target="_top"><span class="type">SMTransactionPointsTypeLoyaltyCard</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">loyaltyCard</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeHistorical" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeHistorical //apple_ref/c/tdef/SMTransactionPointsTypeHistorical //apple_ref/c/tag/SMTransactionPointsTypeHistorical //apple_ref/c/struct/SMTransactionPointsTypeHistorical //apple_ref/c/intf/SMTransactionPointsTypeHistorical //apple_ref/doc/anysymbol/SMTransactionPointsTypeHistorical" target="_top"><span class="type">SMTransactionPointsTypeHistorical</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">historical</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger_DONTLINK_1;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeUnknown"><code>SMTransactionPointsTypeUnknown</code></a></dt>
+<dd><p>Transaction points type is unknown.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeDonation"><code>SMTransactionPointsTypeDonation</code></a></dt>
+<dd><p>A donation was made.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeSweepstakes"><code>SMTransactionPointsTypeSweepstakes</code></a></dt>
+<dd><p>A sweepstakes was won or entered.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeMerchandise"><code>SMTransactionPointsTypeMerchandise</code></a></dt>
+<dd><p>Merchandise from a loyalty rewards program was purchased.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeDigital"><code>SMTransactionPointsTypeDigital</code></a></dt>
+<dd><p>A digital reward was purchased from the rewards store.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypePhysical"><code>SMTransactionPointsTypePhysical</code></a></dt>
+<dd><p>A physical reward was purchased from the rewards store.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeReceipt"><code>SMTransactionPointsTypeReceipt</code></a></dt>
+<dd><p>Points were earned from a receipt capture campaign.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeLoyaltyCard"><code>SMTransactionPointsTypeLoyaltyCard</code></a></dt>
+<dd><p>Points were earned from a loyalty card transaction.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMTransactionPointsTypeHistorical"><code>SMTransactionPointsTypeHistorical</code></a></dt>
+<dd><p>Indicates that the transaction data was migrated into the SessionM Platform from an external rewards system.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:tdef/SMTransactionPointsType" logicalPath="//apple_ref/doc/title:tdef/SMTransactionPointsType" target="_top">SMTransactionPointsType</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:tdef;  uid=//apple_ref/doc/title:tdef/SMTransactionKind;   name=SMTransactionKind --><a name="//apple_ref/doc/title:tdef/SMTransactionKind"></a>
+<h3><a name="SMTransactionKind">SMTransactionKind</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionKind;name=start --><!-- begin abstract --></p>
+<p>Transaction kind.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionKind;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionKind;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionKind //apple_ref/c/data/SMTransactionKind //apple_ref/c/clconst/SMTransactionKind " machineGenerated="true" --><span class="var">SMTransactionKind</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindUnknown" logicalPath="//apple_ref/c/cl/SMTransactionKindUnknown //apple_ref/c/tdef/SMTransactionKindUnknown //apple_ref/c/tag/SMTransactionKindUnknown //apple_ref/c/struct/SMTransactionKindUnknown //apple_ref/c/intf/SMTransactionKindUnknown //apple_ref/doc/anysymbol/SMTransactionKindUnknown" target="_top"><span class="type">SMTransactionKindUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindCredit" logicalPath="//apple_ref/c/cl/SMTransactionKindCredit //apple_ref/c/tdef/SMTransactionKindCredit //apple_ref/c/tag/SMTransactionKindCredit //apple_ref/c/struct/SMTransactionKindCredit //apple_ref/c/intf/SMTransactionKindCredit //apple_ref/doc/anysymbol/SMTransactionKindCredit" target="_top"><span class="type">SMTransactionKindCredit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">credit</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionKindDebit" logicalPath="//apple_ref/c/cl/SMTransactionKindDebit //apple_ref/c/tdef/SMTransactionKindDebit //apple_ref/c/tag/SMTransactionKindDebit //apple_ref/c/struct/SMTransactionKindDebit //apple_ref/c/intf/SMTransactionKindDebit //apple_ref/doc/anysymbol/SMTransactionKindDebit" target="_top"><span class="type">SMTransactionKindDebit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">debit</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionKind;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionKindUnknown"><code>SMTransactionKindUnknown</code></a></dt>
+<dd><p>Transaction kind is unknown.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionKindCredit"><code>SMTransactionKindCredit</code></a></dt>
+<dd><p>User earned points from the transaction.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionKindDebit"><code>SMTransactionKindDebit</code></a></dt>
+<dd><p>User lost points from the transaction.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:tdef;  uid=//apple_ref/doc/title:tdef/SMTransactionPointsType;   name=SMTransactionPointsType --><a name="//apple_ref/doc/title:tdef/SMTransactionPointsType"></a>
+<h3><a name="SMTransactionPointsType">SMTransactionPointsType</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionPointsType;name=start --><!-- begin abstract --></p>
+<p>Transaction points type.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionPointsType;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionPointsType;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionPointsType //apple_ref/c/data/SMTransactionPointsType //apple_ref/c/clconst/SMTransactionPointsType " machineGenerated="true" --><span class="var">SMTransactionPointsType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeUnknown" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeUnknown //apple_ref/c/tdef/SMTransactionPointsTypeUnknown //apple_ref/c/tag/SMTransactionPointsTypeUnknown //apple_ref/c/struct/SMTransactionPointsTypeUnknown //apple_ref/c/intf/SMTransactionPointsTypeUnknown //apple_ref/doc/anysymbol/SMTransactionPointsTypeUnknown" target="_top"><span class="type">SMTransactionPointsTypeUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeDonation" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeDonation //apple_ref/c/tdef/SMTransactionPointsTypeDonation //apple_ref/c/tag/SMTransactionPointsTypeDonation //apple_ref/c/struct/SMTransactionPointsTypeDonation //apple_ref/c/intf/SMTransactionPointsTypeDonation //apple_ref/doc/anysymbol/SMTransactionPointsTypeDonation" target="_top"><span class="type">SMTransactionPointsTypeDonation</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">donation</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeSweepstakes" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeSweepstakes //apple_ref/c/tdef/SMTransactionPointsTypeSweepstakes //apple_ref/c/tag/SMTransactionPointsTypeSweepstakes //apple_ref/c/struct/SMTransactionPointsTypeSweepstakes //apple_ref/c/intf/SMTransactionPointsTypeSweepstakes //apple_ref/doc/anysymbol/SMTransactionPointsTypeSweepstakes" target="_top"><span class="type">SMTransactionPointsTypeSweepstakes</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">sweepstakes</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeMerchandise" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeMerchandise //apple_ref/c/tdef/SMTransactionPointsTypeMerchandise //apple_ref/c/tag/SMTransactionPointsTypeMerchandise //apple_ref/c/struct/SMTransactionPointsTypeMerchandise //apple_ref/c/intf/SMTransactionPointsTypeMerchandise //apple_ref/doc/anysymbol/SMTransactionPointsTypeMerchandise" target="_top"><span class="type">SMTransactionPointsTypeMerchandise</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">merchandise</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeDigital" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeDigital //apple_ref/c/tdef/SMTransactionPointsTypeDigital //apple_ref/c/tag/SMTransactionPointsTypeDigital //apple_ref/c/struct/SMTransactionPointsTypeDigital //apple_ref/c/intf/SMTransactionPointsTypeDigital //apple_ref/doc/anysymbol/SMTransactionPointsTypeDigital" target="_top"><span class="type">SMTransactionPointsTypeDigital</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">digital</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypePhysical" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypePhysical //apple_ref/c/tdef/SMTransactionPointsTypePhysical //apple_ref/c/tag/SMTransactionPointsTypePhysical //apple_ref/c/struct/SMTransactionPointsTypePhysical //apple_ref/c/intf/SMTransactionPointsTypePhysical //apple_ref/doc/anysymbol/SMTransactionPointsTypePhysical" target="_top"><span class="type">SMTransactionPointsTypePhysical</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">physical</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeReceipt" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeReceipt //apple_ref/c/tdef/SMTransactionPointsTypeReceipt //apple_ref/c/tag/SMTransactionPointsTypeReceipt //apple_ref/c/struct/SMTransactionPointsTypeReceipt //apple_ref/c/intf/SMTransactionPointsTypeReceipt //apple_ref/doc/anysymbol/SMTransactionPointsTypeReceipt" target="_top"><span class="type">SMTransactionPointsTypeReceipt</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">receipt</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeLoyaltyCard" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/tdef/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/tag/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/struct/SMTransactionPointsTypeLoyaltyCard //apple_ref/c/intf/SMTransactionPointsTypeLoyaltyCard //apple_ref/doc/anysymbol/SMTransactionPointsTypeLoyaltyCard" target="_top"><span class="type">SMTransactionPointsTypeLoyaltyCard</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">loyaltyCard</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionPointsTypeHistorical" logicalPath="//apple_ref/c/cl/SMTransactionPointsTypeHistorical //apple_ref/c/tdef/SMTransactionPointsTypeHistorical //apple_ref/c/tag/SMTransactionPointsTypeHistorical //apple_ref/c/struct/SMTransactionPointsTypeHistorical //apple_ref/c/intf/SMTransactionPointsTypeHistorical //apple_ref/doc/anysymbol/SMTransactionPointsTypeHistorical" target="_top"><span class="type">SMTransactionPointsTypeHistorical</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">historical</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionPointsType;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeUnknown"><code>SMTransactionPointsTypeUnknown</code></a></dt>
+<dd><p>Transaction points type is unknown.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeDonation"><code>SMTransactionPointsTypeDonation</code></a></dt>
+<dd><p>A donation was made.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeSweepstakes"><code>SMTransactionPointsTypeSweepstakes</code></a></dt>
+<dd><p>A sweepstakes was won or entered.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeMerchandise"><code>SMTransactionPointsTypeMerchandise</code></a></dt>
+<dd><p>Merchandise from a loyalty rewards program was purchased.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeDigital"><code>SMTransactionPointsTypeDigital</code></a></dt>
+<dd><p>A digital reward was purchased from the rewards store.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypePhysical"><code>SMTransactionPointsTypePhysical</code></a></dt>
+<dd><p>A physical reward was purchased from the rewards store.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeReceipt"><code>SMTransactionPointsTypeReceipt</code></a></dt>
+<dd><p>Points were earned from a receipt capture campaign.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeLoyaltyCard"><code>SMTransactionPointsTypeLoyaltyCard</code></a></dt>
+<dd><p>Points were earned from a loyalty card transaction.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionPointsTypeHistorical"><code>SMTransactionPointsTypeHistorical</code></a></dt>
+<dd><p>Indicates that the transaction data was migrated into the SessionM Platform from an external rewards system.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/NSInteger_DONTLINK_1" logicalPath="//apple_ref/c/tdef/NSInteger_DONTLINK_1" target="_top">NSInteger</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:tdef;  uid=//apple_ref/doc/title:tdef/SMTransactionSource;   name=SMTransactionSource --><a name="//apple_ref/doc/title:tdef/SMTransactionSource"></a>
+<h3><a name="SMTransactionSource">SMTransactionSource</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionSource;name=start --><!-- begin abstract --></p>
+<p>Transaction source.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMTransactionSource;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionSource;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMTransactionSource //apple_ref/c/data/SMTransactionSource //apple_ref/c/clconst/SMTransactionSource " machineGenerated="true" --><span class="var">SMTransactionSource</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceUnknown" logicalPath="//apple_ref/c/cl/SMTransactionSourceUnknown //apple_ref/c/tdef/SMTransactionSourceUnknown //apple_ref/c/tag/SMTransactionSourceUnknown //apple_ref/c/struct/SMTransactionSourceUnknown //apple_ref/c/intf/SMTransactionSourceUnknown //apple_ref/doc/anysymbol/SMTransactionSourceUnknown" target="_top"><span class="type">SMTransactionSourceUnknown</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceAchievement" logicalPath="//apple_ref/c/cl/SMTransactionSourceAchievement //apple_ref/c/tdef/SMTransactionSourceAchievement //apple_ref/c/tag/SMTransactionSourceAchievement //apple_ref/c/struct/SMTransactionSourceAchievement //apple_ref/c/intf/SMTransactionSourceAchievement //apple_ref/doc/anysymbol/SMTransactionSourceAchievement" target="_top"><span class="type">SMTransactionSourceAchievement</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">achievement</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceContest" logicalPath="//apple_ref/c/cl/SMTransactionSourceContest //apple_ref/c/tdef/SMTransactionSourceContest //apple_ref/c/tag/SMTransactionSourceContest //apple_ref/c/struct/SMTransactionSourceContest //apple_ref/c/intf/SMTransactionSourceContest //apple_ref/doc/anysymbol/SMTransactionSourceContest" target="_top"><span class="type">SMTransactionSourceContest</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">contest</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceSponsor" logicalPath="//apple_ref/c/cl/SMTransactionSourceSponsor //apple_ref/c/tdef/SMTransactionSourceSponsor //apple_ref/c/tag/SMTransactionSourceSponsor //apple_ref/c/struct/SMTransactionSourceSponsor //apple_ref/c/intf/SMTransactionSourceSponsor //apple_ref/doc/anysymbol/SMTransactionSourceSponsor" target="_top"><span class="type">SMTransactionSourceSponsor</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">sponsor</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceMerchantRewards" logicalPath="//apple_ref/c/cl/SMTransactionSourceMerchantRewards //apple_ref/c/tdef/SMTransactionSourceMerchantRewards //apple_ref/c/tag/SMTransactionSourceMerchantRewards //apple_ref/c/struct/SMTransactionSourceMerchantRewards //apple_ref/c/intf/SMTransactionSourceMerchantRewards //apple_ref/doc/anysymbol/SMTransactionSourceMerchantRewards" target="_top"><span class="type">SMTransactionSourceMerchantRewards</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">merchantRewards</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceEnterprise" logicalPath="//apple_ref/c/cl/SMTransactionSourceEnterprise //apple_ref/c/tdef/SMTransactionSourceEnterprise //apple_ref/c/tag/SMTransactionSourceEnterprise //apple_ref/c/struct/SMTransactionSourceEnterprise //apple_ref/c/intf/SMTransactionSourceEnterprise //apple_ref/doc/anysymbol/SMTransactionSourceEnterprise" target="_top"><span class="type">SMTransactionSourceEnterprise</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">enterprise</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceComp" logicalPath="//apple_ref/c/cl/SMTransactionSourceComp //apple_ref/c/tdef/SMTransactionSourceComp //apple_ref/c/tag/SMTransactionSourceComp //apple_ref/c/struct/SMTransactionSourceComp //apple_ref/c/intf/SMTransactionSourceComp //apple_ref/doc/anysymbol/SMTransactionSourceComp" target="_top"><span class="type">SMTransactionSourceComp</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">comp</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMTransactionSourceUsed" logicalPath="//apple_ref/c/cl/SMTransactionSourceUsed //apple_ref/c/tdef/SMTransactionSourceUsed //apple_ref/c/tag/SMTransactionSourceUsed //apple_ref/c/struct/SMTransactionSourceUsed //apple_ref/c/intf/SMTransactionSourceUsed //apple_ref/doc/anysymbol/SMTransactionSourceUsed" target="_top"><span class="type">SMTransactionSourceUsed</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">used</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMTransactionSource;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceUnknown"><code>SMTransactionSourceUnknown</code></a></dt>
+<dd><p>Transaction source is unknown.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceAchievement"><code>SMTransactionSourceAchievement</code></a></dt>
+<dd><p>Points were earned by claiming an achievement.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceContest"><code>SMTransactionSourceContest</code></a></dt>
+<dd><p>Points were earned or lost from a contest.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceSponsor"><code>SMTransactionSourceSponsor</code></a></dt>
+<dd><p>Points were earned by engaging with sponsored content.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceMerchantRewards"><code>SMTransactionSourceMerchantRewards</code></a></dt>
+<dd><p>Points were earned or lost from a loyalty rewards program transaction.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceEnterprise"><code>SMTransactionSourceEnterprise</code></a></dt>
+<dd><p>Points were earned through a server-to-server API call.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceComp"><code>SMTransactionSourceComp</code></a></dt>
+<dd><p>Points were given to user as compensation.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMTransactionSourceUsed"><code>SMTransactionSourceUsed</code></a></dt>
+<dd><p>Points were lost from making a rewards store purchase.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/NSInteger_DONTLINK_0" logicalPath="//apple_ref/c/tdef/NSInteger_DONTLINK_0" target="_top">NSInteger</a></p></dt>
+<dd></dd>
+</dl></div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

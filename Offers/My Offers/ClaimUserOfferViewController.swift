@@ -31,7 +31,7 @@ class ClaimUserOfferViewController: UIViewController {
     }
 
     func fetchClaim() {
-        SMOffersManager.instance().claimUserOffer(havingID: item!.offerID) { (result: SMClaimUserOfferResult?, error: SMError?) in
+        SMOffersManager.instance().claimUserOffer(havingID: item!.userOfferID) { (result: SMClaimUserOfferResponse?, error: SMError?) in
             if let error = error {
                 self.present(UIAlertController(title: "Nothing Fetched", message: error.message, preferredStyle: .alert), animated: true, completion: {})
             } else if let claim = result?.claimedOffer {

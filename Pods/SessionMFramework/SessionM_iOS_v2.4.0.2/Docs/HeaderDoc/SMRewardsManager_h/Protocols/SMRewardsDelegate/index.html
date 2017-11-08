@@ -1,0 +1,469 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMRewardsDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=intf; uid=//apple_ref/occ/intf/SMRewardsDelegate;  name=SMRewardsDelegate-->
+<a name="//apple_ref/occ/intf/SMRewardsDelegate"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMRewardsDelegate">SMRewardsDelegate</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Extends&nbsp;Protocol:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../../../SMBaseDelegate_h/Protocols/SMBaseDelegate/index.html#//apple_ref/occ/intf/SMBaseDelegate" logicalPath="//apple_ref/occ/intf/SMBaseDelegate" target="_top">SMBaseDelegate</a></div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMRewardsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMRewardsManager.h">SMRewardsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMRewardsDelegate;name=start --><!-- begin abstract --></p>
+<p>Defines callbacks for <a href="../../Classes/SMRewardsManager/index.html#//apple_ref/occ/cl/SMRewardsManager" logicalPath="//apple_ref/occ/cl/SMRewardsManager" target="_top">SMRewardsManager</a> methods.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMRewardsDelegate;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:" target="_top">-didAnswerSkillQuestion:result:</a></tt></dt>
+<dd><p>Notifies delegate that the user's answer to a skill testing question was processed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:" target="_top">-didFetchOffers:_:</a></tt></dt>
+<dd><p>Notifies delegate that available offers were fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:" target="_top">-didFetchOrders:_:</a></tt></dt>
+<dd><p>Notifies delegate that the current user's sent orders were fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:" target="_top">-didFetchSkillQuestion:_:</a></tt></dt>
+<dd><p>Notifies delegate that a skill testing question was fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:" target="_top">-didPlaceOrder:_:</a></tt></dt>
+<dd><p>Notifies delegate that an order was placed for the current user.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:;   name=SMRewardsDelegate::didAnswerSkillQuestion:result: --><a name="//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:"></a>
+<h3><a name="didAnswerSkillQuestion:result:">didAnswerSkillQuestion:result:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that the user's answer to a skill testing question was processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/didAnswerSkillQuestion //apple_ref/occ/clm/SMRewardsDelegate/didAnswerSkillQuestion //apple_ref/occ/intfcm/SMRewardsDelegate/didAnswerSkillQuestion //apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion" target="_top"><span class="function">didAnswerSkillQuestion</span></a>:(<a machinegenerated="true" href="../../../SMSkillChallenge_h/Classes/SMSkillChallenge/index.html#//apple_ref/occ/cl/SMSkillChallenge" logicalPath="//apple_ref/occ/cl/SMSkillChallenge" target="_top"><span class="type">SMSkillChallenge</span></a> <span class="type">*</span>)<span class="param">result</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didAnswerSkillQuestion(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsDelegate/didAnswerSkillQuestion:result:/result" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/result //apple_ref/occ/clm/SMRewardsDelegate/result //apple_ref/occ/intfcm/SMRewardsDelegate/result //apple_ref/occ/intfm/SMRewardsDelegate/result //apple_ref/occ/func/result //apple_ref/occ/ftmplt/SMRewardsDelegate/result //apple_ref/occ/defn/result //apple_ref/occ/macro/result //apple_ref/doc/anysymbol/result" target="_top"><span class="function">result</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsDelegate/didAnswerSkillQuestion:result:/result;   name=didAnswerSkillQuestion:result:::result -->
+<a name="//apple_ref/doc/methodparam/SMRewardsDelegate/didAnswerSkillQuestion:result:/result"></a>
+<code>result</code>
+</dt>
+<dd><p>The server-side response to the user's answer.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/tdef/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/tag/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/struct/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/intf/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/econst/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/data/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/clconst/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/instm/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/clm/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/intfcm/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/intfm/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/func/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/ftmplt/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/defn/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/occ/macro/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/doc/com/intfm/answerSkillQuestionForOfferID:questionID:answer: //apple_ref/doc/anysymbol/answerSkillQuestionForOfferID:questionID:answer:" -->answerSkillQuestionForOfferID:questionID:answer:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didAnswerSkillQuestion:result:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:;   name=SMRewardsDelegate::didFetchOffers:_: --><a name="//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:"></a>
+<h3><a name="didFetchOffers:_:">didFetchOffers:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that available offers were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/didFetchOffers //apple_ref/occ/clm/SMRewardsDelegate/didFetchOffers //apple_ref/occ/intfcm/SMRewardsDelegate/didFetchOffers //apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers" target="_top"><span class="function">didFetchOffers</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">SMOffer</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">offers</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didFetchOffers(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/_ //apple_ref/occ/clm/SMRewardsDelegate/_ //apple_ref/occ/intfcm/SMRewardsDelegate/_ //apple_ref/occ/intfm/SMRewardsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchOffers:_:/offers;   name=didFetchOffers:_:::offers -->
+<a name="//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchOffers:_:/offers"></a>
+<code>offers</code>
+</dt>
+<dd><p>Offers available for redemption.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:;name=start --><p>This method is called in response to <a href="../../Classes/SMRewardsManager/index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffers" target="_top">fetchOffers</a> and <!-- a logicalPath="//apple_ref/occ/cl/fetchOffersWithLocale: //apple_ref/occ/tdef/fetchOffersWithLocale: //apple_ref/occ/tag/fetchOffersWithLocale: //apple_ref/occ/struct/fetchOffersWithLocale: //apple_ref/occ/intf/fetchOffersWithLocale: //apple_ref/occ/econst/fetchOffersWithLocale: //apple_ref/occ/data/fetchOffersWithLocale: //apple_ref/occ/clconst/fetchOffersWithLocale: //apple_ref/occ/instm/fetchOffersWithLocale: //apple_ref/occ/clm/fetchOffersWithLocale: //apple_ref/occ/intfcm/fetchOffersWithLocale: //apple_ref/occ/intfm/fetchOffersWithLocale: //apple_ref/occ/func/fetchOffersWithLocale: //apple_ref/occ/ftmplt/fetchOffersWithLocale: //apple_ref/occ/defn/fetchOffersWithLocale: //apple_ref/occ/macro/fetchOffersWithLocale: //apple_ref/doc/com/intfm/fetchOffersWithLocale: //apple_ref/doc/anysymbol/fetchOffersWithLocale:" -->fetchOffersWithLocale:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOffers:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:;   name=SMRewardsDelegate::didFetchOrders:_: --><a name="//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:"></a>
+<h3><a name="didFetchOrders:_:">didFetchOrders:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that the current user's sent orders were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/didFetchOrders //apple_ref/occ/clm/SMRewardsDelegate/didFetchOrders //apple_ref/occ/intfcm/SMRewardsDelegate/didFetchOrders //apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders" target="_top"><span class="function">didFetchOrders</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">SMOrder</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">orders</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didFetchOrders(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/_ //apple_ref/occ/clm/SMRewardsDelegate/_ //apple_ref/occ/intfcm/SMRewardsDelegate/_ //apple_ref/occ/intfm/SMRewardsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchOrders:_:/orders;   name=didFetchOrders:_:::orders -->
+<a name="//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchOrders:_:/orders"></a>
+<code>orders</code>
+</dt>
+<dd><p>Orders that have been made by the current user.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:;name=start --><p>This method is called in response to <a href="../../Classes/SMRewardsManager/index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOrders" target="_top">fetchOrders</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchOrders:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:;   name=SMRewardsDelegate::didFetchSkillQuestion:_: --><a name="//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:"></a>
+<h3><a name="didFetchSkillQuestion:_:">didFetchSkillQuestion:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that a skill testing question was fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/didFetchSkillQuestion //apple_ref/occ/clm/SMRewardsDelegate/didFetchSkillQuestion //apple_ref/occ/intfcm/SMRewardsDelegate/didFetchSkillQuestion //apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion" target="_top"><span class="function">didFetchSkillQuestion</span></a>:(<a machinegenerated="true" href="../../../SMSkillQuestion_h/Classes/SMSkillQuestion/index.html#//apple_ref/occ/cl/SMSkillQuestion" logicalPath="//apple_ref/occ/cl/SMSkillQuestion" target="_top"><span class="type">SMSkillQuestion</span></a> <span class="type">*</span>)<span class="param">question</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didFetchSkillQuestion(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/_ //apple_ref/occ/clm/SMRewardsDelegate/_ //apple_ref/occ/intfcm/SMRewardsDelegate/_ //apple_ref/occ/intfm/SMRewardsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchSkillQuestion:_:/question;   name=didFetchSkillQuestion:_:::question -->
+<a name="//apple_ref/doc/methodparam/SMRewardsDelegate/didFetchSkillQuestion:_:/question"></a>
+<code>question</code>
+</dt>
+<dd><p>The question to be answered by the user.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:;name=start --><p>This method is called in response to <a href="../../Classes/SMRewardsManager/index.html#//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion" target="_top">fetchSkillQuestion</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didFetchSkillQuestion:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:;   name=SMRewardsDelegate::didPlaceOrder:_: --><a name="//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:"></a>
+<h3><a name="didPlaceOrder:_:">didPlaceOrder:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that an order was placed for the current user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:" logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/didPlaceOrder //apple_ref/occ/clm/SMRewardsDelegate/didPlaceOrder //apple_ref/occ/intfcm/SMRewardsDelegate/didPlaceOrder //apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder" target="_top"><span class="function">didPlaceOrder</span></a>:(<a machinegenerated="true" href="../../../SMOrder_h/Classes/SMOrder/index.html#//apple_ref/occ/cl/SMOrder" logicalPath="//apple_ref/occ/cl/SMOrder" target="_top"><span class="type">SMOrder</span></a> <span class="type">*</span>)<span class="param">order</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didPlaceOrder(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsDelegate/_ //apple_ref/occ/clm/SMRewardsDelegate/_ //apple_ref/occ/intfcm/SMRewardsDelegate/_ //apple_ref/occ/intfm/SMRewardsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsDelegate/didPlaceOrder:_:/order;   name=didPlaceOrder:_:::order -->
+<a name="//apple_ref/doc/methodparam/SMRewardsDelegate/didPlaceOrder:_:/order"></a>
+<code>order</code>
+</dt>
+<dd><p>The order that was placed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/placeOrder: //apple_ref/occ/tdef/placeOrder: //apple_ref/occ/tag/placeOrder: //apple_ref/occ/struct/placeOrder: //apple_ref/occ/intf/placeOrder: //apple_ref/occ/econst/placeOrder: //apple_ref/occ/data/placeOrder: //apple_ref/occ/clconst/placeOrder: //apple_ref/occ/instm/placeOrder: //apple_ref/occ/clm/placeOrder: //apple_ref/occ/intfcm/placeOrder: //apple_ref/occ/intfm/placeOrder: //apple_ref/occ/func/placeOrder: //apple_ref/occ/ftmplt/placeOrder: //apple_ref/occ/defn/placeOrder: //apple_ref/occ/macro/placeOrder: //apple_ref/doc/com/intfm/placeOrder: //apple_ref/doc/anysymbol/placeOrder:" -->placeOrder:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMRewardsDelegate/didPlaceOrder:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

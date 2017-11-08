@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMSimpleEventBuilder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMSimpleEventBuilder;  name=SMSimpleEventBuilder-->
+<a name="//apple_ref/occ/cl/SMSimpleEventBuilder"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMSimpleEventBuilder">SMSimpleEventBuilder</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMSimpleEventBuilder.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMSimpleEventBuilder.h">SMSimpleEventBuilder.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMSimpleEventBuilder;name=start --><!-- begin abstract --></p>
+<p>Class used for building simple <a href="../../../SMEvent_h/Classes/SMEvent/index.html#//apple_ref/occ/cl/SMEvent" logicalPath="//apple_ref/occ/cl/SMEvent" target="_top">SMEvent</a> objects that represent a single event performed by the user to make progress towards completing an application-specific campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMSimpleEventBuilder;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMSimpleEventBuilder/build" target="_top">-build</a></tt></dt>
+<dd><p>Generates an event based on the builder's current configuration.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:" target="_top">+builderForEventWithName:eventName:</a></tt></dt>
+<dd><p>Returns an event builder that builds events with the specified event name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:" target="_top">-initWithEventName:eventName:</a></tt></dt>
+<dd><p>Returns an event builder that builds events with the specified event name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:" target="_top">-setAttribute:forKey:value:forKey:</a></tt></dt>
+<dd><p>Sets a customer-defined key-value pair to be sent along with the generated event when posting to the SessionM Platform.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMSimpleEventBuilder/build;   name=SMSimpleEventBuilder::build --><a name="//apple_ref/occ/instm/SMSimpleEventBuilder/build"></a>
+<h3><a name="build">build</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/build;name=start --><!-- begin abstract --></p>
+<p>Generates an event based on the builder's current configuration.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/build;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/build;name=start -->- (<a machinegenerated="true" href="../../../SMEvent_h/Classes/SMEvent/index.html#//apple_ref/occ/cl/SMEvent" logicalPath="//apple_ref/occ/cl/SMEvent" target="_top"><span class="type">SMEvent</span></a> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/occ/econst/build //apple_ref/occ/data/SMSimpleEventBuilder/build //apple_ref/occ/data/build //apple_ref/occ/clconst/SMSimpleEventBuilder/build " machineGenerated="true" --><span class="var">build</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/build;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>The generated <a href="../../../SMEvent_h/Classes/SMEvent/index.html#//apple_ref/occ/cl/SMEvent" logicalPath="//apple_ref/occ/cl/SMEvent" target="_top">SMEvent</a> object.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:;   name=SMSimpleEventBuilder::builderForEventWithName:eventName: --><a name="//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:"></a>
+<h3><a name="builderForEventWithName:eventName:">builderForEventWithName:eventName:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:;name=start --><!-- begin abstract --></p>
+<p>Returns an event builder that builds events with the specified event name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:;name=start -->+ (<!-- a logicalPath="//apple_ref/occ/cl/instancetype //apple_ref/occ/tdef/instancetype //apple_ref/occ/tag/instancetype //apple_ref/occ/struct/instancetype //apple_ref/occ/intf/instancetype //apple_ref/doc/anysymbol/instancetype" machineGenerated="true" --><span class="type">instancetype</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/builderForEventWithName //apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName" target="_top"><span class="function">builderForEventWithName</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">eventName</span> NS_SWIFT_NAME(builder(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMSimpleEventBuilder/initWithEventName:eventName:/eventName" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/eventName //apple_ref/occ/clm/SMSimpleEventBuilder/eventName //apple_ref/occ/intfcm/SMSimpleEventBuilder/eventName //apple_ref/occ/intfm/SMSimpleEventBuilder/eventName //apple_ref/occ/func/eventName //apple_ref/occ/ftmplt/SMSimpleEventBuilder/eventName //apple_ref/occ/defn/eventName //apple_ref/occ/macro/eventName //apple_ref/doc/anysymbol/eventName" target="_top"><span class="function">eventName</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMSimpleEventBuilder/builderForEventWithName:eventName:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMSimpleEventBuilder/builderForEventWithName:eventName:/eventName;   name=builderForEventWithName:eventName:::eventName -->
+<a name="//apple_ref/doc/methodparam/SMSimpleEventBuilder/builderForEventWithName:eventName:/eventName"></a>
+<code>eventName</code>
+</dt>
+<dd><p>The unique name used to trigger the event when posting to the SessionM Platform.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMSimpleEventBuilder</code> instance.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:;   name=SMSimpleEventBuilder::initWithEventName:eventName: --><a name="//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:"></a>
+<h3><a name="initWithEventName:eventName:">initWithEventName:eventName:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:;name=start --><!-- begin abstract --></p>
+<p>Returns an event builder that builds events with the specified event name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/instancetype //apple_ref/occ/tdef/instancetype //apple_ref/occ/tag/instancetype //apple_ref/occ/struct/instancetype //apple_ref/occ/intf/instancetype //apple_ref/doc/anysymbol/instancetype" machineGenerated="true" --><span class="type">instancetype</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName" target="_top"><span class="function">initWithEventName</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">eventName</span> NS_SWIFT_NAME(init(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMSimpleEventBuilder/initWithEventName:eventName:/eventName" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/eventName //apple_ref/occ/clm/SMSimpleEventBuilder/eventName //apple_ref/occ/intfcm/SMSimpleEventBuilder/eventName //apple_ref/occ/intfm/SMSimpleEventBuilder/eventName //apple_ref/occ/func/eventName //apple_ref/occ/ftmplt/SMSimpleEventBuilder/eventName //apple_ref/occ/defn/eventName //apple_ref/occ/macro/eventName //apple_ref/doc/anysymbol/eventName" target="_top"><span class="function">eventName</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/initWithEventName:eventName:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMSimpleEventBuilder/initWithEventName:eventName:/eventName;   name=initWithEventName:eventName:::eventName -->
+<a name="//apple_ref/doc/methodparam/SMSimpleEventBuilder/initWithEventName:eventName:/eventName"></a>
+<code>eventName</code>
+</dt>
+<dd><p>The unique name used to trigger the event when posting to the SessionM Platform.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMSimpleEventBuilder</code> instance.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;   name=SMSimpleEventBuilder::setAttribute:forKey:value:forKey: --><a name="//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:"></a>
+<h3><a name="setAttribute:forKey:value:forKey:">setAttribute:forKey:value:forKey:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=start --><!-- begin abstract --></p>
+<p>Sets a customer-defined key-value pair to be sent along with the generated event when posting to the SessionM Platform.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute" target="_top"><span class="function">setAttribute</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSObject //apple_ref/occ/tdef/NSObject //apple_ref/occ/tag/NSObject //apple_ref/occ/struct/NSObject //apple_ref/occ/intf/NSObject //apple_ref/doc/anysymbol/NSObject" machineGenerated="true" --><span class="type">NSObject</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">value</span> <!-- a logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/forKey //apple_ref/occ/clm/SMSimpleEventBuilder/forKey //apple_ref/occ/intfcm/SMSimpleEventBuilder/forKey //apple_ref/occ/intfm/SMSimpleEventBuilder/forKey //apple_ref/occ/func/forKey //apple_ref/occ/ftmplt/SMSimpleEventBuilder/forKey //apple_ref/occ/defn/forKey //apple_ref/occ/macro/forKey //apple_ref/doc/anysymbol/forKey" machineGenerated="true" --><span class="function">forKey</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">key</span> NS_SWIFT_NAME(setAttribute(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:/value" logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/value //apple_ref/occ/clm/SMSimpleEventBuilder/value //apple_ref/occ/intfcm/SMSimpleEventBuilder/value //apple_ref/occ/intfm/SMSimpleEventBuilder/value //apple_ref/occ/func/value //apple_ref/occ/ftmplt/SMSimpleEventBuilder/value //apple_ref/occ/defn/value //apple_ref/occ/macro/value //apple_ref/doc/anysymbol/value" target="_top"><span class="function">value</span></a>:<!-- a logicalPath="//apple_ref/occ/instm/SMSimpleEventBuilder/forKey //apple_ref/occ/clm/SMSimpleEventBuilder/forKey //apple_ref/occ/intfcm/SMSimpleEventBuilder/forKey //apple_ref/occ/intfm/SMSimpleEventBuilder/forKey //apple_ref/occ/func/forKey //apple_ref/occ/ftmplt/SMSimpleEventBuilder/forKey //apple_ref/occ/defn/forKey //apple_ref/occ/macro/forKey //apple_ref/doc/anysymbol/forKey" machineGenerated="true" --><span class="function">forKey</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:/value;   name=setAttribute:forKey:value:forKey:::value -->
+<a name="//apple_ref/doc/methodparam/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:/value"></a>
+<code>value</code>
+</dt>
+<dd><p>Value for specified key (a value of <code>nil</code> will remove <code>key</code> from the event data).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:/key;   name=setAttribute:forKey:value:forKey:::key -->
+<a name="//apple_ref/doc/methodparam/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:/key"></a>
+<code>key</code>
+</dt>
+<dd><p>Customer-defined key.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=start --><p>See <a href="../../../SMEventItem_h/Classes/SMEventItem/index.html#//apple_ref/occ/instp/SMEventItem/additionalData" logicalPath="//apple_ref/occ/instp/SMEventItem/additionalData" target="_top">[ SMEventItem additionalData ]</a> for more information.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMSimpleEventBuilder/setAttribute:forKey:value:forKey:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID" target="_top">campaignID</a></tt></dt>
+<dd><p>The internal SessionM Platform identifier of the campaign that the event data will be processed against when posting to the SessionM Platform.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMSimpleEventBuilder/permalink" target="_top">permalink</a></tt></dt>
+<dd><p>The customer-defined identifier of the campaign that the event data will be processed against when when posting to the SessionM Platform.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;   name=SMSimpleEventBuilder::campaignID --><a name="//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID"></a>
+<h3><a name="campaignID">campaignID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=start --><!-- begin abstract --></p>
+<p>The internal SessionM Platform identifier of the campaign that the event data will be processed against when posting to the SessionM Platform.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/campaignID //apple_ref/occ/data/SMSimpleEventBuilder/campaignID //apple_ref/occ/data/campaignID //apple_ref/occ/clconst/SMSimpleEventBuilder/campaignID " machineGenerated="true" --><span class="var">campaignID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=start --><p>The event data will be processed against all campaigns if neither <code>campaignID</code> or <code>permalink</code> is set before calling <a href="../../../SMEventsManager_h/Classes/SMEventsManager/index.html#//apple_ref/occ/instm/SMEventsManager/postEvent:completionHandler:_:completionHandler:" logicalPath="//apple_ref/occ/instm/SMEventsManager/postEvent:completionHandler:" target="_top">[ SMEventsManager postEvent:completionHandler: ]</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/campaignID;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;   name=SMSimpleEventBuilder::permalink --><a name="//apple_ref/occ/instp/SMSimpleEventBuilder/permalink"></a>
+<h3><a name="permalink">permalink</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=start --><!-- begin abstract --></p>
+<p>The customer-defined identifier of the campaign that the event data will be processed against when when posting to the SessionM Platform.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/permalink //apple_ref/occ/data/SMSimpleEventBuilder/permalink //apple_ref/occ/data/permalink //apple_ref/occ/clconst/SMSimpleEventBuilder/permalink " machineGenerated="true" --><span class="var">permalink</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=start --><p>The event will be processed against all campaigns if neither <code>campaignID</code> or <code>permalink</code> is set before calling <a href="../../../SMEventsManager_h/Classes/SMEventsManager/index.html#//apple_ref/occ/instm/SMEventsManager/postEvent:completionHandler:_:completionHandler:" logicalPath="//apple_ref/occ/instm/SMEventsManager/postEvent:completionHandler:" target="_top">[ SMEventsManager postEvent:completionHandler: ]</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMSimpleEventBuilder/permalink;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

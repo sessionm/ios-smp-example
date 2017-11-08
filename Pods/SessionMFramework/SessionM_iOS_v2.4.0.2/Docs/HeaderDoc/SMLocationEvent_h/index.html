@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMLocationEvent.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMLocationEvent.h;   name=SMLocationEvent.h -->
+<a name="//apple_ref/doc/header/SMLocationEvent.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMLocationEvent.h">SMLocationEvent.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Foundation.h" machineGenerated="true" -->&lt;Foundation/Foundation.h&gt;<!-- /a --><br><!-- a logicalPath="//apple_ref/doc/header/CoreLocation.h" machineGenerated="true" -->&lt;CoreLocation/CoreLocation.h&gt;<!-- /a -->
+</div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMLocationEvent.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMLocationEvent.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">Classes</h2>
+<dl>
+<dt><tt><a href="Classes/SMLocationEvent/index.html#//apple_ref/occ/cl/SMLocationEvent" target="_top">SMLocationEvent</a></tt></dt>
+<dd><p>Defines the data associated with a location-based event and its associated geofence.
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></tt></dt>
+<dd>
+<p>Specifies how the location event is triggered.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:tdef/SMLocationEventTriggerType" target="_top">SMLocationEventTriggerType</a></tt></dt>
+<dd>
+<p>Specifies how the location event is triggered.
+</p>
+</dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/NSInteger;   name=NSInteger --><a name="//apple_ref/c/tdef/NSInteger"></a>
+<h3><a name="NSInteger">NSInteger</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=start --><!-- begin abstract --></p>
+<p>Specifies how the location event is triggered.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=start --><span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/c/cl/deprecated //apple_ref/c/tdef/deprecated //apple_ref/c/tag/deprecated //apple_ref/c/struct/deprecated //apple_ref/c/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->("<!-- a logicalPath="//apple_ref/c/cl/mPLUS //apple_ref/c/tdef/mPLUS //apple_ref/c/tag/mPLUS //apple_ref/c/struct/mPLUS //apple_ref/c/intf/mPLUS //apple_ref/doc/anysymbol/mPLUS" machineGenerated="true" --><span class="type">mPLUS</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/Rewards //apple_ref/c/tdef/Rewards //apple_ref/c/tag/Rewards //apple_ref/c/struct/Rewards //apple_ref/c/intf/Rewards //apple_ref/doc/anysymbol/Rewards" machineGenerated="true" --><span class="type">Rewards</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/APIs //apple_ref/c/tdef/APIs //apple_ref/c/tag/APIs //apple_ref/c/struct/APIs //apple_ref/c/intf/APIs //apple_ref/doc/anysymbol/APIs" machineGenerated="true" --><span class="type">APIs</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/are //apple_ref/c/tdef/are //apple_ref/c/tag/are //apple_ref/c/struct/are //apple_ref/c/intf/are //apple_ref/doc/anysymbol/are" machineGenerated="true" --><span class="type">are</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/deprecated //apple_ref/c/tdef/deprecated //apple_ref/c/tag/deprecated //apple_ref/c/struct/deprecated //apple_ref/c/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->. <!-- a logicalPath="//apple_ref/c/cl/For //apple_ref/c/tdef/For //apple_ref/c/tag/For //apple_ref/c/struct/For //apple_ref/c/intf/For //apple_ref/doc/anysymbol/For" machineGenerated="true" --><span class="type">For</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/more //apple_ref/c/tdef/more //apple_ref/c/tag/more //apple_ref/c/struct/more //apple_ref/c/intf/more //apple_ref/doc/anysymbol/more" machineGenerated="true" --><span class="type">more</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/information //apple_ref/c/data/information //apple_ref/c/clconst/information " machineGenerated="true" --><span class="var">information</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/cl/please //apple_ref/c/tdef/please //apple_ref/c/tag/please //apple_ref/c/struct/please //apple_ref/c/intf/please //apple_ref/doc/anysymbol/please" machineGenerated="true" --><span class="type">please</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/refer //apple_ref/c/tdef/refer //apple_ref/c/tag/refer //apple_ref/c/struct/refer //apple_ref/c/intf/refer //apple_ref/doc/anysymbol/refer" machineGenerated="true" --><span class="type">refer</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/to //apple_ref/c/tdef/to //apple_ref/c/tag/to //apple_ref/c/struct/to //apple_ref/c/intf/to //apple_ref/doc/anysymbol/to" machineGenerated="true" --><span class="type">to</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/the //apple_ref/c/tdef/the //apple_ref/c/tag/the //apple_ref/c/struct/the //apple_ref/c/intf/the //apple_ref/doc/anysymbol/the" machineGenerated="true" --><span class="type">the</span><!-- /a --> <a machinegenerated="true" href="../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/c/cl/SessionM //apple_ref/c/tdef/SessionM //apple_ref/c/tag/SessionM //apple_ref/c/struct/SessionM //apple_ref/c/intf/SessionM //apple_ref/doc/anysymbol/SessionM" target="_top"><span class="type">SessionM</span></a> <!-- a logicalPath="//apple_ref/c/cl/Platform //apple_ref/c/tdef/Platform //apple_ref/c/tag/Platform //apple_ref/c/struct/Platform //apple_ref/c/intf/Platform //apple_ref/doc/anysymbol/Platform" machineGenerated="true" --><span class="type">Platform</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/documentation //apple_ref/c/tdef/documentation //apple_ref/c/tag/documentation //apple_ref/c/struct/documentation //apple_ref/c/intf/documentation //apple_ref/doc/anysymbol/documentation" machineGenerated="true" --><span class="type">documentation</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/site //apple_ref/c/tdef/site //apple_ref/c/tag/site //apple_ref/c/struct/site //apple_ref/c/intf/site //apple_ref/doc/anysymbol/site" machineGenerated="true" --><span class="type">site</span><!-- /a -->: @<!-- a logicalPath="//apple_ref/c/cl/link //apple_ref/c/tdef/link //apple_ref/c/tag/link //apple_ref/c/struct/link //apple_ref/c/intf/link //apple_ref/doc/anysymbol/link" machineGenerated="true" --><span class="type">link</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/https //apple_ref/c/tdef/https //apple_ref/c/tag/https //apple_ref/c/struct/https //apple_ref/c/intf/https //apple_ref/doc/anysymbol/https" machineGenerated="true" --><span class="type">https</span><!-- /a -->:<span class="comment">//<!-- a logicalPath="//apple_ref/c/cl/mmc //apple_ref/c/tdef/mmc //apple_ref/c/tag/mmc //apple_ref/c/struct/mmc //apple_ref/c/intf/mmc //apple_ref/doc/anysymbol/mmc" machineGenerated="true" --><span class="type">mmc</span><!-- /a -->.<!-- a logicalPath="//apple_ref/c/cl/sessionm //apple_ref/c/tdef/sessionm //apple_ref/c/tag/sessionm //apple_ref/c/struct/sessionm //apple_ref/c/intf/sessionm //apple_ref/doc/anysymbol/sessionm" machineGenerated="true" --><span class="type">sessionm</span><!-- /a -->.<!-- a logicalPath="//apple_ref/c/cl/com //apple_ref/c/tdef/com //apple_ref/c/tag/com //apple_ref/c/struct/com //apple_ref/c/intf/com //apple_ref/doc/anysymbol/com" machineGenerated="true" --><span class="type">com</span><!-- /a -->/<!-- a logicalPath="//apple_ref/c/cl/docs //apple_ref/c/tdef/docs //apple_ref/c/tag/docs //apple_ref/c/struct/docs //apple_ref/c/intf/docs //apple_ref/doc/anysymbol/docs" machineGenerated="true" --><span class="type">docs</span><!-- /a -->/<!-- a logicalPath="//apple_ref/c/cl/mmc //apple_ref/c/tdef/mmc //apple_ref/c/tag/mmc //apple_ref/c/struct/mmc //apple_ref/c/intf/mmc //apple_ref/doc/anysymbol/mmc" machineGenerated="true" --><span class="type">mmc</span><!-- /a -->-<!-- a logicalPath="//apple_ref/c/cl/sdk //apple_ref/c/tdef/sdk //apple_ref/c/tag/sdk //apple_ref/c/struct/sdk //apple_ref/c/intf/sdk //apple_ref/doc/anysymbol/sdk" machineGenerated="true" --><span class="type">sdk</span><!-- /a -->/"))) <span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a -->(<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/econst/SMLocationEventTriggerType //apple_ref/c/data/SMLocationEventTriggerType //apple_ref/c/clconst/SMLocationEventTriggerType " machineGenerated="true" --><span class="var">SMLocationEventTriggerType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeExit" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeExit //apple_ref/c/tdef/SMLocationEventTriggerTypeExit //apple_ref/c/tag/SMLocationEventTriggerTypeExit //apple_ref/c/struct/SMLocationEventTriggerTypeExit //apple_ref/c/intf/SMLocationEventTriggerTypeExit //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeExit" target="_top"><span class="type">SMLocationEventTriggerTypeExit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">exit</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeEnter" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeEnter //apple_ref/c/tdef/SMLocationEventTriggerTypeEnter //apple_ref/c/tag/SMLocationEventTriggerTypeEnter //apple_ref/c/struct/SMLocationEventTriggerTypeEnter //apple_ref/c/intf/SMLocationEventTriggerTypeEnter //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeEnter" target="_top"><span class="type">SMLocationEventTriggerTypeEnter</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">enter</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeDwell" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeDwell //apple_ref/c/tdef/SMLocationEventTriggerTypeDwell //apple_ref/c/tag/SMLocationEventTriggerTypeDwell //apple_ref/c/struct/SMLocationEventTriggerTypeDwell //apple_ref/c/intf/SMLocationEventTriggerTypeDwell //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeDwell" target="_top"><span class="type">SMLocationEventTriggerTypeDwell</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">dwell</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=end --></span></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/SMLocationEventTriggerTypeExit"><code>SMLocationEventTriggerTypeExit</code></a></dt>
+<dd><p>Location event is triggered by exiting the associated geofence.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMLocationEventTriggerTypeEnter"><code>SMLocationEventTriggerTypeEnter</code></a></dt>
+<dd><p>Location event is triggered by entering the associated geofence.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMLocationEventTriggerTypeDwell"><code>SMLocationEventTriggerTypeDwell</code></a></dt>
+<dd><p>Location event is triggered by remaining in the associated geofence for the amount of time specified by <a href="Classes/SMLocationEvent/index.html#//apple_ref/occ/instp/SMLocationEvent/delay" logicalPath="//apple_ref/occ/instp/SMLocationEvent/delay" target="_top">delay</a>.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:tdef/SMLocationEventTriggerType" logicalPath="//apple_ref/doc/title:tdef/SMLocationEventTriggerType" target="_top">SMLocationEventTriggerType</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:tdef;  uid=//apple_ref/doc/title:tdef/SMLocationEventTriggerType;   name=SMLocationEventTriggerType --><a name="//apple_ref/doc/title:tdef/SMLocationEventTriggerType"></a>
+<h3><a name="SMLocationEventTriggerType">SMLocationEventTriggerType</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMLocationEventTriggerType;name=start --><!-- begin abstract --></p>
+<p>Specifies how the location event is triggered.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMLocationEventTriggerType;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMLocationEventTriggerType;name=start --><span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/c/cl/deprecated //apple_ref/c/tdef/deprecated //apple_ref/c/tag/deprecated //apple_ref/c/struct/deprecated //apple_ref/c/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->("<!-- a logicalPath="//apple_ref/c/cl/mPLUS //apple_ref/c/tdef/mPLUS //apple_ref/c/tag/mPLUS //apple_ref/c/struct/mPLUS //apple_ref/c/intf/mPLUS //apple_ref/doc/anysymbol/mPLUS" machineGenerated="true" --><span class="type">mPLUS</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/Rewards //apple_ref/c/tdef/Rewards //apple_ref/c/tag/Rewards //apple_ref/c/struct/Rewards //apple_ref/c/intf/Rewards //apple_ref/doc/anysymbol/Rewards" machineGenerated="true" --><span class="type">Rewards</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/APIs //apple_ref/c/tdef/APIs //apple_ref/c/tag/APIs //apple_ref/c/struct/APIs //apple_ref/c/intf/APIs //apple_ref/doc/anysymbol/APIs" machineGenerated="true" --><span class="type">APIs</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/are //apple_ref/c/tdef/are //apple_ref/c/tag/are //apple_ref/c/struct/are //apple_ref/c/intf/are //apple_ref/doc/anysymbol/are" machineGenerated="true" --><span class="type">are</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/deprecated //apple_ref/c/tdef/deprecated //apple_ref/c/tag/deprecated //apple_ref/c/struct/deprecated //apple_ref/c/intf/deprecated //apple_ref/doc/anysymbol/deprecated" machineGenerated="true" --><span class="type">deprecated</span><!-- /a -->. <!-- a logicalPath="//apple_ref/c/cl/For //apple_ref/c/tdef/For //apple_ref/c/tag/For //apple_ref/c/struct/For //apple_ref/c/intf/For //apple_ref/doc/anysymbol/For" machineGenerated="true" --><span class="type">For</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/more //apple_ref/c/tdef/more //apple_ref/c/tag/more //apple_ref/c/struct/more //apple_ref/c/intf/more //apple_ref/doc/anysymbol/more" machineGenerated="true" --><span class="type">more</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/information //apple_ref/c/data/information //apple_ref/c/clconst/information " machineGenerated="true" --><span class="var">information</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/cl/please //apple_ref/c/tdef/please //apple_ref/c/tag/please //apple_ref/c/struct/please //apple_ref/c/intf/please //apple_ref/doc/anysymbol/please" machineGenerated="true" --><span class="type">please</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/refer //apple_ref/c/tdef/refer //apple_ref/c/tag/refer //apple_ref/c/struct/refer //apple_ref/c/intf/refer //apple_ref/doc/anysymbol/refer" machineGenerated="true" --><span class="type">refer</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/to //apple_ref/c/tdef/to //apple_ref/c/tag/to //apple_ref/c/struct/to //apple_ref/c/intf/to //apple_ref/doc/anysymbol/to" machineGenerated="true" --><span class="type">to</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/the //apple_ref/c/tdef/the //apple_ref/c/tag/the //apple_ref/c/struct/the //apple_ref/c/intf/the //apple_ref/doc/anysymbol/the" machineGenerated="true" --><span class="type">the</span><!-- /a --> <a machinegenerated="true" href="../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/cl/SessionM" logicalPath="//apple_ref/c/cl/SessionM //apple_ref/c/tdef/SessionM //apple_ref/c/tag/SessionM //apple_ref/c/struct/SessionM //apple_ref/c/intf/SessionM //apple_ref/doc/anysymbol/SessionM" target="_top"><span class="type">SessionM</span></a> <!-- a logicalPath="//apple_ref/c/cl/Platform //apple_ref/c/tdef/Platform //apple_ref/c/tag/Platform //apple_ref/c/struct/Platform //apple_ref/c/intf/Platform //apple_ref/doc/anysymbol/Platform" machineGenerated="true" --><span class="type">Platform</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/documentation //apple_ref/c/tdef/documentation //apple_ref/c/tag/documentation //apple_ref/c/struct/documentation //apple_ref/c/intf/documentation //apple_ref/doc/anysymbol/documentation" machineGenerated="true" --><span class="type">documentation</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/site //apple_ref/c/tdef/site //apple_ref/c/tag/site //apple_ref/c/struct/site //apple_ref/c/intf/site //apple_ref/doc/anysymbol/site" machineGenerated="true" --><span class="type">site</span><!-- /a -->: @<!-- a logicalPath="//apple_ref/c/cl/link //apple_ref/c/tdef/link //apple_ref/c/tag/link //apple_ref/c/struct/link //apple_ref/c/intf/link //apple_ref/doc/anysymbol/link" machineGenerated="true" --><span class="type">link</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/https //apple_ref/c/tdef/https //apple_ref/c/tag/https //apple_ref/c/struct/https //apple_ref/c/intf/https //apple_ref/doc/anysymbol/https" machineGenerated="true" --><span class="type">https</span><!-- /a -->:<span class="comment">//<!-- a logicalPath="//apple_ref/c/cl/mmc //apple_ref/c/tdef/mmc //apple_ref/c/tag/mmc //apple_ref/c/struct/mmc //apple_ref/c/intf/mmc //apple_ref/doc/anysymbol/mmc" machineGenerated="true" --><span class="type">mmc</span><!-- /a -->.<!-- a logicalPath="//apple_ref/c/cl/sessionm //apple_ref/c/tdef/sessionm //apple_ref/c/tag/sessionm //apple_ref/c/struct/sessionm //apple_ref/c/intf/sessionm //apple_ref/doc/anysymbol/sessionm" machineGenerated="true" --><span class="type">sessionm</span><!-- /a -->.<!-- a logicalPath="//apple_ref/c/cl/com //apple_ref/c/tdef/com //apple_ref/c/tag/com //apple_ref/c/struct/com //apple_ref/c/intf/com //apple_ref/doc/anysymbol/com" machineGenerated="true" --><span class="type">com</span><!-- /a -->/<!-- a logicalPath="//apple_ref/c/cl/docs //apple_ref/c/tdef/docs //apple_ref/c/tag/docs //apple_ref/c/struct/docs //apple_ref/c/intf/docs //apple_ref/doc/anysymbol/docs" machineGenerated="true" --><span class="type">docs</span><!-- /a -->/<!-- a logicalPath="//apple_ref/c/cl/mmc //apple_ref/c/tdef/mmc //apple_ref/c/tag/mmc //apple_ref/c/struct/mmc //apple_ref/c/intf/mmc //apple_ref/doc/anysymbol/mmc" machineGenerated="true" --><span class="type">mmc</span><!-- /a -->-<!-- a logicalPath="//apple_ref/c/cl/sdk //apple_ref/c/tdef/sdk //apple_ref/c/tag/sdk //apple_ref/c/struct/sdk //apple_ref/c/intf/sdk //apple_ref/doc/anysymbol/sdk" machineGenerated="true" --><span class="type">sdk</span><!-- /a -->/"))) <span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a -->(<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/econst/SMLocationEventTriggerType //apple_ref/c/data/SMLocationEventTriggerType //apple_ref/c/clconst/SMLocationEventTriggerType " machineGenerated="true" --><span class="var">SMLocationEventTriggerType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeExit" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeExit //apple_ref/c/tdef/SMLocationEventTriggerTypeExit //apple_ref/c/tag/SMLocationEventTriggerTypeExit //apple_ref/c/struct/SMLocationEventTriggerTypeExit //apple_ref/c/intf/SMLocationEventTriggerTypeExit //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeExit" target="_top"><span class="type">SMLocationEventTriggerTypeExit</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">exit</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeEnter" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeEnter //apple_ref/c/tdef/SMLocationEventTriggerTypeEnter //apple_ref/c/tag/SMLocationEventTriggerTypeEnter //apple_ref/c/struct/SMLocationEventTriggerTypeEnter //apple_ref/c/intf/SMLocationEventTriggerTypeEnter //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeEnter" target="_top"><span class="type">SMLocationEventTriggerTypeEnter</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">enter</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMLocationEventTriggerTypeDwell" logicalPath="//apple_ref/c/cl/SMLocationEventTriggerTypeDwell //apple_ref/c/tdef/SMLocationEventTriggerTypeDwell //apple_ref/c/tag/SMLocationEventTriggerTypeDwell //apple_ref/c/struct/SMLocationEventTriggerTypeDwell //apple_ref/c/intf/SMLocationEventTriggerTypeDwell //apple_ref/doc/anysymbol/SMLocationEventTriggerTypeDwell" target="_top"><span class="type">SMLocationEventTriggerTypeDwell</span></a> <a machinegenerated="true" href="../SMWebView_h/index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">dwell</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMLocationEventTriggerType;name=end --></span></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/doc/title:econst/SMLocationEventTriggerTypeExit"><code>SMLocationEventTriggerTypeExit</code></a></dt>
+<dd><p>Location event is triggered by exiting the associated geofence.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMLocationEventTriggerTypeEnter"><code>SMLocationEventTriggerTypeEnter</code></a></dt>
+<dd><p>Location event is triggered by entering the associated geofence.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMLocationEventTriggerTypeDwell"><code>SMLocationEventTriggerTypeDwell</code></a></dt>
+<dd><p>Location event is triggered by remaining in the associated geofence for the amount of time specified by <a href="Classes/SMLocationEvent/index.html#//apple_ref/occ/instp/SMLocationEvent/delay" logicalPath="//apple_ref/occ/instp/SMLocationEvent/delay" target="_top">delay</a>.</p></dd>
+</dl>
+</div>
+<p><b>Deprecated</b></p>
+
+<p>mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></p></dt>
+<dd></dd>
+</dl></div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

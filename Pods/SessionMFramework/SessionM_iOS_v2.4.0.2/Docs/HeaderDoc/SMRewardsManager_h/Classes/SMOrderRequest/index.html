@@ -1,0 +1,458 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMOrderRequest</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMOrderRequest;  name=SMOrderRequest-->
+<a name="//apple_ref/occ/cl/SMOrderRequest"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMOrderRequest">SMOrderRequest</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMRewardsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMRewardsManager.h">SMRewardsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOrderRequest;name=start --><!-- begin abstract --></p>
+<p>Defines the data associated with an offer order request.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOrderRequest;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOrderRequest/asDictionary" target="_top">-asDictionary</a></tt></dt>
+<dd><p>Returns offer order request data in a dictionary format.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:" target="_top">-initWithOfferID:quantity:offerID:quantity:</a></tt></dt>
+<dd><p>Creates a new instance of <code>SMOrderRequest</code> with the specified parameters.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOrderRequest/asDictionary;   name=SMOrderRequest::asDictionary --><a name="//apple_ref/occ/instm/SMOrderRequest/asDictionary"></a>
+<h3><a name="asDictionary">asDictionary</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOrderRequest/asDictionary;name=start --><!-- begin abstract --></p>
+<p>Returns offer order request data in a dictionary format.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOrderRequest/asDictionary;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOrderRequest/asDictionary;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/occ/econst/asDictionary //apple_ref/occ/data/SMOrderRequest/asDictionary //apple_ref/occ/data/asDictionary //apple_ref/occ/clconst/SMOrderRequest/asDictionary " machineGenerated="true" --><span class="var">asDictionary</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOrderRequest/asDictionary;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>NSDictionary</code> respresentation of offer order request data.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:;   name=SMOrderRequest::initWithOfferID:quantity:offerID:quantity: --><a name="//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:"></a>
+<h3><a name="initWithOfferID:quantity:offerID:quantity:">initWithOfferID:quantity:offerID:quantity:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:;name=start --><!-- begin abstract --></p>
+<p>Creates a new instance of <code>SMOrderRequest</code> with the specified parameters.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/instancetype //apple_ref/occ/tdef/instancetype //apple_ref/occ/tag/instancetype //apple_ref/occ/struct/instancetype //apple_ref/occ/intf/instancetype //apple_ref/doc/anysymbol/instancetype" machineGenerated="true" --><span class="type">instancetype</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:" logicalPath="//apple_ref/occ/instm/SMOrderRequest/initWithOfferID" target="_top"><span class="function">initWithOfferID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">offerID</span> <a machinegenerated="true" href="index.html#//apple_ref/occ/instp/SMOrderRequest/quantity" logicalPath="//apple_ref/occ/instm/SMOrderRequest/quantity //apple_ref/occ/clm/SMOrderRequest/quantity //apple_ref/occ/intfcm/SMOrderRequest/quantity //apple_ref/occ/intfm/SMOrderRequest/quantity //apple_ref/occ/func/quantity //apple_ref/occ/ftmplt/SMOrderRequest/quantity //apple_ref/occ/defn/quantity //apple_ref/occ/macro/quantity //apple_ref/doc/anysymbol/quantity" target="_top"><span class="function">quantity</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSNumber //apple_ref/occ/tdef/NSNumber //apple_ref/occ/tag/NSNumber //apple_ref/occ/struct/NSNumber //apple_ref/occ/intf/NSNumber //apple_ref/doc/anysymbol/NSNumber" machineGenerated="true" --><span class="type">NSNumber</span><!-- /a --> <span class="type">*</span>)<span class="param">quantity</span> NS_SWIFT_NAME(init(
+                <a machinegenerated="true" href="index.html#//apple_ref/occ/instp/SMOrderRequest/offerID" logicalPath="//apple_ref/occ/instm/SMOrderRequest/offerID //apple_ref/occ/clm/SMOrderRequest/offerID //apple_ref/occ/intfcm/SMOrderRequest/offerID //apple_ref/occ/intfm/SMOrderRequest/offerID //apple_ref/occ/func/offerID //apple_ref/occ/ftmplt/SMOrderRequest/offerID //apple_ref/occ/defn/offerID //apple_ref/occ/macro/offerID //apple_ref/doc/anysymbol/offerID" target="_top"><span class="function">offerID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/occ/instp/SMOrderRequest/quantity" logicalPath="//apple_ref/occ/instm/SMOrderRequest/quantity //apple_ref/occ/clm/SMOrderRequest/quantity //apple_ref/occ/intfcm/SMOrderRequest/quantity //apple_ref/occ/intfm/SMOrderRequest/quantity //apple_ref/occ/func/quantity //apple_ref/occ/ftmplt/SMOrderRequest/quantity //apple_ref/occ/defn/quantity //apple_ref/occ/macro/quantity //apple_ref/doc/anysymbol/quantity" target="_top"><span class="function">quantity</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:/offerID;   name=initWithOfferID:quantity:offerID:quantity:::offerID -->
+<a name="//apple_ref/doc/methodparam/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:/offerID"></a>
+<code>offerID</code>
+</dt>
+<dd><p>ID of offer being redeemed.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:/quantity;   name=initWithOfferID:quantity:offerID:quantity:::quantity -->
+<a name="//apple_ref/doc/methodparam/SMOrderRequest/initWithOfferID:quantity:offerID:quantity:/quantity"></a>
+<code>quantity</code>
+</dt>
+<dd><p>Amount of items to redeem.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMOrderRequest</code> instance.
+
+<!-- end return value --></p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/challengeID" target="_top">challengeID</a></tt></dt>
+<dd><p>ID of server-side response for the answer to the skill testing question that gates the order.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/email" target="_top">email</a></tt></dt>
+<dd><p>User's email.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/ip" target="_top">ip</a></tt></dt>
+<dd><p>User's IP address.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/offerID" target="_top">offerID</a></tt></dt>
+<dd><p>ID of offer being redeemed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/quantity" target="_top">quantity</a></tt></dt>
+<dd><p>Amount of items to redeem.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOrderRequest/shippingAddress" target="_top">shippingAddress</a></tt></dt>
+<dd><p>Where physical items will be shipped after the order is processed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/challengeID;   name=SMOrderRequest::challengeID --><a name="//apple_ref/occ/instp/SMOrderRequest/challengeID"></a>
+<h3><a name="challengeID">challengeID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/challengeID;name=start --><!-- begin abstract --></p>
+<p>ID of server-side response for the answer to the skill testing question that gates the order.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/challengeID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/challengeID;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/challengeID //apple_ref/occ/data/SMOrderRequest/challengeID //apple_ref/occ/data/challengeID //apple_ref/occ/clconst/SMOrderRequest/challengeID " machineGenerated="true" --><span class="var">challengeID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/challengeID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/email;   name=SMOrderRequest::email --><a name="//apple_ref/occ/instp/SMOrderRequest/email"></a>
+<h3><a name="email">email</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/email;name=start --><!-- begin abstract --></p>
+<p>User's email.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/email;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/email;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/email //apple_ref/occ/data/SMOrderRequest/email //apple_ref/occ/data/email //apple_ref/occ/clconst/SMOrderRequest/email " machineGenerated="true" --><span class="var">email</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/email;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/ip;   name=SMOrderRequest::ip --><a name="//apple_ref/occ/instp/SMOrderRequest/ip"></a>
+<h3><a name="ip">ip</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/ip;name=start --><!-- begin abstract --></p>
+<p>User's IP address.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/ip;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/ip;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/ip //apple_ref/occ/data/SMOrderRequest/ip //apple_ref/occ/data/ip //apple_ref/occ/clconst/SMOrderRequest/ip " machineGenerated="true" --><span class="var">ip</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/ip;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/offerID;   name=SMOrderRequest::offerID --><a name="//apple_ref/occ/instp/SMOrderRequest/offerID"></a>
+<h3><a name="offerID">offerID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/offerID;name=start --><!-- begin abstract --></p>
+<p>ID of offer being redeemed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/offerID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/offerID;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/offerID //apple_ref/occ/data/SMOrderRequest/offerID //apple_ref/occ/data/offerID //apple_ref/occ/clconst/SMOrderRequest/offerID " machineGenerated="true" --><span class="var">offerID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/offerID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/quantity;   name=SMOrderRequest::quantity --><a name="//apple_ref/occ/instp/SMOrderRequest/quantity"></a>
+<h3><a name="quantity">quantity</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/quantity;name=start --><!-- begin abstract --></p>
+<p>Amount of items to redeem.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/quantity;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/quantity;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSNumber //apple_ref/occ/tdef/NSNumber //apple_ref/occ/tag/NSNumber //apple_ref/occ/struct/NSNumber //apple_ref/occ/intf/NSNumber //apple_ref/doc/anysymbol/NSNumber" machineGenerated="true" --><span class="type">NSNumber</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/quantity //apple_ref/occ/data/SMOrderRequest/quantity //apple_ref/occ/data/quantity //apple_ref/occ/clconst/SMOrderRequest/quantity " machineGenerated="true" --><span class="var">quantity</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/quantity;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOrderRequest/shippingAddress;   name=SMOrderRequest::shippingAddress --><a name="//apple_ref/occ/instp/SMOrderRequest/shippingAddress"></a>
+<h3><a name="shippingAddress">shippingAddress</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/shippingAddress;name=start --><!-- begin abstract --></p>
+<p>Where physical items will be shipped after the order is processed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOrderRequest/shippingAddress;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/shippingAddress;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readwrite</span>) <a machinegenerated="true" href="../../../SMAddress_h/Classes/SMAddress/index.html#//apple_ref/occ/cl/SMAddress" logicalPath="//apple_ref/occ/cl/SMAddress" target="_top"><span class="type">SMAddress</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/shippingAddress //apple_ref/occ/data/SMOrderRequest/shippingAddress //apple_ref/occ/data/shippingAddress //apple_ref/occ/clconst/SMOrderRequest/shippingAddress " machineGenerated="true" --><span class="var">shippingAddress</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOrderRequest/shippingAddress;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/08/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>
