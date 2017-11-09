@@ -42,8 +42,10 @@ class RewardStoreTableViewController: UITableViewController {
     }
 
     func updateToolbar() {
-        navigationController?.navigationBar.topItem!.title = "Rewards Store"
-        Common.showUserInToolbar(nav: navigationController!)
+        if let controller = navigationController {
+            controller.navigationBar.topItem!.title = "Rewards Store"
+            Common.showUserInToolbar(nav: controller)
+        }
     }
 
     var _offers : [SMStoreOfferItem] = [];

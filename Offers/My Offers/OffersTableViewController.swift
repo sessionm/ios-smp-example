@@ -42,8 +42,10 @@ class OffersTableViewController: UITableViewController {
     }
 
     func updateToolbar() {
-        navigationController?.navigationBar.topItem!.title = "My Rewards"
-        Common.showUserInToolbar(nav: navigationController!)
+        if let controller = navigationController {
+            controller.navigationBar.topItem!.title = "My Rewards"
+            Common.showUserInToolbar(nav: controller)
+        }
     }
 
     var _offers : [SMUserOfferItem] = [];
