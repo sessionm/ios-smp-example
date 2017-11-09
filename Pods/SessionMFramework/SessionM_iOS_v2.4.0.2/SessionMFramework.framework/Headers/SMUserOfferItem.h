@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  @property expirationDate
  @abstract The date after which the offer item can no longer be redeemed by the user.
  */
-@property(nonatomic, strong, readonly) NSDate *expirationDate;
+@property(nullable, nonatomic, strong, readonly) NSDate *expirationDate;
 /*!
  @property redeemDate
  @abstract Indicates when the offer item was redeemed by the user.

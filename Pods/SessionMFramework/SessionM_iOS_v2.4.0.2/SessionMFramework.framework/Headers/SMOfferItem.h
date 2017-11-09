@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  @property endDate
  @abstract The date after which the offer item will no longer be available for purchase.
  */
-@property(nonatomic, strong, readonly) NSDate *endDate;
+@property(nullable, nonatomic, strong, readonly) NSDate *endDate;
 /*!
  @property media
  @abstract Media content items applicable to the offer item.

@@ -370,29 +370,23 @@ It is highly recommended to capture and provide debug output when reporting a pr
 <hr class="afterClassEmbeddedTOC">
 <br><a name="HeaderDoc_groups"><h2 class="h2tight">Groups</h2></a>
 
-<h3>SessionM Notifications</h3>
+<h3>User action meta data keys</h3>
 <div class="group_desc_indent">
 </div>
 <h4>Group members:</h4>
 <div class="group_indent">
 <dl>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_69" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_69" target="_top">NS_SWIFT_NAME(kSessionState)</a></tt></dt>
-<dd><p>Key for accessing the state in the <!-- a logicalPath="//apple_ref/c/cl/SMSessionMDidTransitionToStateNotification //apple_ref/c/tdef/SMSessionMDidTransitionToStateNotification //apple_ref/c/tag/SMSessionMDidTransitionToStateNotification //apple_ref/c/struct/SMSessionMDidTransitionToStateNotification //apple_ref/c/intf/SMSessionMDidTransitionToStateNotification //apple_ref/c/econst/SMSessionMDidTransitionToStateNotification //apple_ref/c/data/SMSessionMDidTransitionToStateNotification //apple_ref/c/clconst/SMSessionMDidTransitionToStateNotification //apple_ref/c/instm/SMSessionMDidTransitionToStateNotification //apple_ref/c/clm/SMSessionMDidTransitionToStateNotification //apple_ref/c/intfcm/SMSessionMDidTransitionToStateNotification //apple_ref/c/intfm/SMSessionMDidTransitionToStateNotification //apple_ref/c/func/SMSessionMDidTransitionToStateNotification //apple_ref/c/ftmplt/SMSessionMDidTransitionToStateNotification //apple_ref/c/defn/SMSessionMDidTransitionToStateNotification //apple_ref/c/macro/SMSessionMDidTransitionToStateNotification //apple_ref/doc/com/intfm/SMSessionMDidTransitionToStateNotification //apple_ref/doc/anysymbol/SMSessionMDidTransitionToStateNotification" -->SMSessionMDidTransitionToStateNotification<!-- /a --> <code>userInfo</code> dictionary. State is sent as an <code>NSNumber</code>.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_80" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_80" target="_top">NS_SWIFT_NAME(kUserActionAchievementName)</a></tt></dt>
+<dd><p>Achievement name key.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_77" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_77" target="_top">NS_SWIFT_NAME(kUserRegistrationResult)</a></tt></dt>
-<dd><p>Key for accessing the user registration result in the <!-- a logicalPath="//apple_ref/c/cl/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/tdef/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/tag/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/struct/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intf/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/econst/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/data/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/clconst/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/instm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/clm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intfcm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intfm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/func/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/ftmplt/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/defn/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/macro/SMSessionDidUpdateUserRegistrationResult //apple_ref/doc/com/intfm/SMSessionDidUpdateUserRegistrationResult //apple_ref/doc/anysymbol/SMSessionDidUpdateUserRegistrationResult" -->SMSessionDidUpdateUserRegistrationResult<!-- /a --> <code>userInfo</code> dictionary. Result is sent as an <code>NSNumber</code>.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_84" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_84" target="_top">NS_SWIFT_NAME(kUserActionPageName)</a></tt></dt>
+<dd><p>User portal page name key.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_73" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_73" target="_top">NS_SWIFT_NAME(sdkRequestFailureNotification)</a></tt></dt>
-<dd><p>This notification is sent when there is an SDK error.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_85" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_85" target="_top">NS_SWIFT_NAME(kUserActionRewardName)</a></tt></dt>
+<dd><p>Reward name key.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME(sessionStateTransitionNotification)</a></tt></dt>
-<dd><p>This notification is sent when session changes its session state.
-</p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_72" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_72" target="_top">NS_SWIFT_NAME(updatedUserInfoNotification)</a></tt></dt>
-<dd><p>This notification is sent when the user's unclaimed achievement count changes.
-</p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_76" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_76" target="_top">NS_SWIFT_NAME(updatedUserRegistrationResultNotification)</a></tt></dt>
-<dd><p>This notification is sent when the user registration result is changed.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_81" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_81" target="_top">NS_SWIFT_NAME(kUserActionSponsorContentName)</a></tt></dt>
+<dd><p>Sponsor content name key.
 </p></dd>
 </dl>
 </div>
@@ -436,23 +430,29 @@ It is highly recommended to capture and provide debug output when reporting a pr
 </dl>
 </div>
 <p>&nbsp;</p>
-<h3>User action meta data keys</h3>
+<h3>SessionM Notifications</h3>
 <div class="group_desc_indent">
 </div>
 <h4>Group members:</h4>
 <div class="group_indent">
 <dl>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_80" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_80" target="_top">NS_SWIFT_NAME(kUserActionAchievementName)</a></tt></dt>
-<dd><p>Achievement name key.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_69" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_69" target="_top">NS_SWIFT_NAME(kSessionState)</a></tt></dt>
+<dd><p>Key for accessing the state in the <!-- a logicalPath="//apple_ref/c/cl/SMSessionMDidTransitionToStateNotification //apple_ref/c/tdef/SMSessionMDidTransitionToStateNotification //apple_ref/c/tag/SMSessionMDidTransitionToStateNotification //apple_ref/c/struct/SMSessionMDidTransitionToStateNotification //apple_ref/c/intf/SMSessionMDidTransitionToStateNotification //apple_ref/c/econst/SMSessionMDidTransitionToStateNotification //apple_ref/c/data/SMSessionMDidTransitionToStateNotification //apple_ref/c/clconst/SMSessionMDidTransitionToStateNotification //apple_ref/c/instm/SMSessionMDidTransitionToStateNotification //apple_ref/c/clm/SMSessionMDidTransitionToStateNotification //apple_ref/c/intfcm/SMSessionMDidTransitionToStateNotification //apple_ref/c/intfm/SMSessionMDidTransitionToStateNotification //apple_ref/c/func/SMSessionMDidTransitionToStateNotification //apple_ref/c/ftmplt/SMSessionMDidTransitionToStateNotification //apple_ref/c/defn/SMSessionMDidTransitionToStateNotification //apple_ref/c/macro/SMSessionMDidTransitionToStateNotification //apple_ref/doc/com/intfm/SMSessionMDidTransitionToStateNotification //apple_ref/doc/anysymbol/SMSessionMDidTransitionToStateNotification" -->SMSessionMDidTransitionToStateNotification<!-- /a --> <code>userInfo</code> dictionary. State is sent as an <code>NSNumber</code>.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_84" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_84" target="_top">NS_SWIFT_NAME(kUserActionPageName)</a></tt></dt>
-<dd><p>User portal page name key.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_77" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_77" target="_top">NS_SWIFT_NAME(kUserRegistrationResult)</a></tt></dt>
+<dd><p>Key for accessing the user registration result in the <!-- a logicalPath="//apple_ref/c/cl/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/tdef/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/tag/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/struct/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intf/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/econst/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/data/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/clconst/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/instm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/clm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intfcm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/intfm/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/func/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/ftmplt/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/defn/SMSessionDidUpdateUserRegistrationResult //apple_ref/c/macro/SMSessionDidUpdateUserRegistrationResult //apple_ref/doc/com/intfm/SMSessionDidUpdateUserRegistrationResult //apple_ref/doc/anysymbol/SMSessionDidUpdateUserRegistrationResult" -->SMSessionDidUpdateUserRegistrationResult<!-- /a --> <code>userInfo</code> dictionary. Result is sent as an <code>NSNumber</code>.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_85" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_85" target="_top">NS_SWIFT_NAME(kUserActionRewardName)</a></tt></dt>
-<dd><p>Reward name key.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_73" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_73" target="_top">NS_SWIFT_NAME(sdkRequestFailureNotification)</a></tt></dt>
+<dd><p>This notification is sent when there is an SDK error.
 </p></dd>
-<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_81" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_81" target="_top">NS_SWIFT_NAME(kUserActionSponsorContentName)</a></tt></dt>
-<dd><p>Sponsor content name key.
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME(sessionStateTransitionNotification)</a></tt></dt>
+<dd><p>This notification is sent when session changes its session state.
+</p></dd>
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_72" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_72" target="_top">NS_SWIFT_NAME(updatedUserInfoNotification)</a></tt></dt>
+<dd><p>This notification is sent when the user's unclaimed achievement count changes.
+</p></dd>
+<dt><tt><a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_76" logicalPath="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_76" target="_top">NS_SWIFT_NAME(updatedUserRegistrationResultNotification)</a></tt></dt>
+<dd><p>This notification is sent when the user registration result is changed.
 </p></dd>
 </dl>
 </div>
@@ -1791,7 +1791,7 @@ It is highly recommended to capture and provide debug output when reporting a pr
 <hr class="afterFooter">
 <div class="hd_copyright_and_timestamp">
 <p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
-<p class="hd_timestamp">Last Updated: 11/08/2017
+<p class="hd_timestamp">Last Updated: 11/09/2017
 </p>
 </div>
 </td>

@@ -51,7 +51,11 @@ class ClaimUserOfferViewController: UIViewController {
             let df = DateFormatter()
             df.dateFormat = "dd.MM.yyyy"
 
-            expires.text = "Expires: \(df.string(from: claim.expirationDate))";
+            if let expirationDate = claim.expirationDate {
+                expires.text = "Expires: \(df.string(from: expirationDate))";
+            } else {
+                expires.text = "Expires: N/A"
+            }
 
             Common.loadImage(parent: nil, uri: claim.codeImageURI, imgView: self.barCodeImage, imageHeight: self.barCodeImageHeight, maxHeight: 70)
             if let uri = item?.media[0].uri {

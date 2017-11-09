@@ -21,6 +21,8 @@ class RewardStoreTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(updateToolbar), name: NSNotification.Name(updatedUserNotification), object: nil)
+
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200;
 
@@ -80,7 +82,9 @@ class RewardStoreTableViewController: UITableViewController {
 
         let df = DateFormatter()
         df.dateFormat = "dd.MM.yyyy"
-//        cell.validDates.text = "This offer is available \(df.string(from: item.startDate)) through \(df.string(from: item.endDate))"
+        if let endDate = item.endDate {
+            cell.validDates.text = "This offer is available \(df.string(from: item.startDate)) through \(df.string(from: endDate))"
+        }
 
         let points = NSNumber(value: item.price).intValue;
         cell.points.text = "\(points)";

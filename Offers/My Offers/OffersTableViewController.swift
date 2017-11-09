@@ -21,6 +21,8 @@ class OffersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(updateToolbar), name: NSNotification.Name(updatedUserNotification), object: nil)
+
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200;
 
@@ -78,9 +80,13 @@ class OffersTableViewController: UITableViewController {
 
         cell.header.text = item.name;
 
-        let df = DateFormatter()
-        df.dateFormat = "dd.MM.yyyy"
-        cell.expires.text = df.string(from: item.expirationDate);
+        if let expirationDate = item.expirationDate {
+            let df = DateFormatter()
+            df.dateFormat = "dd.MM.yyyy"
+            cell.expires.text = df.string(from: expirationDate);
+        } else {
+            cell.expires.text = "Expires: N/A"
+        }
 
         if (item.media.count > 0) {
             Common.loadImage(parent: nil, uri: item.media[0].uri, imgView: cell.img, imageHeight: cell.imgHeight, maxHeight: 200)
