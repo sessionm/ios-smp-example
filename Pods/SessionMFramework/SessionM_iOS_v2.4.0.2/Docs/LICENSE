@@ -1,8 +1,0 @@
-The SessionM SDK relies on a few open source projects. These include:
-
-- Device utility. Objective Gems. https://github.com/kstenerud/Objective-Gems. MIT license. 
-- Reachability. Andrew Dunoho and Apple. BSD license. Apple license. 
-- Badge. Sasha Marc Paulus, www.spaulus.com. Custom license. 
-- ODIN. Odin Working Group. Apache license. 
-- OpenUDID. http://en.wikipedia.org/wiki/Zlib_License
-- AppAuth. https://github.com/openid/AppAuth-iOS. Apache license.
