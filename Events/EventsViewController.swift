@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Events
 //
-//  Created by Paul Mattheis on 9/15/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 

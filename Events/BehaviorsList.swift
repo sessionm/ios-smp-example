@@ -2,7 +2,6 @@
 //  BehaviorsList.swift
 //  SMPExample
 //
-//  Created by Paul Mattheis on 9/18/17.
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 

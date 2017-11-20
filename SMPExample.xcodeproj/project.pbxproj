@@ -158,7 +158,6 @@
 		6B7AF6721FBCD935005175A7 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7AF6651FBCD917005175A7 /* Events.storyboard */; };
 		6B7AF6731FBCD93D005175A7 /* BehaviorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AF6671FBCD917005175A7 /* BehaviorsList.swift */; };
 		6B7AF6741FBCD93F005175A7 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AF6681FBCD917005175A7 /* EventsViewController.swift */; };
-		6B7AF6751FBCD942005175A7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7AF6691FBCD917005175A7 /* Info.plist */; };
 		6B7AF6761FBCD945005175A7 /* PurchaseEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AF66A1FBCD917005175A7 /* PurchaseEventViewController.swift */; };
 		6B7AF6771FBCD94A005175A7 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7AF66B1FBCD917005175A7 /* SMPConfig.plist */; };
 		6B7B723D1F86AD1E0081D515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
@@ -1512,7 +1511,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7AF6751FBCD942005175A7 /* Info.plist in Resources */,
 				6B7AF6541FBCD8FA005175A7 /* LaunchScreen.storyboard in Resources */,
 				6B7AF6551FBCD8FA005175A7 /* Assets.xcassets in Resources */,
 				6B7AF6721FBCD935005175A7 /* Events.storyboard in Resources */,
