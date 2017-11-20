@@ -9,7 +9,7 @@ import CCHMapClusterController
 import MapKit
 import UIKit
 
-class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, CCHMapClusterControllerDelegate, UITableViewDataSource, UITableViewDelegate {
+class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, CCHMapClusterControllerDelegate, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet private var mapView: MKMapView!
     @IBOutlet private var annotationTableView: UITableView!
 
@@ -41,6 +41,10 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
 
         sessionM.delegate = self
         SMMessagesManager.instance().registerForRemoteNotifications()
+
+        let clManager = CLLocationManager()
+        clManager.delegate = self
+        clManager.requestAlwaysAuthorization()
     }
 
     private func updateMapViewRegion() {
