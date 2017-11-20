@@ -166,7 +166,6 @@
 		6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
 		6B7B72481F86AD1E0081D515 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
 		6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72511F86ADFE0081D515 /* Offers.storyboard */; };
-		6B7B725F1F86B0B30081D515 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B724F1F86AD1E0081D515 /* Info.plist */; };
 		6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72571F86ADFE0081D515 /* SMPConfig.plist */; };
 		6B7B72621F86B0C60081D515 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */; };
 		6B7B72641F86B0FC0081D515 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
@@ -436,7 +435,7 @@
 		6B7AF66A1FBCD917005175A7 /* PurchaseEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseEventViewController.swift; sourceTree = "<group>"; };
 		6B7AF66B1FBCD917005175A7 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
 		6B7B724E1F86AD1E0081D515 /* Offers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B7B724F1F86AD1E0081D515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/pmattheis/ios-smp-example/Offers/Info.plist"; sourceTree = "<absolute>"; };
+		6B7B724F1F86AD1E0081D515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/tdaniels/ios-smp-example/Offers/Info.plist"; sourceTree = "<absolute>"; };
 		6B7B72521F86ADFE0081D515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Offers.storyboard; sourceTree = "<group>"; };
 		6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersTableViewController.swift; sourceTree = "<group>"; };
 		6B7B72571F86ADFE0081D515 /* SMPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMPConfig.plist; sourceTree = "<group>"; };
@@ -1359,10 +1358,10 @@
 				2FF4F2551EAE4E5600CEB7E5 /* Auth */,
 				6B70441E1E23EDF800018C7B /* Campaigns */,
 				2F3E41D41E2828090061C980 /* Content */,
+				6B7AF6431FBCD8FA005175A7 /* Events */,
 				2F40EB081E36849600D6D8DF /* Geofence */,
 				2F3C7C981E2D2F9000CCAA78 /* Inbox */,
 				2F3E421D1E29614B0061C980 /* LoyaltyCards */,
-				6B7AF6431FBCD8FA005175A7 /* Events */,
 				6B7B72351F86AD1E0081D515 /* Offers */,
 				2F3E41901E27E3290061C980 /* Places */,
 				2F3BF5321E4E514100BDC071 /* Push */,
@@ -1530,7 +1529,6 @@
 				6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */,
 				6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */,
 				6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */,
-				6B7B725F1F86B0B30081D515 /* Info.plist in Resources */,
 				6B7B72481F86AD1E0081D515 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

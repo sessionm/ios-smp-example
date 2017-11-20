@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>appKey</key>
-	<string>239dfc908c2e548de40b56b21b68119289e52473</string>
 	<key>projectID</key>
 	<string>com.sessionm.enterprise.Offers</string>
+	<key>appKey</key>
+	<string>239dfc908c2e548de40b56b21b68119289e52473</string>
 	<key>serverEndpoint</key>
 	<string>https://api-sdkexamples.stg-sessionm.com</string>
 	<key>OAuthClientID</key>
