@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMTransactionsManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMTransactionsManager;  name=SMTransactionsManager-->
+<a name="//apple_ref/occ/cl/SMTransactionsManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMTransactionsManager">SMTransactionsManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMTransactionsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMTransactionsManager.h">SMTransactionsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMTransactionsManager;name=start --><!-- begin abstract --></p>
+<p>This API manager contains methods for fetching loyalty points transaction data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMTransactionsManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions" target="_top">-fetchMoreTransactions</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with points transactions that were not included in the previous fetch.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:" target="_top">-fetchMoreTransactionsWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with points transactions that were not included in the previous fetch.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions" target="_top">-fetchTransactions</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with the current user's points transactions.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:" target="_top">-fetchTransactionsWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with the current user's points transactions.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:" target="_top">-fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with a limited number of the current user's points transactions that took place between the specified start and end dates.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:" target="_top">-fetchTransactionsWithStartDate:endDate:limit:from:to:limit:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with a limited number of the current user's points transactions that took place between the specified start and end dates.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;   name=SMTransactionsManager::fetchMoreTransactions --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions"></a>
+<h3><a name="fetchMoreTransactions">fetchMoreTransactions</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with points transactions that were not included in the previous fetch.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchMoreTransactions</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler" target="_top"><span class="function">fetchMoreTransactionsWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchTransactions:hasMore: //apple_ref/occ/tdef/didFetchTransactions:hasMore: //apple_ref/occ/tag/didFetchTransactions:hasMore: //apple_ref/occ/struct/didFetchTransactions:hasMore: //apple_ref/occ/intf/didFetchTransactions:hasMore: //apple_ref/occ/econst/didFetchTransactions:hasMore: //apple_ref/occ/data/didFetchTransactions:hasMore: //apple_ref/occ/clconst/didFetchTransactions:hasMore: //apple_ref/occ/instm/didFetchTransactions:hasMore: //apple_ref/occ/clm/didFetchTransactions:hasMore: //apple_ref/occ/intfcm/didFetchTransactions:hasMore: //apple_ref/occ/intfm/didFetchTransactions:hasMore: //apple_ref/occ/func/didFetchTransactions:hasMore: //apple_ref/occ/ftmplt/didFetchTransactions:hasMore: //apple_ref/occ/defn/didFetchTransactions:hasMore: //apple_ref/occ/macro/didFetchTransactions:hasMore: //apple_ref/doc/com/intfm/didFetchTransactions:hasMore: //apple_ref/doc/anysymbol/didFetchTransactions:hasMore:" -->didFetchTransactions:hasMore:<!-- /a --> is called in response to this method. This method should only be called if <code>hasMore</code> is set to <code>YES</code>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactions;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/tdef/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/tag/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/struct/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intf/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/econst/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/data/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/clconst/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/instm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/clm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intfcm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intfm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/func/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/defn/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/macro/fetchMoreTransactionsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchMoreTransactionsWithCompletionHandler:" -->fetchMoreTransactionsWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:;   name=SMTransactionsManager::fetchMoreTransactionsWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchMoreTransactionsWithCompletionHandler:completionHandler:">fetchMoreTransactionsWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with points transactions that were not included in the previous fetch.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler" target="_top"><span class="function">fetchMoreTransactionsWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchTransactions" logicalPath="//apple_ref/occ/cl/didFetchTransactions //apple_ref/occ/tdef/didFetchTransactions" target="_top"><span class="type">didFetchTransactions</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchMoreTransactions(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/completionHandler //apple_ref/occ/clm/SMTransactionsManager/completionHandler //apple_ref/occ/intfcm/SMTransactionsManager/completionHandler //apple_ref/occ/intfm/SMTransactionsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMTransactionsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:/completionHandler;   name=fetchMoreTransactionsWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchMoreTransactionsWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;   name=SMTransactionsManager::fetchTransactions --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions"></a>
+<h3><a name="fetchTransactions">fetchTransactions</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with the current user's points transactions.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchTransactions</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler" target="_top"><span class="function">fetchTransactionsWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchTransactions:hasMore: //apple_ref/occ/tdef/didFetchTransactions:hasMore: //apple_ref/occ/tag/didFetchTransactions:hasMore: //apple_ref/occ/struct/didFetchTransactions:hasMore: //apple_ref/occ/intf/didFetchTransactions:hasMore: //apple_ref/occ/econst/didFetchTransactions:hasMore: //apple_ref/occ/data/didFetchTransactions:hasMore: //apple_ref/occ/clconst/didFetchTransactions:hasMore: //apple_ref/occ/instm/didFetchTransactions:hasMore: //apple_ref/occ/clm/didFetchTransactions:hasMore: //apple_ref/occ/intfcm/didFetchTransactions:hasMore: //apple_ref/occ/intfm/didFetchTransactions:hasMore: //apple_ref/occ/func/didFetchTransactions:hasMore: //apple_ref/occ/ftmplt/didFetchTransactions:hasMore: //apple_ref/occ/defn/didFetchTransactions:hasMore: //apple_ref/occ/macro/didFetchTransactions:hasMore: //apple_ref/doc/com/intfm/didFetchTransactions:hasMore: //apple_ref/doc/anysymbol/didFetchTransactions:hasMore:" -->didFetchTransactions:hasMore:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactions;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchTransactionsWithCompletionHandler: //apple_ref/occ/tdef/fetchTransactionsWithCompletionHandler: //apple_ref/occ/tag/fetchTransactionsWithCompletionHandler: //apple_ref/occ/struct/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intf/fetchTransactionsWithCompletionHandler: //apple_ref/occ/econst/fetchTransactionsWithCompletionHandler: //apple_ref/occ/data/fetchTransactionsWithCompletionHandler: //apple_ref/occ/clconst/fetchTransactionsWithCompletionHandler: //apple_ref/occ/instm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/clm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intfcm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intfm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/func/fetchTransactionsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchTransactionsWithCompletionHandler: //apple_ref/occ/defn/fetchTransactionsWithCompletionHandler: //apple_ref/occ/macro/fetchTransactionsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchTransactionsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchTransactionsWithCompletionHandler:" -->fetchTransactionsWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:;   name=SMTransactionsManager::fetchTransactionsWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchTransactionsWithCompletionHandler:completionHandler:">fetchTransactionsWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with the current user's points transactions.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler" target="_top"><span class="function">fetchTransactionsWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchTransactions" logicalPath="//apple_ref/occ/cl/didFetchTransactions //apple_ref/occ/tdef/didFetchTransactions" target="_top"><span class="type">didFetchTransactions</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchTransactions(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/completionHandler //apple_ref/occ/clm/SMTransactionsManager/completionHandler //apple_ref/occ/intfcm/SMTransactionsManager/completionHandler //apple_ref/occ/intfm/SMTransactionsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMTransactionsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:/completionHandler;   name=fetchTransactionsWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:;   name=SMTransactionsManager::fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler: --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:"></a>
+<h3><a name="fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:">fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with a limited number of the current user's points transactions that took place between the specified start and end dates.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate" target="_top"><span class="function">fetchTransactionsWithStartDate</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDate //apple_ref/occ/tdef/NSDate //apple_ref/occ/tag/NSDate //apple_ref/occ/struct/NSDate //apple_ref/occ/intf/NSDate //apple_ref/doc/anysymbol/NSDate" machineGenerated="true" --><span class="type">NSDate</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">startDate</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/endDate" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/endDate //apple_ref/occ/clm/SMTransactionsManager/endDate //apple_ref/occ/intfcm/SMTransactionsManager/endDate //apple_ref/occ/intfm/SMTransactionsManager/endDate //apple_ref/occ/func/endDate //apple_ref/occ/ftmplt/SMTransactionsManager/endDate //apple_ref/occ/defn/endDate //apple_ref/occ/macro/endDate //apple_ref/doc/anysymbol/endDate" target="_top"><span class="function">endDate</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDate //apple_ref/occ/tdef/NSDate //apple_ref/occ/tag/NSDate //apple_ref/occ/struct/NSDate //apple_ref/occ/intf/NSDate //apple_ref/doc/anysymbol/NSDate" machineGenerated="true" --><span class="type">NSDate</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">endDate</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/limit //apple_ref/occ/clm/SMTransactionsManager/limit //apple_ref/occ/intfcm/SMTransactionsManager/limit //apple_ref/occ/intfm/SMTransactionsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMTransactionsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">limit</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/completionHandler //apple_ref/occ/clm/SMTransactionsManager/completionHandler //apple_ref/occ/intfcm/SMTransactionsManager/completionHandler //apple_ref/occ/intfm/SMTransactionsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMTransactionsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchTransactions" logicalPath="//apple_ref/occ/cl/didFetchTransactions //apple_ref/occ/tdef/didFetchTransactions" target="_top"><span class="type">didFetchTransactions</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchTransactions(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMTransactionsManager/from //apple_ref/occ/clm/SMTransactionsManager/from //apple_ref/occ/intfcm/SMTransactionsManager/from //apple_ref/occ/intfm/SMTransactionsManager/from //apple_ref/occ/func/from //apple_ref/occ/ftmplt/SMTransactionsManager/from //apple_ref/occ/defn/from //apple_ref/occ/macro/from //apple_ref/doc/anysymbol/from" machineGenerated="true" --><span class="function">from</span><!-- /a -->:<!-- a logicalPath="//apple_ref/occ/instm/SMTransactionsManager/to //apple_ref/occ/clm/SMTransactionsManager/to //apple_ref/occ/intfcm/SMTransactionsManager/to //apple_ref/occ/intfm/SMTransactionsManager/to //apple_ref/occ/func/to //apple_ref/occ/ftmplt/SMTransactionsManager/to //apple_ref/occ/defn/to //apple_ref/occ/macro/to //apple_ref/doc/anysymbol/to" machineGenerated="true" --><span class="function">to</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/limit //apple_ref/occ/clm/SMTransactionsManager/limit //apple_ref/occ/intfcm/SMTransactionsManager/limit //apple_ref/occ/intfm/SMTransactionsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMTransactionsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/completionHandler //apple_ref/occ/clm/SMTransactionsManager/completionHandler //apple_ref/occ/intfcm/SMTransactionsManager/completionHandler //apple_ref/occ/intfm/SMTransactionsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMTransactionsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/startDate;   name=fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:::startDate -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/startDate"></a>
+<code>startDate</code>
+</dt>
+<dd><p>Transactions after this date will not be fetched (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/endDate;   name=fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:::endDate -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/endDate"></a>
+<code>endDate</code>
+</dt>
+<dd><p>Transactions before this date will not be fetched (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/limit;   name=fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:::limit -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/limit"></a>
+<code>limit</code>
+</dt>
+<dd><p>The maximum amount of transactions to fetch (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler;   name=fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;   name=SMTransactionsManager::fetchTransactionsWithStartDate:endDate:limit:from:to:limit: --><a name="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:"></a>
+<h3><a name="fetchTransactionsWithStartDate:endDate:limit:from:to:limit:">fetchTransactionsWithStartDate:endDate:limit:from:to:limit:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" logicalPath="//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a> with a limited number of the current user's points transactions that took place between the specified start and end dates.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate" target="_top"><span class="function">fetchTransactionsWithStartDate</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDate //apple_ref/occ/tdef/NSDate //apple_ref/occ/tag/NSDate //apple_ref/occ/struct/NSDate //apple_ref/occ/intf/NSDate //apple_ref/doc/anysymbol/NSDate" machineGenerated="true" --><span class="type">NSDate</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">startDate</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/endDate" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/endDate //apple_ref/occ/clm/SMTransactionsManager/endDate //apple_ref/occ/intfcm/SMTransactionsManager/endDate //apple_ref/occ/intfm/SMTransactionsManager/endDate //apple_ref/occ/func/endDate //apple_ref/occ/ftmplt/SMTransactionsManager/endDate //apple_ref/occ/defn/endDate //apple_ref/occ/macro/endDate //apple_ref/doc/anysymbol/endDate" target="_top"><span class="function">endDate</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDate //apple_ref/occ/tdef/NSDate //apple_ref/occ/tag/NSDate //apple_ref/occ/struct/NSDate //apple_ref/occ/intf/NSDate //apple_ref/doc/anysymbol/NSDate" machineGenerated="true" --><span class="type">NSDate</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">endDate</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/limit //apple_ref/occ/clm/SMTransactionsManager/limit //apple_ref/occ/intfcm/SMTransactionsManager/limit //apple_ref/occ/intfm/SMTransactionsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMTransactionsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">limit</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate" target="_top"><span class="function">fetchTransactionsWithStartDate</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/endDate" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/endDate //apple_ref/occ/clm/SMTransactionsManager/endDate //apple_ref/occ/intfcm/SMTransactionsManager/endDate //apple_ref/occ/intfm/SMTransactionsManager/endDate //apple_ref/occ/func/endDate //apple_ref/occ/ftmplt/SMTransactionsManager/endDate //apple_ref/occ/defn/endDate //apple_ref/occ/macro/endDate //apple_ref/doc/anysymbol/endDate" target="_top"><span class="function">endDate</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/limit //apple_ref/occ/clm/SMTransactionsManager/limit //apple_ref/occ/intfcm/SMTransactionsManager/limit //apple_ref/occ/intfm/SMTransactionsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMTransactionsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:
+            <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:completionHandler:from:to:limit:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/completionHandler //apple_ref/occ/clm/SMTransactionsManager/completionHandler //apple_ref/occ/intfcm/SMTransactionsManager/completionHandler //apple_ref/occ/intfm/SMTransactionsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMTransactionsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(fetchTransactions(<!-- a logicalPath="//apple_ref/occ/instm/SMTransactionsManager/from //apple_ref/occ/clm/SMTransactionsManager/from //apple_ref/occ/intfcm/SMTransactionsManager/from //apple_ref/occ/intfm/SMTransactionsManager/from //apple_ref/occ/func/from //apple_ref/occ/ftmplt/SMTransactionsManager/from //apple_ref/occ/defn/from //apple_ref/occ/macro/from //apple_ref/doc/anysymbol/from" machineGenerated="true" --><span class="function">from</span><!-- /a -->:
+                <!-- a logicalPath="//apple_ref/occ/instm/SMTransactionsManager/to //apple_ref/occ/clm/SMTransactionsManager/to //apple_ref/occ/intfcm/SMTransactionsManager/to //apple_ref/occ/intfm/SMTransactionsManager/to //apple_ref/occ/func/to //apple_ref/occ/ftmplt/SMTransactionsManager/to //apple_ref/occ/defn/to //apple_ref/occ/macro/to //apple_ref/doc/anysymbol/to" machineGenerated="true" --><span class="function">to</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit" logicalPath="//apple_ref/occ/instm/SMTransactionsManager/limit //apple_ref/occ/clm/SMTransactionsManager/limit //apple_ref/occ/intfcm/SMTransactionsManager/limit //apple_ref/occ/intfm/SMTransactionsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMTransactionsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/startDate;   name=fetchTransactionsWithStartDate:endDate:limit:from:to:limit:::startDate -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/startDate"></a>
+<code>startDate</code>
+</dt>
+<dd><p>Transactions after this date will not be fetched (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/endDate;   name=fetchTransactionsWithStartDate:endDate:limit:from:to:limit:::endDate -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/endDate"></a>
+<code>endDate</code>
+</dt>
+<dd><p>Transactions before this date will not be fetched (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit;   name=fetchTransactionsWithStartDate:endDate:limit:from:to:limit:::limit -->
+<a name="//apple_ref/doc/methodparam/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:/limit"></a>
+<code>limit</code>
+</dt>
+<dd><p>The maximum amount of transactions to fetch (optional).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchTransactions:hasMore: //apple_ref/occ/tdef/didFetchTransactions:hasMore: //apple_ref/occ/tag/didFetchTransactions:hasMore: //apple_ref/occ/struct/didFetchTransactions:hasMore: //apple_ref/occ/intf/didFetchTransactions:hasMore: //apple_ref/occ/econst/didFetchTransactions:hasMore: //apple_ref/occ/data/didFetchTransactions:hasMore: //apple_ref/occ/clconst/didFetchTransactions:hasMore: //apple_ref/occ/instm/didFetchTransactions:hasMore: //apple_ref/occ/clm/didFetchTransactions:hasMore: //apple_ref/occ/intfcm/didFetchTransactions:hasMore: //apple_ref/occ/intfm/didFetchTransactions:hasMore: //apple_ref/occ/func/didFetchTransactions:hasMore: //apple_ref/occ/ftmplt/didFetchTransactions:hasMore: //apple_ref/occ/defn/didFetchTransactions:hasMore: //apple_ref/occ/macro/didFetchTransactions:hasMore: //apple_ref/doc/com/intfm/didFetchTransactions:hasMore: //apple_ref/doc/anysymbol/didFetchTransactions:hasMore:" -->didFetchTransactions:hasMore:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMTransactionsManager/fetchTransactionsWithStartDate:endDate:limit:from:to:limit:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/tdef/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/tag/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/struct/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intf/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/econst/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/data/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/clconst/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/instm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/clm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intfcm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intfm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/func/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/ftmplt/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/defn/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/macro/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/doc/com/intfm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/doc/anysymbol/fetchTransactionsWithStartDate:endDate:limit:completionHandler:" -->fetchTransactionsWithStartDate:endDate:limit:completionHandler:<!-- /a -->.</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/delegate" target="_top">delegate</a></tt></dt>
+<dd><p>Object that implements <a href="../../Protocols/SMTransactionsDelegate/index.html#//apple_ref/occ/intf/SMTransactionsDelegate" logicalPath="//apple_ref/occ/intf/SMTransactionsDelegate" target="_top">SMTransactionsDelegate</a> callbacks.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMTransactionsManager/transactions" target="_top">transactions</a></tt></dt>
+<dd><p>The current user's points transactions.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMTransactionsManager/delegate;   name=SMTransactionsManager::delegate --><a name="//apple_ref/occ/instp/SMTransactionsManager/delegate"></a>
+<h3><a name="delegate">delegate</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMTransactionsManager/delegate;name=start --><!-- begin abstract --></p>
+<p>Object that implements <a href="../../Protocols/SMTransactionsDelegate/index.html#//apple_ref/occ/intf/SMTransactionsDelegate" logicalPath="//apple_ref/occ/intf/SMTransactionsDelegate" target="_top">SMTransactionsDelegate</a> callbacks.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMTransactionsManager/delegate;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMTransactionsManager/delegate;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">weak</span>) <a machinegenerated="true" href="../../../SMWebView_h/index.html#//apple_ref/c/func/id" logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/struct/id //apple_ref/occ/intf/id //apple_ref/doc/anysymbol/id" target="_top"><span class="type">id</span></a>&lt;<span class="template">SMTransactionsDelegate</span>&gt; <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/delegate //apple_ref/occ/data/SMTransactionsManager/delegate //apple_ref/occ/data/delegate //apple_ref/occ/clconst/SMTransactionsManager/delegate " machineGenerated="true" --><span class="var">delegate</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMTransactionsManager/delegate;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;   name=SMTransactionsManager::transactions --><a name="//apple_ref/occ/instp/SMTransactionsManager/transactions"></a>
+<h3><a name="transactions">transactions</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=start --><!-- begin abstract --></p>
+<p>The current user's points transactions.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMTransaction</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/transactions //apple_ref/occ/data/SMTransactionsManager/transactions //apple_ref/occ/data/transactions //apple_ref/occ/clconst/SMTransactionsManager/transactions " machineGenerated="true" --><span class="var">transactions</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=start --><p>This property is updated in response to a successful <!-- a logicalPath="//apple_ref/occ/cl/fetchTransactionsWithCompletionHandler: //apple_ref/occ/tdef/fetchTransactionsWithCompletionHandler: //apple_ref/occ/tag/fetchTransactionsWithCompletionHandler: //apple_ref/occ/struct/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intf/fetchTransactionsWithCompletionHandler: //apple_ref/occ/econst/fetchTransactionsWithCompletionHandler: //apple_ref/occ/data/fetchTransactionsWithCompletionHandler: //apple_ref/occ/clconst/fetchTransactionsWithCompletionHandler: //apple_ref/occ/instm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/clm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intfcm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/intfm/fetchTransactionsWithCompletionHandler: //apple_ref/occ/func/fetchTransactionsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchTransactionsWithCompletionHandler: //apple_ref/occ/defn/fetchTransactionsWithCompletionHandler: //apple_ref/occ/macro/fetchTransactionsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchTransactionsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchTransactionsWithCompletionHandler:" -->fetchTransactionsWithCompletionHandler:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/tdef/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/tag/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/struct/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intf/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/econst/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/data/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/clconst/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/instm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/clm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intfcm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/intfm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/func/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/ftmplt/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/defn/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/occ/macro/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/doc/com/intfm/fetchTransactionsWithStartDate:endDate:limit:completionHandler: //apple_ref/doc/anysymbol/fetchTransactionsWithStartDate:endDate:limit:completionHandler:" -->fetchTransactionsWithStartDate:endDate:limit:completionHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/tdef/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/tag/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/struct/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intf/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/econst/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/data/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/clconst/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/instm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/clm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intfcm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/intfm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/func/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/defn/fetchMoreTransactionsWithCompletionHandler: //apple_ref/occ/macro/fetchMoreTransactionsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchMoreTransactionsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchMoreTransactionsWithCompletionHandler:" -->fetchMoreTransactionsWithCompletionHandler:<!-- /a --> call.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMTransactionsManager/transactions;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -99,10 +99,16 @@ typedef NS_ENUM (NSInteger, SMTransactionPointsType) {
  */
 @property(nonatomic, strong, readonly) NSString *date;
 /*!
- @property descriptionText
+ @property details
  @abstract Transaction details.
  */
-@property(nonatomic, strong, readonly) NSString *descriptionText;
+@property(nonatomic, strong, readonly) NSString *details;
+/*!
+ @property descriptionText
+ @abstract Transaction details.
+ @deprecated This property has been deprecated - use @link details @/link instead.
+ */
+@property(nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property points
  @abstract Amount of points earned or lost from the transaction.

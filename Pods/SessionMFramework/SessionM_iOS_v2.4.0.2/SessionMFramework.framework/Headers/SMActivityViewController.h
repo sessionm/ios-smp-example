@@ -117,46 +117,6 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  */
 - (void)disableCloseButton;
 
-/*!
- @abstract Returns an array of URL regular expressions that the portal is not allowed to access.
- @discussion URLs can be blacklisted by calling <code>[[SMActivityViewController blacklistURLs] addObject:@"example.com"]</code>. URLs can be removed by calling <code>[[SMActivityViewController blacklistURLs] removeAllObjects]</code>. Contains <code>\@"http(s)?://books.rakuten.co.jp/(rk|event/e-book)"</code> by default.
- @result Array of currently blacklisted URL regular expressions.
- */
-+ (NSMutableArray<NSString *> *)blacklistURLs;
-/*!
- @abstract Returns the alert title displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @result The current alert title.
- */
-+ (NSString *)blacklistAlertTitle;
-/*!
- @abstract Sets the alert title displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @discussion Setting this value to <code>nil</code> will cause the alert to use the default title.
- @param title The new alert title.
- */
-+ (void)setBlacklistAlertTitle:(NSString * _Nullable)title NS_SWIFT_NAME(setBlacklistAlertTitle(_:));
-/*!
- @abstract Returns the alert message displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @result The current alert message.
- */
-+ (NSString *)blacklistAlertMessage;
-/*!
- @abstract Sets the alert message displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @discussion Setting this value to <code>nil</code> will cause the alert to use the default message.
- @param message The new alert message.
- */
-+ (void)setBlacklistAlertMessage:(NSString * _Nullable)message NS_SWIFT_NAME(setBlacklistAlertMessage(_:));
-/*!
- @abstract Returns the alert dismiss button title displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @result The current alert button title.
- */
-+ (NSString *)blacklistAlertButtonTitle;
-/*!
- @abstract Sets the alert dismiss button title displayed when the portal attempts to access a URL in @link blacklistURLs @/link.
- @discussion Setting this value to <code>nil</code> will cause the alert to use the default button title.
- @param title The new alert button title.
- */
-+ (void)setBlacklistAlertButtonTitle:(NSString * _Nullable)title NS_SWIFT_NAME(setBlacklistAlertButtonTitle(_:));
-
 @end
 
 NS_ASSUME_NONNULL_END

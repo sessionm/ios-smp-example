@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "SMGenericRequest.h"
+#import "SMGenericRequestBuilder.h"
 #import "SMGenericResponse.h"
 #import "SMError.h"
 
@@ -39,7 +39,7 @@ extern NSString *const SM_GENERIC_REQUEST_MANAGER_NOTIFICATION_RESPONSE_KEY NS_S
  @typedef CompletionHandler
  @abstract Completion handler block type for @link sendRequest:completionHandler: @/link.
  */
-typedef void(^CompletionHandler)(SMGenericResponse * _Nullable response, SMError * _Nullable error, NSDictionary * _Nullable other);
+typedef void(^CompletionHandler)(NSString *kind, SMGenericResponse * _Nullable response, SMError * _Nullable error, NSDictionary * _Nullable other);
 
 /*!
  @class SMGenericRequestManager

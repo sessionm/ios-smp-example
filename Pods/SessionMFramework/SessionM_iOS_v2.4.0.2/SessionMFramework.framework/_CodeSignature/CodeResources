@@ -4,42 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/CLLBaseItem.h</key>
-		<data>
-		r23m1z0HrvJooJm/lWPUFOqG4t4=
-		</data>
-		<key>Headers/CLLConnectManager.h</key>
-		<data>
-		vvbz3HL0uyj1BfXB0pLq0O0wCKg=
-		</data>
-		<key>Headers/CLLMedia.h</key>
-		<data>
-		ZeONOxRCUnmwepNXr15sbHAuxr4=
-		</data>
-		<key>Headers/CLLPurchaseRewardResponse.h</key>
-		<data>
-		pMPxT86EFMAU8CstawCiEAgG+XQ=
-		</data>
-		<key>Headers/CLLPurchasedReward.h</key>
-		<data>
-		dDVnu2o+L1ETqBA+2ch0Ss9fQQM=
-		</data>
-		<key>Headers/CLLRecordBase.h</key>
-		<data>
-		ATSoESYBzpjTavBguJmPVBH5vTw=
-		</data>
-		<key>Headers/CLLRewardItemType.h</key>
-		<data>
-		aFBouCoVY3gi0Hf9JqkPADgRGUs=
-		</data>
-		<key>Headers/CLLRewardsResponse.h</key>
-		<data>
-		EnEiAL4ytMtxkpUFcHtmJzhiolg=
-		</data>
-		<key>Headers/CLLUserAccount.h</key>
-		<data>
-		rlOZg4CmOCVJq/K+HKmUu8/jvZI=
-		</data>
 		<key>Headers/SMAchievementData.h</key>
 		<data>
 		7CMgoR2nO1TaNWZr4c3Byf5dhmc=
@@ -62,7 +26,7 @@
 		</data>
 		<key>Headers/SMActivityViewController.h</key>
 		<data>
-		yCn65JsdiomSq8K2sIrstsdGfBM=
+		6BeOWsXVLXdxT1YqHEMVtd5bZMw=
 		</data>
 		<key>Headers/SMAddress.h</key>
 		<data>
@@ -84,13 +48,21 @@
 		<data>
 		5/zeHcVim+c/TfyJK8m9hHI/Ico=
 		</data>
+		<key>Headers/SMClaimUserOfferResponse.h</key>
+		<data>
+		oYGOgfeWfBYJlIuDcA90qqlniNs=
+		</data>
+		<key>Headers/SMClaimedOfferItem.h</key>
+		<data>
+		7I9Uuhs+85HEQHb0QSsXdLDKqn0=
+		</data>
 		<key>Headers/SMCompositeBehavior.h</key>
 		<data>
 		cdubcg5sToTB/qwzQJ4rwrLwg58=
 		</data>
 		<key>Headers/SMContent.h</key>
 		<data>
-		ClEqobz8LPF+CEOEoZhmzBbAHpg=
+		KXzoNHP0nV86jMXlHIDevRFlKlg=
 		</data>
 		<key>Headers/SMContentManager.h</key>
 		<data>
@@ -138,19 +110,27 @@
 		</data>
 		<key>Headers/SMFeedMessage.h</key>
 		<data>
-		2cm5S691miW41Y7RmagZyLUTVhI=
+		ALsHnBkEo6DAJbOhOhNjonQ+Rj8=
+		</data>
+		<key>Headers/SMFetchStoreOffersResponse.h</key>
+		<data>
+		4pv0RaSsgzegtC3sSlRA6uHdCQE=
+		</data>
+		<key>Headers/SMFetchUserOffersResponse.h</key>
+		<data>
+		tnNjvTcc7ya+Ft80qYPsduKMAZU=
 		</data>
 		<key>Headers/SMGenericRequest.h</key>
 		<data>
-		XCLo8rg7kTeH8Z+6/gTDcFZZp1s=
+		zaDPj2JMYZM3PCjD28rlLuhzuSI=
 		</data>
 		<key>Headers/SMGenericRequestBuilder.h</key>
 		<data>
-		MUAqSBIaeeb9+9knsc+1qjAp8kI=
+		gxYSTdOyQRoCCOvRrVDs/NcUYHU=
 		</data>
 		<key>Headers/SMGenericRequestManager.h</key>
 		<data>
-		jMqkQ0NfT9yrfwDLclepmjYtDck=
+		PULxhqsolWIjSbWpi8L/6ZDfElU=
 		</data>
 		<key>Headers/SMGenericResponse.h</key>
 		<data>
@@ -190,7 +170,7 @@
 		</data>
 		<key>Headers/SMLocationManager.h</key>
 		<data>
-		DaTXOaHtHIdeC1S9NgaQv1XAGfU=
+		VIn+USvEME98Y/F5GwFfXHPFmNE=
 		</data>
 		<key>Headers/SMLoyaltyCard.h</key>
 		<data>
@@ -198,7 +178,7 @@
 		</data>
 		<key>Headers/SMLoyaltyCardTransaction.h</key>
 		<data>
-		tHWoJkgE7AzenLAZbI5Lo5WsiPY=
+		Jo2rYnzXCXsxLN3zCFaJHhVRBbs=
 		</data>
 		<key>Headers/SMLoyaltyCardsManager.h</key>
 		<data>
@@ -210,15 +190,39 @@
 		</data>
 		<key>Headers/SMNotificationMessage.h</key>
 		<data>
-		0zQwibCBYIWFoBgszuRCP61UKNA=
+		eTTgaMGsJ5J/WWM9VkKwwgPhPMc=
 		</data>
 		<key>Headers/SMOffer.h</key>
 		<data>
-		6gj+hpkOgsf7EoiHqUrxuteQb2c=
+		P8VxRqYST+ws06OpyCeNUr8qG+w=
+		</data>
+		<key>Headers/SMOfferCategory.h</key>
+		<data>
+		ZTMjfuHSSapAIRjAOTYSUQsA0pY=
+		</data>
+		<key>Headers/SMOfferGroup.h</key>
+		<data>
+		v6PkBWf2piGENoWGWNSYwLMY/LY=
+		</data>
+		<key>Headers/SMOfferItem.h</key>
+		<data>
+		gb3Mi1iwCYeAzgVxAbEQ0zxqYpo=
+		</data>
+		<key>Headers/SMOfferMedia.h</key>
+		<data>
+		qaiqbLIPNiV47FQYteT/Lv21duA=
+		</data>
+		<key>Headers/SMOfferResponse.h</key>
+		<data>
+		3gFrn7fK+QavsStPhVuN/ZRNxgw=
+		</data>
+		<key>Headers/SMOffersManager.h</key>
+		<data>
+		4zwMwt5bXBFsIWAER5IG/LLcAt4=
 		</data>
 		<key>Headers/SMOrder.h</key>
 		<data>
-		3i1eOfXkDPbZN5tjy2rsapX18GI=
+		n4uMO3HSkjmu1ccsR2S1OzTl4D8=
 		</data>
 		<key>Headers/SMPUser.h</key>
 		<data>
@@ -258,15 +262,19 @@
 		</data>
 		<key>Headers/SMPurchaseEventItem.h</key>
 		<data>
-		MIbrvX9+nZ1H/KeaO77EehA3Yyc=
+		Z0mVgNbJnoK4NV617efN1RuUl6w=
 		</data>
 		<key>Headers/SMPurchaseEventItemBuilder.h</key>
 		<data>
-		TgfoAynhrnBAa17Vb1nrYewaw6g=
+		FqBw5qxoxh4bJVnaIjfkNBgUYrE=
+		</data>
+		<key>Headers/SMPurchaseOfferResponse.h</key>
+		<data>
+		Q5ld1ImfGYXnweQjLO3ugrLF3Kk=
 		</data>
 		<key>Headers/SMReceipt.h</key>
 		<data>
-		BSG10M4uDYnzXAhlv3V/HzpN27o=
+		XQFPkS98TT8HxcQcJpFLdi+qL1M=
 		</data>
 		<key>Headers/SMReceiptsManager.h</key>
 		<data>
@@ -316,9 +324,13 @@
 		<data>
 		a6/XOztDau6wXRdTLOZ8JODXx7U=
 		</data>
+		<key>Headers/SMStoreOfferItem.h</key>
+		<data>
+		vk0Vihzgd8ICOLWiCDokc6lKA9U=
+		</data>
 		<key>Headers/SMTransaction.h</key>
 		<data>
-		IHadeIjgOUqW5AV087rjPlZCows=
+		IfKTBKNp0A35fmkhdnHcLEQbO0k=
 		</data>
 		<key>Headers/SMTransactionsManager.h</key>
 		<data>
@@ -331,6 +343,10 @@
 		<key>Headers/SMUserManager.h</key>
 		<data>
 		ehgt2qp2ILZqc0UnHAggRGssEYE=
+		</data>
+		<key>Headers/SMUserOfferItem.h</key>
+		<data>
+		ALl7QweF1Q2yLPkGFPD/GytmIRg=
 		</data>
 		<key>Headers/SMUserTagsManager.h</key>
 		<data>
@@ -346,15 +362,15 @@
 		</data>
 		<key>Headers/SessionM.h</key>
 		<data>
-		6BPWYSt8oj9psUzCyA8mzSiwpEc=
+		hNN3OLlbKDHTQM1T/jlkn8huKyw=
 		</data>
 		<key>Headers/SessionMFramework.h</key>
 		<data>
-		5mf98s/1FER7F3hAauGbBLsFblk=
+		TXPEEYDOZBYw9gkxFCaI+baYsvk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N9+cm4nQyB1BwgKSd/pzo54NcSQ=
+		UxQN6RxONOr2r5OEBbevHoQE3IU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -400,7 +416,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mrxdAgFZsMGI7DraLIjulxJaVdo=
+			VBkC5L1AjKCSdH8YTS7fDIFyoZY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -409,7 +425,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VBmiHrJcrF7ub/i7hKw0O0uJFfo=
+			NEp47csiR7Gldu5LGXQNV+iV1Zc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -418,7 +434,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4AHSvqDmAJ0LtW3Cp1MwTn3Zc1U=
+			3gizJwL3212c5IHDUotIWrmmEX4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -486,105 +502,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/CLLBaseItem.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r23m1z0HrvJooJm/lWPUFOqG4t4=
-			</data>
-			<key>hash2</key>
-			<data>
-			kEySOBK0AeEGHslYBBcFFsU9flDi1r2qZs4Kt1Cq+qM=
-			</data>
-		</dict>
-		<key>Headers/CLLConnectManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vvbz3HL0uyj1BfXB0pLq0O0wCKg=
-			</data>
-			<key>hash2</key>
-			<data>
-			3v/rIMNPfZtf284YNI3Ln1XdQDN54a8MCfrgO8h2g5g=
-			</data>
-		</dict>
-		<key>Headers/CLLMedia.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZeONOxRCUnmwepNXr15sbHAuxr4=
-			</data>
-			<key>hash2</key>
-			<data>
-			kihtGIQ8duxplMutgEF7SWkOFH+Ionua47cF1mHArTg=
-			</data>
-		</dict>
-		<key>Headers/CLLPurchaseRewardResponse.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pMPxT86EFMAU8CstawCiEAgG+XQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			iAdizRS2OrzcK8GsV5yEVDRdWIBZHl2YLfmSrT3JZ04=
-			</data>
-		</dict>
-		<key>Headers/CLLPurchasedReward.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dDVnu2o+L1ETqBA+2ch0Ss9fQQM=
-			</data>
-			<key>hash2</key>
-			<data>
-			McRV48qC630+7mv/QlRSiBUnM7a2oG52SYNCB2GXtjA=
-			</data>
-		</dict>
-		<key>Headers/CLLRecordBase.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ATSoESYBzpjTavBguJmPVBH5vTw=
-			</data>
-			<key>hash2</key>
-			<data>
-			/hMBSnoPbCYHfE5Yo8FXrsMMJvtoeujJKWCdtBwZrhY=
-			</data>
-		</dict>
-		<key>Headers/CLLRewardItemType.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aFBouCoVY3gi0Hf9JqkPADgRGUs=
-			</data>
-			<key>hash2</key>
-			<data>
-			6JWt66mCoI7CCgrts362YDVikayLmAKS6KtUYAn0XRw=
-			</data>
-		</dict>
-		<key>Headers/CLLRewardsResponse.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EnEiAL4ytMtxkpUFcHtmJzhiolg=
-			</data>
-			<key>hash2</key>
-			<data>
-			IH1PuCptIwdchSrfMSnw3w5LW9VDvWLKEbfmCdxnLDM=
-			</data>
-		</dict>
-		<key>Headers/CLLUserAccount.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rlOZg4CmOCVJq/K+HKmUu8/jvZI=
-			</data>
-			<key>hash2</key>
-			<data>
-			t74YS2VjPqZpaP3xcMgQ35XKGfGmpjrcdGQ1qXxWH+c=
-			</data>
-		</dict>
 		<key>Headers/SMAchievementData.h</key>
 		<dict>
 			<key>hash</key>
@@ -644,11 +561,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yCn65JsdiomSq8K2sIrstsdGfBM=
+			6BeOWsXVLXdxT1YqHEMVtd5bZMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3IajknktTC4lWghqUpKoxTfJ8pmTIyl4GrhjIvur4FU=
+			VNmd6fDcX0Egr+kvJrPM0z4+oY4I7YZNGl4EyuQrq/I=
 			</data>
 		</dict>
 		<key>Headers/SMAddress.h</key>
@@ -706,6 +623,28 @@
 			pAaPbb5r8vRG+RVLv4UT3sTH9fq5FcnWTpAuh5gTQGg=
 			</data>
 		</dict>
+		<key>Headers/SMClaimUserOfferResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oYGOgfeWfBYJlIuDcA90qqlniNs=
+			</data>
+			<key>hash2</key>
+			<data>
+			RRzhCXLhWQrdYaGVRUUOPh20DqvyWLOy4vrfE8MVcZg=
+			</data>
+		</dict>
+		<key>Headers/SMClaimedOfferItem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7I9Uuhs+85HEQHb0QSsXdLDKqn0=
+			</data>
+			<key>hash2</key>
+			<data>
+			84aQDJLXXT+IznC/rrsUwpFq8mo+Lmq7bV+/3wA8q5E=
+			</data>
+		</dict>
 		<key>Headers/SMCompositeBehavior.h</key>
 		<dict>
 			<key>hash</key>
@@ -721,11 +660,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClEqobz8LPF+CEOEoZhmzBbAHpg=
+			KXzoNHP0nV86jMXlHIDevRFlKlg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fo3qYDYS4tE5vA3Orr/Zvrw0ubSPVjZdIIZ/IxKQW8c=
+			iwV7MNgw5MmOCTPW1cSeAkMyTj+FuzdsAvSxqdBrCRU=
 			</data>
 		</dict>
 		<key>Headers/SMContentManager.h</key>
@@ -853,44 +792,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2cm5S691miW41Y7RmagZyLUTVhI=
+			ALsHnBkEo6DAJbOhOhNjonQ+Rj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vORiso+EuanP+X/p77VEP2RykNJyGlFxJNMJK245Fls=
+			TxCg9jxMGJ+cjyDWFxWeGr9M/kW7yxciNDnOXqGXG1M=
+			</data>
+		</dict>
+		<key>Headers/SMFetchStoreOffersResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4pv0RaSsgzegtC3sSlRA6uHdCQE=
+			</data>
+			<key>hash2</key>
+			<data>
+			ErKPmwVG9gngtJ7QgdClaKZnOQymMEBtYS7ymuyN7nU=
+			</data>
+		</dict>
+		<key>Headers/SMFetchUserOffersResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tnNjvTcc7ya+Ft80qYPsduKMAZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			21BZlnqfK92uGlTSnXYT6bGBHC+DJg4z2kSHfZCwlMk=
 			</data>
 		</dict>
 		<key>Headers/SMGenericRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XCLo8rg7kTeH8Z+6/gTDcFZZp1s=
+			zaDPj2JMYZM3PCjD28rlLuhzuSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gg9Ia1FeNo0DLWkeenYRq2u4avksZVzjjvm3rjXkJ54=
+			ZyuqTnDt0jejGf8hJqJ3EUr+3KQ54xD5al5vBxqjEv4=
 			</data>
 		</dict>
 		<key>Headers/SMGenericRequestBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MUAqSBIaeeb9+9knsc+1qjAp8kI=
+			gxYSTdOyQRoCCOvRrVDs/NcUYHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JWUjhf1DrkHtT+4+tXBDB8cWkh4lCwVz2+gZhW8D2Sg=
+			LkqRT2RAxqDHyf9kzDtAYxsbnPg/qw+97s3VC435BRo=
 			</data>
 		</dict>
 		<key>Headers/SMGenericRequestManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jMqkQ0NfT9yrfwDLclepmjYtDck=
+			PULxhqsolWIjSbWpi8L/6ZDfElU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DaFoU8uTLvtwYF4YLSB9mDsy+/5amLXaTPwQlWVhstk=
+			Yk+TetnnuHqBGWPqH9gLgud0t9Uw7YveuftZ4e/U3tc=
 			</data>
 		</dict>
 		<key>Headers/SMGenericResponse.h</key>
@@ -996,11 +957,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DaTXOaHtHIdeC1S9NgaQv1XAGfU=
+			VIn+USvEME98Y/F5GwFfXHPFmNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCaWlbvJbNpIYDhJ+4bNi4DvI7uc85sy3sqXx9gugrY=
+			Ia1jDYkPgeOGiXAjDZ4v20RtN+UK0fuiCCO4TRFdnWg=
 			</data>
 		</dict>
 		<key>Headers/SMLoyaltyCard.h</key>
@@ -1018,11 +979,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tHWoJkgE7AzenLAZbI5Lo5WsiPY=
+			Jo2rYnzXCXsxLN3zCFaJHhVRBbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ogs8ojYewT9rpyaIcQ/GCVX5LIixVwq5Bvmjc215GyM=
+			hzj+3VUZsMBoAqFqrS4NLoT/sOlAnitk/XpfWT+Ho1I=
 			</data>
 		</dict>
 		<key>Headers/SMLoyaltyCardsManager.h</key>
@@ -1051,33 +1012,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0zQwibCBYIWFoBgszuRCP61UKNA=
+			eTTgaMGsJ5J/WWM9VkKwwgPhPMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DtdOmkSxMNpFhKaM3T0UNvkEiK6w9blMpH51+j9RoLo=
+			E/lPrPaBJGQ2FtshA08jBx27AxcRbyv8kBY/F1rvU+U=
 			</data>
 		</dict>
 		<key>Headers/SMOffer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6gj+hpkOgsf7EoiHqUrxuteQb2c=
+			P8VxRqYST+ws06OpyCeNUr8qG+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7VA3Ij4JaFdaPv9sLpule/BhR6TLQkcZjWMYug5thGA=
+			XcbsnnBZ9OYunQgCo1KHAuRwKW2t2kg7jJm+RO/4YJM=
+			</data>
+		</dict>
+		<key>Headers/SMOfferCategory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZTMjfuHSSapAIRjAOTYSUQsA0pY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jk4ky2UBvzkYi8yAcs9RQBpA4F6wGYoHae3lRRPbk7U=
+			</data>
+		</dict>
+		<key>Headers/SMOfferGroup.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v6PkBWf2piGENoWGWNSYwLMY/LY=
+			</data>
+			<key>hash2</key>
+			<data>
+			agndt2gx90G01RS3DqsJWL5deEW5ueXAZ9E2QhPpNWo=
+			</data>
+		</dict>
+		<key>Headers/SMOfferItem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gb3Mi1iwCYeAzgVxAbEQ0zxqYpo=
+			</data>
+			<key>hash2</key>
+			<data>
+			toAaJj1SpUG9VtignLZz5fZlhaF/hTQhtjp4O7kWkc0=
+			</data>
+		</dict>
+		<key>Headers/SMOfferMedia.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qaiqbLIPNiV47FQYteT/Lv21duA=
+			</data>
+			<key>hash2</key>
+			<data>
+			XHYeymjbHKDpL9hLmO30l04KthhwqPBzUobv9oYWkFs=
+			</data>
+		</dict>
+		<key>Headers/SMOfferResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3gFrn7fK+QavsStPhVuN/ZRNxgw=
+			</data>
+			<key>hash2</key>
+			<data>
+			58UeRsGySw1LlPhvlxDKKnPxjL+WftLNWgypOASuYAg=
+			</data>
+		</dict>
+		<key>Headers/SMOffersManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4zwMwt5bXBFsIWAER5IG/LLcAt4=
+			</data>
+			<key>hash2</key>
+			<data>
+			hl1ga1qGXTsUaqhBna0gH20DAc+J/xQ8kOCD/qr7uEc=
 			</data>
 		</dict>
 		<key>Headers/SMOrder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3i1eOfXkDPbZN5tjy2rsapX18GI=
+			n4uMO3HSkjmu1ccsR2S1OzTl4D8=
 			</data>
 			<key>hash2</key>
 			<data>
-			4NbZ+uypqB/2FZLbehyw6njLnbf/vOStIZW5PZxGpxY=
+			PLI4SCaX+IKfpgtoBnlYU4PBZEpShwHYwD+FQ5lZEXw=
 			</data>
 		</dict>
 		<key>Headers/SMPUser.h</key>
@@ -1183,33 +1210,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MIbrvX9+nZ1H/KeaO77EehA3Yyc=
+			Z0mVgNbJnoK4NV617efN1RuUl6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			xj5t1wSfc7R5mrpon9mNnL48JyyYQNj0fZvnS8DM+Qw=
+			o11gW6JVES9I5S+UzNbjAINGJBTuXMPyJkoJu2Xgx3k=
 			</data>
 		</dict>
 		<key>Headers/SMPurchaseEventItemBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TgfoAynhrnBAa17Vb1nrYewaw6g=
+			FqBw5qxoxh4bJVnaIjfkNBgUYrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			idlP3hMkvKB+dhHUDFY+rfb1/6Rh9qPGQE5JSQQo9Ts=
+			V4Xr7ODZ8oqWQNsETKdFoI1ULLgzNv9eF9fVmpiyO+4=
+			</data>
+		</dict>
+		<key>Headers/SMPurchaseOfferResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q5ld1ImfGYXnweQjLO3ugrLF3Kk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bz/Zb1VBJ9qAJz9bM2NAiM72SmLliu6Xs7ndsXQg7kk=
 			</data>
 		</dict>
 		<key>Headers/SMReceipt.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BSG10M4uDYnzXAhlv3V/HzpN27o=
+			XQFPkS98TT8HxcQcJpFLdi+qL1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			g1Sq5yfs7/q9xdgFD8rz7PPaXTG2PbcAVE6yvWXTK40=
+			AcqNtuUKn4rpL/ha1hHtc/Qjbh9lmicKTbsuBstLqJM=
 			</data>
 		</dict>
 		<key>Headers/SMReceiptsManager.h</key>
@@ -1344,15 +1382,26 @@
 			KAcLlF3w7kN164H1DrnqR2KTkPqWtGxV2QQhNcX621A=
 			</data>
 		</dict>
+		<key>Headers/SMStoreOfferItem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vk0Vihzgd8ICOLWiCDokc6lKA9U=
+			</data>
+			<key>hash2</key>
+			<data>
+			tDcSUc6bc2RaSXNdqjx65cJojanKsF29CEURACiRbiA=
+			</data>
+		</dict>
 		<key>Headers/SMTransaction.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IHadeIjgOUqW5AV087rjPlZCows=
+			IfKTBKNp0A35fmkhdnHcLEQbO0k=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Z3AMiJhCdcgIiSJ+2CT+LotK3it8BwQmdxFRABHm5w=
+			zDtCRYrHqFIdV6A1vQL9GWa8SJV0SfloMSUDvHSJIzk=
 			</data>
 		</dict>
 		<key>Headers/SMTransactionsManager.h</key>
@@ -1386,6 +1435,17 @@
 			<key>hash2</key>
 			<data>
 			0Skv4CDW45KpG7+9h3R4/66cx0/6Yt3uQNH0mCp0jFo=
+			</data>
+		</dict>
+		<key>Headers/SMUserOfferItem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ALl7QweF1Q2yLPkGFPD/GytmIRg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dg3JPRCW21avHg5wACjKQ0LGT+cVkCrj90PslzAy4Yo=
 			</data>
 		</dict>
 		<key>Headers/SMUserTagsManager.h</key>
@@ -1425,22 +1485,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6BPWYSt8oj9psUzCyA8mzSiwpEc=
+			hNN3OLlbKDHTQM1T/jlkn8huKyw=
 			</data>
 			<key>hash2</key>
 			<data>
-			paYyu4IZPfoiq/e1h+vEQFGRVqktSLOTJ1+w+zf/aCM=
+			YYaTRW12VUZzlUmebLnsfFhtfPO6mhQFiNcwJY5+YJg=
 			</data>
 		</dict>
 		<key>Headers/SessionMFramework.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5mf98s/1FER7F3hAauGbBLsFblk=
+			TXPEEYDOZBYw9gkxFCaI+baYsvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			s43++HJnc43wlb34QWQhaAST8FgQEZDVbQ7D52radOg=
+			6EBkLLAXauGZbpOZfksM4TxMJss/gecvjyPesJPQbPI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1557,11 +1617,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mrxdAgFZsMGI7DraLIjulxJaVdo=
+			VBkC5L1AjKCSdH8YTS7fDIFyoZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			VXmCyv62RzSkwYS8KWLRp9Z4GFHkqA2zTnvDvkSC4g8=
+			MHoJDTqhxOqkytQo28bSouHxRBTFjeYj0cJOPEC0cLE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1570,11 +1630,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VBmiHrJcrF7ub/i7hKw0O0uJFfo=
+			NEp47csiR7Gldu5LGXQNV+iV1Zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EiEAlAnXuVtN/m3aNH0Sw/Vp3Ve821Sdj1s5mmwjk8s=
+			4iP2A8i67SfcVH1Q3eKTW7uHG00afd1slM05J+fFTa0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1583,11 +1643,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4AHSvqDmAJ0LtW3Cp1MwTn3Zc1U=
+			3gizJwL3212c5IHDUotIWrmmEX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3StaLmDEIuxsWhlQABZ6qxgFduwJnLx8Q3o6JMhTMhg=
+			HoBQyqn0BmJukVCpvREhmrOa66C6UM3sRFFjk1Apem8=
 			</data>
 			<key>optional</key>
 			<true/>

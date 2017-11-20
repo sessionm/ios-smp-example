@@ -63,10 +63,16 @@ typedef NS_ENUM (NSInteger, SMContentState) {
  */
 @property(nonatomic, assign, readonly) SMContentState state;
 /*!
- @property descriptionText
+ @property details
  @abstract Content description.
  */
-@property(nullable, nonatomic, strong, readonly) NSString *descriptionText;
+@property(nullable, nonatomic, strong, readonly) NSString *details;
+/*!
+ @property descriptionText
+ @abstract Content description.
+ @deprecated This property has been deprecated - use @link details @/link instead.
+ */
+@property(nullable, nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property weight
  @abstract Developer-defined numerical value that can be used to sort contents.

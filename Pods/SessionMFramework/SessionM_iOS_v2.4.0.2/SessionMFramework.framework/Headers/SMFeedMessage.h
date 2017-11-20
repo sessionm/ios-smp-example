@@ -86,10 +86,16 @@ typedef NS_ENUM(NSInteger, SMMessageActionType) {
  */
 @property(nullable, nonatomic, strong, readonly) NSString *subheader;
 /*!
- @property descriptionText
+ @property details
  @abstract Message text.
  */
-@property(nonatomic, strong, readonly) NSString *descriptionText;
+@property(nonatomic, strong, readonly) NSString *details;
+/*!
+ @property descriptionText
+ @abstract Message text.
+ @deprecated This property has been deprecated - use @link details @/link instead.
+ */
+@property(nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property iconURL
  @abstract URL for icon displayed in @link //apple_ref/occ/cl/SMActivityFeedViewCell @/link instance.

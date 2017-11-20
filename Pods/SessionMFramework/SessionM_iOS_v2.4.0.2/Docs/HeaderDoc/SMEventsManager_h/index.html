@@ -1,0 +1,474 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMEventsManager.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMEventsManager.h;   name=SMEventsManager.h -->
+<a name="//apple_ref/doc/header/SMEventsManager.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMEventsManager.h">SMEventsManager.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../SMActivityEventBuilder_h/index.html#//apple_ref/doc/header/SMActivityEventBuilder.h" logicalPath="//apple_ref/doc/header/SMActivityEventBuilder.h" target="_top">"SMActivityEventBuilder.h"</a><br><a machinegenerated="true" href="../SMActivityEventItemBuilder_h/index.html#//apple_ref/doc/header/SMActivityEventItemBuilder.h" logicalPath="//apple_ref/doc/header/SMActivityEventItemBuilder.h" target="_top">"SMActivityEventItemBuilder.h"</a><br><a machinegenerated="true" href="../SMBehaviorProgressFetchedResponse_h/index.html#//apple_ref/doc/header/SMBehaviorProgressFetchedResponse.h" logicalPath="//apple_ref/doc/header/SMBehaviorProgressFetchedResponse.h" target="_top">"SMBehaviorProgressFetchedResponse.h"</a><br><a machinegenerated="true" href="../SMEventPostedResponse_h/index.html#//apple_ref/doc/header/SMEventPostedResponse.h" logicalPath="//apple_ref/doc/header/SMEventPostedResponse.h" target="_top">"SMEventPostedResponse.h"</a><br><a machinegenerated="true" href="../SMError_h/index.html#//apple_ref/doc/header/SMError.h" logicalPath="//apple_ref/doc/header/SMError.h" target="_top">"SMError.h"</a><br><a machinegenerated="true" href="../SMPurchaseEventBuilder_h/index.html#//apple_ref/doc/header/SMPurchaseEventBuilder.h" logicalPath="//apple_ref/doc/header/SMPurchaseEventBuilder.h" target="_top">"SMPurchaseEventBuilder.h"</a><br><a machinegenerated="true" href="../SMPurchaseEventItemBuilder_h/index.html#//apple_ref/doc/header/SMPurchaseEventItemBuilder.h" logicalPath="//apple_ref/doc/header/SMPurchaseEventItemBuilder.h" target="_top">"SMPurchaseEventItemBuilder.h"</a><br><a machinegenerated="true" href="../SMSimpleEventBuilder_h/index.html#//apple_ref/doc/header/SMSimpleEventBuilder.h" logicalPath="//apple_ref/doc/header/SMSimpleEventBuilder.h" target="_top">"SMSimpleEventBuilder.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMEventsManager.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMEventsManager.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">Classes</h2>
+<dl>
+<dt><tt><a href="Classes/SMEventsManager/index.html#//apple_ref/occ/cl/SMEventsManager" target="_top">SMEventsManager</a></tt></dt>
+<dd><p>This API manager contains methods for interacting with action items that the user can perform to participate in application-specific campaigns and incentives.
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_functions"></a>
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108" target="_top">NS_SWIFT_NAME</a></tt></dt>
+<dd><p>Notifies observers that an event was posted to the SessionM Platform.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME(eventsRequestFailureNotification)</a></tt></dt>
+<dd><p>Notifies observers that an Events API request failed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107" target="_top">NS_SWIFT_NAME(fetchedBehaviorProgressNotification)</a></tt></dt>
+<dd><p>Notifies observers that the user's behavior progress updates were fetched.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108"></a>
+<h3><a name="NS_SWIFT_NAME">NS_SWIFT_NAME</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that an event was posted to the SessionM Platform.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION //apple_ref/c/tdef/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION //apple_ref/c/tag/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION //apple_ref/c/struct/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION //apple_ref/c/intf/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION //apple_ref/doc/anysymbol/SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION" machineGenerated="true" --><span class="type">SM_EVENTS_MANAGER_DID_POST_EVENT_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">postedEventNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=start --><p>An <a href="../SMEventPostedResponse_h/Classes/SMEventPostedResponse/index.html#//apple_ref/occ/cl/SMEventPostedResponse" logicalPath="//apple_ref/occ/cl/SMEventPostedResponse" target="_top">SMEventPostedResponse</a> object can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_108;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME"></a>
+<h3><a name="NS_SWIFT_NAME(eventsRequestFailureNotification)">NS_SWIFT_NAME(eventsRequestFailureNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that an Events API request failed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/tdef/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/tag/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/struct/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/intf/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/doc/anysymbol/SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION" machineGenerated="true" --><span class="type">SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">eventsRequestFailureNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><p>An <a href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top">SMError</a> object containing information about why the request failed can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_ERROR_KEY" -->SM_MANAGER_NOTIFICATION_ERROR_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107"></a>
+<h3><a name="NS_SWIFT_NAME(fetchedBehaviorProgressNotification)">NS_SWIFT_NAME(fetchedBehaviorProgressNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that the user's behavior progress updates were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION //apple_ref/c/tdef/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION //apple_ref/c/tag/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION //apple_ref/c/struct/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION //apple_ref/c/intf/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION //apple_ref/doc/anysymbol/SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION" machineGenerated="true" --><span class="type">SM_EVENTS_MANAGER_DID_FETCH_BEHAVIOR_PROGRESS_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">fetchedBehaviorProgressNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=start --><p>An <a href="../SMBehaviorProgressFetchedResponse_h/Classes/SMBehaviorProgressFetchedResponse/index.html#//apple_ref/occ/cl/SMBehaviorProgressFetchedResponse" logicalPath="//apple_ref/occ/cl/SMBehaviorProgressFetchedResponse" target="_top">SMBehaviorProgressFetchedResponse</a> object can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_107;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler" target="_top">FetchBehaviorProgressCompletionHandler</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/tdef/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/tag/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/struct/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intf/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/econst/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/data/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/clconst/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/instm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/clm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intfcm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intfm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/func/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/ftmplt/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/defn/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/macro/fetchBehaviorProgressWithCompletionHandler: //apple_ref/doc/com/intfm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/doc/anysymbol/fetchBehaviorProgressWithCompletionHandler:" -->fetchBehaviorProgressWithCompletionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></tt></dt>
+<dd>
+<p>Event type.
+</p>
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/PostEventCompletionHandler" target="_top">PostEventCompletionHandler</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/postEvent:completionHandler: //apple_ref/c/tdef/postEvent:completionHandler: //apple_ref/c/tag/postEvent:completionHandler: //apple_ref/c/struct/postEvent:completionHandler: //apple_ref/c/intf/postEvent:completionHandler: //apple_ref/c/econst/postEvent:completionHandler: //apple_ref/c/data/postEvent:completionHandler: //apple_ref/c/clconst/postEvent:completionHandler: //apple_ref/c/instm/postEvent:completionHandler: //apple_ref/c/clm/postEvent:completionHandler: //apple_ref/c/intfcm/postEvent:completionHandler: //apple_ref/c/intfm/postEvent:completionHandler: //apple_ref/c/func/postEvent:completionHandler: //apple_ref/c/ftmplt/postEvent:completionHandler: //apple_ref/c/defn/postEvent:completionHandler: //apple_ref/c/macro/postEvent:completionHandler: //apple_ref/doc/com/intfm/postEvent:completionHandler: //apple_ref/doc/anysymbol/postEvent:completionHandler:" -->postEvent:completionHandler:<!-- /a --> and <!-- a logicalPath="//apple_ref/c/cl/postEventFromBuilder:completionHandler: //apple_ref/c/tdef/postEventFromBuilder:completionHandler: //apple_ref/c/tag/postEventFromBuilder:completionHandler: //apple_ref/c/struct/postEventFromBuilder:completionHandler: //apple_ref/c/intf/postEventFromBuilder:completionHandler: //apple_ref/c/econst/postEventFromBuilder:completionHandler: //apple_ref/c/data/postEventFromBuilder:completionHandler: //apple_ref/c/clconst/postEventFromBuilder:completionHandler: //apple_ref/c/instm/postEventFromBuilder:completionHandler: //apple_ref/c/clm/postEventFromBuilder:completionHandler: //apple_ref/c/intfcm/postEventFromBuilder:completionHandler: //apple_ref/c/intfm/postEventFromBuilder:completionHandler: //apple_ref/c/func/postEventFromBuilder:completionHandler: //apple_ref/c/ftmplt/postEventFromBuilder:completionHandler: //apple_ref/c/defn/postEventFromBuilder:completionHandler: //apple_ref/c/macro/postEventFromBuilder:completionHandler: //apple_ref/doc/com/intfm/postEventFromBuilder:completionHandler: //apple_ref/doc/anysymbol/postEventFromBuilder:completionHandler:" -->postEventFromBuilder:completionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/doc/title:tdef/SMEventType" target="_top">SMEventType</a></tt></dt>
+<dd>
+<p>Event type.
+</p>
+</dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler;   name=FetchBehaviorProgressCompletionHandler --><a name="//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler"></a>
+<h3><a name="FetchBehaviorProgressCompletionHandler">FetchBehaviorProgressCompletionHandler</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/tdef/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/tag/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/struct/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intf/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/econst/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/data/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/clconst/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/instm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/clm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intfcm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/intfm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/func/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/ftmplt/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/defn/fetchBehaviorProgressWithCompletionHandler: //apple_ref/c/macro/fetchBehaviorProgressWithCompletionHandler: //apple_ref/doc/com/intfm/fetchBehaviorProgressWithCompletionHandler: //apple_ref/doc/anysymbol/fetchBehaviorProgressWithCompletionHandler:" -->fetchBehaviorProgressWithCompletionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler" logicalPath="//apple_ref/c/instm/FetchBehaviorProgressCompletionHandler //apple_ref/c/clm/FetchBehaviorProgressCompletionHandler //apple_ref/c/intfcm/FetchBehaviorProgressCompletionHandler //apple_ref/c/intfm/FetchBehaviorProgressCompletionHandler //apple_ref/c/func/FetchBehaviorProgressCompletionHandler //apple_ref/c/ftmplt/FetchBehaviorProgressCompletionHandler //apple_ref/c/defn/FetchBehaviorProgressCompletionHandler //apple_ref/c/macro/FetchBehaviorProgressCompletionHandler //apple_ref/doc/anysymbol/FetchBehaviorProgressCompletionHandler" target="_top"><span class="function">FetchBehaviorProgressCompletionHandler</span></a>)(
+    <a machinegenerated="true" href="../SMBehaviorProgressFetchedResponse_h/Classes/SMBehaviorProgressFetchedResponse/index.html#//apple_ref/occ/cl/SMBehaviorProgressFetchedResponse" logicalPath="//apple_ref/c/cl/SMBehaviorProgressFetchedResponse //apple_ref/c/tdef/SMBehaviorProgressFetchedResponse //apple_ref/c/tag/SMBehaviorProgressFetchedResponse //apple_ref/c/struct/SMBehaviorProgressFetchedResponse //apple_ref/c/intf/SMBehaviorProgressFetchedResponse //apple_ref/doc/anysymbol/SMBehaviorProgressFetchedResponse" target="_top"><span class="type">SMBehaviorProgressFetchedResponse</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">response</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/c/cl/SMError //apple_ref/c/tdef/SMError //apple_ref/c/tag/SMError //apple_ref/c/struct/SMError //apple_ref/c/intf/SMError //apple_ref/doc/anysymbol/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/FetchBehaviorProgressCompletionHandler;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/NSInteger;   name=NSInteger --><a name="//apple_ref/c/tdef/NSInteger"></a>
+<h3><a name="NSInteger">NSInteger</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=start --><!-- begin abstract --></p>
+<p>Event type.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/NSInteger;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMEventType //apple_ref/c/data/SMEventType //apple_ref/c/clconst/SMEventType " machineGenerated="true" --><span class="var">SMEventType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeUnknown" logicalPath="//apple_ref/c/cl/SMEventTypeUnknown //apple_ref/c/tdef/SMEventTypeUnknown //apple_ref/c/tag/SMEventTypeUnknown //apple_ref/c/struct/SMEventTypeUnknown //apple_ref/c/intf/SMEventTypeUnknown //apple_ref/doc/anysymbol/SMEventTypeUnknown" target="_top"><span class="type">SMEventTypeUnknown</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeActivity" logicalPath="//apple_ref/c/cl/SMEventTypeActivity //apple_ref/c/tdef/SMEventTypeActivity //apple_ref/c/tag/SMEventTypeActivity //apple_ref/c/struct/SMEventTypeActivity //apple_ref/c/intf/SMEventTypeActivity //apple_ref/doc/anysymbol/SMEventTypeActivity" target="_top"><span class="type">SMEventTypeActivity</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">activity</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypePurchase" logicalPath="//apple_ref/c/cl/SMEventTypePurchase //apple_ref/c/tdef/SMEventTypePurchase //apple_ref/c/tag/SMEventTypePurchase //apple_ref/c/struct/SMEventTypePurchase //apple_ref/c/intf/SMEventTypePurchase //apple_ref/doc/anysymbol/SMEventTypePurchase" target="_top"><span class="type">SMEventTypePurchase</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">purchase</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeLocation" logicalPath="//apple_ref/c/cl/SMEventTypeLocation //apple_ref/c/tdef/SMEventTypeLocation //apple_ref/c/tag/SMEventTypeLocation //apple_ref/c/struct/SMEventTypeLocation //apple_ref/c/intf/SMEventTypeLocation //apple_ref/doc/anysymbol/SMEventTypeLocation" target="_top"><span class="type">SMEventTypeLocation</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">location</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/NSInteger;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/SMEventTypeUnknown"><code>SMEventTypeUnknown</code></a></dt>
+<dd><p>Event type is unknown.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMEventTypeActivity"><code>SMEventTypeActivity</code></a></dt>
+<dd><p>Basic event.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMEventTypePurchase"><code>SMEventTypePurchase</code></a></dt>
+<dd><p>Event that uses purchase metadata such as product SKUs.</p></dd>
+<dt><a name="//apple_ref/c/econst/SMEventTypeLocation"><code>SMEventTypeLocation</code></a></dt>
+<dd><p>Event that uses location metadata such as geofence data or user coordinates.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/doc/title:tdef/SMEventType" logicalPath="//apple_ref/doc/title:tdef/SMEventType" target="_top">SMEventType</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/PostEventCompletionHandler;   name=PostEventCompletionHandler --><a name="//apple_ref/c/tdef/PostEventCompletionHandler"></a>
+<h3><a name="PostEventCompletionHandler">PostEventCompletionHandler</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/PostEventCompletionHandler;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/postEvent:completionHandler: //apple_ref/c/tdef/postEvent:completionHandler: //apple_ref/c/tag/postEvent:completionHandler: //apple_ref/c/struct/postEvent:completionHandler: //apple_ref/c/intf/postEvent:completionHandler: //apple_ref/c/econst/postEvent:completionHandler: //apple_ref/c/data/postEvent:completionHandler: //apple_ref/c/clconst/postEvent:completionHandler: //apple_ref/c/instm/postEvent:completionHandler: //apple_ref/c/clm/postEvent:completionHandler: //apple_ref/c/intfcm/postEvent:completionHandler: //apple_ref/c/intfm/postEvent:completionHandler: //apple_ref/c/func/postEvent:completionHandler: //apple_ref/c/ftmplt/postEvent:completionHandler: //apple_ref/c/defn/postEvent:completionHandler: //apple_ref/c/macro/postEvent:completionHandler: //apple_ref/doc/com/intfm/postEvent:completionHandler: //apple_ref/doc/anysymbol/postEvent:completionHandler:" -->postEvent:completionHandler:<!-- /a --> and <!-- a logicalPath="//apple_ref/c/cl/postEventFromBuilder:completionHandler: //apple_ref/c/tdef/postEventFromBuilder:completionHandler: //apple_ref/c/tag/postEventFromBuilder:completionHandler: //apple_ref/c/struct/postEventFromBuilder:completionHandler: //apple_ref/c/intf/postEventFromBuilder:completionHandler: //apple_ref/c/econst/postEventFromBuilder:completionHandler: //apple_ref/c/data/postEventFromBuilder:completionHandler: //apple_ref/c/clconst/postEventFromBuilder:completionHandler: //apple_ref/c/instm/postEventFromBuilder:completionHandler: //apple_ref/c/clm/postEventFromBuilder:completionHandler: //apple_ref/c/intfcm/postEventFromBuilder:completionHandler: //apple_ref/c/intfm/postEventFromBuilder:completionHandler: //apple_ref/c/func/postEventFromBuilder:completionHandler: //apple_ref/c/ftmplt/postEventFromBuilder:completionHandler: //apple_ref/c/defn/postEventFromBuilder:completionHandler: //apple_ref/c/macro/postEventFromBuilder:completionHandler: //apple_ref/doc/com/intfm/postEventFromBuilder:completionHandler: //apple_ref/doc/anysymbol/postEventFromBuilder:completionHandler:" -->postEventFromBuilder:completionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/PostEventCompletionHandler;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/PostEventCompletionHandler;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/PostEventCompletionHandler" logicalPath="//apple_ref/c/instm/PostEventCompletionHandler //apple_ref/c/clm/PostEventCompletionHandler //apple_ref/c/intfcm/PostEventCompletionHandler //apple_ref/c/intfm/PostEventCompletionHandler //apple_ref/c/func/PostEventCompletionHandler //apple_ref/c/ftmplt/PostEventCompletionHandler //apple_ref/c/defn/PostEventCompletionHandler //apple_ref/c/macro/PostEventCompletionHandler //apple_ref/doc/anysymbol/PostEventCompletionHandler" target="_top"><span class="function">PostEventCompletionHandler</span></a>)(
+    <a machinegenerated="true" href="../SMEventPostedResponse_h/Classes/SMEventPostedResponse/index.html#//apple_ref/occ/cl/SMEventPostedResponse" logicalPath="//apple_ref/c/cl/SMEventPostedResponse //apple_ref/c/tdef/SMEventPostedResponse //apple_ref/c/tag/SMEventPostedResponse //apple_ref/c/struct/SMEventPostedResponse //apple_ref/c/intf/SMEventPostedResponse //apple_ref/doc/anysymbol/SMEventPostedResponse" target="_top"><span class="type">SMEventPostedResponse</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">response</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/c/cl/SMError //apple_ref/c/tdef/SMError //apple_ref/c/tag/SMError //apple_ref/c/struct/SMError //apple_ref/c/intf/SMError //apple_ref/doc/anysymbol/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/PostEventCompletionHandler;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=title:tdef;  uid=//apple_ref/doc/title:tdef/SMEventType;   name=SMEventType --><a name="//apple_ref/doc/title:tdef/SMEventType"></a>
+<h3><a name="SMEventType">SMEventType</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMEventType;name=start --><!-- begin abstract --></p>
+<p>Event type.
+</p>
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/title:tdef/SMEventType;name=end -->
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMEventType;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/instm/NS_ENUM //apple_ref/c/clm/NS_ENUM //apple_ref/c/intfcm/NS_ENUM //apple_ref/c/intfm/NS_ENUM //apple_ref/c/func/NS_ENUM //apple_ref/c/ftmplt/NS_ENUM //apple_ref/c/defn/NS_ENUM //apple_ref/c/macro/NS_ENUM //apple_ref/doc/anysymbol/NS_ENUM" machineGenerated="true" --><span class="function">NS_ENUM</span><!-- /a --> (<!-- a logicalPath="//apple_ref/c/econst/NSInteger //apple_ref/c/data/NSInteger //apple_ref/c/clconst/NSInteger " machineGenerated="true" --><span class="var">NSInteger</span><!-- /a -->, <!-- a logicalPath="//apple_ref/c/econst/SMEventType //apple_ref/c/data/SMEventType //apple_ref/c/clconst/SMEventType " machineGenerated="true" --><span class="var">SMEventType</span><!-- /a -->) { 
+    <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeUnknown" logicalPath="//apple_ref/c/cl/SMEventTypeUnknown //apple_ref/c/tdef/SMEventTypeUnknown //apple_ref/c/tag/SMEventTypeUnknown //apple_ref/c/struct/SMEventTypeUnknown //apple_ref/c/intf/SMEventTypeUnknown //apple_ref/doc/anysymbol/SMEventTypeUnknown" target="_top"><span class="type">SMEventTypeUnknown</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">unknown</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeActivity" logicalPath="//apple_ref/c/cl/SMEventTypeActivity //apple_ref/c/tdef/SMEventTypeActivity //apple_ref/c/tag/SMEventTypeActivity //apple_ref/c/struct/SMEventTypeActivity //apple_ref/c/intf/SMEventTypeActivity //apple_ref/doc/anysymbol/SMEventTypeActivity" target="_top"><span class="type">SMEventTypeActivity</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">activity</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypePurchase" logicalPath="//apple_ref/c/cl/SMEventTypePurchase //apple_ref/c/tdef/SMEventTypePurchase //apple_ref/c/tag/SMEventTypePurchase //apple_ref/c/struct/SMEventTypePurchase //apple_ref/c/intf/SMEventTypePurchase //apple_ref/doc/anysymbol/SMEventTypePurchase" target="_top"><span class="type">SMEventTypePurchase</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">purchase</span>), <a machinegenerated="true" href="index.html#//apple_ref/doc/title:econst/SMEventTypeLocation" logicalPath="//apple_ref/c/cl/SMEventTypeLocation //apple_ref/c/tdef/SMEventTypeLocation //apple_ref/c/tag/SMEventTypeLocation //apple_ref/c/struct/SMEventTypeLocation //apple_ref/c/intf/SMEventTypeLocation //apple_ref/doc/anysymbol/SMEventTypeLocation" target="_top"><span class="type">SMEventTypeLocation</span></a> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+        <span class="param">location</span>) 
+};  <!-- headerDoc=declaration;uid=//apple_ref/doc/title:tdef/SMEventType;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/doc/title:econst/SMEventTypeUnknown"><code>SMEventTypeUnknown</code></a></dt>
+<dd><p>Event type is unknown.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMEventTypeActivity"><code>SMEventTypeActivity</code></a></dt>
+<dd><p>Basic event.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMEventTypePurchase"><code>SMEventTypePurchase</code></a></dt>
+<dd><p>Event that uses purchase metadata such as product SKUs.</p></dd>
+<dt><a name="//apple_ref/doc/title:econst/SMEventTypeLocation"><code>SMEventTypeLocation</code></a></dt>
+<dd><p>Event that uses location metadata such as geofence data or user coordinates.</p></dd>
+</dl>
+</div>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/c/tdef/NSInteger" target="_top">NSInteger</a></p></dt>
+<dd></dd>
+</dl></div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

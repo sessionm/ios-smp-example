@@ -49,10 +49,16 @@ typedef NS_ENUM(NSInteger, SMReceiptStatus) {
  */
 @property(nullable, nonatomic, strong, readonly) NSString *name;
 /*!
- @property descriptionText
+ @property details
  @abstract Item description.
  */
-@property(nullable, nonatomic, strong, readonly) NSString *descriptionText;
+@property(nullable, nonatomic, strong, readonly) NSString *details;
+/*!
+ @property descriptionText
+ @abstract Item description.
+ @deprecated This property has been deprecated - use @link details @/link instead.
+ */
+@property(nullable, nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property price
  @abstract Individual item price.

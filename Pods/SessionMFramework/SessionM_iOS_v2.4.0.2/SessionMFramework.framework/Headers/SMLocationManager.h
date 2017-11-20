@@ -41,17 +41,17 @@ extern NSString *const SMLocationManagerLocationServicesDisabled NS_SWIFT_NAME(d
  */
 extern NSString *const SMLocationManagerMonitorRegionsDidFailWithErrorNotification NS_SWIFT_NAME(regionMonitoringFailureNotification);
 /*!
- @const SMLocationManagerAlwaysOnLocationServicesDisabled
- @abstract This notification is sent when region monitoring fails due to not having always on permission.
- @discussion When this notification is recieved, region monitoring did not start because always on permission was not granted. Simply call @link startGeofenceService @/link to try again. The notification's <code>userInfo</code> will have the <code>\@"error"</code> key set to the error.
+ @const SMLocationManagerWhenInUseLocationServicesDisabled
+ @abstract This notification is sent when region monitoring fails due to not having "when in use" permission.
+ @discussion When this notification is recieved, region monitoring did not start because "when in use" permission was not granted. Simply call @link startGeofenceService @/link to try again. The notification's <code>userInfo</code> will have the <code>\@"error"</code> key set to the error.
  */
-extern NSString *const SMLocationManagerAlwaysOnLocationServicesDisabled NS_SWIFT_NAME(disabledAlwaysOnLocationServicesNotification);
+extern NSString *const SMLocationManagerWhenInUseLocationServicesDisabled NS_SWIFT_NAME(disabledWhenInUseLocationServicesNotification);
 
 /*!
  @const SMLocationManagerMonitoredEventLimit
  @abstract The default maximum size for the amount of monitored location events in the @link locationEvents @/link array.
  */
-extern NSUInteger const SMLocationManagerMonitoredEventLimit NS_SWIFT_NAME(monitoredEventLimit);
+extern NSInteger const SMLocationManagerMonitoredEventLimit NS_SWIFT_NAME(monitoredEventLimit);
 
 /*!
  @const SMLocationManagerDidUpdateGeoLocations
@@ -89,12 +89,12 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @property isLocationServiceStarted
  @abstract <code>BOOL</code> indicating whether location updates have started or not.
  */
-@property(nonatomic, readonly) BOOL isLocationServiceStarted;
+@property(nonatomic, assign, readonly) BOOL isLocationServiceStarted;
 /*!
  @property isGeofenceServiceStarted
  @abstract <code>BOOL</code> indicating whether geofence updates have started or not.
  */
-@property(nonatomic, readonly) BOOL isGeofenceServiceStarted;
+@property(nonatomic, assign, readonly) BOOL isGeofenceServiceStarted;
 /*!
  @property currentGeoLocation
  @abstract Most current CLLocation returned by location services.
@@ -105,33 +105,47 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @abstract Currently monitored events that can be triggered by entering or exiting a geofence.
  */
 @property(nullable, nonatomic, strong, readonly) NSArray<SMLocationEvent *> *locationEvents;
+/*!
+ @property eventLimit
+ @abstract The maximum size for the amount of monitored location events in the @link locationEvents @/link array (default value is @link SMLocationManagerMonitoredEventLimit @/link).
+ @discussion Note: the recommended and default value is <code>50</code>. Using large values can result in out-of-memory exceptions.
+ */
+@property(nonatomic, assign, readwrite) NSInteger eventLimit;
 
 /*!
  @abstract Returns singleton <code>SMLocationManger</code> service instance with a monitored location event limit of @link SMLocationManagerMonitoredEventLimit @/link.
  @result <code>SMLocationManger</code> service object.
  */
 + (SMLocationManager *)sharedInstance;
+
 /*!
- @abstract In your application delegate's <code>application:didFinishLaunchingWithOptions:</code> method, call this method to start location services.
+ @abstract Starts location updates.
  */
 + (void)registerLocationService;
 /*!
- @abstract In your application delegate's <code>application:didFinishLaunchingWithOptions:</code> method, call this method to start geofence services.
+ @abstract Starts region monitoring.
  */
 + (void)registerGeofenceService;
+
 /*!
- @abstract Starts location/Geofence services.
- @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will start location updates. If permission is denied a @link SMLocationManagerLocationServicesDisabled @/link notification will be fired. This method looks for the Cocoa Key <code>NSLocationAlwaysUsageDescription</code> to determine whether to start always-on or while-in-use monitoring.
+ @abstract Starts location updates.
+ @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will start location updates. If permission is denied a @link SMLocationManagerLocationServicesDisabled @/link notification will be fired.
  */
 - (void)startLocationService;
 /*!
- @abstract Stops location/Geofence services.
+ @abstract Stops location updates.
  @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will stop location updates. This does not clear monitored regions that persist across app launches.
  */
 - (void)stopLocationService;
+
+/*!
+ @abstract Starts region monitoring.
+ @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will start monitoring regions.
+ */
+- (void)startGeofenceService;
 /*!
  @abstract Refreshes region monitoring based on SessionM Platform portal configurations.
- @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will refresh monitoring regions based on configurations setup by the developer in the SessionM Platform portal. Regions monitored persist across app launches and are only cleared via @link stopGeofenceService @/link. Requires always-on location permission to work.
+ @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will refresh monitoring regions based on configurations setup by the developer in the SessionM Platform portal. Regions monitored persist across app launches and are only cleared via @link stopGeofenceService @/link.
  */
 - (void)refreshGeofenceService;
 /*!
@@ -139,11 +153,6 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will stop monitoring all regions.
  */
 - (void)stopGeofenceService;
-/*!
- @abstract Start all region monitoring.
- @discussion This call made on the <code>[SMLocationManager sharedInstance]</code> object will stop monitoring all regions.
- */
-- (void)startGeofenceService;
 
 @end
 

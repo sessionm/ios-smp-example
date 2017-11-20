@@ -106,10 +106,16 @@ typedef NS_ENUM(NSInteger, SMOrderStatus) {
  */
 @property(nullable, nonatomic, strong, readonly) NSString *logoURL;
 /*!
- @property descriptionText
+ @property details
  @abstract Description of offer redeemed in the order.
  */
-@property(nullable, nonatomic, strong, readonly) NSString *descriptionText;
+@property(nullable, nonatomic, strong, readonly) NSString *details;
+/*!
+ @property descriptionText
+ @abstract Description of offer redeemed in the order.
+ @deprecated This property has been deprecated - use @link details @/link instead.@deprecated This property has been deprecated - use @link details @/link instead.
+ */
+@property(nullable, nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property shippingAddress
  @abstract Where physical items will be shipped after the order is processed.

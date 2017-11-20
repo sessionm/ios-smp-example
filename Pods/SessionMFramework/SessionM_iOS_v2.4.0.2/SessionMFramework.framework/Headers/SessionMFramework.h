@@ -104,21 +104,25 @@
 #import "SMMessagesManager.h"
 #import "SMNotificationMessage.h"
 
+// Offers
+#import "SMClaimedOfferItem.h"
+#import "SMClaimUserOfferResponse.h"
+#import "SMFetchStoreOffersResponse.h"
+#import "SMFetchUserOffersResponse.h"
+#import "SMOfferCategory.h"
+#import "SMOfferGroup.h"
+#import "SMOfferItem.h"
+#import "SMOfferMedia.h"
+#import "SMOfferResponse.h"
+#import "SMOffersManager.h"
+#import "SMPurchaseOfferResponse.h"
+#import "SMStoreOfferItem.h"
+#import "SMUserOfferItem.h"
+
 // Places
 #import "SMPlace.h"
 #import "SMPlaceCheckinResult.h"
 #import "SMPlacesManager.h"
-
-// Point of Sale
-#import "CLLBaseItem.h"
-#import "CLLConnectManager.h"
-#import "CLLMedia.h"
-#import "CLLPurchasedReward.h"
-#import "CLLPurchaseRewardResponse.h"
-#import "CLLRecordBase.h"
-#import "CLLRewardItemType.h"
-#import "CLLRewardsResponse.h"
-#import "CLLUserAccount.h"
 
 // Receipts
 #import "SMReceipt.h"

@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMPlacesDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=intf; uid=//apple_ref/occ/intf/SMPlacesDelegate;  name=SMPlacesDelegate-->
+<a name="//apple_ref/occ/intf/SMPlacesDelegate"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMPlacesDelegate">SMPlacesDelegate</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Extends&nbsp;Protocol:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../../../SMBaseDelegate_h/Protocols/SMBaseDelegate/index.html#//apple_ref/occ/intf/SMBaseDelegate" logicalPath="//apple_ref/occ/intf/SMBaseDelegate" target="_top">SMBaseDelegate</a></div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMPlacesManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMPlacesManager.h">SMPlacesManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMPlacesDelegate;name=start --><!-- begin abstract --></p>
+<p>Defines callbacks for <a href="../../Classes/SMPlacesManager/index.html#//apple_ref/occ/cl/SMPlacesManager" logicalPath="//apple_ref/occ/cl/SMPlacesManager" target="_top">SMPlacesManager</a> methods.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMPlacesDelegate;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:" target="_top">-didCheckIn:result:</a></tt></dt>
+<dd><p>Notifies delegate that a place was checked into.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:" target="_top">-didFetchPlaces:_:</a></tt></dt>
+<dd><p>Notifies delegate that places available for check in were fetched.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:;   name=SMPlacesDelegate::didCheckIn:result: --><a name="//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:"></a>
+<h3><a name="didCheckIn:result:">didCheckIn:result:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that a place was checked into.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:" logicalPath="//apple_ref/occ/instm/SMPlacesDelegate/didCheckIn //apple_ref/occ/clm/SMPlacesDelegate/didCheckIn //apple_ref/occ/intfcm/SMPlacesDelegate/didCheckIn //apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn" target="_top"><span class="function">didCheckIn</span></a>:(<a machinegenerated="true" href="../../../SMPlaceCheckinResult_h/Classes/SMPlaceCheckinResult/index.html#//apple_ref/occ/cl/SMPlaceCheckinResult" logicalPath="//apple_ref/occ/cl/SMPlaceCheckinResult" target="_top"><span class="type">SMPlaceCheckinResult</span></a> <span class="type">*</span>)<span class="param">result</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didCheckIn(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMPlacesDelegate/didCheckIn:result:/result" logicalPath="//apple_ref/occ/instm/SMPlacesDelegate/result //apple_ref/occ/clm/SMPlacesDelegate/result //apple_ref/occ/intfcm/SMPlacesDelegate/result //apple_ref/occ/intfm/SMPlacesDelegate/result //apple_ref/occ/func/result //apple_ref/occ/ftmplt/SMPlacesDelegate/result //apple_ref/occ/defn/result //apple_ref/occ/macro/result //apple_ref/doc/anysymbol/result" target="_top"><span class="function">result</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMPlacesDelegate/didCheckIn:result:/result;   name=didCheckIn:result:::result -->
+<a name="//apple_ref/doc/methodparam/SMPlacesDelegate/didCheckIn:result:/result"></a>
+<code>result</code>
+</dt>
+<dd><p>The checkin result.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/checkInPlace: //apple_ref/occ/tdef/checkInPlace: //apple_ref/occ/tag/checkInPlace: //apple_ref/occ/struct/checkInPlace: //apple_ref/occ/intf/checkInPlace: //apple_ref/occ/econst/checkInPlace: //apple_ref/occ/data/checkInPlace: //apple_ref/occ/clconst/checkInPlace: //apple_ref/occ/instm/checkInPlace: //apple_ref/occ/clm/checkInPlace: //apple_ref/occ/intfcm/checkInPlace: //apple_ref/occ/intfm/checkInPlace: //apple_ref/occ/func/checkInPlace: //apple_ref/occ/ftmplt/checkInPlace: //apple_ref/occ/defn/checkInPlace: //apple_ref/occ/macro/checkInPlace: //apple_ref/doc/com/intfm/checkInPlace: //apple_ref/doc/anysymbol/checkInPlace:" -->checkInPlace:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didCheckIn:result:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:;   name=SMPlacesDelegate::didFetchPlaces:_: --><a name="//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:"></a>
+<h3><a name="didFetchPlaces:_:">didFetchPlaces:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that places available for check in were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:" logicalPath="//apple_ref/occ/instm/SMPlacesDelegate/didFetchPlaces //apple_ref/occ/clm/SMPlacesDelegate/didFetchPlaces //apple_ref/occ/intfcm/SMPlacesDelegate/didFetchPlaces //apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces" target="_top"><span class="function">didFetchPlaces</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">SMPlace</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">places</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didFetchPlaces(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMPlacesDelegate/_ //apple_ref/occ/clm/SMPlacesDelegate/_ //apple_ref/occ/intfcm/SMPlacesDelegate/_ //apple_ref/occ/intfm/SMPlacesDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMPlacesDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMPlacesDelegate/didFetchPlaces:_:/places;   name=didFetchPlaces:_:::places -->
+<a name="//apple_ref/doc/methodparam/SMPlacesDelegate/didFetchPlaces:_:/places"></a>
+<code>places</code>
+</dt>
+<dd><p>Places available for check in.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/fetchPlacesAroundLocation: //apple_ref/occ/tdef/fetchPlacesAroundLocation: //apple_ref/occ/tag/fetchPlacesAroundLocation: //apple_ref/occ/struct/fetchPlacesAroundLocation: //apple_ref/occ/intf/fetchPlacesAroundLocation: //apple_ref/occ/econst/fetchPlacesAroundLocation: //apple_ref/occ/data/fetchPlacesAroundLocation: //apple_ref/occ/clconst/fetchPlacesAroundLocation: //apple_ref/occ/instm/fetchPlacesAroundLocation: //apple_ref/occ/clm/fetchPlacesAroundLocation: //apple_ref/occ/intfcm/fetchPlacesAroundLocation: //apple_ref/occ/intfm/fetchPlacesAroundLocation: //apple_ref/occ/func/fetchPlacesAroundLocation: //apple_ref/occ/ftmplt/fetchPlacesAroundLocation: //apple_ref/occ/defn/fetchPlacesAroundLocation: //apple_ref/occ/macro/fetchPlacesAroundLocation: //apple_ref/doc/com/intfm/fetchPlacesAroundLocation: //apple_ref/doc/anysymbol/fetchPlacesAroundLocation:" -->fetchPlacesAroundLocation:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/tdef/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/tag/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/struct/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/intf/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/econst/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/data/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/clconst/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/instm/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/clm/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/intfcm/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/intfm/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/func/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/ftmplt/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/defn/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/occ/macro/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/doc/com/intfm/fetchPlacesAroundLocation:withRadius:limit:adUnitID: //apple_ref/doc/anysymbol/fetchPlacesAroundLocation:withRadius:limit:adUnitID:" -->fetchPlacesAroundLocation:withRadius:limit:adUnitID:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMPlacesDelegate/didFetchPlaces:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

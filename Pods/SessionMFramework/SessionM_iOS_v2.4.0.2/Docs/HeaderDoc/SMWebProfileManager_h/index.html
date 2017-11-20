@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMWebProfileManager.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMWebProfileManager.h;   name=SMWebProfileManager.h -->
+<a name="//apple_ref/doc/header/SMWebProfileManager.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMWebProfileManager.h">SMWebProfileManager.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Foundation.h" machineGenerated="true" -->&lt;Foundation/Foundation.h&gt;<!-- /a --><br><!-- a logicalPath="//apple_ref/doc/header/UIViewController.h" machineGenerated="true" -->&lt;UIKit/UIViewController.h&gt;<!-- /a --><br><a machinegenerated="true" href="../SMError_h/index.html#//apple_ref/doc/header/SMError.h" logicalPath="//apple_ref/doc/header/SMError.h" target="_top">"SMError.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMWebProfileManager.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMWebProfileManager.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">Classes</h2>
+<dl>
+<dt><tt><a href="Classes/SMWebProfileManager/index.html#//apple_ref/occ/cl/SMWebProfileManager" target="_top">SMWebProfileManager</a></tt></dt>
+<dd><p>This API manager contains methods for viewing web pages relating to a user's profile (e.g. updating a user's account data, resetting a user's password, etc.).
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_functions"></a>
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME</a></tt></dt>
+<dd><p>Notifies observers that a User Web Profile API validation failed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME"></a>
+<h3><a name="NS_SWIFT_NAME">NS_SWIFT_NAME</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that a User Web Profile API validation failed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/tdef/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/tag/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/struct/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/intf/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/doc/anysymbol/SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION" machineGenerated="true" --><span class="type">SM_WEB_PROFILE_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">webProfileValidationFailureNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><p>An <a href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top">SMError</a> object containing information about why the validation failed can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_ERROR_KEY" -->SM_MANAGER_NOTIFICATION_ERROR_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/DismissalHandler" target="_top">DismissalHandler</a></tt></dt>
+<dd><p>Completion handler block type called after an instance of <code>SFSafariViewController</code> is dismissed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/PresentationHandler" target="_top">PresentationHandler</a></tt></dt>
+<dd><p>Completion handler block type called after an instance of <code>SFSafariViewController</code> is presented.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/DismissalHandler;   name=DismissalHandler --><a name="//apple_ref/c/tdef/DismissalHandler"></a>
+<h3><a name="DismissalHandler">DismissalHandler</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/DismissalHandler;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type called after an instance of <code>SFSafariViewController</code> is dismissed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/DismissalHandler;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/DismissalHandler;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/DismissalHandler" logicalPath="//apple_ref/c/instm/DismissalHandler //apple_ref/c/clm/DismissalHandler //apple_ref/c/intfcm/DismissalHandler //apple_ref/c/intfm/DismissalHandler //apple_ref/c/func/DismissalHandler //apple_ref/c/ftmplt/DismissalHandler //apple_ref/c/defn/DismissalHandler //apple_ref/c/macro/DismissalHandler //apple_ref/doc/anysymbol/DismissalHandler" target="_top"><span class="function">DismissalHandler</span></a>)();  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/DismissalHandler;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/PresentationHandler;   name=PresentationHandler --><a name="//apple_ref/c/tdef/PresentationHandler"></a>
+<h3><a name="PresentationHandler">PresentationHandler</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/PresentationHandler;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type called after an instance of <code>SFSafariViewController</code> is presented.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/PresentationHandler;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/PresentationHandler;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/PresentationHandler" logicalPath="//apple_ref/c/instm/PresentationHandler //apple_ref/c/clm/PresentationHandler //apple_ref/c/intfcm/PresentationHandler //apple_ref/c/intfm/PresentationHandler //apple_ref/c/func/PresentationHandler //apple_ref/c/ftmplt/PresentationHandler //apple_ref/c/defn/PresentationHandler //apple_ref/c/macro/PresentationHandler //apple_ref/doc/anysymbol/PresentationHandler" target="_top"><span class="function">PresentationHandler</span></a>)(
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/c/cl/SMError //apple_ref/c/tdef/SMError //apple_ref/c/tag/SMError //apple_ref/c/struct/SMError //apple_ref/c/intf/SMError //apple_ref/doc/anysymbol/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/cl/_Nullable //apple_ref/c/tdef/_Nullable //apple_ref/c/tag/_Nullable //apple_ref/c/struct/_Nullable //apple_ref/c/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/PresentationHandler;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

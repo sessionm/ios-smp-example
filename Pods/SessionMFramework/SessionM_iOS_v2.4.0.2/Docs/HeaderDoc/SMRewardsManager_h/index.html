@@ -1,0 +1,526 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMRewardsManager.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/SMRewardsManager.h;   name=SMRewardsManager.h -->
+<a name="//apple_ref/doc/header/SMRewardsManager.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMRewardsManager.h">SMRewardsManager.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Foundation.h" machineGenerated="true" -->&lt;Foundation/Foundation.h&gt;<!-- /a --><br><a machinegenerated="true" href="../SMAddress_h/index.html#//apple_ref/doc/header/SMAddress.h" logicalPath="//apple_ref/doc/header/SMAddress.h" target="_top">"SMAddress.h"</a><br><a machinegenerated="true" href="../SMBaseDelegate_h/index.html#//apple_ref/doc/header/SMBaseDelegate.h" logicalPath="//apple_ref/doc/header/SMBaseDelegate.h" target="_top">"SMBaseDelegate.h"</a><br><a machinegenerated="true" href="../SMOffer_h/index.html#//apple_ref/doc/header/SMOffer.h" logicalPath="//apple_ref/doc/header/SMOffer.h" target="_top">"SMOffer.h"</a><br><a machinegenerated="true" href="../SMOrder_h/index.html#//apple_ref/doc/header/SMOrder.h" logicalPath="//apple_ref/doc/header/SMOrder.h" target="_top">"SMOrder.h"</a><br><a machinegenerated="true" href="../SMSkillChallenge_h/index.html#//apple_ref/doc/header/SMSkillChallenge.h" logicalPath="//apple_ref/doc/header/SMSkillChallenge.h" target="_top">"SMSkillChallenge.h"</a><br><a machinegenerated="true" href="../SMSkillQuestion_h/index.html#//apple_ref/doc/header/SMSkillQuestion.h" logicalPath="//apple_ref/doc/header/SMSkillQuestion.h" target="_top">"SMSkillQuestion.h"</a></div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMRewardsManager.h;name=start --><!-- begin abstract -->Use the links in the table of contents to the left to access the documentation.<br><!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/SMRewardsManager.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">Classes</h2>
+<dl>
+<dt><tt><a href="Classes/SMOrderRequest/index.html#//apple_ref/occ/cl/SMOrderRequest" target="_top">SMOrderRequest</a></tt></dt>
+<dd><p>Defines the data associated with an offer order request.
+</p></dd>
+<dt><tt><a href="Classes/SMRewardsManager/index.html#//apple_ref/occ/cl/SMRewardsManager" target="_top">SMRewardsManager</a></tt></dt>
+<dd><p>This API manager contains methods for fetching and redeeming rewards offers.
+</p></dd>
+</dl>
+<a name="HeaderDoc_protocols"></a>
+<h2 class="h2tight">Protocols</h2>
+<dl>
+<dt><tt><a href="Protocols/SMRewardsDelegate/index.html#//apple_ref/occ/intf/SMRewardsDelegate" target="_top">SMRewardsDelegate</a></tt></dt>
+<dd><p>Defines callbacks for <a href="Classes/SMRewardsManager/index.html#//apple_ref/occ/cl/SMRewardsManager" logicalPath="//apple_ref/occ/cl/SMRewardsManager" target="_top">SMRewardsManager</a> methods.
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_functions"></a>
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64" target="_top">NS_SWIFT_NAME</a></tt></dt>
+<dd><p>Notifies observers that a skill testing question was answered.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58" target="_top">NS_SWIFT_NAME(fetchedOffersNotification)</a></tt></dt>
+<dd><p>Notifies observers that available offers were fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59" target="_top">NS_SWIFT_NAME(fetchedOrdersNotification)</a></tt></dt>
+<dd><p>Notifies observers that offer orders were fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63" target="_top">NS_SWIFT_NAME(fetchedSkillQuestionNotification)</a></tt></dt>
+<dd><p>Notifies observers that a skill testing question was fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62" target="_top">NS_SWIFT_NAME(placedOrderNotification)</a></tt></dt>
+<dd><p>Notifies observers that an offer order was placed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" target="_top">NS_SWIFT_NAME(rewardsRequestFailureNotification)</a></tt></dt>
+<dd><p>Notifies observers that an API request failed.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55" target="_top">NS_SWIFT_NAME(rewardsValidationFailureNotification)</a></tt></dt>
+<dd><p>Notifies observers that a Rewards API validation failed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64"></a>
+<h3><a name="NS_SWIFT_NAME">NS_SWIFT_NAME</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that a skill testing question was answered.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_DID_ANSWER_SKILL_QUESTION_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">answeredSkillQuestionNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=start --><p>An <a href="../SMSkillChallenge_h/Classes/SMSkillChallenge/index.html#//apple_ref/occ/cl/SMSkillChallenge" logicalPath="//apple_ref/occ/cl/SMSkillChallenge" target="_top">SMSkillChallenge</a> object containing information about the server-side response to the answered skill testing question can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_64;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58"></a>
+<h3><a name="NS_SWIFT_NAME(fetchedOffersNotification)">NS_SWIFT_NAME(fetchedOffersNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that available offers were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_DID_FETCH_OFFERS_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">fetchedOffersNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=start --><p>An <code>NSArray</code> of <a href="../SMOffer_h/Classes/SMOffer/index.html#//apple_ref/occ/cl/SMOffer" logicalPath="//apple_ref/occ/cl/SMOffer" target="_top">SMOffer</a> objects can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_58;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59"></a>
+<h3><a name="NS_SWIFT_NAME(fetchedOrdersNotification)">NS_SWIFT_NAME(fetchedOrdersNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that offer orders were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_DID_FETCH_ORDERS_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">fetchedOrdersNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=start --><p>An <code>NSArray</code> of <a href="../SMOrder_h/Classes/SMOrder/index.html#//apple_ref/occ/cl/SMOrder" logicalPath="//apple_ref/occ/cl/SMOrder" target="_top">SMOrder</a> objects can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_59;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63"></a>
+<h3><a name="NS_SWIFT_NAME(fetchedSkillQuestionNotification)">NS_SWIFT_NAME(fetchedSkillQuestionNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that a skill testing question was fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_DID_FETCH_SKILL_QUESTION_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">fetchedSkillQuestionNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=start --><p>An <a href="../SMSkillQuestion_h/Classes/SMSkillQuestion/index.html#//apple_ref/occ/cl/SMSkillQuestion" logicalPath="//apple_ref/occ/cl/SMSkillQuestion" target="_top">SMSkillQuestion</a> object containing information about the fetched skill testing question can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_63;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62"></a>
+<h3><a name="NS_SWIFT_NAME(placedOrderNotification)">NS_SWIFT_NAME(placedOrderNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that an offer order was placed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_DID_PLACE_ORDER_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">placedOrderNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=start --><p>An <a href="../SMOrder_h/Classes/SMOrder/index.html#//apple_ref/occ/cl/SMOrder" logicalPath="//apple_ref/occ/cl/SMOrder" target="_top">SMOrder</a> object containing information about the placed order can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_DATA_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_DATA_KEY" -->SM_MANAGER_NOTIFICATION_DATA_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_62;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME"></a>
+<h3><a name="NS_SWIFT_NAME(rewardsRequestFailureNotification)">NS_SWIFT_NAME(rewardsRequestFailureNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that an API request failed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">rewardsRequestFailureNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=start --><p>An <a href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top">SMError</a> object containing information about why the request failed can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_ERROR_KEY" -->SM_MANAGER_NOTIFICATION_ERROR_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;   name=NS_SWIFT_NAME --><a name="//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55"></a>
+<h3><a name="NS_SWIFT_NAME(rewardsValidationFailureNotification)">NS_SWIFT_NAME(rewardsValidationFailureNotification)</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=start --><!-- begin abstract --></p>
+<p>Notifies observers that a Rewards API validation failed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/struct/NSString //apple_ref/c/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/tdef/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/tag/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/struct/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/c/intf/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION //apple_ref/doc/anysymbol/SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION" machineGenerated="true" --><span class="type">SM_REWARDS_MANAGER_VALIDATION_DID_FAIL_NOTIFICATION</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/c/instm/NS_SWIFT_NAME //apple_ref/c/clm/NS_SWIFT_NAME //apple_ref/c/intfcm/NS_SWIFT_NAME //apple_ref/c/intfm/NS_SWIFT_NAME //apple_ref/c/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">rewardsValidationFailureNotification</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=start --><p>An <a href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top">SMError</a> object containing information about why the validation failed can be accessed from the notification's <code>userInfo</code> property with the <!-- a logicalPath="//apple_ref/c/cl/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tdef/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/tag/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/struct/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intf/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/econst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/data/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clconst/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/instm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/clm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfcm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/func/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/ftmplt/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/defn/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/c/macro/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/com/intfm/SM_MANAGER_NOTIFICATION_ERROR_KEY //apple_ref/doc/anysymbol/SM_MANAGER_NOTIFICATION_ERROR_KEY" -->SM_MANAGER_NOTIFICATION_ERROR_KEY<!-- /a --> key.
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/NS_SWIFT_NAME_DONTLINK_55;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/didAnswerSkillQuestion" target="_top">didAnswerSkillQuestion</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/tdef/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/tag/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/struct/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intf/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/econst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/data/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/clconst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/instm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/clm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intfcm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/func/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/ftmplt/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/defn/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/macro/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/com/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/anysymbol/answerSkillQuestionForOfferID:questionID:answer:completionHandler:" -->answerSkillQuestionForOfferID:questionID:answer:completionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/didFetchOffers" target="_top">didFetchOffers</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchOffersWithCompletionHandler: //apple_ref/c/tdef/fetchOffersWithCompletionHandler: //apple_ref/c/tag/fetchOffersWithCompletionHandler: //apple_ref/c/struct/fetchOffersWithCompletionHandler: //apple_ref/c/intf/fetchOffersWithCompletionHandler: //apple_ref/c/econst/fetchOffersWithCompletionHandler: //apple_ref/c/data/fetchOffersWithCompletionHandler: //apple_ref/c/clconst/fetchOffersWithCompletionHandler: //apple_ref/c/instm/fetchOffersWithCompletionHandler: //apple_ref/c/clm/fetchOffersWithCompletionHandler: //apple_ref/c/intfcm/fetchOffersWithCompletionHandler: //apple_ref/c/intfm/fetchOffersWithCompletionHandler: //apple_ref/c/func/fetchOffersWithCompletionHandler: //apple_ref/c/ftmplt/fetchOffersWithCompletionHandler: //apple_ref/c/defn/fetchOffersWithCompletionHandler: //apple_ref/c/macro/fetchOffersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOffersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOffersWithCompletionHandler:" -->fetchOffersWithCompletionHandler:<!-- /a --> and <!-- a logicalPath="//apple_ref/c/cl/fetchOffersWithLocale:completionHandler: //apple_ref/c/tdef/fetchOffersWithLocale:completionHandler: //apple_ref/c/tag/fetchOffersWithLocale:completionHandler: //apple_ref/c/struct/fetchOffersWithLocale:completionHandler: //apple_ref/c/intf/fetchOffersWithLocale:completionHandler: //apple_ref/c/econst/fetchOffersWithLocale:completionHandler: //apple_ref/c/data/fetchOffersWithLocale:completionHandler: //apple_ref/c/clconst/fetchOffersWithLocale:completionHandler: //apple_ref/c/instm/fetchOffersWithLocale:completionHandler: //apple_ref/c/clm/fetchOffersWithLocale:completionHandler: //apple_ref/c/intfcm/fetchOffersWithLocale:completionHandler: //apple_ref/c/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/c/func/fetchOffersWithLocale:completionHandler: //apple_ref/c/ftmplt/fetchOffersWithLocale:completionHandler: //apple_ref/c/defn/fetchOffersWithLocale:completionHandler: //apple_ref/c/macro/fetchOffersWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchOffersWithLocale:completionHandler:" -->fetchOffersWithLocale:completionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/didFetchOrders" target="_top">didFetchOrders</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchOrdersWithCompletionHandler: //apple_ref/c/tdef/fetchOrdersWithCompletionHandler: //apple_ref/c/tag/fetchOrdersWithCompletionHandler: //apple_ref/c/struct/fetchOrdersWithCompletionHandler: //apple_ref/c/intf/fetchOrdersWithCompletionHandler: //apple_ref/c/econst/fetchOrdersWithCompletionHandler: //apple_ref/c/data/fetchOrdersWithCompletionHandler: //apple_ref/c/clconst/fetchOrdersWithCompletionHandler: //apple_ref/c/instm/fetchOrdersWithCompletionHandler: //apple_ref/c/clm/fetchOrdersWithCompletionHandler: //apple_ref/c/intfcm/fetchOrdersWithCompletionHandler: //apple_ref/c/intfm/fetchOrdersWithCompletionHandler: //apple_ref/c/func/fetchOrdersWithCompletionHandler: //apple_ref/c/ftmplt/fetchOrdersWithCompletionHandler: //apple_ref/c/defn/fetchOrdersWithCompletionHandler: //apple_ref/c/macro/fetchOrdersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOrdersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOrdersWithCompletionHandler:" -->fetchOrdersWithCompletionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/didFetchSkillQuestion" target="_top">didFetchSkillQuestion</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/tdef/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/tag/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/struct/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intf/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/econst/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/data/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/clconst/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/instm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/clm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intfcm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/func/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/ftmplt/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/defn/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/macro/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/com/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/anysymbol/fetchSkillQuestionWithCompletionHandler:" -->fetchSkillQuestionWithCompletionHandler:<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/didPlaceOrder" target="_top">didPlaceOrder</a></tt></dt>
+<dd><p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/placeOrder:completionHandler: //apple_ref/c/tdef/placeOrder:completionHandler: //apple_ref/c/tag/placeOrder:completionHandler: //apple_ref/c/struct/placeOrder:completionHandler: //apple_ref/c/intf/placeOrder:completionHandler: //apple_ref/c/econst/placeOrder:completionHandler: //apple_ref/c/data/placeOrder:completionHandler: //apple_ref/c/clconst/placeOrder:completionHandler: //apple_ref/c/instm/placeOrder:completionHandler: //apple_ref/c/clm/placeOrder:completionHandler: //apple_ref/c/intfcm/placeOrder:completionHandler: //apple_ref/c/intfm/placeOrder:completionHandler: //apple_ref/c/func/placeOrder:completionHandler: //apple_ref/c/ftmplt/placeOrder:completionHandler: //apple_ref/c/defn/placeOrder:completionHandler: //apple_ref/c/macro/placeOrder:completionHandler: //apple_ref/doc/com/intfm/placeOrder:completionHandler: //apple_ref/doc/anysymbol/placeOrder:completionHandler:" -->placeOrder:completionHandler:<!-- /a -->.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/didAnswerSkillQuestion;   name=didAnswerSkillQuestion --><a name="//apple_ref/c/tdef/didAnswerSkillQuestion"></a>
+<h3><a name="didAnswerSkillQuestion">didAnswerSkillQuestion</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didAnswerSkillQuestion;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/tdef/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/tag/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/struct/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intf/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/econst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/data/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/clconst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/instm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/clm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intfcm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/func/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/ftmplt/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/defn/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/c/macro/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/com/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/anysymbol/answerSkillQuestionForOfferID:questionID:answer:completionHandler:" -->answerSkillQuestionForOfferID:questionID:answer:completionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didAnswerSkillQuestion;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didAnswerSkillQuestion;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/didAnswerSkillQuestion" logicalPath="//apple_ref/occ/instm/didAnswerSkillQuestion //apple_ref/occ/clm/didAnswerSkillQuestion //apple_ref/occ/intfcm/didAnswerSkillQuestion //apple_ref/occ/intfm/didAnswerSkillQuestion //apple_ref/occ/func/didAnswerSkillQuestion //apple_ref/occ/ftmplt/didAnswerSkillQuestion //apple_ref/occ/defn/didAnswerSkillQuestion //apple_ref/occ/macro/didAnswerSkillQuestion //apple_ref/doc/anysymbol/didAnswerSkillQuestion" target="_top"><span class="function">didAnswerSkillQuestion</span></a>)(
+    <a machinegenerated="true" href="../SMSkillChallenge_h/Classes/SMSkillChallenge/index.html#//apple_ref/occ/cl/SMSkillChallenge" logicalPath="//apple_ref/occ/cl/SMSkillChallenge" target="_top"><span class="type">SMSkillChallenge</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">challenge</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>) <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/occ/instm/NS_SWIFT_NAME //apple_ref/occ/clm/NS_SWIFT_NAME //apple_ref/occ/intfcm/NS_SWIFT_NAME //apple_ref/occ/intfm/NS_SWIFT_NAME //apple_ref/occ/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">AnswerSkillQuestionCompletionHandler</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didAnswerSkillQuestion;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/didFetchOffers;   name=didFetchOffers --><a name="//apple_ref/c/tdef/didFetchOffers"></a>
+<h3><a name="didFetchOffers">didFetchOffers</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchOffers;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchOffersWithCompletionHandler: //apple_ref/c/tdef/fetchOffersWithCompletionHandler: //apple_ref/c/tag/fetchOffersWithCompletionHandler: //apple_ref/c/struct/fetchOffersWithCompletionHandler: //apple_ref/c/intf/fetchOffersWithCompletionHandler: //apple_ref/c/econst/fetchOffersWithCompletionHandler: //apple_ref/c/data/fetchOffersWithCompletionHandler: //apple_ref/c/clconst/fetchOffersWithCompletionHandler: //apple_ref/c/instm/fetchOffersWithCompletionHandler: //apple_ref/c/clm/fetchOffersWithCompletionHandler: //apple_ref/c/intfcm/fetchOffersWithCompletionHandler: //apple_ref/c/intfm/fetchOffersWithCompletionHandler: //apple_ref/c/func/fetchOffersWithCompletionHandler: //apple_ref/c/ftmplt/fetchOffersWithCompletionHandler: //apple_ref/c/defn/fetchOffersWithCompletionHandler: //apple_ref/c/macro/fetchOffersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOffersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOffersWithCompletionHandler:" -->fetchOffersWithCompletionHandler:<!-- /a --> and <!-- a logicalPath="//apple_ref/c/cl/fetchOffersWithLocale:completionHandler: //apple_ref/c/tdef/fetchOffersWithLocale:completionHandler: //apple_ref/c/tag/fetchOffersWithLocale:completionHandler: //apple_ref/c/struct/fetchOffersWithLocale:completionHandler: //apple_ref/c/intf/fetchOffersWithLocale:completionHandler: //apple_ref/c/econst/fetchOffersWithLocale:completionHandler: //apple_ref/c/data/fetchOffersWithLocale:completionHandler: //apple_ref/c/clconst/fetchOffersWithLocale:completionHandler: //apple_ref/c/instm/fetchOffersWithLocale:completionHandler: //apple_ref/c/clm/fetchOffersWithLocale:completionHandler: //apple_ref/c/intfcm/fetchOffersWithLocale:completionHandler: //apple_ref/c/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/c/func/fetchOffersWithLocale:completionHandler: //apple_ref/c/ftmplt/fetchOffersWithLocale:completionHandler: //apple_ref/c/defn/fetchOffersWithLocale:completionHandler: //apple_ref/c/macro/fetchOffersWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchOffersWithLocale:completionHandler:" -->fetchOffersWithLocale:completionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchOffers;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchOffers;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/didFetchOffers" logicalPath="//apple_ref/occ/instm/didFetchOffers //apple_ref/occ/clm/didFetchOffers //apple_ref/occ/intfcm/didFetchOffers //apple_ref/occ/intfm/didFetchOffers //apple_ref/occ/func/didFetchOffers //apple_ref/occ/ftmplt/didFetchOffers //apple_ref/occ/defn/didFetchOffers //apple_ref/occ/macro/didFetchOffers //apple_ref/doc/anysymbol/didFetchOffers" target="_top"><span class="function">didFetchOffers</span></a>)(
+    <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMOffer</span> <span class="template">*</span>&gt;<span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">offers</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>) <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/occ/instm/NS_SWIFT_NAME //apple_ref/occ/clm/NS_SWIFT_NAME //apple_ref/occ/intfcm/NS_SWIFT_NAME //apple_ref/occ/intfm/NS_SWIFT_NAME //apple_ref/occ/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">FetchOffersCompletionHandler</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchOffers;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/didFetchOrders;   name=didFetchOrders --><a name="//apple_ref/c/tdef/didFetchOrders"></a>
+<h3><a name="didFetchOrders">didFetchOrders</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchOrders;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchOrdersWithCompletionHandler: //apple_ref/c/tdef/fetchOrdersWithCompletionHandler: //apple_ref/c/tag/fetchOrdersWithCompletionHandler: //apple_ref/c/struct/fetchOrdersWithCompletionHandler: //apple_ref/c/intf/fetchOrdersWithCompletionHandler: //apple_ref/c/econst/fetchOrdersWithCompletionHandler: //apple_ref/c/data/fetchOrdersWithCompletionHandler: //apple_ref/c/clconst/fetchOrdersWithCompletionHandler: //apple_ref/c/instm/fetchOrdersWithCompletionHandler: //apple_ref/c/clm/fetchOrdersWithCompletionHandler: //apple_ref/c/intfcm/fetchOrdersWithCompletionHandler: //apple_ref/c/intfm/fetchOrdersWithCompletionHandler: //apple_ref/c/func/fetchOrdersWithCompletionHandler: //apple_ref/c/ftmplt/fetchOrdersWithCompletionHandler: //apple_ref/c/defn/fetchOrdersWithCompletionHandler: //apple_ref/c/macro/fetchOrdersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOrdersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOrdersWithCompletionHandler:" -->fetchOrdersWithCompletionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchOrders;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchOrders;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/didFetchOrders" logicalPath="//apple_ref/occ/instm/didFetchOrders //apple_ref/occ/clm/didFetchOrders //apple_ref/occ/intfcm/didFetchOrders //apple_ref/occ/intfm/didFetchOrders //apple_ref/occ/func/didFetchOrders //apple_ref/occ/ftmplt/didFetchOrders //apple_ref/occ/defn/didFetchOrders //apple_ref/occ/macro/didFetchOrders //apple_ref/doc/anysymbol/didFetchOrders" target="_top"><span class="function">didFetchOrders</span></a>)(
+    <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMOrder</span> <span class="template">*</span>&gt;<span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">orders</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>) <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/occ/instm/NS_SWIFT_NAME //apple_ref/occ/clm/NS_SWIFT_NAME //apple_ref/occ/intfcm/NS_SWIFT_NAME //apple_ref/occ/intfm/NS_SWIFT_NAME //apple_ref/occ/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">FetchOrdersCompletionHandler</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchOrders;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/didFetchSkillQuestion;   name=didFetchSkillQuestion --><a name="//apple_ref/c/tdef/didFetchSkillQuestion"></a>
+<h3><a name="didFetchSkillQuestion">didFetchSkillQuestion</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchSkillQuestion;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/tdef/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/tag/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/struct/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intf/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/econst/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/data/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/clconst/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/instm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/clm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intfcm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/func/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/ftmplt/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/defn/fetchSkillQuestionWithCompletionHandler: //apple_ref/c/macro/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/com/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/anysymbol/fetchSkillQuestionWithCompletionHandler:" -->fetchSkillQuestionWithCompletionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didFetchSkillQuestion;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchSkillQuestion;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/didFetchSkillQuestion" logicalPath="//apple_ref/occ/instm/didFetchSkillQuestion //apple_ref/occ/clm/didFetchSkillQuestion //apple_ref/occ/intfcm/didFetchSkillQuestion //apple_ref/occ/intfm/didFetchSkillQuestion //apple_ref/occ/func/didFetchSkillQuestion //apple_ref/occ/ftmplt/didFetchSkillQuestion //apple_ref/occ/defn/didFetchSkillQuestion //apple_ref/occ/macro/didFetchSkillQuestion //apple_ref/doc/anysymbol/didFetchSkillQuestion" target="_top"><span class="function">didFetchSkillQuestion</span></a>)(
+    <a machinegenerated="true" href="../SMSkillQuestion_h/Classes/SMSkillQuestion/index.html#//apple_ref/occ/cl/SMSkillQuestion" logicalPath="//apple_ref/occ/cl/SMSkillQuestion" target="_top"><span class="type">SMSkillQuestion</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">skillQuestion</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>) <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/occ/instm/NS_SWIFT_NAME //apple_ref/occ/clm/NS_SWIFT_NAME //apple_ref/occ/intfcm/NS_SWIFT_NAME //apple_ref/occ/intfm/NS_SWIFT_NAME //apple_ref/occ/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">FetchSkillQuestionCompletionHandler</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didFetchSkillQuestion;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/didPlaceOrder;   name=didPlaceOrder --><a name="//apple_ref/c/tdef/didPlaceOrder"></a>
+<h3><a name="didPlaceOrder">didPlaceOrder</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didPlaceOrder;name=start --><!-- begin abstract --></p>
+<p>Completion handler block type for <!-- a logicalPath="//apple_ref/c/cl/placeOrder:completionHandler: //apple_ref/c/tdef/placeOrder:completionHandler: //apple_ref/c/tag/placeOrder:completionHandler: //apple_ref/c/struct/placeOrder:completionHandler: //apple_ref/c/intf/placeOrder:completionHandler: //apple_ref/c/econst/placeOrder:completionHandler: //apple_ref/c/data/placeOrder:completionHandler: //apple_ref/c/clconst/placeOrder:completionHandler: //apple_ref/c/instm/placeOrder:completionHandler: //apple_ref/c/clm/placeOrder:completionHandler: //apple_ref/c/intfcm/placeOrder:completionHandler: //apple_ref/c/intfm/placeOrder:completionHandler: //apple_ref/c/func/placeOrder:completionHandler: //apple_ref/c/ftmplt/placeOrder:completionHandler: //apple_ref/c/defn/placeOrder:completionHandler: //apple_ref/c/macro/placeOrder:completionHandler: //apple_ref/doc/com/intfm/placeOrder:completionHandler: //apple_ref/doc/anysymbol/placeOrder:completionHandler:" -->placeOrder:completionHandler:<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/didPlaceOrder;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didPlaceOrder;name=start --><span class="keyword">typedef</span> <!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> (^<a machinegenerated="true" href="index.html#//apple_ref/c/tdef/didPlaceOrder" logicalPath="//apple_ref/occ/instm/didPlaceOrder //apple_ref/occ/clm/didPlaceOrder //apple_ref/occ/intfcm/didPlaceOrder //apple_ref/occ/intfm/didPlaceOrder //apple_ref/occ/func/didPlaceOrder //apple_ref/occ/ftmplt/didPlaceOrder //apple_ref/occ/defn/didPlaceOrder //apple_ref/occ/macro/didPlaceOrder //apple_ref/doc/anysymbol/didPlaceOrder" target="_top"><span class="function">didPlaceOrder</span></a>)(
+    <a machinegenerated="true" href="../SMOrder_h/Classes/SMOrder/index.html#//apple_ref/occ/cl/SMOrder" logicalPath="//apple_ref/occ/cl/SMOrder" target="_top"><span class="type">SMOrder</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">order</span>,
+    <a machinegenerated="true" href="../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <span class="param">error</span>) <a machinegenerated="true" href="index.html#//apple_ref/c/func/NS_SWIFT_NAME" logicalPath="//apple_ref/occ/instm/NS_SWIFT_NAME //apple_ref/occ/clm/NS_SWIFT_NAME //apple_ref/occ/intfcm/NS_SWIFT_NAME //apple_ref/occ/intfm/NS_SWIFT_NAME //apple_ref/occ/func/NS_SWIFT_NAME" target="_top"><span class="function">NS_SWIFT_NAME</span></a>(
+    <span class="param">PlaceOrderCompletionHandler</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/didPlaceOrder;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -21,29 +21,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @property baseURL
- @abstract A block that the developer can use to create context-based request URLs.
+ @abstract The context-based request URL.
  */
-@property(nonatomic, copy,   readwrite) URLFormatter baseURL;
+@property(nonatomic, copy,   readwrite) NSString *baseURL;
 /*!
  @property method
  @abstract The method of the request (GET/POST/PUT/DELETE).
  */
 @property(nonatomic, assign, readwrite) SMGenericRequestMethodType method;
 /*!
+ @property kind
+ @abstrat Developer-defined descriptor used to distinguish between kinds of requests.
+ */
+@property(nonatomic, strong, readonly) NSString *kind;
+/*!
  @property body
  @abstract The body of the request - a dictionary that can be converted to JSON.
  */
-@property(nonatomic, strong, readwrite) NSDictionary<NSString *, NSObject *> *body;
+@property(nonatomic, strong) NSMutableDictionary<NSString *, NSObject *> *body;
 /*!
  @property headers
  @abstract A dictionary of key-value pairs that correspond to the headers in a request.
  */
-@property(nonatomic, strong, readwrite) NSDictionary<NSString *, NSString *> *headers;
+@property(nonatomic, strong, readonly) NSMutableDictionary<NSString *, NSString *> *headers;
 /*!
  @property params
  @abstract Additional query parameters added to the request URL.
  */
-@property(nonatomic, strong, readwrite) NSDictionary<NSString *, NSString *> *params;
+@property(nonatomic, strong, readonly) NSMutableDictionary<NSString *, NSObject *> *params;
 /*!
  @property keepAround
  @abstract Values to keep for the entire request/response cycle.
@@ -51,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  is asynchronous, we need a mechanism so that values are available, such as when the response is returned.
  The values will be available at that point.
  */
-@property(nonatomic, strong, readwrite) NSDictionary<NSString *, NSString *> *keepAround;
+@property(nonatomic, strong, readonly) NSMutableDictionary<NSString *, NSString *> *keepAround;
 
 /*!
  @abstract Generates an immutable HTTP request object.
@@ -64,27 +69,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param method @link SMGenericRequestMethodType @/link (PUT/POST/GET/DELETE).
  @result @link SMGenericRequestBuilder @/link instance.
  */
-+ (instancetype)requestBuilderWithMethod:(SMGenericRequestMethodType)method;
++ (instancetype)requestBuilderWithMethod:(SMGenericRequestMethodType)method kind:(NSString *)kind;
 
 /*!
  @abstract Initializes a request builder that builds requests with the given method type
  @param method @link SMGenericRequestMethodType @/link (PUT/POST/GET/DELETE).
  @result @link SMGenericRequestBuilder @/link instance.
  */
-- (instancetype)initWithMethod:(SMGenericRequestMethodType)method;
-
-/*!
- @abstract Adds additional values to request body.
- @param key Dictionary key name.
- @param value Value for key.
- */
-- (void)addBodyKey:(NSString *)key value:(NSObject *)value;
-/*!
- @abstract Adds additional values to request header.
- @param key Dictionary key name.
- @param value Value for key.
- */
-- (void)addHeaderKey:(NSString *)key value:(NSString *)value;
+- (instancetype)initWithMethod:(SMGenericRequestMethodType)method kind:(NSString *)kind;
 
 @end
 

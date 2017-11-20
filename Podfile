@@ -57,3 +57,7 @@ end
 target 'WebView' do
   shared_pods
 end
+
+target 'Offers' do
+  shared_pods
+end

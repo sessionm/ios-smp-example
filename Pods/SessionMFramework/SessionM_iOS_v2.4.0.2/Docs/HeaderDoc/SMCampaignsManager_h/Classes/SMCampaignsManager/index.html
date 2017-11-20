@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMCampaignsManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMCampaignsManager;  name=SMCampaignsManager-->
+<a name="//apple_ref/occ/cl/SMCampaignsManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMCampaignsManager">SMCampaignsManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMCampaignsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMCampaignsManager.h">SMCampaignsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMCampaignsManager;name=start --><!-- begin abstract --></p>
+<p>This API manager contains methods for fetching promotional campaign data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMCampaignsManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:" target="_top">-executeActionForMessage:for:</a></tt></dt>
+<dd><p>Executes the action associated with the specified message.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages" target="_top">-fetchFeedMessages</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:" target="_top">-fetchFeedMessagesWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:" target="_top">-fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with a number of promotional campaigns targeted to the specified locale.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:" target="_top">-fetchFeedMessagesWithLocale:for:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the specified locale.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;   name=SMCampaignsManager::executeActionForMessage:for: --><a name="//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:"></a>
+<h3><a name="executeActionForMessage:for:">executeActionForMessage:for:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=start --><!-- begin abstract --></p>
+<p>Executes the action associated with the specified message.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage" target="_top"><span class="function">executeActionForMessage</span></a>:(<a machinegenerated="true" href="../../../SMFeedMessage_h/Classes/SMFeedMessage/index.html#//apple_ref/occ/cl/SMFeedMessage" logicalPath="//apple_ref/occ/cl/SMFeedMessage" target="_top"><span class="type">SMFeedMessage</span></a> <span class="type">*</span>)<span class="param">message</span> NS_SWIFT_NAME(executeAction(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMCampaignsManager/for //apple_ref/occ/clm/SMCampaignsManager/for //apple_ref/occ/intfcm/SMCampaignsManager/for //apple_ref/occ/intfm/SMCampaignsManager/for //apple_ref/occ/func/for //apple_ref/occ/ftmplt/SMCampaignsManager/for //apple_ref/occ/defn/for //apple_ref/occ/macro/for //apple_ref/doc/anysymbol/for" machineGenerated="true" --><span class="function">for</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMCampaignsManager/executeActionForMessage:for:/message;   name=executeActionForMessage:for:::message -->
+<a name="//apple_ref/doc/methodparam/SMCampaignsManager/executeActionForMessage:for:/message"></a>
+<code>message</code>
+</dt>
+<dd><p>The <a href="../../../SMFeedMessage_h/Classes/SMFeedMessage/index.html#//apple_ref/occ/cl/SMFeedMessage" logicalPath="//apple_ref/occ/cl/SMFeedMessage" target="_top">SMFeedMessage</a> instance whose action will be executed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=start --><p>Performs the specified message's action as specified by <a href="../../../SMFeedMessage_h/Classes/SMFeedMessage/index.html#//apple_ref/occ/instp/SMFeedMessage/actionType" logicalPath="//apple_ref/occ/instp/SMFeedMessage/actionType" target="_top">[ SMFeedMessage actionType ]</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/executeActionForMessage:for:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;   name=SMCampaignsManager::fetchFeedMessages --><a name="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages"></a>
+<h3><a name="fetchFeedMessages">fetchFeedMessages</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchFeedMessages</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler" target="_top"><span class="function">fetchFeedMessagesWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchFeedMessages: //apple_ref/occ/tdef/didFetchFeedMessages: //apple_ref/occ/tag/didFetchFeedMessages: //apple_ref/occ/struct/didFetchFeedMessages: //apple_ref/occ/intf/didFetchFeedMessages: //apple_ref/occ/econst/didFetchFeedMessages: //apple_ref/occ/data/didFetchFeedMessages: //apple_ref/occ/clconst/didFetchFeedMessages: //apple_ref/occ/instm/didFetchFeedMessages: //apple_ref/occ/clm/didFetchFeedMessages: //apple_ref/occ/intfcm/didFetchFeedMessages: //apple_ref/occ/intfm/didFetchFeedMessages: //apple_ref/occ/func/didFetchFeedMessages: //apple_ref/occ/ftmplt/didFetchFeedMessages: //apple_ref/occ/defn/didFetchFeedMessages: //apple_ref/occ/macro/didFetchFeedMessages: //apple_ref/doc/com/intfm/didFetchFeedMessages: //apple_ref/doc/anysymbol/didFetchFeedMessages:" -->didFetchFeedMessages:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessages;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/tdef/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/tag/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/struct/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intf/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/econst/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/data/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/clconst/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/instm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/clm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intfcm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intfm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/func/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/ftmplt/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/defn/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/macro/fetchFeedMessagesWithCompletionHandler: //apple_ref/doc/com/intfm/fetchFeedMessagesWithCompletionHandler: //apple_ref/doc/anysymbol/fetchFeedMessagesWithCompletionHandler:" -->fetchFeedMessagesWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:;   name=SMCampaignsManager::fetchFeedMessagesWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchFeedMessagesWithCompletionHandler:completionHandler:">fetchFeedMessagesWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler" target="_top"><span class="function">fetchFeedMessagesWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchFeedMessages" logicalPath="//apple_ref/occ/cl/didFetchFeedMessages //apple_ref/occ/tdef/didFetchFeedMessages" target="_top"><span class="type">didFetchFeedMessages</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchFeedMessages(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/completionHandler //apple_ref/occ/clm/SMCampaignsManager/completionHandler //apple_ref/occ/intfcm/SMCampaignsManager/completionHandler //apple_ref/occ/intfm/SMCampaignsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMCampaignsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:/completionHandler;   name=fetchFeedMessagesWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:;   name=SMCampaignsManager::fetchFeedMessagesWithLocale:completionHandler:for:completionHandler: --><a name="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:"></a>
+<h3><a name="fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:">fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with a number of promotional campaigns targeted to the specified locale.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale" target="_top"><span class="function">fetchFeedMessagesWithLocale</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSLocale //apple_ref/occ/tdef/NSLocale //apple_ref/occ/tag/NSLocale //apple_ref/occ/struct/NSLocale //apple_ref/occ/intf/NSLocale //apple_ref/doc/anysymbol/NSLocale" machineGenerated="true" --><span class="type">NSLocale</span><!-- /a --> <span class="type">*</span>)<span class="param">locale</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/completionHandler //apple_ref/occ/clm/SMCampaignsManager/completionHandler //apple_ref/occ/intfcm/SMCampaignsManager/completionHandler //apple_ref/occ/intfm/SMCampaignsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMCampaignsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchFeedMessages" logicalPath="//apple_ref/occ/cl/didFetchFeedMessages //apple_ref/occ/tdef/didFetchFeedMessages" target="_top"><span class="type">didFetchFeedMessages</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchFeedMessages(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMCampaignsManager/for //apple_ref/occ/clm/SMCampaignsManager/for //apple_ref/occ/intfcm/SMCampaignsManager/for //apple_ref/occ/intfm/SMCampaignsManager/for //apple_ref/occ/func/for //apple_ref/occ/ftmplt/SMCampaignsManager/for //apple_ref/occ/defn/for //apple_ref/occ/macro/for //apple_ref/doc/anysymbol/for" machineGenerated="true" --><span class="function">for</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/completionHandler //apple_ref/occ/clm/SMCampaignsManager/completionHandler //apple_ref/occ/intfcm/SMCampaignsManager/completionHandler //apple_ref/occ/intfm/SMCampaignsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMCampaignsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/locale;   name=fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:::locale -->
+<a name="//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/locale"></a>
+<code>locale</code>
+</dt>
+<dd><p>The locale in which the fetch will be restricted.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler;   name=fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;   name=SMCampaignsManager::fetchFeedMessagesWithLocale:for: --><a name="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:"></a>
+<h3><a name="fetchFeedMessagesWithLocale:for:">fetchFeedMessagesWithLocale:for:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" logicalPath="//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a> with promotional campaigns targeted to the specified locale.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale" target="_top"><span class="function">fetchFeedMessagesWithLocale</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSLocale //apple_ref/occ/tdef/NSLocale //apple_ref/occ/tag/NSLocale //apple_ref/occ/struct/NSLocale //apple_ref/occ/intf/NSLocale //apple_ref/doc/anysymbol/NSLocale" machineGenerated="true" --><span class="type">NSLocale</span><!-- /a --> <span class="type">*</span>)<span class="param">locale</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale" target="_top"><span class="function">fetchFeedMessagesWithLocale</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:completionHandler:for:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMCampaignsManager/completionHandler //apple_ref/occ/clm/SMCampaignsManager/completionHandler //apple_ref/occ/intfcm/SMCampaignsManager/completionHandler //apple_ref/occ/intfm/SMCampaignsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMCampaignsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(fetchFeedMessages(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMCampaignsManager/for //apple_ref/occ/clm/SMCampaignsManager/for //apple_ref/occ/intfcm/SMCampaignsManager/for //apple_ref/occ/intfm/SMCampaignsManager/for //apple_ref/occ/func/for //apple_ref/occ/ftmplt/SMCampaignsManager/for //apple_ref/occ/defn/for //apple_ref/occ/macro/for //apple_ref/doc/anysymbol/for" machineGenerated="true" --><span class="function">for</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:for:/locale;   name=fetchFeedMessagesWithLocale:for:::locale -->
+<a name="//apple_ref/doc/methodparam/SMCampaignsManager/fetchFeedMessagesWithLocale:for:/locale"></a>
+<code>locale</code>
+</dt>
+<dd><p>The locale in which the fetch will be restricted.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchFeedMessages: //apple_ref/occ/tdef/didFetchFeedMessages: //apple_ref/occ/tag/didFetchFeedMessages: //apple_ref/occ/struct/didFetchFeedMessages: //apple_ref/occ/intf/didFetchFeedMessages: //apple_ref/occ/econst/didFetchFeedMessages: //apple_ref/occ/data/didFetchFeedMessages: //apple_ref/occ/clconst/didFetchFeedMessages: //apple_ref/occ/instm/didFetchFeedMessages: //apple_ref/occ/clm/didFetchFeedMessages: //apple_ref/occ/intfcm/didFetchFeedMessages: //apple_ref/occ/intfm/didFetchFeedMessages: //apple_ref/occ/func/didFetchFeedMessages: //apple_ref/occ/ftmplt/didFetchFeedMessages: //apple_ref/occ/defn/didFetchFeedMessages: //apple_ref/occ/macro/didFetchFeedMessages: //apple_ref/doc/com/intfm/didFetchFeedMessages: //apple_ref/doc/anysymbol/didFetchFeedMessages:" -->didFetchFeedMessages:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMCampaignsManager/fetchFeedMessagesWithLocale:for:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/tdef/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/tag/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/struct/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intf/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/econst/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/data/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/clconst/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/instm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/clm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intfcm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intfm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/func/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/ftmplt/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/defn/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/macro/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchFeedMessagesWithLocale:completionHandler:" -->fetchFeedMessagesWithLocale:completionHandler:<!-- /a -->.</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/delegate" target="_top">delegate</a></tt></dt>
+<dd><p>Object that implements <a href="../../Protocols/SMCampaignsDelegate/index.html#//apple_ref/occ/intf/SMCampaignsDelegate" logicalPath="//apple_ref/occ/intf/SMCampaignsDelegate" target="_top">SMCampaignsDelegate</a> callbacks.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaignsManager/feedMessages" target="_top">feedMessages</a></tt></dt>
+<dd><p>Promotional campaigns.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaignsManager/delegate;   name=SMCampaignsManager::delegate --><a name="//apple_ref/occ/instp/SMCampaignsManager/delegate"></a>
+<h3><a name="delegate">delegate</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaignsManager/delegate;name=start --><!-- begin abstract --></p>
+<p>Object that implements <a href="../../Protocols/SMCampaignsDelegate/index.html#//apple_ref/occ/intf/SMCampaignsDelegate" logicalPath="//apple_ref/occ/intf/SMCampaignsDelegate" target="_top">SMCampaignsDelegate</a> callbacks.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaignsManager/delegate;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaignsManager/delegate;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">weak</span>) <a machinegenerated="true" href="../../../SMWebView_h/index.html#//apple_ref/c/func/id" logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/struct/id //apple_ref/occ/intf/id //apple_ref/doc/anysymbol/id" target="_top"><span class="type">id</span></a>&lt;<span class="template">SMCampaignsDelegate</span>&gt; <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/delegate //apple_ref/occ/data/SMCampaignsManager/delegate //apple_ref/occ/data/delegate //apple_ref/occ/clconst/SMCampaignsManager/delegate " machineGenerated="true" --><span class="var">delegate</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaignsManager/delegate;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;   name=SMCampaignsManager::feedMessages --><a name="//apple_ref/occ/instp/SMCampaignsManager/feedMessages"></a>
+<h3><a name="feedMessages">feedMessages</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=start --><!-- begin abstract --></p>
+<p>Promotional campaigns.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMFeedMessage</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/feedMessages //apple_ref/occ/data/SMCampaignsManager/feedMessages //apple_ref/occ/data/feedMessages //apple_ref/occ/clconst/SMCampaignsManager/feedMessages " machineGenerated="true" --><span class="var">feedMessages</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=start --><p>This property is updated in response to a successful <!-- a logicalPath="//apple_ref/occ/cl/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/tdef/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/tag/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/struct/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intf/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/econst/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/data/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/clconst/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/instm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/clm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intfcm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/intfm/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/func/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/ftmplt/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/defn/fetchFeedMessagesWithCompletionHandler: //apple_ref/occ/macro/fetchFeedMessagesWithCompletionHandler: //apple_ref/doc/com/intfm/fetchFeedMessagesWithCompletionHandler: //apple_ref/doc/anysymbol/fetchFeedMessagesWithCompletionHandler:" -->fetchFeedMessagesWithCompletionHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/tdef/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/tag/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/struct/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intf/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/econst/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/data/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/clconst/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/instm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/clm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intfcm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/intfm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/func/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/ftmplt/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/defn/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/occ/macro/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchFeedMessagesWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchFeedMessagesWithLocale:completionHandler:" -->fetchFeedMessagesWithLocale:completionHandler:<!-- /a --> call.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaignsManager/feedMessages;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 11/09/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

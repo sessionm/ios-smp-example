@@ -34,20 +34,13 @@ typedef NS_ENUM(NSUInteger, SMGenericRequestMethodType) {
 @class SMGenericRequest;
 
 /*!
- @typedef URLFormatter
- @abstract Type for blocks used to format request URLs.
+ @class SMGenericRequest
+ @abstract Defines the data associated with a generic SessionM Platform HTTP request.
  @discussion The following tokens can be used for formatting:
  <ul>
  <li>':host:' - the SessionM Platform API host URL</li>
- <li>':lt_host:' - the LoyalTree API host URL</li>
  <li>':api_key:' - the app's SessionM Platform API key</li>
  </ul>
- */
-typedef NSString * _Nullable (^URLFormatter)(SMGenericRequest *request);
-
-/*!
- @class SMGenericRequest
- @abstract Defines the data associated with a generic SessionM Platform HTTP request.
  */
 @interface SMGenericRequest : NSObject
 
@@ -61,6 +54,11 @@ typedef NSString * _Nullable (^URLFormatter)(SMGenericRequest *request);
  @abstract HTTP request URL.
  */
 @property(nonatomic, strong, readonly) NSString *url;
+/*!
+ @property kind
+ @abstract Developer-defined descriptor used to distinguish between kinds of requests.
+ */
+@property(nonatomic, strong, readonly) NSString *kind;
 /*!
  @property method
  @abstract Enumeration value for HTTP request method (PUT/POST/GET/DELETE).
@@ -86,12 +84,12 @@ typedef NSString * _Nullable (^URLFormatter)(SMGenericRequest *request);
  @property params
  @abstract Dictionary representation of HTTP request parameters.
  */
-@property(nonatomic, strong, readonly) NSDictionary<NSString *, NSString *> *params;
+@property(nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *params;
 /*!
  @property keepAround
  @abstract Dictionary representation of data that is kept through the entire request/response cycle.
  */
-@property(nonatomic, strong, readonly) NSDictionary<NSString *, NSString *> *keepAround;
+@property(nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *keepAround;
 
 @end
 

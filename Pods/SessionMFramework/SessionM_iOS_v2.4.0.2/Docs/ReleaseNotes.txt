@@ -1,0 +1,10 @@
+SessionM Platform iOS SDK Release Notes
+
+Copyright © 2017 SessionM. All rights reserved.
+Date: 10/24/2017
+Version: 2.4.1
+
+Changes:
+- Added SessionM Platform Offers APIs.
+- Fixed bug where startWithConfigFileName: would attempt to read the default SMPConfig.plist file before reading the specified file.
+- Deprecated properties named "descriptionText" in favor of "details".
