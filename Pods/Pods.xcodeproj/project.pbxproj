@@ -9,41 +9,41 @@
 /* Begin PBXBuildFile section */
 		05747C06B87E3847073FC58DD30329B3 /* Pods-Rewards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB02DF00714C3C6962AA1FFFAABCA15 /* Pods-Rewards-dummy.m */; };
 		05934E8B7108322851214BE522F40FA6 /* Pods-Campaigns-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A387BCE21CB2EF89C91760FEBF2C6B2 /* Pods-Campaigns-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07021D9FE24586A397D407A3B018084F /* CCHMapClusterControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AC743D86379568FBF22B87472D161A /* CCHMapClusterControllerUtils.m */; };
-		0BA0F2E74A13ABD953FCBCF7304D7D78 /* CCHMapViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F372BACDE1AFEFA0ACC3C53137B18AB9 /* CCHMapViewDelegateProxy.m */; };
-		0CDF03D4F8519557DF59AFA19B67A4C1 /* CCHCenterOfMassMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F70D0406ADCDF33460D58EB4E6DE19C /* CCHCenterOfMassMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E16C3407FF02F348440356F294C3C69 /* CCHFadeInOutMapAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BF7879877D23EB91346D4B47582569 /* CCHFadeInOutMapAnimator.m */; };
+		07021D9FE24586A397D407A3B018084F /* CCHMapClusterControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBE624703CF300EC40C0EECC2970124 /* CCHMapClusterControllerUtils.m */; };
+		0BA0F2E74A13ABD953FCBCF7304D7D78 /* CCHMapViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F8657FB74536ADA293508B3ED4C2D /* CCHMapViewDelegateProxy.m */; };
+		0CDF03D4F8519557DF59AFA19B67A4C1 /* CCHCenterOfMassMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3DCA7D4C22FAE4BF4676766BB1CD36 /* CCHCenterOfMassMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E16C3407FF02F348440356F294C3C69 /* CCHFadeInOutMapAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BCB80447C8FD37AD393EBDD474476 /* CCHFadeInOutMapAnimator.m */; };
 		1085094FA5CE560D5106A7ACCBE00251 /* Pods-Receipts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4981F9E19189A20013C313A82936A47 /* Pods-Receipts-dummy.m */; };
-		191FEA8BB62E7D2B6FAADAAD7E912A04 /* CCHMapClusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C2E9709294ACA6E49A323F05BDB422 /* CCHMapClusterController.m */; };
+		191FEA8BB62E7D2B6FAADAAD7E912A04 /* CCHMapClusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F9338DE873B8ECD6DD77A666B0DCDE /* CCHMapClusterController.m */; };
 		1A6EB6F14D4C0F958053DCF132B863C2 /* Pods-Places-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB53C4ED66B76162E397067CDAA8A130 /* Pods-Places-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C2B81FE10AF5312E47A6D8477526830 /* Pods-Content-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4A16AC7FAAE9A153429D02C236E03C /* Pods-Content-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D3ABEF7F1CCE2768E13AE942580989A /* CCHMapTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA03090B3B8A7715D22E540CAD2A0B /* CCHMapTree.m */; };
+		1D3ABEF7F1CCE2768E13AE942580989A /* CCHMapTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A19D3D8711CB4590BC2BE86D44A364EE /* CCHMapTree.m */; };
 		1E0A28B3764A8930102B52A541EDB808 /* Pods-Rewards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FD5D12B9C1FAF1E92B061C63B84375 /* Pods-Rewards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EA87412C3DF8CCF0E38A4A1C4E2ECFD /* Pods-Inbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CE9E150BAA52C39429FC937723A9 /* Pods-Inbox-dummy.m */; };
-		1EB972CCAF5E07503E2E006BE1A8CA31 /* CCHMapClusterOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9068D350715539A4367BC6687D7ACD /* CCHMapClusterOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1EB972CCAF5E07503E2E006BE1A8CA31 /* CCHMapClusterOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B6EEBC8D20448E91B8427CD044E24E3 /* CCHMapClusterOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		22D195B156ED03B66D8084A05389C9B6 /* Pods-Auth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58828D4453BF6DC9966B1CD9C82F794 /* Pods-Auth-dummy.m */; };
-		230049C8DA772378A254D987D784BFCE /* CCHMapClusterControllerDebugPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7AF0E6C72C3C42140CCEA257F4081 /* CCHMapClusterControllerDebugPolygon.m */; };
+		230049C8DA772378A254D987D784BFCE /* CCHMapClusterControllerDebugPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A3786BB9FC13B2C83181E3DB7E9672 /* CCHMapClusterControllerDebugPolygon.m */; };
 		239302B1C29D4A24AC60AE404302C2AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		27926BD9E6D649BF6B661A7AD90C42A6 /* Pods-Geofence-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B41A544A4338B505DC8CAC44E0632C9 /* Pods-Geofence-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29149898626EE46B967368859B59AAE7 /* Pods-Inbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0AF0C451F1A58C173E312018BF06B3 /* Pods-Inbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		294ED98F16452AB240B5D1D5EBCC43E7 /* CCHMapTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 6742C59D4330E64378112A0C08E457BB /* CCHMapTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		294ED98F16452AB240B5D1D5EBCC43E7 /* CCHMapTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 321629669780AD187DB186018D5C2CEE /* CCHMapTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2A4B26ECBD59CF6BC81E778CBC496F98 /* Pods-Receipts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A7129713010F675750497157A99F70 /* Pods-Receipts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		315D3EE67F88FE9253A9115C86D6599C /* Pods-Referrals-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977F3243F780FC83ACED5A91B2E6A32 /* Pods-Referrals-dummy.m */; };
 		320F17FF49050FC03EDBD2DA4DA17440 /* Pods-WebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC05EAB1F15AF6AFF5D2632A26C7E4A7 /* Pods-WebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		369A344E6F11389827387B3AE9E9AE26 /* CCHMapClusterControllerDebugPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F32FFFBB5BDD5B03FFEF2BEFBB088 /* CCHMapClusterControllerDebugPolygon.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3E78DF64CB65D42A76A8880DAC274989 /* CCHMapClusterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 21176EA7694F2FE149D6BAD380DBCDC6 /* CCHMapClusterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369A344E6F11389827387B3AE9E9AE26 /* CCHMapClusterControllerDebugPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE281FFFF843C9B77E6ECFC9F88A025 /* CCHMapClusterControllerDebugPolygon.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3E78DF64CB65D42A76A8880DAC274989 /* CCHMapClusterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1297749491AE383D6A55618D460CB405 /* CCHMapClusterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FFE6391821A5F125B39A413D75EAE38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		415980B2A361E3801BC6BB2A4B21299A /* Pods-WebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614D9EF8F4A2E9CEE591960ACFC0085 /* Pods-WebView-dummy.m */; };
-		4315456843B12B1AA578D44A3CF2AC36 /* CCHMapTreeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 687EF4B7FCE0C74037DAE5D1C1F8ED7B /* CCHMapTreeUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4315456843B12B1AA578D44A3CF2AC36 /* CCHMapTreeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1215810022D4F51083DDFBC625EB3E /* CCHMapTreeUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4564D8DCE5FD9A1CC1721AA4CF391C1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
-		48EAA0076AAF2427F395A06BFF49D373 /* CCHMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 112352EEF3B98C9B69E263595E1CAEC2 /* CCHMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A88051C73F5230012FC76CAA8772E38 /* CCHMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D9696573EED7BFCFA22BFD5624F66 /* CCHMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D18F5D1C3FAD3FF04D87E4F1FFA0C23 /* CCHMapClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BCA6FB8AD043883B63ECD9E76C2034 /* CCHMapClusterAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F51A013A67B00F3F02F55C5F0F8E6C8 /* CCHCenterOfMassMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 64584AEBBACD8AB391AAB33772DB0596 /* CCHCenterOfMassMapClusterer.m */; };
+		48EAA0076AAF2427F395A06BFF49D373 /* CCHMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = BD772DD80AACD9D6302A3B9234B2D82C /* CCHMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A88051C73F5230012FC76CAA8772E38 /* CCHMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB1F45DB7C2DC63F7462D200EF7CE2E /* CCHMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D18F5D1C3FAD3FF04D87E4F1FFA0C23 /* CCHMapClusterAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = D01BB0B06179DE2F923CA8F4DE38AD1F /* CCHMapClusterAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F51A013A67B00F3F02F55C5F0F8E6C8 /* CCHCenterOfMassMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBB62E5F7798920271BCC4ADA7F990 /* CCHCenterOfMassMapClusterer.m */; };
 		521E03E95C047FB3F703D8E50975052E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
-		5494B3EEB493A21A22018F5A4EAD666F /* CCHNearCenterMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E11BE964823603CCE12F4A5D8C614 /* CCHNearCenterMapClusterer.m */; };
+		5494B3EEB493A21A22018F5A4EAD666F /* CCHNearCenterMapClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = D947B7D90A4267891100FEFC61E146BE /* CCHNearCenterMapClusterer.m */; };
 		565840E3CC4544A73C7AE205E9E6E0F2 /* Pods-Events-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBED525E3D95F5EE6AA238D4C322176 /* Pods-Events-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DF8DE8C45E0F2CDA7B4261EC7F21045 /* CCHMapClusterControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4871BF53796D01805192168309A79A96 /* CCHMapClusterControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF8DE8C45E0F2CDA7B4261EC7F21045 /* CCHMapClusterControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D53A18548082A358915A00CBA7B99584 /* CCHMapClusterControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71E68C83CE630D9DC83A0D7569CC353C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		775013DE1FEA203F360BFDC5B4319E3B /* Pods-Offers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3715C9371D725268FE0CD456F1DCCD70 /* Pods-Offers-dummy.m */; };
 		77B4E5B8737E88F92A1D3A73030EA097 /* Pods-Transactions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B39AC14880AFDD5BC4166BE949929D /* Pods-Transactions-dummy.m */; };
@@ -55,22 +55,22 @@
 		8C6D3CE32A670F00DD51AACEA960180A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		8CDCD288D675ED128B9683F218B8D11A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		8E82083585ADCFAB85DB8843CD35018B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
-		9DAC9C19793066202BA2C7266C946434 /* CCHNearCenterMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = B26D56EB9907656A4F8F6F9648C047F2 /* CCHNearCenterMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6B34DF5271EA94A4435D969FF1EE130 /* CCHMapTreeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31447A8785CE02206821165332C22E76 /* CCHMapTreeUtils.m */; };
+		9DAC9C19793066202BA2C7266C946434 /* CCHNearCenterMapClusterer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7015A12AF5D7F206ED4A03412341AF99 /* CCHNearCenterMapClusterer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6B34DF5271EA94A4435D969FF1EE130 /* CCHMapTreeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A601778D39E769D1AD8A414B7FA8AA /* CCHMapTreeUtils.m */; };
 		A6D570960EC834A1929035E13D6EBE42 /* Pods-Events-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F41EB33CB36DB37538D4E029F91B8D17 /* Pods-Events-dummy.m */; };
-		ACFEC35BDAB79B1F94BF8AC1E28284E5 /* CCHFadeInOutMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 596F7ACED4F00AE3C654F627216E3DCD /* CCHFadeInOutMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE916C0E1D7C26F73924E63DF0EEE818 /* CCHMapClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC25318B8F509BD1F7F3097CB41AC05 /* CCHMapClusterAnnotation.m */; };
-		B2B61EBC4E94DDF77EB443C376C44F9E /* CCHMapClusterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5397461A5D6031ED5A67488D132F87 /* CCHMapClusterOperation.m */; };
+		ACFEC35BDAB79B1F94BF8AC1E28284E5 /* CCHFadeInOutMapAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F0A32B2CBBD2730479E719173A847C /* CCHFadeInOutMapAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE916C0E1D7C26F73924E63DF0EEE818 /* CCHMapClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D040952783FC569B1F0B4060984B75 /* CCHMapClusterAnnotation.m */; };
+		B2B61EBC4E94DDF77EB443C376C44F9E /* CCHMapClusterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D4D98F85F2953A6FD2B0561D774B8 /* CCHMapClusterOperation.m */; };
 		B2D93D1445E077E903DC5FF6DFBB75F3 /* Pods-Push-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C40FC84A6657B01EA7C45869205AB827 /* Pods-Push-dummy.m */; };
-		B4FFC012721F98A787D4A26DFBB46E7E /* CCHMapClusterController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE610BF6419CF7DC6D58A8E15EFD41 /* CCHMapClusterController-dummy.m */; };
-		B90E246537003023305FEF7839975931 /* CCHMapViewDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F7401CD19A40D27F81DC2A46983CE5 /* CCHMapViewDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B4FFC012721F98A787D4A26DFBB46E7E /* CCHMapClusterController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5426B3EDF7C4209C925A2F60E7948CC /* CCHMapClusterController-dummy.m */; };
+		B90E246537003023305FEF7839975931 /* CCHMapViewDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D123F2A3CABA3532F99E25DFDF45D3 /* CCHMapViewDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BAE52B3F7FE0C2A2E53711F87956512C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		BBA8956D7CA01CF8C631452CD4820B49 /* Pods-Places-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03A2ECB8D85C81C9BE6009086D5D9 /* Pods-Places-dummy.m */; };
 		C135A606C9F08E72A169C6694C429FDC /* Pods-Referrals-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A471BBA5307C1B43B4640E9C66C4F4 /* Pods-Referrals-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2590078D7670EC6BEBE2780134F5B7B /* CCHMapClusterControllerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CAACF68F4ACA7DEE6C8625D49191246 /* CCHMapClusterControllerUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C2590078D7670EC6BEBE2780134F5B7B /* CCHMapClusterControllerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F11BF2CF5FB0B211B2571C5F6B37CF /* CCHMapClusterControllerUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C7B8C58F988AD20E8B382E8A215744B7 /* Pods-Offers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE18BC7C862D18A5B061071897B1813 /* Pods-Offers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC3237DCFF9476DE3E4D04499F0491D1 /* Pods-Auth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDDD43E5BAD372D0E51A8EF03BA55C6 /* Pods-Auth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF4601CA5E30CA091BF645886CBC92FB /* CCHMapClusterController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D89A90F643E24575D52DFA43B55ACE28 /* CCHMapClusterController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF4601CA5E30CA091BF645886CBC92FB /* CCHMapClusterController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8CFE6295B1E29552F756557A442E772 /* CCHMapClusterController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D16301C82482B42D24412AC6782071E2 /* Pods-Campaigns-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD69EC1288D55663C8A64FCE004BBC2A /* Pods-Campaigns-dummy.m */; };
 		D6F44DFFB84F96271469640FD63202AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
 		DA95B4C2E68345C800A74809E541713E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */; };
@@ -95,115 +95,164 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0147F590BC54EE8E4F659D22ACB73D65 /* SessionMWebAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionMWebAuth.h; path = SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework/Headers/SessionMWebAuth.h; sourceTree = "<group>"; };
+		014FF28F3B1D3829FD569A9A9B4FD927 /* SMSkillQuestion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMSkillQuestion.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMSkillQuestion.h; sourceTree = "<group>"; };
 		0289005B73C2E859B283BFC70986FBB7 /* Pods-WebView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WebView-resources.sh"; sourceTree = "<group>"; };
+		02E20131A371F5F8F4C33EC9A19213B9 /* SMUserTagsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUserTagsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUserTagsManager.h; sourceTree = "<group>"; };
 		0304076246B88AD37E9017400D4840CB /* Pods-LoyaltyCards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoyaltyCards-umbrella.h"; sourceTree = "<group>"; };
+		034C9C1CF7709299720087F274FD5D75 /* SMActivityEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMActivityEventBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMActivityEventBuilder.h; sourceTree = "<group>"; };
 		03A43FD89EE41CB624B33CF4F263B15E /* Pods-Push-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Push-resources.sh"; sourceTree = "<group>"; };
 		03D49428893FCFDA2B7F1F01DE10CE9D /* Pods-Receipts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Receipts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0508C19596B61D4E1BE4601A97324720 /* CCHMapClusterController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-prefix.pch"; sourceTree = "<group>"; };
+		0510F3CDB29B672CB2F516780E4BD1F1 /* SMGenericRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGenericRequestBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGenericRequestBuilder.h; sourceTree = "<group>"; };
+		0724394E1F084F0928FA477471CBDBEE /* SessionMFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionMFramework.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SessionMFramework.h; sourceTree = "<group>"; };
+		07CCCD4FED6F869D411E477C26399060 /* SMPurchaseEventItemBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPurchaseEventItemBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPurchaseEventItemBuilder.h; sourceTree = "<group>"; };
+		081429AD0F524D0942C95A8291FAF007 /* SMPUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPUser.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPUser.h; sourceTree = "<group>"; };
+		0C72148673D96BA173374F9B04EB0867 /* SMBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMBehavior.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMBehavior.h; sourceTree = "<group>"; };
 		0CDDD43E5BAD372D0E51A8EF03BA55C6 /* Pods-Auth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Auth-umbrella.h"; sourceTree = "<group>"; };
 		0DF07C29DABE064B0D2F58E0393DDC84 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Places.framework; path = "Pods-Places.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F89C4B4894DCC2F24F48EE485C8474D /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
-		0FAA03090B3B8A7715D22E540CAD2A0B /* CCHMapTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTree.m; path = CCHMapClusterController/CCHMapTree.m; sourceTree = "<group>"; };
+		10F7B2945DD77162FB3FD6D71476AE37 /* SMGenericRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGenericRequest.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGenericRequest.h; sourceTree = "<group>"; };
+		11007777F253B3B4572379A3695FE4BD /* SMLocationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLocationEvent.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLocationEvent.h; sourceTree = "<group>"; };
+		110242B470E1C3472C7A0FB435521EC4 /* SMUserOfferItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUserOfferItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUserOfferItem.h; sourceTree = "<group>"; };
 		11168337EE5B036A60C689DA6B32A350 /* Pods-Push-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Push-umbrella.h"; sourceTree = "<group>"; };
-		112352EEF3B98C9B69E263595E1CAEC2 /* CCHMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterer.h; path = CCHMapClusterController/CCHMapClusterer.h; sourceTree = "<group>"; };
+		1137F652418ACABDBE56BD18E545D945 /* SMInboxMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMInboxMessage.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMInboxMessage.h; sourceTree = "<group>"; };
 		11E3174F8D808544938D9719659BFFD1 /* Pods-Rewards-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rewards-frameworks.sh"; sourceTree = "<group>"; };
-		13C2E9709294ACA6E49A323F05BDB422 /* CCHMapClusterController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterController.m; path = CCHMapClusterController/CCHMapClusterController.m; sourceTree = "<group>"; };
+		1297749491AE383D6A55618D460CB405 /* CCHMapClusterController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterController.h; path = CCHMapClusterController/CCHMapClusterController.h; sourceTree = "<group>"; };
+		132F52FCB6D6E5A6477F0BE339A6748F /* SMPUserCreate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPUserCreate.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPUserCreate.h; sourceTree = "<group>"; };
 		13FCB6F8156DAFE853DEBBFE1825355A /* Pods-Receipts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Receipts.modulemap"; sourceTree = "<group>"; };
+		1473F4608C274030A5845780775943C6 /* SMActivityEventItemBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMActivityEventItemBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMActivityEventItemBuilder.h; sourceTree = "<group>"; };
+		16A601778D39E769D1AD8A414B7FA8AA /* CCHMapTreeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTreeUtils.m; path = CCHMapClusterController/CCHMapTreeUtils.m; sourceTree = "<group>"; };
 		184702BAEB177A344F5918120B6C3263 /* Pods-Referrals-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Referrals-acknowledgements.markdown"; sourceTree = "<group>"; };
 		18F4925C5B60427919F9D9DDF4845277 /* Pods-Referrals-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Referrals-resources.sh"; sourceTree = "<group>"; };
 		1A387BCE21CB2EF89C91760FEBF2C6B2 /* Pods-Campaigns-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Campaigns-umbrella.h"; sourceTree = "<group>"; };
 		1A632FF00F788F22D0782C25DB9AA3B3 /* Pods-Events-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Events-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A719535B80859F56FDDD2F8F64A71AC /* SMGenericResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGenericResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGenericResponse.h; sourceTree = "<group>"; };
 		1AC1CA751AE5BED12846397E044DAF0C /* Pods-Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Places.release.xcconfig"; sourceTree = "<group>"; };
+		1D3DCA7D4C22FAE4BF4676766BB1CD36 /* CCHCenterOfMassMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHCenterOfMassMapClusterer.h; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.h; sourceTree = "<group>"; };
 		20071BD927DB8BC2AD3B25D1BD7A652D /* Pods-Rewards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Rewards.modulemap"; sourceTree = "<group>"; };
-		21176EA7694F2FE149D6BAD380DBCDC6 /* CCHMapClusterController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterController.h; path = CCHMapClusterController/CCHMapClusterController.h; sourceTree = "<group>"; };
 		218017A9549F8BA036E7DC5D8B788F0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2209965E1D32D506881E2A9B39592F0E /* Pods-Offers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Offers-acknowledgements.plist"; sourceTree = "<group>"; };
 		22C6FF55971FCBD19DA8C95F7C2EEC67 /* Pods-Push-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Push-frameworks.sh"; sourceTree = "<group>"; };
 		235D7C3B7A080553E4117669BAA02DE7 /* Pods-Referrals-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Referrals-acknowledgements.plist"; sourceTree = "<group>"; };
 		23C6D2D85634DE1F987F8F430692CCE8 /* Pods-Auth-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Auth-resources.sh"; sourceTree = "<group>"; };
+		25C2638C00D800A31B40348C6ED75023 /* SMSVerification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMSVerification.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMSVerification.h; sourceTree = "<group>"; };
 		264C68DB8D7C5B3AB7010C98CAC3DA5E /* Pods-Geofence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Geofence.release.xcconfig"; sourceTree = "<group>"; };
+		27C1579C66E46DDF2819286E24A39E7C /* SMUserManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUserManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUserManager.h; sourceTree = "<group>"; };
+		2897F1A720973D4CE2BFD5676022A989 /* SMPlacesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPlacesManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPlacesManager.h; sourceTree = "<group>"; };
 		28DDC656000F250158A1184A4DA04D0E /* Pods-Places-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Places-resources.sh"; sourceTree = "<group>"; };
 		29DFC7EE8E8FE6300BC71F5A20625AE0 /* Pods-Geofence-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Geofence-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A2FF88B519D75841F3FFE9C264CB357 /* Pods-Receipts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Receipts-frameworks.sh"; sourceTree = "<group>"; };
 		2A466642FECDA5565FAA00CCE24753C2 /* Pods-Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Events.release.xcconfig"; sourceTree = "<group>"; };
 		2B4FF16402CE22021ED8B0BF2875CD3A /* Pods-Auth-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Auth-frameworks.sh"; sourceTree = "<group>"; };
 		2DA571510FF45B0BB8EE497AA6DE57B1 /* Pods_Referrals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Referrals.framework; path = "Pods-Referrals.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DD7AF0E6C72C3C42140CCEA257F4081 /* CCHMapClusterControllerDebugPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerDebugPolygon.m; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.m; sourceTree = "<group>"; };
+		2E5E2EC74F5596DEE97A7C433790EB7B /* SMEventNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventNotification.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventNotification.h; sourceTree = "<group>"; };
 		2F1AA945BE890820572FA5250E82C058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F910E8E9B016CB612D93188C495E58B /* SMIdentityManager+WebAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SMIdentityManager+WebAuth.h"; path = "SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework/Headers/SMIdentityManager+WebAuth.h"; sourceTree = "<group>"; };
 		30856EB179DB9AE075AA19E1F84058DD /* Pods-Receipts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Receipts-resources.sh"; sourceTree = "<group>"; };
 		30CF6C5A9D9D9F47DAAFE4B15BD9786F /* Pods-Referrals.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Referrals.modulemap"; sourceTree = "<group>"; };
-		31447A8785CE02206821165332C22E76 /* CCHMapTreeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTreeUtils.m; path = CCHMapClusterController/CCHMapTreeUtils.m; sourceTree = "<group>"; };
+		30F9D33AC589CD56FF09A1AD3AC8D466 /* SMReceipt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReceipt.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReceipt.h; sourceTree = "<group>"; };
+		310394154BFCBC6C5A73BE2E05109948 /* SMOffersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOffersManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOffersManager.h; sourceTree = "<group>"; };
+		3159F0B5AF83735DEAB2B1CFF4F21673 /* SMRewardsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMRewardsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMRewardsManager.h; sourceTree = "<group>"; };
+		321629669780AD187DB186018D5C2CEE /* CCHMapTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTree.h; path = CCHMapClusterController/CCHMapTree.h; sourceTree = "<group>"; };
 		32FD5D12B9C1FAF1E92B061C63B84375 /* Pods-Rewards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rewards-umbrella.h"; sourceTree = "<group>"; };
-		336F32FFFBB5BDD5B03FFEF2BEFBB088 /* CCHMapClusterControllerDebugPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDebugPolygon.h; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.h; sourceTree = "<group>"; };
+		334ACEAE7670105D6EA86901D9947BE8 /* SessionMWebAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionMWebAuth.h; path = SessionM_iOS_v2.5.0/SessionMWebAuth.framework/Headers/SessionMWebAuth.h; sourceTree = "<group>"; };
 		34A471BBA5307C1B43B4640E9C66C4F4 /* Pods-Referrals-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Referrals-umbrella.h"; sourceTree = "<group>"; };
+		35053C586631EF271D64104605E88DE6 /* CCHMapClusterController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CCHMapClusterController.modulemap; sourceTree = "<group>"; };
 		3715C9371D725268FE0CD456F1DCCD70 /* Pods-Offers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Offers-dummy.m"; sourceTree = "<group>"; };
 		37B9C5D18CCA0ABBD61755A8EF0AC4E5 /* Pods_WebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WebView.framework; path = "Pods-WebView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3819D32734DC8F25F0B5113A25D287E6 /* CCHMapClusterController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CCHMapClusterController.modulemap; sourceTree = "<group>"; };
 		390DD29D845F1A3073B0712B66822177 /* Pods-Inbox-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Inbox-frameworks.sh"; sourceTree = "<group>"; };
+		39F0A32B2CBBD2730479E719173A847C /* CCHFadeInOutMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHFadeInOutMapAnimator.h; path = CCHMapClusterController/CCHFadeInOutMapAnimator.h; sourceTree = "<group>"; };
+		3A0E0B195CBD0EA2DF66BE60AF8D6E1E /* SMNotificationMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMNotificationMessage.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMNotificationMessage.h; sourceTree = "<group>"; };
+		3B3429F0C4F047B2E0008ECBB175B93A /* SMTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMTransaction.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMTransaction.h; sourceTree = "<group>"; };
 		3DFD46222EAE92DCD882500B109D539B /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
 		3E892BD5DC1ECFAB74DD11F62F9C9EDA /* Pods-WebView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WebView-frameworks.sh"; sourceTree = "<group>"; };
+		3EDBB62E5F7798920271BCC4ADA7F990 /* CCHCenterOfMassMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHCenterOfMassMapClusterer.m; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.m; sourceTree = "<group>"; };
+		404F63BF24D89C2C6F88F43A702642B4 /* SMPurchaseEventItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPurchaseEventItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPurchaseEventItem.h; sourceTree = "<group>"; };
 		4222276B935D125FB9EC10514DBB2AB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A06D808D3FA048358393BA94272B1E /* Pods-Receipts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Receipts-acknowledgements.plist"; sourceTree = "<group>"; };
 		44440141D0F9909BE60119657CD256D7 /* Pods-Content-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Content-resources.sh"; sourceTree = "<group>"; };
 		47AA9AF3E990DACC8B7012BBF40BA270 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F75FA75D0EA9CED573E8794F76459D /* Pods-LoyaltyCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoyaltyCards.debug.xcconfig"; sourceTree = "<group>"; };
-		4871BF53796D01805192168309A79A96 /* CCHMapClusterControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDelegate.h; path = CCHMapClusterController/CCHMapClusterControllerDelegate.h; sourceTree = "<group>"; };
+		48F11BF2CF5FB0B211B2571C5F6B37CF /* CCHMapClusterControllerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerUtils.h; path = CCHMapClusterController/CCHMapClusterControllerUtils.h; sourceTree = "<group>"; };
 		495C00AB01DBF83CA01967C7A8EF0745 /* Pods-Campaigns-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Campaigns-acknowledgements.plist"; sourceTree = "<group>"; };
 		4977F3243F780FC83ACED5A91B2E6A32 /* Pods-Referrals-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Referrals-dummy.m"; sourceTree = "<group>"; };
+		49A4CC319E97226848253715282AFE93 /* SMEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventBuilder.h; sourceTree = "<group>"; };
 		49B7742D299DF233394DD13EC31A8EBE /* Pods-WebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WebView.modulemap"; sourceTree = "<group>"; };
 		4A5078D2DD5200DC649196DC2E871AE7 /* Pods-Geofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Geofence.debug.xcconfig"; sourceTree = "<group>"; };
+		4AB33E37D38E07244F551223B814EEEE /* SMOfferGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOfferGroup.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOfferGroup.h; sourceTree = "<group>"; };
 		4AD47A9845A402692125B31A42CF0AB8 /* Pods-Content.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Content.debug.xcconfig"; sourceTree = "<group>"; };
-		4CAACF68F4ACA7DEE6C8625D49191246 /* CCHMapClusterControllerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerUtils.h; path = CCHMapClusterController/CCHMapClusterControllerUtils.h; sourceTree = "<group>"; };
 		4DADC903C55D46881550E0290121D306 /* Pods_Offers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Offers.framework; path = "Pods-Offers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB5A5299AA4BAAE8E3806A57D44F75A /* Pods_Transactions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Transactions.framework; path = "Pods-Transactions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50BF7879877D23EB91346D4B47582569 /* CCHFadeInOutMapAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHFadeInOutMapAnimator.m; path = CCHMapClusterController/CCHFadeInOutMapAnimator.m; sourceTree = "<group>"; };
 		527CD27A63ED626D1F422D094D94EF5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545F8657FB74536ADA293508B3ED4C2D /* CCHMapViewDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapViewDelegateProxy.m; path = CCHMapClusterController/CCHMapViewDelegateProxy.m; sourceTree = "<group>"; };
 		5553FDF06B23676B739F0C9AA5965F1A /* Pods-Campaigns.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Campaigns.modulemap"; sourceTree = "<group>"; };
-		596F7ACED4F00AE3C654F627216E3DCD /* CCHFadeInOutMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHFadeInOutMapAnimator.h; path = CCHMapClusterController/CCHFadeInOutMapAnimator.h; sourceTree = "<group>"; };
+		56107DC506B9438DDB33CD3A0C61B9EC /* SMOfferMedia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOfferMedia.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOfferMedia.h; sourceTree = "<group>"; };
+		57823BFD1C84F3965B21645BBFC4BE91 /* SessionMWebAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SessionMWebAuth.framework; path = SessionM_iOS_v2.5.0/SessionMWebAuth.framework; sourceTree = "<group>"; };
+		598278FE1AA1D279AEBEBF66872F7DB8 /* SMPurchaseEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPurchaseEvent.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPurchaseEvent.h; sourceTree = "<group>"; };
+		5A9D68C694F21ACD992254B128127D0F /* SMLoyaltyCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLoyaltyCard.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLoyaltyCard.h; sourceTree = "<group>"; };
+		5C92C432DAB00F48708AFC092BFDEA65 /* SMPlaceCheckinResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPlaceCheckinResult.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPlaceCheckinResult.h; sourceTree = "<group>"; };
 		5D4B972677BE9F76D25A1912B7FA1CCD /* Pods_Geofence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Geofence.framework; path = "Pods-Geofence.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5D8ACFDC5369FFD4BB5CEDC031886E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8A20ADA52BB77411C0F5D7FCC57D69 /* SMGoal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGoal.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGoal.h; sourceTree = "<group>"; };
+		5D9755E26A16DE747153D81177E2A404 /* SMActivityViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMActivityViewController.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMActivityViewController.h; sourceTree = "<group>"; };
 		5DDCAB05676E143B6B678370FA5D002E /* Pods-Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rewards.release.xcconfig"; sourceTree = "<group>"; };
-		5F66710197889F91C3B0F4E534328444 /* CCHMapClusterController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCHMapClusterController.xcconfig; sourceTree = "<group>"; };
 		600222DCA51D0F78ABFAF5E743523743 /* Pods-Transactions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Transactions.modulemap"; sourceTree = "<group>"; };
+		60D3DB8F2D9788F1270F53C405E763DC /* SMGenericRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGenericRequestManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGenericRequestManager.h; sourceTree = "<group>"; };
 		60FDFC36DCA35973B522E8B26FFA98E9 /* Pods-Geofence-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Geofence-frameworks.sh"; sourceTree = "<group>"; };
 		612E2FED3F0D95FE0862348A76E72CC7 /* Pods-Referrals-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Referrals-frameworks.sh"; sourceTree = "<group>"; };
+		61972881E04331E5C76BB64965AD4127 /* SMInboxManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMInboxManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMInboxManager.h; sourceTree = "<group>"; };
 		62A011FA1A99147F65D1F603FEB62B7B /* Pods-Transactions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Transactions-acknowledgements.plist"; sourceTree = "<group>"; };
+		62AC0DA2EF7991B236876CC3951CE4F9 /* SMUniqueBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUniqueBehavior.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUniqueBehavior.h; sourceTree = "<group>"; };
 		62D2869F1CECBA19F999E8D5A3AF085D /* Pods-Transactions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Transactions-umbrella.h"; sourceTree = "<group>"; };
-		64584AEBBACD8AB391AAB33772DB0596 /* CCHCenterOfMassMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHCenterOfMassMapClusterer.m; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.m; sourceTree = "<group>"; };
+		6359A3BB286E2F2F86EC273C37F0F032 /* CCHMapClusterController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCHMapClusterController.xcconfig; sourceTree = "<group>"; };
 		65213D94A02F43D3C2A5667069033F83 /* Pods-Geofence-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Geofence-dummy.m"; sourceTree = "<group>"; };
 		6614D9EF8F4A2E9CEE591960ACFC0085 /* Pods-WebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WebView-dummy.m"; sourceTree = "<group>"; };
+		6633106B912FE78F9A1060E6E5B29C69 /* SMWebProfileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMWebProfileManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMWebProfileManager.h; sourceTree = "<group>"; };
 		667F40F6B3E0EBD3ADBB8711CD9097C9 /* Pods-Inbox-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Inbox-resources.sh"; sourceTree = "<group>"; };
-		6742C59D4330E64378112A0C08E457BB /* CCHMapTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTree.h; path = CCHMapClusterController/CCHMapTree.h; sourceTree = "<group>"; };
+		685D63ECB38E09B6D9BF18E3212736BE /* SMOfferItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOfferItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOfferItem.h; sourceTree = "<group>"; };
 		686F00F72F80ADA5D01BB36C8992F589 /* Pods-Geofence-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Geofence-resources.sh"; sourceTree = "<group>"; };
-		687EF4B7FCE0C74037DAE5D1C1F8ED7B /* CCHMapTreeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTreeUtils.h; path = CCHMapClusterController/CCHMapTreeUtils.h; sourceTree = "<group>"; };
-		6A17933263AA08D019163CC6E3EEFB82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B41A544A4338B505DC8CAC44E0632C9 /* Pods-Geofence-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Geofence-umbrella.h"; sourceTree = "<group>"; };
 		6B5708BABB527395F1D79D934ACBE631 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBA6CA54BC75BE3493C08279C494A8 /* Pods-Content.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Content.modulemap"; sourceTree = "<group>"; };
 		6CEB78E908580DE771B184B4C170ADDF /* Pods-Transactions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Transactions-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6CEE610BF6419CF7DC6D58A8E15EFD41 /* CCHMapClusterController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCHMapClusterController-dummy.m"; sourceTree = "<group>"; };
+		6D385318E745366DBC34131662DB2DBF /* SMEventsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventsResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventsResponse.h; sourceTree = "<group>"; };
 		6E0E9C83C825138210F5E0F94747EA66 /* Pods-Campaigns-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Campaigns-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6EDDC7D85D08A5EFAEF3228D14574366 /* SMOfferPurchasedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOfferPurchasedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOfferPurchasedResponse.h; sourceTree = "<group>"; };
 		6F1A62F5C6BE2E0B04022BF7531ACA6B /* Pods-Receipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Receipts.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB3B0D9C0F029794EB728DBA9B45059 /* SMClaimedOfferItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMClaimedOfferItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMClaimedOfferItem.h; sourceTree = "<group>"; };
+		7015A12AF5D7F206ED4A03412341AF99 /* CCHNearCenterMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHNearCenterMapClusterer.h; path = CCHMapClusterController/CCHNearCenterMapClusterer.h; sourceTree = "<group>"; };
 		7093C424A9630AE3E8365E47B0BCC8C9 /* Pods-Rewards-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rewards-acknowledgements.plist"; sourceTree = "<group>"; };
 		71DEB7C2854F8B674FED2BCEDFBCF703 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7237772571093B0A868A34F963D3EBA6 /* SMContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMContent.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMContent.h; sourceTree = "<group>"; };
+		72D040952783FC569B1F0B4060984B75 /* CCHMapClusterAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterAnnotation.m; path = CCHMapClusterController/CCHMapClusterAnnotation.m; sourceTree = "<group>"; };
 		73AA6F94DDAF7DEE6524452D430FAFA8 /* Pods-LoyaltyCards-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoyaltyCards-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7457A18E87A312A277895CDF770E0E2A /* Pods-LoyaltyCards-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoyaltyCards-resources.sh"; sourceTree = "<group>"; };
 		74625B784691EEE7827FD88BEAFCF38A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7479D9B06A9A5E285ADA3C076FE4FF39 /* Pods-Offers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Offers-acknowledgements.markdown"; sourceTree = "<group>"; };
 		76161D89FE27F488CDAEDC21B4986483 /* Pods-Events-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Events-frameworks.sh"; sourceTree = "<group>"; };
+		764BBA5D9418DF80213F850192E07E76 /* SMStoreOffersFetchedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMStoreOffersFetchedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMStoreOffersFetchedResponse.h; sourceTree = "<group>"; };
+		769687DB8207D1F5DA0F0E288BAE59C3 /* SMPurchaseEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPurchaseEventBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPurchaseEventBuilder.h; sourceTree = "<group>"; };
+		780F1EBCC0DE8B2836502E3E35EA04FD /* SMIdentityManager+WebAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SMIdentityManager+WebAuth.h"; path = "SessionM_iOS_v2.5.0/SessionMWebAuth.framework/Headers/SMIdentityManager+WebAuth.h"; sourceTree = "<group>"; };
+		78A3786BB9FC13B2C83181E3DB7E9672 /* CCHMapClusterControllerDebugPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerDebugPolygon.m; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.m; sourceTree = "<group>"; };
 		7A05DBBE4D67AF6237EF54417ACB6720 /* Pods_Content.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Content.framework; path = "Pods-Content.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE281FFFF843C9B77E6ECFC9F88A025 /* CCHMapClusterControllerDebugPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDebugPolygon.h; path = CCHMapClusterController/CCHMapClusterControllerDebugPolygon.h; sourceTree = "<group>"; };
 		7B749CE693E89E24FBE4A4534BD7CF09 /* Pods-Push.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Push.release.xcconfig"; sourceTree = "<group>"; };
+		7BE62334AC9F1A6E57143874D05906EA /* SMUserOffersFetchedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUserOffersFetchedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUserOffersFetchedResponse.h; sourceTree = "<group>"; };
 		7D170B51B5023DFEA4A997525A2B1A3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D73E5AD6900274CB781A9B07769426B /* SMEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEvent.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEvent.h; sourceTree = "<group>"; };
 		7F8E720E669CC5DBBC1A7B0C748E5EA0 /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
 		82038CDDC662CB8460C4D884DD64DBC0 /* Pods_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rewards.framework; path = "Pods-Rewards.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8214975B3F06B280B103DF7159C6F8E0 /* Pods-Inbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Inbox.modulemap"; sourceTree = "<group>"; };
 		82390D737008A5EF14B55FC26BC776BF /* Pods-Campaigns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Campaigns.debug.xcconfig"; sourceTree = "<group>"; };
-		82AC743D86379568FBF22B87472D161A /* CCHMapClusterControllerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerUtils.m; path = CCHMapClusterController/CCHMapClusterControllerUtils.m; sourceTree = "<group>"; };
+		8325A30FAAF10E8BF76F4F7AD642C97E /* SMWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMWebView.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMWebView.h; sourceTree = "<group>"; };
 		84919C1589C151F1DAD8E80F17B8D628 /* Pods-Geofence-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Geofence-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84DAB109C0ABA94069491FE8CA52A707 /* Pods-WebView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WebView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		855D4D98F85F2953A6FD2B0561D774B8 /* CCHMapClusterOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterOperation.m; path = CCHMapClusterController/CCHMapClusterOperation.m; sourceTree = "<group>"; };
+		85F30A25B9EDA955873AC225218489CF /* SMLoyaltyCardsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLoyaltyCardsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLoyaltyCardsManager.h; sourceTree = "<group>"; };
+		8715F13C061851D2F7DC4BEF69D705C2 /* SMMessagesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMMessagesManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMMessagesManager.h; sourceTree = "<group>"; };
 		881C3BF45A03150DF37B9AA7C54E2A4F /* Pods-Offers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Offers.modulemap"; sourceTree = "<group>"; };
 		8ABA541336EEDA82F984F3C9C15E3932 /* Pods-Offers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Offers.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAF96A611F13F9293A15CC124DB57FE /* SMPUserUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPUserUpdate.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPUserUpdate.h; sourceTree = "<group>"; };
+		8BF4DCEBF7FCB67345BE6E42A8F5717B /* SMProgressBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMProgressBehavior.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMProgressBehavior.h; sourceTree = "<group>"; };
 		8C659E8ADFBF48FA54ADBA30C05AD08D /* Pods-Campaigns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Campaigns.release.xcconfig"; sourceTree = "<group>"; };
 		8D7D23C9856B45DF0808483ECEC0AE41 /* Pods-Events-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Events-resources.sh"; sourceTree = "<group>"; };
 		8F79C6C544B9CA2BE69647E0AA9D6DCC /* Pods-WebView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WebView-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -212,92 +261,135 @@
 		94A03A2ECB8D85C81C9BE6009086D5D9 /* Pods-Places-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Places-dummy.m"; sourceTree = "<group>"; };
 		963DC3B44E22A8291075B4F6785DBC40 /* Pods-Referrals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Referrals.debug.xcconfig"; sourceTree = "<group>"; };
 		964748E1C76E79F2190657733F57FCD8 /* Pods-LoyaltyCards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoyaltyCards-dummy.m"; sourceTree = "<group>"; };
+		9B6EEBC8D20448E91B8427CD044E24E3 /* CCHMapClusterOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterOperation.h; path = CCHMapClusterController/CCHMapClusterOperation.h; sourceTree = "<group>"; };
 		9B7406FBF27704D943478FF5B9667AEA /* Pods-Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Content.release.xcconfig"; sourceTree = "<group>"; };
-		9CC25318B8F509BD1F7F3097CB41AC05 /* CCHMapClusterAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterAnnotation.m; path = CCHMapClusterController/CCHMapClusterAnnotation.m; sourceTree = "<group>"; };
+		9B9FB611D7245CECC5900DC84B717E87 /* SMTransactionsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMTransactionsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMTransactionsManager.h; sourceTree = "<group>"; };
+		9BAD3839C9F5ED25A200ECB0FA3E74BC /* SMOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOrder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOrder.h; sourceTree = "<group>"; };
+		9C7C362C751B71E37A413C01ECF8FD10 /* SMCampaignsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMCampaignsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMCampaignsManager.h; sourceTree = "<group>"; };
+		9CE5AEC25C4E951D6879719F0E65082D /* SMRetailer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMRetailer.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMRetailer.h; sourceTree = "<group>"; };
 		9D082A2E8F33D3C51082BBE0E6BAFE1F /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
+		9D72E71E4E32B3329039B07B7DF349BA /* SMEventItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventItem.h; sourceTree = "<group>"; };
 		9EFB4A6A4C764B3A423EF13B9721C1BB /* Pods-Inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Inbox.release.xcconfig"; sourceTree = "<group>"; };
-		9F70D0406ADCDF33460D58EB4E6DE19C /* CCHCenterOfMassMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHCenterOfMassMapClusterer.h; path = CCHMapClusterController/CCHCenterOfMassMapClusterer.h; sourceTree = "<group>"; };
 		A06B174F28FB24A821E29D8EB6A89AF2 /* Pods_Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Push.framework; path = "Pods-Push.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1224A1E4CFFDD3BD051AAA2772C4CC1 /* Pods-Content-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Content-frameworks.sh"; sourceTree = "<group>"; };
+		A19D3D8711CB4590BC2BE86D44A364EE /* CCHMapTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapTree.m; path = CCHMapClusterController/CCHMapTree.m; sourceTree = "<group>"; };
 		A33716AE426A031CDA549C1E59F05091 /* Pods-WebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebView.release.xcconfig"; sourceTree = "<group>"; };
+		A3732CA26DD2B42FE3CE669EFD361FD2 /* SessionMFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SessionMFramework.framework; path = SessionM_iOS_v2.5.0/SessionMFramework.framework; sourceTree = "<group>"; };
 		A45C3E60237F0159506017374CD10E90 /* Pods-LoyaltyCards-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoyaltyCards-acknowledgements.plist"; sourceTree = "<group>"; };
+		A4EBD72DC37091010661181E3DF974CB /* SMActivityEventItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMActivityEventItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMActivityEventItem.h; sourceTree = "<group>"; };
 		A535CE9E150BAA52C39429FC937723A9 /* Pods-Inbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Inbox-dummy.m"; sourceTree = "<group>"; };
 		A68CD57BAAF7E2B24E9BC4CCA96AA0B8 /* Pods-Push.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Push.modulemap"; sourceTree = "<group>"; };
-		A79E11BE964823603CCE12F4A5D8C614 /* CCHNearCenterMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHNearCenterMapClusterer.m; path = CCHMapClusterController/CCHNearCenterMapClusterer.m; sourceTree = "<group>"; };
 		A7A7129713010F675750497157A99F70 /* Pods-Receipts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Receipts-umbrella.h"; sourceTree = "<group>"; };
 		AA4A16AC7FAAE9A153429D02C236E03C /* Pods-Content-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Content-umbrella.h"; sourceTree = "<group>"; };
 		AB20206C5E693C4D85334F7581BBB34D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC17B118A5E5996001F02A680AC67D0 /* SMStoreOfferItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMStoreOfferItem.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMStoreOfferItem.h; sourceTree = "<group>"; };
 		ACD635AC7F2C2B03015ADF9AA16125B6 /* Pods-Transactions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Transactions.debug.xcconfig"; sourceTree = "<group>"; };
 		AE97C775E5C695BB026C61E8CEACFC2F /* Pods-Offers-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Offers-resources.sh"; sourceTree = "<group>"; };
 		AEC75AF4BEF40811D6762494CB148A5B /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Auth.framework; path = "Pods-Auth.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF23129DE29BD9601AAC2F45C7039C1E /* SMPlace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMPlace.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMPlace.h; sourceTree = "<group>"; };
 		AFAAFB9D3248E936C2E6C7CBDB9508C4 /* Pods-Auth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Auth.modulemap"; sourceTree = "<group>"; };
+		AFC3861ED00D725824AA566DC39888F1 /* SMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMAddress.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMAddress.h; sourceTree = "<group>"; };
 		B04DC18FD86D450D69DD8CA5C158FCD0 /* Pods-Transactions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Transactions-resources.sh"; sourceTree = "<group>"; };
-		B26D56EB9907656A4F8F6F9648C047F2 /* CCHNearCenterMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHNearCenterMapClusterer.h; path = CCHMapClusterController/CCHNearCenterMapClusterer.h; sourceTree = "<group>"; };
+		B1F9338DE873B8ECD6DD77A666B0DCDE /* CCHMapClusterController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterController.m; path = CCHMapClusterController/CCHMapClusterController.m; sourceTree = "<group>"; };
+		B23F861A3B5DE81E0BDEBDBFC70C01FD /* SMCountBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMCountBehavior.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMCountBehavior.h; sourceTree = "<group>"; };
 		B4921AEA2D975DCC43E890291D7C539F /* CCHMapClusterController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCHMapClusterController.framework; path = CCHMapClusterController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E27AAFCDE7C41A0B8BA5F4DD7584E3 /* SMIdentityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMIdentityManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMIdentityManager.h; sourceTree = "<group>"; };
 		B7467BD3384EEE52594766BA55C4411D /* Pods-Content-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Content-dummy.m"; sourceTree = "<group>"; };
+		B783C6E7F1357818599EB0815D889E37 /* SMSVerificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMSVerificationManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMSVerificationManager.h; sourceTree = "<group>"; };
+		B85949A39ED5206C567CC0DB904B6C8B /* SMAchievementData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMAchievementData.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMAchievementData.h; sourceTree = "<group>"; };
+		B8CFE6295B1E29552F756557A442E772 /* CCHMapClusterController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-umbrella.h"; sourceTree = "<group>"; };
+		B8E264D44047AAAEB52ACDCB58B1AA28 /* SMEventItemBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventItemBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventItemBuilder.h; sourceTree = "<group>"; };
 		BA9360883EC61C4B7E87D83261D5F2B1 /* Pods-LoyaltyCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoyaltyCards.release.xcconfig"; sourceTree = "<group>"; };
 		BAB02DF00714C3C6962AA1FFFAABCA15 /* Pods-Rewards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rewards-dummy.m"; sourceTree = "<group>"; };
 		BB53C4ED66B76162E397067CDAA8A130 /* Pods-Places-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Places-umbrella.h"; sourceTree = "<group>"; };
-		BB9068D350715539A4367BC6687D7ACD /* CCHMapClusterOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterOperation.h; path = CCHMapClusterController/CCHMapClusterOperation.h; sourceTree = "<group>"; };
-		C0212BAB925E8D0A1595031F9878BC0B /* CCHMapClusterController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-prefix.pch"; sourceTree = "<group>"; };
+		BCBE624703CF300EC40C0EECC2970124 /* CCHMapClusterControllerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterControllerUtils.m; path = CCHMapClusterController/CCHMapClusterControllerUtils.m; sourceTree = "<group>"; };
+		BD772DD80AACD9D6302A3B9234B2D82C /* CCHMapClusterer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterer.h; path = CCHMapClusterController/CCHMapClusterer.h; sourceTree = "<group>"; };
+		BE67A7326C896B8C574FFF995DCA2277 /* SMOffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOffer.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOffer.h; sourceTree = "<group>"; };
 		C031FDB36A956E0445FD7699462EF759 /* Pods-Places-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Places-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C07F0743CC4083F08DB88C57B7508EDA /* Pods-Campaigns-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Campaigns-resources.sh"; sourceTree = "<group>"; };
-		C0F7401CD19A40D27F81DC2A46983CE5 /* CCHMapViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapViewDelegateProxy.h; path = CCHMapClusterController/CCHMapViewDelegateProxy.h; sourceTree = "<group>"; };
 		C196F08B6A19EB2AF3DD189B2F1F02D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		C19DD8492B00D3870C069A42D437A829 /* Pods-Offers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Offers.release.xcconfig"; sourceTree = "<group>"; };
 		C2CDB5E2B50E7EAC1276D490757C0F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		C40F509A1025FB7D97D545A517BDBA37 /* SMFeedMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMFeedMessage.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMFeedMessage.h; sourceTree = "<group>"; };
 		C40FC84A6657B01EA7C45869205AB827 /* Pods-Push-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Push-dummy.m"; sourceTree = "<group>"; };
+		C411AAE06A55D9551662BB392880D611 /* SMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMError.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMError.h; sourceTree = "<group>"; };
 		C4839A47C9240E3978DEA0BC9DAC90A6 /* Pods-Offers-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Offers-frameworks.sh"; sourceTree = "<group>"; };
-		C63D7929AC1439D3343450DFEDEC8A95 /* SessionMWebAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SessionMWebAuth.framework; path = SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework; sourceTree = "<group>"; };
-		C6BCA6FB8AD043883B63ECD9E76C2034 /* CCHMapClusterAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterAnnotation.h; path = CCHMapClusterController/CCHMapClusterAnnotation.h; sourceTree = "<group>"; };
+		C506EA7054BB918531FB009A8604E851 /* SMEventPostedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventPostedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventPostedResponse.h; sourceTree = "<group>"; };
+		C596624835201A455E4C2A585B1BF986 /* SMJSBridgeHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMJSBridgeHandling.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMJSBridgeHandling.h; sourceTree = "<group>"; };
 		C7325227CB303E4B56611D0205DF6F2F /* Pods-Referrals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Referrals.release.xcconfig"; sourceTree = "<group>"; };
 		C817C0CFE991FABA821E9A9C81462D3C /* Pods-Events.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Events.modulemap"; sourceTree = "<group>"; };
+		C98BCB80447C8FD37AD393EBDD474476 /* CCHFadeInOutMapAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHFadeInOutMapAnimator.m; path = CCHMapClusterController/CCHFadeInOutMapAnimator.m; sourceTree = "<group>"; };
 		CA81CD43AA53EB0C469DEEA8A4964162 /* Pods-LoyaltyCards-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoyaltyCards-frameworks.sh"; sourceTree = "<group>"; };
 		CAB5C45F6340035A0CDE2C9B0F40F1B0 /* Pods-Push-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Push-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB0AF0C451F1A58C173E312018BF06B3 /* Pods-Inbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Inbox-umbrella.h"; sourceTree = "<group>"; };
+		CB6DB86BF88C3000CD7372306772C8CD /* SMOffersResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOffersResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOffersResponse.h; sourceTree = "<group>"; };
 		CBBF101A5CF3E64839305826DFCC4691 /* Pods-Campaigns-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Campaigns-frameworks.sh"; sourceTree = "<group>"; };
 		CBCA400CC470044AD2AE9841397D50A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD4D58DCB7288EA3B7E9C582B8E11D24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD78541A6D9E78E6C36F589EDE3ECAE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0896E9BC95FDEEEF2E995EC29725E6 /* Pods-Auth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Auth-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF0A6E9BCDB92195BBF28CD43DBA0FA0 /* SMReferral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReferral.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReferral.h; sourceTree = "<group>"; };
 		CFBED525E3D95F5EE6AA238D4C322176 /* Pods-Events-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Events-umbrella.h"; sourceTree = "<group>"; };
 		D00DE4B1DC312E6D9201C2DA53E209DA /* Pods-Places-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Places-frameworks.sh"; sourceTree = "<group>"; };
+		D01BB0B06179DE2F923CA8F4DE38AD1F /* CCHMapClusterAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterAnnotation.h; path = CCHMapClusterController/CCHMapClusterAnnotation.h; sourceTree = "<group>"; };
+		D28CE62C3C636C78354B7F16A4E5BD27 /* SMLoaderController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLoaderController.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLoaderController.h; sourceTree = "<group>"; };
 		D30810893A355ABD0BE46AFE428EB885 /* Pods-Rewards-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rewards-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D89A90F643E24575D52DFA43B55ACE28 /* CCHMapClusterController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCHMapClusterController-umbrella.h"; sourceTree = "<group>"; };
+		D3D852A6338A13A4B2791DA0282AEAE6 /* SMBaseDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMBaseDelegate.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMBaseDelegate.h; sourceTree = "<group>"; };
+		D40EBC8F7A768CD723C8989882FEE0A4 /* SMReferralError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReferralError.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReferralError.h; sourceTree = "<group>"; };
+		D53A18548082A358915A00CBA7B99584 /* CCHMapClusterControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapClusterControllerDelegate.h; path = CCHMapClusterController/CCHMapClusterControllerDelegate.h; sourceTree = "<group>"; };
+		D5426B3EDF7C4209C925A2F60E7948CC /* CCHMapClusterController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCHMapClusterController-dummy.m"; sourceTree = "<group>"; };
+		D7D123F2A3CABA3532F99E25DFDF45D3 /* CCHMapViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapViewDelegateProxy.h; path = CCHMapClusterController/CCHMapViewDelegateProxy.h; sourceTree = "<group>"; };
+		D947B7D90A4267891100FEFC61E146BE /* CCHNearCenterMapClusterer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHNearCenterMapClusterer.m; path = CCHMapClusterController/CCHNearCenterMapClusterer.m; sourceTree = "<group>"; };
+		D96A6BA334457F38342FCBFAB268C1B0 /* SMReferralsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReferralsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReferralsManager.h; sourceTree = "<group>"; };
 		DA3774C09FCCE103DC442FFD047F05CE /* Pods-Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rewards.debug.xcconfig"; sourceTree = "<group>"; };
 		DA510568B902F4A43CA2FB0E8DB6C8C6 /* Pods-Inbox-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Inbox-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DAD0E674E50BF19C9D70D43FE44C6FA5 /* Pods-Geofence.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Geofence.modulemap"; sourceTree = "<group>"; };
 		DBD75640A4E8D21EFDBF562232E0EAA5 /* Pods-Auth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Auth-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DBE18BC7C862D18A5B061071897B1813 /* Pods-Offers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Offers-umbrella.h"; sourceTree = "<group>"; };
 		DD9DCEC831E08A4BF204E8073D007F7D /* Pods-Places-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Places-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDFE0B6A13A68ADB47E68B4AF917BE63 /* SMCompositeBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMCompositeBehavior.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMCompositeBehavior.h; sourceTree = "<group>"; };
+		DEC18B0C985BD586E8E055053758F15D /* SMBehaviorProgressFetchedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMBehaviorProgressFetchedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMBehaviorProgressFetchedResponse.h; sourceTree = "<group>"; };
 		DF1134A7D62A193133F9DE3ED17CEEC9 /* Pods-LoyaltyCards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LoyaltyCards.modulemap"; sourceTree = "<group>"; };
-		DF5397461A5D6031ED5A67488D132F87 /* CCHMapClusterOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapClusterOperation.m; path = CCHMapClusterController/CCHMapClusterOperation.m; sourceTree = "<group>"; };
 		E0B39AC14880AFDD5BC4166BE949929D /* Pods-Transactions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Transactions-dummy.m"; sourceTree = "<group>"; };
+		E1F67C49C5CCE7989F65E93B54EB8F71 /* SMActivityEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMActivityEvent.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMActivityEvent.h; sourceTree = "<group>"; };
 		E31C24921C436A89393D400F392E22FA /* Pods-Rewards-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rewards-resources.sh"; sourceTree = "<group>"; };
+		E48B9F9B016F4F0A05DD1ED81D675D29 /* SMReceiptsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReceiptsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReceiptsManager.h; sourceTree = "<group>"; };
 		E569EE0A13BAC840C2D11E4E27A45647 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58828D4453BF6DC9966B1CD9C82F794 /* Pods-Auth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Auth-dummy.m"; sourceTree = "<group>"; };
 		E5D5B0D34198AABA9FD359E7D0D3811F /* Pods-WebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebView.debug.xcconfig"; sourceTree = "<group>"; };
 		E66130DC45D80B2863A8F044108834AE /* Pods-Transactions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Transactions.release.xcconfig"; sourceTree = "<group>"; };
 		E6C038081C854FC53F23DCA26D23960D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E724EBC227E81254DC93AE52914DA467 /* SMSkillChallenge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMSkillChallenge.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMSkillChallenge.h; sourceTree = "<group>"; };
 		E7A94A3D7035CB1C912EF08B3C89862F /* Pods-Content-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Content-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E84AA1BBA0366AE44672CE7E72D40CEB /* Pods_LoyaltyCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoyaltyCards.framework; path = "Pods-LoyaltyCards.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E141122816D5BE47A13B6C2BFA187A /* SMOfferCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMOfferCategory.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMOfferCategory.h; sourceTree = "<group>"; };
 		E9872F6494AF59CD88550F7CDC7185A3 /* Pods-Content-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Content-acknowledgements.plist"; sourceTree = "<group>"; };
+		EBB1F45DB7C2DC63F7462D200EF7CE2E /* CCHMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapAnimator.h; path = CCHMapClusterController/CCHMapAnimator.h; sourceTree = "<group>"; };
 		EC3C521981DC8F2D8738CBFB1295FE2E /* Pods-Inbox-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Inbox-acknowledgements.plist"; sourceTree = "<group>"; };
 		ED88E081EB66BE2C5E2F5339BC49A40F /* Pods-Transactions-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Transactions-frameworks.sh"; sourceTree = "<group>"; };
 		EE853FC83B341841A2B23310168B537C /* Pods-Events-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Events-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE92CC1B9F6EB856C75FBC138400BD25 /* Pods_Receipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Receipts.framework; path = "Pods-Receipts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC5B030A0B39DB9DD6046D1CE15F417 /* Pods_Campaigns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Campaigns.framework; path = "Pods-Campaigns.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1236BA88AF317D109C29E06CFCC23C4 /* SMSimpleEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMSimpleEventBuilder.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMSimpleEventBuilder.h; sourceTree = "<group>"; };
 		F13979B88A60B3E48B5F631ECB267B8B /* Pods-Receipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Receipts.release.xcconfig"; sourceTree = "<group>"; };
+		F13A9D44873A13B74609F4D1D88FEEEA /* SessionM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionM.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SessionM.h; sourceTree = "<group>"; };
+		F1B9AEB48425BF846C41E57CBF1BD9DA /* SMGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMGroup.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMGroup.h; sourceTree = "<group>"; };
 		F2FBE7E764589DD1D2582BEA6982BB32 /* Pods_Inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Inbox.framework; path = "Pods-Inbox.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F372BACDE1AFEFA0ACC3C53137B18AB9 /* CCHMapViewDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCHMapViewDelegateProxy.m; path = CCHMapClusterController/CCHMapViewDelegateProxy.m; sourceTree = "<group>"; };
+		F31FF58568BDA25528FB73AC1A53A105 /* SMContentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMContentManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMContentManager.h; sourceTree = "<group>"; };
+		F331E40177906065BFE0987D375B36CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41EB33CB36DB37538D4E029F91B8D17 /* Pods-Events-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Events-dummy.m"; sourceTree = "<group>"; };
+		F46598D230A932E49AACE7BACF0C7CEB /* SMLoyaltyCardTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLoyaltyCardTransaction.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLoyaltyCardTransaction.h; sourceTree = "<group>"; };
 		F4981F9E19189A20013C313A82936A47 /* Pods-Receipts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Receipts-dummy.m"; sourceTree = "<group>"; };
-		F53D9696573EED7BFCFA22BFD5624F66 /* CCHMapAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapAnimator.h; path = CCHMapClusterController/CCHMapAnimator.h; sourceTree = "<group>"; };
 		F68240905E3734090D162EBE7F2692E4 /* Pods-Push-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Push-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F782619FDD162B7CF8F3270BABF1C0F8 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Events.framework; path = "Pods-Events.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E3F48E1FE7091F5D626AE5FDCFCE29 /* SMReferralRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMReferralRequest.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMReferralRequest.h; sourceTree = "<group>"; };
+		FA1215810022D4F51083DDFBC625EB3E /* CCHMapTreeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCHMapTreeUtils.h; path = CCHMapClusterController/CCHMapTreeUtils.h; sourceTree = "<group>"; };
 		FAF618FAF35E2312268021917C802AD4 /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD75A468C12FD698B988B709FFC254F /* SMUserOfferClaimedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMUserOfferClaimedResponse.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMUserOfferClaimedResponse.h; sourceTree = "<group>"; };
 		FC05EAB1F15AF6AFF5D2632A26C7E4A7 /* Pods-WebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WebView-umbrella.h"; sourceTree = "<group>"; };
+		FD680AC07BCC7952B9F8B717FB1FA0AB /* SMLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMLocationManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMLocationManager.h; sourceTree = "<group>"; };
 		FD69EC1288D55663C8A64FCE004BBC2A /* Pods-Campaigns-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Campaigns-dummy.m"; sourceTree = "<group>"; };
+		FD87B7D107FA4C5D942E34E4005016C6 /* SMEventsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMEventsManager.h; path = SessionM_iOS_v2.5.0/SessionMFramework.framework/Headers/SMEventsManager.h; sourceTree = "<group>"; };
 		FEAAEF146154BD543B371BEA9C254C0F /* Pods-Places.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Places.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -435,6 +527,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043409908972720FED758BA448F2B56F /* WebAuth */ = {
+			isa = PBXGroup;
+			children = (
+				334ACEAE7670105D6EA86901D9947BE8 /* SessionMWebAuth.h */,
+				780F1EBCC0DE8B2836502E3E35EA04FD /* SMIdentityManager+WebAuth.h */,
+				36D15CE36A36BCB1CD1CE55B183E73F7 /* Frameworks */,
+			);
+			name = WebAuth;
+			sourceTree = "<group>";
+		};
+		0EA1FC14BB7B68A83927B25DCCE1EC99 /* SessionMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5727E169F12A61C543EA2EDCF46581BF /* Core */,
+				043409908972720FED758BA448F2B56F /* WebAuth */,
+			);
+			name = SessionMFramework;
+			path = SessionMFramework;
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,46 +573,38 @@
 			path = "Target Support Files/Pods-Geofence";
 			sourceTree = "<group>";
 		};
-		2B97631F052D3AB09B336DACDA3A11CD /* CCHMapClusterController */ = {
+		26A5EFBAE64D6DA64F64BB58A9C4F0AC /* CCHMapClusterController */ = {
 			isa = PBXGroup;
 			children = (
-				9F70D0406ADCDF33460D58EB4E6DE19C /* CCHCenterOfMassMapClusterer.h */,
-				64584AEBBACD8AB391AAB33772DB0596 /* CCHCenterOfMassMapClusterer.m */,
-				596F7ACED4F00AE3C654F627216E3DCD /* CCHFadeInOutMapAnimator.h */,
-				50BF7879877D23EB91346D4B47582569 /* CCHFadeInOutMapAnimator.m */,
-				F53D9696573EED7BFCFA22BFD5624F66 /* CCHMapAnimator.h */,
-				C6BCA6FB8AD043883B63ECD9E76C2034 /* CCHMapClusterAnnotation.h */,
-				9CC25318B8F509BD1F7F3097CB41AC05 /* CCHMapClusterAnnotation.m */,
-				21176EA7694F2FE149D6BAD380DBCDC6 /* CCHMapClusterController.h */,
-				13C2E9709294ACA6E49A323F05BDB422 /* CCHMapClusterController.m */,
-				336F32FFFBB5BDD5B03FFEF2BEFBB088 /* CCHMapClusterControllerDebugPolygon.h */,
-				2DD7AF0E6C72C3C42140CCEA257F4081 /* CCHMapClusterControllerDebugPolygon.m */,
-				4871BF53796D01805192168309A79A96 /* CCHMapClusterControllerDelegate.h */,
-				4CAACF68F4ACA7DEE6C8625D49191246 /* CCHMapClusterControllerUtils.h */,
-				82AC743D86379568FBF22B87472D161A /* CCHMapClusterControllerUtils.m */,
-				112352EEF3B98C9B69E263595E1CAEC2 /* CCHMapClusterer.h */,
-				BB9068D350715539A4367BC6687D7ACD /* CCHMapClusterOperation.h */,
-				DF5397461A5D6031ED5A67488D132F87 /* CCHMapClusterOperation.m */,
-				6742C59D4330E64378112A0C08E457BB /* CCHMapTree.h */,
-				0FAA03090B3B8A7715D22E540CAD2A0B /* CCHMapTree.m */,
-				687EF4B7FCE0C74037DAE5D1C1F8ED7B /* CCHMapTreeUtils.h */,
-				31447A8785CE02206821165332C22E76 /* CCHMapTreeUtils.m */,
-				C0F7401CD19A40D27F81DC2A46983CE5 /* CCHMapViewDelegateProxy.h */,
-				F372BACDE1AFEFA0ACC3C53137B18AB9 /* CCHMapViewDelegateProxy.m */,
-				B26D56EB9907656A4F8F6F9648C047F2 /* CCHNearCenterMapClusterer.h */,
-				A79E11BE964823603CCE12F4A5D8C614 /* CCHNearCenterMapClusterer.m */,
-				A07B3EAF27B3E78A7C6E77745D82614A /* Support Files */,
+				1D3DCA7D4C22FAE4BF4676766BB1CD36 /* CCHCenterOfMassMapClusterer.h */,
+				3EDBB62E5F7798920271BCC4ADA7F990 /* CCHCenterOfMassMapClusterer.m */,
+				39F0A32B2CBBD2730479E719173A847C /* CCHFadeInOutMapAnimator.h */,
+				C98BCB80447C8FD37AD393EBDD474476 /* CCHFadeInOutMapAnimator.m */,
+				EBB1F45DB7C2DC63F7462D200EF7CE2E /* CCHMapAnimator.h */,
+				D01BB0B06179DE2F923CA8F4DE38AD1F /* CCHMapClusterAnnotation.h */,
+				72D040952783FC569B1F0B4060984B75 /* CCHMapClusterAnnotation.m */,
+				1297749491AE383D6A55618D460CB405 /* CCHMapClusterController.h */,
+				B1F9338DE873B8ECD6DD77A666B0DCDE /* CCHMapClusterController.m */,
+				7AE281FFFF843C9B77E6ECFC9F88A025 /* CCHMapClusterControllerDebugPolygon.h */,
+				78A3786BB9FC13B2C83181E3DB7E9672 /* CCHMapClusterControllerDebugPolygon.m */,
+				D53A18548082A358915A00CBA7B99584 /* CCHMapClusterControllerDelegate.h */,
+				48F11BF2CF5FB0B211B2571C5F6B37CF /* CCHMapClusterControllerUtils.h */,
+				BCBE624703CF300EC40C0EECC2970124 /* CCHMapClusterControllerUtils.m */,
+				BD772DD80AACD9D6302A3B9234B2D82C /* CCHMapClusterer.h */,
+				9B6EEBC8D20448E91B8427CD044E24E3 /* CCHMapClusterOperation.h */,
+				855D4D98F85F2953A6FD2B0561D774B8 /* CCHMapClusterOperation.m */,
+				321629669780AD187DB186018D5C2CEE /* CCHMapTree.h */,
+				A19D3D8711CB4590BC2BE86D44A364EE /* CCHMapTree.m */,
+				FA1215810022D4F51083DDFBC625EB3E /* CCHMapTreeUtils.h */,
+				16A601778D39E769D1AD8A414B7FA8AA /* CCHMapTreeUtils.m */,
+				D7D123F2A3CABA3532F99E25DFDF45D3 /* CCHMapViewDelegateProxy.h */,
+				545F8657FB74536ADA293508B3ED4C2D /* CCHMapViewDelegateProxy.m */,
+				7015A12AF5D7F206ED4A03412341AF99 /* CCHNearCenterMapClusterer.h */,
+				D947B7D90A4267891100FEFC61E146BE /* CCHNearCenterMapClusterer.m */,
+				4827B350C7AD42F07C1F415A23347B86 /* Support Files */,
 			);
 			name = CCHMapClusterController;
 			path = CCHMapClusterController;
-			sourceTree = "<group>";
-		};
-		30D289DF09E6ECD5F9C532D71FDCD9F0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C63D7929AC1439D3343450DFEDEC8A95 /* SessionMWebAuth.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		362CFF8771A73582B39B453DE9099EFD /* Pods-Rewards */ = {
@@ -521,6 +625,37 @@
 			path = "Target Support Files/Pods-Rewards";
 			sourceTree = "<group>";
 		};
+		36D15CE36A36BCB1CD1CE55B183E73F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57823BFD1C84F3965B21645BBFC4BE91 /* SessionMWebAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		381EF06786243CE315B179811F375DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26A5EFBAE64D6DA64F64BB58A9C4F0AC /* CCHMapClusterController */,
+				0EA1FC14BB7B68A83927B25DCCE1EC99 /* SessionMFramework */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4827B350C7AD42F07C1F415A23347B86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35053C586631EF271D64104605E88DE6 /* CCHMapClusterController.modulemap */,
+				6359A3BB286E2F2F86EC273C37F0F032 /* CCHMapClusterController.xcconfig */,
+				D5426B3EDF7C4209C925A2F60E7948CC /* CCHMapClusterController-dummy.m */,
+				0508C19596B61D4E1BE4601A97324720 /* CCHMapClusterController-prefix.pch */,
+				B8CFE6295B1E29552F756557A442E772 /* CCHMapClusterController-umbrella.h */,
+				F331E40177906065BFE0987D375B36CA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CCHMapClusterController";
+			sourceTree = "<group>";
+		};
 		4B9325B10A4020FEAD638E71E3C13D0E /* Pods-Push */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +672,105 @@
 			);
 			name = "Pods-Push";
 			path = "Target Support Files/Pods-Push";
+			sourceTree = "<group>";
+		};
+		5727E169F12A61C543EA2EDCF46581BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F13A9D44873A13B74609F4D1D88FEEEA /* SessionM.h */,
+				0724394E1F084F0928FA477471CBDBEE /* SessionMFramework.h */,
+				B85949A39ED5206C567CC0DB904B6C8B /* SMAchievementData.h */,
+				E1F67C49C5CCE7989F65E93B54EB8F71 /* SMActivityEvent.h */,
+				034C9C1CF7709299720087F274FD5D75 /* SMActivityEventBuilder.h */,
+				A4EBD72DC37091010661181E3DF974CB /* SMActivityEventItem.h */,
+				1473F4608C274030A5845780775943C6 /* SMActivityEventItemBuilder.h */,
+				5D9755E26A16DE747153D81177E2A404 /* SMActivityViewController.h */,
+				AFC3861ED00D725824AA566DC39888F1 /* SMAddress.h */,
+				D3D852A6338A13A4B2791DA0282AEAE6 /* SMBaseDelegate.h */,
+				0C72148673D96BA173374F9B04EB0867 /* SMBehavior.h */,
+				DEC18B0C985BD586E8E055053758F15D /* SMBehaviorProgressFetchedResponse.h */,
+				9C7C362C751B71E37A413C01ECF8FD10 /* SMCampaignsManager.h */,
+				6FB3B0D9C0F029794EB728DBA9B45059 /* SMClaimedOfferItem.h */,
+				DDFE0B6A13A68ADB47E68B4AF917BE63 /* SMCompositeBehavior.h */,
+				7237772571093B0A868A34F963D3EBA6 /* SMContent.h */,
+				F31FF58568BDA25528FB73AC1A53A105 /* SMContentManager.h */,
+				B23F861A3B5DE81E0BDEBDBFC70C01FD /* SMCountBehavior.h */,
+				C411AAE06A55D9551662BB392880D611 /* SMError.h */,
+				7D73E5AD6900274CB781A9B07769426B /* SMEvent.h */,
+				49A4CC319E97226848253715282AFE93 /* SMEventBuilder.h */,
+				9D72E71E4E32B3329039B07B7DF349BA /* SMEventItem.h */,
+				B8E264D44047AAAEB52ACDCB58B1AA28 /* SMEventItemBuilder.h */,
+				2E5E2EC74F5596DEE97A7C433790EB7B /* SMEventNotification.h */,
+				C506EA7054BB918531FB009A8604E851 /* SMEventPostedResponse.h */,
+				FD87B7D107FA4C5D942E34E4005016C6 /* SMEventsManager.h */,
+				6D385318E745366DBC34131662DB2DBF /* SMEventsResponse.h */,
+				C40F509A1025FB7D97D545A517BDBA37 /* SMFeedMessage.h */,
+				10F7B2945DD77162FB3FD6D71476AE37 /* SMGenericRequest.h */,
+				0510F3CDB29B672CB2F516780E4BD1F1 /* SMGenericRequestBuilder.h */,
+				60D3DB8F2D9788F1270F53C405E763DC /* SMGenericRequestManager.h */,
+				1A719535B80859F56FDDD2F8F64A71AC /* SMGenericResponse.h */,
+				5D8A20ADA52BB77411C0F5D7FCC57D69 /* SMGoal.h */,
+				F1B9AEB48425BF846C41E57CBF1BD9DA /* SMGroup.h */,
+				B6E27AAFCDE7C41A0B8BA5F4DD7584E3 /* SMIdentityManager.h */,
+				61972881E04331E5C76BB64965AD4127 /* SMInboxManager.h */,
+				1137F652418ACABDBE56BD18E545D945 /* SMInboxMessage.h */,
+				C596624835201A455E4C2A585B1BF986 /* SMJSBridgeHandling.h */,
+				D28CE62C3C636C78354B7F16A4E5BD27 /* SMLoaderController.h */,
+				11007777F253B3B4572379A3695FE4BD /* SMLocationEvent.h */,
+				FD680AC07BCC7952B9F8B717FB1FA0AB /* SMLocationManager.h */,
+				5A9D68C694F21ACD992254B128127D0F /* SMLoyaltyCard.h */,
+				85F30A25B9EDA955873AC225218489CF /* SMLoyaltyCardsManager.h */,
+				F46598D230A932E49AACE7BACF0C7CEB /* SMLoyaltyCardTransaction.h */,
+				8715F13C061851D2F7DC4BEF69D705C2 /* SMMessagesManager.h */,
+				3A0E0B195CBD0EA2DF66BE60AF8D6E1E /* SMNotificationMessage.h */,
+				BE67A7326C896B8C574FFF995DCA2277 /* SMOffer.h */,
+				E8E141122816D5BE47A13B6C2BFA187A /* SMOfferCategory.h */,
+				4AB33E37D38E07244F551223B814EEEE /* SMOfferGroup.h */,
+				685D63ECB38E09B6D9BF18E3212736BE /* SMOfferItem.h */,
+				56107DC506B9438DDB33CD3A0C61B9EC /* SMOfferMedia.h */,
+				6EDDC7D85D08A5EFAEF3228D14574366 /* SMOfferPurchasedResponse.h */,
+				310394154BFCBC6C5A73BE2E05109948 /* SMOffersManager.h */,
+				CB6DB86BF88C3000CD7372306772C8CD /* SMOffersResponse.h */,
+				9BAD3839C9F5ED25A200ECB0FA3E74BC /* SMOrder.h */,
+				AF23129DE29BD9601AAC2F45C7039C1E /* SMPlace.h */,
+				5C92C432DAB00F48708AFC092BFDEA65 /* SMPlaceCheckinResult.h */,
+				2897F1A720973D4CE2BFD5676022A989 /* SMPlacesManager.h */,
+				8BF4DCEBF7FCB67345BE6E42A8F5717B /* SMProgressBehavior.h */,
+				598278FE1AA1D279AEBEBF66872F7DB8 /* SMPurchaseEvent.h */,
+				769687DB8207D1F5DA0F0E288BAE59C3 /* SMPurchaseEventBuilder.h */,
+				404F63BF24D89C2C6F88F43A702642B4 /* SMPurchaseEventItem.h */,
+				07CCCD4FED6F869D411E477C26399060 /* SMPurchaseEventItemBuilder.h */,
+				081429AD0F524D0942C95A8291FAF007 /* SMPUser.h */,
+				132F52FCB6D6E5A6477F0BE339A6748F /* SMPUserCreate.h */,
+				8BAF96A611F13F9293A15CC124DB57FE /* SMPUserUpdate.h */,
+				30F9D33AC589CD56FF09A1AD3AC8D466 /* SMReceipt.h */,
+				E48B9F9B016F4F0A05DD1ED81D675D29 /* SMReceiptsManager.h */,
+				CF0A6E9BCDB92195BBF28CD43DBA0FA0 /* SMReferral.h */,
+				D40EBC8F7A768CD723C8989882FEE0A4 /* SMReferralError.h */,
+				F9E3F48E1FE7091F5D626AE5FDCFCE29 /* SMReferralRequest.h */,
+				D96A6BA334457F38342FCBFAB268C1B0 /* SMReferralsManager.h */,
+				9CE5AEC25C4E951D6879719F0E65082D /* SMRetailer.h */,
+				3159F0B5AF83735DEAB2B1CFF4F21673 /* SMRewardsManager.h */,
+				F1236BA88AF317D109C29E06CFCC23C4 /* SMSimpleEventBuilder.h */,
+				E724EBC227E81254DC93AE52914DA467 /* SMSkillChallenge.h */,
+				014FF28F3B1D3829FD569A9A9B4FD927 /* SMSkillQuestion.h */,
+				ABC17B118A5E5996001F02A680AC67D0 /* SMStoreOfferItem.h */,
+				764BBA5D9418DF80213F850192E07E76 /* SMStoreOffersFetchedResponse.h */,
+				25C2638C00D800A31B40348C6ED75023 /* SMSVerification.h */,
+				B783C6E7F1357818599EB0815D889E37 /* SMSVerificationManager.h */,
+				3B3429F0C4F047B2E0008ECBB175B93A /* SMTransaction.h */,
+				9B9FB611D7245CECC5900DC84B717E87 /* SMTransactionsManager.h */,
+				62AC0DA2EF7991B236876CC3951CE4F9 /* SMUniqueBehavior.h */,
+				27C1579C66E46DDF2819286E24A39E7C /* SMUserManager.h */,
+				FBD75A468C12FD698B988B709FFC254F /* SMUserOfferClaimedResponse.h */,
+				110242B470E1C3472C7A0FB435521EC4 /* SMUserOfferItem.h */,
+				7BE62334AC9F1A6E57143874D05906EA /* SMUserOffersFetchedResponse.h */,
+				02E20131A371F5F8F4C33EC9A19213B9 /* SMUserTagsManager.h */,
+				6633106B912FE78F9A1060E6E5B29C69 /* SMWebProfileManager.h */,
+				8325A30FAAF10E8BF76F4F7AD642C97E /* SMWebView.h */,
+				B5F8DB4F864DBB5C76547B10C9B6BE44 /* Frameworks */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		65DF94CC4600150B04079A01E28783FE /* Pods-LoyaltyCards */ = {
@@ -580,7 +814,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				DD2A5B6ADB1CB3ABD857B3AAFC058D53 /* Pods */,
+				381EF06786243CE315B179811F375DAB /* Pods */,
 				828836BA160437D8D6FF30531645C2BC /* Products */,
 				CC6EF2D0B4EABE5D5260F2CEFA050449 /* Targets Support Files */,
 			);
@@ -645,15 +879,6 @@
 			path = "Target Support Files/Pods-Places";
 			sourceTree = "<group>";
 		};
-		99FFE29178635FD2D6A00405F7F1A1BA /* SessionMFramework */ = {
-			isa = PBXGroup;
-			children = (
-				C0229E3B24BD4D432322778E02ACAB11 /* WebAuth */,
-			);
-			name = SessionMFramework;
-			path = SessionMFramework;
-			sourceTree = "<group>";
-		};
 		9A1DA1D2228ACFB9ED87AC7D9CBF3093 /* Pods-Referrals */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,20 +895,6 @@
 			);
 			name = "Pods-Referrals";
 			path = "Target Support Files/Pods-Referrals";
-			sourceTree = "<group>";
-		};
-		A07B3EAF27B3E78A7C6E77745D82614A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3819D32734DC8F25F0B5113A25D287E6 /* CCHMapClusterController.modulemap */,
-				5F66710197889F91C3B0F4E534328444 /* CCHMapClusterController.xcconfig */,
-				6CEE610BF6419CF7DC6D58A8E15EFD41 /* CCHMapClusterController-dummy.m */,
-				C0212BAB925E8D0A1595031F9878BC0B /* CCHMapClusterController-prefix.pch */,
-				D89A90F643E24575D52DFA43B55ACE28 /* CCHMapClusterController-umbrella.h */,
-				6A17933263AA08D019163CC6E3EEFB82 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CCHMapClusterController";
 			sourceTree = "<group>";
 		};
 		A120118E6F08112AB39D81B2A53C69C5 /* Pods-Offers */ = {
@@ -722,6 +933,14 @@
 			path = "Target Support Files/Pods-Campaigns";
 			sourceTree = "<group>";
 		};
+		B5F8DB4F864DBB5C76547B10C9B6BE44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3732CA26DD2B42FE3CE669EFD361FD2 /* SessionMFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD6B70D4BEDA2A3E179BC4D58ED2C00C /* Pods-Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,16 +969,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C0229E3B24BD4D432322778E02ACAB11 /* WebAuth */ = {
-			isa = PBXGroup;
-			children = (
-				0147F590BC54EE8E4F659D22ACB73D65 /* SessionMWebAuth.h */,
-				2F910E8E9B016CB612D93188C495E58B /* SMIdentityManager+WebAuth.h */,
-				30D289DF09E6ECD5F9C532D71FDCD9F0 /* Frameworks */,
-			);
-			name = WebAuth;
-			sourceTree = "<group>";
-		};
 		CC6EF2D0B4EABE5D5260F2CEFA050449 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,15 +989,6 @@
 				F19C40CD81DBBC75B333358FD7721FC7 /* Pods-WebView */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DD2A5B6ADB1CB3ABD857B3AAFC058D53 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2B97631F052D3AB09B336DACDA3A11CD /* CCHMapClusterController */,
-				99FFE29178635FD2D6A00405F7F1A1BA /* SessionMFramework */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DFF0198920F88DF04E8CED4887781CA8 /* Pods-Auth */ = {
@@ -1788,7 +1988,7 @@
 		};
 		4380B3635E31B779C4DBDC4B23ED517B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F66710197889F91C3B0F4E534328444 /* CCHMapClusterController.xcconfig */;
+			baseConfigurationReference = 6359A3BB286E2F2F86EC273C37F0F032 /* CCHMapClusterController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2614,7 +2814,7 @@
 		};
 		E068AE077EEC5FC05825BAB679944F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F66710197889F91C3B0F4E534328444 /* CCHMapClusterController.xcconfig */;
+			baseConfigurationReference = 6359A3BB286E2F2F86EC273C37F0F032 /* CCHMapClusterController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -1584,10 +1584,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1620,10 +1622,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Push/Pods-Push-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1653,10 +1657,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1671,10 +1677,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Inbox/Pods-Inbox-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1722,10 +1730,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1740,10 +1750,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Receipts/Pods-Receipts-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1788,11 +1800,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/CCHMapClusterController/CCHMapClusterController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCHMapClusterController.framework",
 			);
@@ -1808,10 +1822,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1826,10 +1842,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Content/Pods-Content-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1928,10 +1946,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2042,10 +2062,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2096,10 +2118,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Events/Pods-Events-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2132,10 +2156,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Rewards/Pods-Rewards-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2201,10 +2227,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Referrals/Pods-Referrals-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2371,10 +2399,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Transactions/Pods-Transactions-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.8/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
