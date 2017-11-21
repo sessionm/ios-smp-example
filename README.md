@@ -95,19 +95,17 @@ This app showcases how to use the SessionM SDK to fetch promotional campaign mes
 
 API docs: https://mmc.sessionm.com/docs/mmc-sdk/#campaigns
 
+By default it uses the anonymous user. You can click on “Log in with sample user” to login the default sample user to see the customized activity feed.
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_switch_user.gif" alt="CampaignsSwitchUser Anima" width="324" height="576" />
+
 A message tile can be clicked to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
-There are three different actions to trigger different types of feed message: Open ad, deep link and external link. Click on any of the tiles gives you different actions:
-
-- Open Ad: Opens a pre-set Ad in the app’s portal.
-
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_open_ad.gif"
-alt="CampaignsOpenAd Anima" width="324" height="576"/>
-
+There are two different actions to trigger different types of feed message: deep link and external link. Click on any of the tiles gives you different actions:
 
 - Deep Link: Opens a dialog with a sample deep link schema
 
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_deep_link.gif" alr="CampaignsDeepLink Anima" width="324" height="576" />
 
 - External Link: Opens native browser with sample URL
 
