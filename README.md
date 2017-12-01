@@ -123,10 +123,6 @@ This app showcases how to use the SessionM SDK to fetch promotional content data
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
 
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/contents_list.gif"
-alt="ContentsList Anima" width="324" height="576"/>
-
 [Back to top](#ToC)
 
 <a name="Geofence"/>
