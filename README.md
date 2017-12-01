@@ -62,7 +62,7 @@ LICENSE: MIT
 
 This app showcases how to use the SessionM SDK to authenticate a user in the SessionM Platform.
 
-API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity4
+API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity-api
 
 On the "Choose Authentication Type" view, you can choose to authenticate a user with a SessionM Platform email and password, with a SessionM Platform authentication token, or with credentials from a third-party authentication provider such as Facebook or Google. Custom OAuth credentials can be set in the Auth/Info.plist file by using the 'SessionMOAuthClientID', 'SessionMOAuthAuthorizationEndpoint', 'SessionMOAuthTokenEndpoint' and 'SessionMOAuthRedirectURI' keys.
 
@@ -131,7 +131,7 @@ A content tile can be clicked to see metadata and start video playback (if appli
 
 This app showcases how to use the SessionM SDK to track the user's location and monitor regions that the user enters and exits.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#geofencing
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#geofences
 
 The "Map" tab contains a view of the user's immediate surroundings, and can contain three colored pin annotations:
 
@@ -160,7 +160,7 @@ alt="GeofenceExit Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to create UI for a user inbox.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox-api
 
 The main view shows a list of messages in the user's inbox, with titles and creation dates for each message. Unread messages are denoted with bold text and a white background, while read messages have regular text and a gray background.
 
@@ -182,7 +182,7 @@ alt="InboxCreate Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to link and unlink loyalty cards to a user's account.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#loyalty-card-linking
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#loyalty-card-linking-api
 
 The main view shows a list of loyalty cards that have been linked to the user's account. Clicking on a card will give you the option to unlink the card from the user's account, after which the card will be removed from the list.
 
@@ -204,7 +204,7 @@ alt="LoyaltyCardsUnlink Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places-api
 
 The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue. Clicking on a venue will attempt to check the user into that venue.
 
@@ -286,7 +286,7 @@ The following steps should be completed in Xcode:
 
 This app showcases how to use the SessionM SDK to allow users to upload receipt images.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipt
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipts-api
 
 The main view shows a list of receipts that have already been uploaded by the user. Clicking on a receipt tile will show the images that were included in that upload.
 
@@ -308,7 +308,7 @@ alt="ReceiptsStatus Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to allow users to send an email to refer other potential users to sign up for an account.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#referrals
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#referrals-api
 
 The main view shows a list of referrals that have already been sent by the user. Clicking on a referral tile will show more details about the referral.
 
@@ -326,7 +326,7 @@ alt="ReferralsCreateRandom Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to allow users to spend loyalty points to purchase rewards.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards-api
 
 The "Offers" tab shows a list of offers that are available for purchase. Click on an offer to see more details and make a purchase. If the offer is gated by a skills test (e.g. for a sweepstakes entry), then an alert will appear with a random question. Enter the correct answer to complete the purchase.
 The "Orders" tab shows a list of the user's order transactions and their approval statuses (e.g. "pending", "approved", "rejected").
@@ -347,7 +347,7 @@ alt="RewardsRedeem Anima" width="324" height="576"/>
 
 This app showcases how to use the SessionM SDK to view a user's loyalty points transaction history.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions11
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions-api
 
 The main view shows a list of loyalty points transactions made by the user, and the resulting points balance after each transaction. "Receipt" and "Loyalty Card" transaction tiles can be clicked on to present an alert with more details on the transaction.
 

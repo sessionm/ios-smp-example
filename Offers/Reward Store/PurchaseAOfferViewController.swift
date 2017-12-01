@@ -50,7 +50,7 @@ class PurchaseAOfferViewController: UIViewController {
 
     @IBAction func doPurchase(_ sender: Any) {
         if let item = self.item {
-            SMOffersManager.instance().purchaseOffer(havingID: item.offerID, quantity: 1) { (result: SMPurchaseOfferResponse?, error: SMError?) in
+            SMOffersManager.instance().purchaseOffer(havingID: item.offerID, quantity: 1) { (result: SMOfferPurchasedResponse?, error: SMError?) in
                 if let error = error {
                     self.present(UIAlertController(title: "No Purchase", message: error.message, preferredStyle: .alert), animated: true, completion: {})
                 } else if let result = result {

@@ -51,7 +51,7 @@ class RewardStoreTableViewController: UITableViewController {
     var _offers : [SMStoreOfferItem] = [];
 
     @IBAction func handleRefresh(refresh: UIRefreshControl?) {
-        SMOffersManager.instance().fetchStoreOffers { (result: SMFetchStoreOffersResponse?, error: SMError?) in
+        SMOffersManager.instance().fetchStoreOffers { (result: SMStoreOffersFetchedResponse?, error: SMError?) in
             if let r = refresh, r.isRefreshing {
                 r.endRefreshing();
             }
