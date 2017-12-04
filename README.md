@@ -166,10 +166,6 @@ Clicking on a message will show its body and give options for marking the messag
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/inbox_update_state.gif"
 alt="InboxUpdateState Anima" width="324" height="576"/>
 
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/inbox_create_new.gif"
-alt="InboxCreate Anima" width="324" height="576"/>
-
 [Back to top](#ToC)
 
 <a name="Loyalty_Cards"/>
