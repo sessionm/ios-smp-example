@@ -145,7 +145,7 @@ The "Triggered Events" tab contains a more detailed history of event triggers.
 When running the Geofence app through Xcode, the sessionm.gpx file is used to walk a simulated path through some of the geofences in the SessionM demo environment. To use your own GPX file, navigate in Xcode to "Debug" -> "Simulate Location" -> "Add GPX File to Workspace".
 
 <img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/geofence_enter_exit.gif"
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/geofence_enter_exit_anima.gif"
 alt="GeofenceEnter Anima" width="324" height="576"/>
 
 [Back to top](#ToC)
