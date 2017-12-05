@@ -190,11 +190,13 @@ This app showcases how to use the SessionM SDK to allow users to earn points and
 
 API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places-api
 
-The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue. Clicking on a venue will attempt to check the user into that venue.
+The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue.
 
 <img
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/places_fetch_venues.gif"
 alt="PlacesFetch Anima" width="324" height="576"/>
+
+Clicking on a venue will attempt to check the user into that venue. If the venue is checkable, you’d check in to this venue successfully, otherwise you’ll see a toast describing the error message.
 
 <img
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/places_checkin.gif"
