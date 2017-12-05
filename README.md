@@ -180,14 +180,6 @@ The main view shows a list of loyalty cards that have been linked to the user's 
 
 Clicking on the "+" symbol will give you the option to link a new card. Use the search bar to search for a retailer whose loyalty card you would like to link. After selecting the retailer, enter the card number and press the "Link" button to finish linking the card.
 
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/loyalty_cards_link.gif"
-alt="LoyaltyCardsLink Anima" width="324" height="576"/>
-
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/loyalty_cards_unlink.gif"
-alt="LoyaltyCardsUnlink Anima" width="324" height="576"/>
-
 [Back to top](#ToC)
 
 <a name="Places"/>
