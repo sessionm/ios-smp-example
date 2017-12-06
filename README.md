@@ -224,7 +224,7 @@ Note: if you would like to simply test the relevant APIs without setting up your
 
 - Deep Link: Opens a dialog with a sample deep link schema
 
-<img src="hhttps://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link_local.gif" alt="GCMDeepLink Anima" width="324" height="576" />
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link_local.gif" alt="GCMDeepLink Anima" width="324" height="576" />
 
 - External Link: Opens native browser with sample URL
 
