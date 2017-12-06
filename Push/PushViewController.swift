@@ -54,7 +54,7 @@ class PushViewController: UIViewController, SessionMDelegate {
         case .externalLink:
             actionURL = "https://sessionm.com"
         case .fullScreen:
-            actionURL = "https://api.tour-sessionm.com/apps/41a44470ac984b11d8452530b0cd466ba1656280/ads/101509"
+            actionURL = "https://sessionm.com"
         default:
             break
         }
