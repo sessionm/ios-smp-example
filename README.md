@@ -303,7 +303,7 @@ The main view shows a list of referrals that have already been sent by the user.
 Clicking on the "+" symbol will give you the option to send a new referral. Fill out the presented form (note: only email is required) and click "Submit" to finish sending the referral.
 
 <img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/referrals_create_random.gif"
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/referrals_create.gif"
 alt="ReferralsCreateRandom Anima" width="324" height="576"/>
 
 [Back to top](#ToC)
