@@ -214,18 +214,6 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#push-notifications
 
 Note: if you would like to simply test the relevant APIs without setting up your own SessionM Platform app and push messaging campaigns, follow the steps under "Local Notification Testing". To perform an end-to-end test of the SessionM Platform's Push Messaging feature, follow the steps under "Remote Notification Testing".
 
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_open_ad.gif"
-alt="GCMOpenAd Anima" width="324" height="576"/>
-
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link.gif"
-alt="GCMDeepLink Anima" width="324" height="576"/>
-
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_external_link.gif"
-alt="GCMExternalLink Anima" width="324" height="576"/>
-
 <a name="Local_Notification_Testing"/>
 
 ### Local Notification Testing
@@ -233,6 +221,18 @@ alt="GCMExternalLink Anima" width="324" height="576"/>
 - Open the app and enable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
+
+- Deep Link: Opens a dialog with a sample deep link schema
+
+<img src="hhttps://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link_local.gif" alt="GCMDeepLink Anima" width="324" height="576" />
+
+- External Link: Opens native browser with sample URL
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_external_link_local.gif" alt="GCMExternalLink Anima" width="324" height="576" />
+
+- Open Ad: Opens a pre-set Ad in the app’s portal.
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_open_ad_local.gif" alt="GCMExternalLink Anima" width="324" height="576" />
 
 [Back to top](#ToC)
 
@@ -263,6 +263,18 @@ The following steps should be completed in Xcode:
 - Open the app and disable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
+
+- Deep Link: Opens a dialog with a sample deep link schema
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link.gif"
+alt="GCMDeepLink Anima" width="324" height="576"/>
+
+- External Link: Opens native browser with sample URL
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_external_link.gif"
+alt="GCMExternalLink Anima" width="324" height="576"/>
 
 [Back to top](#ToC)
 
