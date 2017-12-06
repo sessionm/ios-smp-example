@@ -351,8 +351,4 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions-api
 
 The main view shows a list of loyalty points transactions made by the user, and the resulting points balance after each transaction. "Receipt" and "Loyalty Card" transaction tiles can be clicked on to present an alert with more details on the transaction.
 
-<img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/transactions_list.gif"
-alt="TransactionsList Anima" width="324" height="576"/>
-
 [Back to top](#ToC)
