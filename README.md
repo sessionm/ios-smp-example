@@ -320,7 +320,7 @@ The "Offers" tab shows a list of offers that are available for purchase. Click o
 The "Orders" tab shows a list of the user's order transactions and their approval statuses (e.g. "pending", "approved", "rejected").
 
 <img
-src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/rewards_list.gif"
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/rewards_and_orders_list.gif"
 alt="RewardsList Anima" width="324" height="576"/>
 
 <img
