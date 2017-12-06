@@ -282,6 +282,8 @@ Clicking on the "+" symbol will give you the option to upload images for a new r
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/receipts_upload.gif"
 alt="ReceiptsUpload Anima" width="324" height="576"/>
 
+Different status receipts
+
 <img
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/receipts_status.gif"
 alt="ReceiptsStatus Anima" width="324" height="576"/>
