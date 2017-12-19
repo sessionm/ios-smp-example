@@ -86,22 +86,31 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
     }
 
     @objc private func triggeredEvent(_ notification: Notification) {
-        if let info = notification.userInfo {
-            let eventName = info["event"] as! String
-            let geofence = info["geofence"] as! NSDictionary
-            let triggerType = geofence["trigger_type"] as! String
-            let location = info["location"] as! NSDictionary
-            let latitude = location["latitude"] as! NSNumber
-            let longitude = location["longitude"] as! NSNumber
-            let triggerAnnotation = GeofenceAnnotation(type: .trigger(triggerType))
-            triggerAnnotation.coordinate = CLLocationCoordinate2DMake(latitude.doubleValue, longitude.doubleValue)
-            triggerAnnotation.title = "Event: \(eventName)"
-            triggerAnnotation.subtitle = String.localizedStringWithFormat("%@ at (%.7f, %.7f)", triggerType, triggerAnnotation.coordinate.latitude, triggerAnnotation.coordinate.longitude)
-            triggerClusterController.addAnnotations([triggerAnnotation], withCompletionHandler: nil)
-            if let navController = tabBarController?.viewControllers?[1] as? UINavigationController {
-                if let root = navController.viewControllers.first as? TriggeredEventsTableViewController {
-                    root.addEvent(info)
-                }
+        guard let info = notification.userInfo else {
+            return
+        }
+        guard let eventArray = info.values.first as? Array<Dictionary<String, Any>> else {
+            return
+        }
+        guard var eventDict = eventArray.first else {
+            return
+        }
+
+        let eventName = info.keys.first as! String
+        let geofence = eventDict["geofence"] as! NSDictionary
+        let triggerType = geofence["trigger_type"] as! String
+        let location = eventDict["location"] as! NSDictionary
+        let latitude = location["latitude"] as! NSNumber
+        let longitude = location["longitude"] as! NSNumber
+        let triggerAnnotation = GeofenceAnnotation(type: .trigger(triggerType))
+        triggerAnnotation.coordinate = CLLocationCoordinate2DMake(latitude.doubleValue, longitude.doubleValue)
+        triggerAnnotation.title = "Event: \(eventName)"
+        triggerAnnotation.subtitle = String.localizedStringWithFormat("%@ at (%.7f, %.7f)", triggerType, triggerAnnotation.coordinate.latitude, triggerAnnotation.coordinate.longitude)
+        triggerClusterController.addAnnotations([triggerAnnotation], withCompletionHandler: nil)
+        if let navController = tabBarController?.viewControllers?[1] as? UINavigationController {
+            if let root = navController.viewControllers.first as? TriggeredEventsTableViewController {
+                eventDict["event"] = eventName
+                root.addEvent(eventDict)
             }
         }
     }

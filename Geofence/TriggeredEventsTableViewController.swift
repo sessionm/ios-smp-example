@@ -41,7 +41,7 @@ class TriggeredEventsTableViewController: UITableViewController, SessionMDelegat
             let event = events[indexPath.row]
             let geofence = event["geofence"] as! NSDictionary
             let triggerType = geofence["trigger_type"] as! String
-            let time = event["z"] as! NSString
+            let time = event["timestamp"] as! NSNumber
             let date = Date(timeIntervalSince1970: (time.doubleValue/1000.0))
             let formatter = DateFormatter()
             formatter.dateStyle = .none
