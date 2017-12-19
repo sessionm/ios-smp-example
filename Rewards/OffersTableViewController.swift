@@ -66,7 +66,7 @@ class OffersTableViewController: UITableViewController, SessionMDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OfferCell", for: indexPath) as? OfferCell
 
         if let c = cell {
-            c.details.text = offer.descriptionText
+            c.details.text = offer.details
             c.header.text = offer.type
             c.points.text = "\(offer.points) pts"
             c.tag = indexPath.row

@@ -81,7 +81,7 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
 
         cell.balanceLabel?.text = "\(transaction.balance)"
         cell.dateLabel?.text = transaction.date
-        cell.descriptionLabel?.text = transaction.descriptionText
+        cell.descriptionLabel?.text = transaction.details
         cell.pointsLabel?.text = "\(transaction.points)"
         cell.recordIDLabel?.text = transaction.recordID
         cell.transactionLabel?.text = SMTransaction.string(from: transaction.transaction)
@@ -119,7 +119,7 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
             if let rs = receipt.results {
                 for result in rs {
                     if (result.resultID == self.recordModelID) {
-                        msg += "\(receipt.receiptID) \(result.name)\n \(result.descriptionText)"
+                        msg += "\(receipt.receiptID) \(String(describing: result.name))\n \(String(describing: result.details))"
                         break
                     }
                 }
@@ -133,7 +133,7 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
     private func onFetchLoyaltyCardTransactions(_ transactions: [SMLoyaltyCardTransaction]) {
         for transaction in transactions {
             if (transaction.transactionID == self.recordModelID) {
-                let msg = "\(transaction.name!)\n\(transaction.descriptionText!)\n\(transaction.quantity) @ \(transaction.price)"
+                let msg = "\(transaction.name!)\n\(transaction.details!)\n\(transaction.quantity) @ \(transaction.price)"
                 let controller = UIAlertController(title: "Loyalty Card", message: msg, preferredStyle: .alert)
                 controller.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
                 self.present(controller, animated: true, completion: nil)

@@ -97,7 +97,7 @@ class ReferralDetailViewController: UIViewController, UITextViewDelegate, UIText
             phoneNumber.text = r.phoneNumber
             source.text = r.source
             origin.text = r.origin
-            clientData.text = "\(r.clientData)"
+            clientData.text = "\(String(describing: r.clientData))"
         }
     }
 
