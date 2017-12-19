@@ -1,0 +1,930 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMReceiptsManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMReceiptsManager;  name=SMReceiptsManager-->
+<a name="//apple_ref/occ/cl/SMReceiptsManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMReceiptsManager">SMReceiptsManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMReceiptsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMReceiptsManager.h">SMReceiptsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMReceiptsManager;name=start --><!-- begin abstract --></p>
+<p>This API manager contains methods for uploading receipt images and fetching uploaded receipt data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMReceiptsManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts" target="_top">-fetchReceipts</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with the current user's uploaded receipts.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:" target="_top">-fetchReceiptsWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with the current user's uploaded receipts.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:" target="_top">-fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with a limited number of the current user's uploaded receipts.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:" target="_top">-fetchReceiptsWithLimit:page:limit:page:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with a limited number of the current user's uploaded receipts.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads" target="_top">-groupIDsForIncompleteUploads</a></tt></dt>
+<dd><p>Returns identifiers for the current user's incomplete receipt uploads (uploads from other users will be removed).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:" target="_top">-incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:</a></tt></dt>
+<dd><p>Returns identifiers for the current user's incomplete receipt uploads.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads" target="_top">-removeAllIncompleteUploads</a></tt></dt>
+<dd><p>Makes a request to remove all incomplete receipt uploads from storage.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:" target="_top">-removeIncompleteUploadForGroupID:havingGroupID:</a></tt></dt>
+<dd><p>Makes a request to remove the incomplete receipt upload with the specified group ID from storage.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:" target="_top">-resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:</a></tt></dt>
+<dd><p>Resumes the incomplete receipt upload with the specified group ID.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:" target="_top">-resumeIncompleteUploadForGroupID:havingGroupID:</a></tt></dt>
+<dd><p>Resumes the incomplete receipt upload with the specified group ID.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:" target="_top">-uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:</a></tt></dt>
+<dd><p>Uploads the receipt images with the specified file paths for the specified campaign.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:" target="_top">-uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:</a></tt></dt>
+<dd><p>Uploads the receipt images with the specified file paths for the specified campaign.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:" target="_top">-uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:</a></tt></dt>
+<dd><p>Uploads the receipt images with the specified asset identifiers for the specified campaign.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:" target="_top">-uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:</a></tt></dt>
+<dd><p>Uploads the receipt images with the specified asset identifiers for the specified campaign.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;   name=SMReceiptsManager::fetchReceipts --><a name="//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts"></a>
+<h3><a name="fetchReceipts">fetchReceipts</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with the current user's uploaded receipts.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchReceipts</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler" target="_top"><span class="function">fetchReceiptsWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchReceipts: //apple_ref/occ/tdef/didFetchReceipts: //apple_ref/occ/tag/didFetchReceipts: //apple_ref/occ/struct/didFetchReceipts: //apple_ref/occ/intf/didFetchReceipts: //apple_ref/occ/econst/didFetchReceipts: //apple_ref/occ/data/didFetchReceipts: //apple_ref/occ/clconst/didFetchReceipts: //apple_ref/occ/instm/didFetchReceipts: //apple_ref/occ/clm/didFetchReceipts: //apple_ref/occ/intfcm/didFetchReceipts: //apple_ref/occ/intfm/didFetchReceipts: //apple_ref/occ/func/didFetchReceipts: //apple_ref/occ/ftmplt/didFetchReceipts: //apple_ref/occ/defn/didFetchReceipts: //apple_ref/occ/macro/didFetchReceipts: //apple_ref/doc/com/intfm/didFetchReceipts: //apple_ref/doc/anysymbol/didFetchReceipts:" -->didFetchReceipts:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchReceiptsWithCompletionHandler: //apple_ref/occ/tdef/fetchReceiptsWithCompletionHandler: //apple_ref/occ/tag/fetchReceiptsWithCompletionHandler: //apple_ref/occ/struct/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intf/fetchReceiptsWithCompletionHandler: //apple_ref/occ/econst/fetchReceiptsWithCompletionHandler: //apple_ref/occ/data/fetchReceiptsWithCompletionHandler: //apple_ref/occ/clconst/fetchReceiptsWithCompletionHandler: //apple_ref/occ/instm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/clm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intfcm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intfm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/func/fetchReceiptsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchReceiptsWithCompletionHandler: //apple_ref/occ/defn/fetchReceiptsWithCompletionHandler: //apple_ref/occ/macro/fetchReceiptsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchReceiptsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchReceiptsWithCompletionHandler:" -->fetchReceiptsWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:;   name=SMReceiptsManager::fetchReceiptsWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchReceiptsWithCompletionHandler:completionHandler:">fetchReceiptsWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with the current user's uploaded receipts.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler" target="_top"><span class="function">fetchReceiptsWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchReceipts" logicalPath="//apple_ref/occ/cl/didFetchReceipts //apple_ref/occ/tdef/didFetchReceipts" target="_top"><span class="type">didFetchReceipts</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchReceipts(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:/completionHandler;   name=fetchReceiptsWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:;   name=SMReceiptsManager::fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler: --><a name="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:"></a>
+<h3><a name="fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:">fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with a limited number of the current user's uploaded receipts.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit" target="_top"><span class="function">fetchReceiptsWithLimit</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">limit</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/page //apple_ref/occ/clm/SMReceiptsManager/page //apple_ref/occ/intfcm/SMReceiptsManager/page //apple_ref/occ/intfm/SMReceiptsManager/page //apple_ref/occ/func/page //apple_ref/occ/ftmplt/SMReceiptsManager/page //apple_ref/occ/defn/page //apple_ref/occ/macro/page //apple_ref/doc/anysymbol/page" target="_top"><span class="function">page</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">page</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchReceipts" logicalPath="//apple_ref/occ/cl/didFetchReceipts //apple_ref/occ/tdef/didFetchReceipts" target="_top"><span class="type">didFetchReceipts</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchReceipts(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/limit" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/limit //apple_ref/occ/clm/SMReceiptsManager/limit //apple_ref/occ/intfcm/SMReceiptsManager/limit //apple_ref/occ/intfm/SMReceiptsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMReceiptsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/page //apple_ref/occ/clm/SMReceiptsManager/page //apple_ref/occ/intfcm/SMReceiptsManager/page //apple_ref/occ/intfm/SMReceiptsManager/page //apple_ref/occ/func/page //apple_ref/occ/ftmplt/SMReceiptsManager/page //apple_ref/occ/defn/page //apple_ref/occ/macro/page //apple_ref/doc/anysymbol/page" target="_top"><span class="function">page</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/limit;   name=fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:::limit -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/limit"></a>
+<code>limit</code>
+</dt>
+<dd><p>The maximum amount of receipts to fetch (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/page;   name=fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:::page -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/page"></a>
+<code>page</code>
+</dt>
+<dd><p><code>limit * (page-1)</code> most recent receipt records will be skipped for the fetch (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/completionHandler;   name=fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;   name=SMReceiptsManager::fetchReceiptsWithLimit:page:limit:page: --><a name="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:"></a>
+<h3><a name="fetchReceiptsWithLimit:page:limit:page:">fetchReceiptsWithLimit:page:limit:page:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" logicalPath="//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a> with a limited number of the current user's uploaded receipts.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit" target="_top"><span class="function">fetchReceiptsWithLimit</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">limit</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/page //apple_ref/occ/clm/SMReceiptsManager/page //apple_ref/occ/intfcm/SMReceiptsManager/page //apple_ref/occ/intfm/SMReceiptsManager/page //apple_ref/occ/func/page //apple_ref/occ/ftmplt/SMReceiptsManager/page //apple_ref/occ/defn/page //apple_ref/occ/macro/page //apple_ref/doc/anysymbol/page" target="_top"><span class="function">page</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/struct/int //apple_ref/occ/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a -->)<span class="param">page</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit" target="_top"><span class="function">fetchReceiptsWithLimit</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/page //apple_ref/occ/clm/SMReceiptsManager/page //apple_ref/occ/intfcm/SMReceiptsManager/page //apple_ref/occ/intfm/SMReceiptsManager/page //apple_ref/occ/func/page //apple_ref/occ/ftmplt/SMReceiptsManager/page //apple_ref/occ/defn/page //apple_ref/occ/macro/page //apple_ref/doc/anysymbol/page" target="_top"><span class="function">page</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(fetchReceipts(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/limit" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/limit //apple_ref/occ/clm/SMReceiptsManager/limit //apple_ref/occ/intfcm/SMReceiptsManager/limit //apple_ref/occ/intfm/SMReceiptsManager/limit //apple_ref/occ/func/limit //apple_ref/occ/ftmplt/SMReceiptsManager/limit //apple_ref/occ/defn/limit //apple_ref/occ/macro/limit //apple_ref/doc/anysymbol/limit" target="_top"><span class="function">limit</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/page //apple_ref/occ/clm/SMReceiptsManager/page //apple_ref/occ/intfcm/SMReceiptsManager/page //apple_ref/occ/intfm/SMReceiptsManager/page //apple_ref/occ/func/page //apple_ref/occ/ftmplt/SMReceiptsManager/page //apple_ref/occ/defn/page //apple_ref/occ/macro/page //apple_ref/doc/anysymbol/page" target="_top"><span class="function">page</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/limit;   name=fetchReceiptsWithLimit:page:limit:page:::limit -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/limit"></a>
+<code>limit</code>
+</dt>
+<dd><p>The maximum amount of receipts to fetch (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page;   name=fetchReceiptsWithLimit:page:limit:page:::page -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:/page"></a>
+<code>page</code>
+</dt>
+<dd><p><code>limit * (page-1)</code> most recent receipt records will be skipped for the fetch (optional).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchReceipts: //apple_ref/occ/tdef/didFetchReceipts: //apple_ref/occ/tag/didFetchReceipts: //apple_ref/occ/struct/didFetchReceipts: //apple_ref/occ/intf/didFetchReceipts: //apple_ref/occ/econst/didFetchReceipts: //apple_ref/occ/data/didFetchReceipts: //apple_ref/occ/clconst/didFetchReceipts: //apple_ref/occ/instm/didFetchReceipts: //apple_ref/occ/clm/didFetchReceipts: //apple_ref/occ/intfcm/didFetchReceipts: //apple_ref/occ/intfm/didFetchReceipts: //apple_ref/occ/func/didFetchReceipts: //apple_ref/occ/ftmplt/didFetchReceipts: //apple_ref/occ/defn/didFetchReceipts: //apple_ref/occ/macro/didFetchReceipts: //apple_ref/doc/com/intfm/didFetchReceipts: //apple_ref/doc/anysymbol/didFetchReceipts:" -->didFetchReceipts:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:limit:page:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/tdef/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/tag/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/struct/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intf/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/econst/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/data/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/clconst/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/instm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/clm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intfcm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intfm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/func/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/ftmplt/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/defn/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/macro/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/doc/com/intfm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/doc/anysymbol/fetchReceiptsWithLimit:page:completionHandler:" -->fetchReceiptsWithLimit:page:completionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;   name=SMReceiptsManager::groupIDsForIncompleteUploads --><a name="//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads"></a>
+<h3><a name="groupIDsForIncompleteUploads">groupIDsForIncompleteUploads</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=start --><!-- begin abstract --></p>
+<p>Returns identifiers for the current user's incomplete receipt uploads (uploads from other users will be removed).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">incompleteUploadGroupIDs</span> NS_SWIFT_NAME(groupIDsForIncompleteUploads()); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>NSArray</code> of upload identifiers.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=start --><p>An element of the returned array can be used as input for <!-- a logicalPath="//apple_ref/occ/cl/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tdef/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tag/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/struct/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intf/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/econst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/data/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clconst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/instm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfcm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/func/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/ftmplt/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/defn/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/macro/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/com/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/anysymbol/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:" -->resumeIncompleteUploadForGroupID:completionHandler:progressHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/removeIncompleteUploadForGroupID: //apple_ref/occ/tdef/removeIncompleteUploadForGroupID: //apple_ref/occ/tag/removeIncompleteUploadForGroupID: //apple_ref/occ/struct/removeIncompleteUploadForGroupID: //apple_ref/occ/intf/removeIncompleteUploadForGroupID: //apple_ref/occ/econst/removeIncompleteUploadForGroupID: //apple_ref/occ/data/removeIncompleteUploadForGroupID: //apple_ref/occ/clconst/removeIncompleteUploadForGroupID: //apple_ref/occ/instm/removeIncompleteUploadForGroupID: //apple_ref/occ/clm/removeIncompleteUploadForGroupID: //apple_ref/occ/intfcm/removeIncompleteUploadForGroupID: //apple_ref/occ/intfm/removeIncompleteUploadForGroupID: //apple_ref/occ/func/removeIncompleteUploadForGroupID: //apple_ref/occ/ftmplt/removeIncompleteUploadForGroupID: //apple_ref/occ/defn/removeIncompleteUploadForGroupID: //apple_ref/occ/macro/removeIncompleteUploadForGroupID: //apple_ref/doc/com/intfm/removeIncompleteUploadForGroupID: //apple_ref/doc/anysymbol/removeIncompleteUploadForGroupID:" -->removeIncompleteUploadForGroupID:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/groupIDsForIncompleteUploads;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;   name=SMReceiptsManager::incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers: --><a name="//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:"></a>
+<h3><a name="incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:">incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=start --><!-- begin abstract --></p>
+<p>Returns identifiers for the current user's incomplete receipt uploads.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)
+        <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers" target="_top"><span class="function">incompleteUploadGroupIDsAndKeepOtherUsers</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">keepOtherUploads</span> NS_SWIFT_NAME(groupIDsForIncompleteUploads(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/shouldKeepUploadsForOtherUsers //apple_ref/occ/clm/SMReceiptsManager/shouldKeepUploadsForOtherUsers //apple_ref/occ/intfcm/SMReceiptsManager/shouldKeepUploadsForOtherUsers //apple_ref/occ/intfm/SMReceiptsManager/shouldKeepUploadsForOtherUsers //apple_ref/occ/func/shouldKeepUploadsForOtherUsers //apple_ref/occ/ftmplt/SMReceiptsManager/shouldKeepUploadsForOtherUsers //apple_ref/occ/defn/shouldKeepUploadsForOtherUsers //apple_ref/occ/macro/shouldKeepUploadsForOtherUsers //apple_ref/doc/anysymbol/shouldKeepUploadsForOtherUsers" machineGenerated="true" --><span class="function">shouldKeepUploadsForOtherUsers</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:/keepOtherUploads;   name=incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:::keepOtherUploads -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:/keepOtherUploads"></a>
+<code>keepOtherUploads</code>
+</dt>
+<dd><p>Flag indicating if uploads from other users should be kept.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>NSArray</code> of upload identifiers.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=start --><p>An element of the returned array can be used as input for <!-- a logicalPath="//apple_ref/occ/cl/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tdef/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tag/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/struct/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intf/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/econst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/data/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clconst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/instm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfcm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/func/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/ftmplt/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/defn/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/macro/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/com/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/anysymbol/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:" -->resumeIncompleteUploadForGroupID:completionHandler:progressHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/removeIncompleteUploadForGroupID: //apple_ref/occ/tdef/removeIncompleteUploadForGroupID: //apple_ref/occ/tag/removeIncompleteUploadForGroupID: //apple_ref/occ/struct/removeIncompleteUploadForGroupID: //apple_ref/occ/intf/removeIncompleteUploadForGroupID: //apple_ref/occ/econst/removeIncompleteUploadForGroupID: //apple_ref/occ/data/removeIncompleteUploadForGroupID: //apple_ref/occ/clconst/removeIncompleteUploadForGroupID: //apple_ref/occ/instm/removeIncompleteUploadForGroupID: //apple_ref/occ/clm/removeIncompleteUploadForGroupID: //apple_ref/occ/intfcm/removeIncompleteUploadForGroupID: //apple_ref/occ/intfm/removeIncompleteUploadForGroupID: //apple_ref/occ/func/removeIncompleteUploadForGroupID: //apple_ref/occ/ftmplt/removeIncompleteUploadForGroupID: //apple_ref/occ/defn/removeIncompleteUploadForGroupID: //apple_ref/occ/macro/removeIncompleteUploadForGroupID: //apple_ref/doc/com/intfm/removeIncompleteUploadForGroupID: //apple_ref/doc/anysymbol/removeIncompleteUploadForGroupID:" -->removeIncompleteUploadForGroupID:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/incompleteUploadGroupIDsAndKeepOtherUsers:shouldKeepUploadsForOtherUsers:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;   name=SMReceiptsManager::removeAllIncompleteUploads --><a name="//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads"></a>
+<h3><a name="removeAllIncompleteUploads">removeAllIncompleteUploads</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=start --><!-- begin abstract --></p>
+<p>Makes a request to remove all incomplete receipt uploads from storage.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/removeAllIncompleteUploads //apple_ref/occ/data/SMReceiptsManager/removeAllIncompleteUploads //apple_ref/occ/data/removeAllIncompleteUploads //apple_ref/occ/clconst/SMReceiptsManager/removeAllIncompleteUploads " machineGenerated="true" --><span class="var">removeAllIncompleteUploads</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=start --><p>All group IDs are removed from <!-- a logicalPath="//apple_ref/occ/cl/incompleteUploadGroupIDs //apple_ref/occ/tdef/incompleteUploadGroupIDs //apple_ref/occ/tag/incompleteUploadGroupIDs //apple_ref/occ/struct/incompleteUploadGroupIDs //apple_ref/occ/intf/incompleteUploadGroupIDs //apple_ref/occ/econst/incompleteUploadGroupIDs //apple_ref/occ/data/incompleteUploadGroupIDs //apple_ref/occ/clconst/incompleteUploadGroupIDs //apple_ref/occ/instm/incompleteUploadGroupIDs //apple_ref/occ/clm/incompleteUploadGroupIDs //apple_ref/occ/intfcm/incompleteUploadGroupIDs //apple_ref/occ/intfm/incompleteUploadGroupIDs //apple_ref/occ/func/incompleteUploadGroupIDs //apple_ref/occ/ftmplt/incompleteUploadGroupIDs //apple_ref/occ/defn/incompleteUploadGroupIDs //apple_ref/occ/macro/incompleteUploadGroupIDs //apple_ref/doc/com/intfm/incompleteUploadGroupIDs //apple_ref/doc/anysymbol/incompleteUploadGroupIDs" -->incompleteUploadGroupIDs<!-- /a --> on success.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/removeAllIncompleteUploads;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;   name=SMReceiptsManager::removeIncompleteUploadForGroupID:havingGroupID: --><a name="//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:"></a>
+<h3><a name="removeIncompleteUploadForGroupID:havingGroupID:">removeIncompleteUploadForGroupID:havingGroupID:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to remove the incomplete receipt upload with the specified group ID from storage.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID" target="_top"><span class="function">removeIncompleteUploadForGroupID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">groupID</span> NS_SWIFT_NAME(removeIncompleteUpload(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/havingGroupID //apple_ref/occ/clm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfcm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfm/SMReceiptsManager/havingGroupID //apple_ref/occ/func/havingGroupID //apple_ref/occ/ftmplt/SMReceiptsManager/havingGroupID //apple_ref/occ/defn/havingGroupID //apple_ref/occ/macro/havingGroupID //apple_ref/doc/anysymbol/havingGroupID" machineGenerated="true" --><span class="function">havingGroupID</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:/groupID;   name=removeIncompleteUploadForGroupID:havingGroupID:::groupID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:/groupID"></a>
+<code>groupID</code>
+</dt>
+<dd><p>ID of receipt upload that will be removed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=start --><p>Group ID is removed from <!-- a logicalPath="//apple_ref/occ/cl/incompleteUploadGroupIDs //apple_ref/occ/tdef/incompleteUploadGroupIDs //apple_ref/occ/tag/incompleteUploadGroupIDs //apple_ref/occ/struct/incompleteUploadGroupIDs //apple_ref/occ/intf/incompleteUploadGroupIDs //apple_ref/occ/econst/incompleteUploadGroupIDs //apple_ref/occ/data/incompleteUploadGroupIDs //apple_ref/occ/clconst/incompleteUploadGroupIDs //apple_ref/occ/instm/incompleteUploadGroupIDs //apple_ref/occ/clm/incompleteUploadGroupIDs //apple_ref/occ/intfcm/incompleteUploadGroupIDs //apple_ref/occ/intfm/incompleteUploadGroupIDs //apple_ref/occ/func/incompleteUploadGroupIDs //apple_ref/occ/ftmplt/incompleteUploadGroupIDs //apple_ref/occ/defn/incompleteUploadGroupIDs //apple_ref/occ/macro/incompleteUploadGroupIDs //apple_ref/doc/com/intfm/incompleteUploadGroupIDs //apple_ref/doc/anysymbol/incompleteUploadGroupIDs" -->incompleteUploadGroupIDs<!-- /a --> on success.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/removeIncompleteUploadForGroupID:havingGroupID:;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:;   name=SMReceiptsManager::resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler: --><a name="//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:"></a>
+<h3><a name="resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:">resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:;name=start --><!-- begin abstract --></p>
+<p>Resumes the incomplete receipt upload with the specified group ID.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID" target="_top"><span class="function">resumeIncompleteUploadForGroupID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">groupID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didUploadReceipt" logicalPath="//apple_ref/occ/cl/didUploadReceipt //apple_ref/occ/tdef/didUploadReceipt" target="_top"><span class="type">didUploadReceipt</span></a>)<span class="param">completionHandler</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/uploadProgress" logicalPath="//apple_ref/occ/cl/uploadProgress //apple_ref/occ/tdef/uploadProgress" target="_top"><span class="type">uploadProgress</span></a>)<span class="param">progressHandler</span> NS_SWIFT_NAME(resumeUpload(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/havingGroupID //apple_ref/occ/clm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfcm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfm/SMReceiptsManager/havingGroupID //apple_ref/occ/func/havingGroupID //apple_ref/occ/ftmplt/SMReceiptsManager/havingGroupID //apple_ref/occ/defn/havingGroupID //apple_ref/occ/macro/havingGroupID //apple_ref/doc/anysymbol/havingGroupID" machineGenerated="true" --><span class="function">havingGroupID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/groupID;   name=resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:::groupID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/groupID"></a>
+<code>groupID</code>
+</dt>
+<dd><p>ID of receipt upload that will be resumed.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/completionHandler;   name=resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after all images are uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/progressHandler;   name=resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:::progressHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:/progressHandler"></a>
+<code>progressHandler</code>
+</dt>
+<dd><p>The block to execute after each image is uploaded.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns <code>nil</code> otherwise).
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;   name=SMReceiptsManager::resumeIncompleteUploadForGroupID:havingGroupID: --><a name="//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:"></a>
+<h3><a name="resumeIncompleteUploadForGroupID:havingGroupID:">resumeIncompleteUploadForGroupID:havingGroupID:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=start --><!-- begin abstract --></p>
+<p>Resumes the incomplete receipt upload with the specified group ID.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID" target="_top"><span class="function">resumeIncompleteUploadForGroupID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">groupID</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:havingGroupID:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID" target="_top"><span class="function">resumeIncompleteUploadForGroupID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:
+            <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:"))) NS_SWIFT_NAME(resumeUpload(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/havingGroupID //apple_ref/occ/clm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfcm/SMReceiptsManager/havingGroupID //apple_ref/occ/intfm/SMReceiptsManager/havingGroupID //apple_ref/occ/func/havingGroupID //apple_ref/occ/ftmplt/SMReceiptsManager/havingGroupID //apple_ref/occ/defn/havingGroupID //apple_ref/occ/macro/havingGroupID //apple_ref/doc/anysymbol/havingGroupID" machineGenerated="true" --><span class="function">havingGroupID</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:/groupID;   name=resumeIncompleteUploadForGroupID:havingGroupID:::groupID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:/groupID"></a>
+<code>groupID</code>
+</dt>
+<dd><p>ID of receipt upload that will be resumed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns <code>nil</code> otherwise).
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/uploadProgress: //apple_ref/occ/tdef/uploadProgress: //apple_ref/occ/tag/uploadProgress: //apple_ref/occ/struct/uploadProgress: //apple_ref/occ/intf/uploadProgress: //apple_ref/occ/econst/uploadProgress: //apple_ref/occ/data/uploadProgress: //apple_ref/occ/clconst/uploadProgress: //apple_ref/occ/instm/uploadProgress: //apple_ref/occ/clm/uploadProgress: //apple_ref/occ/intfcm/uploadProgress: //apple_ref/occ/intfm/uploadProgress: //apple_ref/occ/func/uploadProgress: //apple_ref/occ/ftmplt/uploadProgress: //apple_ref/occ/defn/uploadProgress: //apple_ref/occ/macro/uploadProgress: //apple_ref/doc/com/intfm/uploadProgress: //apple_ref/doc/anysymbol/uploadProgress:" -->uploadProgress:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/didUploadReceipt: //apple_ref/occ/tdef/didUploadReceipt: //apple_ref/occ/tag/didUploadReceipt: //apple_ref/occ/struct/didUploadReceipt: //apple_ref/occ/intf/didUploadReceipt: //apple_ref/occ/econst/didUploadReceipt: //apple_ref/occ/data/didUploadReceipt: //apple_ref/occ/clconst/didUploadReceipt: //apple_ref/occ/instm/didUploadReceipt: //apple_ref/occ/clm/didUploadReceipt: //apple_ref/occ/intfcm/didUploadReceipt: //apple_ref/occ/intfm/didUploadReceipt: //apple_ref/occ/func/didUploadReceipt: //apple_ref/occ/ftmplt/didUploadReceipt: //apple_ref/occ/defn/didUploadReceipt: //apple_ref/occ/macro/didUploadReceipt: //apple_ref/doc/com/intfm/didUploadReceipt: //apple_ref/doc/anysymbol/didUploadReceipt:" -->didUploadReceipt:<!-- /a --> are called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/resumeIncompleteUploadForGroupID:havingGroupID:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tdef/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/tag/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/struct/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intf/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/econst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/data/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clconst/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/instm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/clm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfcm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/func/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/ftmplt/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/defn/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/occ/macro/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/com/intfm/resumeIncompleteUploadForGroupID:completionHandler:progressHandler: //apple_ref/doc/anysymbol/resumeIncompleteUploadForGroupID:completionHandler:progressHandler:" -->resumeIncompleteUploadForGroupID:completionHandler:progressHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;   name=SMReceiptsManager::uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data: --><a name="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:"></a>
+<h3><a name="uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:">uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=start --><!-- begin abstract --></p>
+<p>Uploads the receipt images with the specified file paths for the specified campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles" target="_top"><span class="function">uploadReceiptImageFiles</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a --> &lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">paths</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">campaignID</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">placementID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">data</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles" target="_top"><span class="function">uploadReceiptImageFiles</span></a>:<!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:
+            <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:"))) NS_SWIFT_NAME(uploadImageFiles(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/atPaths //apple_ref/occ/clm/SMReceiptsManager/atPaths //apple_ref/occ/intfcm/SMReceiptsManager/atPaths //apple_ref/occ/intfm/SMReceiptsManager/atPaths //apple_ref/occ/func/atPaths //apple_ref/occ/ftmplt/SMReceiptsManager/atPaths //apple_ref/occ/defn/atPaths //apple_ref/occ/macro/atPaths //apple_ref/doc/anysymbol/atPaths" machineGenerated="true" --><span class="function">atPaths</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/campaignID //apple_ref/occ/clm/SMReceiptsManager/campaignID //apple_ref/occ/intfcm/SMReceiptsManager/campaignID //apple_ref/occ/intfm/SMReceiptsManager/campaignID //apple_ref/occ/func/campaignID //apple_ref/occ/ftmplt/SMReceiptsManager/campaignID //apple_ref/occ/defn/campaignID //apple_ref/occ/macro/campaignID //apple_ref/doc/anysymbol/campaignID" target="_top"><span class="function">campaignID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/paths;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:::paths -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/paths"></a>
+<code>paths</code>
+</dt>
+<dd><p>Array of image file paths.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/campaignID;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:::campaignID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/campaignID"></a>
+<code>campaignID</code>
+</dt>
+<dd><p>ID of promotional campaign for which receipt is being uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/placementID;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:::placementID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/placementID"></a>
+<code>placementID</code>
+</dt>
+<dd><p>ID of receipt placement (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/data;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:::data -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Custom, developer-defined data associated with the receipt (optional).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns nil otherwise).
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/uploadProgress: //apple_ref/occ/tdef/uploadProgress: //apple_ref/occ/tag/uploadProgress: //apple_ref/occ/struct/uploadProgress: //apple_ref/occ/intf/uploadProgress: //apple_ref/occ/econst/uploadProgress: //apple_ref/occ/data/uploadProgress: //apple_ref/occ/clconst/uploadProgress: //apple_ref/occ/instm/uploadProgress: //apple_ref/occ/clm/uploadProgress: //apple_ref/occ/intfcm/uploadProgress: //apple_ref/occ/intfm/uploadProgress: //apple_ref/occ/func/uploadProgress: //apple_ref/occ/ftmplt/uploadProgress: //apple_ref/occ/defn/uploadProgress: //apple_ref/occ/macro/uploadProgress: //apple_ref/doc/com/intfm/uploadProgress: //apple_ref/doc/anysymbol/uploadProgress:" -->uploadProgress:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/didUploadReceipt: //apple_ref/occ/tdef/didUploadReceipt: //apple_ref/occ/tag/didUploadReceipt: //apple_ref/occ/struct/didUploadReceipt: //apple_ref/occ/intf/didUploadReceipt: //apple_ref/occ/econst/didUploadReceipt: //apple_ref/occ/data/didUploadReceipt: //apple_ref/occ/clconst/didUploadReceipt: //apple_ref/occ/instm/didUploadReceipt: //apple_ref/occ/clm/didUploadReceipt: //apple_ref/occ/intfcm/didUploadReceipt: //apple_ref/occ/intfm/didUploadReceipt: //apple_ref/occ/func/didUploadReceipt: //apple_ref/occ/ftmplt/didUploadReceipt: //apple_ref/occ/defn/didUploadReceipt: //apple_ref/occ/macro/didUploadReceipt: //apple_ref/doc/com/intfm/didUploadReceipt: //apple_ref/doc/anysymbol/didUploadReceipt:" -->didUploadReceipt:<!-- /a --> are called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/tdef/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/tag/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/struct/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intf/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/econst/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/data/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/clconst/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/instm/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/clm/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intfcm/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/func/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/ftmplt/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/defn/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/macro/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/doc/com/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/doc/anysymbol/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:" -->uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:;   name=SMReceiptsManager::uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler: --><a name="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:"></a>
+<h3><a name="uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:">uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:;name=start --><!-- begin abstract --></p>
+<p>Uploads the receipt images with the specified file paths for the specified campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:atPaths:campaignID:placementID:data:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles" target="_top"><span class="function">uploadReceiptImageFiles</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a --> &lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">paths</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">campaignID</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">placementID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">data</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didUploadReceipt" logicalPath="//apple_ref/occ/cl/didUploadReceipt //apple_ref/occ/tdef/didUploadReceipt" target="_top"><span class="type">didUploadReceipt</span></a>)<span class="param">completionHandler</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/uploadProgress" logicalPath="//apple_ref/occ/cl/uploadProgress //apple_ref/occ/tdef/uploadProgress" target="_top"><span class="type">uploadProgress</span></a>)<span class="param">progressHandler</span> NS_SWIFT_NAME(uploadImageFiles(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/atPaths //apple_ref/occ/clm/SMReceiptsManager/atPaths //apple_ref/occ/intfcm/SMReceiptsManager/atPaths //apple_ref/occ/intfm/SMReceiptsManager/atPaths //apple_ref/occ/func/atPaths //apple_ref/occ/ftmplt/SMReceiptsManager/atPaths //apple_ref/occ/defn/atPaths //apple_ref/occ/macro/atPaths //apple_ref/doc/anysymbol/atPaths" machineGenerated="true" --><span class="function">atPaths</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/campaignID //apple_ref/occ/clm/SMReceiptsManager/campaignID //apple_ref/occ/intfcm/SMReceiptsManager/campaignID //apple_ref/occ/intfm/SMReceiptsManager/campaignID //apple_ref/occ/func/campaignID //apple_ref/occ/ftmplt/SMReceiptsManager/campaignID //apple_ref/occ/defn/campaignID //apple_ref/occ/macro/campaignID //apple_ref/doc/anysymbol/campaignID" target="_top"><span class="function">campaignID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/paths;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::paths -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/paths"></a>
+<code>paths</code>
+</dt>
+<dd><p>Array of image file paths.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/campaignID;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::campaignID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/campaignID"></a>
+<code>campaignID</code>
+</dt>
+<dd><p>ID of promotional campaign for which receipt is being uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/placementID;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::placementID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/placementID"></a>
+<code>placementID</code>
+</dt>
+<dd><p>ID of receipt placement (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/data;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::data -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Custom, developer-defined data associated with the receipt (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after all images are uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler;   name=uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:::progressHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImageFiles:withCampaignID:placementID:data:completionHandler:progressHandler:atPaths:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler"></a>
+<code>progressHandler</code>
+</dt>
+<dd><p>The block to execute after each image is uploaded.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns <code>nil</code> otherwise).
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:;   name=SMReceiptsManager::uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler: --><a name="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:"></a>
+<h3><a name="uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:">uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:;name=start --><!-- begin abstract --></p>
+<p>Uploads the receipt images with the specified asset identifiers for the specified campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages" target="_top"><span class="function">uploadReceiptImages</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a --> &lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">assetIDs</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">campaignID</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">placementID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">data</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didUploadReceipt" logicalPath="//apple_ref/occ/cl/didUploadReceipt //apple_ref/occ/tdef/didUploadReceipt" target="_top"><span class="type">didUploadReceipt</span></a>)<span class="param">completionHandler</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/uploadProgress" logicalPath="//apple_ref/occ/cl/uploadProgress //apple_ref/occ/tdef/uploadProgress" target="_top"><span class="type">uploadProgress</span></a>)<span class="param">progressHandler</span> NS_SWIFT_NAME(uploadImages(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/clm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/intfcm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/intfm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/func/havingAssetIDs //apple_ref/occ/ftmplt/SMReceiptsManager/havingAssetIDs //apple_ref/occ/defn/havingAssetIDs //apple_ref/occ/macro/havingAssetIDs //apple_ref/doc/anysymbol/havingAssetIDs" machineGenerated="true" --><span class="function">havingAssetIDs</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/campaignID //apple_ref/occ/clm/SMReceiptsManager/campaignID //apple_ref/occ/intfcm/SMReceiptsManager/campaignID //apple_ref/occ/intfm/SMReceiptsManager/campaignID //apple_ref/occ/func/campaignID //apple_ref/occ/ftmplt/SMReceiptsManager/campaignID //apple_ref/occ/defn/campaignID //apple_ref/occ/macro/campaignID //apple_ref/doc/anysymbol/campaignID" target="_top"><span class="function">campaignID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/assetIDs;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::assetIDs -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/assetIDs"></a>
+<code>assetIDs</code>
+</dt>
+<dd><p>Array of <code>PHObject</code> <code>localIdentifier</code> strings.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/campaignID;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::campaignID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/campaignID"></a>
+<code>campaignID</code>
+</dt>
+<dd><p>ID of promotional campaign for which receipt is being uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/placementID;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::placementID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/placementID"></a>
+<code>placementID</code>
+</dt>
+<dd><p>ID of receipt placement (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/data;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::data -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Custom, developer-defined data associated with the receipt (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after all images are uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler;   name=uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:::progressHandler -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler"></a>
+<code>progressHandler</code>
+</dt>
+<dd><p>The block to execute after each image is uploaded.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns nil otherwise).
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;   name=SMReceiptsManager::uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data: --><a name="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:"></a>
+<h3><a name="uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:">uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=start --><!-- begin abstract --></p>
+<p>Uploads the receipt images with the specified asset identifiers for the specified campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages" target="_top"><span class="function">uploadReceiptImages</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a --> &lt;<span class="param">NSString</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">assetIDs</span> 
+        <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">campaignID</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">placementID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="param">NSString</span> <span class="template">*</span>, <span class="param">NSObject</span> <span class="param">*</span>&gt; <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<span class="param">data</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages" target="_top"><span class="function">uploadReceiptImages</span></a>:<!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/withCampaignID //apple_ref/occ/clm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfcm/SMReceiptsManager/withCampaignID //apple_ref/occ/intfm/SMReceiptsManager/withCampaignID //apple_ref/occ/func/withCampaignID //apple_ref/occ/ftmplt/SMReceiptsManager/withCampaignID //apple_ref/occ/defn/withCampaignID //apple_ref/occ/macro/withCampaignID //apple_ref/doc/anysymbol/withCampaignID" machineGenerated="true" --><span class="function">withCampaignID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:
+            <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/completionHandler //apple_ref/occ/clm/SMReceiptsManager/completionHandler //apple_ref/occ/intfcm/SMReceiptsManager/completionHandler //apple_ref/occ/intfm/SMReceiptsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMReceiptsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:havingAssetIDs:campaignID:placementID:data:completionHandler:progressHandler:/progressHandler" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/progressHandler //apple_ref/occ/clm/SMReceiptsManager/progressHandler //apple_ref/occ/intfcm/SMReceiptsManager/progressHandler //apple_ref/occ/intfm/SMReceiptsManager/progressHandler //apple_ref/occ/func/progressHandler //apple_ref/occ/ftmplt/SMReceiptsManager/progressHandler //apple_ref/occ/defn/progressHandler //apple_ref/occ/macro/progressHandler //apple_ref/doc/anysymbol/progressHandler" target="_top"><span class="function">progressHandler</span></a>:"))) NS_SWIFT_NAME(uploadImages(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/clm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/intfcm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/intfm/SMReceiptsManager/havingAssetIDs //apple_ref/occ/func/havingAssetIDs //apple_ref/occ/ftmplt/SMReceiptsManager/havingAssetIDs //apple_ref/occ/defn/havingAssetIDs //apple_ref/occ/macro/havingAssetIDs //apple_ref/doc/anysymbol/havingAssetIDs" machineGenerated="true" --><span class="function">havingAssetIDs</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/campaignID //apple_ref/occ/clm/SMReceiptsManager/campaignID //apple_ref/occ/intfcm/SMReceiptsManager/campaignID //apple_ref/occ/intfm/SMReceiptsManager/campaignID //apple_ref/occ/func/campaignID //apple_ref/occ/ftmplt/SMReceiptsManager/campaignID //apple_ref/occ/defn/campaignID //apple_ref/occ/macro/campaignID //apple_ref/doc/anysymbol/campaignID" target="_top"><span class="function">campaignID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/placementID //apple_ref/occ/clm/SMReceiptsManager/placementID //apple_ref/occ/intfcm/SMReceiptsManager/placementID //apple_ref/occ/intfm/SMReceiptsManager/placementID //apple_ref/occ/func/placementID //apple_ref/occ/ftmplt/SMReceiptsManager/placementID //apple_ref/occ/defn/placementID //apple_ref/occ/macro/placementID //apple_ref/doc/anysymbol/placementID" target="_top"><span class="function">placementID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/data //apple_ref/occ/clm/SMReceiptsManager/data //apple_ref/occ/intfcm/SMReceiptsManager/data //apple_ref/occ/intfm/SMReceiptsManager/data //apple_ref/occ/func/data //apple_ref/occ/ftmplt/SMReceiptsManager/data //apple_ref/occ/defn/data //apple_ref/occ/macro/data //apple_ref/doc/anysymbol/data" target="_top"><span class="function">data</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/assetIDs;   name=uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:::assetIDs -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/assetIDs"></a>
+<code>assetIDs</code>
+</dt>
+<dd><p>Array of <code>PHObject</code> <code>localIdentifier</code> strings.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID;   name=uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:::campaignID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/campaignID"></a>
+<code>campaignID</code>
+</dt>
+<dd><p>ID of promotional campaign for which receipt is being uploaded.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID;   name=uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:::placementID -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/placementID"></a>
+<code>placementID</code>
+</dt>
+<dd><p>ID of receipt placement (optional).</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data;   name=uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:::data -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:/data"></a>
+<code>data</code>
+</dt>
+<dd><p>Custom, developer-defined data associated with the receipt (optional).</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>Returns upload group ID on success (returns nil otherwise).
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/uploadProgress: //apple_ref/occ/tdef/uploadProgress: //apple_ref/occ/tag/uploadProgress: //apple_ref/occ/struct/uploadProgress: //apple_ref/occ/intf/uploadProgress: //apple_ref/occ/econst/uploadProgress: //apple_ref/occ/data/uploadProgress: //apple_ref/occ/clconst/uploadProgress: //apple_ref/occ/instm/uploadProgress: //apple_ref/occ/clm/uploadProgress: //apple_ref/occ/intfcm/uploadProgress: //apple_ref/occ/intfm/uploadProgress: //apple_ref/occ/func/uploadProgress: //apple_ref/occ/ftmplt/uploadProgress: //apple_ref/occ/defn/uploadProgress: //apple_ref/occ/macro/uploadProgress: //apple_ref/doc/com/intfm/uploadProgress: //apple_ref/doc/anysymbol/uploadProgress:" -->uploadProgress:<!-- /a --> and <!-- a logicalPath="//apple_ref/occ/cl/didUploadReceipt: //apple_ref/occ/tdef/didUploadReceipt: //apple_ref/occ/tag/didUploadReceipt: //apple_ref/occ/struct/didUploadReceipt: //apple_ref/occ/intf/didUploadReceipt: //apple_ref/occ/econst/didUploadReceipt: //apple_ref/occ/data/didUploadReceipt: //apple_ref/occ/clconst/didUploadReceipt: //apple_ref/occ/instm/didUploadReceipt: //apple_ref/occ/clm/didUploadReceipt: //apple_ref/occ/intfcm/didUploadReceipt: //apple_ref/occ/intfm/didUploadReceipt: //apple_ref/occ/func/didUploadReceipt: //apple_ref/occ/ftmplt/didUploadReceipt: //apple_ref/occ/defn/didUploadReceipt: //apple_ref/occ/macro/didUploadReceipt: //apple_ref/doc/com/intfm/didUploadReceipt: //apple_ref/doc/anysymbol/didUploadReceipt:" -->didUploadReceipt:<!-- /a --> are called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMReceiptsManager/uploadReceiptImages:withCampaignID:placementID:data:havingAssetIDs:campaignID:placementID:data:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/tdef/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/tag/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/struct/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intf/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/econst/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/data/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/clconst/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/instm/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/clm/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intfcm/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/intfm/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/func/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/ftmplt/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/defn/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/occ/macro/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/doc/com/intfm/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler: //apple_ref/doc/anysymbol/uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:" -->uploadReceiptImages:withCampaignID:placementID:data:completionHandler:progressHandler:<!-- /a -->.</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/delegate" target="_top">delegate</a></tt></dt>
+<dd><p>Object that implements <a href="../../Protocols/SMReceiptsDelegate/index.html#//apple_ref/occ/intf/SMReceiptsDelegate" logicalPath="//apple_ref/occ/intf/SMReceiptsDelegate" target="_top">SMReceiptsDelegate</a> callbacks.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMReceiptsManager/receipts" target="_top">receipts</a></tt></dt>
+<dd><p>The current user's uploaded receipts.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMReceiptsManager/delegate;   name=SMReceiptsManager::delegate --><a name="//apple_ref/occ/instp/SMReceiptsManager/delegate"></a>
+<h3><a name="delegate">delegate</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMReceiptsManager/delegate;name=start --><!-- begin abstract --></p>
+<p>Object that implements <a href="../../Protocols/SMReceiptsDelegate/index.html#//apple_ref/occ/intf/SMReceiptsDelegate" logicalPath="//apple_ref/occ/intf/SMReceiptsDelegate" target="_top">SMReceiptsDelegate</a> callbacks.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMReceiptsManager/delegate;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMReceiptsManager/delegate;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">weak</span>) <!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/struct/id //apple_ref/occ/intf/id //apple_ref/doc/anysymbol/id" machineGenerated="true" --><span class="type">id</span><!-- /a -->&lt;<span class="template">SMReceiptsDelegate</span>&gt; <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/delegate //apple_ref/occ/data/SMReceiptsManager/delegate //apple_ref/occ/data/delegate //apple_ref/occ/clconst/SMReceiptsManager/delegate " machineGenerated="true" --><span class="var">delegate</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMReceiptsManager/delegate;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;   name=SMReceiptsManager::receipts --><a name="//apple_ref/occ/instp/SMReceiptsManager/receipts"></a>
+<h3><a name="receipts">receipts</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=start --><!-- begin abstract --></p>
+<p>The current user's uploaded receipts.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMReceipt</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/receipts //apple_ref/occ/data/SMReceiptsManager/receipts //apple_ref/occ/data/receipts //apple_ref/occ/clconst/SMReceiptsManager/receipts " machineGenerated="true" --><span class="var">receipts</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=start --><p>This property is updated in response to a successful <!-- a logicalPath="//apple_ref/occ/cl/fetchReceiptsWithCompletionHandler: //apple_ref/occ/tdef/fetchReceiptsWithCompletionHandler: //apple_ref/occ/tag/fetchReceiptsWithCompletionHandler: //apple_ref/occ/struct/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intf/fetchReceiptsWithCompletionHandler: //apple_ref/occ/econst/fetchReceiptsWithCompletionHandler: //apple_ref/occ/data/fetchReceiptsWithCompletionHandler: //apple_ref/occ/clconst/fetchReceiptsWithCompletionHandler: //apple_ref/occ/instm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/clm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intfcm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/intfm/fetchReceiptsWithCompletionHandler: //apple_ref/occ/func/fetchReceiptsWithCompletionHandler: //apple_ref/occ/ftmplt/fetchReceiptsWithCompletionHandler: //apple_ref/occ/defn/fetchReceiptsWithCompletionHandler: //apple_ref/occ/macro/fetchReceiptsWithCompletionHandler: //apple_ref/doc/com/intfm/fetchReceiptsWithCompletionHandler: //apple_ref/doc/anysymbol/fetchReceiptsWithCompletionHandler:" -->fetchReceiptsWithCompletionHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/tdef/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/tag/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/struct/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intf/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/econst/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/data/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/clconst/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/instm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/clm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intfcm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/intfm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/func/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/ftmplt/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/defn/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/occ/macro/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/doc/com/intfm/fetchReceiptsWithLimit:page:completionHandler: //apple_ref/doc/anysymbol/fetchReceiptsWithLimit:page:completionHandler:" -->fetchReceiptsWithLimit:page:completionHandler:<!-- /a --> call.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMReceiptsManager/receipts;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

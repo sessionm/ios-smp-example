@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMLocationManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMLocationManager;  name=SMLocationManager-->
+<a name="//apple_ref/occ/cl/SMLocationManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMLocationManager">SMLocationManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Conforms&nbsp;to:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/intf/CLLocationManagerDelegate" machineGenerated="true" -->CLLocationManagerDelegate<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Deprecated:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMLocationManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMLocationManager.h">SMLocationManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMLocationManager;name=start --><!-- begin abstract --></p>
+<p>SessionM Location service interface. This is the main class in SessionM Location iOS SDK. It defines methods for all location based operations such as location and region monitoring.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMLocationManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService" target="_top">-refreshGeofenceService</a></tt></dt>
+<dd><p>Refreshes region monitoring based on SessionM Platform portal configurations.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMLocationManager/registerGeofenceService" target="_top">+registerGeofenceService</a></tt></dt>
+<dd><p>Starts region monitoring.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMLocationManager/registerLocationService" target="_top">+registerLocationService</a></tt></dt>
+<dd><p>Starts location updates.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMLocationManager/sharedInstance" target="_top">+sharedInstance</a></tt></dt>
+<dd><p>Returns singleton <code>SMLocationManger</code> service instance with a monitored location event limit of <!-- a logicalPath="//apple_ref/occ/cl/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tdef/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tag/SMLocationManagerMonitoredEventLimit //apple_ref/occ/struct/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intf/SMLocationManagerMonitoredEventLimit //apple_ref/occ/econst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/data/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clconst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/instm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfcm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/func/SMLocationManagerMonitoredEventLimit //apple_ref/occ/ftmplt/SMLocationManagerMonitoredEventLimit //apple_ref/occ/defn/SMLocationManagerMonitoredEventLimit //apple_ref/occ/macro/SMLocationManagerMonitoredEventLimit //apple_ref/doc/com/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/doc/anysymbol/SMLocationManagerMonitoredEventLimit" -->SMLocationManagerMonitoredEventLimit<!-- /a -->.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMLocationManager/startGeofenceService" target="_top">-startGeofenceService</a></tt></dt>
+<dd><p>Starts region monitoring.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMLocationManager/startLocationService" target="_top">-startLocationService</a></tt></dt>
+<dd><p>Starts location updates.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMLocationManager/stopGeofenceService" target="_top">-stopGeofenceService</a></tt></dt>
+<dd><p>Stops all region monitoring.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMLocationManager/stopLocationService" target="_top">-stopLocationService</a></tt></dt>
+<dd><p>Stops location updates.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;   name=SMLocationManager::refreshGeofenceService --><a name="//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService"></a>
+<h3><a name="refreshGeofenceService">refreshGeofenceService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=start --><!-- begin abstract --></p>
+<p>Refreshes region monitoring based on SessionM Platform portal configurations.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/refreshGeofenceService //apple_ref/occ/data/SMLocationManager/refreshGeofenceService //apple_ref/occ/data/refreshGeofenceService //apple_ref/occ/clconst/SMLocationManager/refreshGeofenceService " machineGenerated="true" --><span class="var">refreshGeofenceService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=start --><p>This call made on the <code>[SMLocationManager sharedInstance]</code> object will refresh monitoring regions based on configurations setup by the developer in the SessionM Platform portal. Regions monitored persist across app launches and are only cleared via <a href="index.html#//apple_ref/occ/instm/SMLocationManager/stopGeofenceService" logicalPath="//apple_ref/occ/instm/SMLocationManager/stopGeofenceService" target="_top">stopGeofenceService</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/refreshGeofenceService;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMLocationManager/registerGeofenceService;   name=SMLocationManager::registerGeofenceService --><a name="//apple_ref/occ/clm/SMLocationManager/registerGeofenceService"></a>
+<h3><a name="registerGeofenceService">registerGeofenceService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/registerGeofenceService;name=start --><!-- begin abstract --></p>
+<p>Starts region monitoring.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/registerGeofenceService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/registerGeofenceService;name=start -->+ (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/registerGeofenceService //apple_ref/occ/data/SMLocationManager/registerGeofenceService //apple_ref/occ/data/registerGeofenceService //apple_ref/occ/clconst/SMLocationManager/registerGeofenceService " machineGenerated="true" --><span class="var">registerGeofenceService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/registerGeofenceService;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMLocationManager/registerLocationService;   name=SMLocationManager::registerLocationService --><a name="//apple_ref/occ/clm/SMLocationManager/registerLocationService"></a>
+<h3><a name="registerLocationService">registerLocationService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/registerLocationService;name=start --><!-- begin abstract --></p>
+<p>Starts location updates.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/registerLocationService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/registerLocationService;name=start -->+ (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/registerLocationService //apple_ref/occ/data/SMLocationManager/registerLocationService //apple_ref/occ/data/registerLocationService //apple_ref/occ/clconst/SMLocationManager/registerLocationService " machineGenerated="true" --><span class="var">registerLocationService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/registerLocationService;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMLocationManager/sharedInstance;   name=SMLocationManager::sharedInstance --><a name="//apple_ref/occ/clm/SMLocationManager/sharedInstance"></a>
+<h3><a name="sharedInstance">sharedInstance</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/sharedInstance;name=start --><!-- begin abstract --></p>
+<p>Returns singleton <code>SMLocationManger</code> service instance with a monitored location event limit of <!-- a logicalPath="//apple_ref/occ/cl/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tdef/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tag/SMLocationManagerMonitoredEventLimit //apple_ref/occ/struct/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intf/SMLocationManagerMonitoredEventLimit //apple_ref/occ/econst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/data/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clconst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/instm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfcm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/func/SMLocationManagerMonitoredEventLimit //apple_ref/occ/ftmplt/SMLocationManagerMonitoredEventLimit //apple_ref/occ/defn/SMLocationManagerMonitoredEventLimit //apple_ref/occ/macro/SMLocationManagerMonitoredEventLimit //apple_ref/doc/com/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/doc/anysymbol/SMLocationManagerMonitoredEventLimit" -->SMLocationManagerMonitoredEventLimit<!-- /a -->.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMLocationManager/sharedInstance;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/sharedInstance;name=start -->+ (<a machinegenerated="true" href="index.html#//apple_ref/occ/cl/SMLocationManager" logicalPath="//apple_ref/occ/cl/SMLocationManager" target="_top"><span class="type">SMLocationManager</span></a> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/occ/econst/sharedInstance //apple_ref/occ/data/SMLocationManager/sharedInstance //apple_ref/occ/data/sharedInstance //apple_ref/occ/clconst/SMLocationManager/sharedInstance " machineGenerated="true" --><span class="var">sharedInstance</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMLocationManager/sharedInstance;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMLocationManger</code> service object.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;   name=SMLocationManager::startGeofenceService --><a name="//apple_ref/occ/instm/SMLocationManager/startGeofenceService"></a>
+<h3><a name="startGeofenceService">startGeofenceService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=start --><!-- begin abstract --></p>
+<p>Starts region monitoring.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/startGeofenceService //apple_ref/occ/data/SMLocationManager/startGeofenceService //apple_ref/occ/data/startGeofenceService //apple_ref/occ/clconst/SMLocationManager/startGeofenceService " machineGenerated="true" --><span class="var">startGeofenceService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=start --><p>This call made on the <code>[SMLocationManager sharedInstance]</code> object will start monitoring regions.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/startGeofenceService;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;   name=SMLocationManager::startLocationService --><a name="//apple_ref/occ/instm/SMLocationManager/startLocationService"></a>
+<h3><a name="startLocationService">startLocationService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=start --><!-- begin abstract --></p>
+<p>Starts location updates.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/startLocationService //apple_ref/occ/data/SMLocationManager/startLocationService //apple_ref/occ/data/startLocationService //apple_ref/occ/clconst/SMLocationManager/startLocationService " machineGenerated="true" --><span class="var">startLocationService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=start --><p>This call made on the <code>[SMLocationManager sharedInstance]</code> object will start location updates. If permission is denied a <!-- a logicalPath="//apple_ref/occ/cl/SMLocationManagerLocationServicesDisabled //apple_ref/occ/tdef/SMLocationManagerLocationServicesDisabled //apple_ref/occ/tag/SMLocationManagerLocationServicesDisabled //apple_ref/occ/struct/SMLocationManagerLocationServicesDisabled //apple_ref/occ/intf/SMLocationManagerLocationServicesDisabled //apple_ref/occ/econst/SMLocationManagerLocationServicesDisabled //apple_ref/occ/data/SMLocationManagerLocationServicesDisabled //apple_ref/occ/clconst/SMLocationManagerLocationServicesDisabled //apple_ref/occ/instm/SMLocationManagerLocationServicesDisabled //apple_ref/occ/clm/SMLocationManagerLocationServicesDisabled //apple_ref/occ/intfcm/SMLocationManagerLocationServicesDisabled //apple_ref/occ/intfm/SMLocationManagerLocationServicesDisabled //apple_ref/occ/func/SMLocationManagerLocationServicesDisabled //apple_ref/occ/ftmplt/SMLocationManagerLocationServicesDisabled //apple_ref/occ/defn/SMLocationManagerLocationServicesDisabled //apple_ref/occ/macro/SMLocationManagerLocationServicesDisabled //apple_ref/doc/com/intfm/SMLocationManagerLocationServicesDisabled //apple_ref/doc/anysymbol/SMLocationManagerLocationServicesDisabled" -->SMLocationManagerLocationServicesDisabled<!-- /a --> notification will be fired.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/startLocationService;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;   name=SMLocationManager::stopGeofenceService --><a name="//apple_ref/occ/instm/SMLocationManager/stopGeofenceService"></a>
+<h3><a name="stopGeofenceService">stopGeofenceService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=start --><!-- begin abstract --></p>
+<p>Stops all region monitoring.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/stopGeofenceService //apple_ref/occ/data/SMLocationManager/stopGeofenceService //apple_ref/occ/data/stopGeofenceService //apple_ref/occ/clconst/SMLocationManager/stopGeofenceService " machineGenerated="true" --><span class="var">stopGeofenceService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=start --><p>This call made on the <code>[SMLocationManager sharedInstance]</code> object will stop monitoring all regions.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/stopGeofenceService;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;   name=SMLocationManager::stopLocationService --><a name="//apple_ref/occ/instm/SMLocationManager/stopLocationService"></a>
+<h3><a name="stopLocationService">stopLocationService</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=start --><!-- begin abstract --></p>
+<p>Stops location updates.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/stopLocationService //apple_ref/occ/data/SMLocationManager/stopLocationService //apple_ref/occ/data/stopLocationService //apple_ref/occ/clconst/SMLocationManager/stopLocationService " machineGenerated="true" --><span class="var">stopLocationService</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=start --><p>This call made on the <code>[SMLocationManager sharedInstance]</code> object will stop location updates. This does not clear monitored regions that persist across app launches.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMLocationManager/stopLocationService;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMLocationManager/currentGeoLocation" target="_top">currentGeoLocation</a></tt></dt>
+<dd><p>Most current CLLocation returned by location services.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMLocationManager/eventLimit" target="_top">eventLimit</a></tt></dt>
+<dd><p>The maximum size for the amount of monitored location events in the <a href="index.html#//apple_ref/occ/instp/SMLocationManager/locationEvents" logicalPath="//apple_ref/occ/instp/SMLocationManager/locationEvents" target="_top">locationEvents</a> array (default value is <!-- a logicalPath="//apple_ref/occ/cl/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tdef/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tag/SMLocationManagerMonitoredEventLimit //apple_ref/occ/struct/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intf/SMLocationManagerMonitoredEventLimit //apple_ref/occ/econst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/data/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clconst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/instm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfcm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/func/SMLocationManagerMonitoredEventLimit //apple_ref/occ/ftmplt/SMLocationManagerMonitoredEventLimit //apple_ref/occ/defn/SMLocationManagerMonitoredEventLimit //apple_ref/occ/macro/SMLocationManagerMonitoredEventLimit //apple_ref/doc/com/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/doc/anysymbol/SMLocationManagerMonitoredEventLimit" -->SMLocationManagerMonitoredEventLimit<!-- /a -->).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted" target="_top">isGeofenceServiceStarted</a></tt></dt>
+<dd><p><code>BOOL</code> indicating whether geofence updates have started or not.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted" target="_top">isLocationServiceStarted</a></tt></dt>
+<dd><p><code>BOOL</code> indicating whether location updates have started or not.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMLocationManager/locationEvents" target="_top">locationEvents</a></tt></dt>
+<dd><p>Currently monitored events that can be triggered by entering or exiting a geofence.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMLocationManager/currentGeoLocation;   name=SMLocationManager::currentGeoLocation --><a name="//apple_ref/occ/instp/SMLocationManager/currentGeoLocation"></a>
+<h3><a name="currentGeoLocation">currentGeoLocation</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/currentGeoLocation;name=start --><!-- begin abstract --></p>
+<p>Most current CLLocation returned by location services.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/currentGeoLocation;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/currentGeoLocation;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/CLLocation //apple_ref/occ/tdef/CLLocation //apple_ref/occ/tag/CLLocation //apple_ref/occ/struct/CLLocation //apple_ref/occ/intf/CLLocation //apple_ref/doc/anysymbol/CLLocation" machineGenerated="true" --><span class="type">CLLocation</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/currentGeoLocation //apple_ref/occ/data/SMLocationManager/currentGeoLocation //apple_ref/occ/data/currentGeoLocation //apple_ref/occ/clconst/SMLocationManager/currentGeoLocation " machineGenerated="true" --><span class="var">currentGeoLocation</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/currentGeoLocation;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;   name=SMLocationManager::eventLimit --><a name="//apple_ref/occ/instp/SMLocationManager/eventLimit"></a>
+<h3><a name="eventLimit">eventLimit</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=start --><!-- begin abstract --></p>
+<p>The maximum size for the amount of monitored location events in the <a href="index.html#//apple_ref/occ/instp/SMLocationManager/locationEvents" logicalPath="//apple_ref/occ/instp/SMLocationManager/locationEvents" target="_top">locationEvents</a> array (default value is <!-- a logicalPath="//apple_ref/occ/cl/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tdef/SMLocationManagerMonitoredEventLimit //apple_ref/occ/tag/SMLocationManagerMonitoredEventLimit //apple_ref/occ/struct/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intf/SMLocationManagerMonitoredEventLimit //apple_ref/occ/econst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/data/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clconst/SMLocationManagerMonitoredEventLimit //apple_ref/occ/instm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/clm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfcm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/occ/func/SMLocationManagerMonitoredEventLimit //apple_ref/occ/ftmplt/SMLocationManagerMonitoredEventLimit //apple_ref/occ/defn/SMLocationManagerMonitoredEventLimit //apple_ref/occ/macro/SMLocationManagerMonitoredEventLimit //apple_ref/doc/com/intfm/SMLocationManagerMonitoredEventLimit //apple_ref/doc/anysymbol/SMLocationManagerMonitoredEventLimit" -->SMLocationManagerMonitoredEventLimit<!-- /a -->).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readwrite</span>) <a machinegenerated="true" href="../../../SMTransaction_h/index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/eventLimit //apple_ref/occ/data/SMLocationManager/eventLimit //apple_ref/occ/data/eventLimit //apple_ref/occ/clconst/SMLocationManager/eventLimit " machineGenerated="true" --><span class="var">eventLimit</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=start --><p>Note: the recommended and default value is <code>50</code>. Using large values can result in out-of-memory exceptions.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMLocationManager/eventLimit;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted;   name=SMLocationManager::isGeofenceServiceStarted --><a name="//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted"></a>
+<h3><a name="isGeofenceServiceStarted">isGeofenceServiceStarted</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted;name=start --><!-- begin abstract --></p>
+<p><code>BOOL</code> indicating whether geofence updates have started or not.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/isGeofenceServiceStarted //apple_ref/occ/data/SMLocationManager/isGeofenceServiceStarted //apple_ref/occ/data/isGeofenceServiceStarted //apple_ref/occ/clconst/SMLocationManager/isGeofenceServiceStarted " machineGenerated="true" --><span class="var">isGeofenceServiceStarted</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/isGeofenceServiceStarted;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted;   name=SMLocationManager::isLocationServiceStarted --><a name="//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted"></a>
+<h3><a name="isLocationServiceStarted">isLocationServiceStarted</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted;name=start --><!-- begin abstract --></p>
+<p><code>BOOL</code> indicating whether location updates have started or not.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/isLocationServiceStarted //apple_ref/occ/data/SMLocationManager/isLocationServiceStarted //apple_ref/occ/data/isLocationServiceStarted //apple_ref/occ/clconst/SMLocationManager/isLocationServiceStarted " machineGenerated="true" --><span class="var">isLocationServiceStarted</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/isLocationServiceStarted;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMLocationManager/locationEvents;   name=SMLocationManager::locationEvents --><a name="//apple_ref/occ/instp/SMLocationManager/locationEvents"></a>
+<h3><a name="locationEvents">locationEvents</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/locationEvents;name=start --><!-- begin abstract --></p>
+<p>Currently monitored events that can be triggered by entering or exiting a geofence.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMLocationManager/locationEvents;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/locationEvents;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMGeolocationEvent</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/locationEvents //apple_ref/occ/data/SMLocationManager/locationEvents //apple_ref/occ/data/locationEvents //apple_ref/occ/clconst/SMLocationManager/locationEvents " machineGenerated="true" --><span class="var">locationEvents</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMLocationManager/locationEvents;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

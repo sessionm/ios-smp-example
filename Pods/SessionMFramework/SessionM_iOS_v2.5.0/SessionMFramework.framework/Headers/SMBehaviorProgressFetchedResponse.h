@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Defines the data returned from a successful @link //apple_ref/occ/instm/SMEventsManager/fetchBehaviorProgressWithCompletionHandler: @/link call.
  */
 @interface SMBehaviorProgressFetchedResponse : SMEventsResponse
-
 @end
 
 NS_ASSUME_NONNULL_END

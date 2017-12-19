@@ -29,8 +29,8 @@
 #import "SessionM.h"
 #import "SMAchievementData.h"
 #import "SMActivityViewController.h"
+#import "SMGeolocationEvent.h"
 #import "SMLoaderController.h"
-#import "SMLocationEvent.h"
 #import "SMLocationManager.h"
 
 // General SessionM Platform
@@ -40,7 +40,9 @@
 
 // Campaigns
 #import "SMCampaignsManager.h"
+#import "SMPromotion.h"
 #import "SMFeedMessage.h"
+#import "SMTemplate.h"
 
 // Content
 #import "SMContent.h"

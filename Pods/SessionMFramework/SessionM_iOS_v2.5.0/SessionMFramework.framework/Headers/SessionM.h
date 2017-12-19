@@ -6,7 +6,7 @@
 
 #ifndef __SESSIONM__
 #define __SESSIONM__
-#define __SESSIONM_SDK_VERSION__ @"2.5.0"
+#define __SESSIONM_SDK_VERSION__ @"2.5.1"
 #define __SESSIONM_SDK_MIN_SUPPORTED_DEVICE_VERSION__ 8.0f
 
 #import <UIKit/UIKit.h>

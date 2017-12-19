@@ -63,7 +63,7 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
     @objc private func locationEventsDidUpdate(_ notification: Notification) {
         if let info = notification.userInfo {
             let monitoredRegions = info[kMonitoredRegions] as! Set<CLCircularRegion>
-            let locationEvents = info[kLocationEvents] as! [SMLocationEvent]
+            let locationEvents = info[kLocationEvents] as! [SMGeolocationEvent]
             mapView.removeOverlays(mapView.overlays)
             infoClusterController.removeAnnotations(infoAnnotations, withCompletionHandler: nil)
             infoAnnotations.removeAll()

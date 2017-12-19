@@ -55,11 +55,11 @@ typedef void(^CompletionHandler)(NSString *kind, SMGenericResponse * _Nullable r
 
 /*!
  @abstract Sends an HTTP request with the specified completion handler.
- @param request Request to be sent.
+ @param genericRequest Request to be sent.
  @param completionHandler The block to execute after the request is processed.
  @result <code>BOOL</code> indicating whether the request will be sent.
  */
-- (BOOL)sendRequest:(SMGenericRequest * _Nonnull)request completionHandler:(CompletionHandler _Nonnull)completionHandler;
+- (BOOL)sendRequest:(SMGenericRequest * _Nonnull)genericRequest completionHandler:(CompletionHandler _Nonnull)completionHandler;
 
 @end
 

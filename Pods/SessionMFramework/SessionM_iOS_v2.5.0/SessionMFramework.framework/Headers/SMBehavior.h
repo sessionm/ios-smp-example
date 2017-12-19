@@ -39,6 +39,7 @@ typedef NS_ENUM (NSInteger, SMBehaviorType) {
  @abstract Behavior type.
  */
 @property(nonatomic, assign, readonly) SMBehaviorType type;
+@property(nonatomic, strong, readonly) NSString *campaignID;
 /*!
  @property extras
  @abstract Any data values that do not have an associated class property.

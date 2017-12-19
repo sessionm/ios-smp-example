@@ -1,0 +1,640 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMOffer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMOffer;  name=SMOffer-->
+<a name="//apple_ref/occ/cl/SMOffer"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMOffer">SMOffer</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMOffer.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMOffer.h">SMOffer.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOffer;name=start --><!-- begin abstract --></p>
+<p>Defines the data associated with an offer order made by a user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOffer;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMOffer/statusForString:from:" target="_top">+statusForString:from:</a></tt></dt>
+<dd><p>Converts specified string value to the corresponding <a href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/doc/title:tdef/SMOfferStatus" target="_top">SMOfferStatus</a> enum value.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMOffer/stringForStatus:from:" target="_top">+stringForStatus:from:</a></tt></dt>
+<dd><p>Converts specified <a href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/doc/title:tdef/SMOfferStatus" target="_top">SMOfferStatus</a> enum value to the corresponding string value.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMOffer/statusForString:from:;   name=SMOffer::statusForString:from: --><a name="//apple_ref/occ/clm/SMOffer/statusForString:from:"></a>
+<h3><a name="statusForString:from:">statusForString:from:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffer/statusForString:from:;name=start --><!-- begin abstract --></p>
+<p>Converts specified string value to the corresponding <a href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/doc/title:tdef/SMOfferStatus" target="_top">SMOfferStatus</a> enum value.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffer/statusForString:from:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffer/statusForString:from:;name=start -->+ (<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/occ/cl/SMOfferStatus //apple_ref/occ/tdef/SMOfferStatus //apple_ref/occ/tag/SMOfferStatus //apple_ref/occ/struct/SMOfferStatus //apple_ref/occ/intf/SMOfferStatus //apple_ref/doc/anysymbol/SMOfferStatus" target="_top"><span class="type">SMOfferStatus</span></a>)<a machinegenerated="true" href="index.html#//apple_ref/occ/clm/SMOffer/statusForString:from:" logicalPath="//apple_ref/occ/instm/SMOffer/statusForString //apple_ref/occ/clm/SMOffer/statusForString" target="_top"><span class="function">statusForString</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">string</span> NS_SWIFT_NAME(offerStatus(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMOffer/from //apple_ref/occ/clm/SMOffer/from //apple_ref/occ/intfcm/SMOffer/from //apple_ref/occ/intfm/SMOffer/from //apple_ref/occ/func/from //apple_ref/occ/ftmplt/SMOffer/from //apple_ref/occ/defn/from //apple_ref/occ/macro/from //apple_ref/doc/anysymbol/from" machineGenerated="true" --><span class="function">from</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffer/statusForString:from:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffer/statusForString:from:/string;   name=statusForString:from:::string -->
+<a name="//apple_ref/doc/methodparam/SMOffer/statusForString:from:/string"></a>
+<code>string</code>
+</dt>
+<dd><p>String to convert.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><a href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/doc/title:tdef/SMOfferStatus" target="_top">SMOfferStatus</a> enum value.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMOffer/stringForStatus:from:;   name=SMOffer::stringForStatus:from: --><a name="//apple_ref/occ/clm/SMOffer/stringForStatus:from:"></a>
+<h3><a name="stringForStatus:from:">stringForStatus:from:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffer/stringForStatus:from:;name=start --><!-- begin abstract --></p>
+<p>Converts specified <a href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/doc/title:tdef/SMOfferStatus" target="_top">SMOfferStatus</a> enum value to the corresponding string value.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffer/stringForStatus:from:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffer/stringForStatus:from:;name=start -->+ (<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<a machinegenerated="true" href="index.html#//apple_ref/occ/clm/SMOffer/stringForStatus:from:" logicalPath="//apple_ref/occ/instm/SMOffer/stringForStatus //apple_ref/occ/clm/SMOffer/stringForStatus" target="_top"><span class="function">stringForStatus</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/occ/cl/SMOfferStatus //apple_ref/occ/tdef/SMOfferStatus //apple_ref/occ/tag/SMOfferStatus //apple_ref/occ/struct/SMOfferStatus //apple_ref/occ/intf/SMOfferStatus //apple_ref/doc/anysymbol/SMOfferStatus" target="_top"><span class="type">SMOfferStatus</span></a>)<span class="param">status</span> NS_SWIFT_NAME(string(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMOffer/from //apple_ref/occ/clm/SMOffer/from //apple_ref/occ/intfcm/SMOffer/from //apple_ref/occ/intfm/SMOffer/from //apple_ref/occ/func/from //apple_ref/occ/ftmplt/SMOffer/from //apple_ref/occ/defn/from //apple_ref/occ/macro/from //apple_ref/doc/anysymbol/from" machineGenerated="true" --><span class="function">from</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffer/stringForStatus:from:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffer/stringForStatus:from:/status;   name=stringForStatus:from:::status -->
+<a name="//apple_ref/doc/methodparam/SMOffer/stringForStatus:from:/status"></a>
+<code>status</code>
+</dt>
+<dd><p>Status to convert.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>NSString</code> value.
+
+<!-- end return value --></p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/data" target="_top">data</a></tt></dt>
+<dd><p>Custom developer-defined data associated with the offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/descriptionText" target="_top">descriptionText</a></tt></dt>
+<dd><p>Offer description.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/details" target="_top">details</a></tt></dt>
+<dd><p>Offer description.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/endTime" target="_top">endTime</a></tt></dt>
+<dd><p>Indicates when the offer will no longer be available for redemption.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/extras" target="_top">extras</a></tt></dt>
+<dd><p>Any data values that do not have an associated class property.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/isFeatured" target="_top">isFeatured</a></tt></dt>
+<dd><p>Defines whether the offer is in the rewards system's list of featured offers.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired" target="_top">isSkillChallengeRequired</a></tt></dt>
+<dd><p>Defines whether a user must pass a skill challenge to redeem the offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/logoURL" target="_top">logoURL</a></tt></dt>
+<dd><p>URL to image associated with the offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/name" target="_top">name</a></tt></dt>
+<dd><p>Offer name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/offerID" target="_top">offerID</a></tt></dt>
+<dd><p>Unique ID for offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/options" target="_top">options</a></tt></dt>
+<dd><p>List of variants for the offer that differ in some aspect (e.g. additional sizes for a shirt).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/points" target="_top">points</a></tt></dt>
+<dd><p>Amount of points needed to redeem offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/startTime" target="_top">startTime</a></tt></dt>
+<dd><p>Indicates when the offer became available for redemption.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/status" target="_top">status</a></tt></dt>
+<dd><p>Offer eligibility status.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/tier" target="_top">tier</a></tt></dt>
+<dd><p>If tiers are enabled in the rewards system, defines what tier a user must reach to redeem the offer.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/type" target="_top">type</a></tt></dt>
+<dd><p>Reward type (e.g. "offer" or "coupon").
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMOffer/weight" target="_top">weight</a></tt></dt>
+<dd><p>Developer-defined numerical value that can be used to sort offers.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/data;   name=SMOffer::data --><a name="//apple_ref/occ/instp/SMOffer/data"></a>
+<h3><a name="data">data</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/data;name=start --><!-- begin abstract --></p>
+<p>Custom developer-defined data associated with the offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/data;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/data;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="template">NSString</span> <span class="template">*</span>, <span class="template">NSObject</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/data //apple_ref/occ/data/SMOffer/data //apple_ref/occ/data/data //apple_ref/occ/clconst/SMOffer/data " machineGenerated="true" --><span class="var">data</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/data;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/descriptionText;   name=SMOffer::descriptionText --><a name="//apple_ref/occ/instp/SMOffer/descriptionText"></a>
+<h3><a name="descriptionText">descriptionText</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/descriptionText;name=start --><!-- begin abstract --></p>
+<p>Offer description.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/descriptionText;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/descriptionText;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><a machinegenerated="true" href="index.html#//apple_ref/occ/instp/SMOffer/descriptionText" logicalPath="//apple_ref/occ/cl/descriptionText //apple_ref/occ/tdef/descriptionText //apple_ref/occ/tag/descriptionText //apple_ref/occ/struct/descriptionText //apple_ref/occ/intf/descriptionText //apple_ref/doc/anysymbol/descriptionText" target="_top"><span class="type">descriptionText</span></a> <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/econst/deprecated //apple_ref/occ/data/SMOffer/deprecated //apple_ref/occ/data/deprecated //apple_ref/occ/clconst/SMOffer/deprecated " machineGenerated="true" --><span class="var">deprecated</span><!-- /a -->)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/descriptionText;name=end --></pre>
+</div>
+<p><b>Deprecated</b></p>
+
+<p>This property has been deprecated - use <a href="index.html#//apple_ref/occ/instp/SMOffer/details" logicalPath="//apple_ref/occ/instp/SMOffer/details" target="_top">details</a> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/details;   name=SMOffer::details --><a name="//apple_ref/occ/instp/SMOffer/details"></a>
+<h3><a name="details">details</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/details;name=start --><!-- begin abstract --></p>
+<p>Offer description.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/details;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/details;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/details //apple_ref/occ/data/SMOffer/details //apple_ref/occ/data/details //apple_ref/occ/clconst/SMOffer/details " machineGenerated="true" --><span class="var">details</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/details;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/endTime;   name=SMOffer::endTime --><a name="//apple_ref/occ/instp/SMOffer/endTime"></a>
+<h3><a name="endTime">endTime</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/endTime;name=start --><!-- begin abstract --></p>
+<p>Indicates when the offer will no longer be available for redemption.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/endTime;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/endTime;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/endTime //apple_ref/occ/data/SMOffer/endTime //apple_ref/occ/data/endTime //apple_ref/occ/clconst/SMOffer/endTime " machineGenerated="true" --><span class="var">endTime</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/endTime;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/extras;   name=SMOffer::extras --><a name="//apple_ref/occ/instp/SMOffer/extras"></a>
+<h3><a name="extras">extras</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/extras;name=start --><!-- begin abstract --></p>
+<p>Any data values that do not have an associated class property.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/extras;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/extras;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="template">NSString</span> <span class="template">*</span>, <span class="template">NSObject</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/extras //apple_ref/occ/data/SMOffer/extras //apple_ref/occ/data/extras //apple_ref/occ/clconst/SMOffer/extras " machineGenerated="true" --><span class="var">extras</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/extras;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/isFeatured;   name=SMOffer::isFeatured --><a name="//apple_ref/occ/instp/SMOffer/isFeatured"></a>
+<h3><a name="isFeatured">isFeatured</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/isFeatured;name=start --><!-- begin abstract --></p>
+<p>Defines whether the offer is in the rewards system's list of featured offers.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/isFeatured;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/isFeatured;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/isFeatured //apple_ref/occ/data/SMOffer/isFeatured //apple_ref/occ/data/isFeatured //apple_ref/occ/clconst/SMOffer/isFeatured " machineGenerated="true" --><span class="var">isFeatured</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/isFeatured;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired;   name=SMOffer::isSkillChallengeRequired --><a name="//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired"></a>
+<h3><a name="isSkillChallengeRequired">isSkillChallengeRequired</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired;name=start --><!-- begin abstract --></p>
+<p>Defines whether a user must pass a skill challenge to redeem the offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/isSkillChallengeRequired //apple_ref/occ/data/SMOffer/isSkillChallengeRequired //apple_ref/occ/data/isSkillChallengeRequired //apple_ref/occ/clconst/SMOffer/isSkillChallengeRequired " machineGenerated="true" --><span class="var">isSkillChallengeRequired</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/isSkillChallengeRequired;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/logoURL;   name=SMOffer::logoURL --><a name="//apple_ref/occ/instp/SMOffer/logoURL"></a>
+<h3><a name="logoURL">logoURL</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/logoURL;name=start --><!-- begin abstract --></p>
+<p>URL to image associated with the offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/logoURL;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/logoURL;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/logoURL //apple_ref/occ/data/SMOffer/logoURL //apple_ref/occ/data/logoURL //apple_ref/occ/clconst/SMOffer/logoURL " machineGenerated="true" --><span class="var">logoURL</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/logoURL;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/name;   name=SMOffer::name --><a name="//apple_ref/occ/instp/SMOffer/name"></a>
+<h3><a name="name">name</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/name;name=start --><!-- begin abstract --></p>
+<p>Offer name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/name;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/name;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/name //apple_ref/occ/data/SMOffer/name //apple_ref/occ/data/name //apple_ref/occ/clconst/SMOffer/name " machineGenerated="true" --><span class="var">name</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/name;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/offerID;   name=SMOffer::offerID --><a name="//apple_ref/occ/instp/SMOffer/offerID"></a>
+<h3><a name="offerID">offerID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/offerID;name=start --><!-- begin abstract --></p>
+<p>Unique ID for offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/offerID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/offerID;name=start -->@property(<span class="param">nonnull</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/offerID //apple_ref/occ/data/SMOffer/offerID //apple_ref/occ/data/offerID //apple_ref/occ/clconst/SMOffer/offerID " machineGenerated="true" --><span class="var">offerID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/offerID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/options;   name=SMOffer::options --><a name="//apple_ref/occ/instp/SMOffer/options"></a>
+<h3><a name="options">options</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/options;name=start --><!-- begin abstract --></p>
+<p>List of variants for the offer that differ in some aspect (e.g. additional sizes for a shirt).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/options;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/options;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMOffer</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/options //apple_ref/occ/data/SMOffer/options //apple_ref/occ/data/options //apple_ref/occ/clconst/SMOffer/options " machineGenerated="true" --><span class="var">options</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/options;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/points;   name=SMOffer::points --><a name="//apple_ref/occ/instp/SMOffer/points"></a>
+<h3><a name="points">points</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/points;name=start --><!-- begin abstract --></p>
+<p>Amount of points needed to redeem offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/points;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/points;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/points //apple_ref/occ/data/SMOffer/points //apple_ref/occ/data/points //apple_ref/occ/clconst/SMOffer/points " machineGenerated="true" --><span class="var">points</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/points;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/startTime;   name=SMOffer::startTime --><a name="//apple_ref/occ/instp/SMOffer/startTime"></a>
+<h3><a name="startTime">startTime</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/startTime;name=start --><!-- begin abstract --></p>
+<p>Indicates when the offer became available for redemption.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/startTime;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/startTime;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/startTime //apple_ref/occ/data/SMOffer/startTime //apple_ref/occ/data/startTime //apple_ref/occ/clconst/SMOffer/startTime " machineGenerated="true" --><span class="var">startTime</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/startTime;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/status;   name=SMOffer::status --><a name="//apple_ref/occ/instp/SMOffer/status"></a>
+<h3><a name="status">status</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/status;name=start --><!-- begin abstract --></p>
+<p>Offer eligibility status.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/status;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/status;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../index.html#//apple_ref/doc/title:tdef/SMOfferStatus" logicalPath="//apple_ref/occ/cl/SMOfferStatus //apple_ref/occ/tdef/SMOfferStatus //apple_ref/occ/tag/SMOfferStatus //apple_ref/occ/struct/SMOfferStatus //apple_ref/occ/intf/SMOfferStatus //apple_ref/doc/anysymbol/SMOfferStatus" target="_top"><span class="type">SMOfferStatus</span></a> <!-- a logicalPath="//apple_ref/occ/econst/status //apple_ref/occ/data/SMOffer/status //apple_ref/occ/data/status //apple_ref/occ/clconst/SMOffer/status " machineGenerated="true" --><span class="var">status</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/status;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/tier;   name=SMOffer::tier --><a name="//apple_ref/occ/instp/SMOffer/tier"></a>
+<h3><a name="tier">tier</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/tier;name=start --><!-- begin abstract --></p>
+<p>If tiers are enabled in the rewards system, defines what tier a user must reach to redeem the offer.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/tier;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/tier;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/tier //apple_ref/occ/data/SMOffer/tier //apple_ref/occ/data/tier //apple_ref/occ/clconst/SMOffer/tier " machineGenerated="true" --><span class="var">tier</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/tier;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/type;   name=SMOffer::type --><a name="//apple_ref/occ/instp/SMOffer/type"></a>
+<h3><a name="type">type</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/type;name=start --><!-- begin abstract --></p>
+<p>Reward type (e.g. "offer" or "coupon").
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/type;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/type;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/type //apple_ref/occ/data/SMOffer/type //apple_ref/occ/data/type //apple_ref/occ/clconst/SMOffer/type " machineGenerated="true" --><span class="var">type</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/type;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMOffer/weight;   name=SMOffer::weight --><a name="//apple_ref/occ/instp/SMOffer/weight"></a>
+<h3><a name="weight">weight</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/weight;name=start --><!-- begin abstract --></p>
+<p>Developer-defined numerical value that can be used to sort offers.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMOffer/weight;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/weight;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">assign</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/weight //apple_ref/occ/data/SMOffer/weight //apple_ref/occ/data/weight //apple_ref/occ/clconst/SMOffer/weight " machineGenerated="true" --><span class="var">weight</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMOffer/weight;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

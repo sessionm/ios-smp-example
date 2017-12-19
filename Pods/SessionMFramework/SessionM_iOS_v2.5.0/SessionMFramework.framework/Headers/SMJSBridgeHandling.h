@@ -1,11 +1,12 @@
 //
 //  SMJSBridgeHandling.h
+//  SessionM
 //
 //  Copyright © 2017 SessionM. All rights reserved.
 //
 
-#ifndef SMJSBridgeHandler_H
-#define SMJSBridgeHandler_H
+#ifndef __SM_JS_BRIDGE_HANDLING__
+#define __SM_JS_BRIDGE_HANDLING__
 
 #import <Foundation/Foundation.h>
 
@@ -13,53 +14,52 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @class SMJSBridgeHandler
- @abstract Class that supports the developer assigining a class that will have handleXYZmessage methods, where XYZ is the type of message coming from the jsBridge handler.
- This is used by the javascript bridge scripting functionality.  see http://doc.sessionm.com/tbd
+ @abstract An instance of this class can be registered to an instance of @link //apple_ref/occ/cl/SMWebView @/link to handle JSBridge messages evaluated by the web view.
+ @discussion A JSBridge handler should have methods that follow the naming convention "handleXYZMessage:" or "handleXYZMessageAsync:", where "XYZ" is the name of the JavaScript message evaluated by the web view. These methods should have a single <code>NSDictionary</code> parameter and a return value of <code>NSDictionary</code>.
  */
-
-@interface SMJSBridgeHandler : NSObject  // This allows the developer to assign a class with handleXYZmessage methods
+@interface SMJSBridgeHandler : NSObject
 
 /*!
- @abstract Create an instance of a bridge handler with the class that will have the handleXYZmessage methods..
- @param bridgeTag identifies the handler, can be used to remove.
- @param handlerClass class that contains the handler methods.
- @return @link SMjsBridgeHandler @/link instance
+ @abstract Returns a JSBridge handler that can handle JSBridge messages evaluated by the web view to which the handler is registered.
+ @param bridgeTag Used to identify the handler.
+ @param handlerClass Class that contains the handler methods.
+ @result <code>SMJSBridgeHandler</code> instance.
  */
--(instancetype)initWithBridgeTag:(NSString *)bridgeTag handlerClass:(id)handlerClass;
+- (instancetype)initWithBridgeTag:(NSString *)bridgeTag handlerClass:(id)handlerClass;
 
 @end
 
-/*!
- @class SMRedirectDelegate
- @abstract Class that supports the developer adding a block of code to handle jsBridge handling.  This is triggered by using a custom prefix to the URL.  ie.  jsbridge://bridging/method
- This is used by the javascript bridge scripting functionality.  see http://doc.sessionm.com/tbd
- */
 
 /*!
- @typedef handleRedirectBlock
- @abstract Handle the redirect from the jsBridge.
- @discussion parameters:
+ @typedef RedirectHandler
+ @abstract Block type for handling JSBridge redirects that are successfully matched by an @link SMRedirectDelegate @/link instance.
+ @discussion Parameters:
  <ul>
  <li>'path' - The full path of the redirect</li>
- <li>'pathComponents' - The pieces of the path, broken into an array</li>
- <li>'params' - The part of the URL after "?", with p=1 -> { "p" : 1 }</li>
- <li>'prefix' - The prefix that was matched ie. jsBridge://</li>
+ <li>'pathComponents' - The pieces of the redirect path, broken into an array</li>
+ <li>'params' - The URL query parameters that follow "?", with <code>p=1</code> becoming <code>{ "p" : [1] }</code></li>
+ <li>'prefix' - The URL prefix that was matched, i.e. "jsBridge://"</li>
  </ul>
  */
 typedef BOOL(^RedirectHandler)(NSString *path, NSArray *pathComponents, NSDictionary<NSString *, NSArray *> *params, NSString *prefix);
 
+/*!
+ @class SMRedirectDelegate
+ @abstract An instance of this class can be registered to an instance of @link //apple_ref/occ/cl/SMWebView @/link to handle JSBridge redirects evaluated by the web view.
+ @discussion A redirect delegate's handler is invoked when a URL request with the delegate's URL prefix is loaded by the web view.
+ */
 @interface SMRedirectDelegate : NSObject
 
 /*!
- @abstract Create an instance of a bridge handler with the block that will be called for the prefix.
- @param prefix to watch for with incoming JS generated URLs.
- @param redirectHandler what to call when prefix match is found.
- @return @link SMRedirectDelegate @/link instance
+ @abstract Returns a redirect delegate that will invoke the specified handler when a URL request with the specified prefix is loaded by the web view to which the delegate is registered.
+ @param prefix URL prefix string to match against URL requests.
+ @param redirectHandler The block to invoke when a URL prefix match is found.
+ @result <code>SMRedirectDelegate</code> instance.
  */
--(instancetype)initWithPrefix:(NSString *)prefix redirectHandler:(RedirectHandler)redirectHandler;
+- (instancetype)initWithPrefix:(NSString *)prefix redirectHandler:(RedirectHandler)redirectHandler;
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#endif
+#endif /* __SM_JS_BRIDGE_HANDLING__ */

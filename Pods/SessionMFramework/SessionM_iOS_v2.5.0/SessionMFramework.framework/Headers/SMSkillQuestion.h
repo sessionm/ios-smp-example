@@ -8,6 +8,8 @@
 #ifndef __SM_SKILL_QUESTION__
 #define __SM_SKILL_QUESTION__
 
+#import <Foundation/Foundation.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*!

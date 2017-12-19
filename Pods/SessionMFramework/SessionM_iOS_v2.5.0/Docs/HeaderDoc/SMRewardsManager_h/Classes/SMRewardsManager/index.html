@@ -1,0 +1,780 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMRewardsManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMRewardsManager;  name=SMRewardsManager-->
+<a name="//apple_ref/occ/cl/SMRewardsManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMRewardsManager">SMRewardsManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMRewardsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMRewardsManager.h">SMRewardsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMRewardsManager;name=start --><!-- begin abstract --></p>
+<p>This API manager contains methods for fetching and redeeming rewards offers.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMRewardsManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:" target="_top">-answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to answer a skill testing question.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" target="_top">-answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:</a></tt></dt>
+<dd><p>Makes a request to answer a skill testing question.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffers" target="_top">-fetchOffers</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:" target="_top">-fetchOffersWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:" target="_top">-fetchOffersWithLocale:completionHandler:for:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the specified locale.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:" target="_top">-fetchOffersWithLocale:for:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the specified locale.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOrders" target="_top">-fetchOrders</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/orders" logicalPath="//apple_ref/occ/instp/SMRewardsManager/orders" target="_top">orders</a> with orders made by the current user.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:" target="_top">-fetchOrdersWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/orders" logicalPath="//apple_ref/occ/instp/SMRewardsManager/orders" target="_top">orders</a> with orders made by the current user.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion" target="_top">-fetchSkillQuestion</a></tt></dt>
+<dd><p>Makes a request to fetch a skill testing question.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:" target="_top">-fetchSkillQuestionWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to fetch a skill testing question.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:" target="_top">-placeOrder:_:</a></tt></dt>
+<dd><p>Makes a request to place the specified order.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:" target="_top">-placeOrder:completionHandler:_:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to place the specified order.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:;   name=SMRewardsManager::answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:"></a>
+<h3><a name="answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:">answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to answer a skill testing question.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID" target="_top"><span class="function">answerSkillQuestionForOfferID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">offerID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID" logicalPath="//apple_ref/occ/instm/SMRewardsManager/questionID //apple_ref/occ/clm/SMRewardsManager/questionID //apple_ref/occ/intfcm/SMRewardsManager/questionID //apple_ref/occ/intfm/SMRewardsManager/questionID //apple_ref/occ/func/questionID //apple_ref/occ/ftmplt/SMRewardsManager/questionID //apple_ref/occ/defn/questionID //apple_ref/occ/macro/questionID //apple_ref/doc/anysymbol/questionID" target="_top"><span class="function">questionID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">questionID</span> <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answer" target="_top"><span class="function">answer</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">answer</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didAnswerSkillQuestion" logicalPath="//apple_ref/occ/cl/didAnswerSkillQuestion //apple_ref/occ/tdef/didAnswerSkillQuestion" target="_top"><span class="type">didAnswerSkillQuestion</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(answerSkillQuestion(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/forOfferID //apple_ref/occ/clm/SMRewardsManager/forOfferID //apple_ref/occ/intfcm/SMRewardsManager/forOfferID //apple_ref/occ/intfm/SMRewardsManager/forOfferID //apple_ref/occ/func/forOfferID //apple_ref/occ/ftmplt/SMRewardsManager/forOfferID //apple_ref/occ/defn/forOfferID //apple_ref/occ/macro/forOfferID //apple_ref/doc/anysymbol/forOfferID" machineGenerated="true" --><span class="function">forOfferID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID" logicalPath="//apple_ref/occ/instm/SMRewardsManager/questionID //apple_ref/occ/clm/SMRewardsManager/questionID //apple_ref/occ/intfcm/SMRewardsManager/questionID //apple_ref/occ/intfm/SMRewardsManager/questionID //apple_ref/occ/func/questionID //apple_ref/occ/ftmplt/SMRewardsManager/questionID //apple_ref/occ/defn/questionID //apple_ref/occ/macro/questionID //apple_ref/doc/anysymbol/questionID" target="_top"><span class="function">questionID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answer" target="_top"><span class="function">answer</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/offerID;   name=answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:::offerID -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/offerID"></a>
+<code>offerID</code>
+</dt>
+<dd><p>The ID of the offer the user is redeeming.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/questionID;   name=answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:::questionID -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/questionID"></a>
+<code>questionID</code>
+</dt>
+<dd><p>The ID of the question the user is answering.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/answer;   name=answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:::answer -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/answer"></a>
+<code>answer</code>
+</dt>
+<dd><p>The user's response to the question.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/completionHandler;   name=answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:completionHandler:forOfferID:questionID:answer:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;   name=SMRewardsManager::answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer: --><a name="//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:"></a>
+<h3><a name="answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:">answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to answer a skill testing question.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID" target="_top"><span class="function">answerSkillQuestionForOfferID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">offerID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID" logicalPath="//apple_ref/occ/instm/SMRewardsManager/questionID //apple_ref/occ/clm/SMRewardsManager/questionID //apple_ref/occ/intfcm/SMRewardsManager/questionID //apple_ref/occ/intfm/SMRewardsManager/questionID //apple_ref/occ/func/questionID //apple_ref/occ/ftmplt/SMRewardsManager/questionID //apple_ref/occ/defn/questionID //apple_ref/occ/macro/questionID //apple_ref/doc/anysymbol/questionID" target="_top"><span class="function">questionID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">questionID</span> <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answer" target="_top"><span class="function">answer</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">answer</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID" target="_top"><span class="function">answerSkillQuestionForOfferID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID" logicalPath="//apple_ref/occ/instm/SMRewardsManager/questionID //apple_ref/occ/clm/SMRewardsManager/questionID //apple_ref/occ/intfcm/SMRewardsManager/questionID //apple_ref/occ/intfm/SMRewardsManager/questionID //apple_ref/occ/func/questionID //apple_ref/occ/ftmplt/SMRewardsManager/questionID //apple_ref/occ/defn/questionID //apple_ref/occ/macro/questionID //apple_ref/doc/anysymbol/questionID" target="_top"><span class="function">questionID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answer" target="_top"><span class="function">answer</span></a>:
+            <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(answerSkillQuestion(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/forOfferID //apple_ref/occ/clm/SMRewardsManager/forOfferID //apple_ref/occ/intfcm/SMRewardsManager/forOfferID //apple_ref/occ/intfm/SMRewardsManager/forOfferID //apple_ref/occ/func/forOfferID //apple_ref/occ/ftmplt/SMRewardsManager/forOfferID //apple_ref/occ/defn/forOfferID //apple_ref/occ/macro/forOfferID //apple_ref/doc/anysymbol/forOfferID" machineGenerated="true" --><span class="function">forOfferID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID" logicalPath="//apple_ref/occ/instm/SMRewardsManager/questionID //apple_ref/occ/clm/SMRewardsManager/questionID //apple_ref/occ/intfcm/SMRewardsManager/questionID //apple_ref/occ/intfm/SMRewardsManager/questionID //apple_ref/occ/func/questionID //apple_ref/occ/ftmplt/SMRewardsManager/questionID //apple_ref/occ/defn/questionID //apple_ref/occ/macro/questionID //apple_ref/doc/anysymbol/questionID" target="_top"><span class="function">questionID</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/answer" target="_top"><span class="function">answer</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/offerID;   name=answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:::offerID -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/offerID"></a>
+<code>offerID</code>
+</dt>
+<dd><p>The ID of the offer the user is redeeming.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID;   name=answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:::questionID -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/questionID"></a>
+<code>questionID</code>
+</dt>
+<dd><p>The ID of the question the user is answering.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/answer;   name=answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:::answer -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:/answer"></a>
+<code>answer</code>
+</dt>
+<dd><p>The user's response to the question.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didAnswerSkillQuestion: //apple_ref/occ/tdef/didAnswerSkillQuestion: //apple_ref/occ/tag/didAnswerSkillQuestion: //apple_ref/occ/struct/didAnswerSkillQuestion: //apple_ref/occ/intf/didAnswerSkillQuestion: //apple_ref/occ/econst/didAnswerSkillQuestion: //apple_ref/occ/data/didAnswerSkillQuestion: //apple_ref/occ/clconst/didAnswerSkillQuestion: //apple_ref/occ/instm/didAnswerSkillQuestion: //apple_ref/occ/clm/didAnswerSkillQuestion: //apple_ref/occ/intfcm/didAnswerSkillQuestion: //apple_ref/occ/intfm/didAnswerSkillQuestion: //apple_ref/occ/func/didAnswerSkillQuestion: //apple_ref/occ/ftmplt/didAnswerSkillQuestion: //apple_ref/occ/defn/didAnswerSkillQuestion: //apple_ref/occ/macro/didAnswerSkillQuestion: //apple_ref/doc/com/intfm/didAnswerSkillQuestion: //apple_ref/doc/anysymbol/didAnswerSkillQuestion:" -->didAnswerSkillQuestion:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/answerSkillQuestionForOfferID:questionID:answer:forOfferID:questionID:answer:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/tdef/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/tag/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/struct/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/intf/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/econst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/data/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/clconst/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/instm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/clm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/intfcm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/func/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/ftmplt/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/defn/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/occ/macro/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/com/intfm/answerSkillQuestionForOfferID:questionID:answer:completionHandler: //apple_ref/doc/anysymbol/answerSkillQuestionForOfferID:questionID:answer:completionHandler:" -->answerSkillQuestionForOfferID:questionID:answer:completionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;   name=SMRewardsManager::fetchOffers --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOffers"></a>
+<h3><a name="fetchOffers">fetchOffers</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchOffers</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler" target="_top"><span class="function">fetchOffersWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchOffers: //apple_ref/occ/tdef/didFetchOffers: //apple_ref/occ/tag/didFetchOffers: //apple_ref/occ/struct/didFetchOffers: //apple_ref/occ/intf/didFetchOffers: //apple_ref/occ/econst/didFetchOffers: //apple_ref/occ/data/didFetchOffers: //apple_ref/occ/clconst/didFetchOffers: //apple_ref/occ/instm/didFetchOffers: //apple_ref/occ/clm/didFetchOffers: //apple_ref/occ/intfcm/didFetchOffers: //apple_ref/occ/intfm/didFetchOffers: //apple_ref/occ/func/didFetchOffers: //apple_ref/occ/ftmplt/didFetchOffers: //apple_ref/occ/defn/didFetchOffers: //apple_ref/occ/macro/didFetchOffers: //apple_ref/doc/com/intfm/didFetchOffers: //apple_ref/doc/anysymbol/didFetchOffers:" -->didFetchOffers:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffers;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchOffersWithCompletionHandler: //apple_ref/occ/tdef/fetchOffersWithCompletionHandler: //apple_ref/occ/tag/fetchOffersWithCompletionHandler: //apple_ref/occ/struct/fetchOffersWithCompletionHandler: //apple_ref/occ/intf/fetchOffersWithCompletionHandler: //apple_ref/occ/econst/fetchOffersWithCompletionHandler: //apple_ref/occ/data/fetchOffersWithCompletionHandler: //apple_ref/occ/clconst/fetchOffersWithCompletionHandler: //apple_ref/occ/instm/fetchOffersWithCompletionHandler: //apple_ref/occ/clm/fetchOffersWithCompletionHandler: //apple_ref/occ/intfcm/fetchOffersWithCompletionHandler: //apple_ref/occ/intfm/fetchOffersWithCompletionHandler: //apple_ref/occ/func/fetchOffersWithCompletionHandler: //apple_ref/occ/ftmplt/fetchOffersWithCompletionHandler: //apple_ref/occ/defn/fetchOffersWithCompletionHandler: //apple_ref/occ/macro/fetchOffersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOffersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOffersWithCompletionHandler:" -->fetchOffersWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:;   name=SMRewardsManager::fetchOffersWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchOffersWithCompletionHandler:completionHandler:">fetchOffersWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the current user's locale (default value is <a href="../../../SessionM_h/Classes/SessionM/index.html#//apple_ref/occ/instp/SessionM/customLocale" logicalPath="//apple_ref/occ/instp/SessionM/customLocale" target="_top">[ SessionM customLocale ]</a> if set and <code>[NSLocale currentLocale]</code> otherwise).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler" target="_top"><span class="function">fetchOffersWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchOffers" logicalPath="//apple_ref/occ/cl/didFetchOffers //apple_ref/occ/tdef/didFetchOffers" target="_top"><span class="type">didFetchOffers</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchOffers(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:/completionHandler;   name=fetchOffersWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:;   name=SMRewardsManager::fetchOffersWithLocale:completionHandler:for:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:"></a>
+<h3><a name="fetchOffersWithLocale:completionHandler:for:completionHandler:">fetchOffersWithLocale:completionHandler:for:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the specified locale.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale" target="_top"><span class="function">fetchOffersWithLocale</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSLocale //apple_ref/occ/tdef/NSLocale //apple_ref/occ/tag/NSLocale //apple_ref/occ/struct/NSLocale //apple_ref/occ/intf/NSLocale //apple_ref/doc/anysymbol/NSLocale" machineGenerated="true" --><span class="type">NSLocale</span><!-- /a --> <span class="type">*</span>)<span class="param">locale</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchOffers" logicalPath="//apple_ref/occ/cl/didFetchOffers //apple_ref/occ/tdef/didFetchOffers" target="_top"><span class="type">didFetchOffers</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchOffers(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/for //apple_ref/occ/clm/SMRewardsManager/for //apple_ref/occ/intfcm/SMRewardsManager/for //apple_ref/occ/intfm/SMRewardsManager/for //apple_ref/occ/func/for //apple_ref/occ/ftmplt/SMRewardsManager/for //apple_ref/occ/defn/for //apple_ref/occ/macro/for //apple_ref/doc/anysymbol/for" machineGenerated="true" --><span class="function">for</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:/locale;   name=fetchOffersWithLocale:completionHandler:for:completionHandler:::locale -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:/locale"></a>
+<code>locale</code>
+</dt>
+<dd><p>The locale in which the fetch will be restricted.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:/completionHandler;   name=fetchOffersWithLocale:completionHandler:for:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:completionHandler:for:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;   name=SMRewardsManager::fetchOffersWithLocale:for: --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:"></a>
+<h3><a name="fetchOffersWithLocale:for:">fetchOffersWithLocale:for:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" logicalPath="//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a> with rewards available in the specified locale.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale" target="_top"><span class="function">fetchOffersWithLocale</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSLocale //apple_ref/occ/tdef/NSLocale //apple_ref/occ/tag/NSLocale //apple_ref/occ/struct/NSLocale //apple_ref/occ/intf/NSLocale //apple_ref/doc/anysymbol/NSLocale" machineGenerated="true" --><span class="type">NSLocale</span><!-- /a --> <span class="type">*</span>)<span class="param">locale</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale" target="_top"><span class="function">fetchOffersWithLocale</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(fetchOffers(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/for //apple_ref/occ/clm/SMRewardsManager/for //apple_ref/occ/intfcm/SMRewardsManager/for //apple_ref/occ/intfm/SMRewardsManager/for //apple_ref/occ/func/for //apple_ref/occ/ftmplt/SMRewardsManager/for //apple_ref/occ/defn/for //apple_ref/occ/macro/for //apple_ref/doc/anysymbol/for" machineGenerated="true" --><span class="function">for</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:for:/locale;   name=fetchOffersWithLocale:for:::locale -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchOffersWithLocale:for:/locale"></a>
+<code>locale</code>
+</dt>
+<dd><p>The locale in which the fetch will be restricted.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchOffers: //apple_ref/occ/tdef/didFetchOffers: //apple_ref/occ/tag/didFetchOffers: //apple_ref/occ/struct/didFetchOffers: //apple_ref/occ/intf/didFetchOffers: //apple_ref/occ/econst/didFetchOffers: //apple_ref/occ/data/didFetchOffers: //apple_ref/occ/clconst/didFetchOffers: //apple_ref/occ/instm/didFetchOffers: //apple_ref/occ/clm/didFetchOffers: //apple_ref/occ/intfcm/didFetchOffers: //apple_ref/occ/intfm/didFetchOffers: //apple_ref/occ/func/didFetchOffers: //apple_ref/occ/ftmplt/didFetchOffers: //apple_ref/occ/defn/didFetchOffers: //apple_ref/occ/macro/didFetchOffers: //apple_ref/doc/com/intfm/didFetchOffers: //apple_ref/doc/anysymbol/didFetchOffers:" -->didFetchOffers:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOffersWithLocale:for:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchOffersWithLocale:completionHandler: //apple_ref/occ/tdef/fetchOffersWithLocale:completionHandler: //apple_ref/occ/tag/fetchOffersWithLocale:completionHandler: //apple_ref/occ/struct/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intf/fetchOffersWithLocale:completionHandler: //apple_ref/occ/econst/fetchOffersWithLocale:completionHandler: //apple_ref/occ/data/fetchOffersWithLocale:completionHandler: //apple_ref/occ/clconst/fetchOffersWithLocale:completionHandler: //apple_ref/occ/instm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/clm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intfcm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/func/fetchOffersWithLocale:completionHandler: //apple_ref/occ/ftmplt/fetchOffersWithLocale:completionHandler: //apple_ref/occ/defn/fetchOffersWithLocale:completionHandler: //apple_ref/occ/macro/fetchOffersWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchOffersWithLocale:completionHandler:" -->fetchOffersWithLocale:completionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;   name=SMRewardsManager::fetchOrders --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOrders"></a>
+<h3><a name="fetchOrders">fetchOrders</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/orders" logicalPath="//apple_ref/occ/instp/SMRewardsManager/orders" target="_top">orders</a> with orders made by the current user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchOrders</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler" target="_top"><span class="function">fetchOrdersWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchOrders: //apple_ref/occ/tdef/didFetchOrders: //apple_ref/occ/tag/didFetchOrders: //apple_ref/occ/struct/didFetchOrders: //apple_ref/occ/intf/didFetchOrders: //apple_ref/occ/econst/didFetchOrders: //apple_ref/occ/data/didFetchOrders: //apple_ref/occ/clconst/didFetchOrders: //apple_ref/occ/instm/didFetchOrders: //apple_ref/occ/clm/didFetchOrders: //apple_ref/occ/intfcm/didFetchOrders: //apple_ref/occ/intfm/didFetchOrders: //apple_ref/occ/func/didFetchOrders: //apple_ref/occ/ftmplt/didFetchOrders: //apple_ref/occ/defn/didFetchOrders: //apple_ref/occ/macro/didFetchOrders: //apple_ref/doc/com/intfm/didFetchOrders: //apple_ref/doc/anysymbol/didFetchOrders:" -->didFetchOrders:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrders;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchOrdersWithCompletionHandler: //apple_ref/occ/tdef/fetchOrdersWithCompletionHandler: //apple_ref/occ/tag/fetchOrdersWithCompletionHandler: //apple_ref/occ/struct/fetchOrdersWithCompletionHandler: //apple_ref/occ/intf/fetchOrdersWithCompletionHandler: //apple_ref/occ/econst/fetchOrdersWithCompletionHandler: //apple_ref/occ/data/fetchOrdersWithCompletionHandler: //apple_ref/occ/clconst/fetchOrdersWithCompletionHandler: //apple_ref/occ/instm/fetchOrdersWithCompletionHandler: //apple_ref/occ/clm/fetchOrdersWithCompletionHandler: //apple_ref/occ/intfcm/fetchOrdersWithCompletionHandler: //apple_ref/occ/intfm/fetchOrdersWithCompletionHandler: //apple_ref/occ/func/fetchOrdersWithCompletionHandler: //apple_ref/occ/ftmplt/fetchOrdersWithCompletionHandler: //apple_ref/occ/defn/fetchOrdersWithCompletionHandler: //apple_ref/occ/macro/fetchOrdersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOrdersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOrdersWithCompletionHandler:" -->fetchOrdersWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:;   name=SMRewardsManager::fetchOrdersWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchOrdersWithCompletionHandler:completionHandler:">fetchOrdersWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to update <a href="index.html#//apple_ref/occ/instp/SMRewardsManager/orders" logicalPath="//apple_ref/occ/instp/SMRewardsManager/orders" target="_top">orders</a> with orders made by the current user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler" target="_top"><span class="function">fetchOrdersWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchOrders" logicalPath="//apple_ref/occ/cl/didFetchOrders //apple_ref/occ/tdef/didFetchOrders" target="_top"><span class="type">didFetchOrders</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchOrders(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:/completionHandler;   name=fetchOrdersWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchOrdersWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;   name=SMRewardsManager::fetchSkillQuestion --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion"></a>
+<h3><a name="fetchSkillQuestion">fetchSkillQuestion</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=start --><!-- begin abstract --></p>
+<p>Makes a request to fetch a skill testing question.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<span class="param">fetchSkillQuestion</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler" target="_top"><span class="function">fetchSkillQuestionWithCompletionHandler</span></a>:"))); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didFetchSkillQuestion: //apple_ref/occ/tdef/didFetchSkillQuestion: //apple_ref/occ/tag/didFetchSkillQuestion: //apple_ref/occ/struct/didFetchSkillQuestion: //apple_ref/occ/intf/didFetchSkillQuestion: //apple_ref/occ/econst/didFetchSkillQuestion: //apple_ref/occ/data/didFetchSkillQuestion: //apple_ref/occ/clconst/didFetchSkillQuestion: //apple_ref/occ/instm/didFetchSkillQuestion: //apple_ref/occ/clm/didFetchSkillQuestion: //apple_ref/occ/intfcm/didFetchSkillQuestion: //apple_ref/occ/intfm/didFetchSkillQuestion: //apple_ref/occ/func/didFetchSkillQuestion: //apple_ref/occ/ftmplt/didFetchSkillQuestion: //apple_ref/occ/defn/didFetchSkillQuestion: //apple_ref/occ/macro/didFetchSkillQuestion: //apple_ref/doc/com/intfm/didFetchSkillQuestion: //apple_ref/doc/anysymbol/didFetchSkillQuestion:" -->didFetchSkillQuestion:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestion;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/tdef/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/tag/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/struct/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/intf/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/econst/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/data/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/clconst/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/instm/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/clm/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/intfcm/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/func/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/ftmplt/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/defn/fetchSkillQuestionWithCompletionHandler: //apple_ref/occ/macro/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/com/intfm/fetchSkillQuestionWithCompletionHandler: //apple_ref/doc/anysymbol/fetchSkillQuestionWithCompletionHandler:" -->fetchSkillQuestionWithCompletionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:;   name=SMRewardsManager::fetchSkillQuestionWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchSkillQuestionWithCompletionHandler:completionHandler:">fetchSkillQuestionWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to fetch a skill testing question.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler" target="_top"><span class="function">fetchSkillQuestionWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didFetchSkillQuestion" logicalPath="//apple_ref/occ/cl/didFetchSkillQuestion //apple_ref/occ/tdef/didFetchSkillQuestion" target="_top"><span class="type">didFetchSkillQuestion</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchSkillQuestion(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:/completionHandler;   name=fetchSkillQuestionWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/fetchSkillQuestionWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;   name=SMRewardsManager::placeOrder:_: --><a name="//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:"></a>
+<h3><a name="placeOrder:_:">placeOrder:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to place the specified order.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/placeOrder" target="_top"><span class="function">placeOrder</span></a>:(<a machinegenerated="true" href="../SMOrderRequest/index.html#//apple_ref/occ/cl/SMOrderRequest" logicalPath="//apple_ref/occ/cl/SMOrderRequest" target="_top"><span class="type">SMOrderRequest</span></a> <span class="type">*</span>)<span class="param">order</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> 
+            <a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/placeOrder" target="_top"><span class="function">placeOrder</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:"))) NS_SWIFT_NAME(placeOrder(<!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/_ //apple_ref/occ/clm/SMRewardsManager/_ //apple_ref/occ/intfcm/SMRewardsManager/_ //apple_ref/occ/intfm/SMRewardsManager/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsManager/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:_:/order;   name=placeOrder:_:::order -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:_:/order"></a>
+<code>order</code>
+</dt>
+<dd><p>The offer order request to be sent.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=start --><p><!-- a logicalPath="//apple_ref/occ/cl/didPlaceOrder: //apple_ref/occ/tdef/didPlaceOrder: //apple_ref/occ/tag/didPlaceOrder: //apple_ref/occ/struct/didPlaceOrder: //apple_ref/occ/intf/didPlaceOrder: //apple_ref/occ/econst/didPlaceOrder: //apple_ref/occ/data/didPlaceOrder: //apple_ref/occ/clconst/didPlaceOrder: //apple_ref/occ/instm/didPlaceOrder: //apple_ref/occ/clm/didPlaceOrder: //apple_ref/occ/intfcm/didPlaceOrder: //apple_ref/occ/intfm/didPlaceOrder: //apple_ref/occ/func/didPlaceOrder: //apple_ref/occ/ftmplt/didPlaceOrder: //apple_ref/occ/defn/didPlaceOrder: //apple_ref/occ/macro/didPlaceOrder: //apple_ref/doc/com/intfm/didPlaceOrder: //apple_ref/doc/anysymbol/didPlaceOrder:" -->didPlaceOrder:<!-- /a --> is called in response to this method.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use <!-- a logicalPath="//apple_ref/occ/cl/placeOrder:completionHandler: //apple_ref/occ/tdef/placeOrder:completionHandler: //apple_ref/occ/tag/placeOrder:completionHandler: //apple_ref/occ/struct/placeOrder:completionHandler: //apple_ref/occ/intf/placeOrder:completionHandler: //apple_ref/occ/econst/placeOrder:completionHandler: //apple_ref/occ/data/placeOrder:completionHandler: //apple_ref/occ/clconst/placeOrder:completionHandler: //apple_ref/occ/instm/placeOrder:completionHandler: //apple_ref/occ/clm/placeOrder:completionHandler: //apple_ref/occ/intfcm/placeOrder:completionHandler: //apple_ref/occ/intfm/placeOrder:completionHandler: //apple_ref/occ/func/placeOrder:completionHandler: //apple_ref/occ/ftmplt/placeOrder:completionHandler: //apple_ref/occ/defn/placeOrder:completionHandler: //apple_ref/occ/macro/placeOrder:completionHandler: //apple_ref/doc/com/intfm/placeOrder:completionHandler: //apple_ref/doc/anysymbol/placeOrder:completionHandler:" -->placeOrder:completionHandler:<!-- /a -->.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:;   name=SMRewardsManager::placeOrder:completionHandler:_:completionHandler: --><a name="//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:"></a>
+<h3><a name="placeOrder:completionHandler:_:completionHandler:">placeOrder:completionHandler:_:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to place the specified order.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:" logicalPath="//apple_ref/occ/instm/SMRewardsManager/placeOrder" target="_top"><span class="function">placeOrder</span></a>:(<a machinegenerated="true" href="../SMOrderRequest/index.html#//apple_ref/occ/cl/SMOrderRequest" logicalPath="//apple_ref/occ/cl/SMOrderRequest" target="_top"><span class="type">SMOrderRequest</span></a> <span class="type">*</span>)<span class="param">order</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/didPlaceOrder" logicalPath="//apple_ref/occ/cl/didPlaceOrder //apple_ref/occ/tdef/didPlaceOrder" target="_top"><span class="type">didPlaceOrder</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(placeOrder(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMRewardsManager/_ //apple_ref/occ/clm/SMRewardsManager/_ //apple_ref/occ/intfcm/SMRewardsManager/_ //apple_ref/occ/intfm/SMRewardsManager/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMRewardsManager/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMRewardsManager/completionHandler //apple_ref/occ/clm/SMRewardsManager/completionHandler //apple_ref/occ/intfcm/SMRewardsManager/completionHandler //apple_ref/occ/intfm/SMRewardsManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMRewardsManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/order;   name=placeOrder:completionHandler:_:completionHandler:::order -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/order"></a>
+<code>order</code>
+</dt>
+<dd><p>The offer order request to be sent.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler;   name=placeOrder:completionHandler:_:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMRewardsManager/placeOrder:completionHandler:_:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>BOOL</code> indicating whether the request will be sent.
+
+<!-- end return value --></p>
+<hr class="betweenSections">
+<a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMRewardsManager/delegate" target="_top">delegate</a></tt></dt>
+<dd><p>Object that implements <a href="../../Protocols/SMRewardsDelegate/index.html#//apple_ref/occ/intf/SMRewardsDelegate" logicalPath="//apple_ref/occ/intf/SMRewardsDelegate" target="_top">SMRewardsDelegate</a> callbacks.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMRewardsManager/offers" target="_top">offers</a></tt></dt>
+<dd><p>Offers that are available for redemption.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMRewardsManager/orders" target="_top">orders</a></tt></dt>
+<dd><p>Orders that have been made by the current user.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMRewardsManager/delegate;   name=SMRewardsManager::delegate --><a name="//apple_ref/occ/instp/SMRewardsManager/delegate"></a>
+<h3><a name="delegate">delegate</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/delegate;name=start --><!-- begin abstract --></p>
+<p>Object that implements <a href="../../Protocols/SMRewardsDelegate/index.html#//apple_ref/occ/intf/SMRewardsDelegate" logicalPath="//apple_ref/occ/intf/SMRewardsDelegate" target="_top">SMRewardsDelegate</a> callbacks.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/delegate;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/delegate;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">weak</span>) <!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/struct/id //apple_ref/occ/intf/id //apple_ref/doc/anysymbol/id" machineGenerated="true" --><span class="type">id</span><!-- /a -->&lt;<span class="template">SMRewardsDelegate</span>&gt; <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/delegate //apple_ref/occ/data/SMRewardsManager/delegate //apple_ref/occ/data/delegate //apple_ref/occ/clconst/SMRewardsManager/delegate " machineGenerated="true" --><span class="var">delegate</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/delegate;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMRewardsManager/offers;   name=SMRewardsManager::offers --><a name="//apple_ref/occ/instp/SMRewardsManager/offers"></a>
+<h3><a name="offers">offers</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=start --><!-- begin abstract --></p>
+<p>Offers that are available for redemption.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMOffer</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/offers //apple_ref/occ/data/SMRewardsManager/offers //apple_ref/occ/data/offers //apple_ref/occ/clconst/SMRewardsManager/offers " machineGenerated="true" --><span class="var">offers</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=start --><p>This property is updated in response to a successful <!-- a logicalPath="//apple_ref/occ/cl/fetchOffersWithCompletionHandler: //apple_ref/occ/tdef/fetchOffersWithCompletionHandler: //apple_ref/occ/tag/fetchOffersWithCompletionHandler: //apple_ref/occ/struct/fetchOffersWithCompletionHandler: //apple_ref/occ/intf/fetchOffersWithCompletionHandler: //apple_ref/occ/econst/fetchOffersWithCompletionHandler: //apple_ref/occ/data/fetchOffersWithCompletionHandler: //apple_ref/occ/clconst/fetchOffersWithCompletionHandler: //apple_ref/occ/instm/fetchOffersWithCompletionHandler: //apple_ref/occ/clm/fetchOffersWithCompletionHandler: //apple_ref/occ/intfcm/fetchOffersWithCompletionHandler: //apple_ref/occ/intfm/fetchOffersWithCompletionHandler: //apple_ref/occ/func/fetchOffersWithCompletionHandler: //apple_ref/occ/ftmplt/fetchOffersWithCompletionHandler: //apple_ref/occ/defn/fetchOffersWithCompletionHandler: //apple_ref/occ/macro/fetchOffersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOffersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOffersWithCompletionHandler:" -->fetchOffersWithCompletionHandler:<!-- /a --> or <!-- a logicalPath="//apple_ref/occ/cl/fetchOffersWithLocale:completionHandler: //apple_ref/occ/tdef/fetchOffersWithLocale:completionHandler: //apple_ref/occ/tag/fetchOffersWithLocale:completionHandler: //apple_ref/occ/struct/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intf/fetchOffersWithLocale:completionHandler: //apple_ref/occ/econst/fetchOffersWithLocale:completionHandler: //apple_ref/occ/data/fetchOffersWithLocale:completionHandler: //apple_ref/occ/clconst/fetchOffersWithLocale:completionHandler: //apple_ref/occ/instm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/clm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intfcm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/occ/func/fetchOffersWithLocale:completionHandler: //apple_ref/occ/ftmplt/fetchOffersWithLocale:completionHandler: //apple_ref/occ/defn/fetchOffersWithLocale:completionHandler: //apple_ref/occ/macro/fetchOffersWithLocale:completionHandler: //apple_ref/doc/com/intfm/fetchOffersWithLocale:completionHandler: //apple_ref/doc/anysymbol/fetchOffersWithLocale:completionHandler:" -->fetchOffersWithLocale:completionHandler:<!-- /a --> call.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMRewardsManager/offers;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMRewardsManager/orders;   name=SMRewardsManager::orders --><a name="//apple_ref/occ/instp/SMRewardsManager/orders"></a>
+<h3><a name="orders">orders</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=start --><!-- begin abstract --></p>
+<p>Orders that have been made by the current user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="template">SMOrder</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/orders //apple_ref/occ/data/SMRewardsManager/orders //apple_ref/occ/data/orders //apple_ref/occ/clconst/SMRewardsManager/orders " machineGenerated="true" --><span class="var">orders</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=start --><p>This property is updated in response to a successful <!-- a logicalPath="//apple_ref/occ/cl/fetchOrdersWithCompletionHandler: //apple_ref/occ/tdef/fetchOrdersWithCompletionHandler: //apple_ref/occ/tag/fetchOrdersWithCompletionHandler: //apple_ref/occ/struct/fetchOrdersWithCompletionHandler: //apple_ref/occ/intf/fetchOrdersWithCompletionHandler: //apple_ref/occ/econst/fetchOrdersWithCompletionHandler: //apple_ref/occ/data/fetchOrdersWithCompletionHandler: //apple_ref/occ/clconst/fetchOrdersWithCompletionHandler: //apple_ref/occ/instm/fetchOrdersWithCompletionHandler: //apple_ref/occ/clm/fetchOrdersWithCompletionHandler: //apple_ref/occ/intfcm/fetchOrdersWithCompletionHandler: //apple_ref/occ/intfm/fetchOrdersWithCompletionHandler: //apple_ref/occ/func/fetchOrdersWithCompletionHandler: //apple_ref/occ/ftmplt/fetchOrdersWithCompletionHandler: //apple_ref/occ/defn/fetchOrdersWithCompletionHandler: //apple_ref/occ/macro/fetchOrdersWithCompletionHandler: //apple_ref/doc/com/intfm/fetchOrdersWithCompletionHandler: //apple_ref/doc/anysymbol/fetchOrdersWithCompletionHandler:" -->fetchOrdersWithCompletionHandler:<!-- /a --> call.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMRewardsManager/orders;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -20,22 +20,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
- @typedef SMEventType
- @abstract Event type.
-
- @constant SMEventTypeUnknown Event type is unknown.
- @constant SMEventTypeActivity Basic event.
- @constant SMEventTypePurchase Event that uses purchase metadata such as product SKUs.
- @constant SMEventTypeLocation Event that uses location metadata such as geofence data or user coordinates.
- */
-typedef NS_ENUM (NSInteger, SMEventType) {
-    SMEventTypeUnknown NS_SWIFT_NAME(unknown),
-    SMEventTypeActivity NS_SWIFT_NAME(activity),
-    SMEventTypePurchase NS_SWIFT_NAME(purchase),
-    SMEventTypeLocation NS_SWIFT_NAME(location)
-};
-
-/*!
  @const SM_EVENTS_MANAGER_REQUEST_DID_FAIL_NOTIFICATION
  @abstract Notifies observers that an Events API request failed.
  @discussion An @link SMError @/link object containing information about why the request failed can be accessed from the notification's <code>userInfo</code> property with the @link SM_MANAGER_NOTIFICATION_ERROR_KEY @/link key.
@@ -76,13 +60,6 @@ typedef void (^PostEventCompletionHandler)(SMEventPostedResponse * _Nullable res
  @result <code>SMEventsManager</code> service object.
  */
 + (SMEventsManager *)instance;
-/*!
- @abstract Returns an event builder that builds events of the specified type with the specified event name.
- @param eventName The unique name used to trigger the event when posting to the SessionM Platform.
- @param type Type of events that the event builder will build.
- @result <code>SMEventBuilder</code> instance.
- */
-+ (SMEventBuilder *)builderForEventWithName:(NSString *)eventName type:(SMEventType)type NS_SWIFT_NAME(builder(eventName:type:));
 
 /*!
  @abstract Makes a request to fetch the latest action item updates.

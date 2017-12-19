@@ -43,6 +43,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign, readonly) NSInteger maxTimesRepeatablePerPeriod;
 /*!
+ @property minTimeBetweenEvents
+ @abstract Minimum amount of time a user is required to wait between attempts.
+ @discussion A value of <code>-1</code> indicates that there is no minimum.
+ */
+@property(nonatomic, assign, readonly) NSInteger minTimeBetweenEvents;
+/*!
+ @property consecutive
+ @abstract Requires that event must happen on consecutive days.
+ */
+@property(nonatomic, assign, readonly) BOOL consecutive;
+
+/*!
  @property period
  @abstract Defines the time interval (in seconds) that applies to @link maxTimesRepeatablePerPeriod @/link.
  */

@@ -1,0 +1,10 @@
+SessionM Platform iOS SDK Release Notes
+
+Copyright © 2017 SessionM. All rights reserved.
+Date: 12/11/2017
+Version: 2.5.1
+
+Changes:
+- Added APIs for interacting with behavior-based campaign promotion data.
+- Geofence API bug fixes and performance improvements.
+- Identity API bug fixes and performance improvements.

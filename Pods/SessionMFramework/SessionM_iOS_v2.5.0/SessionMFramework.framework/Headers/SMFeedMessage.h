@@ -10,6 +10,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SMCampaign.h"
+#import "SMTemplate.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
@@ -33,38 +36,20 @@ typedef NS_ENUM(NSInteger, SMMessageActionType) {
  @abstract Defines the data associated with an activity feed message.
  @discussion Note: the developer can configure the following properties for each message through the SessionM Platform portal.
  */
-@interface SMFeedMessage : NSObject
+@interface SMFeedMessage : SMCampaign
 
 /*!
- @property messageID
- @abstract Unique ID for message.
- */
-@property(nonatomic, strong, readonly) NSString *messageID;
-/*!
- @property campaignID
- @abstract ID of promotional campaign associated with the message.
- */
-@property(nonatomic, strong, readonly) NSString *campaignID;
-/*!
- @property startTime
- @abstract Indicates when the promotion began.
- */
-@property(nullable, nonatomic, strong, readonly) NSString *startTime;
-/*!
- @property endTime
- @abstract Indicates when the promotion ends.
- */
-@property(nullable, nonatomic, strong, readonly) NSString *endTime;
-/*!
- @property type
- @abstract Message type.
- */
-@property(nonatomic, strong, readonly) NSString *type;
-/*!
  @property eventMetaData
- @abstract Metadata associated with the message from the @link //apple_ref/occ/instm/SessionM/logAction:withCount:payloads: @/link method.
+ @abstract Metadata associated with the message.
+ @discussion Identical to @link payloads @/link.
  */
 @property(nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *eventMetaData;
+/*!
+ @property payloads
+ @abstract Metadata associated with the message.
+ @discussion Identical to @link eventMetaData @/link.
+ */
+@property(nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *payloads;
 /*!
  @property actionType
  @abstract Determines how the content pointed to by @link actionURL @/link is displayed when @link //apple_ref/occ/instm/SMCampaignsManager/executeMessageAction: @/link is called with an instance of this class.
@@ -98,12 +83,12 @@ typedef NS_ENUM(NSInteger, SMMessageActionType) {
 @property(nonatomic, strong, readonly) NSString *descriptionText __attribute__((deprecated));
 /*!
  @property iconURL
- @abstract URL for icon displayed in @link //apple_ref/occ/cl/SMActivityFeedViewCell @/link instance.
+ @abstract URL for feed message icon.
  */
 @property(nullable, nonatomic, strong, readonly) NSString *iconURL;
 /*!
  @property imageURL
- @abstract URL for optional banner image displayed at bottom of @link //apple_ref/occ/cl/SMActivityFeedViewCell @/link instance.
+ @abstract URL for optional feed message banner image.
  */
 @property(nullable, nonatomic, strong, readonly) NSString *imageURL;
 /*!
@@ -112,20 +97,27 @@ typedef NS_ENUM(NSInteger, SMMessageActionType) {
  */
 @property(nullable, nonatomic, strong, readonly) NSString *videoURL;
 /*!
- @property data
- @abstract Custom, developer-defined data associated with the messsage.
- */
-@property(nullable, nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *data;
-/*!
  @property points
  @abstract The amount of points that use can earn by interacting with the message.
  */
 @property(nonatomic, assign, readonly) NSInteger points;
 /*!
- @property extras
- @abstract Any data values that do not have an associated class property.
+ @property template
+ @abstract Provides the data necessary for presenting UI for the feed message.
  */
-@property(nullable, nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *extras;
+@property(nonatomic, strong, readonly) SMFeedTemplate *template;
+
+/*!
+ @property data
+ @abstract Custom, developer-defined data associated with the messsage.
+ */
+@property(nullable, nonatomic, strong, readonly) NSObject *data;
+
+/*!
+ @property trackingURLs
+ @abstract URLs used to track an action associated with the message.
+ */
+@property(nullable, nonatomic, strong, readonly) NSArray<NSString *> *trackingURLs;
 
 /*!
  @abstract Notifies the SDK that the view containing the associated message data was presented to the user. Used for reporting purposes.

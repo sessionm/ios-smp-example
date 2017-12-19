@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMOffersManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMOffersManager;  name=SMOffersManager-->
+<a name="//apple_ref/occ/cl/SMOffersManager"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMOffersManager">SMOffersManager</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMOffersManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMOffersManager.h">SMOffersManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOffersManager;name=start --><!-- begin abstract --></p>
+<p>This API manager contains methods for purchasing and redeeming loyalty offers.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMOffersManager;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:" target="_top">-claimUserOfferWithID:completionHandler:havingID:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to claim the loyalty offer with the specified user offer identifier.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:" target="_top">-fetchStoreOffersWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to fetch loyalty offers available for purchase.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:" target="_top">-fetchUserOffersWithCompletionHandler:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to fetch loyalty offers that have been purchased by the current user.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/clm/SMOffersManager/instance" target="_top">+instance</a></tt></dt>
+<dd><p>Singleton that interfaces with the SessionM Platform Offers API.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:" target="_top">-purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:</a></tt></dt>
+<dd><p>Makes a request to purchase the loyalty offer with the specified offer identifier.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:;   name=SMOffersManager::claimUserOfferWithID:completionHandler:havingID:completionHandler: --><a name="//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:"></a>
+<h3><a name="claimUserOfferWithID:completionHandler:havingID:completionHandler:">claimUserOfferWithID:completionHandler:havingID:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to claim the loyalty offer with the specified user offer identifier.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:;name=start -->- (<a machinegenerated="true" href="../../../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:" logicalPath="//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID" target="_top"><span class="function">claimUserOfferWithID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">userOfferID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/ClaimUserOfferCompletionHandler" logicalPath="//apple_ref/occ/cl/ClaimUserOfferCompletionHandler //apple_ref/occ/tdef/ClaimUserOfferCompletionHandler" target="_top"><span class="type">ClaimUserOfferCompletionHandler</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(claimUserOffer(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMOffersManager/havingID //apple_ref/occ/clm/SMOffersManager/havingID //apple_ref/occ/intfcm/SMOffersManager/havingID //apple_ref/occ/intfm/SMOffersManager/havingID //apple_ref/occ/func/havingID //apple_ref/occ/ftmplt/SMOffersManager/havingID //apple_ref/occ/defn/havingID //apple_ref/occ/macro/havingID //apple_ref/doc/anysymbol/havingID" machineGenerated="true" --><span class="function">havingID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:/userOfferID;   name=claimUserOfferWithID:completionHandler:havingID:completionHandler:::userOfferID -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:/userOfferID"></a>
+<code>userOfferID</code>
+</dt>
+<dd><p>The user-specific identifier for the offer that will be claimed.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:/completionHandler;   name=claimUserOfferWithID:completionHandler:havingID:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/claimUserOfferWithID:completionHandler:havingID:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMError</code> object returned if request validation fails.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:;   name=SMOffersManager::fetchStoreOffersWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchStoreOffersWithCompletionHandler:completionHandler:">fetchStoreOffersWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to fetch loyalty offers available for purchase.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:;name=start -->- (<a machinegenerated="true" href="../../../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler" target="_top"><span class="function">fetchStoreOffersWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/FetchStoreOffersCompletionHandler" logicalPath="//apple_ref/occ/cl/FetchStoreOffersCompletionHandler //apple_ref/occ/tdef/FetchStoreOffersCompletionHandler" target="_top"><span class="type">FetchStoreOffersCompletionHandler</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchStoreOffers(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:/completionHandler;   name=fetchStoreOffersWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/fetchStoreOffersWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMError</code> object returned if request validation fails.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:;   name=SMOffersManager::fetchUserOffersWithCompletionHandler:completionHandler: --><a name="//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:"></a>
+<h3><a name="fetchUserOffersWithCompletionHandler:completionHandler:">fetchUserOffersWithCompletionHandler:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to fetch loyalty offers that have been purchased by the current user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:;name=start -->- (<a machinegenerated="true" href="../../../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:" logicalPath="//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler" target="_top"><span class="function">fetchUserOffersWithCompletionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/FetchUserOffersCompletionHandler" logicalPath="//apple_ref/occ/cl/FetchUserOffersCompletionHandler //apple_ref/occ/tdef/FetchUserOffersCompletionHandler" target="_top"><span class="type">FetchUserOffersCompletionHandler</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(fetchUserOffers(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:/completionHandler;   name=fetchUserOffersWithCompletionHandler:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/fetchUserOffersWithCompletionHandler:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMError</code> object returned if request validation fails.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=clm;  uid=//apple_ref/occ/clm/SMOffersManager/instance;   name=SMOffersManager::instance --><a name="//apple_ref/occ/clm/SMOffersManager/instance"></a>
+<h3><a name="instance">instance</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffersManager/instance;name=start --><!-- begin abstract --></p>
+<p>Singleton that interfaces with the SessionM Platform Offers API.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/clm/SMOffersManager/instance;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffersManager/instance;name=start -->+ (<a machinegenerated="true" href="index.html#//apple_ref/occ/cl/SMOffersManager" logicalPath="//apple_ref/occ/cl/SMOffersManager" target="_top"><span class="type">SMOffersManager</span></a> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/occ/econst/instance //apple_ref/occ/data/SMOffersManager/instance //apple_ref/occ/data/instance //apple_ref/occ/clconst/SMOffersManager/instance " machineGenerated="true" --><span class="var">instance</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/clm/SMOffersManager/instance;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMOffersManager</code> service object.
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instm;  uid=//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:;   name=SMOffersManager::purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler: --><a name="//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:"></a>
+<h3><a name="purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:">purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:;name=start --><!-- begin abstract --></p>
+<p>Makes a request to purchase the loyalty offer with the specified offer identifier.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:;name=start -->- (<a machinegenerated="true" href="../../../SMError_h/Classes/SMError/index.html#//apple_ref/occ/cl/SMError" logicalPath="//apple_ref/occ/cl/SMError" target="_top"><span class="type">SMError</span></a> <span class="type">*</span> <!-- a logicalPath="//apple_ref/occ/cl/_Nullable //apple_ref/occ/tdef/_Nullable //apple_ref/occ/tag/_Nullable //apple_ref/occ/struct/_Nullable //apple_ref/occ/intf/_Nullable //apple_ref/doc/anysymbol/_Nullable" machineGenerated="true" --><span class="type">_Nullable</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:" logicalPath="//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID" target="_top"><span class="function">purchaseOfferWithID</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<span class="param">offerID</span> 
+        <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/quantity" logicalPath="//apple_ref/occ/instm/SMOffersManager/quantity //apple_ref/occ/clm/SMOffersManager/quantity //apple_ref/occ/intfcm/SMOffersManager/quantity //apple_ref/occ/intfm/SMOffersManager/quantity //apple_ref/occ/func/quantity //apple_ref/occ/ftmplt/SMOffersManager/quantity //apple_ref/occ/defn/quantity //apple_ref/occ/macro/quantity //apple_ref/doc/anysymbol/quantity" target="_top"><span class="function">quantity</span></a>:(<a machinegenerated="true" href="../../../SMTransaction_h/index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a>)<span class="param">quantity</span> <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:(<a machinegenerated="true" href="../../index.html#//apple_ref/c/tdef/PurchaseOfferCompletionHandler" logicalPath="//apple_ref/occ/cl/PurchaseOfferCompletionHandler //apple_ref/occ/tdef/PurchaseOfferCompletionHandler" target="_top"><span class="type">PurchaseOfferCompletionHandler</span></a>)<span class="param">completionHandler</span> NS_SWIFT_NAME(purchaseOffer(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMOffersManager/havingID //apple_ref/occ/clm/SMOffersManager/havingID //apple_ref/occ/intfcm/SMOffersManager/havingID //apple_ref/occ/intfm/SMOffersManager/havingID //apple_ref/occ/func/havingID //apple_ref/occ/ftmplt/SMOffersManager/havingID //apple_ref/occ/defn/havingID //apple_ref/occ/macro/havingID //apple_ref/doc/anysymbol/havingID" machineGenerated="true" --><span class="function">havingID</span><!-- /a -->:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/quantity" logicalPath="//apple_ref/occ/instm/SMOffersManager/quantity //apple_ref/occ/clm/SMOffersManager/quantity //apple_ref/occ/intfcm/SMOffersManager/quantity //apple_ref/occ/intfm/SMOffersManager/quantity //apple_ref/occ/func/quantity //apple_ref/occ/ftmplt/SMOffersManager/quantity //apple_ref/occ/defn/quantity //apple_ref/occ/macro/quantity //apple_ref/doc/anysymbol/quantity" target="_top"><span class="function">quantity</span></a>:<a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler" logicalPath="//apple_ref/occ/instm/SMOffersManager/completionHandler //apple_ref/occ/clm/SMOffersManager/completionHandler //apple_ref/occ/intfcm/SMOffersManager/completionHandler //apple_ref/occ/intfm/SMOffersManager/completionHandler //apple_ref/occ/func/completionHandler //apple_ref/occ/ftmplt/SMOffersManager/completionHandler //apple_ref/occ/defn/completionHandler //apple_ref/occ/macro/completionHandler //apple_ref/doc/anysymbol/completionHandler" target="_top"><span class="function">completionHandler</span></a>:)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instm/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/offerID;   name=purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:::offerID -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/offerID"></a>
+<code>offerID</code>
+</dt>
+<dd><p>The identifier for the offer that will be purchased.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/quantity;   name=purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:::quantity -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/quantity"></a>
+<code>quantity</code>
+</dt>
+<dd><p>The amount of individual instances of the offer that will be purchased.</p></dd>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler;   name=purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:::completionHandler -->
+<a name="//apple_ref/doc/methodparam/SMOffersManager/purchaseOfferWithID:quantity:completionHandler:havingID:quantity:completionHandler:/completionHandler"></a>
+<code>completionHandler</code>
+</dt>
+<dd><p>The block to execute after the request is processed.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p><code>SMError</code> object returned if request validation fails.
+
+<!-- end return value --></p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract User's current loyalty points balance.
  */
 @property(nonatomic, assign, readonly) NSInteger availablePoints;
+
 /*!
  @property extras
  @abstract Any data values that do not have an associated class property.

@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMReceiptsDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=intf; uid=//apple_ref/occ/intf/SMReceiptsDelegate;  name=SMReceiptsDelegate-->
+<a name="//apple_ref/occ/intf/SMReceiptsDelegate"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMReceiptsDelegate">SMReceiptsDelegate</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Extends&nbsp;Protocol:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../../../SMBaseDelegate_h/Protocols/SMBaseDelegate/index.html#//apple_ref/occ/intf/SMBaseDelegate" logicalPath="//apple_ref/occ/intf/SMBaseDelegate" target="_top">SMBaseDelegate</a></div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMReceiptsManager.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMReceiptsManager.h">SMReceiptsManager.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMReceiptsDelegate;name=start --><!-- begin abstract --></p>
+<p>Defines callbacks for <a href="../../Classes/SMReceiptsManager/index.html#//apple_ref/occ/cl/SMReceiptsManager" logicalPath="//apple_ref/occ/cl/SMReceiptsManager" target="_top">SMReceiptsManager</a> methods.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/SMReceiptsDelegate;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_methods"></a>
+<h2 class="h2tight">Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:" target="_top">-didFetchReceipts:_:</a></tt></dt>
+<dd><p>Notifies delegate that the current user's uploaded receipts were fetched.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:" target="_top">-didUploadReceipt:_:</a></tt></dt>
+<dd><p>Notifies delegate that all receipt images were successfully uploaded.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:" target="_top">-uploadProgress:receipt:</a></tt></dt>
+<dd><p>Notifies delegate that an image was successfully uploaded.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:;   name=SMReceiptsDelegate::didFetchReceipts:_: --><a name="//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:"></a>
+<h3><a name="didFetchReceipts:_:">didFetchReceipts:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that the current user's uploaded receipts were fetched.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:" logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/didFetchReceipts //apple_ref/occ/clm/SMReceiptsDelegate/didFetchReceipts //apple_ref/occ/intfcm/SMReceiptsDelegate/didFetchReceipts //apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts" target="_top"><span class="function">didFetchReceipts</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/intf/NSArray //apple_ref/doc/anysymbol/NSArray" machineGenerated="true" --><span class="type">NSArray</span><!-- /a -->&lt;<span class="param">SMReceipt</span> <span class="param">*</span>&gt; <span class="type">*</span>)<span class="param">receipts</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didFetchReceipts(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/_ //apple_ref/occ/clm/SMReceiptsDelegate/_ //apple_ref/occ/intfcm/SMReceiptsDelegate/_ //apple_ref/occ/intfm/SMReceiptsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMReceiptsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsDelegate/didFetchReceipts:_:/receipts;   name=didFetchReceipts:_:::receipts -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsDelegate/didFetchReceipts:_:/receipts"></a>
+<code>receipts</code>
+</dt>
+<dd><p>The uploaded receipts.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:;name=start --><p>This method is called in response to <a href="../../Classes/SMReceiptsManager/index.html#//apple_ref/occ/instm/SMReceiptsManager/fetchReceiptsWithLimit:page:completionHandler:limit:page:completionHandler:" logicalPath="//apple_ref/occ/instm/SMReceiptsManager/fetchReceipts" target="_top">fetchReceipts</a> and <!-- a logicalPath="//apple_ref/occ/cl/fetchReceiptsWithLimit:page: //apple_ref/occ/tdef/fetchReceiptsWithLimit:page: //apple_ref/occ/tag/fetchReceiptsWithLimit:page: //apple_ref/occ/struct/fetchReceiptsWithLimit:page: //apple_ref/occ/intf/fetchReceiptsWithLimit:page: //apple_ref/occ/econst/fetchReceiptsWithLimit:page: //apple_ref/occ/data/fetchReceiptsWithLimit:page: //apple_ref/occ/clconst/fetchReceiptsWithLimit:page: //apple_ref/occ/instm/fetchReceiptsWithLimit:page: //apple_ref/occ/clm/fetchReceiptsWithLimit:page: //apple_ref/occ/intfcm/fetchReceiptsWithLimit:page: //apple_ref/occ/intfm/fetchReceiptsWithLimit:page: //apple_ref/occ/func/fetchReceiptsWithLimit:page: //apple_ref/occ/ftmplt/fetchReceiptsWithLimit:page: //apple_ref/occ/defn/fetchReceiptsWithLimit:page: //apple_ref/occ/macro/fetchReceiptsWithLimit:page: //apple_ref/doc/com/intfm/fetchReceiptsWithLimit:page: //apple_ref/doc/anysymbol/fetchReceiptsWithLimit:page:" -->fetchReceiptsWithLimit:page:<!-- /a -->.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didFetchReceipts:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:;   name=SMReceiptsDelegate::didUploadReceipt:_: --><a name="//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:"></a>
+<h3><a name="didUploadReceipt:_:">didUploadReceipt:_:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that all receipt images were successfully uploaded.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:" logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/didUploadReceipt //apple_ref/occ/clm/SMReceiptsDelegate/didUploadReceipt //apple_ref/occ/intfcm/SMReceiptsDelegate/didUploadReceipt //apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt" target="_top"><span class="function">didUploadReceipt</span></a>:(<a machinegenerated="true" href="../../../SMReceipt_h/Classes/SMReceipt/index.html#//apple_ref/occ/cl/SMReceipt" logicalPath="//apple_ref/occ/cl/SMReceipt" target="_top"><span class="type">SMReceipt</span></a> <span class="type">*</span>)<span class="param">receipt</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(didUploadReceipt(
+                <!-- a logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/_ //apple_ref/occ/clm/SMReceiptsDelegate/_ //apple_ref/occ/intfcm/SMReceiptsDelegate/_ //apple_ref/occ/intfm/SMReceiptsDelegate/_ //apple_ref/occ/func/_ //apple_ref/occ/ftmplt/SMReceiptsDelegate/_ //apple_ref/occ/defn/_ //apple_ref/occ/macro/_ //apple_ref/doc/anysymbol/_" machineGenerated="true" --><span class="function">_</span><!-- /a -->:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsDelegate/didUploadReceipt:_:/receipt;   name=didUploadReceipt:_:::receipt -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsDelegate/didUploadReceipt:_:/receipt"></a>
+<code>receipt</code>
+</dt>
+<dd><p>The final receipt data.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/tdef/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/tag/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/struct/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intf/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/econst/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/data/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/clconst/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/instm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/clm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intfcm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intfm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/func/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/ftmplt/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/defn/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/macro/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/doc/com/intfm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/doc/anysymbol/uploadReceiptImages:withCampaignID:placementID:data:" -->uploadReceiptImages:withCampaignID:placementID:data:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/tdef/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/tag/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/struct/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intf/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/econst/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/data/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/clconst/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/instm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/clm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intfcm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/func/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/ftmplt/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/defn/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/macro/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/doc/com/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/doc/anysymbol/uploadReceiptImageFiles:withCampaignID:placementID:data:" -->uploadReceiptImageFiles:withCampaignID:placementID:data:<!-- /a -->, and <!-- a logicalPath="//apple_ref/occ/cl/resumeIncompleteUploadForGroupID: //apple_ref/occ/tdef/resumeIncompleteUploadForGroupID: //apple_ref/occ/tag/resumeIncompleteUploadForGroupID: //apple_ref/occ/struct/resumeIncompleteUploadForGroupID: //apple_ref/occ/intf/resumeIncompleteUploadForGroupID: //apple_ref/occ/econst/resumeIncompleteUploadForGroupID: //apple_ref/occ/data/resumeIncompleteUploadForGroupID: //apple_ref/occ/clconst/resumeIncompleteUploadForGroupID: //apple_ref/occ/instm/resumeIncompleteUploadForGroupID: //apple_ref/occ/clm/resumeIncompleteUploadForGroupID: //apple_ref/occ/intfcm/resumeIncompleteUploadForGroupID: //apple_ref/occ/intfm/resumeIncompleteUploadForGroupID: //apple_ref/occ/func/resumeIncompleteUploadForGroupID: //apple_ref/occ/ftmplt/resumeIncompleteUploadForGroupID: //apple_ref/occ/defn/resumeIncompleteUploadForGroupID: //apple_ref/occ/macro/resumeIncompleteUploadForGroupID: //apple_ref/doc/com/intfm/resumeIncompleteUploadForGroupID: //apple_ref/doc/anysymbol/resumeIncompleteUploadForGroupID:" -->resumeIncompleteUploadForGroupID:<!-- /a --> after all images have been uploaded.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/didUploadReceipt:_:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:;   name=SMReceiptsDelegate::uploadProgress:receipt: --><a name="//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:"></a>
+<h3><a name="uploadProgress:receipt:">uploadProgress:receipt:</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:;name=start --><!-- begin abstract --></p>
+<p>Notifies delegate that an image was successfully uploaded.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:;name=end --></p>
+<div class="declaration_indent">
+<pre><tt>@optional</tt>
+<br>- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:" logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/uploadProgress //apple_ref/occ/clm/SMReceiptsDelegate/uploadProgress //apple_ref/occ/intfcm/SMReceiptsDelegate/uploadProgress //apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress" target="_top"><span class="function">uploadProgress</span></a>:(<a machinegenerated="true" href="../../../SMReceipt_h/Classes/SMReceipt/index.html#//apple_ref/occ/cl/SMReceipt" logicalPath="//apple_ref/occ/cl/SMReceipt" target="_top"><span class="type">SMReceipt</span></a> <span class="type">*</span>)<span class="param">receipt</span> <span class="keyword">__attribute__</span>((<span class="param">deprecated</span>("<span class="param">Use</span> <span class="param">block</span> <span class="param">methods</span> <span class="param">instead</span>"))) NS_SWIFT_NAME(progressForUpload(
+                <a machinegenerated="true" href="index.html#//apple_ref/doc/methodparam/SMReceiptsDelegate/uploadProgress:receipt:/receipt" logicalPath="//apple_ref/occ/instm/SMReceiptsDelegate/receipt //apple_ref/occ/clm/SMReceiptsDelegate/receipt //apple_ref/occ/intfcm/SMReceiptsDelegate/receipt //apple_ref/occ/intfm/SMReceiptsDelegate/receipt //apple_ref/occ/func/receipt //apple_ref/occ/ftmplt/SMReceiptsDelegate/receipt //apple_ref/occ/defn/receipt //apple_ref/occ/macro/receipt //apple_ref/doc/anysymbol/receipt" target="_top"><span class="function">receipt</span></a>:)); </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=methodparam;  uid=//apple_ref/doc/methodparam/SMReceiptsDelegate/uploadProgress:receipt:/receipt;   name=uploadProgress:receipt:::receipt -->
+<a name="//apple_ref/doc/methodparam/SMReceiptsDelegate/uploadProgress:receipt:/receipt"></a>
+<code>receipt</code>
+</dt>
+<dd><p>The current receipt data.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:;name=start --><p>This method is called in response to <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/tdef/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/tag/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/struct/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intf/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/econst/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/data/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/clconst/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/instm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/clm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intfcm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/intfm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/func/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/ftmplt/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/defn/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/occ/macro/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/doc/com/intfm/uploadReceiptImages:withCampaignID:placementID:data: //apple_ref/doc/anysymbol/uploadReceiptImages:withCampaignID:placementID:data:" -->uploadReceiptImages:withCampaignID:placementID:data:<!-- /a -->, <!-- a logicalPath="//apple_ref/occ/cl/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/tdef/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/tag/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/struct/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intf/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/econst/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/data/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/clconst/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/instm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/clm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intfcm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/func/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/ftmplt/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/defn/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/occ/macro/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/doc/com/intfm/uploadReceiptImageFiles:withCampaignID:placementID:data: //apple_ref/doc/anysymbol/uploadReceiptImageFiles:withCampaignID:placementID:data:" -->uploadReceiptImageFiles:withCampaignID:placementID:data:<!-- /a -->, and <!-- a logicalPath="//apple_ref/occ/cl/resumeIncompleteUploadForGroupID: //apple_ref/occ/tdef/resumeIncompleteUploadForGroupID: //apple_ref/occ/tag/resumeIncompleteUploadForGroupID: //apple_ref/occ/struct/resumeIncompleteUploadForGroupID: //apple_ref/occ/intf/resumeIncompleteUploadForGroupID: //apple_ref/occ/econst/resumeIncompleteUploadForGroupID: //apple_ref/occ/data/resumeIncompleteUploadForGroupID: //apple_ref/occ/clconst/resumeIncompleteUploadForGroupID: //apple_ref/occ/instm/resumeIncompleteUploadForGroupID: //apple_ref/occ/clm/resumeIncompleteUploadForGroupID: //apple_ref/occ/intfcm/resumeIncompleteUploadForGroupID: //apple_ref/occ/intfm/resumeIncompleteUploadForGroupID: //apple_ref/occ/func/resumeIncompleteUploadForGroupID: //apple_ref/occ/ftmplt/resumeIncompleteUploadForGroupID: //apple_ref/occ/defn/resumeIncompleteUploadForGroupID: //apple_ref/occ/macro/resumeIncompleteUploadForGroupID: //apple_ref/doc/com/intfm/resumeIncompleteUploadForGroupID: //apple_ref/doc/anysymbol/resumeIncompleteUploadForGroupID:" -->resumeIncompleteUploadForGroupID:<!-- /a --> - once for each image upload.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/intfm/SMReceiptsDelegate/uploadProgress:receipt:;name=end --><!-- end discussion -->
+</p>
+<p><b>Deprecated</b></p>
+
+<p>Use block methods instead.</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

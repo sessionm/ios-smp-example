@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
  @constant SMErrorTypeNetwork API request failed due to network connection loss.
  @constant SMErrorTypeValidation Input to method was invalid.
  @constant SMErrorTypeServerError Server returned an error.
+ @constant SMErrorTypeServerAuthorization Authorization credentials for network request were missing.
+ @constant SMErrorTypeWebView Error encountered when performing web view network request or JavaScript call.
  */
 typedef NS_ENUM (NSInteger, SMErrorType) {
     SMErrorTypeUnknown NS_SWIFT_NAME(unknown),

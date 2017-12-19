@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SMLocationEvent.h"
+#import "SMGeolocationEvent.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -104,7 +104,7 @@ __attribute__((deprecated("mPLUS Rewards APIs are deprecated. For more informati
  @property locationEvents
  @abstract Currently monitored events that can be triggered by entering or exiting a geofence.
  */
-@property(nullable, nonatomic, strong, readonly) NSArray<SMLocationEvent *> *locationEvents;
+@property(nullable, nonatomic, strong, readonly) NSArray<SMGeolocationEvent *> *locationEvents;
 /*!
  @property eventLimit
  @abstract The maximum size for the amount of monitored location events in the @link locationEvents @/link array (default value is @link SMLocationManagerMonitoredEventLimit @/link).

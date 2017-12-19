@@ -1,0 +1,519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMCampaign</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMCampaign;  name=SMCampaign-->
+<a name="//apple_ref/occ/cl/SMCampaign"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMCampaign">SMCampaign</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMCampaign.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMCampaign.h">SMCampaign.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMCampaign;name=start --><!-- begin abstract --></p>
+<p>Defines the data associated with a campaign message.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMCampaign;name=end --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/cl/SMCampaign;name=start --><p>Note: the developer can configure the following properties for each message through the SessionM Platform portal.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/cl/SMCampaign;name=end --><!-- end discussion -->
+</p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/campaignID" target="_top">campaignID</a></tt></dt>
+<dd><p>Identifier of campaign associated with the message.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/creativeID" target="_top">creativeID</a></tt></dt>
+<dd><p>Unique identifier for campaign creative.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/endTime" target="_top">endTime</a></tt></dt>
+<dd><p>Indicates when the campaign ends.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/extras" target="_top">extras</a></tt></dt>
+<dd><p>Any data values that do not have an associated class property.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/groupID" target="_top">groupID</a></tt></dt>
+<dd><p>Identifier of ad group that contains the campaign.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/messageID" target="_top">messageID</a></tt></dt>
+<dd><p>Unique identifier for message.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/name" target="_top">name</a></tt></dt>
+<dd><p>Campaign name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/optInEndsAt" target="_top">optInEndsAt</a></tt></dt>
+<dd><p>Indicates when opt-in for the campaign ends.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/optInStartsAt" target="_top">optInStartsAt</a></tt></dt>
+<dd><p>Indicates when opt-in for the campaign began.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/permalink" target="_top">permalink</a></tt></dt>
+<dd><p>Developer-defined string that can be used to reference the campaign.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/startTime" target="_top">startTime</a></tt></dt>
+<dd><p>Indicates when the campaign began.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/type" target="_top">type</a></tt></dt>
+<dd><p>Message type.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMCampaign/version" target="_top">version</a></tt></dt>
+<dd><p>SessionM Platform Campaigns API version.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/campaignID;   name=SMCampaign::campaignID --><a name="//apple_ref/occ/instp/SMCampaign/campaignID"></a>
+<h3><a name="campaignID">campaignID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/campaignID;name=start --><!-- begin abstract --></p>
+<p>Identifier of campaign associated with the message.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/campaignID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/campaignID;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/campaignID //apple_ref/occ/data/SMCampaign/campaignID //apple_ref/occ/data/campaignID //apple_ref/occ/clconst/SMCampaign/campaignID " machineGenerated="true" --><span class="var">campaignID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/campaignID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/creativeID;   name=SMCampaign::creativeID --><a name="//apple_ref/occ/instp/SMCampaign/creativeID"></a>
+<h3><a name="creativeID">creativeID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=start --><!-- begin abstract --></p>
+<p>Unique identifier for campaign creative.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/creativeID //apple_ref/occ/data/SMCampaign/creativeID //apple_ref/occ/data/creativeID //apple_ref/occ/clconst/SMCampaign/creativeID " machineGenerated="true" --><span class="var">creativeID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=start --><p>Identical to <a href="index.html#//apple_ref/occ/instp/SMCampaign/messageID" logicalPath="//apple_ref/occ/instp/SMCampaign/messageID" target="_top">messageID</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaign/creativeID;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/endTime;   name=SMCampaign::endTime --><a name="//apple_ref/occ/instp/SMCampaign/endTime"></a>
+<h3><a name="endTime">endTime</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/endTime;name=start --><!-- begin abstract --></p>
+<p>Indicates when the campaign ends.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/endTime;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/endTime;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/endTime //apple_ref/occ/data/SMCampaign/endTime //apple_ref/occ/data/endTime //apple_ref/occ/clconst/SMCampaign/endTime " machineGenerated="true" --><span class="var">endTime</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/endTime;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/extras;   name=SMCampaign::extras --><a name="//apple_ref/occ/instp/SMCampaign/extras"></a>
+<h3><a name="extras">extras</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/extras;name=start --><!-- begin abstract --></p>
+<p>Any data values that do not have an associated class property.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/extras;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/extras;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a -->&lt;<span class="template">NSString</span> <span class="template">*</span>, <span class="template">NSObject</span> <span class="template">*</span>&gt; <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/extras //apple_ref/occ/data/SMCampaign/extras //apple_ref/occ/data/extras //apple_ref/occ/clconst/SMCampaign/extras " machineGenerated="true" --><span class="var">extras</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/extras;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/groupID;   name=SMCampaign::groupID --><a name="//apple_ref/occ/instp/SMCampaign/groupID"></a>
+<h3><a name="groupID">groupID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/groupID;name=start --><!-- begin abstract --></p>
+<p>Identifier of ad group that contains the campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/groupID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/groupID;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/groupID //apple_ref/occ/data/SMCampaign/groupID //apple_ref/occ/data/groupID //apple_ref/occ/clconst/SMCampaign/groupID " machineGenerated="true" --><span class="var">groupID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/groupID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/messageID;   name=SMCampaign::messageID --><a name="//apple_ref/occ/instp/SMCampaign/messageID"></a>
+<h3><a name="messageID">messageID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=start --><!-- begin abstract --></p>
+<p>Unique identifier for message.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/messageID //apple_ref/occ/data/SMCampaign/messageID //apple_ref/occ/data/messageID //apple_ref/occ/clconst/SMCampaign/messageID " machineGenerated="true" --><span class="var">messageID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=start --><p>Identical to <a href="index.html#//apple_ref/occ/instp/SMCampaign/creativeID" logicalPath="//apple_ref/occ/instp/SMCampaign/creativeID" target="_top">creativeID</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/occ/instp/SMCampaign/messageID;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/name;   name=SMCampaign::name --><a name="//apple_ref/occ/instp/SMCampaign/name"></a>
+<h3><a name="name">name</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/name;name=start --><!-- begin abstract --></p>
+<p>Campaign name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/name;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/name;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/name //apple_ref/occ/data/SMCampaign/name //apple_ref/occ/data/name //apple_ref/occ/clconst/SMCampaign/name " machineGenerated="true" --><span class="var">name</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/name;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/optInEndsAt;   name=SMCampaign::optInEndsAt --><a name="//apple_ref/occ/instp/SMCampaign/optInEndsAt"></a>
+<h3><a name="optInEndsAt">optInEndsAt</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/optInEndsAt;name=start --><!-- begin abstract --></p>
+<p>Indicates when opt-in for the campaign ends.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/optInEndsAt;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/optInEndsAt;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/optInEndsAt //apple_ref/occ/data/SMCampaign/optInEndsAt //apple_ref/occ/data/optInEndsAt //apple_ref/occ/clconst/SMCampaign/optInEndsAt " machineGenerated="true" --><span class="var">optInEndsAt</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/optInEndsAt;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/optInStartsAt;   name=SMCampaign::optInStartsAt --><a name="//apple_ref/occ/instp/SMCampaign/optInStartsAt"></a>
+<h3><a name="optInStartsAt">optInStartsAt</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/optInStartsAt;name=start --><!-- begin abstract --></p>
+<p>Indicates when opt-in for the campaign began.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/optInStartsAt;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/optInStartsAt;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/optInStartsAt //apple_ref/occ/data/SMCampaign/optInStartsAt //apple_ref/occ/data/optInStartsAt //apple_ref/occ/clconst/SMCampaign/optInStartsAt " machineGenerated="true" --><span class="var">optInStartsAt</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/optInStartsAt;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/permalink;   name=SMCampaign::permalink --><a name="//apple_ref/occ/instp/SMCampaign/permalink"></a>
+<h3><a name="permalink">permalink</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/permalink;name=start --><!-- begin abstract --></p>
+<p>Developer-defined string that can be used to reference the campaign.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/permalink;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/permalink;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/permalink //apple_ref/occ/data/SMCampaign/permalink //apple_ref/occ/data/permalink //apple_ref/occ/clconst/SMCampaign/permalink " machineGenerated="true" --><span class="var">permalink</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/permalink;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/startTime;   name=SMCampaign::startTime --><a name="//apple_ref/occ/instp/SMCampaign/startTime"></a>
+<h3><a name="startTime">startTime</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/startTime;name=start --><!-- begin abstract --></p>
+<p>Indicates when the campaign began.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/startTime;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/startTime;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/startTime //apple_ref/occ/data/SMCampaign/startTime //apple_ref/occ/data/startTime //apple_ref/occ/clconst/SMCampaign/startTime " machineGenerated="true" --><span class="var">startTime</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/startTime;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/type;   name=SMCampaign::type --><a name="//apple_ref/occ/instp/SMCampaign/type"></a>
+<h3><a name="type">type</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/type;name=start --><!-- begin abstract --></p>
+<p>Message type.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/type;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/type;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">strong</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/type //apple_ref/occ/data/SMCampaign/type //apple_ref/occ/data/type //apple_ref/occ/clconst/SMCampaign/type " machineGenerated="true" --><span class="var">type</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/type;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMCampaign/version;   name=SMCampaign::version --><a name="//apple_ref/occ/instp/SMCampaign/version"></a>
+<h3><a name="version">version</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/version;name=start --><!-- begin abstract --></p>
+<p>SessionM Platform Campaigns API version.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMCampaign/version;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/version;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">strong</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSNumber //apple_ref/occ/tdef/NSNumber //apple_ref/occ/tag/NSNumber //apple_ref/occ/struct/NSNumber //apple_ref/occ/intf/NSNumber //apple_ref/doc/anysymbol/NSNumber" machineGenerated="true" --><span class="type">NSNumber</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/version //apple_ref/occ/data/SMCampaign/version //apple_ref/occ/data/version //apple_ref/occ/clconst/SMCampaign/version " machineGenerated="true" --><span class="var">version</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMCampaign/version;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

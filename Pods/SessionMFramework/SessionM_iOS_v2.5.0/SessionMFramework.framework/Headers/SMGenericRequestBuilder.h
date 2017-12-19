@@ -59,10 +59,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readonly) NSMutableDictionary<NSString *, NSString *> *keepAround;
 
 /*!
- @abstract Generates an immutable HTTP request object.
- @return The generated @link SMGenericRequest @/link object.
+ @property errorMessageMaker
+ @abstract Can be used to provide a custom error message for the @link //apple_ref/occ/cl/SMError @/link object returned in the <code>completionHandler</code> parameter for the @link //apple_ref/occ/instm/SMGenericRequestManager/sendRequest:completionHandler: @/link method.
+ @discussion This block will only be executed if an error is returned in the request response.
  */
-- (SMGenericRequest *)build;
+@property(nullable, nonatomic, copy, readwrite) ErrorMessageMaker errorMessageMaker;
 
 /*!
  @abstract Returns a request builder that builds requests with the given method type.
@@ -77,6 +78,12 @@ NS_ASSUME_NONNULL_BEGIN
  @result @link SMGenericRequestBuilder @/link instance.
  */
 - (instancetype)initWithMethod:(SMGenericRequestMethodType)method kind:(NSString *)kind;
+
+/*!
+ @abstract Generates an immutable HTTP request object.
+ @return The generated @link SMGenericRequest @/link object.
+ */
+- (SMGenericRequest *)build;
 
 @end
 

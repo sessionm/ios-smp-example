@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SMAchievementData</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><link rel="stylesheet" type="text/css" href="http://devdoc.sessionm.com/ios/docs.css">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/SMAchievementData;  name=SMAchievementData-->
+<a name="//apple_ref/occ/cl/SMAchievementData"></a><table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<!-- start of header -->
+<div class="Header">
+<a href="http://devdoc.sessionm.com/ios/index.html" style="text-decoration: none;">
+<h1 class="Logo">iOS SDK Documentation</h1>
+</a>
+</div>
+
+<!-- end of header -->
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<hr class="afterHeader">
+<h1><a name="SMAchievementData">SMAchievementData</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Deprecated:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">mPLUS Rewards APIs are deprecated. For more information, please refer to the SessionM Platform documentation site: https://mmc.sessionm.com/docs/mmc-sdk/</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Superclass:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/occ/cl/NSObject" machineGenerated="true" -->NSObject<!-- /a -->
+</div></div></td>
+</tr>
+<tr>
+<td scope="row"><b>Declared In:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text"><a logicalpath="//apple_ref/doc/header/SMAchievementData.h" target="_top" machinegenerated="true" href="../../index.html#//apple_ref/doc/header/SMAchievementData.h">SMAchievementData.h</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMAchievementData;name=start --><!-- begin abstract --></p>
+<p>Defines information about achievement used to customize achievement alert presentation.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/cl/SMAchievementData;name=end --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/cl/SMAchievementData;name=start --><p>data class.</p>
+<!-- headerDoc=discussion;uid=//apple_ref/occ/cl/SMAchievementData;name=end --><!-- end discussion -->
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_props"></a>
+<h2 class="h2tight">Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/achievementIconURL" target="_top">achievementIconURL</a></tt></dt>
+<dd><p>Icon URL.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/action" target="_top">action</a></tt></dt>
+<dd><p>Action name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/distance" target="_top">distance</a></tt></dt>
+<dd><p>Number of actions required to earn new achievement. <code>-1</code> if achievment cannot be earned in the current session.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/identifier" target="_top">identifier</a></tt></dt>
+<dd><p>Achievement ID.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/importID" target="_top">importID</a></tt></dt>
+<dd><p>ID assigned to the achievement in the csv file exported from the SessionM Developer Portal.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/instructions" target="_top">instructions</a></tt></dt>
+<dd><p>Instructions explaining how to earn achievement.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/isCustom" target="_top">isCustom</a></tt></dt>
+<dd><p>Boolean indicating if achievement presentation is custom.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/lastEarnedDate" target="_top">lastEarnedDate</a></tt></dt>
+<dd><p>Date the unclaimed achievement was last earned.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/limitText" target="_top">limitText</a></tt></dt>
+<dd><p>Description of amount of times achievement can be earned (e.g. "Once" or "1 time every day").
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/message" target="_top">message</a></tt></dt>
+<dd><p>Message describing the achievement.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/mpointValue" target="_top">mpointValue</a></tt></dt>
+<dd><p>Achievement mPoint value.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/name" target="_top">name</a></tt></dt>
+<dd><p>Achievement name.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/pointValue" target="_top">pointValue</a></tt></dt>
+<dd><p>Achievement point value.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/timesEarned" target="_top">timesEarned</a></tt></dt>
+<dd><p>Amount of times the achievement has been earned by the user.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/SMAchievementData/unclaimedCount" target="_top">unclaimedCount</a></tt></dt>
+<dd><p>Current amount of this achievement the user has earned, but not yet claimed.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/achievementIconURL;   name=SMAchievementData::achievementIconURL --><a name="//apple_ref/occ/instp/SMAchievementData/achievementIconURL"></a>
+<h3><a name="achievementIconURL">achievementIconURL</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/achievementIconURL;name=start --><!-- begin abstract --></p>
+<p>Icon URL.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/achievementIconURL;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/achievementIconURL;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/achievementIconURL //apple_ref/occ/data/SMAchievementData/achievementIconURL //apple_ref/occ/data/achievementIconURL //apple_ref/occ/clconst/SMAchievementData/achievementIconURL " machineGenerated="true" --><span class="var">achievementIconURL</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/achievementIconURL;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/action;   name=SMAchievementData::action --><a name="//apple_ref/occ/instp/SMAchievementData/action"></a>
+<h3><a name="action">action</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/action;name=start --><!-- begin abstract --></p>
+<p>Action name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/action;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/action;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/action //apple_ref/occ/data/SMAchievementData/action //apple_ref/occ/data/action //apple_ref/occ/clconst/SMAchievementData/action " machineGenerated="true" --><span class="var">action</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/action;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/distance;   name=SMAchievementData::distance --><a name="//apple_ref/occ/instp/SMAchievementData/distance"></a>
+<h3><a name="distance">distance</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/distance;name=start --><!-- begin abstract --></p>
+<p>Number of actions required to earn new achievement. <code>-1</code> if achievment cannot be earned in the current session.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/distance;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/distance;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../../SMTransaction_h/index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/distance //apple_ref/occ/data/SMAchievementData/distance //apple_ref/occ/data/distance //apple_ref/occ/clconst/SMAchievementData/distance " machineGenerated="true" --><span class="var">distance</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/distance;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/identifier;   name=SMAchievementData::identifier --><a name="//apple_ref/occ/instp/SMAchievementData/identifier"></a>
+<h3><a name="identifier">identifier</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/identifier;name=start --><!-- begin abstract --></p>
+<p>Achievement ID.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/identifier;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/identifier;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/identifier //apple_ref/occ/data/SMAchievementData/identifier //apple_ref/occ/data/identifier //apple_ref/occ/clconst/SMAchievementData/identifier " machineGenerated="true" --><span class="var">identifier</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/identifier;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/importID;   name=SMAchievementData::importID --><a name="//apple_ref/occ/instp/SMAchievementData/importID"></a>
+<h3><a name="importID">importID</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/importID;name=start --><!-- begin abstract --></p>
+<p>ID assigned to the achievement in the csv file exported from the SessionM Developer Portal.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/importID;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/importID;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/importID //apple_ref/occ/data/SMAchievementData/importID //apple_ref/occ/data/importID //apple_ref/occ/clconst/SMAchievementData/importID " machineGenerated="true" --><span class="var">importID</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/importID;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/instructions;   name=SMAchievementData::instructions --><a name="//apple_ref/occ/instp/SMAchievementData/instructions"></a>
+<h3><a name="instructions">instructions</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/instructions;name=start --><!-- begin abstract --></p>
+<p>Instructions explaining how to earn achievement.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/instructions;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/instructions;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/instructions //apple_ref/occ/data/SMAchievementData/instructions //apple_ref/occ/data/instructions //apple_ref/occ/clconst/SMAchievementData/instructions " machineGenerated="true" --><span class="var">instructions</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/instructions;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/isCustom;   name=SMAchievementData::isCustom --><a name="//apple_ref/occ/instp/SMAchievementData/isCustom"></a>
+<h3><a name="isCustom">isCustom</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/isCustom;name=start --><!-- begin abstract --></p>
+<p>Boolean indicating if achievement presentation is custom.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/isCustom;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/isCustom;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/isCustom //apple_ref/occ/data/SMAchievementData/isCustom //apple_ref/occ/data/isCustom //apple_ref/occ/clconst/SMAchievementData/isCustom " machineGenerated="true" --><span class="var">isCustom</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/isCustom;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/lastEarnedDate;   name=SMAchievementData::lastEarnedDate --><a name="//apple_ref/occ/instp/SMAchievementData/lastEarnedDate"></a>
+<h3><a name="lastEarnedDate">lastEarnedDate</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/lastEarnedDate;name=start --><!-- begin abstract --></p>
+<p>Date the unclaimed achievement was last earned.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/lastEarnedDate;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/lastEarnedDate;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSDate //apple_ref/occ/tdef/NSDate //apple_ref/occ/tag/NSDate //apple_ref/occ/struct/NSDate //apple_ref/occ/intf/NSDate //apple_ref/doc/anysymbol/NSDate" machineGenerated="true" --><span class="type">NSDate</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/lastEarnedDate //apple_ref/occ/data/SMAchievementData/lastEarnedDate //apple_ref/occ/data/lastEarnedDate //apple_ref/occ/clconst/SMAchievementData/lastEarnedDate " machineGenerated="true" --><span class="var">lastEarnedDate</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/lastEarnedDate;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/limitText;   name=SMAchievementData::limitText --><a name="//apple_ref/occ/instp/SMAchievementData/limitText"></a>
+<h3><a name="limitText">limitText</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/limitText;name=start --><!-- begin abstract --></p>
+<p>Description of amount of times achievement can be earned (e.g. "Once" or "1 time every day").
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/limitText;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/limitText;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/limitText //apple_ref/occ/data/SMAchievementData/limitText //apple_ref/occ/data/limitText //apple_ref/occ/clconst/SMAchievementData/limitText " machineGenerated="true" --><span class="var">limitText</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/limitText;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/message;   name=SMAchievementData::message --><a name="//apple_ref/occ/instp/SMAchievementData/message"></a>
+<h3><a name="message">message</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/message;name=start --><!-- begin abstract --></p>
+<p>Message describing the achievement.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/message;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/message;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/message //apple_ref/occ/data/SMAchievementData/message //apple_ref/occ/data/message //apple_ref/occ/clconst/SMAchievementData/message " machineGenerated="true" --><span class="var">message</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/message;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/mpointValue;   name=SMAchievementData::mpointValue --><a name="//apple_ref/occ/instp/SMAchievementData/mpointValue"></a>
+<h3><a name="mpointValue">mpointValue</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/mpointValue;name=start --><!-- begin abstract --></p>
+<p>Achievement mPoint value.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/mpointValue;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/mpointValue;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../../SMIdentityManager_h/index.html#//apple_ref/c/tdef/NSUInteger" logicalPath="//apple_ref/occ/cl/NSUInteger //apple_ref/occ/tdef/NSUInteger" target="_top"><span class="type">NSUInteger</span></a> <a machinegenerated="true" href="index.html#//apple_ref/occ/instp/SMAchievementData/mpointValue" logicalPath="//apple_ref/occ/cl/mpointValue //apple_ref/occ/tdef/mpointValue //apple_ref/occ/tag/mpointValue //apple_ref/occ/struct/mpointValue //apple_ref/occ/intf/mpointValue //apple_ref/doc/anysymbol/mpointValue" target="_top"><span class="type">mpointValue</span></a> <span class="keyword">__attribute__</span>((<!-- a logicalPath="//apple_ref/occ/econst/deprecated //apple_ref/occ/data/SMAchievementData/deprecated //apple_ref/occ/data/deprecated //apple_ref/occ/clconst/SMAchievementData/deprecated " machineGenerated="true" --><span class="var">deprecated</span><!-- /a -->)); <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/mpointValue;name=end --></pre>
+</div>
+<p><b>Deprecated</b></p>
+
+<p>This value is deprecated. Use <a href="index.html#//apple_ref/occ/instp/SMAchievementData/pointValue" logicalPath="//apple_ref/occ/instp/SMAchievementData/pointValue" target="_top">pointValue</a> instead.</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/name;   name=SMAchievementData::name --><a name="//apple_ref/occ/instp/SMAchievementData/name"></a>
+<h3><a name="name">name</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/name;name=start --><!-- begin abstract --></p>
+<p>Achievement name.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/name;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/name;name=start -->@property(<span class="param">nullable</span>,
+    <span class="param">nonatomic</span>,
+    <span class="param">copy</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/intf/NSString //apple_ref/doc/anysymbol/NSString" machineGenerated="true" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/name //apple_ref/occ/data/SMAchievementData/name //apple_ref/occ/data/name //apple_ref/occ/clconst/SMAchievementData/name " machineGenerated="true" --><span class="var">name</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/name;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/pointValue;   name=SMAchievementData::pointValue --><a name="//apple_ref/occ/instp/SMAchievementData/pointValue"></a>
+<h3><a name="pointValue">pointValue</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/pointValue;name=start --><!-- begin abstract --></p>
+<p>Achievement point value.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/pointValue;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/pointValue;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../../SMIdentityManager_h/index.html#//apple_ref/c/tdef/NSUInteger" logicalPath="//apple_ref/occ/cl/NSUInteger //apple_ref/occ/tdef/NSUInteger" target="_top"><span class="type">NSUInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/pointValue //apple_ref/occ/data/SMAchievementData/pointValue //apple_ref/occ/data/pointValue //apple_ref/occ/clconst/SMAchievementData/pointValue " machineGenerated="true" --><span class="var">pointValue</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/pointValue;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/timesEarned;   name=SMAchievementData::timesEarned --><a name="//apple_ref/occ/instp/SMAchievementData/timesEarned"></a>
+<h3><a name="timesEarned">timesEarned</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/timesEarned;name=start --><!-- begin abstract --></p>
+<p>Amount of times the achievement has been earned by the user.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/timesEarned;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/timesEarned;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../../SMIdentityManager_h/index.html#//apple_ref/c/tdef/NSUInteger" logicalPath="//apple_ref/occ/cl/NSUInteger //apple_ref/occ/tdef/NSUInteger" target="_top"><span class="type">NSUInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/timesEarned //apple_ref/occ/data/SMAchievementData/timesEarned //apple_ref/occ/data/timesEarned //apple_ref/occ/clconst/SMAchievementData/timesEarned " machineGenerated="true" --><span class="var">timesEarned</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/timesEarned;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=instp;  uid=//apple_ref/occ/instp/SMAchievementData/unclaimedCount;   name=SMAchievementData::unclaimedCount --><a name="//apple_ref/occ/instp/SMAchievementData/unclaimedCount"></a>
+<h3><a name="unclaimedCount">unclaimedCount</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/unclaimedCount;name=start --><!-- begin abstract --></p>
+<p>Current amount of this achievement the user has earned, but not yet claimed.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/SMAchievementData/unclaimedCount;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/unclaimedCount;name=start -->@property(<span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <a machinegenerated="true" href="../../../SMTransaction_h/index.html#//apple_ref/c/tdef/NSInteger" logicalPath="//apple_ref/occ/cl/NSInteger //apple_ref/occ/tdef/NSInteger" target="_top"><span class="type">NSInteger</span></a> <!-- a logicalPath="//apple_ref/occ/econst/unclaimedCount //apple_ref/occ/data/SMAchievementData/unclaimedCount //apple_ref/occ/data/unclaimedCount //apple_ref/occ/clconst/SMAchievementData/unclaimedCount " machineGenerated="true" --><span class="var">unclaimedCount</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/instp/SMAchievementData/unclaimedCount;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<!-- start of footer -->
+
+<!-- end of footer -->
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_copyright">&copy; 2017 SessionM, Inc. Patents pending. </p>
+<p class="hd_timestamp">Last Updated: 12/12/2017
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

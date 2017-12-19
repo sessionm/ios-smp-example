@@ -34,6 +34,12 @@ typedef NS_ENUM(NSUInteger, SMGenericRequestMethodType) {
 @class SMGenericRequest;
 
 /*!
+ @typedef ErrorMessageMaker
+ @abstract Block type for @link errorMessageMaker @/link, which should return a human-readable error message based on the given request and error response.
+ */
+typedef NSString * _Nonnull (^ErrorMessageMaker)(SMGenericRequest *request, NSDictionary *error);
+
+/*!
  @class SMGenericRequest
  @abstract Defines the data associated with a generic SessionM Platform HTTP request.
  @discussion The following tokens can be used for formatting:
@@ -90,6 +96,13 @@ typedef NS_ENUM(NSUInteger, SMGenericRequestMethodType) {
  @abstract Dictionary representation of data that is kept through the entire request/response cycle.
  */
 @property(nonatomic, strong, readonly) NSDictionary<NSString *, NSObject *> *keepAround;
+
+/*!
+ @property errorMessageMaker
+ @abstract Can be used to provide a custom error message for the @link //apple_ref/occ/cl/SMError @/link object returned in the <code>completionHandler</code> parameter for the @link //apple_ref/occ/instm/SMGenericRequestManager/sendRequest:completionHandler: @/link method.
+ @discussion This block will only be executed if an error is returned in the request response.
+ */
+@property(nullable, nonatomic, copy, readonly) ErrorMessageMaker errorMessageMaker;
 
 @end
 

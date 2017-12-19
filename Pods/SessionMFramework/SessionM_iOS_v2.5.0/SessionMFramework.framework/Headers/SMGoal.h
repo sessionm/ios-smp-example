@@ -29,6 +29,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong, readonly) NSString *type;
 /*!
+ @property points
+ @abstract Points rewarded from goal.
+ */
+@property(nonatomic, assign, readonly) NSInteger points;
+/*!
+ @property earnCount
+ @abstract Counts earned for goal.
+ */
+@property(nonatomic, assign, readonly) NSInteger earnCount;
+/*!
  @property isCompleted
  @abstract Indicates whether the goal has been completed by the user.
  */
