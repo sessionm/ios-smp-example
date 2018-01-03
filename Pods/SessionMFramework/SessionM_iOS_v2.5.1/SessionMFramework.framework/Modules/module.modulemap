@@ -1,0 +1,6 @@
+framework module SessionMFramework {
+  umbrella header "SessionMFramework.h"
+
+  export *
+  module * { export * }
+}
