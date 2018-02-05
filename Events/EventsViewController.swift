@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func postEvent(_ sender: UIButton) {
         if let eventName = eventName.text {
-            if ((eventName.characters.count) > 0) {
+            if eventName.count > 0 {
                 let itemBuilder = SMActivityEventItemBuilder();
                 let builder = SMActivityEventBuilder(eventName: eventName)
                 builder.addItem(from: itemBuilder)
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
     @IBAction func quickPostEvent(_ sender: UIButton) {
         if let eventName = eventName.text {
-            if ((eventName.characters.count) > 0) {
+            if eventName.count > 0 {
                 eventsManager.postEvent(SMSimpleEventBuilder(eventName: eventName).build(), completionHandler: { (response: SMEventPostedResponse?, error: SMError?) in
                     if let err = error {
                         let vc = UIAlertController(title: "Error Posting", message: "\(err.message)", preferredStyle: .alert);

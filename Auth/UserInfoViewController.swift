@@ -18,7 +18,7 @@ class UserInfoViewController: UIViewController {
 
         if let user = userManager.currentUser {
             let info = NSMutableAttributedString(string: "")
-            let sortedUser = user.asDictionary().sorted(by: { ( kv1: (key: String, value: NSObject), kv2: (key: String, value: NSObject) ) -> Bool in
+            let sortedUser = user.asDictionary().sorted(by: { ( kv1: (key: String, value: Any), kv2: (key: String, value: Any) ) -> Bool in
                 return kv1.key < (kv2.key)
             })
             for (key, value) in sortedUser {

@@ -78,7 +78,7 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
         if let c = cell, let header = c.header, let subheader = c.subheader, let details = c.details, let icon = c.icon {
             header.text = message.header
             subheader.text = message.subheader
-            details.text = message.descriptionText
+            details.text = message.details
 
             if let img = message.imageURL {
                 Util.loadFrom(img, callback: { (image) in

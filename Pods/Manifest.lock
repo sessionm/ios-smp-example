@@ -1,20 +1,20 @@
 PODS:
   - CCHMapClusterController (1.7.0)
-  - SessionMFramework (2.5.1):
-    - SessionMFramework/Core (= 2.5.1)
-    - SessionMFramework/WebAuth (= 2.5.1)
-  - SessionMFramework/Core (2.5.1)
-  - SessionMFramework/WebAuth (2.5.1):
+  - SessionMFramework (2.5.2):
+    - SessionMFramework/Core (= 2.5.2)
+    - SessionMFramework/WebAuth (= 2.5.2)
+  - SessionMFramework/Core (2.5.2)
+  - SessionMFramework/WebAuth (2.5.2):
     - SessionMFramework/Core
 
 DEPENDENCIES:
   - CCHMapClusterController (~> 1.7.0)
-  - SessionMFramework (~> 2.5.1)
+  - SessionMFramework (~> 2.5.2)
 
 SPEC CHECKSUMS:
   CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
-  SessionMFramework: 65321e55f7d434846803d3119c61afc0162256c1
+  SessionMFramework: 75bb768b86b90bc04483e6f5f83202f65cbe984c
 
-PODFILE CHECKSUM: c0b16cb39d9450d61850538fb331292a5e62f03a
+PODFILE CHECKSUM: 56ed5dc3f512ab64a69a3236e09019f796faeaa2
 
 COCOAPODS: 1.2.0
