@@ -126,6 +126,21 @@
 		2F63E8EF1EFDA2EE00FE8B54 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F63E8EE1EFDA2EE00FE8B54 /* SMPConfig.plist */; };
 		2F6D62D21F82B40F00A75563 /* ReceiptUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6D62D11F82B40F00A75563 /* ReceiptUploadViewController.swift */; };
 		2F74F34E1E4CF30F00358870 /* GeofenceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74F34D1E4CF30F00358870 /* GeofenceAnnotation.swift */; };
+		2FA480AE2028C0A000A5FEF7 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72571F86ADFE0081D515 /* SMPConfig.plist */; };
+		2FA480AF2028C0A600A5FEF7 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72511F86ADFE0081D515 /* Offers.storyboard */; };
+		2FA480B02028C0B000A5FEF7 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
+		2FA480B12028C0B800A5FEF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB291E5F584D0083DF63 /* LaunchScreen.storyboard */; };
+		2FA480B22028C0BD00A5FEF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
+		2FA480B32028C0C600A5FEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
+		2FA480B42028C0C900A5FEF7 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
+		2FA480B52028C0CC00A5FEF7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
+		2FA480B62028C0CE00A5FEF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
+		2FA480B72028C0D100A5FEF7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */; };
+		2FA480B82028C0D400A5FEF7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EF001F8F8DA200AA2772 /* Common.swift */; };
+		2FA480B92028C0D900A5FEF7 /* RewardStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9D1F8CDB6300F5830E /* RewardStoreTableViewController.swift */; };
+		2FA480BA2028C0DB00A5FEF7 /* PurchaseAOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F7AE31F8E43E4006C79AA /* PurchaseAOfferViewController.swift */; };
+		2FA480BB2028C0DE00A5FEF7 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */; };
+		2FA480BC2028C0E100A5FEF7 /* ClaimUserOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EEFE1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift */; };
 		2FABD2791E369FCC00B1ADDF /* GeofenceLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABD2781E369FCB00B1ADDF /* GeofenceLaunchViewController.swift */; };
 		2FACF9631EAE7FCC009721D6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF9621EAE7FCC009721D6 /* UserInfoViewController.swift */; };
 		2FF4F25E1EAE4E5600CEB7E5 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF4F25C1EAE4E5600CEB7E5 /* Auth.storyboard */; };
@@ -142,10 +157,6 @@
 		52DEC73611213C946EDFBC5C /* Pods_Receipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5D04E16A1D7F8EF3A10BDE /* Pods_Receipts.framework */; };
 		56E9218B0EBB1FC84DDD2A93 /* Pods_Geofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48F11EF8113B462AC42DA /* Pods_Geofence.framework */; };
 		66AFED44CD18683BD13604D1 /* Pods_WebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CF5C119916B848A219164B /* Pods_WebView.framework */; };
-		698CE8BD290FBAFFF51412B3 /* Pods_Offers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCDF8B500CFF78588657DCA /* Pods_Offers.framework */; };
-		6B27DF9B1F86BDBA00F5830E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */; };
-		6B27DF9E1F8CDB6300F5830E /* RewardStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27DF9D1F8CDB6300F5830E /* RewardStoreTableViewController.swift */; };
-		6B6F7AE41F8E43E4006C79AA /* PurchaseAOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F7AE31F8E43E4006C79AA /* PurchaseAOfferViewController.swift */; };
 		6B7044411E23F14F00018C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7044471E23F19A00018C7B /* CampaignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7044451E23F19A00018C7B /* CampaignsTableViewController.swift */; };
 		6B7AF6471FBCD8FA005175A7 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
@@ -160,16 +171,6 @@
 		6B7AF6741FBCD93F005175A7 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AF6681FBCD917005175A7 /* EventsViewController.swift */; };
 		6B7AF6761FBCD945005175A7 /* PurchaseEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AF66A1FBCD917005175A7 /* PurchaseEventViewController.swift */; };
 		6B7AF6771FBCD94A005175A7 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7AF66B1FBCD917005175A7 /* SMPConfig.plist */; };
-		6B7B723D1F86AD1E0081D515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
-		6B7B72441F86AD1E0081D515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB291E5F584D0083DF63 /* LaunchScreen.storyboard */; };
-		6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C46961E24275A003FE4AA /* Assets.xcassets */; };
-		6B7B72481F86AD1E0081D515 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59BB2B1E5F584D0083DF63 /* Login.xib */; };
-		6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72511F86ADFE0081D515 /* Offers.storyboard */; };
-		6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B72571F86ADFE0081D515 /* SMPConfig.plist */; };
-		6B7B72621F86B0C60081D515 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B72541F86ADFE0081D515 /* OffersTableViewController.swift */; };
-		6B7B72641F86B0FC0081D515 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
-		6B7B72651F86B3CB0081D515 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2A1E5F584D0083DF63 /* LaunchViewController.swift */; };
-		6B7B72661F86B3D30081D515 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		6B7D48771F2A059C00E6CE08 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2D1E5F584D0083DF63 /* Util.swift */; };
 		6B7D48781F2A059C00E6CE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6B7D48791F2A059C00E6CE08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59BB2C1E5F584D0083DF63 /* LoginViewController.swift */; };
@@ -182,8 +183,6 @@
 		6BC0FEBF1E24103D009C8D07 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0FEB81E240FD8009C8D07 /* TransactionsTableViewController.swift */; };
 		6BC0FEC01E24103D009C8D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70443F1E23F12300018C7B /* AppDelegate.swift */; };
 		6BC0FED11E24106A009C8D07 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC0FEBB1E241024009C8D07 /* Transactions.storyboard */; };
-		6BC3EEFF1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EEFE1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift */; };
-		6BC3EF011F8F8DA200AA2772 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EF001F8F8DA200AA2772 /* Common.swift */; };
 		6BFD6EBB1F2A0AC100411FC0 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486A1F2A057A00E6CE08 /* WebView.storyboard */; };
 		6BFD6EBC1F2A0BA200411FC0 /* SMPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D486D1F2A057A00E6CE08 /* SMPConfig.plist */; };
 		6BFD6EBD1F2A0C3000411FC0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D486E1F2A057A00E6CE08 /* WebView.swift */; };
@@ -194,12 +193,12 @@
 		A48A57B5A522717B2EED73C9 /* Pods_Referrals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E81A7FA531E78C150DDF213 /* Pods_Referrals.framework */; };
 		A9934351F117CA412D657A1D /* Pods_Content.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91677EC92BD1A351650CDEC /* Pods_Content.framework */; };
 		AB8EBA9AC8410E9EC838BB6D /* Pods_Transactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAACA63A0FA23AF5D6BB112 /* Pods_Transactions.framework */; };
-		BF8D9B307FD0ADAE27973CB0 /* Pods_Offers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48925AEEDFFB0FC354E8351 /* Pods_Offers.framework */; };
 		CFF3E5732D3B68C41BC0C19E /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3033B0972ECD37344A474F /* Pods_Events.framework */; };
 		D633914823ECE24D269E0688 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF1DED81EAE59568D318D36 /* Pods_Auth.framework */; };
 		E62DD24A6D81B69009C2C690 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF1DED81EAE59568D318D36 /* Pods_Auth.framework */; };
 		F5DFAB9466C88793DC0ED56A /* Pods_LoyaltyCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4783B2F8A7BE67C91469FBD /* Pods_LoyaltyCards.framework */; };
 		F9D5834686FDAC9EAB73433A /* Pods_Campaigns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B80AFE327B2891328ED7A2 /* Pods_Campaigns.framework */; };
+		FB0C62A69172F60F5FFB3F35 /* Pods_Offers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48925AEEDFFB0FC354E8351 /* Pods_Offers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -550,6 +549,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FAB532C2028C06400303944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C62A69172F60F5FFB3F35 /* Pods_Offers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF4F2531EAE4E5600CEB7E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,15 +580,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF3E5732D3B68C41BC0C19E /* Pods_Events.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B7B72411F86AD1E0081D515 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				698CE8BD290FBAFFF51412B3 /* Pods_Offers.framework in Frameworks */,
-				BF8D9B307FD0ADAE27973CB0 /* Pods_Offers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,13 +894,13 @@
 		6B7B72501F86ADFE0081D515 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
-				6B7B724F1F86AD1E0081D515 /* Info.plist */,
-				6B7B72511F86ADFE0081D515 /* Offers.storyboard */,
 				6B27DF9A1F86BDBA00F5830E /* PageViewController.swift */,
+				6BC3EF001F8F8DA200AA2772 /* Common.swift */,
 				6B6F7AE51F8E4A7B006C79AA /* Reward Store */,
 				6B6F7AE61F8E4A86006C79AA /* My Offers */,
+				6B7B72511F86ADFE0081D515 /* Offers.storyboard */,
+				6B7B724F1F86AD1E0081D515 /* Info.plist */,
 				6B7B72571F86ADFE0081D515 /* SMPConfig.plist */,
-				6BC3EF001F8F8DA200AA2772 /* Common.swift */,
 			);
 			path = Offers;
 			sourceTree = "<group>";
@@ -1193,17 +1191,11 @@
 			buildConfigurationList = 6B7B724B1F86AD1E0081D515 /* Build configuration list for PBXNativeTarget "Offers" */;
 			buildPhases = (
 				CB663E5B7E222A58CEC718BB /* [CP] Check Pods Manifest.lock */,
-				6B7B72371F86AD1E0081D515 /* Sources */,
-				6B7B72411F86AD1E0081D515 /* Frameworks */,
-				6B7B72431F86AD1E0081D515 /* Resources */,
+				2FAB532B2028C05E00303944 /* Sources */,
+				2FAB532C2028C06400303944 /* Frameworks */,
+				2FAB532D2028C06A00303944 /* Resources */,
 				5DE825C4EF47154DF1FE8BA0 /* [CP] Embed Pods Frameworks */,
 				9037C38D96F1AE0BBD120BB0 /* [CP] Copy Pods Resources */,
-				0D952F5531E183DCBCB5D37D /* [CP] Check Pods Manifest.lock */,
-				6B7B72371F86AD1E0081D515 /* Sources */,
-				6B7B72411F86AD1E0081D515 /* Frameworks */,
-				6B7B72431F86AD1E0081D515 /* Resources */,
-				ED748BBEBE00DE0861E74F75 /* [CP] Embed Pods Frameworks */,
-				8261A90B5244C6E7DDB9C88E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1329,6 +1321,7 @@
 					};
 					2FF4F2551EAE4E5600CEB7E5 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = D22J3WL3QZ;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -1336,14 +1329,14 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0910;
 					};
-					6B7D48731F2A059C00E6CE08 = {
-						LastSwiftMigration = 0910;
-					};
 					6B7AF6431FBCD8FA005175A7 = {
 						DevelopmentTeam = D22J3WL3QZ;
 					};
 					6B7B72351F86AD1E0081D515 = {
 						DevelopmentTeam = D22J3WL3QZ;
+					};
+					6B7D48731F2A059C00E6CE08 = {
+						LastSwiftMigration = 0910;
 					};
 					6BC0FEBC1E24103D009C8D07 = {
 						LastSwiftMigration = 0910;
@@ -1492,6 +1485,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FAB532D2028C06A00303944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA480AE2028C0A000A5FEF7 /* SMPConfig.plist in Resources */,
+				2FA480B12028C0B800A5FEF7 /* LaunchScreen.storyboard in Resources */,
+				2FA480AF2028C0A600A5FEF7 /* Offers.storyboard in Resources */,
+				2FA480B02028C0B000A5FEF7 /* Login.xib in Resources */,
+				2FA480B22028C0BD00A5FEF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF4F2541EAE4E5600CEB7E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1525,18 +1530,6 @@
 				6B7AF6721FBCD935005175A7 /* Events.storyboard in Resources */,
 				6B7AF6771FBCD94A005175A7 /* SMPConfig.plist in Resources */,
 				6B7AF6591FBCD8FA005175A7 /* Login.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B7B72431F86AD1E0081D515 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B7B72441F86AD1E0081D515 /* LaunchScreen.storyboard in Resources */,
-				6B7B72461F86AD1E0081D515 /* Assets.xcassets in Resources */,
-				6B7B725E1F86B0AC0081D515 /* Offers.storyboard in Resources */,
-				6B7B72601F86B0B90081D515 /* SMPConfig.plist in Resources */,
-				6B7B72481F86AD1E0081D515 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,24 +1593,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0D952F5531E183DCBCB5D37D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Offers-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		11042C67F0A868A065727EB6 /* [CP] Embed Pods Frameworks */ = {
@@ -1962,21 +1937,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8261A90B5244C6E7DDB9C88E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87CE2D93B6A5CFCD9DEA0BB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -2329,26 +2289,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED748BBEBE00DE0861E74F75 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.6/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.4.0.6/SessionMWebAuth.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EF6D6A77DE0C0CFA5254DD6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2540,6 +2480,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FAB532B2028C05E00303944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA480B62028C0CE00A5FEF7 /* LoginViewController.swift in Sources */,
+				2FA480B72028C0D100A5FEF7 /* PageViewController.swift in Sources */,
+				2FA480BA2028C0DB00A5FEF7 /* PurchaseAOfferViewController.swift in Sources */,
+				2FA480BC2028C0E100A5FEF7 /* ClaimUserOfferViewController.swift in Sources */,
+				2FA480B92028C0D900A5FEF7 /* RewardStoreTableViewController.swift in Sources */,
+				2FA480B32028C0C600A5FEF7 /* AppDelegate.swift in Sources */,
+				2FA480BB2028C0DE00A5FEF7 /* OffersTableViewController.swift in Sources */,
+				2FA480B52028C0CC00A5FEF7 /* Util.swift in Sources */,
+				2FA480B82028C0D400A5FEF7 /* Common.swift in Sources */,
+				2FA480B42028C0C900A5FEF7 /* LaunchViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FF4F2521EAE4E5600CEB7E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2579,23 +2536,6 @@
 				6B7AF64D1FBCD8FA005175A7 /* Util.swift in Sources */,
 				6B7AF6731FBCD93D005175A7 /* BehaviorsList.swift in Sources */,
 				6B7AF64F1FBCD8FA005175A7 /* LoginViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B7B72371F86AD1E0081D515 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B6F7AE41F8E43E4006C79AA /* PurchaseAOfferViewController.swift in Sources */,
-				6B7B72651F86B3CB0081D515 /* LaunchViewController.swift in Sources */,
-				6B7B723D1F86AD1E0081D515 /* AppDelegate.swift in Sources */,
-				6B27DF9E1F8CDB6300F5830E /* RewardStoreTableViewController.swift in Sources */,
-				6BC3EEFF1F8E9FE500AA2772 /* ClaimUserOfferViewController.swift in Sources */,
-				6B7B72621F86B0C60081D515 /* OffersTableViewController.swift in Sources */,
-				6B27DF9B1F86BDBA00F5830E /* PageViewController.swift in Sources */,
-				6B7B72661F86B3D30081D515 /* Util.swift in Sources */,
-				6BC3EF011F8F8DA200AA2772 /* Common.swift in Sources */,
-				6B7B72641F86B0FC0081D515 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2750,7 +2690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Rewards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2772,7 +2712,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Rewards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2796,7 +2736,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -2818,7 +2758,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -2840,7 +2780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Inbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -2861,7 +2801,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Inbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -2883,7 +2823,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -2904,7 +2844,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -2926,7 +2866,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Referrals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -2947,7 +2887,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Referrals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -2969,7 +2909,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -2990,7 +2930,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3012,7 +2952,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Receipts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3033,7 +2973,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Receipts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3055,7 +2995,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.LoyaltyCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3076,7 +3016,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.LoyaltyCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3103,7 +3043,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3129,7 +3069,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3153,7 +3093,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3176,7 +3116,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3301,7 +3241,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Campaigns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3324,7 +3264,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Campaigns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3334,7 +3274,7 @@
 			baseConfigurationReference = 281D51436219B370370B555E /* Pods-Events.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = D22J3WL3QZ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3357,7 +3297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Events;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -3366,7 +3306,7 @@
 			baseConfigurationReference = D3075D47A55071C3AB49041C /* Pods-Events.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = D22J3WL3QZ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3388,7 +3328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Events;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -3397,7 +3337,7 @@
 			baseConfigurationReference = 6F9FDE04D781E765494C9148 /* Pods-Offers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = D22J3WL3QZ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3420,7 +3360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Offers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -3429,7 +3369,7 @@
 			baseConfigurationReference = C33FF91C2CD41DBF536F6C75 /* Pods-Offers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = D22J3WL3QZ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3451,7 +3391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Offers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -3473,7 +3413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.WebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3496,7 +3436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.WebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -3519,7 +3459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Transactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -3542,7 +3482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sessionm.enterprise.Transactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

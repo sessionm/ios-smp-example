@@ -41,7 +41,7 @@ class RewardStoreTableViewController: UITableViewController {
         performSelector(onMainThread: #selector(updateToolbar), with: nil, waitUntilDone: false)
     }
 
-    func updateToolbar() {
+    @objc func updateToolbar() {
         if let controller = navigationController {
             controller.navigationBar.topItem!.title = "Rewards Store"
             Common.showUserInToolbar(nav: controller)

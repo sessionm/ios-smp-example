@@ -68,7 +68,7 @@ class ClaimUserOfferViewController: UIViewController {
     }
 
     var ticks = 60;
-    func onTick(timer: Timer) {
+    @objc func onTick(timer: Timer) {
         if (ticks > 0) {
             countDown.text = ("in \(ticks) seconds");
             ticks -= 1;
