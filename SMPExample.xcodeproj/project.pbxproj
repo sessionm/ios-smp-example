@@ -881,12 +881,12 @@
 		6B7AF6641FBCD917005175A7 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				6B7AF6651FBCD917005175A7 /* Events.storyboard */,
 				6B7AF6671FBCD917005175A7 /* BehaviorsList.swift */,
 				6B7AF6681FBCD917005175A7 /* EventsViewController.swift */,
-				6B7AF6691FBCD917005175A7 /* Info.plist */,
 				6B7AF66A1FBCD917005175A7 /* PurchaseEventViewController.swift */,
+				6B7AF6651FBCD917005175A7 /* Events.storyboard */,
 				6B7AF66B1FBCD917005175A7 /* SMPConfig.plist */,
+				6B7AF6691FBCD917005175A7 /* Info.plist */,
 			);
 			path = Events;
 			sourceTree = SOURCE_ROOT;

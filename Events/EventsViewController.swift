@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Events
 //
-//  Copyright © 2017 SessionM. All rights reserved.
+//  Copyright © 2018 SessionM. All rights reserved.
 //
 
 import UIKit
