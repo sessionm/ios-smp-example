@@ -24,15 +24,70 @@ For SessionM Platform SDK documentation, see https://mmc.sessionm.com/docs/mmc-s
 
 LICENSE: MIT
 
+<a name="ToC"/>
+
+## Table of Contents
+
+[Authentication](#Authentication)
+
+[Campaigns](#Campaigns)
+
+[Contents](#Contents)
+
+[Geofence](#Geofence)
+
+[Inbox](#Inbox)
+
+[Loyalty Cards](#Loyalty_Cards)
+
+[Places](#Places)
+
+[Push Notification](#Push_Notification)
+
+[Local Notification Testing](#Local_Notification_Testing)
+
+[Remote Notification Testing](#Remote_Notification_Testing)
+
+[Receipts](#Receipts)
+
+[Referrals](#Referrals)
+
+[Rewards](#Rewards)
+
+[Transactions](#Transactions)
+
+<a name="Authentication"/>
+
 ## Authentication
 
 This app showcases how to use the SessionM SDK to authenticate a user in the SessionM Platform.
 
-API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity4
+API docs: https://mmc.sessionm.com/docs/mmc-sdk/#identity-api
 
 On the "Choose Authentication Type" view, you can choose to authenticate a user with a SessionM Platform email and password, with a SessionM Platform authentication token, or with credentials from a third-party authentication provider such as Facebook or Google. Custom OAuth credentials can be set in the Auth/Info.plist file by using the 'SessionMOAuthClientID', 'SessionMOAuthAuthorizationEndpoint', 'SessionMOAuthTokenEndpoint' and 'SessionMOAuthRedirectURI' keys.
 
 After selecting an authentication type, you can enter credentials to either authenticate an existing user or create a new one. After the user has been authenticated, you can see details about the user's account on the "User Info" view.
+
+- Web Authorization
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_web_login.gif"
+alt="AuthWebLogin Anima" width="324" height="576"/>
+
+- Email/Password Authorization
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_email_login.gif"
+alt="AuthEmailLogin Anima" width="324" height="576"/>
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/auth_email_sign_up.gif"
+alt="AuthEmailSignup Anima" width="324" height="576"/>
+
+
+[Back to top](#ToC)
+
+<a name="Campaigns"/>
 
 ## Campaigns
 
@@ -40,13 +95,27 @@ This app showcases how to use the SessionM SDK to fetch promotional campaign mes
 
 API docs: https://mmc.sessionm.com/docs/mmc-sdk/#campaigns
 
+By default it uses the anonymous user. You can click on “Log in with sample user” to login the default sample user to see the customized activity feed.
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_switch_user.gif" alt="CampaignsSwitchUser Anima" width="324" height="576" />
+
 A message tile can be clicked to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
-There are three different actions to trigger different types of feed message: Open ad, deep link and external link. Click on any of the tiles gives you different actions:
+There are two different actions to trigger different types of feed message: deep link and external link. Click on any of the tiles gives you different actions:
 
-- Open Ad: Opens a pre-set Ad in the app’s portal.
 - Deep Link: Opens a dialog with a sample deep link schema
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_deep_link.gif" alr="CampaignsDeepLink Anima" width="324" height="576" />
+
 - External Link: Opens native browser with sample URL
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_external_link.gif"
+alt="CampaignsExternalLink Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Contents"/>
 
 ## Contents
 
@@ -54,11 +123,15 @@ This app showcases how to use the SessionM SDK to fetch promotional content data
 
 A content tile can be clicked to see metadata and start video playback (if applicable).
 
+[Back to top](#ToC)
+
+<a name="Geofence"/>
+
 ## Geofence
 
 This app showcases how to use the SessionM SDK to track the user's location and monitor regions that the user enters and exits.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#geofencing
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#geofences
 
 The "Map" tab contains a view of the user's immediate surroundings, and can contain three colored pin annotations:
 
@@ -71,33 +144,67 @@ Note: geofence and event trigger annotations in the same location will be cluste
 The "Triggered Events" tab contains a more detailed history of event triggers.
 When running the Geofence app through Xcode, the sessionm.gpx file is used to walk a simulated path through some of the geofences in the SessionM demo environment. To use your own GPX file, navigate in Xcode to "Debug" -> "Simulate Location" -> "Add GPX File to Workspace".
 
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/geofence_enter_exit_anima.gif"
+alt="GeofenceEnter Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Inbox"/>
+
 ## Inbox
 
 This app showcases how to use the SessionM SDK to create UI for a user inbox.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#inbox-api
 
 The main view shows a list of messages in the user's inbox, with titles and creation dates for each message. Unread messages are denoted with bold text and a white background, while read messages have regular text and a gray background.
 
 Clicking on a message will show its body and give options for marking the message as "new" or "read", as well as deleting the message.
 
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/inbox_update_state.gif"
+alt="InboxUpdateState Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Loyalty_Cards"/>
+
 ## Loyalty Cards
 
 This app showcases how to use the SessionM SDK to link and unlink loyalty cards to a user's account.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#loyalty-card-linking
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#loyalty-card-linking-api
 
 The main view shows a list of loyalty cards that have been linked to the user's account. Clicking on a card will give you the option to unlink the card from the user's account, after which the card will be removed from the list.
 
 Clicking on the "+" symbol will give you the option to link a new card. Use the search bar to search for a retailer whose loyalty card you would like to link. After selecting the retailer, enter the card number and press the "Link" button to finish linking the card.
 
+[Back to top](#ToC)
+
+<a name="Places"/>
+
 ## Places
 
 This app showcases how to use the SessionM SDK to allow users to earn points and promotional opportunities by checking in to sponsored venues.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#places-api
 
-The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue. Clicking on a venue will attempt to check the user into that venue.
+The main view shows a list of sponsored venues available for check ins, along with how far the user is from each venue.
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/places_fetch_venues.gif"
+alt="PlacesFetch Anima" width="324" height="576"/>
+
+Clicking on a venue will attempt to check the user into that venue. If the venue is checkable, you’d check in to this venue successfully, otherwise you’ll see a toast describing the error message.
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/places_checkin.gif"
+alt="PlacesCheckin Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Push_Notification"/>
 
 ## Push Notification
 
@@ -107,11 +214,29 @@ API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#push-notifications
 
 Note: if you would like to simply test the relevant APIs without setting up your own SessionM Platform app and push messaging campaigns, follow the steps under "Local Notification Testing". To perform an end-to-end test of the SessionM Platform's Push Messaging feature, follow the steps under "Remote Notification Testing".
 
+<a name="Local_Notification_Testing"/>
+
 ### Local Notification Testing
 
 - Open the app and enable the "Test With Local Notifications" switch.
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
+
+- Deep Link: Opens a dialog with a sample deep link schema
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link_local.gif" alt="GCMDeepLink Anima" width="324" height="576" />
+
+- External Link: Opens native browser with sample URL
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_external_link_local.gif" alt="GCMExternalLink Anima" width="324" height="576" />
+
+- Open Ad: Opens a pre-set Ad in the app’s portal.
+
+<img src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_open_ad_local.gif" alt="GCMExternalLink Anima" width="324" height="576" />
+
+[Back to top](#ToC)
+
+<a name="Remote_Notification_Testing"/>
 
 ### Remote Notification Testing
 
@@ -139,40 +264,91 @@ The following steps should be completed in Xcode:
 - Click on one of the test buttons.
 - Wait for the notification popup to appear, then click on the popup to showcase its associated action (e.g. presenting an ad or opening a web page in Safari).
 
+- Deep Link: Opens a dialog with a sample deep link schema
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_deep_link.gif"
+alt="GCMDeepLink Anima" width="324" height="576"/>
+
+- External Link: Opens native browser with sample URL
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/gcm_external_link.gif"
+alt="GCMExternalLink Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Receipts"/>
+
 ## Receipts
 
 This app showcases how to use the SessionM SDK to allow users to upload receipt images.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipt
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#receipts-api
 
 The main view shows a list of receipts that have already been uploaded by the user. Clicking on a receipt tile will show the images that were included in that upload.
 
 Clicking on the "+" symbol will give you the option to upload images for a new receipt. Follow the onscreen instructions to take a new photo or upload an existing image from your photo library.
 
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/receipts_upload.gif"
+alt="ReceiptsUpload Anima" width="324" height="576"/>
+
+Different status receipts
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/receipts_status.gif"
+alt="ReceiptsStatus Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Referrals"/>
+
 ## Referrals
 
 This app showcases how to use the SessionM SDK to allow users to send an email to refer other potential users to sign up for an account.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#referrals
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#referrals-api
 
 The main view shows a list of referrals that have already been sent by the user. Clicking on a referral tile will show more details about the referral.
 
 Clicking on the "+" symbol will give you the option to send a new referral. Fill out the presented form (note: only email is required) and click "Submit" to finish sending the referral.
 
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/referrals_create.gif"
+alt="ReferralsCreateRandom Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Rewards"/>
+
 ## Rewards
 
 This app showcases how to use the SessionM SDK to allow users to spend loyalty points to purchase rewards.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#rewards-api
 
 The "Offers" tab shows a list of offers that are available for purchase. Click on an offer to see more details and make a purchase. If the offer is gated by a skills test (e.g. for a sweepstakes entry), then an alert will appear with a random question. Enter the correct answer to complete the purchase.
 The "Orders" tab shows a list of the user's order transactions and their approval statuses (e.g. "pending", "approved", "rejected").
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/rewards_and_orders_list.gif"
+alt="RewardsList Anima" width="324" height="576"/>
+
+<img
+src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/rewards_redeem.gif"
+alt="RewardsRedeem Anima" width="324" height="576"/>
+
+[Back to top](#ToC)
+
+<a name="Transactions"/>
 
 ## Transactions
 
 This app showcases how to use the SessionM SDK to view a user's loyalty points transaction history.
 
-API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions11
+API Docs: https://mmc.sessionm.com/docs/mmc-sdk/#transactions-api
 
 The main view shows a list of loyalty points transactions made by the user, and the resulting points balance after each transaction. "Receipt" and "Loyalty Card" transaction tiles can be clicked on to present an alert with more details on the transaction.
 
+[Back to top](#ToC)

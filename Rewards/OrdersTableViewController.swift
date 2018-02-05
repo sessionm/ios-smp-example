@@ -74,7 +74,7 @@ class OrdersTableViewController: UITableViewController, SessionMDelegate {
             c.quantity.text = "\(order.quantity)"
             c.points.text = "\(order.points) pts"
             c.status.text = order.stringFromCurrentStatus()
-            c.details.text = order.descriptionText
+            c.details.text = order.details
             c.createdAt.text = order.createdTime
             c.tag = indexPath.row
 

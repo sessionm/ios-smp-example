@@ -44,7 +44,7 @@ class ContentDetailsViewController: UIViewController {
             if let extID = c.externalID {
                 externalID.text = externalID.text?.appending(extID)
             }
-            if let descr = c.descriptionText {
+            if let descr = c.details {
                 details.text = details.text?.appending(descr)
             }
             if let updTime = c.updatedTime {
