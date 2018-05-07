@@ -1,0 +1,6 @@
+framework module SessionMReceiptsKit {
+  umbrella header "SessionMReceiptsKit.h"
+
+  export *
+  module * { export * }
+}

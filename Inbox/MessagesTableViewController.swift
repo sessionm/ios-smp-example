@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMInboxKit
 import UIKit
 
 class MessageCell: UITableViewCell {
@@ -12,9 +13,8 @@ class MessageCell: UITableViewCell {
     @IBOutlet var createdTime: UILabel!
 }
 
-class MessagesTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private let inboxManager = SessionM.sharedInstance().inboxManager
+class MessagesTableViewController: UITableViewController {
+    private let inboxManager = SMInboxManager.instance()
     private var messages: [SMInboxMessage] = []
     private var selectedMessages: [SMInboxMessage] = []
 
@@ -24,8 +24,6 @@ class MessagesTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchMessages()
     }
 
@@ -97,11 +95,11 @@ class MessagesTableViewController: UITableViewController, SessionMDelegate {
         inboxManager.updateMessage(destination.message!, toState: .read, completionHandler: { (messages: [SMInboxMessage]?, error: SMError?) in })
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

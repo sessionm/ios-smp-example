@@ -1,0 +1,6 @@
+framework module SessionMRewardsKit {
+  umbrella header "SessionMRewardsKit.h"
+
+  export *
+  module * { export * }
+}

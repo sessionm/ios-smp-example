@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMEventsKit
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,9 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var eventName: UITextField!
     @IBOutlet weak var behaviorsList: UITextView!
 
-    var showing : BehaviorsList.OrderShowing = .behavior
+    var showing: BehaviorsList.OrderShowing = .behavior
     let eventsManager = SMEventsManager.instance()
-    var behaviors : BehaviorsList? = nil;
+    var behaviors: BehaviorsList? = nil;
 
     @IBAction func postEvent(_ sender: UIButton) {
         if let eventName = eventName.text {
@@ -71,8 +72,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        SessionM.sharedInstance().delegate = self
-
         if let usr = SMUserManager.instance().currentUser {
             user.text = usr.email;
             points.text = "\(usr.availablePoints) pts"
@@ -83,14 +82,12 @@ class ViewController: UIViewController {
         fetchBehaviors()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-        SessionM.sharedInstance().delegate = nil;
-    }
-
     @IBAction func doAuthenticate(_ sender: UIButton) {
-        SessionM.sharedInstance().logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 
     @IBOutlet weak var leftLine: UIView!
@@ -120,12 +117,3 @@ class ViewController: UIViewController {
         self.behaviorsList.text = self.behaviors?.show(showing: showing);
     }
 }
-
-extension ViewController : SessionMDelegate {
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-}
-
-
-

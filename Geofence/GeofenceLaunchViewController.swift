@@ -6,6 +6,7 @@
 //
 
 import CoreLocation
+import SessionMCoreKit
 import UIKit
 
 class GeofenceLaunchViewController: LaunchViewController, CLLocationManagerDelegate {
@@ -14,7 +15,7 @@ class GeofenceLaunchViewController: LaunchViewController, CLLocationManagerDeleg
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        if sessionM.sessionState != .startedOnline && UIApplication.shared.applicationState == .background {
+        if !SessionM.isSDKReady() && UIApplication.shared.applicationState == .background {
             presentNextController()
         }
     }
@@ -23,7 +24,7 @@ class GeofenceLaunchViewController: LaunchViewController, CLLocationManagerDeleg
         locationManager.delegate = self
 
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways {
-            if sessionM.user.isRegistered {
+            if let provider = SessionM.authenticationProvider(), provider.isAuthenticated() {
                 performSegue(withIdentifier: "Main", sender: self)
             } else {
                 LoginViewController.login(self)

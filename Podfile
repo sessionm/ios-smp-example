@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 def shared_pods
-  pod 'SessionMFramework', '~> 2.5.2'
+  pod 'SessionMSDK', '3.0.0-b2'
 end
 
 target 'Auth' do
@@ -10,10 +10,6 @@ target 'Auth' do
 end
 
 target 'Campaigns' do
-  shared_pods
-end
-
-target 'Content' do
   shared_pods
 end
 
@@ -64,4 +60,5 @@ end
 
 target 'WebView' do
   shared_pods
+  pod 'SessionMFramework'
 end

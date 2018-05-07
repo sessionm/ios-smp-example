@@ -1,0 +1,6 @@
+framework module SessionMTransactionsKit {
+  umbrella header "SessionMTransactionsKit.h"
+
+  export *
+  module * { export * }
+}

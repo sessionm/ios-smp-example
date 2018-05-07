@@ -1,0 +1,6 @@
+framework module SessionMIdentityKit {
+  umbrella header "SessionMIdentityKit.h"
+
+  export *
+  module * { export * }
+}

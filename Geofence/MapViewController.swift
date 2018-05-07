@@ -7,14 +7,15 @@
 
 import CCHMapClusterController
 import MapKit
+import SessionMGeofenceKit
+import SessionMMessagesKit
 import UIKit
 
-class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, CCHMapClusterControllerDelegate, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CCHMapClusterControllerDelegate, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet private var mapView: MKMapView!
     @IBOutlet private var annotationTableView: UITableView!
 
-    private let sessionM = SessionM.sharedInstance()
-    private let locationManager = SMLocationManager.sharedInstance()
+    private let geofenceManager = SMGeofenceManager.instance()
     private var infoClusterController: CCHMapClusterController!
     private var triggerClusterController: CCHMapClusterController!
     private var infoAnnotations: [GeofenceAnnotation] = []
@@ -29,17 +30,16 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
         triggerClusterController.cellSize = 30.0
         triggerClusterController.delegate = self
 
-        NotificationCenter.default.addObserver(self, selector: #selector(locationDidUpdate(_:)), name: NSNotification.Name(locationUpdateNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(locationDidUpdate(_:)), name: NSNotification.Name(updatedLocationNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(locationEventsDidUpdate(_:)), name: NSNotification.Name(updatedLocationEventsNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(triggeredEvent(_:)), name: NSNotification.Name(triggeredLocationEventNotification), object: nil)
-        SMLocationManager.registerGeofenceService()
+        SMGeofenceManager.registerGeofenceService()
         updateMapViewRegion()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        sessionM.delegate = self
         SMMessagesManager.instance().registerForRemoteNotifications()
 
         let clManager = CLLocationManager()
@@ -48,11 +48,11 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
     }
 
     private func updateMapViewRegion() {
-        if let location = locationManager.currentGeoLocation {
+        if let location = geofenceManager.currentLocation {
             let point = MKMapPointForCoordinate(location.coordinate)
             let region = MKCoordinateRegionMakeWithDistance(MKCoordinateForMapPoint(point), 200, 480)
             mapView.setRegion(region, animated: true)
-            NotificationCenter.default.removeObserver(self, name: NSNotification.Name(locationUpdateNotification), object: nil)
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name(updatedLocationNotification), object: nil)
         }
     }
 
@@ -211,16 +211,16 @@ class MapViewController: UIViewController, SessionMDelegate, MKMapViewDelegate, 
         return cell
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self.tabBarController!)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self.tabBarController!)
+            }
+        }
     }
 
     @IBAction private func centerMap(_ sender: UIBarButtonItem) {
-        if let location = locationManager.currentGeoLocation {
+        if let location = geofenceManager.currentLocation {
             mapView.setCenter(location.coordinate, animated: true)
         }
     }

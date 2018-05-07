@@ -1,0 +1,6 @@
+framework module SessionMReferralsKit {
+  umbrella header "SessionMReferralsKit.h"
+
+  export *
+  module * { export * }
+}

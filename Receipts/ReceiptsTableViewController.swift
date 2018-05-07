@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMReceiptsKit
 import UIKit
 
 class ReceiptCell: UITableViewCell {
@@ -14,9 +15,8 @@ class ReceiptCell: UITableViewCell {
     @IBOutlet var imageCount: UILabel!
 }
 
-class ReceiptsTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private var receiptsManager: SMReceiptsManager = SessionM.sharedInstance().receiptsManager
+class ReceiptsTableViewController: UITableViewController {
+    private var receiptsManager = SMReceiptsManager.instance()
     private var receipts: [SMReceipt] = []
 
     @IBAction private func addReceipt(_ sender: UIBarButtonItem) {
@@ -29,8 +29,6 @@ class ReceiptsTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchReceipts()
     }
 
@@ -75,10 +73,6 @@ class ReceiptsTableViewController: UITableViewController, SessionMDelegate {
         return cell!
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ReceiptImagesTableViewController
         let cell = sender as! ReceiptCell
@@ -86,6 +80,10 @@ class ReceiptsTableViewController: UITableViewController, SessionMDelegate {
     }
 
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

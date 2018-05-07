@@ -5,6 +5,9 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMLoyaltyCardsKit
+import SessionMReceiptsKit
+import SessionMTransactionsKit
 import UIKit
 
 class TransactionCell: UITableViewCell {
@@ -18,11 +21,11 @@ class TransactionCell: UITableViewCell {
     @IBOutlet var typeLabel: UILabel!
 }
 
-class TransactionsTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private let transactionsManager = SessionM.sharedInstance().transactionsManager
-    private let receiptsManager = SessionM.sharedInstance().receiptsManager
-    private let loyaltyCardsManager = SessionM.sharedInstance().loyaltyCardsManager
+class TransactionsTableViewController: UITableViewController {
+    private let transactionsManager = SMTransactionsManager.instance()
+    private let receiptsManager = SMReceiptsManager.instance()
+    private let loyaltyCardsManager = SMLoyaltyCardsManager.instance()
+
     private var recordModelID: String?
     private var transactions: [SMTransaction] = []
 
@@ -32,8 +35,6 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchTransactions()
     }
 
@@ -142,11 +143,11 @@ class TransactionsTableViewController: UITableViewController, SessionMDelegate {
         }
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

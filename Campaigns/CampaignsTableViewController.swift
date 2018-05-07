@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMCampaignsKit
 import UIKit
 
 class CampaignCell: UITableViewCell {
@@ -17,9 +18,8 @@ class CampaignCell: UITableViewCell {
     @IBOutlet var imageWidth: NSLayoutConstraint!
 }
 
-class CampaignTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private let campaignsManager: SMCampaignsManager = SessionM.sharedInstance().campaignsManager
+class CampaignTableViewController: UITableViewController {
+    private let campaignsManager = SMCampaignsManager.instance()
     private var feedMessages: [SMFeedMessage] = []
 
     @IBAction private func onRefresh(_ sender: UIRefreshControl) {
@@ -28,8 +28,6 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchMessages()
     }
 
@@ -108,11 +106,11 @@ class CampaignTableViewController: UITableViewController, SessionMDelegate {
         campaignsManager.executeAction(for: message)
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

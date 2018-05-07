@@ -8,11 +8,4 @@
 import UIKit
 
 class RewardsLaunchViewController: LaunchViewController {
-    override func presentNextController() {
-        if sessionM.user.isLoggedIn {
-            performSegue(withIdentifier: "Main", sender: self)
-        } else {
-            LoginViewController.login(self)
-        }
-    }
 }

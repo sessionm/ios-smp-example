@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMWebAuthKit
 import UIKit
 
 class WebLoginViewController: UIViewController {
@@ -21,7 +22,7 @@ class WebLoginViewController: UIViewController {
     private var rawTokenEndpoint: String?
     private var rawRedirectURI: String?
 
-    private let identityManager = SMIdentityManager.instance()
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewDidLoad() {
@@ -106,7 +107,7 @@ class WebLoginViewController: UIViewController {
     }
 
     @IBAction func openWebAuthentication(_ sender: UIButton) {
-        identityManager.startWebAuthorization(in: self) { (state: SMAuthState, error: SMError?) in
+        authProvider?.startWebAuthorization(in: self) { (state: SMAuthState, error: SMError?) in
             if let error = error {
                 Util.failed(self, message: error.message)
             }
@@ -116,7 +117,7 @@ class WebLoginViewController: UIViewController {
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.logOutUser() { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

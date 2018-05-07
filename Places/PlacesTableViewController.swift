@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMPlacesKit
 import UIKit
 
 class PlaceCell: UITableViewCell {
@@ -20,8 +21,8 @@ class PlaceCell: UITableViewCell {
     @IBOutlet var imageHeight: NSLayoutConstraint!
 }
 
-class PlacesTableViewController: UITableViewController, CLLocationManagerDelegate, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
+class PlacesTableViewController: UITableViewController, CLLocationManagerDelegate {
+    private let placesManager = SMPlacesManager.instance()
     private let locationManager = CLLocationManager()
     private var lastUpdate: TimeInterval = Date.timeIntervalSinceReferenceDate
     private var places: [SMPlace] = []
@@ -38,7 +39,6 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        sessionM.delegate = self
         if ((CLLocationManager.authorizationStatus() == .authorizedAlways) || (CLLocationManager.authorizationStatus() == .authorizedWhenInUse)) {
             if let location = locationManager.location {
                 startFetch(location)
@@ -82,7 +82,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
 
     private func startFetch(_ location: CLLocation) {
         self.refreshControl?.beginRefreshing()
-        sessionM.placesManager.fetchPlaces(near: location) { (places: [SMPlace]?, error: SMError?) in
+        placesManager.fetchPlaces(near: location) { (places: [SMPlace]?, error: SMError?) in
             if let err = error {
                 Util.failed(self, message: err.message)
             } else {
@@ -149,7 +149,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
 
         checkinAlert = UIAlertController(title: "Check in", message: msg, preferredStyle: .alert)
         present(checkinAlert, animated: true) {
-            self.sessionM.placesManager.checkIntoPlace(place, completionHandler: { (checkin: SMPlaceCheckinResult?, error: SMError?) in
+            self.placesManager.checkIntoPlace(place, completionHandler: { (checkin: SMPlaceCheckinResult?, error: SMError?) in
                 if let err = error {
                     self.checkinAlert.dismiss(animated: true) {
                         Util.failed(self, message: err.message)
@@ -170,11 +170,11 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         }
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

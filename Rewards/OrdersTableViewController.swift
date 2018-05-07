@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMRewardsKit
 import UIKit
 
 class OrderCell: UITableViewCell {
@@ -18,9 +19,8 @@ class OrderCell: UITableViewCell {
     @IBOutlet var createdAt: UILabel!
 }
 
-class OrdersTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private var rewardsManager: SMRewardsManager = SessionM.sharedInstance().rewardsManager
+class OrdersTableViewController: UITableViewController {
+    private var rewardsManager = SMRewardsManager.instance()
     private var orders: [SMOrder] = []
 
     @IBAction private func onRefresh(_ sender: UIRefreshControl) {
@@ -29,8 +29,6 @@ class OrdersTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchOrders()
     }
 
@@ -88,11 +86,11 @@ class OrdersTableViewController: UITableViewController, SessionMDelegate {
         return cell!
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self.tabBarController!)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self.tabBarController!)
+            }
+        }
     }
 }

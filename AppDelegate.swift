@@ -6,19 +6,20 @@
 //
 
 import CoreLocation
+import SessionMGeofenceKit
+import SessionMMessagesKit
+import SessionMWebAuthKit
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    private let sessionM = SessionM.sharedInstance()
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if let options = launchOptions {
             if options.keys.contains(.location) {
                 CLLocationManager().startMonitoringSignificantLocationChanges()
-                SMLocationManager.registerGeofenceService()
+                SMGeofenceManager.registerGeofenceService()
             } else if options.keys.contains(.localNotification) {
                 self.application(application, didReceive: options[UIApplicationLaunchOptionsKey.localNotification] as! UILocalNotification)
             } else if options.keys.contains(.remoteNotification) {
@@ -27,10 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         #if DEBUG
-            sessionM.isDebugMode = true
+            SMMessagesManager.setPushEnvironment(.sandbox)
         #endif /* DEBUG */
-        sessionM.logLevel = .debug
-        sessionM.startWithConfigFile()
+
+        SMLogger.instance().logLevel = .debug
+        SessionM.start(authenticationProvider: SessionMOauthProvider())
 
         return true
     }
@@ -72,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        if SMIdentityManager.instance().handleOAuthRedirectURI(url) {
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider, provider.handleOAuthRedirectURI(url) {
             return true
         } else {
             let alert = UIAlertController(title: "Received Deep Link", message: url.absoluteString, preferredStyle: .alert)

@@ -1,0 +1,6 @@
+framework module SessionMWebAuthKit {
+  umbrella header "SessionMWebAuthKit.h"
+
+  export *
+  module * { export * }
+}

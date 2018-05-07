@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMIdentityKit
 import UIKit
 
 class TokenLoginViewController: UIViewController, UITextFieldDelegate {
@@ -14,7 +15,7 @@ class TokenLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var status: UILabel!
     @IBOutlet var userInfo: UIButton!
 
-    private let identityManager = SMIdentityManager.instance()
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewWillAppear(_ animated: Bool) {
@@ -87,7 +88,7 @@ class TokenLoginViewController: UIViewController, UITextFieldDelegate {
 
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.authenticate(withToken: tokenText, provider: providerText) { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.authenticate(withToken: tokenText, provider: providerText) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -100,7 +101,7 @@ class TokenLoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func authenticateWithSampleUser(_ sender: UIButton) {
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.authenticate(withToken: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOiIyMDE3LTA5LTI3IDE1OjMwOjU1ICswMDAwIiwiZXhwIjoiMjAxNy0xMC0xMSAxNTozMDo1NSArMDAwMCIsImRhdGEiOnsiaWQiOiJkYTYxZGNkYS1hMzk4LTExZTctODcxZi05ZjZkNTQzYmUwNDAifX0.iBrHv9-INszE-SSL9rsuNnLDv7DBBaIUuqM6XDUvecxzap2CuoN4v3juXPvw-dZWuzbiHY2H3TPJJlRcI5_fZPxH2FjDqGA1S5nwEwEYVn9D1oMvnXUB6jLIq3ev4omE7ZUj5zVytsn_rKdryllfHro_8g5TneiOUoFBa_1N_RcC9AK_8640xbYPtZaNWhxsJiCwTsKWaLSYQ6RQv_xo1M4reL56dbjJ16Y-50HUy6Pxax6biKVvpjNRDizrkY0bka07lHMLAHMZD5-D3OYnxpxyg9aVX2kJd36iZuwsKaXVMtrCzwmzzGuhQD1PUUhC43wkNUbYw9z2d94v0FDxvQ", provider: "") { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.authenticate(withToken: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOiIyMDE3LTA5LTI3IDE1OjMwOjU1ICswMDAwIiwiZXhwIjoiMjAxNy0xMC0xMSAxNTozMDo1NSArMDAwMCIsImRhdGEiOnsiaWQiOiJkYTYxZGNkYS1hMzk4LTExZTctODcxZi05ZjZkNTQzYmUwNDAifX0.iBrHv9-INszE-SSL9rsuNnLDv7DBBaIUuqM6XDUvecxzap2CuoN4v3juXPvw-dZWuzbiHY2H3TPJJlRcI5_fZPxH2FjDqGA1S5nwEwEYVn9D1oMvnXUB6jLIq3ev4omE7ZUj5zVytsn_rKdryllfHro_8g5TneiOUoFBa_1N_RcC9AK_8640xbYPtZaNWhxsJiCwTsKWaLSYQ6RQv_xo1M4reL56dbjJ16Y-50HUy6Pxax6biKVvpjNRDizrkY0bka07lHMLAHMZD5-D3OYnxpxyg9aVX2kJd36iZuwsKaXVMtrCzwmzzGuhQD1PUUhC43wkNUbYw9z2d94v0FDxvQ", provider: "") { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -113,7 +114,7 @@ class TokenLoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.logOutUser() { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

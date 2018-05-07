@@ -1,0 +1,7 @@
+SessionM Platform iOS SDK Release Notes
+
+Copyright © 2018 SessionM. All rights reserved.
+Date: 05/07/2018
+Version: 3.0.0-b2
+
+Changes:

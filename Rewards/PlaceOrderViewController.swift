@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMRewardsKit
 import UIKit
 
 class PlaceOrderViewController: UIViewController {
@@ -12,8 +13,7 @@ class PlaceOrderViewController: UIViewController {
     @IBOutlet private var header: UILabel!
     @IBOutlet private var details: UILabel!
 
-    private let sessionM = SessionM.sharedInstance()
-    private let rewardsManager = SessionM.sharedInstance().rewardsManager
+    private let rewardsManager = SMRewardsManager.instance()
     private var alert: UIAlertController?
 
     var offer: SMOffer?

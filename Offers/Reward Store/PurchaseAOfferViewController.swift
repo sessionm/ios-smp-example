@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMOffersKit
 import UIKit
 
 class PurchaseAOfferViewController: UIViewController {

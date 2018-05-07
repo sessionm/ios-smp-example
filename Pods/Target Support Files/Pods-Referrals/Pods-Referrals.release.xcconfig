@@ -1,9 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/SessionMFramework/**" "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/SessionMSDK/**" "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SessionMFramework"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SessionMFramework" "${PODS_ROOT}/Headers/Public/SessionMSDK"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SessionMFramework"
-OTHER_LDFLAGS = $(inherited) -framework "SessionMFramework" -framework "SessionMWebAuth"
+OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SessionMFramework" -isystem "${PODS_ROOT}/Headers/Public/SessionMSDK"
+OTHER_LDFLAGS = $(inherited) -framework "SessionMCampaignsKit" -framework "SessionMCoreKit" -framework "SessionMEventsKit" -framework "SessionMGeofenceKit" -framework "SessionMIdentityKit" -framework "SessionMInboxKit" -framework "SessionMLoyaltyCardsKit" -framework "SessionMMessagesKit" -framework "SessionMOffersKit" -framework "SessionMPlacesKit" -framework "SessionMReceiptsKit" -framework "SessionMReferralsKit" -framework "SessionMRewardsKit" -framework "SessionMTransactionsKit" -framework "SessionMWebAuthKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

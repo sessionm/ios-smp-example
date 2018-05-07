@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMIdentityKit
 import UIKit
 
 class EmailLoginViewController: UIViewController, UITextFieldDelegate {
@@ -14,14 +15,14 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var status: UILabel!
     @IBOutlet var userInfo: UIButton!
 
-    private let identityManager = SMIdentityManager.instance()
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         if let user = userManager.currentUser {
-            identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
+            authProvider?.requestAuthCode { (authCode, error) in
                 if let authCode = authCode {
                     DispatchQueue.main.async {
                         self.logout.isEnabled = true
@@ -30,7 +31,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
                         self.status.text? = "Email: \(email)\nID: \(user.userID)\nAuth Code: \(authCode)"
                     }
                 }
-            })
+            }
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
@@ -66,7 +67,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
     @objc private func userDidUpdate(_ notification: NSNotification) {
         if let user = userManager.currentUser {
-            identityManager.requestAuthCode(withClientIDKey: "Default", completionHandler: { (authCode, error) in
+            authProvider?.requestAuthCode { (authCode, error) in
                 if let authCode = authCode {
                     DispatchQueue.main.async {
                         self.logout.isEnabled = true
@@ -75,7 +76,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
                         self.status.text? = "Email: \(email)\nID: \(user.userID)\nAuth Code: \(authCode)"
                     }
                 }
-            })
+            }
         } else {
             logout.isEnabled = false
             userInfo.isEnabled = false
@@ -96,7 +97,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.authenticateUser(withEmail: emailText, password: passwordText) { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.authenticateUser(emailText, password: passwordText) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -119,7 +120,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
         let userData = SMPUserCreate(email: emailText, password: passwordText)
         let alert = UIAlertController(title: "Creating user...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.createUser(withData: userData) { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.createUser(userData) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -132,7 +133,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.logOutUser() { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

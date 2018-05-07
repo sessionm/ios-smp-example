@@ -1,0 +1,6 @@
+framework module SessionMOffersKit {
+  umbrella header "SessionMOffersKit.h"
+
+  export *
+  module * { export * }
+}

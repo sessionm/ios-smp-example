@@ -1,0 +1,6 @@
+framework module SessionMPlacesKit {
+  umbrella header "SessionMPlacesKit.h"
+
+  export *
+  module * { export * }
+}

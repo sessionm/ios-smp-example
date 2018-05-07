@@ -1,0 +1,6 @@
+framework module SessionMCampaignsKit {
+  umbrella header "SessionMCampaignsKit.h"
+
+  export *
+  module * { export * }
+}

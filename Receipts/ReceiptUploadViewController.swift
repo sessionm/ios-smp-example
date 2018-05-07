@@ -7,6 +7,7 @@
 
 import Foundation
 import Photos
+import SessionMReceiptsKit
 
 class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     private let imagePicker = UIImagePickerController()
@@ -371,9 +372,7 @@ class ReceiptUploadViewController: UIViewController, UIImagePickerControllerDele
     }
 
     @objc func cleanUpAndDismiss() {
-        dismiss(animated: true) { 
-            SessionM.sharedInstance().dismissActivity()
-        }
+        dismiss(animated: true)
     }
 
     func filePath(forFileWithName name: String) -> String {

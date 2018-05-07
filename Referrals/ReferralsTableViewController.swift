@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMReferralsKit
 import UIKit
 
 class ReferralCell: UITableViewCell {
@@ -16,9 +17,8 @@ class ReferralCell: UITableViewCell {
     @IBOutlet var phoneNumber: UILabel!
 }
 
-class ReferralsTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private var referralsManager: SMReferralsManager = SessionM.sharedInstance().referralsManager
+class ReferralsTableViewController: UITableViewController {
+    private var referralsManager = SMReferralsManager.instance()
     private var referrals: [SMReferral] = []
 
     @IBAction private func onRefresh(_ sender: UIRefreshControl) {
@@ -27,8 +27,6 @@ class ReferralsTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchReferrals()
     }
 
@@ -70,10 +68,6 @@ class ReferralsTableViewController: UITableViewController, SessionMDelegate {
         return cell!
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ReferralDetailViewController
         if sender is UIBarButtonItem {
@@ -86,6 +80,10 @@ class ReferralsTableViewController: UITableViewController, SessionMDelegate {
     }
 
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

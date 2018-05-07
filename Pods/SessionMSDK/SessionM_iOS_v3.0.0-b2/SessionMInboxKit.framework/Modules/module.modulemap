@@ -1,0 +1,6 @@
+framework module SessionMInboxKit {
+  umbrella header "SessionMInboxKit.h"
+
+  export *
+  module * { export * }
+}

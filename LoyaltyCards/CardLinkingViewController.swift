@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMLoyaltyCardsKit
 import UIKit
 
 class RetailerCell: UITableViewCell {
@@ -13,14 +14,13 @@ class RetailerCell: UITableViewCell {
     @IBOutlet var cardName: UILabel!
 }
 
-class CardLinkingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, SessionMDelegate {
+class CardLinkingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var linkButton: UIButton!
     @IBOutlet private var retailerName: UILabel!
     @IBOutlet private var cardNumber: UITextField!
 
-    private let sessionM = SessionM.sharedInstance()
-    private let loyaltyCardsManager = SessionM.sharedInstance().loyaltyCardsManager
+    private let loyaltyCardsManager = SMLoyaltyCardsManager.instance()
     private var retailers: [SMRetailer] = []
     private var searchResults: [SMRetailer] = []
     private var selectedRetailer: SMRetailer?
@@ -35,8 +35,6 @@ class CardLinkingViewController: UIViewController, UITableViewDataSource, UITabl
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        sessionM.delegate = self
         fetchRetailers()
     }
 
@@ -126,11 +124,11 @@ class CardLinkingViewController: UIViewController, UITableViewDataSource, UITabl
         retailerName.text = selectedRetailer!.name
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

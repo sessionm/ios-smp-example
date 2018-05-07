@@ -1,0 +1,6 @@
+Developer's use of the SDK is governed by the license in the applicable SessionM Terms of Service.
+
+The SessionM SDK relies on a few open source projects. These include:
+
+- Reachability. Andrew Dunoho and Apple. BSD license. Apple license. 
+- AppAuth. https://github.com/openid/AppAuth-iOS. Apache license.

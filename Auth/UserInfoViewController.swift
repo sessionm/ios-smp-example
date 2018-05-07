@@ -5,12 +5,13 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMIdentityKit
 import UIKit
 
 class UserInfoViewController: UIViewController {
     @IBOutlet var userInfo: UITextView!
 
-    private let identityManager = SMIdentityManager.instance()
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,7 @@ class UserInfoViewController: UIViewController {
     @IBAction private func logout(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.identityManager.logOutUser() { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

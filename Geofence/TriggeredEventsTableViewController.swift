@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMGeofenceKit
 import UIKit
 
 class EventCell: UITableViewCell {
@@ -15,16 +16,9 @@ class EventCell: UITableViewCell {
     @IBOutlet var distance: UILabel!
 }
 
-class TriggeredEventsTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private var locationManager: SMLocationManager = SMLocationManager.sharedInstance()
+class TriggeredEventsTableViewController: UITableViewController {
+    private var geofenceManager = SMGeofenceManager.instance()
     private var events: [[AnyHashable : Any]] = []
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        sessionM.delegate = self
-    }
 
     // MARK: - Table view data source
 
@@ -72,11 +66,11 @@ class TriggeredEventsTableViewController: UITableViewController, SessionMDelegat
         tableView.reloadData()
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self.tabBarController!)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self.tabBarController!)
+            }
+        }
     }
 }

@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMEventsKit
 import UIKit
 
 class BehaviorsList: NSObject {
@@ -14,9 +15,9 @@ class BehaviorsList: NSObject {
         case events
     }
 
-    var behaviors : SMEventsResponse?;
+    var behaviors: SMEventsResponse?;
 
-    init(behaviors : SMEventsResponse?) {
+    init(behaviors: SMEventsResponse?) {
         self.behaviors = behaviors;
     }
 

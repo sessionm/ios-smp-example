@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMIdentityKit
 import UIKit
 
 class Common: NSObject {

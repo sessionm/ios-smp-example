@@ -1,20 +1,82 @@
 PODS:
   - CCHMapClusterController (1.7.0)
-  - SessionMFramework (2.5.2):
-    - SessionMFramework/Core (= 2.5.2)
-    - SessionMFramework/WebAuth (= 2.5.2)
-  - SessionMFramework/Core (2.5.2)
-  - SessionMFramework/WebAuth (2.5.2):
+  - SessionMFramework (2.5.2.1):
+    - SessionMFramework/Core (= 2.5.2.1)
+    - SessionMFramework/WebAuth (= 2.5.2.1)
+  - SessionMFramework/Core (2.5.2.1)
+  - SessionMFramework/WebAuth (2.5.2.1):
     - SessionMFramework/Core
+  - SessionMSDK (3.0.0-b2):
+    - SessionMSDK/Campaigns (= 3.0.0-b2)
+    - SessionMSDK/Core (= 3.0.0-b2)
+    - SessionMSDK/Events (= 3.0.0-b2)
+    - SessionMSDK/Geofence (= 3.0.0-b2)
+    - SessionMSDK/Identity (= 3.0.0-b2)
+    - SessionMSDK/Inbox (= 3.0.0-b2)
+    - SessionMSDK/LoyaltyCards (= 3.0.0-b2)
+    - SessionMSDK/Messages (= 3.0.0-b2)
+    - SessionMSDK/Offers (= 3.0.0-b2)
+    - SessionMSDK/Places (= 3.0.0-b2)
+    - SessionMSDK/Receipts (= 3.0.0-b2)
+    - SessionMSDK/Referrals (= 3.0.0-b2)
+    - SessionMSDK/Rewards (= 3.0.0-b2)
+    - SessionMSDK/Transactions (= 3.0.0-b2)
+    - SessionMSDK/WebAuth (= 3.0.0-b2)
+  - SessionMSDK/Campaigns (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Events
+    - SessionMSDK/Identity
+  - SessionMSDK/Core (3.0.0-b2)
+  - SessionMSDK/Events (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Geofence (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Events
+    - SessionMSDK/Identity
+  - SessionMSDK/Identity (3.0.0-b2):
+    - SessionMSDK/Core
+  - SessionMSDK/Inbox (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/LoyaltyCards (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Messages (3.0.0-b2):
+    - SessionMSDK/Core
+  - SessionMSDK/Offers (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Places (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+    - SessionMSDK/Messages
+  - SessionMSDK/Receipts (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Referrals (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Rewards (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Transactions (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/WebAuth (3.0.0-b2):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
 
 DEPENDENCIES:
   - CCHMapClusterController (~> 1.7.0)
-  - SessionMFramework (~> 2.5.2)
+  - SessionMFramework
+  - SessionMSDK (= 3.0.0-b2)
 
 SPEC CHECKSUMS:
   CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
-  SessionMFramework: 75bb768b86b90bc04483e6f5f83202f65cbe984c
+  SessionMFramework: 6d4300749f6ea15e277d2234717596d947b56f2a
+  SessionMSDK: 85eaacb48161319db78abf6b33c47d9c5ff4832d
 
-PODFILE CHECKSUM: 56ed5dc3f512ab64a69a3236e09019f796faeaa2
+PODFILE CHECKSUM: 47370d96176af71673ecefea8012e389ebb2bb2d
 
 COCOAPODS: 1.2.0

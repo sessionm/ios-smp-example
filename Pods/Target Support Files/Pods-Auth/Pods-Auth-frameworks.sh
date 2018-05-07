@@ -89,12 +89,38 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2/SessionMFramework.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2/SessionMWebAuth.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMCampaignsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMCoreKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMEventsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMGeofenceKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMIdentityKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMInboxKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMLoyaltyCardsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMMessagesKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMOffersKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMPlacesKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMReceiptsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMReferralsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMRewardsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMTransactionsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMWebAuthKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2/SessionMFramework.framework"
-  install_framework "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2/SessionMWebAuth.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMCampaignsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMCoreKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMEventsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMGeofenceKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMIdentityKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMInboxKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMLoyaltyCardsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMMessagesKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMOffersKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMPlacesKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMReceiptsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMReferralsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMRewardsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMTransactionsKit.framework"
+  install_framework "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b2/SessionMWebAuthKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

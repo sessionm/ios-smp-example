@@ -18,6 +18,16 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
+			<string>SessionMSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Developer's use of the SDK is governed by the license in the applicable SessionM Terms of Service.</string>
+			<key>License</key>
+			<string>Commercial</string>
+			<key>Title</key>
 			<string>SessionMFramework</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

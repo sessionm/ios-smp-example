@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMReferralsKit
 import UIKit
 
 class ReferralDetailViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
@@ -39,7 +40,7 @@ class ReferralDetailViewController: UIViewController, UITextViewDelegate, UIText
 
         let referralRequest = SMReferralRequest(email: emailText, name: referee.text, phoneNumber: phoneNumber.text, origin: origin.text, source: source.text, clientData: clientData.text)
         let referralsRequest = SMReferralsRequest(requests: [referralRequest], referrer: "Me")
-        SessionM.sharedInstance().referralsManager.sendReferrals(referralsRequest, completionHandler: {(referrals: [SMReferral]?, referralErrors: [SMReferralError]?, error: SMError?) in
+        SMReferralsManager.instance().sendReferrals(referralsRequest, completionHandler: {(referrals: [SMReferral]?, referralErrors: [SMReferralError]?, error: SMError?) in
             let referralAlert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
             var alertHandler: ((UIAlertAction?) -> Void)?
             if let errors = referralErrors {

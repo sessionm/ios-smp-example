@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMLoyaltyCardsKit
 import UIKit
 
 class CardCell: UITableViewCell {
@@ -13,9 +14,8 @@ class CardCell: UITableViewCell {
     @IBOutlet var cardNumber: UILabel!
 }
 
-class LinkedCardsTableViewController: UITableViewController, SessionMDelegate {
-    private let sessionM = SessionM.sharedInstance()
-    private let loyaltyCardsManager: SMLoyaltyCardsManager = SessionM.sharedInstance().loyaltyCardsManager
+class LinkedCardsTableViewController: UITableViewController {
+    private let loyaltyCardsManager = SMLoyaltyCardsManager.instance()
     private var cards: [SMLoyaltyCard] = []
 
     @IBAction private func onRefresh(_ sender: UIRefreshControl) {
@@ -24,8 +24,6 @@ class LinkedCardsTableViewController: UITableViewController, SessionMDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         fetchLinkedCards()
     }
 
@@ -94,11 +92,11 @@ class LinkedCardsTableViewController: UITableViewController, SessionMDelegate {
         })
     }
 
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
-    }
-
     @IBAction private func logout(_ sender: AnyObject) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }

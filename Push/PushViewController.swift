@@ -5,39 +5,37 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMEventsKit
+import SessionMMessagesKit
 import UIKit
 
-class PushViewController: UIViewController, SessionMDelegate {
+class PushViewController: UIViewController {
     @IBOutlet private var localNotifications: UISwitch!
 
-    private let sessionM = SessionM.sharedInstance()
     private let messagesManager = SMMessagesManager.instance()
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        sessionM.delegate = self
         messagesManager.registerForRemoteNotifications()
-    }
-
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
     }
 
     private func logActionForType(_ type: SMNotificationMessageActionType) {
         if (localNotifications.isOn) {
             scheduleLocalNotificationForActionType(type)
         } else {
+            var builder: SMSimpleEventBuilder
             switch type {
             case .deepLink:
-                sessionM.logAction("push_notification_deep_link")
+                builder = SMSimpleEventBuilder.builder(eventName: "push_notification_deep_link")
             case .externalLink:
-                sessionM.logAction("push_notification_external_link")
+                builder = SMSimpleEventBuilder.builder(eventName: "push_notification_external_link")
             case .fullScreen:
-                sessionM.logAction("push_notification_open_ad")
+                builder = SMSimpleEventBuilder.builder(eventName: "push_notification_open_ad")
             default:
-                break
+                builder = SMSimpleEventBuilder.builder(eventName: "push_notification_open_ad")
             }
+
+            SMEventsManager.instance().postEvent(builder.build()) { (response, error) in }
         }
     }
 
@@ -93,7 +91,10 @@ class PushViewController: UIViewController, SessionMDelegate {
     }
 
     @IBAction private func logout(_ sender: UIBarButtonItem) {
-        sessionM.logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }
-

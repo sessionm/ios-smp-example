@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMEventsKit
 import UIKit
 
 class PurchaseEventViewController: UIViewController {
@@ -37,19 +38,19 @@ class PurchaseEventViewController: UIViewController {
         var add = false;
         let builder = SMPurchaseEventItemBuilder();
 
-        if let n = name.text, n.characters.count > 0 {
+        if let n = name.text, n.count > 0 {
             add = true;
             builder.name = n;
         }
-        if let q = quantity.text, q.characters.count > 0, let qty = Int(q) {
+        if let q = quantity.text, q.count > 0, let qty = Int(q) {
             add = true;
             builder.quantity = qty
         }
-        if let a = amount.text, a.characters.count > 0, let amt = Double(a) {
+        if let a = amount.text, a.count > 0, let amt = Double(a) {
             add = true;
             builder.amount = Int(amt * 100.0);
         }
-        if let s = store.text, s.characters.count > 0 {
+        if let s = store.text, s.count > 0 {
             add = true;
             builder.store = s;
         }

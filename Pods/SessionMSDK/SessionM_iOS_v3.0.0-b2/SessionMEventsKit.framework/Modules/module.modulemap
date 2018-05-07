@@ -1,0 +1,6 @@
+framework module SessionMEventsKit {
+  umbrella header "SessionMEventsKit.h"
+
+  export *
+  module * { export * }
+}

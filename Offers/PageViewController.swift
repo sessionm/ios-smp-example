@@ -5,6 +5,7 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMOffersKit
 import UIKit
 
 class PageViewController: UIViewController {
@@ -40,8 +41,11 @@ class PageViewController: UIViewController {
     }
 
     @IBAction func doLogout(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        SessionM.sharedInstance().logOutUser()
+        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
+            provider.logoutUser { (authState, error) in
+                LoginViewController.loginIfNeeded(self)
+            }
+        }
     }
 }
 

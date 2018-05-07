@@ -1,0 +1,6 @@
+framework module SessionMLoyaltyCardsKit {
+  umbrella header "SessionMLoyaltyCardsKit.h"
+
+  export *
+  module * { export * }
+}

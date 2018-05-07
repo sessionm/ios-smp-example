@@ -5,28 +5,19 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMCoreKit
 import UIKit
 
-class LaunchViewController: UIViewController, SessionMDelegate {
-    let sessionM = SessionM.sharedInstance()
-
+class LaunchViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        sessionM.delegate = self
-        if sessionM.sessionState == .startedOnline {
-            presentNextController()
-        }
-    }
-
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        if sessionM.sessionState == .startedOnline {
-            presentNextController()
-        }
+        while SessionM.notReadyReason().contains([.noAuthenticationProvider, .noConfig]) {}
+        presentNextController()
     }
 
     func presentNextController() {
-        if sessionM.user.isRegistered {
+        if let provider = SessionM.authenticationProvider(), provider.isAuthenticated() {
             performSegue(withIdentifier: "Main", sender: self)
         } else {
             LoginViewController.login(self)

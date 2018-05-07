@@ -1,0 +1,6 @@
+framework module SessionMMessagesKit {
+  umbrella header "SessionMMessagesKit.h"
+
+  export *
+  module * { export * }
+}

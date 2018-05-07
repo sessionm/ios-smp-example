@@ -1,0 +1,6 @@
+framework module SessionMGeofenceKit {
+  umbrella header "SessionMGeofenceKit.h"
+
+  export *
+  module * { export * }
+}

@@ -5,20 +5,19 @@
 //  Copyright © 2018 SessionM. All rights reserved.
 //
 
+import SessionMInboxKit
 import UIKit
 
-class MessageDetailViewController: UIViewController, SessionMDelegate {
+class MessageDetailViewController: UIViewController {
     @IBOutlet private var body: UILabel!
 
-    private let sessionM = SessionM.sharedInstance()
-    private let inboxManager = SessionM.sharedInstance().inboxManager
+    private let inboxManager = SMInboxManager.instance()
 
     var message: SMInboxMessage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sessionM.delegate = self
         self.navigationItem.title = message!.subject
         self.body.text = message.body
     }
@@ -44,9 +43,5 @@ class MessageDetailViewController: UIViewController, SessionMDelegate {
         optionsAlert.addAction(cancelAction)
 
         present(optionsAlert, animated: true)
-    }
-
-    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-        LoginViewController.loginIfNeeded(self)
     }
 }

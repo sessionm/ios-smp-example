@@ -1,0 +1,6 @@
+framework module SessionMCoreKit {
+  umbrella header "SessionMCoreKit.h"
+
+  export *
+  module * { export * }
+}
