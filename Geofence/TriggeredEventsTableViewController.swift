@@ -67,8 +67,8 @@ class TriggeredEventsTableViewController: UITableViewController {
     }
 
     @IBAction private func logout(_ sender: AnyObject) {
-        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
-            provider.logoutUser { (authState, error) in
+        if let provider = SessionM.authenticationProvider() as? SessionMOAuthProvider {
+            provider.logOutUser { (authState, error) in
                 LoginViewController.loginIfNeeded(self.tabBarController!)
             }
         }

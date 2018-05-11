@@ -32,8 +32,6 @@ LICENSE: MIT
 
 [Campaigns](#Campaigns)
 
-[Contents](#Contents)
-
 [Geofence](#Geofence)
 
 [Inbox](#Inbox)
@@ -112,16 +110,6 @@ There are two different actions to trigger different types of feed message: deep
 <img
 src="https://github.com/sessionm/ios-smp-example/blob/SDK-1939-iOS-README-Update/Images/campaigns_external_link.gif"
 alt="CampaignsExternalLink Anima" width="324" height="576"/>
-
-[Back to top](#ToC)
-
-<a name="Contents"/>
-
-## Contents
-
-This app showcases how to use the SessionM SDK to fetch promotional content data for presentation in a content feed.
-
-A content tile can be clicked to see metadata and start video playback (if applicable).
 
 [Back to top](#ToC)
 

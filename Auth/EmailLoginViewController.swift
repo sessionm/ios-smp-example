@@ -15,7 +15,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var status: UILabel!
     @IBOutlet var userInfo: UIButton!
 
-    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOAuthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +97,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
 
         let alert = UIAlertController(title: "Authenticating...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.authProvider?.authenticateUser(emailText, password: passwordText) { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.authenticateUser(withEmail: emailText, password: passwordText) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -120,7 +120,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
         let userData = SMPUserCreate(email: emailText, password: passwordText)
         let alert = UIAlertController(title: "Creating user...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.authProvider?.createUser(userData) { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.createUser(withData: userData) { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
@@ -133,7 +133,7 @@ class EmailLoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logOutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)

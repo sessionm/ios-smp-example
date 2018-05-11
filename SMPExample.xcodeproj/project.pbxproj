@@ -293,9 +293,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02516241BE819E628F7F8399 /* Pods-Content.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Content.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Content/Pods-Content.debug.xcconfig"; sourceTree = "<group>"; };
 		067F1DF976D52EE2ECCB4FFF /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push/Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
-		0ABAD3CF298FEF10987B1772 /* Pods-Content.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Content.release.xcconfig"; path = "Pods/Target Support Files/Pods-Content/Pods-Content.release.xcconfig"; sourceTree = "<group>"; };
 		143DFB810A7F8E8D59E29F7E /* Pods-Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rewards.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rewards/Pods-Rewards.release.xcconfig"; sourceTree = "<group>"; };
 		150DB82B95745CC591ABAB81 /* Pods-LoyaltyCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards.debug.xcconfig"; sourceTree = "<group>"; };
 		1A2B3D87E528A490205FF601 /* Pods-WebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebView/Pods-WebView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -711,8 +709,6 @@
 			children = (
 				1DD63B655B78401D072C5CF9 /* Pods-Campaigns.debug.xcconfig */,
 				AFB5DDC471CD1FBD570F491D /* Pods-Campaigns.release.xcconfig */,
-				02516241BE819E628F7F8399 /* Pods-Content.debug.xcconfig */,
-				0ABAD3CF298FEF10987B1772 /* Pods-Content.release.xcconfig */,
 				F2A1F63B71291F34ECA709D4 /* Pods-Geofence.debug.xcconfig */,
 				9F1F5923C7125B381D160040 /* Pods-Geofence.release.xcconfig */,
 				92856FB8C36A2F73F6A31DA6 /* Pods-Inbox.debug.xcconfig */,
@@ -895,7 +891,6 @@
 				2F1422601E254A2E0016EADA /* Resources */,
 				2F14227E1E255B8A0016EADA /* Embed Frameworks */,
 				C466F3349E53F93D854F5785 /* [CP] Embed Pods Frameworks */,
-				F9AB62D8290C7AC1DCF5249D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -915,7 +910,6 @@
 				2F3BF5301E4E514100BDC071 /* Frameworks */,
 				2F3BF5311E4E514100BDC071 /* Resources */,
 				11042C67F0A868A065727EB6 /* [CP] Embed Pods Frameworks */,
-				7BE401AEB546AC38F8C16B68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -936,7 +930,6 @@
 				2F3C7C971E2D2F9000CCAA78 /* Resources */,
 				2F3C7CAD1E2D2FAC00CCAA78 /* Embed Frameworks */,
 				23DAE6FA12B17BD1079B9A4B /* [CP] Embed Pods Frameworks */,
-				1508D7474EFBDEBB7D1CFB32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -957,7 +950,6 @@
 				2F3E418F1E27E3290061C980 /* Resources */,
 				2F3E41AD1E27E50B0061C980 /* Embed Frameworks */,
 				7F3E98226BE2BDC15344048A /* [CP] Embed Pods Frameworks */,
-				5465A2DEAB7113342AB209EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -978,7 +970,6 @@
 				2F3E41B01E2803110061C980 /* Resources */,
 				2F3E41C61E2803240061C980 /* Embed Frameworks */,
 				D6CE801E49DDE8D612C37301 /* [CP] Embed Pods Frameworks */,
-				DC677CD3C00A79808407A2AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -999,7 +990,6 @@
 				2F3E41F81E293D770061C980 /* Resources */,
 				2F3E420E1E293D940061C980 /* Embed Frameworks */,
 				3F5E1B9EF0C9E638B355A7E0 /* [CP] Embed Pods Frameworks */,
-				EF6D6A77DE0C0CFA5254DD6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1020,7 +1010,6 @@
 				2F3E421C1E29614B0061C980 /* Resources */,
 				2F3E42391E2962EE0061C980 /* Embed Frameworks */,
 				3DA8CA01B1D5967F05C370BA /* [CP] Embed Pods Frameworks */,
-				A260EAFDC49F848FDE031671 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1041,7 +1030,6 @@
 				2F40EB071E36849600D6D8DF /* Resources */,
 				2F40EB261E36855700D6D8DF /* Embed Frameworks */,
 				5C76FECB90180E80E6DFD43F /* [CP] Embed Pods Frameworks */,
-				47560E43BDB2AA23620CD830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1061,7 +1049,6 @@
 				2FF4F2531EAE4E5600CEB7E5 /* Frameworks */,
 				2FF4F2541EAE4E5600CEB7E5 /* Resources */,
 				09C09E2C3D6005868A9E872E /* [CP] Embed Pods Frameworks */,
-				08DFADB23D39E913C03309EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1082,7 +1069,6 @@
 				6B70441D1E23EDF800018C7B /* Resources */,
 				6B70443B1E23EF4F00018C7B /* Embed Frameworks */,
 				A2782439614024ECCE8771C1 /* [CP] Embed Pods Frameworks */,
-				EA832CE7FA7175F3239A4AEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1102,7 +1088,6 @@
 				6B7AF6501FBCD8FA005175A7 /* Frameworks */,
 				6B7AF6531FBCD8FA005175A7 /* Resources */,
 				B3196CC2C37265A3A3F212A7 /* [CP] Embed Pods Frameworks */,
-				277F19464976E869C306F7DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1122,7 +1107,6 @@
 				2FAB532C2028C06400303944 /* Frameworks */,
 				2FAB532D2028C06A00303944 /* Resources */,
 				5DE825C4EF47154DF1FE8BA0 /* [CP] Embed Pods Frameworks */,
-				9037C38D96F1AE0BBD120BB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1143,7 +1127,6 @@
 				6B7D487D1F2A059C00E6CE08 /* Resources */,
 				6B7D48831F2A059C00E6CE08 /* Embed Frameworks */,
 				1EE8DCB9AC26E0C132FD9581 /* [CP] Embed Pods Frameworks */,
-				6B0DBEE9646EDC097357502A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1164,7 +1147,6 @@
 				6BC0FEC61E24103D009C8D07 /* Resources */,
 				6BC0FECA1E24103D009C8D07 /* Embed Frameworks */,
 				FDFAED074A1FE2E07216DA33 /* [CP] Embed Pods Frameworks */,
-				9332EAADD71A14AD26B67840 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1469,21 +1451,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08DFADB23D39E913C03309EA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		09C09E2C3D6005868A9E872E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1491,13 +1458,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Auth/Pods-Auth-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1511,32 +1504,43 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Push/Pods-Push-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push/Pods-Push-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1508D7474EFBDEBB7D1CFB32 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inbox/Pods-Inbox-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1EE8DCB9AC26E0C132FD9581 /* [CP] Embed Pods Frameworks */ = {
@@ -1546,11 +1550,41 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2.1/SessionMFramework.framework",
+				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2.1/SessionMWebAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
 			);
@@ -1566,32 +1600,43 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Inbox/Pods-Inbox-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inbox/Pods-Inbox-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		277F19464976E869C306F7DD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Events/Pods-Events-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D427C5269CDC3FF66426443 /* [CP] Check Pods Manifest.lock */ = {
@@ -1609,7 +1654,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3DA8CA01B1D5967F05C370BA /* [CP] Embed Pods Frameworks */ = {
@@ -1619,13 +1664,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1639,47 +1710,43 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Receipts/Pods-Receipts-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Receipts/Pods-Receipts-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47560E43BDB2AA23620CD830 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geofence/Pods-Geofence-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5465A2DEAB7113342AB209EE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C76FECB90180E80E6DFD43F /* [CP] Embed Pods Frameworks */ = {
@@ -1689,14 +1756,40 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 				"${BUILT_PRODUCTS_DIR}/CCHMapClusterController/CCHMapClusterController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCHMapClusterController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1711,13 +1804,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1739,22 +1858,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6B0DBEE9646EDC097357502A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebView/Pods-WebView-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6C345C2558C0C4F9B6B3AB7E /* [CP] Check Pods Manifest.lock */ = {
@@ -1772,22 +1876,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7BE401AEB546AC38F8C16B68 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push/Pods-Push-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7F3E98226BE2BDC15344048A /* [CP] Embed Pods Frameworks */ = {
@@ -1797,13 +1886,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1825,22 +1940,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9037C38D96F1AE0BBD120BB0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Offers/Pods-Offers-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91F4BE2F226F5374778C6972 /* [CP] Check Pods Manifest.lock */ = {
@@ -1858,37 +1958,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9332EAADD71A14AD26B67840 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Transactions/Pods-Transactions-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A260EAFDC49F848FDE031671 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoyaltyCards/Pods-LoyaltyCards-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2782439614024ECCE8771C1 /* [CP] Embed Pods Frameworks */ = {
@@ -1898,13 +1968,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1926,7 +2022,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AAC24EA6A145E8D3C35725D8 /* [CP] Check Pods Manifest.lock */ = {
@@ -1944,7 +2040,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3196CC2C37265A3A3F212A7 /* [CP] Embed Pods Frameworks */ = {
@@ -1954,13 +2050,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Events/Pods-Events-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1982,7 +2104,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C466F3349E53F93D854F5785 /* [CP] Embed Pods Frameworks */ = {
@@ -1992,13 +2114,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Rewards/Pods-Rewards-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2020,7 +2168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CB663E5B7E222A58CEC718BB /* [CP] Check Pods Manifest.lock */ = {
@@ -2038,7 +2186,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6CE801E49DDE8D612C37301 /* [CP] Embed Pods Frameworks */ = {
@@ -2048,13 +2196,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Referrals/Pods-Referrals-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2076,22 +2250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DC677CD3C00A79808407A2AA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Referrals/Pods-Referrals-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFAC3581212A5BE15F812565 /* [CP] Check Pods Manifest.lock */ = {
@@ -2109,7 +2268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E484962375EF941E01ED8B78 /* [CP] Check Pods Manifest.lock */ = {
@@ -2127,37 +2286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EA832CE7FA7175F3239A4AEB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Campaigns/Pods-Campaigns-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF6D6A77DE0C0CFA5254DD6B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Receipts/Pods-Receipts-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2FF7D7574D1AA3990A8608F /* [CP] Check Pods Manifest.lock */ = {
@@ -2175,22 +2304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F9AB62D8290C7AC1DCF5249D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rewards/Pods-Rewards-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FDFAED074A1FE2E07216DA33 /* [CP] Embed Pods Frameworks */ = {
@@ -2200,13 +2314,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Transactions/Pods-Transactions-frameworks.sh",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMFramework.framework",
-				"${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.0/SessionMWebAuth.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCampaignsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMCoreKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMEventsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMGeofenceKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMIdentityKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMInboxKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMLoyaltyCardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMMessagesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMOffersKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMPlacesKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReceiptsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMReferralsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMRewardsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMTransactionsKit.framework",
+				"${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4/SessionMWebAuthKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCampaignsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMEventsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMGeofenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMIdentityKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMInboxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMLoyaltyCardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMMessagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMOffersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMPlacesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReceiptsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMReferralsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMRewardsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMTransactionsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SessionMWebAuthKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

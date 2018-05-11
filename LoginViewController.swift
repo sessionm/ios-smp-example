@@ -74,8 +74,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction private func oauthLoginUser(_ sender: UIButton) {
         if let email = email.text, let password = password.text {
-            if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider {
-                provider.authenticateUser(email, password: password) { (state: SMAuthState, error: SMError?) in
+            if let provider = SessionM.authenticationProvider() as? SessionMOAuthProvider {
+                provider.authenticateUser(withEmail: email, password: password) { (state: SMAuthState, error: SMError?) in
                     if error == nil {
                         self.dismiss(animated: true)
                     }

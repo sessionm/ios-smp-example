@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif /* DEBUG */
 
         SMLogger.instance().logLevel = .debug
-        SessionM.start(authenticationProvider: SessionMOauthProvider())
+        SessionM.start()
 
         return true
     }
@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        if let provider = SessionM.authenticationProvider() as? SessionMOauthProvider, provider.handleOAuthRedirectURI(url) {
+        if let provider = SessionM.authenticationProvider() as? SessionMOAuthProvider, provider.handleOAuthRedirectURI(url) {
             return true
         } else {
             let alert = UIAlertController(title: "Received Deep Link", message: url.absoluteString, preferredStyle: .alert)

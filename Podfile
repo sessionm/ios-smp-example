@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 def shared_pods
-  pod 'SessionMSDK', '3.0.0-b2'
+  pod 'SessionMSDK', '3.0.0-b4'
 end
 
 target 'Auth' do

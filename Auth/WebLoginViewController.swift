@@ -22,7 +22,7 @@ class WebLoginViewController: UIViewController {
     private var rawTokenEndpoint: String?
     private var rawRedirectURI: String?
 
-    private let authProvider = SessionM.authenticationProvider() as? SessionMOauthProvider
+    private let authProvider = SessionM.authenticationProvider() as? SessionMOAuthProvider
     private let userManager = SMUserManager.instance()
 
     override func viewDidLoad() {
@@ -117,7 +117,7 @@ class WebLoginViewController: UIViewController {
     @IBAction private func logoutUser(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Logging out...", message: nil, preferredStyle: .alert)
         present(alert, animated: true) {
-            self.authProvider?.logoutUser { (state: SMAuthState, error: SMError?) in
+            self.authProvider?.logOutUser { (state: SMAuthState, error: SMError?) in
                 alert.dismiss(animated: true) {
                     if let error = error {
                         Util.failed(self, message: error.message)
