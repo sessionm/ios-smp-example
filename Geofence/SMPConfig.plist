@@ -9,10 +9,7 @@
 	<key>serverEndpoint</key>
 	<string>https://api-sdkexamples.stg-sessionm.com</string>
 	<key>OAuthClientID</key>
-	<dict>
-		<key>Default</key>
-		<string>27fb00094891e1a038bfeb9667301e1919ba643b1d61f5aa59eaac00d6675b5c</string>
-	</dict>
+	<string>27fb00094891e1a038bfeb9667301e1919ba643b1d61f5aa59eaac00d6675b5c</string>
 	<key>OAuthHostURL</key>
 	<string>https://login-sdkexamples.stg-sessionm.com</string>
 	<key>OAuthRedirecURI</key>
