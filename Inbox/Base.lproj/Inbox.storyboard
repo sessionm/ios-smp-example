@@ -72,7 +72,13 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Inbox" id="w0L-9m-5gi" userLabel="Inbox"/>
+                    <navigationItem key="navigationItem" title="Inbox" id="w0L-9m-5gi" userLabel="Inbox">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cai-1i-oYL">
+                            <connections>
+                                <action selector="createRandomInboxMessage:" destination="YMS-ZK-M7K" id="RRP-7U-R77"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Kiu-gn-yjl">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>

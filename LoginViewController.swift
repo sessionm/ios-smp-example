@@ -24,7 +24,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet private var password: UITextField!
     @IBOutlet private var token: UITextField!
 
-    @IBOutlet private var coalitionLoginButton: UIButton!
     @IBOutlet private var oauthLoginButton: UIButton!
     @IBOutlet private var authenticateButton: UIButton!
 
@@ -51,26 +50,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         emailRegex = try! NSRegularExpression(pattern: "[a-zA-Z0-9+._%-]{1,256}[@][a-zA-Z0-9][a-zA-Z0-9-]{0,64}([.][a-zA-Z0-9][a-zA-Z0-9-]{0,25})+", options: .caseInsensitive)
     }
-
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        if let label = sessionState {
-//            switch (sessionM.sessionState) {
-//            case .startedOffline:
-//                label.text = "Offline"
-//            case .startedOnline:
-//                label.text = "Online"
-//            case .stopped:
-//                label.text = "Stopped"
-//            }
-//        }
-//
-//        if let reg = registered, let sign = signedIn {
-//            reg.text = sessionM.user.isRegistered ? "Yes" : "No"
-//            sign.text = sessionM.user.isLoggedIn ? "Yes" : "No"
-//        }
-//    }
 
     @IBAction private func oauthLoginUser(_ sender: UIButton) {
         if let email = email.text, let password = password.text, let provider = SessionM.authenticationProvider() as? SessionMOAuthProvider {
@@ -114,41 +93,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-//    func sessionM(_ sessionM: SessionM, didTransitionToState state: SessionMState) {
-//        if let label = sessionState {
-//            switch (state) {
-//            case .startedOffline:
-//                label.text = "Offline"
-//            case .startedOnline:
-//                label.text = "Online"
-//            case .stopped:
-//                label.text = "Stopped"
-//            }
-//        }
-//    }
-
-//    func sessionM(_ sessionM: SessionM, didUpdateUser user: SMUser) {
-//        if let reg = registered, let sign = signedIn {
-//            reg.text = user.isRegistered ? "Yes" : "No"
-//            sign.text = user.isLoggedIn ? "Yes" : "No"
-//
-//            if (sessionM.sessionState == .startedOnline) && (user.isRegistered) {
-//                dismiss(animated: true)
-//            }
-//        }
-//    }
-
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if let text = textField.text, let login = coalitionLoginButton, let oauthLogin = oauthLoginButton, let authenticate = authenticateButton {
+        if let text = textField.text, let oauthLogin = oauthLoginButton, let authenticate = authenticateButton {
             let nstext = text as NSString
             let result = nstext.replacingCharacters(in: NSRangeFromString(nstext as String), with: string)
             if (textField == self.email) {
-                login.isEnabled = emailRegex.matches(in: result, options: [], range: NSRangeFromString(result)).count > 0
                 oauthLogin.isEnabled = emailRegex.matches(in: result, options: [], range: NSRangeFromString(result)).count > 0
             } else if (textField == token) {
                 authenticate.isEnabled = result.count > 0
             } else if (textField == password) {
-                login.isEnabled = result.count > 0
                 oauthLogin.isEnabled = result.count > 0
             }
         }

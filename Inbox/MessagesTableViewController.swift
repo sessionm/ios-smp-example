@@ -95,6 +95,19 @@ class MessagesTableViewController: UITableViewController {
         inboxManager.updateMessage(destination.message!, toState: .read, completionHandler: { (messages: [SMInboxMessage]?, error: SMError?) in })
     }
 
+    @IBAction private func createRandomInboxMessage(_ sender: UIBarButtonItem) {
+        let subject = UUID().uuidString as NSString
+        let body = UUID().uuidString.lowercased()
+        let newMessage = SMNewInboxMessage(subject: subject.substring(to: subject.length/2), body: body)
+        inboxManager.createMessage(newMessage) { (message, error) in
+            if let err = error {
+                Util.failed(self, message: err.message)
+            } else {
+                self.fetchMessages()
+            }
+        }
+    }
+
     @IBAction private func logout(_ sender: AnyObject) {
         if let provider = SessionM.authenticationProvider() as? SessionMOAuthProvider {
             provider.logOutUser { (authState, error) in
