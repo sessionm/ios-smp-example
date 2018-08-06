@@ -28,10 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         #if DEBUG
-            SMMessagesManager.setPushEnvironment(.sandbox)
+            SMMessagesManager.instance().pushEnvironment = .sandbox
         #endif /* DEBUG */
 
         SMLogger.instance().logLevel = .debug
+        SMLogger.instance().logCategories = .all
+
         SessionM.start()
 
         return true

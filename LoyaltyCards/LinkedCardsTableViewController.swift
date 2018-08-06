@@ -67,7 +67,7 @@ class LinkedCardsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let card = cards[indexPath.row]
-        let unlinkCardAlert = UIAlertController(title: "Unlink Loyalty Card", message: "Unlink card #\(card.cardNumber!) from \(card.retailer!.name!)?", preferredStyle: .alert)
+        let unlinkCardAlert = UIAlertController(title: "Unlink Loyalty Card", message: "Unlink card #\(card.cardNumber ?? " (unknown)") from \(card.retailer!.name!)?", preferredStyle: .alert)
         let unlinkAction = UIAlertAction(title: "Unlink", style: .default, handler: { (action) in
             self.unlink(card)
             })

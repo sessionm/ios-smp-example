@@ -6,74 +6,74 @@ PODS:
   - SessionMFramework/Core (2.5.2.1)
   - SessionMFramework/WebAuth (2.5.2.1):
     - SessionMFramework/Core
-  - SessionMSDK (3.0.0-b4):
-    - SessionMSDK/Campaigns (= 3.0.0-b4)
-    - SessionMSDK/Core (= 3.0.0-b4)
-    - SessionMSDK/Events (= 3.0.0-b4)
-    - SessionMSDK/Geofence (= 3.0.0-b4)
-    - SessionMSDK/Identity (= 3.0.0-b4)
-    - SessionMSDK/Inbox (= 3.0.0-b4)
-    - SessionMSDK/LoyaltyCards (= 3.0.0-b4)
-    - SessionMSDK/Messages (= 3.0.0-b4)
-    - SessionMSDK/Offers (= 3.0.0-b4)
-    - SessionMSDK/Places (= 3.0.0-b4)
-    - SessionMSDK/Receipts (= 3.0.0-b4)
-    - SessionMSDK/Referrals (= 3.0.0-b4)
-    - SessionMSDK/Rewards (= 3.0.0-b4)
-    - SessionMSDK/Transactions (= 3.0.0-b4)
-    - SessionMSDK/WebAuth (= 3.0.0-b4)
-  - SessionMSDK/Campaigns (3.0.0-b4):
+  - SessionMSDK (3.0.0):
+    - SessionMSDK/Campaigns (= 3.0.0)
+    - SessionMSDK/Core (= 3.0.0)
+    - SessionMSDK/Events (= 3.0.0)
+    - SessionMSDK/Geofence (= 3.0.0)
+    - SessionMSDK/Identity (= 3.0.0)
+    - SessionMSDK/Inbox (= 3.0.0)
+    - SessionMSDK/LoyaltyCards (= 3.0.0)
+    - SessionMSDK/Messages (= 3.0.0)
+    - SessionMSDK/Offers (= 3.0.0)
+    - SessionMSDK/Places (= 3.0.0)
+    - SessionMSDK/Receipts (= 3.0.0)
+    - SessionMSDK/Referrals (= 3.0.0)
+    - SessionMSDK/Rewards (= 3.0.0)
+    - SessionMSDK/Transactions (= 3.0.0)
+    - SessionMSDK/WebAuth (= 3.0.0)
+  - SessionMSDK/Campaigns (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Events
     - SessionMSDK/Identity
-  - SessionMSDK/Core (3.0.0-b4)
-  - SessionMSDK/Events (3.0.0-b4):
+  - SessionMSDK/Core (3.0.0)
+  - SessionMSDK/Events (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Geofence (3.0.0-b4):
+  - SessionMSDK/Geofence (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Events
     - SessionMSDK/Identity
-  - SessionMSDK/Identity (3.0.0-b4):
+  - SessionMSDK/Identity (3.0.0):
     - SessionMSDK/Core
-  - SessionMSDK/Inbox (3.0.0-b4):
-    - SessionMSDK/Core
-    - SessionMSDK/Identity
-  - SessionMSDK/LoyaltyCards (3.0.0-b4):
+  - SessionMSDK/Inbox (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Messages (3.0.0-b4):
-    - SessionMSDK/Core
-  - SessionMSDK/Offers (3.0.0-b4):
+  - SessionMSDK/LoyaltyCards (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Places (3.0.0-b4):
+  - SessionMSDK/Messages (3.0.0):
+    - SessionMSDK/Core
+  - SessionMSDK/Offers (3.0.0):
+    - SessionMSDK/Core
+    - SessionMSDK/Identity
+  - SessionMSDK/Places (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
     - SessionMSDK/Messages
-  - SessionMSDK/Receipts (3.0.0-b4):
+  - SessionMSDK/Receipts (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Referrals (3.0.0-b4):
+  - SessionMSDK/Referrals (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Rewards (3.0.0-b4):
+  - SessionMSDK/Rewards (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/Transactions (3.0.0-b4):
+  - SessionMSDK/Transactions (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
-  - SessionMSDK/WebAuth (3.0.0-b4):
+  - SessionMSDK/WebAuth (3.0.0):
     - SessionMSDK/Core
     - SessionMSDK/Identity
 
 DEPENDENCIES:
   - CCHMapClusterController (~> 1.7.0)
   - SessionMFramework
-  - SessionMSDK (= 3.0.0-b4)
+  - SessionMSDK (= 3.0.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - CCHMapClusterController
     - SessionMFramework
     - SessionMSDK
@@ -81,8 +81,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
   SessionMFramework: 6d4300749f6ea15e277d2234717596d947b56f2a
-  SessionMSDK: 15e0c00cbce00b9fa616dcf207646dc3b819850b
+  SessionMSDK: d0009f5dc469c1d6e7d6c9b9a662b04fc4928733
 
-PODFILE CHECKSUM: 1a625be03b75198448ddbc3490e92d2a0e1f735d
+PODFILE CHECKSUM: dbe72f951d5757bc3340fdf089502fbbf14c72e6
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2

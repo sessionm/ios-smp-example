@@ -1,4 +1,4 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/SessionMSDK/**" "$(PODS_ROOT)/SessionMFramework/**" "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0-b4" "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2.1"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/SessionMSDK/**" "$(PODS_ROOT)/SessionMFramework/**" "${PODS_ROOT}/SessionMSDK/SessionM_iOS_v3.0.0" "${PODS_ROOT}/SessionMFramework/SessionM_iOS_v2.5.2.1"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "SessionMCampaignsKit" -framework "SessionMCoreKit" -framework "SessionMEventsKit" -framework "SessionMFramework" -framework "SessionMGeofenceKit" -framework "SessionMIdentityKit" -framework "SessionMInboxKit" -framework "SessionMLoyaltyCardsKit" -framework "SessionMMessagesKit" -framework "SessionMOffersKit" -framework "SessionMPlacesKit" -framework "SessionMReceiptsKit" -framework "SessionMReferralsKit" -framework "SessionMRewardsKit" -framework "SessionMTransactionsKit" -framework "SessionMWebAuth" -framework "SessionMWebAuthKit"
